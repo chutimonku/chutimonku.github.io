@@ -20,8 +20,12 @@
 
         .container {
             display: flex;
-            max-width: 1400px;
-            margin: 0 auto;
+            min-height: 100vh;
+        }
+
+        .content-wrapper {
+            display: flex;
+            flex: 1;
         }
 
         /* Sidebar Styling */
@@ -36,16 +40,11 @@
             box-shadow: 1px 0 3px rgba(0,0,0,0.1);
         }
 
-        .sidebar-sticky {
-            position: relative;
-        }
-
         .author-content {
             text-align: center;
         }
 
         .author-img {
-            display: block;
             width: 120px;
             height: 120px;
             margin: 0 auto 20px;
@@ -87,27 +86,20 @@
         }
 
         .contact-list-item {
-            display: flex;
-            align-items: center;
             margin-bottom: 12px;
             font-size: 0.9em;
         }
 
         .contact-list-item strong {
             color: #667eea;
-            margin-right: 8px;
-            min-width: 80px;
         }
 
         .contact-list-item a {
             color: #667eea;
             text-decoration: none;
-            word-break: break-all;
-            transition: color 0.3s ease;
         }
 
         .contact-list-item a:hover {
-            color: #764ba2;
             text-decoration: underline;
         }
 
@@ -132,7 +124,6 @@
             font-size: 20px;
             text-decoration: none;
             transition: all 0.3s ease;
-            border: 2px solid transparent;
         }
 
         .social-icon:hover {
@@ -141,178 +132,231 @@
             transform: translateY(-3px);
         }
 
-        .social-icon img {
-            width: 20px;
-            height: 20px;
-            filter: brightness(0) saturate(100%) invert(29%) sepia(77%) saturate(614%) hue-rotate(231deg) brightness(97%) contrast(89%);
-        }
-
-        .social-icon:hover img {
-            filter: brightness(0) invert(1);
-        }
-
-        /* Main Content Area */
+        /* Main Content */
         .main-content {
             flex: 1;
-            padding: 60px 50px;
-        }
-
-        section {
-            margin-bottom: 60px;
-        }
-
-        h2 {
-            font-size: 2em;
-            font-weight: 700;
-            color: #2c3e50;
-            margin-bottom: 30px;
-            padding-bottom: 10px;
-            border-bottom: 3px solid #667eea;
-            display: inline-block;
-        }
-
-        .section-content p {
-            margin-bottom: 15px;
-            color: #555;
-            line-height: 1.8;
-            font-size: 1em;
-        }
-
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-            margin-top: 20px;
-        }
-
-        .skill-category {
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #667eea;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-        }
-
-        .skill-category h3 {
-            font-size: 1.1em;
-            color: #667eea;
-            margin-bottom: 12px;
-            font-weight: 700;
-        }
-
-        .skill-category p {
-            font-size: 0.95em;
-            color: #666;
-            line-height: 1.6;
-        }
-
-        .portfolio-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 25px;
-            margin-top: 30px;
-        }
-
-        .project-card {
-            background: white;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            transition: all 0.3s ease;
-            border: 1px solid #eee;
-        }
-
-        .project-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.2);
-            border-color: #667eea;
-        }
-
-        .project-header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 20px;
-            min-height: 80px;
             display: flex;
             flex-direction: column;
-            justify-content: center;
         }
 
-        .project-category {
-            display: inline-block;
-            font-size: 0.75em;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            opacity: 0.9;
-            margin-bottom: 8px;
+        .top-section {
+            padding: 40px 50px;
+            background: white;
+            border-bottom: 2px solid #eee;
         }
 
-        .project-title {
-            font-size: 1.2em;
+        .top-section h2 {
+            font-size: 1.8em;
+            color: #2c3e50;
+            margin-bottom: 20px;
             font-weight: 700;
-            margin-bottom: 5px;
         }
 
-        .project-body {
-            padding: 20px;
-        }
-
-        .project-description {
+        .top-section p {
             color: #666;
-            font-size: 0.95em;
-            line-height: 1.6;
+            line-height: 1.8;
             margin-bottom: 15px;
         }
 
-        .project-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
+        .projects-list {
+            padding: 40px 50px;
+            flex: 1;
+            overflow-y: auto;
         }
 
-        .project-tag {
+        .projects-list h3 {
+            font-size: 1.4em;
+            color: #2c3e50;
+            margin-bottom: 25px;
+            font-weight: 700;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .project-item {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .project-item:hover {
+            border-color: #667eea;
+            box-shadow: 0 6px 16px rgba(102, 126, 234, 0.25);
+            transform: translateY(-3px);
+        }
+
+        .project-item h4 {
+            color: #667eea;
+            font-size: 1.1em;
+            margin-bottom: 8px;
+            font-weight: 700;
+        }
+
+        .project-item .category {
             display: inline-block;
             background: #f0f0f0;
             color: #667eea;
-            padding: 5px 12px;
-            border-radius: 20px;
-            font-size: 0.8em;
-            font-weight: 500;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 0.75em;
+            font-weight: 600;
+            margin-bottom: 10px;
         }
 
-        .project-tag.machine-learning {
-            background: #e8f5e9;
-            color: #2e7d32;
+        .project-item p {
+            font-size: 0.9em;
+            color: #666;
+            line-height: 1.5;
         }
 
-        .project-tag.web {
-            background: #fff3e0;
-            color: #e65100;
+        /* Detail Section */
+        .detail-section {
+            padding: 40px 50px;
+            background: #f9f9f9;
+            border-left: 2px solid #eee;
+            width: 40%;
+            overflow-y: auto;
+            display: none;
         }
 
-        .project-tag.database {
-            background: #f3e5f5;
-            color: #6a1b9a;
+        .detail-section.active {
+            display: block;
         }
 
-        .project-tag.analytics {
+        .detail-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+        }
+
+        .detail-header h3 {
+            font-size: 1.6em;
+            margin-bottom: 8px;
+            font-weight: 700;
+        }
+
+        .detail-category {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            padding: 6px 12px;
+            border-radius: 16px;
+            font-size: 0.85em;
+            font-weight: 600;
+        }
+
+        .detail-body {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .detail-section h4 {
+            color: #667eea;
+            font-size: 1.1em;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-weight: 700;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 8px;
+        }
+
+        .detail-section h4:first-of-type {
+            margin-top: 0;
+        }
+
+        .detail-section p,
+        .detail-section li,
+        .detail-section div {
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 10px;
+            font-size: 0.95em;
+        }
+
+        .detail-section ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        .tech-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+            margin-bottom: 20px;
+        }
+
+        .tech-tag {
             background: #e3f2fd;
             color: #0d47a1;
+            padding: 6px 12px;
+            border-radius: 16px;
+            font-size: 0.85em;
+            font-weight: 600;
         }
 
-        .project-tag.nlp {
-            background: #fce4ec;
-            color: #c2185b;
+        .close-detail {
+            background: #f44336;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-top: 20px;
+            font-weight: 600;
+            transition: background 0.3s ease;
+            width: 100%;
+        }
+        .close-detail:hover {
+            background: #d32f2f;
         }
 
-        /* Footer */
+        .notebook-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95em;
+            margin-top: 15px;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .notebook-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+            border-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .notebook-button:active {
+            transform: translateY(0);
+        }
+        .close-detail:hover {
+            background: #d32f2f;
+        }
+
         footer {
             background: #2c3e50;
             color: white;
             text-align: center;
-            padding: 30px 20px;
-            margin-top: 60px;
+            padding: 30px;
             font-size: 0.9em;
         }
 
@@ -321,19 +365,17 @@
             text-decoration: none;
         }
 
-        footer a:hover {
-            text-decoration: underline;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 1024px) {
-            .sidebar {
-                width: 250px;
-                padding: 30px 15px;
+        @media (max-width: 1200px) {
+            .detail-section {
+                width: 35%;
             }
 
-            .main-content {
-                padding: 40px 30px;
+            .projects-list {
+                padding: 30px;
+            }
+
+            .top-section {
+                padding: 30px;
             }
         }
 
@@ -344,40 +386,48 @@
 
             .sidebar {
                 width: 100%;
-                position: relative;
                 height: auto;
+                position: relative;
                 border-bottom: 2px solid #eee;
             }
 
-            .main-content {
-                padding: 30px 20px;
+            .content-wrapper {
+                flex-direction: column;
             }
 
-            h2 {
-                font-size: 1.6em;
+            .detail-section {
+                width: 100%;
+                border-left: none;
+                border-top: 2px solid #eee;
             }
 
-            .skills-grid,
-            .portfolio-grid {
+            .projects-grid {
                 grid-template-columns: 1fr;
             }
         }
 
-        /* Scrollbar styling */
-        .sidebar::-webkit-scrollbar {
+        .sidebar::-webkit-scrollbar,
+        .projects-list::-webkit-scrollbar,
+        .detail-section::-webkit-scrollbar {
             width: 6px;
         }
 
-        .sidebar::-webkit-scrollbar-track {
+        .sidebar::-webkit-scrollbar-track,
+        .projects-list::-webkit-scrollbar-track,
+        .detail-section::-webkit-scrollbar-track {
             background: transparent;
         }
 
-        .sidebar::-webkit-scrollbar-thumb {
+        .sidebar::-webkit-scrollbar-thumb,
+        .projects-list::-webkit-scrollbar-thumb,
+        .detail-section::-webkit-scrollbar-thumb {
             background: #ddd;
             border-radius: 3px;
         }
 
-        .sidebar::-webkit-scrollbar-thumb:hover {
+        .sidebar::-webkit-scrollbar-thumb:hover,
+        .projects-list::-webkit-scrollbar-thumb:hover,
+        .detail-section::-webkit-scrollbar-thumb:hover {
             background: #bbb;
         }
 
@@ -700,7 +750,7 @@
         <aside class="sidebar">
             <div class="sidebar-sticky">
                 <div class="author-content">
-                    <img src="PF/IMG_3226.JPG" alt="Chutimon Nunthasena" class="author-img">
+                    <img src="PF/download.png" alt="Chutimon Nunthasena" class="author-img">
                     <h1 class="author-name">Chutimon Nunthasena</h1>
                     <p class="author-title">Data Analyst & Developer</p>
                     <p class="author-bio">
@@ -727,7 +777,7 @@
                         <a href="https://www.linkedin.com/in/chutimon-nunthasena-781006392/" target="_blank" title="LinkedIn" class="social-icon">💼</a>
                         <a href="mailto:Chutimon.nun@ku.th" target="_blank" title="Email" class="social-icon">✉️</a>
                         <a href="https://line.me/ti/p/YOUR_LINE_ID" target="_blank" title="Line" class="social-icon">
-                            <img src="PF/download.png" alt="Line">
+                            <img src="PF/IMG_3226.JPG" alt="Line">
                         </a>
                     </div>
                 </div>
@@ -782,6 +832,11 @@
                     </div>
                 </div>
             </section>
+
+            <!-- Projects Section -->
+            <section id="projects">
+                <h2>🚀 My Projects</h2>
+                <div class="projects-grid">
                 <!-- Data Analysis Projects -->
                 <div class="project-card">
                     <div class="project-header">
@@ -832,7 +887,7 @@
                         <h3 class="project-title">Sales Forecasting Frozen Squid</h3>
                     </div>
                     <div class="project-body">
-                        <p class="project-description">พยากรณ์ยอดขายปลาหมึกกำปั่นโดยใช้เทคนิค SMA, WMA, Exponential Smoothing และ Holt-Winters</p>
+                        <p class="project-description">พยากรณ์ยอดขายปลาหมึกโดยใช้เทคนิค SMA, WMA, Exponential Smoothing และ Holt-Winters</p>
                         <div class="project-tags">
                             <span class="project-tag analytics">R Language</span>
                             <span class="project-tag analytics">Time Series</span>
@@ -852,6 +907,26 @@
                             <span class="project-tag machine-learning">Python</span>
                             <span class="project-tag machine-learning">Deep Learning CNN</span>
                         </div>
+                        <a href="https://nbviewer.org/github/chutimonku/my_projects/blob/main/CIFAR-10%20Image%20Classification%20/Projeact_final_image_Chutimon.ipynb" target="_blank" class="notebook-button">
+                            📊 View Notebook
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="project-category">🤖 Machine Learning</span>
+                        <h3 class="project-title">Image Classification Model Training</h3>
+                    </div>
+                    <div class="project-body">
+                        <p class="project-description">การฝึกอบรมโมเดลการจำแนกภาพขั้นสูงเพื่อเพิ่มความแม่นยำและประสิทธิภาพ</p>
+                        <div class="project-tags">
+                            <span class="project-tag machine-learning">Python</span>
+                            <span class="project-tag machine-learning">Deep Learning</span>
+                        </div>
+                        <a href="https://nbviewer.org/github/chutimonku/my_projects/blob/main/Image%20Classification%20Model%20Training%20/Chutimon_IMG.ipynb" target="_blank" class="notebook-button">
+                            📊 View Notebook
+                        </a>
                     </div>
                 </div>
 
@@ -866,6 +941,9 @@
                             <span class="project-tag nlp">Python</span>
                             <span class="project-tag nlp">NLP Text Processing</span>
                         </div>
+                        <a href="https://nbviewer.org/github/chutimonku/my_projects/blob/main/NLP%20Sentiment%20Classification%20/Data_Processing_NLP_20260122_SS1_by_Cutimon_.ipynb" target="_blank" class="notebook-button">
+                            📊 View Notebook
+                        </a>
                     </div>
                 </div>
 
@@ -931,14 +1009,17 @@
                 <div class="project-card">
                     <div class="project-header">
                         <span class="project-category">🎓 Predictive Analytics</span>
-                        <h3 class="project-title">Student Performance Prediction</h3>
+                        <h3 class="project-title">Student Performance & Behavior Analysis</h3>
                     </div>
                     <div class="project-body">
-                        <p class="project-description">พยากรณ์ผลการเรียนของนักเรียนเพื่อช่วยในการระบุนักเรียนที่ต้องการการช่วยเหลือพิเศษ</p>
+                        <p class="project-description">วิเคราะห์พฤติกรรมและผลการเรียนของนักเรียน เพื่อระบุปัจจัยที่ส่งผลต่อการบรรลุเป้าหมายการศึกษา</p>
                         <div class="project-tags">
                             <span class="project-tag analytics">Python</span>
-                            <span class="project-tag analytics">Machine Learning</span>
+                            <span class="project-tag analytics">Data Analysis</span>
                         </div>
+                        <a href="https://nbviewer.org/github/chutimonku/my_projects/blob/main/Student%20Performance%20%26%20Behavior%20Analysis%20/Topic.ipynb" target="_blank" class="notebook-button">
+                            📊 View Notebook
+                        </a>
                     </div>
                 </div>
 
@@ -953,6 +1034,9 @@
                             <span class="project-tag analytics">Python</span>
                             <span class="project-tag analytics">Data Analysis</span>
                         </div>
+                        <a href="https://nbviewer.org/github/chutimonku/my_projects/blob/main/Titanic%20Survival%20Analysis%20/project.ipynb" target="_blank" class="notebook-button">
+                            📊 View Notebook
+                        </a>
                     </div>
                 </div>
                 </div>
