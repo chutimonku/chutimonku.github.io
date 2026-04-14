@@ -13,28 +13,73 @@
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: #333;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #2c3e50;
             min-height: 100vh;
         }
 
         header {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
-            padding: 60px 20px;
+            padding: 50px 20px;
             text-align: center;
             box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .profile-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid white;
+            object-fit: cover;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+            animation: slideDown 0.8s ease-out;
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .header-text {
+            animation: fadeIn 0.8s ease-out 0.2s backwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
         }
 
         header h1 {
             font-size: 2.5em;
             margin-bottom: 10px;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            font-weight: 700;
+            letter-spacing: 0.5px;
         }
 
         header p {
             font-size: 1.2em;
             opacity: 0.95;
+            font-weight: 300;
+            letter-spacing: 0.3px;
         }
 
         .container {
@@ -55,12 +100,15 @@
             color: #667eea;
             margin-bottom: 15px;
             font-size: 1.8em;
+            font-weight: 700;
         }
 
         .intro-section p {
-            line-height: 1.8;
-            margin-bottom: 10px;
-            color: #555;
+            line-height: 1.9;
+            margin-bottom: 15px;
+            color: #34495e;
+            font-size: 1em;
+            font-weight: 400;
         }
 
         .skills-container {
@@ -73,19 +121,28 @@
         .skill-box {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
-            padding: 20px;
+            padding: 25px;
             border-radius: 8px;
             text-align: center;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+            box-shadow: 0 6px 15px rgba(102, 126, 234, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .skill-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.5);
         }
 
         .skill-box h3 {
             margin-bottom: 10px;
+            font-weight: 700;
+            font-size: 1.1em;
         }
 
         .skill-box p {
             font-size: 0.95em;
             opacity: 0.95;
+            font-weight: 300;
         }
 
         .portfolio-section {
@@ -110,13 +167,13 @@
             background: white;
             border-radius: 10px;
             overflow: hidden;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.12);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         .project-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 12px 30px rgba(0,0,0,0.3);
+            box-shadow: 0 12px 30px rgba(102, 126, 234, 0.25);
         }
 
         .project-header {
@@ -144,10 +201,11 @@
         }
 
         .project-body p {
-            color: #666;
-            line-height: 1.6;
+            color: #555;
+            line-height: 1.7;
             margin-bottom: 15px;
             font-size: 0.95em;
+            font-weight: 400;
         }
 
         .project-tech {
@@ -192,24 +250,69 @@
         }
 
         footer {
-            background: rgba(0,0,0,0.8);
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
             color: white;
             text-align: center;
-            padding: 30px 20px;
+            padding: 40px 20px;
             margin-top: 50px;
+            box-shadow: 0 -4px 15px rgba(0,0,0,0.15);
+        }
+
+        footer h3 {
+            font-size: 1.6em;
+            margin-bottom: 25px;
+            font-weight: 700;
+        }
+
+        .contact-icons {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+
+        .contact-icon-link {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            border: 2px solid rgba(255,255,255,0.2);
+        }
+
+        .contact-icon-link:hover {
+            background: rgba(102, 126, 234, 0.3);
+            border-color: #667eea;
+            transform: translateY(-5px);
+        }
+
+        .contact-icon-link img {
+            width: 28px;
+            height: 28px;
+            filter: brightness(0) invert(1);
         }
 
         .contact-info {
-            margin: 10px 0;
+            margin: 15px 0;
+            font-size: 0.95em;
+            font-weight: 300;
+            letter-spacing: 0.3px;
         }
 
         .contact-info a {
-            color: #667eea;
+            color: #82d4e6;
             text-decoration: none;
             font-weight: 500;
+            transition: color 0.3s ease;
         }
 
         .contact-info a:hover {
+            color: #667eea;
             text-decoration: underline;
         }
 
@@ -230,15 +333,20 @@
 </head>
 <body>
     <header>
-        <h1>Chinglit's Professional Portfolio</h1>
-        <p>Data Analyst | Web Developer | Machine Learning Enthusiast</p>
+        <div class="profile-section">
+            <img src="download.png" alt="Profile Picture" class="profile-image">
+            <div class="header-text">
+                <h1>Chutimon Nunthasena</h1>
+                <p>Data Analyst | Web Developer | Machine Learning Enthusiast</p>
+            </div>
+        </div>
     </header>
 
     <div class="container">
         <div class="intro-section">
             <h2>👋 About Me</h2>
             <p>
-                สวัสดีครับ/สวัสดีค่ะ ฉันเป็นผู้มีประสบการณ์ในการวิเคราะห์ข้อมูล พัฒนาเว็บแอปพลิเคชัน และสร้างโมเดลแมชชีนเลิร์นนิง 
+                สวัสดีค่ะ ฉันเป็นผู้มีประสบการณ์ในการวิเคราะห์ข้อมูล พัฒนาเว็บแอปพลิเคชัน และสร้างโมเดลแมชชีนเลิร์นนิง 
                 มีความสนใจในการแปลงข้อมูลให้เป็นความเข้าใจที่มีประโยชน์ และสร้างโซลูชันที่หรือประยุกต์ 
                 ยินดีที่จะนำความรู้และทักษะมาช่วยในการยกระดับองค์กร
             </p>
@@ -533,20 +641,39 @@
 
     <footer>
         <h3>📧 Get in Touch</h3>
+        
+        <div class="contact-icons">
+            <a href="tel:082-648-3526" class="contact-icon-link" title="Call">
+                <span style="font-size: 24px;">📱</span>
+            </a>
+            <a href="mailto:Chutimon.nun@ku.th" class="contact-icon-link" title="Email">
+                <span style="font-size: 24px;">📧</span>
+            </a>
+            <a href="https://www.linkedin.com/in/chutimon-nunthasena-781006392/" target="_blank" class="contact-icon-link" title="LinkedIn">
+                <span style="font-size: 24px;">💼</span>
+            </a>
+            <a href="https://github.com/chutimonku/chutimonku.github.io" target="_blank" class="contact-icon-link" title="GitHub">
+                <span style="font-size: 24px;">💻</span>
+            </a>
+            <a href="https://line.me/ti/p/YOUR_LINE_ID" target="_blank" class="contact-icon-link" title="Line">
+                <img src="line.png" alt="Line" style="width: 24px; height: 24px;">
+            </a>
+        </div>
+
         <div class="contact-info">
-            <p>📱 Phone: +66 (XX) XXXX-XXXX</p>
+            <p>📱 Phone: 082-648-3526</p>
         </div>
         <div class="contact-info">
-            <p>📧 Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+            <p>📧 Email: <a href="mailto:Chutimon.nun@ku.th">Chutimon.nun@ku.th</a></p>
         </div>
         <div class="contact-info">
-            <p>💼 LinkedIn: <a href="https://www.linkedin.com/in/yourprofile" target="_blank">Your LinkedIn Profile</a></p>
+            <p>💼 LinkedIn: <a href="https://www.linkedin.com/in/chutimon-nunthasena-781006392/" target="_blank">LinkedIn Profile</a></p>
         </div>
         <div class="contact-info">
-            <p>💻 GitHub: <a href="https://github.com/yourprofile" target="_blank">Your GitHub Profile</a></p>
+            <p>💻 GitHub: <a href="https://github.com/chutimonku/chutimonku.github.io" target="_blank">GitHub Profile</a></p>
         </div>
         <hr style="margin: 20px 0; opacity: 0.3;">
-        <p style="margin-top: 20px; opacity: 0.8;">© 2025 Professional Portfolio. All rights reserved.</p>
+        <p style="margin-top: 20px; opacity: 0.8; font-weight: 300;">© 2026 Professional Portfolio. All rights reserved.</p>
     </footer>
 </body>
 </html>
