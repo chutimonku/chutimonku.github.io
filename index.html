@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional Portfolio - Data & Web Development</title>
+    <title>Chutimon Nunthasena - Professional Portfolio</title>
     <style>
         * {
             margin: 0;
@@ -12,10 +12,373 @@
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            display: flex;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        /* Sidebar Styling */
+        .sidebar {
+            width: 300px;
+            position: sticky;
+            top: 0;
+            height: 100vh;
+            overflow-y: auto;
+            background: white;
+            padding: 40px 20px;
+            box-shadow: 1px 0 3px rgba(0,0,0,0.1);
+        }
+
+        .sidebar-sticky {
+            position: relative;
+        }
+
+        .author-content {
+            text-align: center;
+        }
+
+        .author-img {
+            display: block;
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            border: 3px solid #667eea;
+            object-fit: cover;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .author-name {
+            font-size: 1.6em;
+            font-weight: 700;
             color: #2c3e50;
-            min-height: 100vh;
+            margin-bottom: 5px;
+        }
+
+        .author-title {
+            font-size: 0.9em;
+            color: #667eea;
+            font-weight: 600;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .author-bio {
+            font-size: 0.85em;
+            color: #666;
+            line-height: 1.8;
+            margin-bottom: 25px;
+            padding: 15px 0;
+            border-top: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+        }
+
+        .contact-list {
+            list-style: none;
+            margin-bottom: 30px;
+        }
+
+        .contact-list-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+            font-size: 0.9em;
+        }
+
+        .contact-list-item strong {
+            color: #667eea;
+            margin-right: 8px;
+            min-width: 80px;
+        }
+
+        .contact-list-item a {
+            color: #667eea;
+            text-decoration: none;
+            word-break: break-all;
+            transition: color 0.3s ease;
+        }
+
+        .contact-list-item a:hover {
+            color: #764ba2;
+            text-decoration: underline;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+
+        .social-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: #f0f0f0;
+            color: #667eea;
+            font-size: 20px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .social-icon:hover {
+            background: #667eea;
+            color: white;
+            transform: translateY(-3px);
+        }
+
+        .social-icon img {
+            width: 20px;
+            height: 20px;
+            filter: brightness(0) saturate(100%) invert(29%) sepia(77%) saturate(614%) hue-rotate(231deg) brightness(97%) contrast(89%);
+        }
+
+        .social-icon:hover img {
+            filter: brightness(0) invert(1);
+        }
+
+        /* Main Content Area */
+        .main-content {
+            flex: 1;
+            padding: 60px 50px;
+        }
+
+        section {
+            margin-bottom: 60px;
+        }
+
+        h2 {
+            font-size: 2em;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+            display: inline-block;
+        }
+
+        .section-content p {
+            margin-bottom: 15px;
+            color: #555;
+            line-height: 1.8;
+            font-size: 1em;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .skill-category {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        .skill-category h3 {
+            font-size: 1.1em;
+            color: #667eea;
+            margin-bottom: 12px;
+            font-weight: 700;
+        }
+
+        .skill-category p {
+            font-size: 0.95em;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            border: 1px solid #eee;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.2);
+            border-color: #667eea;
+        }
+
+        .project-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            min-height: 80px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .project-category {
+            display: inline-block;
+            font-size: 0.75em;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            opacity: 0.9;
+            margin-bottom: 8px;
+        }
+
+        .project-title {
+            font-size: 1.2em;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .project-body {
+            padding: 20px;
+        }
+
+        .project-description {
+            color: #666;
+            font-size: 0.95em;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .project-tag {
+            display: inline-block;
+            background: #f0f0f0;
+            color: #667eea;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            font-weight: 500;
+        }
+
+        .project-tag.machine-learning {
+            background: #e8f5e9;
+            color: #2e7d32;
+        }
+
+        .project-tag.web {
+            background: #fff3e0;
+            color: #e65100;
+        }
+
+        .project-tag.database {
+            background: #f3e5f5;
+            color: #6a1b9a;
+        }
+
+        .project-tag.analytics {
+            background: #e3f2fd;
+            color: #0d47a1;
+        }
+
+        .project-tag.nlp {
+            background: #fce4ec;
+            color: #c2185b;
+        }
+
+        /* Footer */
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 60px;
+            font-size: 0.9em;
+        }
+
+        footer a {
+            color: #82d4e6;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .sidebar {
+                width: 250px;
+                padding: 30px 15px;
+            }
+
+            .main-content {
+                padding: 40px 30px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+                position: relative;
+                height: auto;
+                border-bottom: 2px solid #eee;
+            }
+
+            .main-content {
+                padding: 30px 20px;
+            }
+
+            h2 {
+                font-size: 1.6em;
+            }
+
+            .skills-grid,
+            .portfolio-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Scrollbar styling */
+        .sidebar::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .sidebar::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        .sidebar::-webkit-scrollbar-thumb {
+            background: #ddd;
+            border-radius: 3px;
+        }
+
+        .sidebar::-webkit-scrollbar-thumb:hover {
+            background: #bbb;
         }
 
         header {
@@ -332,91 +695,118 @@
     </style>
 </head>
 <body>
-    <header>
-        <div class="profile-section">
-            <img src="download.png" alt="Profile Picture" class="profile-image">
-            <div class="header-text">
-                <h1>Chutimon Nunthasena</h1>
-                <p>Data Analyst | Web Developer | Machine Learning Enthusiast</p>
-            </div>
-        </div>
-    </header>
-
     <div class="container">
-        <div class="intro-section">
-            <h2>👋 About Me</h2>
-            <p>
-                สวัสดีค่ะ ฉันเป็นผู้มีประสบการณ์ในการวิเคราะห์ข้อมูล พัฒนาเว็บแอปพลิเคชัน และสร้างโมเดลแมชชีนเลิร์นนิง 
-                มีความสนใจในการแปลงข้อมูลให้เป็นความเข้าใจที่มีประโยชน์ และสร้างโซลูชันที่หรือประยุกต์ 
-                ยินดีที่จะนำความรู้และทักษะมาช่วยในการยกระดับองค์กร
-            </p>
-            <h3 style="color: #667eea; margin-top: 25px; margin-bottom: 15px;">💡 ทักษะหลัก</h3>
-            <div class="skills-container">
-                <div class="skill-box">
-                    <h3>Data Analysis</h3>
-                    <p>R, Python, SQL, Statistical Analysis</p>
-                </div>
-                <div class="skill-box">
-                    <h3>Machine Learning</h3>
-                    <p>Image Classification, NLP, Sentiment Analysis</p>
-                </div>
-                <div class="skill-box">
-                    <h3>Web Development</h3>
-                    <p>HTML, CSS, PHP, MySQL, Dashboard Design</p>
-                </div>
-                <div class="skill-box">
-                    <h3>Database Design</h3>
-                    <p>SQL, Database Architecture, Data Modeling</p>
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-sticky">
+                <div class="author-content">
+                    <img src="PF/IMG_3226.JPG" alt="Chutimon Nunthasena" class="author-img">
+                    <h1 class="author-name">Chutimon Nunthasena</h1>
+                    <p class="author-title">Data Analyst & Developer</p>
+                    <p class="author-bio">
+                        ผู้มีความรู้ความชำนาญในด้านการวิเคราะห์ข้อมูล พัฒนาเว็บแอปพลิเคชัน และสร้างโมเดลแมชชีนเลิร์นนิง พร้อมอุทิศตนเพื่อนำความเข้าใจจากข้อมูลมาสร้างโซลูชันที่มีประโยชน์
+                    </p>
+
+                    <ul class="contact-list">
+                        <li class="contact-list-item">
+                            <strong>Phone:</strong>
+                            <a href="tel:082-648-3526">082-648-3526</a>
+                        </li>
+                        <li class="contact-list-item">
+                            <strong>Email:</strong>
+                            <a href="mailto:Chutimon.nun@ku.th">Chutimon.nun@ku.th</a>
+                        </li>
+                        <li class="contact-list-item">
+                            <strong>Based in:</strong>
+                            Thailand
+                        </li>
+                    </ul>
+
+                    <div class="social-icons">
+                        <a href="https://github.com/chutimonku" target="_blank" title="GitHub" class="social-icon">💻</a>
+                        <a href="https://www.linkedin.com/in/chutimon-nunthasena-781006392/" target="_blank" title="LinkedIn" class="social-icon">💼</a>
+                        <a href="mailto:Chutimon.nun@ku.th" target="_blank" title="Email" class="social-icon">✉️</a>
+                        <a href="https://line.me/ti/p/YOUR_LINE_ID" target="_blank" title="Line" class="social-icon">
+                            <img src="PF/download.png" alt="Line">
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
+        </aside>
 
-        <div class="portfolio-section">
-            <h2>📊 Portfolio Projects</h2>
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- About Section -->
+            <section id="about">
+                <h2>📋 About</h2>
+                <div class="section-content">
+                    <p>
+                        สวัสดีค่ะ ฉันคือ Data Analyst และ Web Developer ที่มีความหลงใหลในการแปลงข้อมูลให้เป็นความเข้าใจที่มีประโยชน์ และสร้างประสบการณ์ผู้ใช้ที่ยอดเยี่ยม
+                    </p>
+                    <p>
+                        ฉันมีพื้นฐานทางการศึกษาด้านเทคโนโลยีข้อมูลและเว็บพัฒนา ลงมือทำโปรเจคจำนวนมากในด้านการวิเคราะห์ข้อมูล การพยากรณ์, Machine Learning และเว็บพัฒนา นอกจากนี้ยังมีความเชี่ยวชาญในการออกแบบฐานข้อมูล และการสร้างแดชบอร์ด
+                    </p>
+                    <p>
+                        ปัจจุบัน ฉันกำลังมองหาโอกาสในการเข้าฝึกงาน เพื่อนำความรู้และทักษะของฉันมาช่วยในการยกระดับองค์กร และพัฒนาตัวเองให้เป็นผู้เชี่ยวชาญในอุตสาหกรรมเทคโนโลยี
+                    </p>
+                </div>
+            </section>
 
-            <div class="portfolio-grid">
+            <!-- Skills Section -->
+            <section id="skills">
+                <h2>💡 Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>📊 Data Analysis</h3>
+                        <p>R, Python, SQL, Statistical Analysis, Data Visualization, Tableau</p>
+                    </div>
+                    <div class="skill-category">
+                        <h3>🤖 Machine Learning</h3>
+                        <p>Python, TensorFlow, Keras, Image Classification, NLP, Sentiment Analysis</p>
+                    </div>
+                    <div class="skill-category">
+                        <h3>🌐 Web Development</h3>
+                        <p>HTML, CSS, JavaScript, PHP, MySQL, Dashboard Design</p>
+                    </div>
+                    <div class="skill-category">
+                        <h3>💾 Database Design</h3>
+                        <p>SQL, Database Architecture, Data Modeling, Data Warehouse</p>
+                    </div>
+                    <div class="skill-category">
+                        <h3>📈 Forecasting</h3>
+                        <p>Time Series Analysis, ARIMA, Exponential Smoothing, Holt-Winters</p>
+                    </div>
+                    <div class="skill-category">
+                        <h3>🎓 Other Skills</h3>
+                        <p>Git, GitHub, Problem Solving, Team Collaboration, Communication</p>
+                    </div>
+                </div>
+            </section>
                 <!-- Data Analysis Projects -->
                 <div class="project-card">
                     <div class="project-header">
-                        <span class="project-category">📈 ข้อมูลและวิเคราะห์</span>
-                        <h3>Ames Housing Price Analysis</h3>
+                        <span class="project-category">� Data Analysis</span>
+                        <h3 class="project-title">Ames Housing Price Analysis</h3>
                     </div>
                     <div class="project-body">
-                        <p>การวิเคราะห์ราคาบ้านโดยใช้สถิติการวิเคราะห์ข้อมูล Ames Housing dataset เพื่อหาปัจจัยที่ส่งผลต่อราคา</p>
-                        <div class="project-tech">
-                            <span class="tech-tag analytics">R Language</span>
-                            <span class="tech-tag analytics">Statistical Analysis</span>
-                            <span class="tech-tag analytics">Data Visualization</span>
+                        <p class="project-description">การวิเคราะห์ราคาบ้านโดยใช้สถิติการวิเคราะห์ข้อมูล Ames Housing dataset เพื่อหาปัจจัยที่ส่งผลต่อราคา</p>
+                        <div class="project-tags">
+                            <span class="project-tag analytics">R Language</span>
+                            <span class="project-tag analytics">Statistical Analysis</span>
                         </div>
                     </div>
                 </div>
 
                 <div class="project-card">
                     <div class="project-header">
-                        <span class="project-category">📈 ข้อมูลและวิเคราะห์</span>
-                        <h3>Multiple Regression Analysis on Rice Quality</h3>
+                        <span class="project-category">📊 Data Analysis</span>
+                        <h3 class="project-title">Multiple Regression Analysis Rice Quality</h3>
                     </div>
                     <div class="project-body">
-                        <p>วิเคราะห์คุณภาพข้าวโดยใช้วิธีการถดถอยเชิงเส้นหลาย เพื่อหาความสัมพันธ์ระหว่างตัวแปรต่างๆ</p>
-                        <div class="project-tech">
-                            <span class="tech-tag analytics">R Language</span>
-                            <span class="tech-tag analytics">Regression Analysis</span>
-                            <span class="tech-tag analytics">Quality Control</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <span class="project-category">📈 ข้อมูลและวิเคราะห์</span>
-                        <h3>Walmart Sales Analysis</h3>
-                    </div>
-                    <div class="project-body">
-                        <p>การวิเคราะห์ผลขายของ Walmart เพื่อค้นหารูปแบบการขายและโอกาสในการปรับปรุง</p>
-                        <div class="project-tech">
-                            <span class="tech-tag analytics">Data Analysis</span>
-                            <span class="tech-tag analytics">Business Intelligence</span>
-                            <span class="tech-tag analytics">Trend Analysis</span>
+                        <p class="project-description">วิเคราะห์คุณภาพข้าวโดยใช้วิธีการถดถอยเชิงเส้นหลาย เพื่อหาความสัมพันธ์ระหว่างตัวแปรต่างๆ</p>
+                        <div class="project-tags">
+                            <span class="project-tag analytics">R Language</span>
+                            <span class="project-tag analytics">Regression Analysis</span>
                         </div>
                     </div>
                 </div>
@@ -424,45 +814,28 @@
                 <!-- Forecasting Projects -->
                 <div class="project-card">
                     <div class="project-header">
-                        <span class="project-category">📊 พยากรณ์และการคาดการณ์</span>
-                        <h3>Daily Gold Price Forecasting</h3>
+                        <span class="project-category">📈 Forecasting</span>
+                        <h3 class="project-title">Gold Price Forecasting</h3>
                     </div>
                     <div class="project-body">
-                        <p>พยากรณ์ราคาทองรายวันโดยใช้อัลกอริธึมการพยากรณ์อนุกรมเวลา สำหรับการวางแผนการลงทุน</p>
-                        <div class="project-tech">
-                            <span class="tech-tag analytics">Time Series</span>
-                            <span class="tech-tag analytics">R Language</span>
-                            <span class="tech-tag analytics">Forecasting</span>
+                        <p class="project-description">พยากรณ์ราคาทองรายวันโดยใช้อัลกอริธึมการพยากรณ์อนุกรมเวลา สำหรับการวางแผนการลงทุน</p>
+                        <div class="project-tags">
+                            <span class="project-tag analytics">Time Series</span>
+                            <span class="project-tag analytics">Forecasting</span>
                         </div>
                     </div>
                 </div>
 
                 <div class="project-card">
                     <div class="project-header">
-                        <span class="project-category">📊 พยากรณ์และการคาดการณ์</span>
-                        <h3>Sales Forecasting - Frozen Giant Squid Products</h3>
+                        <span class="project-category">📈 Forecasting</span>
+                        <h3 class="project-title">Sales Forecasting Frozen Squid</h3>
                     </div>
                     <div class="project-body">
-                        <p>พยากรณ์ยอดขายปลาหมึกกำปั่นโดยใช้เทคนิค SMA, WMA, Exponential Smoothing และ Holt-Winters</p>
-                        <div class="project-tech">
-                            <span class="tech-tag analytics">Time Series Analysis</span>
-                            <span class="tech-tag analytics">R Language</span>
-                            <span class="tech-tag analytics">Sales Forecasting</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <span class="project-category">📊 พยากรณ์และการคาดการณ์</span>
-                        <h3>WTI Crude Oil Price Forecasting</h3>
-                    </div>
-                    <div class="project-body">
-                        <p>พยากรณ์ราคาน้ำมันดิบเพื่อช่วยในการวางแผนด้านพลังงานและการลงทุน</p>
-                        <div class="project-tech">
-                            <span class="tech-tag analytics">R Language</span>
-                            <span class="tech-tag analytics">Time Series</span>
-                            <span class="tech-tag analytics">Economic Analysis</span>
+                        <p class="project-description">พยากรณ์ยอดขายปลาหมึกกำปั่นโดยใช้เทคนิค SMA, WMA, Exponential Smoothing และ Holt-Winters</p>
+                        <div class="project-tags">
+                            <span class="project-tag analytics">R Language</span>
+                            <span class="project-tag analytics">Time Series</span>
                         </div>
                     </div>
                 </div>
@@ -471,29 +844,13 @@
                 <div class="project-card">
                     <div class="project-header">
                         <span class="project-category">🤖 Machine Learning</span>
-                        <h3>CIFAR-10 Image Classification</h3>
+                        <h3 class="project-title">CIFAR-10 Image Classification</h3>
                     </div>
                     <div class="project-body">
-                        <p>สร้างโมเดลการจำแนกภาพ CIFAR-10 โดยใช้เทคนิค Deep Learning สำหรับการจำแนกวัตถุ 10 หมวดหมู่</p>
-                        <div class="project-tech">
-                            <span class="tech-tag machine-learning">Python</span>
-                            <span class="tech-tag machine-learning">Deep Learning</span>
-                            <span class="tech-tag machine-learning">CNN</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <span class="project-category">🤖 Machine Learning</span>
-                        <h3>Image Classification Model Training</h3>
-                    </div>
-                    <div class="project-body">
-                        <p>การฝึกฝนโมเดลสำหรับการจำแนกภาพ ทดสอบอัลกอริธึม Deep Learning ที่หลากหลาย</p>
-                        <div class="project-tech">
-                            <span class="tech-tag machine-learning">Python</span>
-                            <span class="tech-tag machine-learning">TensorFlow/Keras</span>
-                            <span class="tech-tag machine-learning">Computer Vision</span>
+                        <p class="project-description">สร้างโมเดลการจำแนกภาพ CIFAR-10 โดยใช้เทคนิค Deep Learning สำหรับการจำแนกวัตถุ 10 หมวดหมู่</p>
+                        <div class="project-tags">
+                            <span class="project-tag machine-learning">Python</span>
+                            <span class="project-tag machine-learning">Deep Learning CNN</span>
                         </div>
                     </div>
                 </div>
@@ -501,44 +858,13 @@
                 <div class="project-card">
                     <div class="project-header">
                         <span class="project-category">🤖 NLP</span>
-                        <h3>NLP Sentiment Classification</h3>
+                        <h3 class="project-title">NLP Sentiment Classification</h3>
                     </div>
                     <div class="project-body">
-                        <p>ระบบ NLP สำหรับจำแนกความรู้สึกจากข้อความ เพื่อวิเคราะห์ความเห็นของลูกค้า</p>
-                        <div class="project-tech">
-                            <span class="tech-tag nlp">Python</span>
-                            <span class="tech-tag nlp">NLP</span>
-                            <span class="tech-tag nlp">Text Processing</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <span class="project-category">🎓 Predictive Analytics</span>
-                        <h3>Student Performance Prediction</h3>
-                    </div>
-                    <div class="project-body">
-                        <p>พยากรณ์ผลการเรียนของนักเรียนเพื่อช่วยในการระบุนักเรียนที่ต้องการการช่วยเหลือพิเศษ</p>
-                        <div class="project-tech">
-                            <span class="tech-tag analytics">Python</span>
-                            <span class="tech-tag analytics">Machine Learning</span>
-                            <span class="tech-tag analytics">Education Analytics</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <span class="project-category">🎓 Data Analysis</span>
-                        <h3>Student Performance & Behavior Analysis</h3>
-                    </div>
-                    <div class="project-body">
-                        <p>วิเคราะห์ผลการเรียนและพฤติกรรมของนักเรียน เพื่อหาปัจจัยที่ส่งผลต่อความสำเร็จ</p>
-                        <div class="project-tech">
-                            <span class="tech-tag analytics">Python</span>
-                            <span class="tech-tag analytics">Data Analysis</span>
-                            <span class="tech-tag analytics">Behavioral Analytics</span>
+                        <p class="project-description">ระบบ NLP สำหรับจำแนกความรู้สึกจากข้อความ เพื่อวิเคราะห์ความเห็นของลูกค้า</p>
+                        <div class="project-tags">
+                            <span class="project-tag nlp">Python</span>
+                            <span class="project-tag nlp">NLP Text Processing</span>
                         </div>
                     </div>
                 </div>
@@ -547,14 +873,13 @@
                 <div class="project-card">
                     <div class="project-header">
                         <span class="project-category">🌐 Web Development</span>
-                        <h3>Ming Ming Makeup Online Store</h3>
+                        <h3 class="project-title">Makeup Online Store</h3>
                     </div>
                     <div class="project-body">
-                        <p>ร้านค้าออนไลน์ขายสินค้าเครื่องสำอาง พัฒนาด้วย PHP, MySQL พร้อมระบบจัดการสินค้า</p>
-                        <div class="project-tech">
-                            <span class="tech-tag web">HTML/CSS</span>
-                            <span class="tech-tag web">PHP</span>
-                            <span class="tech-tag web">MySQL</span>
+                        <p class="project-description">ร้านค้าออนไลน์ขายสินค้าเครื่องสำอาง พัฒนาด้วย PHP, MySQL พร้อมระบบจัดการสินค้า</p>
+                        <div class="project-tags">
+                            <span class="project-tag web">HTML/CSS</span>
+                            <span class="project-tag web">PHP MySQL</span>
                         </div>
                     </div>
                 </div>
@@ -562,14 +887,13 @@
                 <div class="project-card">
                     <div class="project-header">
                         <span class="project-category">🌐 Web Development</span>
-                        <h3>Apple Stock Dashboard</h3>
+                        <h3 class="project-title">Apple Stock Dashboard</h3>
                     </div>
                     <div class="project-body">
-                        <p>แดชบอร์ดแสดงข้อมูลหุ้น Apple แบบเรียลไทม์ ดึงข้อมูลจากฐานข้อมูล SQL</p>
-                        <div class="project-tech">
-                            <span class="tech-tag web">PHP</span>
-                            <span class="tech-tag web">SQL</span>
-                            <span class="tech-tag web">HTML/CSS</span>
+                        <p class="project-description">แดชบอร์ดแสดงข้อมูลหุ้น Apple แบบเรียลไทม์ ดึงข้อมูลจากฐานข้อมูล SQL</p>
+                        <div class="project-tags">
+                            <span class="project-tag web">PHP</span>
+                            <span class="project-tag web">SQL JavaScript</span>
                         </div>
                     </div>
                 </div>
@@ -578,14 +902,13 @@
                 <div class="project-card">
                     <div class="project-header">
                         <span class="project-category">💾 Database Design</span>
-                        <h3>Recruitment Database System</h3>
+                        <h3 class="project-title">HR Recruitment System</h3>
                     </div>
                     <div class="project-body">
-                        <p>ระบบฐานข้อมูลสำหรับการสรรหาและจัดการบุคลากร ออกแบบด้วยการปรับปรุง SQL schemas</p>
-                        <div class="project-tech">
-                            <span class="tech-tag database">SQL</span>
-                            <span class="tech-tag database">Database Design</span>
-                            <span class="tech-tag database">HR Systems</span>
+                        <p class="project-description">ระบบฐานข้อมูลสำหรับการสรรหาและจัดการบุคลากร ออกแบบด้วยการปรับปรุง SQL schemas</p>
+                        <div class="project-tags">
+                            <span class="project-tag database">SQL</span>
+                            <span class="project-tag database">HR Systems</span>
                         </div>
                     </div>
                 </div>
@@ -593,30 +916,28 @@
                 <div class="project-card">
                     <div class="project-header">
                         <span class="project-category">💾 Database Design</span>
-                        <h3>Financial Performance Analysis</h3>
+                        <h3 class="project-title">Financial Performance Analysis</h3>
                     </div>
                     <div class="project-body">
-                        <p>ระบบ Data Warehouse สำหรับวิเคราะห์ผลการดำเนินงานทางการเงิน</p>
-                        <div class="project-tech">
-                            <span class="tech-tag database">SQL</span>
-                            <span class="tech-tag database">Data Warehouse</span>
-                            <span class="tech-tag database">Financial Analysis</span>
+                        <p class="project-description">ระบบ Data Warehouse สำหรับวิเคราะห์ผลการดำเนินงานทางการเงิน</p>
+                        <div class="project-tags">
+                            <span class="project-tag database">SQL</span>
+                            <span class="project-tag database">Data Warehouse</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Geospatial & Dashboard -->
+                <!-- Other Projects -->
                 <div class="project-card">
                     <div class="project-header">
-                        <span class="project-category">📍 Geospatial</span>
-                        <h3>Thailand Drug Dashboard</h3>
+                        <span class="project-category">🎓 Predictive Analytics</span>
+                        <h3 class="project-title">Student Performance Prediction</h3>
                     </div>
                     <div class="project-body">
-                        <p>แดชบอร์ดแสดงข้อมูลการกระทำผิดเกี่ยวกับยาเสพติดในประเทศไทย ด้วย GeoJSON visualization</p>
-                        <div class="project-tech">
-                            <span class="tech-tag analytics">JavaScript</span>
-                            <span class="tech-tag analytics">GeoJSON</span>
-                            <span class="tech-tag analytics">Data Visualization</span>
+                        <p class="project-description">พยากรณ์ผลการเรียนของนักเรียนเพื่อช่วยในการระบุนักเรียนที่ต้องการการช่วยเหลือพิเศษ</p>
+                        <div class="project-tags">
+                            <span class="project-tag analytics">Python</span>
+                            <span class="project-tag analytics">Machine Learning</span>
                         </div>
                     </div>
                 </div>
@@ -624,56 +945,23 @@
                 <div class="project-card">
                     <div class="project-header">
                         <span class="project-category">🚢 Data Analysis</span>
-                        <h3>Titanic Survival Analysis</h3>
+                        <h3 class="project-title">Titanic Survival Analysis</h3>
                     </div>
                     <div class="project-body">
-                        <p>วิเคราะห์ข้อมูลอุบัติเหตุเรือ Titanic เพื่อระบุปัจจัยที่ส่งผลต่ออัตราการรอดชีวิต</p>
-                        <div class="project-tech">
-                            <span class="tech-tag analytics">Python</span>
-                            <span class="tech-tag analytics">Data Analysis</span>
-                            <span class="tech-tag analytics">Data Visualization</span>
+                        <p class="project-description">วิเคราะห์ข้อมูลอุบัติเหตุเรือ Titanic เพื่อระบุปัจจัยที่ส่งผลต่ออัตราการรอดชีวิต</p>
+                        <div class="project-tags">
+                            <span class="project-tag analytics">Python</span>
+                            <span class="project-tag analytics">Data Analysis</span>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
+                </div>
+            </section>
+        </main>
     </div>
 
     <footer>
-        <h3>📧 Get in Touch</h3>
-        
-        <div class="contact-icons">
-            <a href="tel:082-648-3526" class="contact-icon-link" title="Call">
-                <span style="font-size: 24px;">📱</span>
-            </a>
-            <a href="mailto:Chutimon.nun@ku.th" class="contact-icon-link" title="Email">
-                <span style="font-size: 24px;">📧</span>
-            </a>
-            <a href="https://www.linkedin.com/in/chutimon-nunthasena-781006392/" target="_blank" class="contact-icon-link" title="LinkedIn">
-                <span style="font-size: 24px;">💼</span>
-            </a>
-            <a href="https://github.com/chutimonku/chutimonku.github.io" target="_blank" class="contact-icon-link" title="GitHub">
-                <span style="font-size: 24px;">💻</span>
-            </a>
-            <a href="https://line.me/ti/p/YOUR_LINE_ID" target="_blank" class="contact-icon-link" title="Line">
-                <img src="line.png" alt="Line" style="width: 24px; height: 24px;">
-            </a>
-        </div>
-
-        <div class="contact-info">
-            <p>📱 Phone: 082-648-3526</p>
-        </div>
-        <div class="contact-info">
-            <p>📧 Email: <a href="mailto:Chutimon.nun@ku.th">Chutimon.nun@ku.th</a></p>
-        </div>
-        <div class="contact-info">
-            <p>💼 LinkedIn: <a href="https://www.linkedin.com/in/chutimon-nunthasena-781006392/" target="_blank">LinkedIn Profile</a></p>
-        </div>
-        <div class="contact-info">
-            <p>💻 GitHub: <a href="https://github.com/chutimonku/chutimonku.github.io" target="_blank">GitHub Profile</a></p>
-        </div>
-        <hr style="margin: 20px 0; opacity: 0.3;">
-        <p style="margin-top: 20px; opacity: 0.8; font-weight: 300;">© 2026 Professional Portfolio. All rights reserved.</p>
+        <p>© 2026 Chutimon Nunthasena. Handcrafted with <span style="color: #e74c3c;">❤️</span> | <a href="https://github.com/chutimonku" target="_blank">View on GitHub</a></p>
     </footer>
 </body>
 </html>
