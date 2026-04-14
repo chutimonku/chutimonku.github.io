@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Noto Sans Thai", sans-serif;
+        background-color: #f8f8f8;
+        margin: 0;
+        padding: 0;
+        color: #333;
+      }
+
+      h1 {
+        font-size: 2.5em;
+        text-align: center;
+        color: #fffdfd;
+        padding: 20px 0;
+        margin: 0;
+        font-weight: 800;
+      }
+
+      .product-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+        padding: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .product-card {
+        background-color: white;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+      }
+
+      .product-card:hover {
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+        transform: translateY(-5px);
+      }
+
+      .product-image {
+        width: 100%;
+        height: 300px; /* กำหนดความสูงที่ต้องการ */
+        object-fit: cover; /* ทำให้รูปภาพเต็มพื้นที่ โดยไม่เสียสัดส่วน */
+        object-position: center; /* กำหนดให้อยู่ตรงกลางภาพ */
+      }
+
+      .product-info {
+        padding: 15px;
+      }
+
+      .product-name {
+        font-size: 1.3em;
+        margin: 0;
+        font-weight: 500;
+        color: #000000;
+      }
+
+      .product-description {
+        margin: 10px 0;
+        font-size: 0.9em;
+        color: #666;
+        line-height: 1.5;
+      }
+
+      .product-price {
+        font-size: 1.2em;
+        color: #333;
+        font-weight: bold;
+      }
+
+      /* Link style */
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+      .back-button {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        background-color: #4a4a4a; /* พื้นหลังสีเทาเข้ม */
+        color: white; /* สีข้อความขาว */
+        padding: 10px 15px; /* เว้นระยะด้านใน */
+        border: none; /* ไม่มีเส้นขอบ */
+        border-radius: 4px; /* มุมโค้งมน */
+        font-size: 1em; /* ขนาดฟอนต์ */
+        cursor: pointer; /* เปลี่ยนเป็นไอคอนมือเมื่อวางเมาส์ */
+        text-decoration: none; /* ลบเส้นใต้ */
+        transition: background-color 0.3s ease, transform 0.3s ease; /* เพิ่มความสมูทในการเปลี่ยนแปลง */
+      }
+
+      .back-button:hover {
+        background-color: #333; /* เปลี่ยนสีพื้นหลังเมื่อโฮเวอร์ */
+        transform: scale(1.05); /* ขยายเล็กน้อยเมื่อโฮเวอร์ */
+      }
+      .cities {
+        background-color: rgb(27, 27, 27);
+        color: white;
+        margin: 0px 0 20px 0;
+        padding: 10px;
+      }
+      .product-card {
+        position: relative; /* เพื่อให้ไอคอนอยู่บนการ์ดสินค้า */
+        background-color: white;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+      }
+
+      .product-card:hover {
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+        transform: translateY(-5px);
+      }
+
+      .product-card .cart-icon {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        width: 40px; /* ขนาดของไอคอน */
+        height: 40px;
+        display: none; /* ซ่อนไว้ก่อน */
+        cursor: pointer;
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .product-card:hover .cart-icon {
+        display: block; /* แสดงไอคอนเมื่อ hover */
+      }
+
+      .cart-icon img {
+        width: 100%;
+        height: 100%;
+      }
+
+      .cart-icon:hover {
+        transform: scale(1.1); /* ขยายเมื่อ hover บนไอคอน */
+      }
+    </style>
+  </head>
+  <body>
+    <a href="Home.html" class="back-button">&#10094; Go to Home </a>
+
+    <div class="cities">
+      <h1>MY STORE</h1>
+    </div>
+
+    <div class="product-grid">
+      <div class="product-card">
+        <a href="Sunscreen.html">
+          <img
+            src="images/Sunscreen.jpg"
+            alt="Sunscreen"
+            class="product-image"
+          />
+          <div class="product-info">
+            <div class="product-name">ครีมกันแดด</div>
+            <div class="product-description">
+              Cathy Doll Ultra Light Sun Fiuid SPF50/PA++++ กันแดดเนื้อฟลูอิด
+              <br />
+              ขนาด 40ml
+            </div>
+            <div class="product-price">289 ฿</div>
+          </div>
+          <div class="cart-icon">
+            <img src="images/ตระกร้าน้อย.jpg" alt="Cart Icon" />
+          </div>
+        </a>
+      </div>
+
+      <div class="product-card">
+        <a href="Foundation.html">
+          <img
+            src="images/Foundation.jpg"
+            alt="Foundation"
+            class="product-image"
+          />
+          <div class="product-info">
+            <div class="product-name">ครีมรองพื้น</div>
+            <div class="product-description">
+              DAZZLE ME Day by Day Foundation รองพื้น เนื้อลิขวิด <br />
+              ขนาด 25ml
+            </div>
+            <div class="product-price">249 ฿</div>
+          </div>
+          <div class="cart-icon">
+            <img src="images/ตระกร้าน้อย.jpg" alt="Cart Icon" />
+          </div>
+        </a>
+      </div>
+
+      <div class="product-card">
+        <a href="Compact  powder.html">
+          <img
+            src="images/Compact  powder.jpg"
+            alt="Compact  powder"
+            class="product-image"
+          />
+          <div class="product-info">
+            <div class="product-name">แป้งตลับ</div>
+            <div class="product-description">
+              DAZZLE ME Better than Filter Double Kill Two Way Foundation powder
+              <br />
+              ขนาด 9g
+            </div>
+            <div class="product-price">159 ฿</div>
+          </div>
+          <div class="cart-icon">
+            <img src="images/ตระกร้าน้อย.jpg" alt="Cart Icon" />
+          </div>
+        </a>
+      </div>
+
+      <div class="product-card">
+        <a href="Eyeshadow.html">
+          <img
+            src="images/Eyeshadow.jpg"
+            alt="Eye-shadow"
+            class="product-image"
+          />
+          <div class="product-info">
+            <div class="product-name">อายแชโดว์</div>
+            <div class="product-description">
+              Pinkflash Pink Dessert อายแชโดว์ เนื้อฝุ่น <br />
+              ขนาด 12g
+            </div>
+            <div class="product-price">249 ฿</div>
+          </div>
+          <div class="cart-icon">
+            <img src="images/ตระกร้าน้อย.jpg" alt="Cart Icon" />
+          </div>
+        </a>
+      </div>
+
+      <div class="product-card">
+        <a href="Eyeliner.html">
+          <img src="images/Eyeliner.jpg" alt="Eyeliner" class="product-image" />
+          <div class="product-info">
+            <div class="product-name">อายไลน์เนอร์</div>
+            <div class="product-description">
+              DAZZLE ME Hold On Waterproof Eyeliner อายไลน์เนอร์ <br />
+              ขนาด 0.8g
+            </div>
+            <div class="product-price">109 ฿</div>
+          </div>
+          <div class="cart-icon">
+            <img src="images/ตระกร้าน้อย.jpg" alt="Cart Icon" />
+          </div>
+        </a>
+      </div>
+
+      <div class="product-card">
+        <a href="Mascara.html">
+          <img src="images/Mascara.jpg" alt="Mascara" class="product-image" />
+          <div class="product-info">
+            <div class="product-name">มาสคาร่า</div>
+            <div class="product-description">
+              DAZZLE ME Hold Mooly Volume Mascara มาสคาร่า <br />
+              ขนาด 8g
+            </div>
+            <div class="product-price">149 ฿</div>
+          </div>
+          <div class="cart-icon">
+            <img src="images/ตระกร้าน้อย.jpg" alt="Cart Icon" />
+          </div>
+        </a>
+      </div>
+
+      <div class="product-card">
+        <a href="Eyebrow  Powder.html">
+          <img
+            src="images/Eyebrow  Powder.jpg"
+            alt="Eyebrow-pencil"
+            class="product-image"
+          />
+          <div class="product-info">
+            <div class="product-name">ที่เขียนคิ้ว</div>
+            <div class="product-description">
+              Pinkflash 2-in-1 duo effect ที่เขียนคิ้ว เนื้อเจล และเนื้อฝุ่น
+              <br />
+              ขนาด 5g
+            </div>
+            <div class="product-price">119 ฿</div>
+          </div>
+          <div class="cart-icon">
+            <img src="images/ตระกร้าน้อย.jpg" alt="Cart Icon" />
+          </div>
+        </a>
+      </div>
+
+      <div class="product-card">
+        <a href="Blush Stick.html">
+          <img
+            src="images/Blush  stick.jpg"
+            alt="Blush on"
+            class="product-image"
+          />
+          <div class="product-info">
+            <div class="product-name">บลัชสติ๊ก</div>
+            <div class="product-description">
+              Maybe Lucky On-The-Go Blush บลัชสติ๊ก <br />
+              ขนาด 19g
+            </div>
+            <div class="product-price">89 ฿</div>
+          </div>
+          <div class="cart-icon">
+            <img src="images/ตระกร้าน้อย.jpg" alt="Cart Icon" />
+          </div>
+        </a>
+      </div>
+
+      <div class="product-card">
+        <a href="Concealer.html">
+          <img
+            src="images/Concealer.jpg"
+            alt="Concealer"
+            class="product-image"
+          />
+          <div class="product-info">
+            <div class="product-name">คอนซีลเลอร์</div>
+            <div class="product-description">
+              Focallure Concealer คอนซีลเลอร์พาเลท <br />ขนาด 4.3g
+            </div>
+            <div class="product-price">219 ฿</div>
+          </div>
+          <div class="cart-icon">
+            <img src="images/ตระกร้าน้อย.jpg" alt="Cart Icon" />
+          </div>
+        </a>
+      </div>
+
+      <div class="product-card">
+        <a href="Lip gloss tint.html">
+          <img
+            src="images/Lip gloss tint.jpg"
+            alt="Lipstick"
+            class="product-image"
+          />
+          <div class="product-info">
+            <div class="product-name">ลิปกลอสทินท์</div>
+            <div class="product-description">
+              DAZZLE ME Ink-Gloss Lip Tint ลิปกลอสทินท์ <br />
+              ขนาด 2.5g
+            </div>
+            <div class="product-price">89 ฿</div>
+          </div>
+          <div class="cart-icon">
+            <img src="images/ตระกร้าน้อย.jpg" alt="Cart Icon" />
+          </div>
+        </a>
+      </div>
+
+      <div class="product-card">
+        <a href="Highlight&Contour.html">
+          <img
+            src="images/Highlight & Contour.jpg"
+            alt="Highlight&Contour"
+            class="product-image"
+          />
+          <div class="product-info">
+            <div class="product-name">ไฮไลท์ & คอนทัวร์</div>
+            <div class="product-description">
+              Focallure Highlight&Contour Sculpt Makeup Palette ไฮไลท์ &
+              คอนทัวร์ <br />
+              ขนาด 8g
+            </div>
+            <div class="product-price">159 ฿</div>
+          </div>
+          <div class="cart-icon">
+            <img src="images/ตระกร้าน้อย.jpg" alt="Cart Icon" />
+          </div>
+        </a>
+      </div>
+
+      <div class="product-card">
+        <a href="Inliner.html">
+          <img src="images/Inliner.jpg" alt="Inliner" class="product-image" />
+          <div class="product-info">
+            <div class="product-name">อินไลน์เนอร์</div>
+            <div class="product-description">
+              Max Fine Inliner อินไลน์เนอร์ <br />
+              ขนาด 0.12g
+            </div>
+            <div class="product-price">59 ฿</div>
+          </div>
+          <div class="cart-icon">
+            <img src="images/ตระกร้าน้อย.jpg" alt="Cart Icon" />
+          </div>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>

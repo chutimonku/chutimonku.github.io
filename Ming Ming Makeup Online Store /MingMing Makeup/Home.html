@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+
+    <style>
+      body {
+        font-family: "Noto Sans Thai", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f7f7f7;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-weight: 500;
+        color: black;
+      }
+      .top-bar {
+        background-color: #000;
+        /* color: white; */
+        padding: 8px 0;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 50px;
+      }
+      .top-bar a {
+        /* color: white; */
+        margin-right: 20px;
+        text-decoration: none;
+        /* font-size: 1.2em; */
+      }
+
+      .top-bar a img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+        filter: none;
+      }
+      /* Navbar */
+      .navbar {
+        background-color: #fff;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        padding: 10px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        z-index: 999;
+      }
+      .navbar-logo img {
+        height: 70px;
+        margin-left: 10px;
+        border-radius: 40%;
+      }
+      .navbar-menu {
+        display: flex;
+        justify-content: center; /* จัดให้อยู่ตรงกลาง */
+      }
+      .navbar-menu a {
+        margin: 0 20px;
+        font-size: 1.5em;
+        color: #000000;
+        text-decoration: none;
+      }
+
+      .navbar-menu a:hover {
+        color: #545454;
+      }
+      /* Search Bar */
+      .search-bar {
+        display: flex;
+        align-items: center;
+      }
+      .search-input {
+        border: 1.5px solid #333;
+        border-radius: 4px 0 0 4px;
+        padding: 10px;
+        font-size: 1em;
+        width: 150px;
+        transition: width 0.4s ease;
+      }
+      .search-input:focus {
+        outline: none;
+        width: 300px;
+      }
+
+      .search-button {
+        background-color: black;
+        border: none;
+        border-radius: 0 4px 4px 0;
+        padding: 10px 20px;
+        color:rgb(255, 255, 255);
+        cursor: pointer;
+      }
+      .search-button:hover {
+        background-color: #6a6a6a;
+      }
+
+      /* Dropdown Menu */
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #fff;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        min-width: 180px;
+        border-radius: 4px;
+        padding: 10px 0;
+      }
+
+      .dropdown:hover .dropdown-content,
+      .dropdown.active .dropdown-content {
+        display: block;
+      }
+
+      .dropdown-content a {
+        color: #333;
+        padding: 12px 16px;
+        display: block;
+        font-size: 1.1em;
+        text-align: left;
+        transition: background-color 0.2s ease;
+      }
+
+      .dropdown-content a:hover {
+        background-color: #f0f0f0;
+        color: black;
+      }
+
+      /* Add smooth animation */
+      .dropdown-content {
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+
+      .dropdown:hover .dropdown-content {
+        opacity: 1;
+      }
+      /* Container for the category title */
+      .category-title {
+        text-align: center;
+        padding: 10px 0;
+        /* background-color: #f0f0f0; /* เพิ่มสีพื้นหลังบางๆเพื่อทำให้ข้อความเด่นขึ้น */
+        /* border-radius: 4px; เพิ่มความโค้งมนให้กับพื้นหลัง */
+         /* box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2); เพิ่มเงาเพื่อให้ดูมีมิติ  */
+      }
+
+      /* Title styling for "หมวดหมู่" */
+      .category-title h1 {
+        font-size: 7em; /* ขนาดตัวอักษรใหญ่ */
+        color: #000; /* เปลี่ยนเป็นสีดำเพื่อดูดีบนพื้นหลัง */
+        font-family: 'Sacramento', cursive; /* ใช้ฟอนต์ Sacramento */
+        text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.8); /* ขอบดำเพิ่มความชัดเจน */
+        letter-spacing: 5px; /* เพิ่มระยะห่างของตัวอักษรเล็กน้อย */
+        display: inline-block;
+        position: relative;
+        padding-right: 10px; /* ระยะห่างเล็กน้อยจากรูปแปรง */
+      }
+
+      /* Brush icon styling */
+      .brush-icon {
+        width: 80px; /* ขนาดของรูปแปรงเล็ก */
+        height: auto;
+        margin-left: -30px; /* ลดระยะห่างระหว่างรูปแปรงและตัวอักษร */
+        vertical-align: middle; /* จัดให้อยู่กลางข้อความ */
+        transition: transform 0.3s ease-in-out; /* เพิ่มการเปลี่ยนแปลงที่นุ่มนวลเมื่อ hover */
+      }
+
+      /* เพิ่มเอฟเฟกต์เมื่อ hover */
+      .category-title h1:hover .brush-icon {
+        transform: rotate(15deg) scale(1.1); /* หมุนแปรงเล็กน้อยและขยายขนาดเล็กน้อยเมื่อ hover */
+      }
+
+      /* เพิ่มเอฟเฟกต์เมื่อ hover ที่ตัวอักษร */
+      .category-title h1:hover {
+        text-shadow: 6px 6px 8px rgba(0, 0, 0, 0.9); /* เพิ่มเงาขึ้นเมื่อ hover */
+        color: #333; /* เปลี่ยนสีเป็นสีเข้มเล็กน้อยเมื่อ hover */
+      }
+      /* Categories Section */
+      .categories {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 50px;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+
+      .category-item {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+      }
+
+      .category-circle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 120px;
+        height: 120px;
+        background-color: #f1f1f1;
+        border-radius: 50%;
+        box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        transition: transform 0.3s ease;
+      }
+
+      .category-circle img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .category-item:hover .category-circle {
+        transform: scale(1.1);
+      }
+
+      /* Style for image slider */
+      .slider {
+        position: relative;
+        max-width: 80%;
+        margin: 40px auto;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .slides {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+      }
+
+      .slide-item {
+        position: relative;
+        min-width: 150px;
+        max-width: 200px;
+        margin-right: 10px;
+        border-radius: 10px;
+        text-align: center;
+      }
+
+      .splide__slide {
+        border-radius: 10px;
+        text-align: center;
+        padding: 6px;
+      }
+
+      .slides img {
+        width: 80%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+
+      .slide-caption {
+        background-color: black;
+        color: white;
+        padding: 5px 5px;
+        bottom: 0;
+        width: 100%;
+      }
+
+      .splide__slide a {
+        text-decoration: none; /* ลบขีดเส้นใต้ลิงก์ */
+      }
+      a {
+        text-decoration: none; /* ลบขีดเส้นใต้จากทุกลิงก์ */
+      }
+
+      a:hover {
+        text-decoration: none;
+      }
+
+      .prev,
+      .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+
+      .prev {
+        left: 0;
+        border-radius: 3px 0 0 3px;
+      }
+
+      .prev:hover,
+      .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+
+      @media (max-width: 768px) {
+        .w3-bar {
+          padding: 10px 20px;
+        }
+
+        .w3-bar a {
+          font-size: 1.1em;
+        }
+
+        .w3-right {
+          flex-direction: column;
+          gap: 15px;
+        }
+
+        .dropdown-content {
+          top: 40px;
+        }
+
+        .splide__list {
+          flex-wrap: wrap;
+        }
+      }
+
+      /* Footer Styles */
+      .footer {
+        background-color: #fafafa;
+        color: #0c0c0c;
+        padding: 40px 0;
+      }
+
+      .footer-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      .footer-column {
+        flex: 1 1 250px;
+        margin: 20px 0;
+      }
+
+      .footer-column h3 {
+        font-size: 1.5em;
+        margin-bottom: 15px;
+      }
+
+      .footer-column p {
+        font-size: 1em;
+        line-height: 1.5;
+      }
+
+      .footer-column ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      .footer-column ul li {
+        margin-bottom: 10px;
+        font-size: 1em;
+      }
+
+      .footer-column ul li a {
+        color: rgb(6, 5, 5);
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+
+      .footer-column ul li a:hover {
+        color: #888888;
+      }
+
+      .social-icons {
+        display: flex;
+        gap: 15px;
+      }
+
+      .social-icons a img {
+        width: 30px;
+        transition: transform 0.3s ease;
+      }
+
+      .social-icons a:hover img {
+        transform: scale(1.1);
+      }
+
+      .footer-column form {
+        display: flex;
+        gap: 10px;
+        margin-top: 10px;
+      }
+
+      .footer-column input[type="email"] {
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        flex: 1;
+        font-size: 1em;
+      }
+
+      .footer-column button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        background-color: white;
+        color: #0a0a0a;
+        cursor: pointer;
+        font-size: 1em;
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+
+      .footer-column button:hover {
+        background-color: #c2c2c2;
+        color: white;
+      }
+
+      .footer-bottom {
+        text-align: center;
+        margin-top: 20px;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        padding: 20px;
+      }
+      .footer-bottom p {
+        margin: 0;
+        font-size: 1em;
+      }
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      .map-container {
+        width: 100%;
+        height: 100px;
+        margin-top: 20px;
+        border-radius: 4px;
+        overflow: hidden;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+      .slider-container {
+        max-width: 800px;
+        margin: 50px auto;
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+      }
+
+      .slider-wrapper {
+        display: flex;
+        width: 100%;
+        transition: transform 0.5s ease-in-out;
+      }
+
+      .slider-image {
+        min-width: 100%;
+        height: 400px;
+        object-fit: cover;
+      }
+      /* Left and Right buttons */
+      .prev,
+      .next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+        z-index: 10;
+      }
+
+      .prev {
+        left: 10px;
+      }
+
+      .next {
+        right: 10px;
+      }
+
+      .prev:hover,
+      .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+      /* จัดสไตล์ให้กับ container ที่บรรจุวงกลม */
+      .categories {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 50px;
+        gap: 20px;
+        flex-wrap: wrap; /* เพื่อให้สามารถเรียงได้ดีเมื่อหน้าจอเล็กลง */
+      }
+
+      .category-item {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+      }
+
+      /* สไตล์วงกลม */
+      .category-circle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 120px;
+        height: 120px;
+        background-color: #f1f1f1;
+        border-radius: 50%;
+        box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        transition: transform 0.3s ease;
+      }
+
+      .category-circle img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* ปรับรูปภาพให้พอดี */
+      }
+
+      /* สไตล์ข้อความใต้รูปวงกลม */
+      .category-label {
+        margin-top: 10px;
+        font-size: 1.2em;
+        color: #333;
+        font-weight: bold;
+      }
+
+      /* เปลี่ยนขนาดเมื่อ hover */
+      .category-item:hover .category-circle {
+        transform: scale(1.1);
+      }
+      
+    </style>
+  </head>
+
+  <body>
+    <!-- Top Bar (Social Media Icons) -->
+  <div class="top-bar">
+    <a href="https://www.facebook.com/" target="_blank">
+      <img src="images/F1.jpg" alt="Facebook">
+    </a>
+    <a href="https://line.me/ti/p/lBLTtLVsla" target="_blank">
+      <img src="images/L.jpg" alt="Line">
+    </a>
+    <a href="https://www.instagram.com/" target="_blank">
+      <img src="images/I.jpg" alt="Instagram">
+    </a>
+  </div>
+  <!-- Main Navbar -->
+    <div class="navbar">
+      <!-- Logo Section -->
+      <div class="navbar-logo">
+        <a href="Home.html">
+          <img src="images/Logo1.jpg" alt="MingMing Makeup" />
+          <span style="
+          font-size: 3em; 
+          font-weight: bold; 
+          font-family: 'Sacramento', cursive; 
+          background-image: linear-gradient(50deg, #000000, #585858, #e4e4e4); 
+          color: transparent; 
+          background-clip: text; 
+          -webkit-background-clip: text; 
+          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+          letter-spacing: 2px;
+          padding: 10px;
+          display: inline-block;">
+            <i>Mingming MakeUp</i>
+          </span>
+        </a>
+      </div>
+    
+        <!-- Navbar Menu -->
+      <div class="navbar-menu">
+        <div class="dropdown" id="categoryDropdown">
+          <a href="javascript:void(0)" class="w3-bar-item w3-button">Products</a>
+          <div class="dropdown-content">
+            <a href="Sunscreen.html">Sunscreen</a>
+            <a href="Foundation.html">Foundation</a>
+            <a href="Compact  powder.html">Compact powder</a>
+            <a href="Eyeshadow.html">Eyeshadow</a>
+            <a href="Eyeliner.html">Eyeliner</a>
+            <a href="Mascara.html">Mascara</a>
+            <a href="Eyebrow  Powder.html">Eyebrow Powder</a>
+            <a href="Blush Stick.html">Blush Stick</a>
+            <a href="Concealer.html">Concealer</a>
+            <a href="Lip gloss tint.html">Lip gloss tint</a>
+            <a href="Highlight&Contour.html">Highlight&Contour</a>
+            <a href="Inliner.html">Inliner</a>
+          </div>
+        </div>
+        <a href="Product.html">My Store</a>
+        <a href="Contact.html">Contact Us</a>
+      </div>
+          <!-- Search Bar -->
+      <div class="search-bar">
+        <form action="/search" method="GET">
+          <input type="text" placeholder="Search..." name="query" class="search-input">
+          <button type="submit" class="search-button">Search</button>
+        </form>
+      </div>
+    </div>
+
+  <div id="splide-1" class="splide">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide" style="padding-top: 0px;">
+            <a href="Product.html">
+              <video width="100%" controls autoplay muted loop>
+                <source src="images/คลิปโลโก้.mp4" type="video/mp4" /></video>
+            </a>
+          </li>
+    
+          <li class="splide__slide"style="padding-top: 0px;">
+            <a href="Product.html">
+              <video width="100%" controls autoplay muted loop>
+                <source src="images/Welcome (2).mp4" type="video/mp4" /></video>
+            </a>
+          </li>
+    
+          <li class="splide__slide"style="padding-top: 0px;">
+            <a href="Product.html">
+              <img src="images/สินค้าทั้งหมด.jpg" alt="Lip gloss tint"width="100%"/>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="category-title">
+    <h1>Category <img src="images/แปรง.png" alt="Brush Icon" class="brush-icon"></h1>
+  </div>
+  
+
+  <div class="categories">
+    <!-- วงกลมแต่ละอันที่ลิงก์ไปยังหมวดหมู่ -->
+    <div class="category-item">
+        <a href="skin.html">
+            <div class="category-circle">
+                <img src="images/งานผิว.jpg" alt="งานผิว">
+            </div>
+            <p class="category-label">งานผิว</p>
+        </a>
+    </div>
+
+    <div class="category-item">
+        <a href="eye.html">
+            <div class="category-circle">
+                <img src="images/งานตา.jpg" alt="งานตา">
+            </div>
+            <p class="category-label">งานตา</p>
+        </a>
+    </div>
+
+    <div class="category-item">
+        <a href="mouth.html">
+            <div class="category-circle">
+                <img src="images/ปาก.jpg" alt="งานปาก">
+            </div>
+            <p class="category-label">งานปาก</p>
+        </a>
+    </div>
+
+    <div class="category-item">
+        <a href="cheek.html">
+            <div class="category-circle">
+                <img src="images/งานแก้ม.jpg" alt="งานแก้ม">
+            </div>
+            <p class="category-label">งานแก้ม</p>
+        </a>
+    </div>
+
+    <div class="category-item">
+        <a href="other.html">
+            <div class="category-circle">
+                <img src="images/อื่นๆ.jpg" alt="อื่นๆ">
+            </div>
+            <p class="category-label">อื่น ๆ</p>
+        </a>
+    </div>
+</div>
+
+  <div style="padding: 10px 6px 10px 6px; text-align: center;">
+    <img src="images/Lip.jpg" alt="Lip gloss tint" style="width: 80%; display: block; margin: 0 auto;"/>
+  </div>
+
+    <div id="splide" class="splide">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <a href="Sunscreen.html">
+              <img src="images/Sunscreen.jpg" alt="Sunscreen" width="100%" />
+              <div class="slide-caption">Sunscreen</div>
+            </a>
+          </li>
+
+          <li class="splide__slide">
+            <a href="Foundation.html">
+              <img src="images/Foundation.jpg" alt="Foundation" width="100%" />
+              <div class="slide-caption">Foundation</div>
+            </a>
+          </li>
+
+          <li class="splide__slide">
+            <a href="Compact  powder.html">
+              <img src="images/Compact  powder.jpg" alt="Compact powder" width="100%"/>
+              <div class="slide-caption">Compact powder</div>
+            </a>
+          </li>
+
+          <li class="splide__slide">
+            <a href="Eyeshadow.html">
+              <img src="images/Eyeshadow.jpg" alt="Eye shadow" width="100%" />
+              <div class="slide-caption">Eye shadow</div>
+            </a>
+          </li>
+          <li class="splide__slide">
+            <a href="Eyeliner.html">
+              <img src="images/Eyeliner.jpg" alt="Eyeliner" width="100%" />
+              <div class="slide-caption">Eyeliner</div>
+            </a>
+          </li>
+          <li class="splide__slide">
+            <a href="Mascara.html">
+              <img src="images/Mascara.jpg" alt="Mascara" width="100%" />
+              <div class="slide-caption">Mascara</div>
+            </a>
+          </li>
+          <li class="splide__slide">
+            <a href="Eyebrow  Powder.html">
+              <img src="images/Eyebrow  Powder.jpg" alt="Eyebrow  Powder"width="100%"/>
+              <div class="slide-caption">Eyebrow Powder</div>
+            </a>
+          </li>
+
+          <li class="splide__slide">
+            <a href="Blush Stick.html">
+              <img src="images/Blush  stick.jpg" alt="Blush Stick" width="100%" />
+              <div class="slide-caption">Blush Stick</div>
+            </a>
+          </li>
+
+          <li class="splide__slide">
+            <a href="Concealer.html">
+              <img src="images/Concealer.jpg" alt="Concealer" width="100%" />
+              <div class="slide-caption">Concealer</div>
+            </a>
+          </li>
+
+          <li class="splide__slide">
+            <a href="Lip gloss tint.html">
+              <img src="images/Lip gloss tint.jpg" alt="Lip gloss tint" width="100%" />
+              <div class="slide-caption">Lip gloss tint</div>
+            </a>
+          </li>
+
+          <li class="splide__slide">
+            <a href="Highlight&Contour.html">
+              <img src="images/Highlight & Contour.jpg" alt="Highlight & Contour"width="100%"/>
+              <div class="slide-caption">Highlight & Contour</div>
+            </a>
+          </li>
+
+          <li class="splide__slide">
+            <a href="Inliner.html">
+              <img src="images/Inliner.jpg" alt="Inliner" width="100%" />
+              <div class="slide-caption">Inliner</div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div style="padding: 10px 6px 10px 6px; text-align: center;">
+      <img src="images/ตา.jpg" alt="Lip gloss tint" style="width: 80%; display: block; margin: 0 auto;"/>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+
+        new Splide("#splide-1", {
+          type: "loop", // Infinite loop sliding
+          perPage: 1, // Show three slides at a time
+          autoplay: true, // Enable autoplay
+          interval: 5000, // Delay between slides (in milliseconds)
+          pagination: true, // Show pagination dots
+          arrows: true, // Show navigation arrows
+          speed: 1500, // Transition speed (in milliseconds)
+        }).mount();
+
+        new Splide("#splide", {
+          type: "loop", // Infinite loop sliding
+          perPage: 4, // Show three slides at a time
+          autoplay: true, // Enable autoplay
+          interval: 3000, // Delay between slides (in milliseconds)
+          pagination: true, // Show pagination dots
+          arrows: true, // Show navigation arrows
+          speed: 1200, // Transition speed (in milliseconds)
+        }).mount();
+      });
+
+      // Add class to body when scrolling
+      window.onscroll = function () {
+        if (document.documentElement.scrollTop > 50) {
+          document.body.classList.add("scroll-active");
+        } else {
+          document.body.classList.remove("scroll-active");
+        }
+      };
+
+    // ฟังก์ชันสำหรับเปิดปิด dropdown
+function toggleDropdown() {
+  var dropdown = document.getElementById("categoryDropdown");
+  dropdown.classList.toggle("active");
+}
+
+// ปิด dropdown เมื่อคลิกนอกบริเวณ
+window.onclick = function(event) {
+  if (!event.target.matches('.w3-bar-item')) {
+    var dropdowns = document.getElementsByClassName("dropdown");
+    for (var i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('active')) {
+        openDropdown.classList.remove('active');
+      }
+    }
+  }
+}
+      
+    </script>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-column">
+          <h3>MingMing Makeup</h3>
+          <p>Contact channels for <br />ordering products!</p>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/chutimol.nunthasena/"
+              ><img src="images/F1.jpg" alt="Facebook"
+            /></a>
+            <a href="https://www.instagram.com/x_ing.ig/?hl=th"
+              ><img src="images/I.jpg" alt="Instagram"
+            /></a>
+            <a href="https://line.me/ti/p/lBLTtLVsla"
+              ><img src="images/L.jpg" alt="Line"
+            /></a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="Home.html">Products</a></li>
+            <li><a href="Product.html">My Store</a></li>
+            <li><a href="Contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Contact</h3>
+          <ul>
+            <li>Phone: 082-648-3526</li>
+            <li>Email: Chutimon.nun@ku.th</li>
+            <li>Location: 59 หมู่ 1 ตำบลเชียงเครือ อำเภอเมืองสกลนคร สกลนคร 47000</li>
+          </ul>
+          <div class="map-container"style="max-width: 500px; margin: 0 auto;">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3809.4956993326077!2d104.11034927475954!3d17.291616183579347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313c8e2437c0a1d9%3A0x498c64aea0a7f267!2z4Lih4Lir4Liy4Lin4Li04LiX4Lii4Liy4Lil4Lix4Lii4LmA4LiB4Lip4LiV4Lij4Lio4Liy4Liq4LiV4Lij4LmMIOC4p-C4tOC4l-C4ouC4suC5gOC4guC4leC5gOC4ieC4peC4tOC4oeC4nuC4o-C4sOC5gOC4geC4teC4ouC4o-C4leC4tCDguIjguLHguIfguKvguKfguLHguJTguKrguIHguKXguJnguITguKM!5e0!3m2!1sth!2sth!4v1728457593443!5m2!1sth!2sth" 
+                    width="100%" 
+                    height="300" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+             </iframe>
+          </div>
+        </div>        
+
+        <div class="footer-column">
+          <h3>Newsletter</h3>
+          <p>Subscribe to get special offers and updates</p>
+          <form>
+            <input type="email" placeholder="Your Email" required />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 MingMing Makeup. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

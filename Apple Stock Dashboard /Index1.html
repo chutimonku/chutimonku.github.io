@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>APPLE STOCK</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- Plotly -->
+  <script src="https://cdn.plot.ly/plotly-2.35.2.min.js" defer></script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  
+  <style>
+    :root{
+      /* ===== Theme & Scale ===== */
+      --bg:#0b1220;
+      --bg-soft:#0d1527;
+      --card:#0f1624;
+      --card-border:#1b2535;
+      --fg:#e6edf3;
+      --muted:#94a3b8;
+      --grid:#1e293b;
+      --up:#16c784; 
+      --dn:#ea3943;
+      --accent:#38bdf8;
+      --accent-2:#38bdf8;
+      --radius:18px;
+      --radius-lg:22px;
+      --space-1:.5rem; 
+      --space-2:.75rem; 
+      --space-3:1rem; 
+      --space-4:1.25rem;
+
+      --select-bg:#0c1322; 
+      --select-fg:#e6edf3; 
+      --select-border:#263046;
+      --select-hover:#141c2e; 
+      --select-focus-ring:rgba(56,189,248,.22);
+
+      --font-sans: 'Inter', -apple-system, system-ui, Segoe UI, Roboto, Arial, sans-serif;
+      --font-heading: 'Inter', -apple-system, system-ui, Segoe UI, Roboto, Arial, sans-serif;
+
+      --h-main: clamp(420px, 56vh, 640px);
+      --h-sub : clamp(260px, 30vh, 360px);
+    }
+
+    html,body{height:100%}
+    body{
+      background:var(--bg);
+      color:var(--fg);
+      line-height:1.55;
+      font-family:var(--font-sans);
+      font-variant-numeric:tabular-nums lining-nums;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      text-rendering:optimizeLegibility;
+      position:relative;
+    }
+
+    body::before{
+      content:"";
+      position:fixed; inset:-20%;
+      background:
+        radial-gradient(650px 420px at 82% 12%, rgba(56,189,248,.10), transparent 60%),
+        radial-gradient(520px 380px at 10% 88%, rgba(167,139,250,.10), transparent 60%);
+      pointer-events:none; z-index:-1;
+    }
+
+    .container{ max-width:min(96vw, 1480px); }
+    @media (min-width:1600px){ .container{ max-width:1560px; } }
+
+    h1,h2,h3{ font-family:var(--font-heading); letter-spacing:.1px; }
+
+    /* ===== Cards ===== */
+    .card{
+      background:var(--card);
+      border:1px solid var(--card-border);
+      border-radius:var(--radius);
+      color:var(--fg);
+      box-shadow:0 1px 0 rgba(2,6,23,.3), 0 10px 24px rgba(2,6,23,.35);
+      backdrop-filter:saturate(115%) blur(1.5px);
+      transition:transform .15s ease, box-shadow .2s ease;
+    }
+    .card:hover{ transform: translateY(-2px); box-shadow:0 10px 30px rgba(2,6,23,.45); }
+    .card-header{
+      border-bottom:1px solid var(--card-border);
+      background:linear-gradient(180deg, rgba(255,255,255,.04), transparent);
+      color:#cdd6e1; font-weight:600; letter-spacing:.2px;
+      padding:.7rem .95rem;
+      border-top-left-radius:var(--radius);
+      border-top-right-radius:var(--radius);
+    }
+
+    .panel{
+      background:var(--bg-soft);
+      border:1px solid var(--card-border);
+      border-radius:var(--radius-lg);
+      padding:var(--space-3);
+    }
+
+    /* ===== Chips ===== */
+    .chip{
+      background:rgba(255,255,255,.04);
+      color:#bac5d4; border:1px solid rgba(255,255,255,.10);
+      border-radius:9999px; padding:.55rem 1rem; transition:.15s;
+      display:inline-flex; align-items:center; font-weight:600; letter-spacing:.2px;
+    }
+    .chip:hover{ background:rgba(255,255,255,.10); color:var(--fg); border-color:rgba(255,255,255,.18); }
+    .chip.active{ background:linear-gradient(90deg,var(--accent),transparent); color:#0b1220; border-color:transparent; }
+    .chip:focus-visible{ outline:2px solid var(--accent); outline-offset:2px; }
+    #grp-retro{ justify-content:center; width:100%; gap:.55rem; }
+
+    /* ===== KPIs ===== */
+    .kpi .card{ text-align:center; padding:.75rem 1rem; }
+    .kpi .value{
+      display:flex; align-items:baseline; justify-content:center; gap:.6rem;
+      font-weight:700; font-size:1.08rem; flex-wrap:nowrap; min-width:0; word-break:keep-all;
+    }
+    .kpi .label-strong{ font-weight:600; color:#d6dee8; margin-right:.35rem; flex:0 0 auto; }
+    .kpi .value span{ white-space:nowrap; }
+    .value.pos{ color:var(--up); } .value.neg{ color:var(--dn); }
+    #k-vol{ white-space:nowrap; display:inline-block; max-width:100%; overflow:visible; text-overflow:clip; }
+
+    /* ===== Inputs (dark) ===== */
+    input[type="date"], .form-control{
+      background:var(--select-bg); border:1px solid var(--select-border);
+      border-radius:.75rem; padding:.7rem 1rem; color:var(--select-fg); font-size:.95rem; width:100%;
+      box-shadow:inset 0 1px 2px rgba(0,0,0,.25);
+    }
+    input[type="date"]:focus, .form-control:focus{
+      border-color:var(--accent); box-shadow:0 0 0 .2rem var(--select-focus-ring); outline:0; background:var(--select-bg);
+    }
+    input[type="date"]::-webkit-calendar-picker-indicator{ filter:invert(1) opacity(.85); cursor:pointer; }
+
+    .form-select{
+      background-color:var(--select-bg)!important; color:var(--select-fg)!important;
+      border:1px solid var(--select-border)!important; border-radius:.75rem;
+      padding:.7rem 2.3rem .7rem .9rem; box-shadow:inset 0 1px 2px rgba(0,0,0,.25);
+      -webkit-appearance:none; appearance:none; background-repeat:no-repeat;
+      background-position:right .7rem center; background-size:1.1rem; cursor:pointer;
+      background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'><path d='M5 7l5 6 5-6' stroke='white' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round' opacity='.9'/></svg>");
+    }
+    .form-select:hover{ background-color:var(--select-hover)!important; }
+    .form-select:focus{ outline:0; border-color:var(--accent)!important; box-shadow:0 0 0 .2rem var(--select-focus-ring)!important; }
+
+    .status-line{ font-size:.9rem; color:var(--muted); white-space:nowrap; }
+
+    /* ===== Plotly tooltip ===== */
+    .js-plotly-plot .hoverlayer .hovertext{ backdrop-filter:saturate(120%) blur(4px); border-radius:10px; }
+
+    /* ===== Footer layout ===== */
+    .footer-row{
+      display:flex; gap:1rem; flex-wrap:wrap; align-items:center; justify-content:space-between;
+      margin-top:.5rem;
+    }
+    .data-source a{ color:var(--accent); text-decoration:none; }
+    .data-source a:hover{ text-decoration:underline; }
+
+    /* ===== Loading / Error states ===== */
+    #loading{ display:flex; align-items:center; gap:.6rem; color:#cbd5e1; }
+    #error-box{ display:none; }
+  </style>
+</head>
+<body>
+
+  <div class="container mb-4 py-3"> 
+    <!-- ===== Header ===== -->
+    <header class="row align-items-center justify-content-between g-3 mb-2">
+      <div class="col-12 col-lg-7 d-flex align-items-center gap-3">
+        <img src="./images/apple.png" alt="Apple Logo" style="height:48px;width:40px;object-fit:contain" />
+        <div>
+          <h1 class="h4 fw-bold m-0">Apple Stock Dashboard</h1>
+          <div class="status-line">
+            Anchor: <span id="lbl-anchor" class="text-light">-</span>
+            <span class="mx-1">•</span>
+            Window: <span id="lbl-window" class="text-light">-</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-5 text-lg-end text-center">
+        <span id="mode-pill" class="badge rounded-pill"
+          style="background:linear-gradient(90deg,var(--accent),transparent);border:1px solid var(--card-border);padding:.55rem .8rem;font-weight:700;">
+          Trading days
+        </span>
+      </div>
+    </header>
+
+    <!-- ===== Controls ===== -->
+    <section class="panel mb-3">
+      <div class="row g-3">
+
+        <!-- Date -->
+        <div class="col-12 col-lg-3">
+          <div class="card h-100">
+            <div class="card-header">Date</div>
+            <div class="card-body">
+              <input id="inp-date" type="date" class="form-control"/>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mode -->
+        <div class="col-12 col-lg-3">
+          <div class="card h-100">
+            <div class="card-header">Mode</div>
+            <div class="card-body">
+              <select id="sel-mode" class="form-select">
+                <option value="trading" selected>Trading days</option>
+                <option value="calendar">Calendar days</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- Retrospect -->
+        <div class="col-12 col-lg-6">
+          <div class="card h-100">
+            <div class="card-header d-flex align-items-center justify-content-between">
+              <span>Retrospect</span>
+              <!-- Loading status -->
+              <span id="loading" class="small">
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                Loading data...
+              </span>
+
+            </div>
+
+            <div class="card-body">
+              <div id="grp-retro" class="d-flex flex-wrap">
+                <button class="chip btn-sm" data-retro="1w">1w</button>
+                <button class="chip btn-sm" data-retro="1m">1m</button>
+                <button class="chip btn-sm" data-retro="3m">3m</button>
+                <button class="chip btn-sm" data-retro="6m">6m</button>
+                <button class="chip btn-sm" data-retro="1y">1y</button>
+                <button class="chip btn-sm" data-retro="5y">5y</button>
+                <button class="chip btn-sm" data-retro="10y">10y</button>
+                <button class="chip btn-sm" data-retro="all">All</button>
+              </div>
+
+              <!-- Error box -->
+              <div id="error-box" class="alert alert-danger mt-3 mb-0 py-2 px-3 small">
+                Failed to load data. Please refresh and try again.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== KPIs ===== -->
+    <section class="row g-3 kpi">
+      <div class="col-6 col-md-4 col-lg-2"><div class="card p-1"><div class="value"><span class="label-strong">Open :</span><span id="k-open">-</span></div></div></div>
+      <div class="col-6 col-md-4 col-lg-2"><div class="card p-1"><div class="value"><span class="label-strong">High :</span><span id="k-high">-</span></div></div></div>
+      <div class="col-6 col-md-4 col-lg-2"><div class="card p-1"><div class="value"><span class="label-strong">Low :</span><span id="k-low">-</span></div></div></div>
+      <div class="col-6 col-md-4 col-lg-2"><div class="card p-1"><div class="value"><span class="label-strong">Close :</span><span id="k-close">-</span></div></div></div>
+      <div class="col-6 col-md-4 col-lg-2"><div class="card p-1"><div class="value"><span class="label-strong">Adj Close :</span><span id="k-adj">-</span></div></div></div>
+      <div class="col-6 col-md-4 col-lg-2"><div class="card p-1"><div class="value"><span class="label-strong">Volume :</span><span id="k-vol">-</span></div></div></div>
+    </section>
+
+    <!-- ===== Charts ===== -->
+    <section class="row g-4 mt-1"> 
+      <div class="col-12">
+        <div class="card p-1"><div id="chart-main" style="height:var(--h-main);"></div></div>
+      </div>
+      <div class="col-12 col-lg-6">
+        <div class="card p-1"><div id="chart-area" style="height:var(--h-sub);"></div></div>
+      </div>
+      <div class="col-12 col-lg-6">
+        <div class="card p-1"><div id="chart-delta" style="height:var(--h-sub);"></div></div>
+      </div>
+    </section>
+
+    <!-- ===== Footer ===== -->
+    <footer class="footer-row pt-1">
+      <div id="caption" class="text-secondary small">Anchor: - • Window: -</div>
+      <div class="data-source small">
+        Source:
+        <a href="https://www.kaggle.com/datasets/umerhaddii/apple-stock-data-2025" target="_blank" rel="noopener">
+          Kaggle - Apple Stock Data 2025
+        </a>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Bootstrap Bundle  -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+
+  <!-- Main script -->
+  <script defer>
+    // ---------- Utilities ----------
+    const $id = (x) => document.getElementById(x);
+    const fmt2 = (x) => (x == null || Number.isNaN(+x) ? '-' : Number(x).toFixed(2));
+    const fmtInt = (x) => (x == null || Number.isNaN(+x) ? '-' : Number(x).toLocaleString());
+    const fmtPct = (x) => (x >= 0 ? '+' : '') + (x * 100).toFixed(2) + '%';
+
+    const toDate = (s) => new Date(s + 'T00:00:00Z');
+    const ymd = (d) => d.toISOString().slice(0,10);
+    const fmtDMY = (s) => { if (!s || s.length < 10) return s || '-'; const [y,m,d] = s.split('-'); return `${d}-${m}-${y}`; };
+    function addDays(d,n){ const dt=new Date(d); dt.setUTCDate(dt.getUTCDate()+n); return dt; }
+    function addMonths(d,n){
+      const dt=new Date(d);
+      const y=dt.getUTCFullYear(), m=dt.getUTCMonth();
+      const nm=m+n, ny=y+Math.floor(nm/12), nmon=((nm%12)+12)%12;
+      const last=new Date(Date.UTC(ny,nmon+1,0)).getUTCDate();
+      dt.setUTCFullYear(ny,nmon,Math.min(dt.getUTCDate(),last));
+      return dt;
+    }
+    function addYears(d,n){ const dt=new Date(d); dt.setUTCFullYear(dt.getUTCFullYear()+n); return dt; }
+
+    const cssVar = (name, fallback) => (getComputedStyle(document.documentElement).getPropertyValue(name).trim() || fallback);
+    function fitKpiVolume(){
+      const el = $id('k-vol'); if(!el) return;
+      const box = el.closest('.value'); if(!box) return;
+      el.style.fontSize = '';
+      const minPx = 12;
+      let fs = parseFloat(getComputedStyle(el).fontSize) || 16, guard = 0;
+      while(el.scrollWidth > box.clientWidth && fs > minPx && guard < 24){
+        fs -= 1; el.style.fontSize = fs + 'px'; guard++;
+      }
+    }
+    window.addEventListener('resize', ()=> setTimeout(fitKpiVolume,120));
+
+    // ---------- NYSE calendar ----------
+    const isWeekend = (d)=>{ const wd=d.getUTCDay(); return wd===0 || wd===6; };
+    function nthWeekdayOfMonth(year, monthIndex, weekday, n){
+      const first=new Date(Date.UTC(year,monthIndex,1));
+      const add=((weekday - first.getUTCDay())+7)%7;
+      const day=1+add + 7*(n-1);
+      return new Date(Date.UTC(year,monthIndex,day));
+    }
+
+    function lastWeekdayOfMonth(year, monthIndex, weekday){
+      const lastDay=new Date(Date.UTC(year,monthIndex+1,0));
+      const diff=(lastDay.getUTCDay()-weekday+7)%7;
+      return new Date(Date.UTC(year,monthIndex,lastDay.getUTCDate()-diff));
+    }
+
+    function goodFriday(year){
+      const a=year%19, b=Math.floor(year/100), c=year%100, d=Math.floor(b/4), e=b%4, f=Math.floor((b+8)/25),
+            g=Math.floor((b-f+1)/3), h=(19*a+b-d-g+15)%30, i=Math.floor(c/4), k=c%4,
+            l=(32+2*e+2*i-h-k)%7, m=Math.floor((a+11*h+22*l)/451),
+            month=Math.floor((h + l - 7*m + 114)/31), day=((h + l - 7*m + 114)%31)+1;
+      const easter = new Date(Date.UTC(year, month-1, day));
+      easter.setUTCDate(easter.getUTCDate()-2);
+      return easter;
+    }
+
+    function observed(dateUTC){
+      const wd = dateUTC.getUTCDay();
+      const copy = new Date(dateUTC);
+      if (wd===6){ copy.setUTCDate(copy.getUTCDate()-1); }
+      if (wd===0){ copy.setUTCDate(copy.getUTCDate()+1); }
+      return copy;
+    }
+
+    function nyseHolidaysForYear(year){
+      const out = new Set();
+      const ymd_ = (d)=>d.toISOString().slice(0,10);
+      out.add(ymd_(observed(new Date(Date.UTC(year,0,1)))));         // New Year’s
+      out.add(ymd_(nthWeekdayOfMonth(year,0,1,3)));                  // MLK
+      out.add(ymd_(nthWeekdayOfMonth(year,1,1,3)));                  // Presidents’
+      out.add(ymd_(goodFriday(year)));                               // Good Friday
+      out.add(ymd_(lastWeekdayOfMonth(year,4,1)));                   // Memorial
+      if (year>=2021) out.add(ymd_(observed(new Date(Date.UTC(year,5,19))))); // Juneteenth
+      out.add(ymd_(observed(new Date(Date.UTC(year,6,4)))));         // Independence
+      out.add(ymd_(nthWeekdayOfMonth(year,8,1,1)));                  // Labor
+      out.add(ymd_(nthWeekdayOfMonth(year,10,4,4)));                 // Thanksgiving
+      out.add(ymd_(observed(new Date(Date.UTC(year,11,25)))));       // Christmas
+      return out;
+    }
+
+    function isNYSEHolidayISO(iso){
+      const d = toDate(iso); const yr = d.getUTCFullYear();
+      if (!window._NYSE_CACHE) window._NYSE_CACHE = {};
+      if (!window._NYSE_CACHE[yr]) window._NYSE_CACHE[yr] = nyseHolidaysForYear(yr);
+      if (!window._NYSE_CACHE[yr-1]) window._NYSE_CACHE[yr-1] = nyseHolidaysForYear(yr-1);
+      return window._NYSE_CACHE[yr].has(iso) || window._NYSE_CACHE[yr-1].has(iso);
+    }
+
+    function isTradingDayISO(iso){
+      const d = toDate(iso);
+      if (isWeekend(d)) return false;
+      if (isNYSEHolidayISO(iso)) return false;
+      return true;
+    }
+
+    function holidaysBetween(startISO, endISO){
+      const a = toDate(startISO), b = toDate(endISO);
+      const out = [];
+      for (let d=new Date(a); d<=b; d.setUTCDate(d.getUTCDate()+1)){
+        const s = ymd(d);
+        if (!isWeekend(d) && isNYSEHolidayISO(s)) out.push(s);
+      }
+      return out;
+    }
+
+    function snapToPrevTrading(iso){
+      if (isTradingDayISO(iso)) return iso;
+      let d = toDate(iso), guard=0;
+      while (guard < 4000){
+        d.setUTCDate(d.getUTCDate()-1);
+        const s = ymd(d);
+        if (isTradingDayISO(s)) return s;
+        guard++;
+      }
+      return iso;
+    }
+
+    // ---------- Plotly base ----------
+    (function(){
+      const css = getComputedStyle(document.documentElement);
+      const FONT_STACK = css.getPropertyValue('--font-sans').trim() || "system-ui, Segoe UI, Roboto, Arial, sans-serif";
+      window.PLOTLY_BASE = {
+        paper_bgcolor: css.getPropertyValue('--bg').trim(),
+        plot_bgcolor : css.getPropertyValue('--bg').trim(),
+        font: { family: FONT_STACK, size: 12, color: css.getPropertyValue('--fg').trim() },
+        xaxis:{ gridcolor: css.getPropertyValue('--grid').trim(), zeroline:false },
+        yaxis:{ gridcolor: css.getPropertyValue('--grid').trim(), zeroline:false },
+        hovermode:'x unified'
+      };
+    })();
+
+    // ---------- State & config ----------
+    const state = { all:[], allDates:[], chosenDate:null, anchor:null, retro:'all', mode:'trading', win:[] };
+    const MAX_PRICE = 280;
+    const Y_DTICK  = 20;
+    const TRADING_LOOKBACK = { '1w':5, '1m':21, '3m':63, '6m':126, '1y':252, '5y':1260, '10y':2520 };
+
+    // ---------- Data load ----------
+    async function loadAll(){
+      showLoading(true); showError(false);
+      try{
+        const res = await fetch('get_stock.php?mode=series&order=asc', {
+        });
+        if (res.status === 304) {
+        }
+        const json = await res.json();
+
+        if (!json || json.ok === false || !Array.isArray(json.data) || json.data.length === 0) {
+          console.error('API error:', json);
+          showError(true); state.all = [];
+          return;
+        }
+
+        const raw = json.data.map(r => ({
+          date:r.date, open:+r.open, high:+r.high, low:+r.low, close:+r.close,
+          volume:+r.volume, adj_close:(r.adj_close !== undefined ? +r.adj_close : null)
+        })).sort((a,b)=> a.date.localeCompare(b.date));
+
+        state.all = raw; state.allDates = raw.map(r=>r.date);
+
+        // ตั้งค่า date picker ให้ครอบคลุมช่วงข้อมูล 
+        const inp = $id('inp-date');
+        inp.min = raw[0].date; inp.max = raw.at(-1).date;
+        state.chosenDate = inp.max; inp.value = state.chosenDate;
+
+      }catch(e){
+        console.error(e);
+        showError(true); state.all=[];
+      } finally{
+        showLoading(false);
+      }
+    }
+
+    // ---------- Windowing ----------
+    function upperBound(arr, target){ let l=0,r=arr.length; while(l<r){ const m=(l+r)>>1; if(arr[m] <= target) l=m+1; else r=m; } return l; }
+    function lowerBound(arr, target){ let l=0,r=arr.length; while(l<r){ const m=(l+r)>>1; if(arr[m] < target) l=m+1; else r=m; } return l; }
+    function findAnchor(chosen){ const idx = upperBound(state.allDates, chosen) - 1; return idx >= 0 ? state.allDates[idx] : null; }
+
+    function calcStartCalendar(anchorISO, retro){
+      if (retro==='all') return toDate(state.all[0].date);
+      const a = toDate(anchorISO);
+      if (retro.endsWith('w')) {
+        const w = parseInt(retro, 10) || 1;
+        return addDays(a, -(7*w - 1));  // รวม anchor
+      }
+      if (retro.endsWith('m')) return addMonths(a, -parseInt(retro, 10));
+      if (retro.endsWith('y')) return addYears(a,  -parseInt(retro, 10));
+      return addMonths(a, -3);
+    }
+
+    function sliceTradingByCount(anchorISO, count){
+      const onlyTrading = state.all.filter(r => isTradingDayISO(r.date));
+      const idx = onlyTrading.findIndex(r => r.date===anchorISO);
+      if (idx<0) return [];
+      const start = Math.max(0, idx - (count-1));
+      return onlyTrading.slice(start, idx+1); // รวม anchor
+    }
+
+    function sliceCalendarByRange(startDate, anchorDate){
+      const start = ymd(startDate), end = anchorDate;
+      const sIdx = lowerBound(state.allDates, start);
+      const eIdx = upperBound(state.allDates, end) - 1;
+      if (sIdx < 0 || eIdx < 0 || sIdx > eIdx) return [];
+      return state.all.slice(sIdx, eIdx + 1);
+    }
+
+    // ---------- Resample & helpers ----------
+    function isoWeekKey(d){
+      const date=new Date(Date.UTC(d.getUTCFullYear(),d.getUTCMonth(),d.getUTCDate()));
+      const dayNum=(date.getUTCDay()||7); date.setUTCDate(date.getUTCDate()+4-dayNum);
+      const yearStart=new Date(Date.UTC(date.getUTCFullYear(),0,1));
+      const weekNo=Math.ceil((((date-yearStart)/86400000)+1)/7);
+      return `${date.getUTCFullYear()}-W${String(weekNo).padStart(2,'0')}`;
+    }
+
+    const ymKey = (d)=>`${d.getUTCFullYear()}-${String(d.getUTCMonth()+1).padStart(2,'0')}`;
+    function resampleWeekly(rows){
+      const map=new Map();
+      rows.forEach(r=>{
+        const k=isoWeekKey(toDate(r.date));
+        if(!map.has(k)) map.set(k,{open:r.open,high:r.high,low:r.low,close:r.close,volume:r.volume,date:r.date});
+        const g=map.get(k);
+        g.high=Math.max(g.high,r.high); g.low=Math.min(g.low,r.low);
+        g.close=r.close; g.volume=(g.volume||0)+(r.volume||0);
+        if(r.date<g.date) g.date=r.date;
+      });
+      const out=[]; map.forEach(v=>out.push(v)); out.sort((a,b)=>a.date.localeCompare(b.date)); return out;
+    }
+
+    function resampleMonthly(rows){
+      const map=new Map();
+      rows.forEach(r=>{
+        const k=ymKey(toDate(r.date));
+        if(!map.has(k)) map.set(k,{open:r.open,high:r.high,low:r.low,close:r.close,volume:r.volume,date:r.date});
+        const g=map.get(k);
+        g.high=Math.max(g.high,r.high); g.low=Math.min(g.low,r.low);
+        g.close=r.close; g.volume=(g.volume||0)+(r.volume||0);
+        if(r.date<g.date) g.date=r.date;
+      });
+      const out=[]; map.forEach(v=>out.push(v)); out.sort((a,b)=>a.date.localeCompare(b.date)); return out;
+    }
+
+    function fullDateRangeISO(startISO, endISO){
+      const a = toDate(startISO), b = toDate(endISO);
+      const out = [];
+      for (let d=new Date(a); d<=b; d.setUTCDate(d.getUTCDate()+1)) out.push(ymd(d));
+      return out;
+    }
+
+    function buildCalendarLineSeries(winRows){
+      if (!winRows.length) return { x:[], y:[] };
+      const startISO = winRows[0].date, endISO = winRows.at(-1).date;
+      const allDays = fullDateRangeISO(startISO, endISO);
+      const map = new Map(winRows.map(r => [r.date, r.close]));
+      const y = []; let last = null;
+      for (const d of allDays){ if (map.has(d)) last = map.get(d); y.push(last); }
+      const firstReal = winRows.find(r => r.close != null)?.close ?? null;
+      if (firstReal != null){ for (let i=0;i<y.length && y[i]==null;i++) y[i]=firstReal; }
+      return { x: allDays, y };
+    }
+
+    // ---------- Plot helpers ----------
+    function getUIRev(){ return `${state.mode}|${state.retro}|${state.anchor}|${MAX_PRICE}`; }
+    const PLOTLY_CONFIG = { responsive:true, displaylogo:false, modeBarButtonsToRemove:['select','lasso2d'] };
+    function plotlyBase(extra = {}){
+      return { ...(window.PLOTLY_BASE||{}), uirevision:getUIRev(), hovermode:'x unified',
+        hoverlabel:{ namelength:-1 }, legend:{ orientation:'h', y:1.02, yanchor:'bottom', x:0, xanchor:'left', bgcolor:'transparent' }, ...extra };
+    }
+
+    function renderPlot(divId, data, layout, config = PLOTLY_CONFIG){
+      const el = $id(divId);
+      if (el && el.data) return Plotly.react(divId, data, layout, config);
+      return Plotly.newPlot(divId, data, layout, config);
+    }
+
+    function setYRange(divId, min, max){
+      return Plotly.relayout(divId, {
+        uirevision: getUIRev(),
+        'yaxis.autorange': false, 'yaxis.range': [min, max],
+        'yaxis.tickmode': 'linear','yaxis.tick0': 0,'yaxis.dtick': Y_DTICK,
+        'yaxis.title.standoff': 18,'yaxis.ticklabelposition':'outside','yaxis.ticklen':6,'yaxis.tickpadding':8
+      });
+    }
+
+    function yAxisLayout(gridColor, min, max){
+      return { anchor:'x', gridcolor:gridColor, title:{ text:'Price', standoff:18 },
+        tickformat:',.2f', zeroline:false, fixedrange:true, autorange:false, range:[min,max],
+        tickmode:'linear', tick0:0, dtick:Y_DTICK, ticklabelposition:'outside', ticklen:6, tickpadding:8, automargin:true };
+    }
+
+    // ---------- Charts ----------
+    function chooseResolution(winRows){
+      if (!winRows.length) return 'daily';
+      const d0 = toDate(winRows[0].date), dn = toDate(winRows.at(-1).date);
+      const days = (dn - d0) / 86400000;
+      if (days <= 380) return 'daily';
+      if (days <= 365*5) return 'weekly';
+      return 'monthly';
+    }
+
+    async function drawMain(){
+      const rawWin = state.win;
+      if (!rawWin.length){ Plotly.purge('chart-main'); return; }
+      const baseRows = (state.mode==='trading') ? rawWin.filter(r => isTradingDayISO(r.date)) : rawWin;
+
+      let rows = baseRows;
+      const reso = chooseResolution(baseRows);
+      if (reso==='weekly') rows = resampleWeekly(baseRows);
+      if (reso==='monthly') rows = resampleMonthly(baseRows);
+
+      const x = rows.map(r=>r.date);
+      const up   = cssVar('--up','#16a34a');
+      const dn   = cssVar('--dn','#ef4444');
+      const grid = cssVar('--grid','#1f2937');
+
+      const candle = {
+        x, open:rows.map(r=>r.open), high:rows.map(r=>r.high), low:rows.map(r=>r.low), close:rows.map(r=>r.close),
+        type:'candlestick', name:'Candlestick',
+        increasing:{ line:{ color: up, width:1.2 } },
+        decreasing:{ line:{ color: dn, width:1.2 } },
+        whiskerwidth:0.4,
+        hovertemplate:'<b>%{x|%d-%m-%Y}</b><br>Open: %{open:.2f}<br>High: %{high:.2f}<br>Low: %{low:.2f}<br>Close: %{close:.2f}<extra></extra>',
+        yaxis:'y'
+      };
+
+      const vUp = rows.map(r => r.close >= r.open ? r.volume : 0);
+      const vDn = rows.map(r => r.close  <  r.open ? r.volume : 0);
+      const volUp = { x, y:vUp, type:'bar', name:'Volume (Up)',   yaxis:'y2', marker:{ color: cssVar('--up', '#16c784'), opacity:0.28 }, hovertemplate:'Volume: %{y:,}<extra></extra>' };
+      const volDn = { x, y:vDn, type:'bar', name:'Volume (Down)', yaxis:'y2', marker:{ color: cssVar('--dn', '#ea3943'), opacity:0.28 }, hovertemplate:'Volume: %{y:,}<extra></extra>' };
+
+      const xaxisCommon = {
+        anchor:'y', side:'bottom', gridcolor:grid, title:{ text:'Date', standoff:18 },
+        tickformat:'%d-%m-%Y', ticklabelposition:'outside', ticklen:6, tickpadding:8, automargin:true,
+        rangeslider:{ visible:false }, showspikes:true, spikemode:'across', spikethickness:1, spikecolor:'#64748b', spikedash:'dot'
+      };
+
+      let xaxis = { ...xaxisCommon };
+      if (state.mode==='trading'){
+        const holidays = holidaysBetween(baseRows[0].date, baseRows.at(-1).date);
+        xaxis.rangebreaks = [{ pattern:'day of week', bounds:['sat','mon'] }, ...(holidays.length ? [{ values: holidays }] : [])];
+      }
+
+      const highs  = rows.map(r => r.high).filter(Number.isFinite);
+      const lows   = rows.map(r => r.low ).filter(Number.isFinite);
+      const minLow = lows.length  ? Math.min(...lows) : 0;
+      const span   = highs.length ? (Math.max(...highs) - minLow) : 0;
+      const yMin   = Math.max(0, minLow - span * 0.04);
+
+      await renderPlot('chart-main', [candle, volUp, volDn], plotlyBase({
+        margin:{ l:68, r:44, t:14, b:64 },
+        yaxis :{ ...yAxisLayout(grid, yMin, MAX_PRICE), domain:[0.25, 1.00] },
+        yaxis2:{ anchor:'x',domain:[0.00, 0.20], gridcolor:grid, title:{ text:'Volume', standoff:14 },
+                tickformat:'~s', rangemode:'tozero', fixedrange:true, automargin:true },
+        xaxis, bargap:0.85, bargroupgap:0.9
+      }));
+      await setYRange('chart-main', yMin, MAX_PRICE);
+    }
+
+    async function drawAreaMA(){
+      const rows = (state.mode==='trading') ? state.win.filter(r => isTradingDayISO(r.date)) : state.win;
+      if (!rows.length){ Plotly.purge('chart-area'); return; }
+
+      const grid = cssVar('--grid','#1f2937');
+      let x, cl;
+      if (state.mode==='calendar'){ const ser = buildCalendarLineSeries(rows); x = ser.x; cl = ser.y; }
+      else { x = rows.map(r=>r.date); cl = rows.map(r=>r.close); }
+
+      const vals   = cl.filter(Number.isFinite);
+      const minC   = vals.length ? Math.min(...vals) : 0;
+      const spanC  = vals.length ? (Math.max(...vals) - minC) : 0;
+      const yMinA  = Math.max(0, minC - spanC * 0.04);
+
+      function rollingMA(arr,k){
+        const out=[],q=[]; let sum=0;
+        for(let i=0;i<arr.length;i++){
+          const v=+arr[i];
+          if(Number.isFinite(v)){ sum+=v; q.push(v);} else { q.push(0); }
+          if(q.length>k) sum-=q.shift();
+          out.push(q.length? (sum/q.length):null);
+        }
+        return out;
+      }
+      const ma7 = rollingMA(cl, 7);
+
+      const area = { x, y:cl, type:'scatter', mode:'lines', name:'Close', fill:'tozeroy', line:{ width:1.6 },
+        hovertemplate:'<b>%{x|%d-%m-%Y}</b><br>Close: %{y:.2f}<extra></extra>' };
+      const line = { x, y:ma7, type:'scatter', mode:'lines', name:'MA7', line:{ width:1.4 },
+        hovertemplate:'<b>%{x|%d-%m-%Y}</b><br>MA (7d): %{y:.2f}<extra></extra>' };
+
+      const xaxis=(state.mode==='trading')
+        ? { gridcolor:grid, title:{ text:'Date' }, tickformat:'%d-%m-%Y', showspikes:true, spikemode:'across',
+            spikedash:'dot', rangebreaks:[{ pattern:'day of week', bounds:['sat','mon'] }] }
+        : { gridcolor:grid, title:{ text:'Date' }, tickformat:'%d-%m-%Y', showspikes:true, spikemode:'across', spikedash:'dot' };
+
+      await renderPlot('chart-area', [area, line], plotlyBase({
+        margin:{ l:64, r:36, t:10, b:44 },
+        xaxis,
+        yaxis:{ ...yAxisLayout(grid, yMinA, MAX_PRICE) }
+      }));
+      await setYRange('chart-area', yMinA, MAX_PRICE);
+    }
+
+    async function drawDelta(){
+      const rows = (state.mode==='trading') ? state.win.filter(r => isTradingDayISO(r.date)) : state.win;
+      if (!rows.length){ Plotly.purge('chart-delta'); return; }
+
+      const grid  = cssVar('--grid','#1f2937');
+      let x, cl;
+      if (state.mode==='calendar'){ const ser = buildCalendarLineSeries(rows); x=ser.x; cl=ser.y; }
+      else { x = rows.map(r=>r.date); cl = rows.map(r=>r.close); }
+
+      const v2    = cl.filter(Number.isFinite);
+      const minC2 = v2.length ? Math.min(...v2) : 0;
+      const span2 = v2.length ? (Math.max(...v2) - minC2) : 0;
+      const yMinD = Math.max(0, minC2 - span2 * 0.04);
+
+      const sIdx = cl.findIndex(v => v != null);
+      const eIdx = cl.slice().reverse().findIndex(v => v != null);
+      const eIdxAbs = eIdx>=0 ? (cl.length-1-eIdx) : -1;
+
+      const lineClose = { x, y:cl, type:'scatter', mode:'lines+markers', name:'Close',
+        marker:{ size:4 }, line:{ width:1.4 },
+        hovertemplate:'<b>%{x|%d-%m-%Y}</b><br>Close: %{y:.2f}<extra></extra>' };
+
+      const annotations = [];
+      if (sIdx >= 0 && eIdxAbs >= 0){
+        const sClose = +cl[sIdx], eClose = +cl[eIdxAbs];
+        const delta = eClose - sClose;
+        const ret   = sClose ? (eClose/sClose - 1) : 0;
+        annotations.push(
+          { x:x[sIdx], y:cl[sIdx], text:'Start', showarrow:true, arrowhead:2, ax:16, ay:-20 },
+          { x:x[eIdxAbs], y:cl[eIdxAbs], text:`End • Δ ${fmt2(delta)} (${fmtPct(ret)})`, showarrow:true, arrowhead:2, ax:16, ay:-20 }
+        );
+      }
+
+      const xaxis=(state.mode==='trading')
+        ? { gridcolor:grid, title:{ text:'Date' }, tickformat:'%d-%m-%Y', showspikes:true, spikemode:'across', spikethickness:1, spikedash:'dot',
+            rangebreaks:[{ pattern:'day of week', bounds:['sat','mon'] }] }
+        : { gridcolor:grid, title:{ text:'Date' }, tickformat:'%d-%m-%Y', showspikes:true, spikemode:'across', spikethickness:1, spikedash:'dot' };
+
+      await renderPlot('chart-delta', [lineClose], plotlyBase({
+        margin:{ l:64, r:36, t:10, b:44 },
+        xaxis,
+        yaxis:{ ...yAxisLayout(grid, yMinD, MAX_PRICE) },
+        annotations
+      }));
+      await setYRange('chart-delta', yMinD, MAX_PRICE);
+    }
+
+    // ---------- KPIs / Caption ----------
+    function updateKPIs(){
+      const rows = (state.mode==='trading') ? state.win.filter(r => isTradingDayISO(r.date)) : state.win;
+      if (!rows.length) return resetKPIs();
+      const s = rows[0], e = rows.at(-1);
+      const diff = e.close - s.close;
+      $id('k-open').textContent  = fmt2(e.open);
+      $id('k-high').textContent  = fmt2(e.high);
+      $id('k-low').textContent   = fmt2(e.low);
+      $id('k-close').textContent = fmt2(e.close);
+      $id('k-adj').textContent   = fmt2(e.adj_close);
+      $id('k-vol').textContent   = fmtInt(e.volume);
+      const kClose = $id('k-close'); kClose.classList.remove('pos','neg');
+      if (diff > 0) kClose.classList.add('pos'); if (diff < 0) kClose.classList.add('neg');
+      fitKpiVolume();
+    }
+
+    function resetKPIs(){
+      ['k-open','k-high','k-low','k-close','k-adj','k-vol'].forEach(id=>{
+        const el=$id(id); if (el){ el.textContent='-'; el.classList.remove('pos','neg'); el.removeAttribute('title'); }
+      });
+    }
+
+    function updateCaption(){
+      const n = state.win.length;
+      const from = n ? fmtDMY(state.win[0].date) : '-';
+      const to   = n ? fmtDMY(state.win.at(-1).date) : '-';
+      const anchorTxt = state.anchor ? fmtDMY(state.anchor) : '-';
+      const modeTxt = state.mode === 'trading' ? 'Trading days' : 'Calendar days';
+      const winTxt = `From ${from} To ${to} • ${modeTxt}`;
+      $id('lbl-anchor').textContent = anchorTxt;
+      $id('lbl-window').textContent = winTxt;
+      $id('caption') && ($id('caption').textContent = `Anchor: ${anchorTxt} • Window: ${winTxt}`);
+      const pill = $id('mode-pill');
+      pill.textContent = modeTxt;
+      pill.style.background =
+        (state.mode==='trading')
+          ? 'linear-gradient(90deg,var(--accent),transparent)'
+          : 'linear-gradient(90deg,var(--accent-2),transparent)';
+    }
+
+    // ---------- Flow ----------
+    function recomputeAndRender(){
+      if (!state.all.length){ renderAll(); return; }
+
+      const rawAnchor = findAnchor(state.chosenDate);
+      if (!rawAnchor){ state.win=[]; renderAll(); return; }
+      state.anchor = (state.mode==='trading') ? snapToPrevTrading(rawAnchor) : rawAnchor;
+
+      if (state.mode==='trading'){
+        if (state.retro==='all'){
+          const onlyTrading = state.all.filter(r => isTradingDayISO(r.date));
+          const idx = onlyTrading.findIndex(r => r.date===state.anchor);
+          state.win = (idx>=0) ? onlyTrading.slice(0, idx+1) : [];
+        } else {
+          const count = TRADING_LOOKBACK[state.retro] ?? 21;
+          state.win = sliceTradingByCount(state.anchor, count);
+        }
+      } else {
+        const start = (state.retro==='all') ? toDate(state.all[0].date) : calcStartCalendar(state.anchor, state.retro);
+        state.win = sliceCalendarByRange(start, state.anchor);
+      }
+
+      if (!state.win.length){ renderAll(); return; }
+
+      updateKPIs();
+      drawMain();
+      drawAreaMA();
+      drawDelta();
+      updateCaption();
+    }
+
+    function renderAll(){
+      resetKPIs();
+      Plotly.purge('chart-main'); Plotly.purge('chart-area'); Plotly.purge('chart-delta');
+      updateCaption();
+    }
+
+    // ---------- Loading / Error UI ----------
+    function showLoading(on){ const el = $id('loading'); if (el) el.style.display = on ? 'inline-flex' : 'none'; }
+    function showError(on){ const el = $id('error-box'); if (el) el.style.display = on ? 'block' : 'none'; }
+
+    // ---------- Init & Events ----------
+    async function init(){
+      document.querySelectorAll('#grp-retro .chip').forEach(b => b.classList.toggle('active', b.dataset.retro === state.retro));
+
+      await loadAll();          
+      if (!state.all.length){ renderAll(); return; }
+
+      $id('sel-mode').value = state.mode;
+      recomputeAndRender();      // วาดกราฟครั้งแรก
+    }
+
+    // เปลี่ยนวัน
+    $id('inp-date').addEventListener('change', (e)=>{ state.chosenDate = e.target.value; recomputeAndRender(); });
+    
+    // เปลี่ยน retrospect
+    document.querySelectorAll('#grp-retro .chip').forEach(btn=>{
+      btn.addEventListener('click', ()=>{
+        state.retro = btn.dataset.retro;
+        document.querySelectorAll('#grp-retro .chip').forEach(b => b.classList.toggle('active', b===btn));
+        recomputeAndRender();
+      });
+    });
+    
+    // เปลี่ยนโหมด
+    $id('sel-mode').addEventListener('change', (e)=>{ state.mode = e.target.value; recomputeAndRender(); });
+    init();
+  </script>
+</body>
+</html>

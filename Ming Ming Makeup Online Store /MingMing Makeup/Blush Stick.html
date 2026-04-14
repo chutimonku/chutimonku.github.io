@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+      rel="stylesheet"
+    />
+    <title>บลัชสติ๊ก</title>
+    <style>
+      body {
+        font-family: "Noto Sans Thai", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f7f7f7;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 130vh;
+        box-sizing: border-box;
+      }
+      h1,
+      h2,
+      h3 {
+        color: #333;
+        margin: 10px 0;
+      }
+      .back-button {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        background-color: #4a4a4a;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 4px;
+        font-size: 1em;
+        cursor: pointer;
+        text-decoration: none;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+      }
+      .back-button:hover {
+        background-color: #333;
+        transform: scale(1.05);
+      }
+      .container {
+        display: flex;
+        width: 80%;
+        max-width: 1200px;
+        margin-top: 60px;
+        border-radius: 4px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      }
+      .product-slider {
+        position: relative;
+        width: 350px;
+        height: 375px;
+        overflow: hidden;
+        margin-right: 20px;
+      }
+      .product-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        transition: opacity 0.5s ease, transform 0.5s ease;
+      }
+      .product-info {
+        flex: 1;
+        padding: 20px;
+        background-color: #ffffff;
+        border-radius: 4px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+      }
+      h3 {
+        margin: 10px 0;
+      }
+      p {
+        color: #444;
+        text-align: left;
+        margin: 10px 0;
+        line-height: 1.6;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      .divider {
+        height: 1px;
+        width: 100%;
+        background-color: #e0e0e0;
+        margin: 20px 0;
+      }
+      .prev,
+      .next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: #4a4a4a;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        color: white;
+        font-size: 18px;
+        z-index: 10;
+        transition: background-color 0.3s ease;
+      }
+      .prev:hover,
+      .next:hover {
+        background-color: #333;
+      }
+      .prev {
+        left: 3px;
+      }
+      .next {
+        right: 3px;
+      }
+      .product-title {
+        font-size: 1.2em;
+        color: #333;
+        text-align: center;
+        margin-top: 10px;
+      }
+      .product-price {
+        font-size: 1.5em;
+        color: #ff0019;
+        text-align: center;
+        margin-top: 5px;
+      }
+      .product-price-info {
+        font-size: 16px;
+        width: 318px;
+        height: auto;
+        padding: 16px;
+        background-color: white; 
+        text-align: center; /* จัดให้ข้อความอยู่ตรงกลาง */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* เงาเบาๆ */
+      }
+
+      .product-title {
+        font-size: 18px;
+        font-weight: bold;
+        color: #000000; /* ข้อความสีดำ */
+        margin-bottom: 10px;
+      }
+
+      .product-price {
+        font-size: 16px;
+        color: #000000; /* ข้อความราคาสีเทา */
+        margin-bottom: 15px;
+      }
+
+      .buy-now-btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #000; /* สีพื้นหลังปุ่มดำ */
+        color: #fff; /* ข้อความปุ่มสีขาว */
+        text-transform: uppercase;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 14px;
+        transition: background-color 0.3s ease;
+      }
+
+      .buy-now-btn:hover {
+        background-color: #202020; /* เปลี่ยนสีปุ่มเมื่อ hover */
+      }
+
+      .cart-icon-container {
+        margin-top: 10px;
+      }
+
+      .cart-icon {
+        width: 40px; /* ขนาดไอคอน */
+        height: 40px;
+        filter: grayscale(100%); /* ทำให้เป็นโทนขาวดำ */
+        cursor: pointer;
+        transition: transform 0.3s ease;
+      }
+
+      .cart-icon:hover {
+        transform: scale(1.1); /* ขยายเล็กน้อยเมื่อ hover */
+      }
+      .product-options {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+      }
+
+      .color-options,
+      .shade-options {
+        display: flex;
+        align-items: center;
+        gap: 15px; /* ระยะห่างระหว่างตัวเลือก */
+      }
+
+      /* ซ่อน radio button ปกติ */
+      input[type="radio"] {
+        display: none;
+      }
+
+      /* วงกลมตัวเลือกสี */
+      .color-circle {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        cursor: pointer;
+        border: 2px solid transparent;
+        transition: border 0.3s ease;
+      }
+
+      /* แสดงวงกลมที่ถูกเลือก */
+      input[type="radio"]:checked + .color-circle {
+        border: 2px solid #333;
+      }
+
+      /* วงกลมตัวเลือกเบอร์ */
+      .shade-circle {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #e4e4e4;
+        text-align: center;
+        line-height: 40px;
+        cursor: pointer;
+        border: 2px solid transparent;
+        transition: border 0.3s ease;
+        font-weight: bold;
+      }
+
+      /* แสดงวงกลมเบอร์ที่ถูกเลือก */
+      input[type="radio"]:checked + .shade-circle {
+        border: 2px solid #333;
+      }
+      .star-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        margin-top: 10px;
+      }
+
+      .star {
+        width: 20px;
+        height: 20px;
+        background-color: #e0e0e0;
+        clip-path: polygon(
+          50% 0%,
+          61% 35%,
+          98% 35%,
+          68% 57%,
+          79% 91%,
+          50% 70%,
+          21% 91%,
+          32% 57%,
+          2% 35%,
+          39% 35%
+          );
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      .star.active {
+        background-color: yellow; /* สีเหลืองสำหรับดาวที่ถูกเลือก */
+      }
+
+      .star:hover,
+      .star:hover ~ .star {
+        background-color: #e0e0e0; /* ดาวที่ไม่ได้เลือกจะกลับไปเป็นสีเทาเมื่อ hover */
+      }
+
+      .star-container .star:hover ~ .star {
+        background-color: #e0e0e0;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <a href="Home.html" class="back-button">&#10094; Go to Home </a>
+
+    <div class="container">
+      <div>
+        <div class="product-slider" id="productSlider">
+          <img
+            src="images/Blush  stick.jpg"
+            alt="Product Image 1"
+            class="product-image"
+            style="opacity: 1; transform: scale(1)"
+          />
+          <img
+            src="images/Blush  stick1.jpg"
+            alt="Product Image 2"
+            class="product-image"
+            style="opacity: 0; transform: scale(1.05)"
+          />
+          <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+          <button class="next" onclick="changeImage(1)">&#10095;</button>
+        </div>
+        <div class="product-price-info">
+          <p class="product-title"> บลัชสติ๊ก</p>
+          <p class="product-price">ราคา: 89 บาท</p>
+          <div class="product-options">
+            <div class="color-options">
+              <!-- ตัวเลือกสีแบบวงกลม -->
+              <input type="radio" id="Red" name="color" value="Red" />
+              <label
+                for="Red"
+                class="color-circle"
+                style="background-color: rgb(255, 36, 36)"
+              ></label>
+    
+              <input type="radio" id="Pink" name="color" value="Pink" />
+              <label
+                for="Pink"
+                class="color-circle"
+                style="background-color: rgb(252, 126, 218)"
+              ></label>
+            </div>
+          </div>
+        </br>
+          <button class="buy-now-btn">Buy Now</button>
+          <div class="cart-icon-container">
+            <img src="images/ตระกร้าน้อย.jpg" alt="Cart" class="cart-icon" />
+          </div>
+        </div>
+        <div class="product">
+          <div class="star-container" data-rating="0">
+            <h4>รีวิว : </h4>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-info">
+        <h1>Blush stick</h1>
+        <div class="divider"></div>
+        <p>Maybe Lucky Blush Stick</p>
+        <div class="divider"></div>
+        <h3>ข้อมูลสินค้า</h3>
+        <p>
+            บลัชสติ๊ก เนื้อครีม ให้ความชุ่มชื้น กันน้ำ ติดทนนาน
+        </p>
+        <ul>
+          <li>• กันน้ำ </li>
+          <li>• ติดทนยาวนาน 12 ชั่วโมง</li>
+          <li>• เบาสบาย ไม่หนักแก้ม</li>
+          <li>• ชุ่มชื้น </li>
+        </ul>
+
+        <div class="divider"></div>
+        <h4>คุณสมบัติเด่น:</h4>
+        <ul>
+          <li><strong>เนื้อสัมผัส:</strong> ครีมบลัชออนสติ๊กมีเนื้อสัมผัสที่ละเอียดอ่อน เรียบเนียน บางเบาโปร่งสบาย ทำให้แก้มของคุณมีสีที่นุ่มนวลและชุ่มชื้นตามธรรมชาติ</li>
+          <li><strong>ติดทนนาน:</strong> บลัชออนมีสีสันสดใส เม็ดสีแน่น สามารถติดทนนานบนใบหน้าของคุณได้ตลอดทั้งวัน</li>
+          <li><strong>เหมาะสำหรับทุกโทนสีผิว:</strong> บลัชออนครีมนี้เหมาะสำหรับทุกสีผิว ให้สีที่เป็นธรรมชาติและมีเสน่ห์ และยังช่วยเพิ่มความชุ่มชื้นให้ผิว </li>
+          <li><strong>ใช้ง่าย:</strong> แท่งบลัชออนแบบพกพาช่วยให้คุณทาและแต่งหน้าได้อย่างสะดวก ไม่ต้องใช้เครื่องมือแต่งหน้าใด ๆ เพียงแค่ใช้ปลายนิ้วเกลี่ยสีให้เข้ากัน</li>
+        </ul>
+        
+        <div class="divider"></div>
+        <h3>วิธีใช้</h3>
+        <p>เปิดฝา นำมาปาดที่แก้ม ใช้มือ หรือฟองน้ำตบๆ เบลนให้ทั่วหน้าแก้ม ตามความต้องการ</p>        
+    </div>
+
+    <script>
+      const slider = document.getElementById("productSlider");
+      const images = slider.getElementsByClassName("product-image");
+      let currentIndex = 0;
+
+      function changeImage(direction) {
+        images[currentIndex].style.opacity = "0"; // Hide current image
+        images[currentIndex].style.transform = "scale(1)"; // Reset scale
+        currentIndex =
+          (currentIndex + direction + images.length) % images.length; // Move to the next image
+        images[currentIndex].style.opacity = "1"; // Show next image
+        images[currentIndex].style.transform = "scale(1.05)"; // Scale up for effect
+      }
+      document.querySelectorAll('.star-container').forEach((container, idx) => {
+  const stars = container.querySelectorAll('.star');
+
+  // ใช้ชื่อ key ที่แตกต่างกันสำหรับแต่ละหน้า โดยใช้ชื่อสินค้า หรือ URL ของหน้า
+  const pageIdentifier = window.location.pathname; // ใช้ path ของหน้าเป็นตัวระบุ
+  const storedRating = localStorage.getItem(`rating-${pageIdentifier}-${idx}`);
+
+  // ถ้ามีการเก็บค่าไว้ใน localStorage ก็แสดงค่าที่ถูกเก็บ
+  if (storedRating) {
+    const rating = parseInt(storedRating);
+    for (let i = 0; i < rating; i++) {
+      stars[i].classList.add('active');
+    }
+  }
+
+  stars.forEach((star, index) => {
+    star.addEventListener('click', () => {
+      // ลบคลาส active จากดาวทั้งหมดก่อน
+      stars.forEach(s => s.classList.remove('active'));
+
+      // เพิ่มคลาส active ตามจำนวนดาวที่ถูกเลือก
+      for (let i = 0; i <= index; i++) {
+        stars[i].classList.add('active');
+      }
+
+      // บันทึกคะแนนลง localStorage โดยใช้ key ที่แตกต่างกันในแต่ละหน้า
+      localStorage.setItem(`rating-${pageIdentifier}-${idx}`, index + 1);
+
+      // จัดการกับการบันทึกคะแนน
+      container.setAttribute('data-rating', index + 1);
+    });
+  });
+});
+    </script>
+  </body>
+</html>

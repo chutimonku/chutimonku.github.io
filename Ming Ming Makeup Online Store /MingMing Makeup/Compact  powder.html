@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+      rel="stylesheet"
+    />
+    <title>แป้งตลับ</title>
+    <style>
+      body {
+        font-family: "Noto Sans Thai", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f7f7f7;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 130vh;
+        box-sizing: border-box;
+      }
+      h1,
+      h2,
+      h3 {
+        color: #333;
+        margin: 10px 0;
+      }
+      .back-button {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        background-color: #4a4a4a;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 4px;
+        font-size: 1em;
+        cursor: pointer;
+        text-decoration: none;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+      }
+      .back-button:hover {
+        background-color: #333;
+        transform: scale(1.05);
+      }
+      .container {
+        display: flex;
+        width: 80%;
+        max-width: 1200px;
+        margin-top: 60px;
+        border-radius: 4px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      }
+      .product-slider {
+        position: relative;
+        width: 350px;
+        height: 375px;
+        overflow: hidden;
+        margin-right: 20px;
+      }
+      .product-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        transition: opacity 0.5s ease, transform 0.5s ease;
+      }
+      .product-info {
+        flex: 1;
+        padding: 20px;
+        background-color: #ffffff;
+        border-radius: 4px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+      }
+      h3 {
+        margin: 10px 0;
+      }
+      p {
+        color: #444;
+        text-align: left;
+        margin: 10px 0;
+        line-height: 1.6;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      .divider {
+        height: 1px;
+        width: 100%;
+        background-color: #e0e0e0;
+        margin: 20px 0;
+      }
+      .prev,
+      .next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: #4a4a4a;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        color: white;
+        font-size: 18px;
+        z-index: 10;
+        transition: background-color 0.3s ease;
+      }
+      .prev:hover,
+      .next:hover {
+        background-color: #333;
+      }
+      .prev {
+        left: 3px;
+      }
+      .next {
+        right: 3px;
+      }
+      .product-title {
+        font-size: 1.2em;
+        color: #333;
+        text-align: center;
+        margin-top: 10px;
+      }
+      .product-price {
+        font-size: 1.5em;
+        color: #ff0019;
+        text-align: center;
+        margin-top: 5px;
+      }
+      .product-price-info {
+        font-size: 16px;
+        width: 318px;
+        height: auto;
+        padding: 16px;
+        background-color: white; 
+        text-align: center; /* จัดให้ข้อความอยู่ตรงกลาง */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* เงาเบาๆ */
+      }
+
+      .product-title {
+        font-size: 18px;
+        font-weight: bold;
+        color: #000000; /* ข้อความสีดำ */
+        margin-bottom: 10px;
+      }
+
+      .product-price {
+        font-size: 16px;
+        color: #000000; /* ข้อความราคาสีเทา */
+        margin-bottom: 15px;
+      }
+
+      .buy-now-btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #000; /* สีพื้นหลังปุ่มดำ */
+        color: #fff; /* ข้อความปุ่มสีขาว */
+        text-transform: uppercase;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 14px;
+        transition: background-color 0.3s ease;
+      }
+
+      .buy-now-btn:hover {
+        background-color: #202020; /* เปลี่ยนสีปุ่มเมื่อ hover */
+      }
+
+      .cart-icon-container {
+        margin-top: 10px;
+      }
+
+      .cart-icon {
+        width: 40px; /* ขนาดไอคอน */
+        height: 40px;
+        filter: grayscale(100%); /* ทำให้เป็นโทนขาวดำ */
+        cursor: pointer;
+        transition: transform 0.3s ease;
+      }
+
+      .cart-icon:hover {
+        transform: scale(1.1); /* ขยายเล็กน้อยเมื่อ hover */
+      }
+      .star-container {
+        display: flex; /* ใช้ flex เพื่อให้ดาวเรียงในแนวนอน */
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        margin-top: 10px; /* เพิ่มระยะห่างระหว่างดาว */
+      }
+
+      .star {
+        width: 20px;
+        height: 20px;
+        background-color: #e0e0e0;
+        clip-path: polygon(
+          50% 0%,
+          61% 35%,
+          98% 35%,
+          68% 57%,
+          79% 91%,
+          50% 70%,
+          21% 91%,
+          32% 57%,
+          2% 35%,
+          39% 35%
+        );
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        /* display: inline-block; เพื่อให้แต่ละดาวแสดงในแนวเดียวกัน */
+      }
+
+      .star.active {
+        background-color: yellow; /* สีเหลืองสำหรับดาวที่ถูกเลือก */
+      }
+
+      .star:hover,
+      .star:hover ~ .star {
+         background-color: #e0e0e0; /* ดาวที่ไม่ได้เลือกจะกลับไปเป็นสีเทาเมื่อ hover */
+      }
+    </style>
+  </head>
+  <body>
+    <a href="Home.html" class="back-button">&#10094; Go to Home </a>
+
+    <div class="container">
+     <div> 
+        <div class="product-slider" id="productSlider">
+          <img
+            src="images/Compact  powder.jpg"
+            alt="Product Image 1"
+            class="product-image"
+            style="opacity: 1; transform: scale(1)"
+          />
+          <img
+            src="images/Compact  powder1.jpg"
+            alt="Product Image 2"
+            class="product-image"
+            style="opacity: 0; transform: scale(1.05)"
+          />
+          <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+          <button class="next" onclick="changeImage(1)">&#10095;</button>
+        </div>
+        <div class="product-price-info">
+          <p class="product-title">แป้งผสมรองพื้น</p>
+          <p class="product-price">ราคา: 159 บาท</p>
+          <button class="buy-now-btn">Buy Now</button>
+          <div class="cart-icon-container">
+            <img src="images/ตระกร้าน้อย.jpg" alt="Cart" class="cart-icon" />
+          </div>
+        </div>
+        <div class="product">
+          <div class="star-container" data-rating="0">
+            <h4>รีวิว : </h4>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-info">
+        <h1>Compact powder</h1>
+        <div class="divider"></div>
+        <p>DAZZLE ME Better than Filter Double Kill Two Way Compact Powder</p>
+        <div class="divider"></div>
+        <h3>ข้อมูลสินค้า</h3>
+        <p>
+          แป้งผสมรองพื้นเนื้อเนียนนุ่ม ช่วยเบลอรูขุมขน ปกปิดขั้นสุด คุมมัน
+          มอบผิวสวยเนียนแมท ไม่ง้อฟิลเตอร์
+        </p>
+        <ul>
+          <li>• กันน้ำ กันเหงื่อ</li>
+          <li>• ปกปิดปานกลาง</li>
+          <li>• ติดทนยาวนาน 12 ชั่วโมง</li>
+          <li>• ลดความมันส่วนเกินบนใบหน้า</li>
+          <li>• ส่วนผสมที่เป็นมิตรกับผิว ไม่ทำให้อุดตัน</li>
+        </ul>
+
+        <div class="divider"></div>
+        <h3>คุณสมบัติเด่น</h3>
+        <p>
+            <strong>1.ช่วยควบคุมความมัน:</strong> แป้งตลับมีคุณสมบัติในการดูดซับน้ำมันส่วนเกินบนใบหน้า ทำให้ผิวหน้าดูแมตต์และไม่มันเยิ้มระหว่างวัน
+        </p>
+        <p>
+            <strong>2.ให้ผิวเรียบเนียน:</strong> แป้งพัฟช่วยเบลอรูขุมขนและรอยสิว ทำให้ผิวหน้าดูเรียบเนียนมากขึ้น
+        </p>
+        <p>
+            <strong>3.ปกปิดจุดบกพร่อง:</strong> แป้งพัฟที่มีการปกปิดสูงช่วยปกปิดจุดด่างดำ รอยแดง และรอยแผลเป็น ทำให้ผิวหน้าดูเนียนเรียบ ปกปิดรอยสิวและปัญหาผิวต่างๆ
+        </p>
+        <p>
+            <strong>4.ติดทนนาน:</strong> การใช้แป้งพัฟหลังลงรองพื้นหรือบีบีครีมช่วยเซตเมคอัพให้ติดทนนาน ไม่หลุดลอกหรือเยิ้มระหว่างวัน
+        </p>
+        <p>
+            <strong>5.มีส่วนผสมที่เป็นมิตรกับผิว:</strong>ด้วยสารสกัดจากธรรมชาติ และสูตรเป็นมิตรกับผิวเป็นสิว ช่วยให้ผิวกระจ่างใส ต้านอนุมูลอิสระ และไม่อุดตันรูขุมขน
+        </p>
+        
+        <div class="divider"></div>
+        <h3>ส่วนประกอบสำคัญ:</h3>
+        <ul>
+          <li>วิตามินอี</li>
+          <li>สารสกัดจากดอกคาเมลเลีย</li>
+          <li>เรสเวอราทรอล</li>
+          <li>น้ำวิชฮาเซล</li>
+        </ul>
+        <p><strong>No Harm Claim:</strong> ไม่มีแอลกอฮอล์</p>
+        <p><strong>Fragrance:</strong> กลิ่นหอมสดชื่นและเบาบาง</p>
+        
+        <div class="divider"></div>
+        <h3>วิธีใช้</h3>
+        <p>แตะแป้งด้วยพัฟ เกลี่ยให้ทั่วใบหน้าและลำคอ</p>        
+    </div>
+
+    <script>
+      const slider = document.getElementById("productSlider");
+      const images = slider.getElementsByClassName("product-image");
+      let currentIndex = 0;
+
+      function changeImage(direction) {
+        images[currentIndex].style.opacity = "0"; // Hide current image
+        images[currentIndex].style.transform = "scale(1)"; // Reset scale
+        currentIndex =
+          (currentIndex + direction + images.length) % images.length; // Move to the next image
+        images[currentIndex].style.opacity = "1"; // Show next image
+        images[currentIndex].style.transform = "scale(1.05)"; // Scale up for effect
+      }
+      document.querySelectorAll('.star-container').forEach((container, idx) => {
+  const stars = container.querySelectorAll('.star');
+
+  // ใช้ชื่อ key ที่แตกต่างกันสำหรับแต่ละหน้า โดยใช้ชื่อสินค้า หรือ URL ของหน้า
+  const pageIdentifier = window.location.pathname; // ใช้ path ของหน้าเป็นตัวระบุ
+  const storedRating = localStorage.getItem(`rating-${pageIdentifier}-${idx}`);
+
+  // ถ้ามีการเก็บค่าไว้ใน localStorage ก็แสดงค่าที่ถูกเก็บ
+  if (storedRating) {
+    const rating = parseInt(storedRating);
+    for (let i = 0; i < rating; i++) {
+      stars[i].classList.add('active');
+    }
+  }
+
+  stars.forEach((star, index) => {
+    star.addEventListener('click', () => {
+      // ลบคลาส active จากดาวทั้งหมดก่อน
+      stars.forEach(s => s.classList.remove('active'));
+
+      // เพิ่มคลาส active ตามจำนวนดาวที่ถูกเลือก
+      for (let i = 0; i <= index; i++) {
+        stars[i].classList.add('active');
+      }
+
+      // บันทึกคะแนนลง localStorage โดยใช้ key ที่แตกต่างกันในแต่ละหน้า
+      localStorage.setItem(`rating-${pageIdentifier}-${idx}`, index + 1);
+
+      // จัดการกับการบันทึกคะแนน
+      container.setAttribute('data-rating', index + 1);
+    });
+  });
+});
+    </script>
+  </body>
+</html>
