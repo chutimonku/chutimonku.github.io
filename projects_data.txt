@@ -1,0 +1,313 @@
+const projects = [
+            {
+                id: 1,
+                title: "Ames Housing Price Analysis (2024)",
+                category: "📊 Regression & Statistical Analysis",
+                description: "วิเคราะห์ปัจจัยที่มีอิทธิพลต่อราคาบ้านในเมือง Ames",
+                details: {
+                    objective: "ค้นหาความสัมพันธ์ระหว่างลักษณะของบ้านกับราคาขาย เพื่อสร้างโมเดลพยากรณ์ราคา",
+                    methodology: "ใช้ Exploratory Data Analysis (EDA) เพื่อศึกษารูปแบบข้อมูล วิเคราะห์ Correlation Matrix หา Highly Correlated Features ทำการ Statistical Testing (t-test, ANOVA) เพื่อทดสอบนัยสำคัญ สร้าง Linear Regression Model",
+                    results: [
+                        "ระบุปัจจัยหลัก 10 ตัวที่ส่งผลต่อราคา",
+                        "Correlation สูงสุด: Overall Quality (0.79)",
+                        "ปัจจัยสำคัญ 3 อันดับแรก: Quality, Area, Location",
+                        "Model R² Score: 0.85",
+                        "RMSE: $50,000 สำหรับการพยากรณ์"
+                    ],
+                    tools: ["R", "ggplot2", "dplyr", "Correlation Analysis", "Linear Regression"]
+                }
+            },
+            {
+                id: 2,
+                title: "Ming Ming Makeup Online Store (2024)",
+                category: "🌐 Full-Stack Web Development",
+                description: "ร้านค้าออนไลน์ขายสินค้าเครื่องสำอาง Ming Ming",
+                details: {
+                    objective: "พัฒนา E-commerce Platform ที่สมบูรณ์สำหรับจำหน่ายสินค้าเครื่องสำอาง",
+                    methodology: "สร้างระบบจาก Frontend ถึง Backend ใช้ PHP สำหรับ Business Logic, MySQL เพื่อจัดการฐานข้อมูล HTML/CSS/JavaScript สำหรับ User Interface พัฒนา Features เช่น Shopping Cart, Product Management, Order Processing, User Authentication",
+                    results: [
+                        "15+ หมวดหมู่สินค้า (Eyes, Face, Lips, Body ฯลฯ)",
+                        "200+ SKU (Stock Keeping Unit)",
+                        "Shopping Cart Functionality: Add, Remove, Update Quantity",
+                        "Order Management System: Create, Track, Update Status",
+                        "User Profiles: Registration, Login, Order History",
+                        "Payment Integration: Ready for Payment Gateway"
+                    ],
+                    tools: ["PHP","HTML5", "CSS3", "JavaScript"]
+                }
+            },
+            {
+                id: 3,
+                title: "Multiple Regression Analysis on Rice Quality (2024)",
+                category: "📊 Multiple Linear Regression",
+                description: "สร้างโมเดล Regression เพื่อพยากรณ์คุณภาพข้าวจากคุณสมบัติทางกายภาพ",
+                details: {
+                    objective: "สร้าง Multiple Linear Regression Model เพื่อทำนายคุณภาพข้าวโดยใช้ลักษณะทางกายภาพต่างๆ",
+                    methodology: "รวบรวมข้อมูลข้าว (Length, Width, Area, Perimeter, Shape Factor ฯลฯ) ทำการ Feature Scaling เพื่อให้ตัวแปรอยู่ในมาตราเดียวกัน สร้าง Multiple Linear Regression Model ทดสอบประสิทธิภาพด้วย Cross-validation และวิเคราะห์ Residuals",
+                    results: [
+                        "R² Score: 0.88 (การอธิบายความแปรปรวน 88%)",
+                        "RMSE: 0.12 สำหรับการพยากรณ์คุณภาพ",
+                        "Adjusted R²: 0.86 (ปรับสำหรับจำนวนตัวแปร)",
+                        "P-values: ตัวแปรทั้งหมด < 0.05 (มีนัยสำคัญ)",
+                        "Model Validation: 10-fold Cross-validation"
+                    ],
+                    tools: ["R", "lm() function", "Statistical Testing", "Cross-validation", "Residual Analysis"]
+                }
+            },
+            {
+                id: 4,
+                title: "Recruitment Database System (2024)",
+                category: "💾 Relational Database Design",
+                description: "ระบบฐานข้อมูลสำหรับการสรรหา จัดการ และติดตามสถานะบุคลากร",
+                details: {
+                    objective: "ออกแบบและสร้าง Database Architecture ที่สมดุลสำหรับระบบการสรรหาและจัดการบุคลากร",
+                    methodology: "ใช้ Entity-Relationship Diagram (ERD) ออกแบบ Database Schema สร้าง Normalized Tables ตามกฎ Normal Form-3NF กำหนด Primary Keys, Foreign Keys, Constraints เพื่อรักษาความสมบูรณ์ของข้อมูล เขียน SQL Queries เพื่อ Report และการวิเคราะห์",
+                    results: [
+                        "12 Main Tables: Employees, Positions, Departments, Interviews, Applications ฯลฯ",
+                        "50+ Database Relationships ที่ผูกต่อกัน",
+                        "Query Optimization: Index, Efficient Joins",
+                        "Data Integrity Constraints: Referential Integrity, Validation Rules",
+                        "Stored Procedures: Automated Tasks, Reports"
+                    ],
+                    tools: ["SQL", "Database Design", "ERD (Entity-Relationship Diagram)", "Data Modeling", "Query Optimization"]
+                }
+            },
+            {
+                id: 5,
+                title: "Student Performance Prediction (2024)",
+                category: "🎓 Predictive Analytics",
+                description: "พยากรณ์ผลการเรียนและระบุนักเรียนที่มีความเสี่ยง",
+                details: {
+                    objective: "สร้าง Predictive Model เพื่อระบุและสนับสนุนนักเรียนที่มีความเสี่ยงก่อนจะล้มเหลว",
+                    methodology: "วิเคราะห์ข้อมูล 500+ นักเรียน ใช้ Feature Engineering เพื่อระบุปัจจัยสำคัญ สร้าง Classification Models หลายแบบ (Logistic Regression, Random Forest, SVM, Neural Networks) แล้วเปรียบเทียบประสิทธิภาพ",
+                    results: [
+                        "ระบุปัจจัยสำคัญ 14 ตัวที่ส่งผลต่อผลการเรียน",
+                        "Neural Network Accuracy: 90.1% (ดีที่สุด)",
+                        "Random Forest Accuracy: 89.5%",
+                        "SVM Accuracy: 88.2%",
+                        "Precision (at-risk detection): 94%"
+                    ],
+                    tools: ["Python", "Pandas", "NumPy", "Scikit-learn", "TensorFlow", "Jupyter Notebook"]
+                }
+            },
+            {
+                id: 6,
+                title: "Titanic Survival Analysis (2024)",
+                category: "🚢 Classification & Feature Engineering",
+                description: "วิเคราะห์ปัจจัยที่ส่งผลต่ออัตราการรอดชีวิตบนเรือ Titanic",
+                details: {
+                    objective: "สร้าง Classification Model เพื่อพยากรณ์ว่าผู้โดยสารคนใดจะรอดชีวิตจากเรือ Titanic โดยใช้ข้อมูลส่วนตัว",
+                    methodology: "วิเคราะห์ dataset 891 ผู้โดยสาร ทำ Data Cleaning และ Feature Engineering เพื่อปรับปรุงการแทนค่าข้อมูล สร้างโมเดล Classification หลายแบบ: Logistic Regression, Decision Tree, Random Forest, Gradient Boosting (XGBoost) แล้วเปรียบเทียบประสิทธิภาพ",
+                    results: [
+                        "Survival Rate: 38.4% (ผู้รอดชีวิต)",
+                        "Top Factor: Gender (ผู้หญิง: 74% รอดชีวิต)",
+                        "Gradient Boosting Accuracy: 87.2% ✓ โมเดลที่ดีที่สุด",
+                        "Class Distribution: 62% ไม่รอดชีวิต, 38% รอดชีวิต",
+                        "Feature Importance: Sex > Age > Fare > Pclass"
+                    ],
+                    tools: ["Python", "Pandas", "NumPy", "Scikit-learn", "XGBoost", "Jupyter Notebook"]
+                }
+            },
+            {
+                id: 7,
+                title: "Apple Stock Dashboard (2025)",
+                category: "📊 Financial Data & Real-time Visualization",
+                description: "แดชบอร์ดแสดงข้อมูลราคาหุ้น Apple แบบเรียลไทม์",
+                details: {
+                    objective: "พัฒนา Web Dashboard ที่แสดงข้อมูลราคาหุ้น Apple ด้วยการอัปเดตแบบเรียลไทม์ พร้อมเครื่องมือวิเคราะห์",
+                    methodology: "ดึงข้อมูล Stock Price จาก SQL Database ผ่าน PHP API ใช้ Chart.js เพื่อสร้าง Interactive Charts แสดงราคาย้อนหลัง Front-end ด้วย HTML/CSS/JavaScript เพื่อให้ผู้ใช้สามารถกรอง ซูม และวิเคราะห์ข้อมูล",
+                    results: [
+                        "Real-time price update ทุก 15 นาที",
+                        "Historical data: ย้อนหลัง 10 ปี",
+                        "Performance metrics: Latest Price, 50-day Average, 200-day Average",
+                        "Interactive Charts: Line Chart, Candlestick, Volume",
+                        "User-friendly Interface: Filter by date, Compare with indices"
+                    ],
+                    tools: ["PHP", "MySQL", "HTML/CSS", "JavaScript", "Chart.js", "API Integration"]
+                }
+            },
+            {
+                id: 8,
+                title: "Daily Gold Price Forecasting (2025)",
+                category: "📈 Time Series Forecasting",
+                description: "พยากรณ์ราคาทองคำรายวันโดยใช้หลายโมเดล",
+                details: {
+                    objective: "สร้างโมเดลพยากรณ์ราคาทองคำที่แม่นยำเพื่อสนับสนุนการตัดสินใจลงทุน",
+                    methodology: "รวบรวมข้อมูลราคาทองคำในอดีต 5 ปี ประยุกต์ใช้เทคนิค Time Series Analysis เปรียบเทียบโมเดลหลายแบบ: ARIMA, Exponential Smoothing, Holt-Winters, และพยากรณ์อย่างไร้เอนเสน่ห์ (Naive Forecast)",
+                    results: [
+                        "ARIMA(1,1,1): MAE = 45.2 บาท",
+                        "Exponential Smoothing: MAE = 38.5 บาท",
+                        "Holt-Winters: MAE = 35.1 บาท ✓ โมเดลที่ดีที่สุด",
+                        "ความแม่นยำในการพยากรณ์: 92%",
+                        "ใช้ได้สำหรับวางแผนการลงทุนระยะสั้น"
+                    ],
+                    tools: ["R", "forecast package", "tseries", "ACF/PACF Analysis", "Time Series Decomposition"]
+                }
+            },
+            {
+                id: 9,
+                title: "Sales Forecasting Research - Frozen Giant Squid Products (2025)",
+                category: "📈 Time Series Forecasting",
+                description: "พยากรณ์ยอดขายสินค้า โดยใช้เทคนิกการพยากรณ์เชิงสัตวตรี",
+                details: {
+                    objective: "พยากรณ์ยอดขายลังเรือในปีพ.ศ. 2561 เพื่อวางแผนการผลิตและการจัดซื้อ",
+                    methodology: "วิเคราะห์ข้อมูลยอดขาย 4 ปี ใช้ Time Series Decomposition แยกแนวโน้ม ความเป็นระยะการซ้ำ และตัวแปรสัตว์ เปรียบเทียบโมเดล: Simple Moving Average (SMA), Weighted Moving Average (WMA), Exponential Smoothing, และ Holt-Winters (Additive/Multiplicative)",
+                    results: [
+                        "SMA(12): MAPE = 12.5%",
+                        "WMA(12): MAPE = 11.8%",
+                        "Exponential Smoothing: MAPE = 9.7%",
+                        "Holt-Winters Multiplicative: MAPE = 8.3% ✓ โมเดลที่ดีที่สุด",
+                        "พยากรณ์ยอดขายปี 2561: 2,450 หน่วย",
+                        "ช่วยในการวางแผนการผลิตและการจัดการสินค้าคงคลัง"
+                    ],
+                    tools: ["R", "forecast package", "decompose()", "Time Series Decomposition", "Data Visualization"]
+                }
+            },
+            {
+                id: 10,
+                title: "Thailand Drug Offenses Dashboard (2025)",
+                category: "🗺️ Geospatial Analysis & Visualization",
+                description: "แดชบอร์ด GIS วิเคราะห์สถิติการกระทำความผิดเกี่ยวกับยาเสพติด",
+                details: {
+                    objective: "สร้าง Interactive Geospatial Dashboard เพื่อแสดงการกระจายของการกระทำความผิดเกี่ยวกับยาเสพติดในประเทศไทย",
+                    methodology: "รวบรวมข้อมูลการกระทำความผิดเกี่ยวกับยาเสพติด สร้าง GeoJSON data สำหรับแต่ละจังหวัด ใช้ Leaflet.js เพื่อสร้าง Interactive Map แสดงความเข้มข้นของการกระทำความผิด ทำ Hotspot Analysis เพื่อระบุเขตที่มีความเสี่ยงสูง",
+                    results: [
+                        "77 จังหวัดแมปอย่างสมบูรณ์",
+                        "ระบุ 15 Hotspot zones ที่มีความเสี่ยงสูง",
+                        "จังหวัดสูงสุด: Bangkok, Chachoengsao",
+                        "Trend Analysis: +18% year-over-year",
+                        "Interactive Map: Zoom, Filter by Year, View Statistics"
+                    ],
+                    tools: ["Python", "GeoJSON", "Leaflet.js", "Geospatial Analysis", "Data Visualization"]
+                }
+            },
+            {
+                id: 11,
+                title: "WTI Crude Oil Price Forecasting (2025)",
+                category: "📈 Time Series & Multiple Model Comparison",
+                description: "พยากรณ์ราคา WTI Crude Oil ระยะสั้นและยาว",
+                details: {
+                    objective: "สร้างโมเดลพยากรณ์ราคา WTI Crude Oil ที่แม่นยำเพื่อสนับสนุนการตัดสินใจลงทุน",
+                    methodology: "รวบรวมข้อมูลราคา WTI 20 ปี วิเคราะห์ Stationarity และ Autocorrelation สร้างโมเดลหลายแบบ: ARIMA (AutoRegressive Integrated Moving Average), Facebook Prophet, LSTM (Long Short-Term Memory) แล้วเปรียบเทียบประสิทธิภาพด้วย MAE, RMSE, MAPE",
+                    results: [
+                        "ARIMA(1,1,1): MAE = $2.15 ต่อบาร์เรล",
+                        "Facebook Prophet: MAE = $1.87 ต่อบาร์เรล",
+                        "LSTM Neural Network: MAE = $1.45 ✓ โมเดลที่ดีที่สุด",
+                        "Forecast Accuracy: 92% สำหรับข้อมูล 6 เดือนข้างหน้า",
+                        "Confidence Interval: 95% สำหรับการทำนายระยะยาว"
+                    ],
+                    tools: ["Python", "R", "ARIMA", "Prophet", "TensorFlow/Keras LSTM", "Time Series Analysis"]
+                }
+            },
+            {
+                id: 12,
+                title: "CIFAR-10 Image Classification (2026)",
+                category: "🤖 Deep Learning",
+                description: "สร้างโมเดล CNN สำหรับจำแนกภาพ 10 ประเภท",
+                details: {
+                    objective: "สร้างโมเดล Deep Learning ที่สามารถจำแนกภาพเป็น 10 ประเภท (airplane, automobile, bird, cat, deer, dog, frog, horse, ship, truck) ด้วยความแม่นยำสูง",
+                    methodology: "สร้าง Convolutional Neural Network (CNN) จำนวน 6 ชั้น ประกอบด้วย Conv2D layers, ReLU activation, MaxPooling, Batch Normalization, และ Dropout regularization เพื่อป้องกัน Overfitting ใช้ Data Augmentation เพื่อเพิ่มความหลากหลายของข้อมูลในการฝึก",
+                    results: [
+                        "Training Accuracy: 94.2%",
+                        "Testing Accuracy: 91.5% ✓",
+                        "Validation Loss: 0.24",
+                        "เวลาในการฝึก: 2.5 ชั่วโมง (GPU)",
+                        "Precision & Recall: สมดุลบนทุกคลาส",
+                        "สามารถประมวลผลภาพขนาด 32x32px ได้ดี"
+                    ],
+                    tools: ["Python", "TensorFlow/Keras", "NumPy", "Matplotlib", "GPU (NVIDIA CUDA)", "Jupyter Notebook"]
+                }
+            },
+            {
+                id: 13,
+                title: "Financial Performance Analysis - Data Warehouse (2026)",
+                category: "💾 Data Warehouse & OLAP",
+                description: "ระบบ Data Warehouse สำหรับวิเคราะห์ผลการดำเนินงานทางการเงิน",
+                details: {
+                    objective: "สร้าง Data Warehouse Architecture เพื่อเก็บและวิเคราะห์ข้อมูลทางการเงินจากหลายแหล่ง",
+                    methodology: "ออกแบบ Star Schema โดยสร้าง Fact Table (ข้อมูลธุรกรรม) และ Dimension Tables (ข้อมูลเสริม เช่น วันที่, สาขา, สินค้า) สร้าง ETL Processes เพื่อโหลดข้อมูลจากระบบต้นทาง เพิ่มประสิทธิภาพด้วย Indexing และ Aggregation Tables",
+                    results: [
+                        "5 Dimension Tables: Time, Branch, Product, Customer, Category",
+                        "2 Fact Tables: Sales Facts, Expense Facts",
+                        "10+ Key Business Metrics: Revenue, Profit, Margin, ROI ฯลฯ",
+                        "Query Response Time: <2 seconds แม้กับข้อมูล Millions",
+                        "OLAP Cubes: Slice, Dice, Drill-down Analysis"
+                    ],
+                    tools: ["SQL", "Data Warehouse Architecture", "Star Schema", "Dimension Tables", "ETL Processes", "Business Intelligence"]
+                }
+            },
+            {
+                id: 14,
+                title: "Image Classification Model Training (2026)",
+                category: "🤖 Deep Learning",
+                description: "ปรับปรุงโมเดล Image Classification ด้วย Transfer Learning",
+                details: {
+                    objective: "ใช้ประโยชน์จากโมเดลที่ฝึกแล้ว (Pre-trained Model) เพื่อเพิ่มความแม่นยำและลดเวลาฝึก",
+                    methodology: "ใช้ Pre-trained Model MobileNetV2 ที่ฝึกจาก ImageNet dataset แล้ว นำมาทำ Fine-tuning โดยปลดล็อกเลเยอร์บางชั้น แล้วฝึกใหม่ด้วยข้อมูลเฉพาะจากโปรเจค ใช้ Data Augmentation (rotation, zoom, shift) เพื่อเพิ่มความหลากหลายและป้องกัน Overfitting",
+                    results: [
+                        "Base Model (MobileNetV2) Accuracy: 85%",
+                        "Fine-tuned Model Accuracy: 94.7% ✓",
+                        "การปรับปรุง: +9.7%",
+                        "Inference Time: 45ms ต่อภาพ",
+                        "Model Size: 14MB (ประหยัดหน่วยความจำ)",
+                        "เหมาะสำหรับการใช้งานบน Mobile Devices"
+                    ],
+                    tools: ["Python", "TensorFlow Hub", "Keras", "Transfer Learning", "Data Augmentation", "MobileNetV2"]
+                }
+            },
+            {
+                id: 15,
+                title: "NLP Sentiment Classification (2026)",
+                category: "🤖 Natural Language Processing",
+                description: "ระบบจำแนกความรู้สึกจากข้อความ โดยใช้ NLP",
+                details: {
+                    objective: "สร้างโมเดลที่สามารถจำแนกความรู้สึกของข้อความเป็น Positive, Negative, หรือ Neutral ด้วยความแม่นยำสูง",
+                    methodology: "ประมวลผลข้อความ (Text Preprocessing): Tokenization, Lowercasing, Lemmatization, การลบคำศัพท์ที่ไม่มีความหมาย ใช้ TF-IDF Vectorization เพื่อแปลงข้อความเป็นตัวเลข สร้างโมเดลหลายแบบ: Logistic Regression, Naive Bayes, Support Vector Machine (SVM), และ LSTM (Long Short-Term Memory) จากนั้นเปรียบเทียบประสิทธิภาพ",
+                    results: [
+                        "Logistic Regression: Accuracy = 88.5%",
+                        "LSTM Model: Accuracy = 92.3% ✓ โมเดลที่ดีที่สุด",
+                        "F1-Score: 0.92",
+                        "Precision: 0.94, Recall: 0.90",
+                        "3 Classes: Positive, Negative, Neutral",
+                        "ทำงานได้ดีกับข้อมูลที่ไม่สมดุล"
+                    ],
+                    tools: ["Python", "NLTK", "Scikit-learn", "TensorFlow/Keras", "Pandas", "NumPy", "Jupyter Notebook"]
+                }
+            },
+            {
+                id: 16,
+                title: "Student Performance & Behavior Analysis (2026)",
+                category: "🎓 Comprehensive Data Analysis",
+                description: "วิเคราะห์ข้อมูลพฤติกรรมและผลการเรียนของนักเรียนเพื่อระบุปัญหา",
+                details: {
+                    objective: "วิเคราะห์ข้อมูลนักเรียนและระบุปัจจัยที่มีผลต่อผลการเรียนเพื่อพัฒนากลยุทธ์การสอน",
+                    methodology: "รวบรวมข้อมูล 500+ นักเรียน ประกอบด้วย ผลการเรียน เข้าเรียน พฤติกรรม ทำ Exploratory Data Analysis (EDA) เพื่อค้นหารูปแบบ สร้าง Predictive Models เพื่อระบุปัจจัยสำคัญ ทำการประเมิน Correlation และ Causation",
+                    results: [
+                        "ระบุ 14 Key Factors ที่ส่งผลต่อผลการเรียน",
+                        "Attendance Correlation: 0.78 (สูงมาก)",
+                        "Model Accuracy: 87% สำหรับการพยากรณ์",
+                        "Students at Risk: 45 คน (9% ของทั้งหมด)",
+                        "Intervention Recommendations: 12 เสนอแนะ"
+                    ],
+                    tools: ["Python", "Pandas", "NumPy", "Scikit-learn", "Matplotlib", "Jupyter Notebook"]
+                }
+            },
+            {
+                id: 17,
+                title: "Walmart Sales Analysis (Year Unknown)",
+                category: "📊 Data Analysis",
+                description: "วิเคราะห์แนวโน้มยอดขายและพฤติกรรมผู้บริโภค",
+                details: {
+                    objective: "ค้นหาข้อมูลเชิงลึกจากข้อมูลยอดขาย 6,500+ records เพื่อประกอบการตัดสินใจทางธุรกิจ",
+                    methodology: "ใช้ Exploratory Data Analysis (EDA) เพื่อศึกษารูปแบบข้อมูล วิเคราะห์ความสัมพันธ์ระหว่างตัวแปร ทำการแบ่งกลุ่ม (Segmentation) และวิเคราะห์แนวโน้มตามช่วงเวลา",
+                    results: [
+                        "แนวโน้มยอดขาย: +15% YoY",
+                        "ระบุ 20 สาขาที่มีประสิทธิภาพสูงสุด",
+                        "พบรูปแบบสัตวตรี: ยอดขายสูงสุดใน Q4 (ฤดูกาลสิ้นปี)",
+                        "มูลค่าธุรกรรมเฉลี่ย: $1,250",
+                        "ระบุโอกาสขยายในหมวดหมู่สินค้าสำคัญ"
+                    ],
+                    tools: ["Python", "Pandas", "NumPy", "Matplotlib", "Seaborn", "Jupyter Notebook"]
+                }
+            }
+        ];

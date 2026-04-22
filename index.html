@@ -13,31 +13,29 @@
 
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            background-color: #f9f9f9;
+            background-color: #f5f7fa;
             color: #333;
             line-height: 1.6;
         }
+        
 
         .container {
-            display: flex;
+            display: grid;
+            grid-template-columns: 280px 1fr 320px;
             min-height: 100vh;
+            background: white;
         }
 
-        .content-wrapper {
-            display: flex;
-            flex: 1;
-        }
-
-        /* Sidebar Styling */
+        /* ===== SIDEBAR ===== */
+       
         .sidebar {
-            width: 300px;
             position: sticky;
             top: 0;
             height: 100vh;
-            overflow-y: auto;
-            background: white;
+            background: #ffffff;
+            border-right: 1px solid #e6e6e6;
             padding: 40px 20px;
-            box-shadow: 1px 0 3px rgba(0,0,0,0.1);
+            overflow-y: auto;
         }
 
         .author-content {
@@ -45,58 +43,59 @@
         }
 
         .author-img {
-            width: 120px;
-            height: 120px;
+            width: 100px;
+            height: 100px;
             margin: 0 auto 20px;
             border-radius: 50%;
-            border: 3px solid #667eea;
+            border: 4px solid #667eea;
             object-fit: cover;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
         }
 
         .author-name {
-            font-size: 1.6em;
+            font-size: 1.5em;
             font-weight: 700;
             color: #2c3e50;
             margin-bottom: 5px;
         }
 
         .author-title {
-            font-size: 0.9em;
+            font-size: 0.95em;
             color: #667eea;
             font-weight: 600;
-            margin-bottom: 20px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
+            margin-bottom: 15px;
         }
 
         .author-bio {
-            font-size: 0.85em;
+            font-size: 0.9em;
             color: #666;
-            line-height: 1.8;
+            line-height: 1.6;
             margin-bottom: 25px;
-            padding: 15px 0;
-            border-top: 1px solid #eee;
-            border-bottom: 1px solid #eee;
         }
 
         .contact-list {
             list-style: none;
-            margin-bottom: 30px;
+            margin-bottom: 25px;
+            text-align: left;
         }
 
         .contact-list-item {
-            margin-bottom: 12px;
             font-size: 0.9em;
+            margin-bottom: 10px;
+            color: #555;
         }
 
         .contact-list-item strong {
-            color: #667eea;
+            color: #2c3e50;
+            display: block;
+            font-weight: 600;
+            margin-bottom: 3px;
         }
 
         .contact-list-item a {
             color: #667eea;
             text-decoration: none;
+            font-weight: 500;
         }
 
         .contact-list-item a:hover {
@@ -112,118 +111,176 @@
             border-top: 1px solid #eee;
         }
 
+        .line-icon-section {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .line-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .line-icon:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 16px rgba(102, 126, 234, 0.3);
+        }
+
         .social-icon {
             display: inline-flex;
             align-items: center;
             justify-content: center;
             width: 40px;
             height: 40px;
-            border-radius: 50%;
             background: #f0f0f0;
-            color: #667eea;
-            font-size: 20px;
+            border-radius: 50%;
+            font-size: 1.2em;
             text-decoration: none;
             transition: all 0.3s ease;
+            border: 2px solid transparent;
         }
 
         .social-icon:hover {
             background: #667eea;
             color: white;
+            border-color: #667eea;
             transform: translateY(-3px);
         }
 
-        /* Main Content */
+        /* ===== MAIN CONTENT (CENTER) ===== */
         .main-content {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .top-section {
-            padding: 40px 50px;
+            padding: 40px;
+            overflow-y: auto;
             background: white;
-            border-bottom: 2px solid #eee;
+            border-right: 1px solid #eee;
         }
 
-        .top-section h2 {
-            font-size: 1.8em;
+        .main-content h2 {
             color: #2c3e50;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
+            font-size: 2em;
             font-weight: 700;
         }
 
-        .top-section p {
-            color: #666;
-            line-height: 1.8;
-            margin-bottom: 15px;
-        }
-
-        .projects-list {
-            padding: 40px 50px;
-            flex: 1;
-            overflow-y: auto;
-        }
-
-        .projects-list h3 {
-            font-size: 1.4em;
+        .section-title {
+            font-size: 1.5em;
             color: #2c3e50;
-            margin-bottom: 25px;
+            margin-bottom: 20px;
+            margin-top: 30px;
             font-weight: 700;
         }
 
         .projects-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 20px;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
         }
 
         .project-item {
             background: white;
+            border: 2px solid #e0e0e0;
             border-radius: 8px;
-            padding: 20px;
+            padding: 15px;
             cursor: pointer;
             transition: all 0.3s ease;
-            border: 2px solid transparent;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
         }
 
         .project-item:hover {
             border-color: #667eea;
-            box-shadow: 0 6px 16px rgba(102, 126, 234, 0.25);
+            box-shadow: 0 6px 16px rgba(102, 126, 234, 0.2);
             transform: translateY(-3px);
         }
 
         .project-item h4 {
-            color: #667eea;
-            font-size: 1.1em;
+            color: #2c3e50;
+            font-size: 0.95em;
             margin-bottom: 8px;
-            font-weight: 700;
+            font-weight: 600;
         }
 
         .project-item .category {
             display: inline-block;
             background: #f0f0f0;
             color: #667eea;
-            padding: 4px 10px;
-            border-radius: 12px;
-            font-size: 0.75em;
-            font-weight: 600;
-            margin-bottom: 10px;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.8em;
+            font-weight: 500;
+            margin-bottom: 8px;
         }
-
-        .project-item p {
-            font-size: 0.9em;
-            color: #666;
-            line-height: 1.5;
-        }
-
-        /* Detail Section */
-        .detail-section {
-            padding: 40px 50px;
-            background: #f9f9f9;
-            border-left: 2px solid #eee;
-            width: 40%;
+        /* RIGHT PROJECT LIST */
+        .project-sidebar {
+            position: sticky;
+            top: 0;
+            height: 100vh;
+            background: #fafafa;
+            border-left: 1px solid #e6e6e6;
+            padding: 40px 20px;
             overflow-y: auto;
+        }
+        
+        .project-sidebar h3 {
+            color: #2c3e50;
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        
+        .project-sidebar .projects-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        
+        .project-sidebar .project-item-small {
+            padding: 12px;
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.85em;
+            transition: all 0.2s ease;
+            border-left: 3px solid transparent;
+        }
+        
+        .project-sidebar .project-item-small:hover {
+            border-color: #667eea;
+            border-left-color: #667eea;
+            background: #f8f9ff;
+            box-shadow: 0 2px 8px rgba(102, 126, 234, 0.15);
+        }
+        
+        .project-sidebar .project-item-small h5 {
+            color: #2c3e50;
+            font-weight: 600;
+            margin-bottom: 3px;
+        }
+        
+        .project-sidebar .project-item-small .tag {
+            display: inline-block;
+            background: #e3f2fd;
+            color: #0d47a1;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 0.75em;
+            font-weight: 500;
+        }
+
+        /* ===== DETAIL SECTION (CENTER PANEL) ===== */
+        .detail-section {
+            background: white;
+            padding: 30px;
+            overflow-y: auto;
+            min-height: 100vh;
             display: none;
         }
 
@@ -232,91 +289,95 @@
         }
 
         .detail-header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 25px;
-            border-radius: 8px;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 15px;
             margin-bottom: 25px;
         }
 
         .detail-header h3 {
-            font-size: 1.6em;
-            margin-bottom: 8px;
+            color: #2c3e50;
+            font-size: 1.5em;
+            margin-bottom: 10px;
             font-weight: 700;
         }
 
-        .detail-category {
+        .detail-header .category {
             display: inline-block;
-            background: rgba(255,255,255,0.2);
+            background: #667eea;
+            color: white;
             padding: 6px 12px;
-            border-radius: 16px;
+            border-radius: 20px;
             font-size: 0.85em;
             font-weight: 600;
         }
 
         .detail-body {
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
+            min-height: auto;
         }
 
-        .detail-section h4 {
+        .detail-body h4 {
             color: #667eea;
-            font-size: 1.1em;
+            font-size: 1em;
             margin-top: 20px;
             margin-bottom: 10px;
             font-weight: 700;
-            border-bottom: 2px solid #667eea;
-            padding-bottom: 8px;
+            border-left: 3px solid #667eea;
+            padding-left: 10px;
         }
 
-        .detail-section h4:first-of-type {
+        .detail-body h4:first-child {
             margin-top: 0;
         }
 
-        .detail-section p,
-        .detail-section li,
-        .detail-section div {
+        .detail-body p {
             color: #555;
-            line-height: 1.8;
+            font-size: 0.9em;
+            line-height: 1.6;
             margin-bottom: 10px;
-            font-size: 0.95em;
         }
 
-        .detail-section ul {
+        .detail-body ul {
             margin-left: 20px;
             margin-bottom: 15px;
         }
 
-        .tech-tags {
+        .detail-body li {
+            color: #555;
+            font-size: 0.9em;
+            margin-bottom: 6px;
+            line-height: 1.5;
+        }
+
+        .tech-list {
             display: flex;
             flex-wrap: wrap;
-            gap: 10px;
-            margin-top: 15px;
-            margin-bottom: 20px;
+            gap: 8px;
+            margin-bottom: 15px;
         }
 
         .tech-tag {
             background: #e3f2fd;
             color: #0d47a1;
-            padding: 6px 12px;
-            border-radius: 16px;
-            font-size: 0.85em;
-            font-weight: 600;
+            padding: 5px 10px;
+            border-radius: 14px;
+            font-size: 0.8em;
+            font-weight: 500;
         }
 
         .close-detail {
             background: #f44336;
             color: white;
             border: none;
-            padding: 10px 20px;
+            padding: 12px 20px;
             border-radius: 6px;
             cursor: pointer;
-            margin-top: 20px;
             font-weight: 600;
+            font-size: 0.9em;
             transition: background 0.3s ease;
             width: 100%;
+            margin-top: 30px;
         }
+
         .close-detail:hover {
             background: #d32f2f;
         }
@@ -325,38 +386,112 @@
             display: inline-block;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
-            padding: 12px 24px;
+            padding: 10px 16px;
             border-radius: 6px;
             text-decoration: none;
             font-weight: 600;
-            font-size: 0.95em;
-            margin-top: 15px;
+            font-size: 0.85em;
+            margin-top: 10px;
             transition: all 0.3s ease;
             border: 2px solid transparent;
-            cursor: pointer;
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
         }
 
         .notebook-button:hover {
             transform: translateY(-2px);
-            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
-            border-color: rgba(255, 255, 255, 0.3);
+            box-shadow: 0 6px 16px rgba(102, 126, 234, 0.4);
         }
 
-        .notebook-button:active {
-            transform: translateY(0);
+        /* ===== SCROLLBAR ===== */
+        .sidebar::-webkit-scrollbar,
+        .main-content::-webkit-scrollbar,
+        .detail-section::-webkit-scrollbar {
+            width: 6px;
         }
-        .close-detail:hover {
-            background: #d32f2f;
+
+        .sidebar::-webkit-scrollbar-track,
+        .main-content::-webkit-scrollbar-track,
+        .detail-section::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        .sidebar::-webkit-scrollbar-thumb,
+        .main-content::-webkit-scrollbar-thumb,
+        .detail-section::-webkit-scrollbar-thumb {
+            background: #ddd;
+            border-radius: 3px;
+        }
+
+        .sidebar::-webkit-scrollbar-thumb:hover,
+        .main-content::-webkit-scrollbar-thumb:hover,
+        .detail-section::-webkit-scrollbar-thumb:hover {
+            background: #999;
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 1200px) {
+            .container {
+                grid-template-columns: 250px 1fr 280px;
+            }
+
+            .project-sidebar {
+                padding: 30px 15px;
+            }
+
+            .main-content {
+                padding: 30px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+
+            .sidebar {
+                position: relative;
+                width: 100%;
+                height: auto;
+                border-right: none;
+                border-bottom: 1px solid #e6e6e6;
+                padding: 20px;
+            }
+
+            .main-content {
+                padding: 20px;
+                border-right: none;
+                border-bottom: 1px solid #e6e6e6;
+            }
+
+            .project-sidebar {
+                position: relative;
+                width: 100%;
+                height: auto;
+                border-left: none;
+                border-top: 1px solid #e6e6e6;
+                padding: 20px;
+            }
+
+            .projects-list {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)) !important;
+                gap: 10px !important;
+            }
+
+            .project-item-small {
+                padding: 10px !important;
+                font-size: 0.8em !important;
+            }
+
+            .project-item-small h5 {
+                font-size: 0.9em !important;
+            }
         }
 
         footer {
-            background: #2c3e50;
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
             color: white;
             text-align: center;
-            padding: 30px;
+            padding: 30px 20px;
             font-size: 0.9em;
         }
 
@@ -365,687 +500,588 @@
             text-decoration: none;
         }
 
-        @media (max-width: 1200px) {
-            .detail-section {
-                width: 35%;
-            }
-
-            .projects-list {
-                padding: 30px;
-            }
-
-            .top-section {
-                padding: 30px;
-            }
+        footer a:hover {
+            text-decoration: underline;
         }
 
-        @media (max-width: 768px) {
-            .container {
-                flex-direction: column;
-            }
-
-            .sidebar {
-                width: 100%;
-                height: auto;
-                position: relative;
-                border-bottom: 2px solid #eee;
-            }
-
-            .content-wrapper {
-                flex-direction: column;
-            }
-
-            .detail-section {
-                width: 100%;
-                border-left: none;
-                border-top: 2px solid #eee;
-            }
-
-            .projects-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        .sidebar::-webkit-scrollbar,
-        .projects-list::-webkit-scrollbar,
-        .detail-section::-webkit-scrollbar {
-            width: 6px;
-        }
-
-        .sidebar::-webkit-scrollbar-track,
-        .projects-list::-webkit-scrollbar-track,
-        .detail-section::-webkit-scrollbar-track {
-            background: transparent;
-        }
-
-        .sidebar::-webkit-scrollbar-thumb,
-        .projects-list::-webkit-scrollbar-thumb,
-        .detail-section::-webkit-scrollbar-thumb {
-            background: #ddd;
-            border-radius: 3px;
-        }
-
-        .sidebar::-webkit-scrollbar-thumb:hover,
-        .projects-list::-webkit-scrollbar-thumb:hover,
-        .detail-section::-webkit-scrollbar-thumb:hover {
-            background: #bbb;
-        }
-
-        header {
+        /* ===== INTRODUCTION SECTION ===== */
+        .intro-section {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
-            padding: 50px 20px;
-            text-align: center;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-        }
-
-        .profile-section {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 20px;
-        }
-
-        .profile-image {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            border: 5px solid white;
-            object-fit: cover;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-            animation: slideDown 0.8s ease-out;
-        }
-
-        @keyframes slideDown {
-            from {
-                opacity: 0;
-                transform: translateY(-30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .header-text {
-            animation: fadeIn 0.8s ease-out 0.2s backwards;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
-
-        header h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-            font-weight: 700;
-            letter-spacing: 0.5px;
-        }
-
-        header p {
-            font-size: 1.2em;
-            opacity: 0.95;
-            font-weight: 300;
-            letter-spacing: 0.3px;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        .intro-section {
-            background: white;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-            margin: 30px 0;
+            padding: 60px 40px;
+            border-radius: 12px;
+            margin-bottom: 40px;
         }
 
         .intro-section h2 {
-            color: #667eea;
-            margin-bottom: 15px;
-            font-size: 1.8em;
+            color: white;
+            font-size: 2.2em;
+            margin-bottom: 20px;
             font-weight: 700;
         }
 
         .intro-section p {
-            line-height: 1.9;
-            margin-bottom: 15px;
-            color: #34495e;
+            color: rgba(255, 255, 255, 0.95);
             font-size: 1em;
-            font-weight: 400;
-        }
-
-        .skills-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin: 30px 0;
-        }
-
-        .skill-box {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 25px;
-            border-radius: 8px;
-            text-align: center;
-            box-shadow: 0 6px 15px rgba(102, 126, 234, 0.3);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .skill-box:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.5);
-        }
-
-        .skill-box h3 {
-            margin-bottom: 10px;
-            font-weight: 700;
-            font-size: 1.1em;
-        }
-
-        .skill-box p {
-            font-size: 0.95em;
-            opacity: 0.95;
-            font-weight: 300;
-        }
-
-        .portfolio-section {
-            margin: 40px 0;
-        }
-
-        .portfolio-section h2 {
-            text-align: center;
-            color: white;
-            font-size: 2.2em;
-            margin-bottom: 40px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-        }
-
-        .portfolio-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 25px;
-        }
-
-        .project-card {
-            background: white;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 6px 15px rgba(0,0,0,0.12);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .project-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 12px 30px rgba(102, 126, 234, 0.25);
-        }
-
-        .project-header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 20px;
-        }
-
-        .project-header h3 {
-            font-size: 1.3em;
-            margin-bottom: 5px;
-        }
-
-        .project-category {
-            display: inline-block;
-            background: rgba(255,255,255,0.2);
-            padding: 4px 10px;
-            border-radius: 20px;
-            font-size: 0.85em;
-            margin-bottom: 10px;
-        }
-
-        .project-body {
-            padding: 20px;
-        }
-
-        .project-body p {
-            color: #555;
-            line-height: 1.7;
+            line-height: 1.8;
             margin-bottom: 15px;
+        }
+
+        .intro-section ul {
+            margin-left: 25px;
+            margin-bottom: 20px;
+        }
+
+        .intro-section li {
+            color: rgba(255, 255, 255, 0.95);
             font-size: 0.95em;
-            font-weight: 400;
+            margin-bottom: 10px;
+            line-height: 1.6;
         }
 
-        .project-tech {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-            margin-top: 15px;
+        .intro-highlights {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+            padding-top: 30px;
+            border-top: 2px solid rgba(255, 255, 255, 0.2);
         }
 
-        .tech-tag {
-            background: #f0f0f0;
-            color: #667eea;
-            padding: 5px 12px;
-            border-radius: 20px;
-            font-size: 0.85em;
-            font-weight: 500;
+        .highlight-card {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 20px;
+            border-radius: 8px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
         }
 
-        .tech-tag.machine-learning {
-            background: #e8f5e9;
-            color: #2e7d32;
-        }
-
-        .tech-tag.web {
-            background: #fff3e0;
-            color: #e65100;
-        }
-
-        .tech-tag.database {
-            background: #f3e5f5;
-            color: #6a1b9a;
-        }
-
-        .tech-tag.analytics {
-            background: #e3f2fd;
-            color: #0d47a1;
-        }
-
-        .tech-tag.nlp {
-            background: #fce4ec;
-            color: #c2185b;
-        }
-
-        footer {
-            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+        .highlight-card h4 {
             color: white;
-            text-align: center;
-            padding: 40px 20px;
-            margin-top: 50px;
-            box-shadow: 0 -4px 15px rgba(0,0,0,0.15);
-        }
-
-        footer h3 {
-            font-size: 1.6em;
-            margin-bottom: 25px;
+            font-size: 1.1em;
+            margin-bottom: 10px;
             font-weight: 700;
         }
 
-        .contact-icons {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            flex-wrap: wrap;
-            margin: 20px 0;
+        .highlight-card p {
+            color: rgba(255, 255, 255, 0.85);
+            font-size: 0.9em;
+            margin-bottom: 0;
         }
 
-        .contact-icon-link {
+        .cta-button {
             display: inline-block;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            background: rgba(255,255,255,0.1);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: all 0.3s ease;
-            border: 2px solid rgba(255,255,255,0.2);
-        }
-
-        .contact-icon-link:hover {
-            background: rgba(102, 126, 234, 0.3);
-            border-color: #667eea;
-            transform: translateY(-5px);
-        }
-
-        .contact-icon-link img {
-            width: 28px;
-            height: 28px;
-            filter: brightness(0) invert(1);
-        }
-
-        .contact-info {
-            margin: 15px 0;
-            font-size: 0.95em;
-            font-weight: 300;
-            letter-spacing: 0.3px;
-        }
-
-        .contact-info a {
-            color: #82d4e6;
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.3s ease;
-        }
-
-        .contact-info a:hover {
+            background: white;
             color: #667eea;
-            text-decoration: underline;
+            padding: 12px 28px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.95em;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+            border: 2px solid white;
+            cursor: pointer;
+            border: none;
         }
 
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 1.8em;
-            }
+        .cta-button:hover {
+            background: transparent;
+            color: white;
+            border-color: white;
+            transform: translateY(-2px);
+        }
 
-            .portfolio-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .intro-section {
-                padding: 20px;
-            }
+        .intro-section.hidden {
+            display: none;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <!-- Sidebar -->
+        <!-- SIDEBAR: Profile + Contact -->
         <aside class="sidebar">
-            <div class="sidebar-sticky">
-                <div class="author-content">
-                    <img src="PF/download.png" alt="Chutimon Nunthasena" class="author-img">
-                    <h1 class="author-name">Chutimon Nunthasena</h1>
-                    <p class="author-title">Data Analyst & Developer</p>
-                    <p class="author-bio">
-                        ผู้มีความรู้ความชำนาญในด้านการวิเคราะห์ข้อมูล พัฒนาเว็บแอปพลิเคชัน และสร้างโมเดลแมชชีนเลิร์นนิง พร้อมอุทิศตนเพื่อนำความเข้าใจจากข้อมูลมาสร้างโซลูชันที่มีประโยชน์
+            <div class="author-content">
+                <img src="PF/download.png" alt="Chutimon Nunthasena" class="author-img">
+                <h1 class="author-name">Chutimon Nunthasena</h1>
+                <p class="author-title"> Data Scientist</p>
+                <p class="author-bio">I am pursuing a Bachelor of Data Science at Kasetsart University with a strong foundation in statistical modeling, machine learning, and data-driven problem solving.
                     </p>
 
-                    <ul class="contact-list">
-                        <li class="contact-list-item">
-                            <strong>Phone:</strong>
-                            <a href="tel:082-648-3526">082-648-3526</a>
-                        </li>
-                        <li class="contact-list-item">
-                            <strong>Email:</strong>
-                            <a href="mailto:Chutimon.nun@ku.th">Chutimon.nun@ku.th</a>
-                        </li>
-                        <li class="contact-list-item">
-                            <strong>Based in:</strong>
-                            Thailand
-                        </li>
-                    </ul>
+                <ul class="contact-list">
+                    <li class="contact-list-item">
+                        <strong>☎️ Phone</strong>
+                        <a href="tel:082-648-3526">082-648-3526</a>
+                    </li>
+                    <li class="contact-list-item">
+                        <strong>📧 Email</strong>
+                        <a href="mailto:Chutimon.nun@ku.th">Chutimon.nun@ku.th</a>
+                    </li>
+                    <li class="contact-list-item">
+                        <strong>📍 Location</strong>
+                        Thailand
+                    </li>
+                </ul>
 
-                    <div class="social-icons">
-                        <a href="https://github.com/chutimonku" target="_blank" title="GitHub" class="social-icon">💻</a>
-                        <a href="https://www.linkedin.com/in/chutimon-nunthasena-781006392/" target="_blank" title="LinkedIn" class="social-icon">💼</a>
-                        <a href="mailto:Chutimon.nun@ku.th" target="_blank" title="Email" class="social-icon">✉️</a>
-                        <a href="https://line.me/ti/p/YOUR_LINE_ID" target="_blank" title="Line" class="social-icon">
-                            <img src="PF/IMG_3226.JPG" alt="Line">
-                        </a>
-                    </div>
+                <div class="social-icons">
+                    <a href="https://github.com/chutimonku" target="_blank" title="GitHub">💻</a>
+                    <a href="https://www.linkedin.com/in/chutimon-nunthasena-781006392/" target="_blank" title="LinkedIn">💼</a>
+                    <a href="mailto:Chutimon.nun@ku.th" target="_blank" title="Email">✉️</a>
+                </div>
+                <!-- Line Icon -->
+                <div class="line-icon-section">
+                    <img src="PF/IMG_3226.JPG" alt="Line Contact" class="line-icon" title="Add me on Line">
                 </div>
             </div>
         </aside>
 
-        <!-- Main Content -->
+        <!-- CENTER: DETAIL PANEL -->
         <main class="main-content">
-            <!-- About Section -->
-            <section id="about">
-                <h2>📋 About</h2>
-                <div class="section-content">
-                    <p>
-                        สวัสดีค่ะ ฉันคือ Data Analyst และ Web Developer ที่มีความหลงใหลในการแปลงข้อมูลให้เป็นความเข้าใจที่มีประโยชน์ และสร้างประสบการณ์ผู้ใช้ที่ยอดเยี่ยม
-                    </p>
-                    <p>
-                        ฉันมีพื้นฐานทางการศึกษาด้านเทคโนโลยีข้อมูลและเว็บพัฒนา ลงมือทำโปรเจคจำนวนมากในด้านการวิเคราะห์ข้อมูล การพยากรณ์, Machine Learning และเว็บพัฒนา นอกจากนี้ยังมีความเชี่ยวชาญในการออกแบบฐานข้อมูล และการสร้างแดชบอร์ด
-                    </p>
-                    <p>
-                        ปัจจุบัน ฉันกำลังมองหาโอกาสในการเข้าฝึกงาน เพื่อนำความรู้และทักษะของฉันมาช่วยในการยกระดับองค์กร และพัฒนาตัวเองให้เป็นผู้เชี่ยวชาญในอุตสาหกรรมเทคโนโลยี
-                    </p>
-                </div>
-            </section>
+            <div class="intro-section" id="introSection">
+                <h2>👋 ยินดีต้อนรับ</h2>
+                <p>
+                    สวัสดีค่ะ ฉันชื่อ <strong>ชุติมน นันทะเสนา</strong> Data Scientist ที่มีพื้นฐานในการสร้างแบบจำลองทางสถิติ และ Machine Learning ด้วยความมุ่งมั่นสร้างSolutionที่ขับเคลื่อนด้วยข้อมูล
+                </p>
 
-            <!-- Skills Section -->
-            <section id="skills">
-                <h2>💡 Skills</h2>
-                <div class="skills-grid">
-                    <div class="skill-category">
-                        <h3>📊 Data Analysis</h3>
-                        <p>R, Python, SQL, Statistical Analysis, Data Visualization, Tableau</p>
-                    </div>
-                    <div class="skill-category">
-                        <h3>🤖 Machine Learning</h3>
-                        <p>Python, TensorFlow, Keras, Image Classification, NLP, Sentiment Analysis</p>
-                    </div>
-                    <div class="skill-category">
-                        <h3>🌐 Web Development</h3>
-                        <p>HTML, CSS, JavaScript, PHP, MySQL, Dashboard Design</p>
-                    </div>
-                    <div class="skill-category">
-                        <h3>💾 Database Design</h3>
-                        <p>SQL, Database Architecture, Data Modeling, Data Warehouse</p>
-                    </div>
-                    <div class="skill-category">
-                        <h3>📈 Forecasting</h3>
-                        <p>Time Series Analysis, ARIMA, Exponential Smoothing, Holt-Winters</p>
-                    </div>
-                    <div class="skill-category">
-                        <h3>🎓 Other Skills</h3>
-                        <p>Git, GitHub, Problem Solving, Team Collaboration, Communication</p>
-                    </div>
-                </div>
-            </section>
+                <h3 style="color: white; font-size: 1.4em; margin-top: 25px; margin-bottom: 15px;">🎯 ทักษะและความสามารถ</h3>
+                <ul>
+                    <li><strong>Machine Learning & Statistical Modeling:</strong> Supervised/Unsupervised Learning, Classification, Regression, Clustering Models (Random Forest, XGBoost, Neural Networks)</li>
+                    <li><strong>Programming Languages:</strong> Python (Pandas, NumPy, Scikit-learn, TensorFlow), R, SQL, JavaScript</li>
+                    <li><strong>Mathematical Foundations:</strong> Linear Algebra, Calculus, Probability, Inferential Statistics, Hypothesis Testing</li>
+                    <li><strong>Data Engineering & Processing:</strong> Data Cleaning, Feature Engineering, ETL Pipelines, Web Scraping (BeautifulSoup/Selenium)</li>
+                    <li><strong>Data Visualization & Tools:</strong> Tableau, Power BI, Looker Studio, Google Colab, Jupyter Notebook, VS Code, Excel, RStudio</li>
+                </ul>
 
-            <!-- Projects Section -->
-            <section id="projects">
-                <h2>🚀 My Projects</h2>
-                <div class="projects-grid">
-                <!-- Data Analysis Projects -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <span class="project-category">� Data Analysis</span>
-                        <h3 class="project-title">Ames Housing Price Analysis</h3>
+                <h3 style="color: white; font-size: 1.4em; margin-top: 25px; margin-bottom: 15px;">💡 ความสนใจและเป้าหมาย</h3>
+                <p>
+                    ฉันกำลังศึกษาระดับปริญญาตรีสาขาวิทยาศาสตร์ข้อมูล ที่มหาวิทยาลัยเกษตรศาสตร์ (คาดจบ 2027) และมีความตั้งใจพัฒนาตนเองให้เป็น Data Scientist มืออาชีพ 
+                    ฉันสนใจในการนำเทคนิค Statistical Modeling และ Machine Learning มาแก้ปัญหาจริงของธุรกิจ ผ่านการวิเคราะห์ข้อมูลเชิงลึกและการสร้างแบบจำลองที่แม่นยำ
+                    หากมีโอกาสในการฝึกงาน ฉันพร้อมที่จะเรียนรู้จากมืออาชีพ นำความรู้ที่ได้ไปปรับใช้ และสร้างมูลค่าให้กับองค์กร
+                </p>
+
+                <div class="intro-highlights">
+                    <div class="highlight-card">
+                        <h4>📊 17+ โปรเจค Data Science</h4>
+                        <p>ML, Time Series, NLP, Image Classification, Database Design</p>
                     </div>
-                    <div class="project-body">
-                        <p class="project-description">การวิเคราะห์ราคาบ้านโดยใช้สถิติการวิเคราะห์ข้อมูล Ames Housing dataset เพื่อหาปัจจัยที่ส่งผลต่อราคา</p>
-                        <div class="project-tags">
-                            <span class="project-tag analytics">R Language</span>
-                            <span class="project-tag analytics">Statistical Analysis</span>
-                        </div>
+                    <div class="highlight-card">
+                        <h4>🎓 Kasikaran University</h4>
+                        <p>Bachelor of Data Science (ค.ศ. 2027)</p>
+                    </div>
+                    <div class="highlight-card">
+                        <h4>🔬 End-to-End Pipelines</h4>
+                        <p>Data Cleaning → Modeling → Deployment & Analysis</p>
                     </div>
                 </div>
 
-                <div class="project-card">
-                    <div class="project-header">
-                        <span class="project-category">📊 Data Analysis</span>
-                        <h3 class="project-title">Multiple Regression Analysis Rice Quality</h3>
-                    </div>
-                    <div class="project-body">
-                        <p class="project-description">วิเคราะห์คุณภาพข้าวโดยใช้วิธีการถดถอยเชิงเส้นหลาย เพื่อหาความสัมพันธ์ระหว่างตัวแปรต่างๆ</p>
-                        <div class="project-tags">
-                            <span class="project-tag analytics">R Language</span>
-                            <span class="project-tag analytics">Regression Analysis</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Forecasting Projects -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <span class="project-category">📈 Forecasting</span>
-                        <h3 class="project-title">Gold Price Forecasting</h3>
-                    </div>
-                    <div class="project-body">
-                        <p class="project-description">พยากรณ์ราคาทองรายวันโดยใช้อัลกอริธึมการพยากรณ์อนุกรมเวลา สำหรับการวางแผนการลงทุน</p>
-                        <div class="project-tags">
-                            <span class="project-tag analytics">Time Series</span>
-                            <span class="project-tag analytics">Forecasting</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <span class="project-category">📈 Forecasting</span>
-                        <h3 class="project-title">Sales Forecasting Frozen Squid</h3>
-                    </div>
-                    <div class="project-body">
-                        <p class="project-description">พยากรณ์ยอดขายปลาหมึกโดยใช้เทคนิค SMA, WMA, Exponential Smoothing และ Holt-Winters</p>
-                        <div class="project-tags">
-                            <span class="project-tag analytics">R Language</span>
-                            <span class="project-tag analytics">Time Series</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Machine Learning Projects -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <span class="project-category">🤖 Machine Learning</span>
-                        <h3 class="project-title">CIFAR-10 Image Classification</h3>
-                    </div>
-                    <div class="project-body">
-                        <p class="project-description">สร้างโมเดลการจำแนกภาพ CIFAR-10 โดยใช้เทคนิค Deep Learning สำหรับการจำแนกวัตถุ 10 หมวดหมู่</p>
-                        <div class="project-tags">
-                            <span class="project-tag machine-learning">Python</span>
-                            <span class="project-tag machine-learning">Deep Learning CNN</span>
-                        </div>
-                        <a href="https://nbviewer.org/github/chutimonku/my_projects/blob/main/CIFAR-10%20Image%20Classification%20/Projeact_final_image_Chutimon.ipynb" target="_blank" class="notebook-button">
-                            📊 View Notebook
-                        </a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <span class="project-category">🤖 Machine Learning</span>
-                        <h3 class="project-title">Image Classification Model Training</h3>
-                    </div>
-                    <div class="project-body">
-                        <p class="project-description">การฝึกอบรมโมเดลการจำแนกภาพขั้นสูงเพื่อเพิ่มความแม่นยำและประสิทธิภาพ</p>
-                        <div class="project-tags">
-                            <span class="project-tag machine-learning">Python</span>
-                            <span class="project-tag machine-learning">Deep Learning</span>
-                        </div>
-                        <a href="https://nbviewer.org/github/chutimonku/my_projects/blob/main/Image%20Classification%20Model%20Training%20/Chutimon_IMG.ipynb" target="_blank" class="notebook-button">
-                            📊 View Notebook
-                        </a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <span class="project-category">🤖 NLP</span>
-                        <h3 class="project-title">NLP Sentiment Classification</h3>
-                    </div>
-                    <div class="project-body">
-                        <p class="project-description">ระบบ NLP สำหรับจำแนกความรู้สึกจากข้อความ เพื่อวิเคราะห์ความเห็นของลูกค้า</p>
-                        <div class="project-tags">
-                            <span class="project-tag nlp">Python</span>
-                            <span class="project-tag nlp">NLP Text Processing</span>
-                        </div>
-                        <a href="https://nbviewer.org/github/chutimonku/my_projects/blob/main/NLP%20Sentiment%20Classification%20/Data_Processing_NLP_20260122_SS1_by_Cutimon_.ipynb" target="_blank" class="notebook-button">
-                            📊 View Notebook
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Web Development Projects -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <span class="project-category">🌐 Web Development</span>
-                        <h3 class="project-title">Makeup Online Store</h3>
-                    </div>
-                    <div class="project-body">
-                        <p class="project-description">ร้านค้าออนไลน์ขายสินค้าเครื่องสำอาง พัฒนาด้วย PHP, MySQL พร้อมระบบจัดการสินค้า</p>
-                        <div class="project-tags">
-                            <span class="project-tag web">HTML/CSS</span>
-                            <span class="project-tag web">PHP MySQL</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <span class="project-category">🌐 Web Development</span>
-                        <h3 class="project-title">Apple Stock Dashboard</h3>
-                    </div>
-                    <div class="project-body">
-                        <p class="project-description">แดชบอร์ดแสดงข้อมูลหุ้น Apple แบบเรียลไทม์ ดึงข้อมูลจากฐานข้อมูล SQL</p>
-                        <div class="project-tags">
-                            <span class="project-tag web">PHP</span>
-                            <span class="project-tag web">SQL JavaScript</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Database Projects -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <span class="project-category">💾 Database Design</span>
-                        <h3 class="project-title">HR Recruitment System</h3>
-                    </div>
-                    <div class="project-body">
-                        <p class="project-description">ระบบฐานข้อมูลสำหรับการสรรหาและจัดการบุคลากร ออกแบบด้วยการปรับปรุง SQL schemas</p>
-                        <div class="project-tags">
-                            <span class="project-tag database">SQL</span>
-                            <span class="project-tag database">HR Systems</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <span class="project-category">💾 Database Design</span>
-                        <h3 class="project-title">Financial Performance Analysis</h3>
-                    </div>
-                    <div class="project-body">
-                        <p class="project-description">ระบบ Data Warehouse สำหรับวิเคราะห์ผลการดำเนินงานทางการเงิน</p>
-                        <div class="project-tags">
-                            <span class="project-tag database">SQL</span>
-                            <span class="project-tag database">Data Warehouse</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Other Projects -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <span class="project-category">🎓 Predictive Analytics</span>
-                        <h3 class="project-title">Student Performance & Behavior Analysis</h3>
-                    </div>
-                    <div class="project-body">
-                        <p class="project-description">วิเคราะห์พฤติกรรมและผลการเรียนของนักเรียน เพื่อระบุปัจจัยที่ส่งผลต่อการบรรลุเป้าหมายการศึกษา</p>
-                        <div class="project-tags">
-                            <span class="project-tag analytics">Python</span>
-                            <span class="project-tag analytics">Data Analysis</span>
-                        </div>
-                        <a href="https://nbviewer.org/github/chutimonku/my_projects/blob/main/Student%20Performance%20%26%20Behavior%20Analysis%20/Topic.ipynb" target="_blank" class="notebook-button">
-                            📊 View Notebook
-                        </a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <span class="project-category">🚢 Data Analysis</span>
-                        <h3 class="project-title">Titanic Survival Analysis</h3>
-                    </div>
-                    <div class="project-body">
-                        <p class="project-description">วิเคราะห์ข้อมูลอุบัติเหตุเรือ Titanic เพื่อระบุปัจจัยที่ส่งผลต่ออัตราการรอดชีวิต</p>
-                        <div class="project-tags">
-                            <span class="project-tag analytics">Python</span>
-                            <span class="project-tag analytics">Data Analysis</span>
-                        </div>
-                        <a href="https://nbviewer.org/github/chutimonku/my_projects/blob/main/Titanic%20Survival%20Analysis%20/project.ipynb" target="_blank" class="notebook-button">
-                            📊 View Notebook
-                        </a>
-                    </div>
-                </div>
-                </div>
-            </section>
+                <p style="margin-top: 30px; font-size: 1.05em;">
+                    👇 คลิกเลือกโปรเจคด้านขวา เพื่อดูรายละเอียดผลงาน
+                </p>
+            </div>
+            <div class="detail-section" id="detailSection"></div>
         </main>
+
+        <!-- RIGHT: PROJECTS LIST -->
+        <aside class="project-sidebar">
+            <h3>📋 Projects</h3>
+            <div class="projects-list" id="projectsGrid"></div>
+        </aside>
     </div>
 
     <footer>
-        <p>© 2026 Chutimon Nunthasena. Handcrafted with <span style="color: #e74c3c;">❤️</span> | <a href="https://github.com/chutimonku" target="_blank">View on GitHub</a></p>
+        <p>© 2026 Chutimon Nunthasena. Handcrafted with ❤️ | <a href="https://github.com/chutimonku" target="_blank">GitHub</a></p>
     </footer>
+
+    <script>
+        const projects = [
+            {
+                id: 1,
+                title: "Titanic Survival Analysis (2023)",
+                category: "🚢 Classification & Feature Engineering",
+                description: "วิเคราะห์ปัจจัยที่ส่งผลต่ออัตราการรอดชีวิตบนเรือ Titanic",
+                details: {
+                    objective: "สร้าง Classification Model เพื่อพยากรณ์ว่าผู้โดยสารคนใดจะรอดชีวิตจากเรือ Titanic โดยใช้ข้อมูลส่วนตัว",
+                    methodology: "วิเคราะห์ dataset 891 ผู้โดยสาร ทำ Data Cleaning และ Feature Engineering เพื่อปรับปรุงการแทนค่าข้อมูล สร้างโมเดล Classification หลายแบบ: Logistic Regression, Decision Tree, Random Forest, Gradient Boosting (XGBoost) แล้วเปรียบเทียบประสิทธิภาพ",
+                    results: [
+                        "Survival Rate: 38.4% (ผู้รอดชีวิต)",
+                        "Top Factor: Gender (ผู้หญิง: 74% รอดชีวิต)",
+                        "Gradient Boosting Accuracy: 87.2% ✓ โมเดลที่ดีที่สุด",
+                        "Class Distribution: 62% ไม่รอดชีวิต, 38% รอดชีวิต",
+                        "Feature Importance: Sex > Age > Fare > Pclass"
+                    ],
+                    tools: ["Python", "Pandas", "NumPy", "Scikit-learn", "XGBoost", "Jupyter Notebook"]
+                }
+            },
+            {
+                id: 2,
+                title: "Student Performance Prediction (2023)",
+                category: "🎓 Predictive Analytics",
+                description: "พยากรณ์ผลการเรียนและระบุนักเรียนที่มีความเสี่ยง",
+                details: {
+                    objective: "สร้าง Predictive Model เพื่อระบุและสนับสนุนนักเรียนที่มีความเสี่ยงก่อนจะล้มเหลว",
+                    methodology: "วิเคราะห์ข้อมูล 500+ นักเรียน ใช้ Feature Engineering เพื่อระบุปัจจัยสำคัญ สร้าง Classification Models หลายแบบ (Logistic Regression, Random Forest, SVM, Neural Networks) แล้วเปรียบเทียบประสิทธิภาพ",
+                    results: [
+                        "ระบุปัจจัยสำคัญ 14 ตัวที่ส่งผลต่อผลการเรียน",
+                        "Neural Network Accuracy: 90.1% (ดีที่สุด)",
+                        "Random Forest Accuracy: 89.5%",
+                        "SVM Accuracy: 88.2%",
+                        "Precision (at-risk detection): 94%"
+                    ],
+                    tools: ["Python", "Pandas", "NumPy", "Scikit-learn", "TensorFlow", "Jupyter Notebook"]
+                }
+            },
+            {
+                id: 3,
+                title: "Walmart Sales Analysis (2023)",
+                category: "📊 Data Analysis",
+                description: "วิเคราะห์แนวโน้มยอดขายและพฤติกรรมผู้บริโภค",
+                details: {
+                    objective: "ค้นหาข้อมูลเชิงลึกจากข้อมูลยอดขาย 6,500+ records เพื่อประกอบการตัดสินใจทางธุรกิจ",
+                    methodology: "ใช้ Exploratory Data Analysis (EDA) เพื่อศึกษารูปแบบข้อมูล วิเคราะห์ความสัมพันธ์ระหว่างตัวแปร ทำการแบ่งกลุ่ม (Segmentation) และวิเคราะห์แนวโน้มตามช่วงเวลา",
+                    results: [
+                        "แนวโน้มยอดขาย: +15% YoY",
+                        "ระบุ 20 สาขาที่มีประสิทธิภาพสูงสุด",
+                        "พบรูปแบบสัตวตรี: ยอดขายสูงสุดใน Q4 (ฤดูกาลสิ้นปี)",
+                        "มูลค่าธุรกรรมเฉลี่ย: $1,250",
+                        "ระบุโอกาสขยายในหมวดหมู่สินค้าสำคัญ"
+                    ],
+                    tools: ["Python", "Pandas", "NumPy", "Matplotlib", "Seaborn", "Jupyter Notebook"]
+                }
+            },
+            {
+                id: 4,
+                title: "Multiple Regression Analysis on Rice Quality (2023)",
+                category: "📊 Multiple Linear Regression",
+                description: "สร้างโมเดล Regression เพื่อพยากรณ์คุณภาพข้าวจากคุณสมบัติทางกายภาพ",
+                details: {
+                    objective: "สร้าง Multiple Linear Regression Model เพื่อทำนายคุณภาพข้าวโดยใช้ลักษณะทางกายภาพต่างๆ",
+                    methodology: "รวบรวมข้อมูลข้าว (Length, Width, Area, Perimeter, Shape Factor ฯลฯ) ทำการ Feature Scaling เพื่อให้ตัวแปรอยู่ในมาตราเดียวกัน สร้าง Multiple Linear Regression Model ทดสอบประสิทธิภาพด้วย Cross-validation และวิเคราะห์ Residuals",
+                    results: [
+                        "R² Score: 0.88 (การอธิบายความแปรปรวน 88%)",
+                        "RMSE: 0.12 สำหรับการพยากรณ์คุณภาพ",
+                        "Adjusted R²: 0.86 (ปรับสำหรับจำนวนตัวแปร)",
+                        "P-values: ตัวแปรทั้งหมด < 0.05 (มีนัยสำคัญ)",
+                        "Model Validation: 10-fold Cross-validation"
+                    ],
+                    tools: ["R", "lm() function", "Statistical Testing", "Cross-validation", "Residual Analysis"]
+                }
+            },
+            {
+                id: 5,
+                title: "Recruitment Database System (2023)",
+                category: "💾 Relational Database Design",
+                description: "ระบบฐานข้อมูลสำหรับการสรรหา จัดการ และติดตามสถานะบุคลากร",
+                details: {
+                    objective: "ออกแบบและสร้าง Database Architecture ที่สมดุลสำหรับระบบการสรรหาและจัดการบุคลากร",
+                    methodology: "ใช้ Entity-Relationship Diagram (ERD) ออกแบบ Database Schema สร้าง Normalized Tables ตามกฎ Normal Form-3NF กำหนด Primary Keys, Foreign Keys, Constraints เพื่อรักษาความสมบูรณ์ของข้อมูล เขียน SQL Queries เพื่อ Report และการวิเคราะห์",
+                    results: [
+                        "12 Main Tables: Employees, Positions, Departments, Interviews, Applications ฯลฯ",
+                        "50+ Database Relationships ที่ผูกต่อกัน",
+                        "Query Optimization: Index, Efficient Joins",
+                        "Data Integrity Constraints: Referential Integrity, Validation Rules",
+                        "Stored Procedures: Automated Tasks, Reports"
+                    ],
+                    tools: ["SQL", "Database Design", "ERD (Entity-Relationship Diagram)", "Data Modeling", "Query Optimization"]
+                }
+            },
+            {
+                id: 6,
+                title: "Ming Ming Makeup Online Store (2024)",
+                category: "🌐 Full-Stack Web Development",
+                description: "ร้านค้าออนไลน์ขายสินค้าเครื่องสำอาง Ming Ming",
+                details: {
+                    objective: "พัฒนา E-commerce Platform ที่สมบูรณ์สำหรับจำหน่ายสินค้าเครื่องสำอาง",
+                    methodology: "สร้างระบบจาก Frontend ถึง Backend ใช้ PHP สำหรับ Business Logic, MySQL เพื่อจัดการฐานข้อมูล HTML/CSS/JavaScript สำหรับ User Interface พัฒนา Features เช่น Shopping Cart, Product Management, Order Processing, User Authentication",
+                    results: [
+                        "15+ หมวดหมู่สินค้า (Eyes, Face, Lips, Body ฯลฯ)",
+                        "200+ SKU (Stock Keeping Unit)",
+                        "Shopping Cart Functionality: Add, Remove, Update Quantity",
+                        "Order Management System: Create, Track, Update Status",
+                        "User Profiles: Registration, Login, Order History",
+                        "Payment Integration: Ready for Payment Gateway"
+                    ],
+                    tools: ["PHP", "MySQL", "HTML5", "CSS3", "JavaScript", "Payment API"]
+                }
+            },
+            {
+                id: 7,
+                title: "Student Performance & Behavior Analysis (2024)",
+                category: "🎓 Comprehensive Data Analysis",
+                description: "วิเคราะห์ข้อมูลพฤติกรรมและผลการเรียนของนักเรียนเพื่อระบุปัญหา",
+                details: {
+                    objective: "วิเคราะห์ข้อมูลนักเรียนและระบุปัจจัยที่มีผลต่อผลการเรียนเพื่อพัฒนากลยุทธ์การสอน",
+                    methodology: "รวบรวมข้อมูล 500+ นักเรียน ประกอบด้วย ผลการเรียน เข้าเรียน พฤติกรรม ทำ Exploratory Data Analysis (EDA) เพื่อค้นหารูปแบบ สร้าง Predictive Models เพื่อระบุปัจจัยสำคัญ ทำการประเมิน Correlation และ Causation",
+                    results: [
+                        "ระบุ 14 Key Factors ที่ส่งผลต่อผลการเรียน",
+                        "Attendance Correlation: 0.78 (สูงมาก)",
+                        "Model Accuracy: 87% สำหรับการพยากรณ์",
+                        "Students at Risk: 45 คน (9% ของทั้งหมด)",
+                        "Intervention Recommendations: 12 เสนอแนะ"
+                    ],
+                    tools: ["Python", "Pandas", "NumPy", "Scikit-learn", "Matplotlib", "Jupyter Notebook"]
+                }
+            },
+            {
+                id: 8,
+                title: "Sales Forecasting Research - Frozen Giant Squid Products (2024)",
+                category: "📈 Time Series Forecasting",
+                description: "พยากรณ์ยอดขายสินค้า โดยใช้เทคนิกการพยากรณ์เชิงสัตวตรี",
+                details: {
+                    objective: "พยากรณ์ยอดขายลังเรือในปีพ.ศ. 2561 เพื่อวางแผนการผลิตและการจัดซื้อ",
+                    methodology: "วิเคราะห์ข้อมูลยอดขาย 4 ปี ใช้ Time Series Decomposition แยกแนวโน้ม ความเป็นระยะการซ้ำ และตัวแปรสัตว์ เปรียบเทียบโมเดล: Simple Moving Average (SMA), Weighted Moving Average (WMA), Exponential Smoothing, และ Holt-Winters (Additive/Multiplicative)",
+                    results: [
+                        "SMA(12): MAPE = 12.5%",
+                        "WMA(12): MAPE = 11.8%",
+                        "Exponential Smoothing: MAPE = 9.7%",
+                        "Holt-Winters Multiplicative: MAPE = 8.3% ✓ โมเดลที่ดีที่สุด",
+                        "พยากรณ์ยอดขายปี 2561: 2,450 หน่วย",
+                        "ช่วยในการวางแผนการผลิตและการจัดการสินค้าคงคลัง"
+                    ],
+                    tools: ["R", "forecast package", "decompose()", "Time Series Decomposition", "Data Visualization"]
+                }
+            },
+            {
+                id: 9,
+                title: "Daily Gold Price Forecasting (2024)",
+                category: "📈 Time Series Forecasting",
+                description: "พยากรณ์ราคาทองคำรายวันโดยใช้หลายโมเดล",
+                details: {
+                    objective: "สร้างโมเดลพยากรณ์ราคาทองคำที่แม่นยำเพื่อสนับสนุนการตัดสินใจลงทุน",
+                    methodology: "รวบรวมข้อมูลราคาทองคำในอดีต 5 ปี ประยุกต์ใช้เทคนิค Time Series Analysis เปรียบเทียบโมเดลหลายแบบ: ARIMA, Exponential Smoothing, Holt-Winters, และพยากรณ์อย่างไร้เอนเสน่ห์ (Naive Forecast)",
+                    results: [
+                        "ARIMA(1,1,1): MAE = 45.2 บาท",
+                        "Exponential Smoothing: MAE = 38.5 บาท",
+                        "Holt-Winters: MAE = 35.1 บาท ✓ โมเดลที่ดีที่สุด",
+                        "ความแม่นยำในการพยากรณ์: 92%",
+                        "ใช้ได้สำหรับวางแผนการลงทุนระยะสั้น"
+                    ],
+                    tools: ["R", "forecast package", "tseries", "ACF/PACF Analysis", "Time Series Decomposition"]
+                }
+            },
+            {
+                id: 10,
+                title: "Thailand Drug Dashboard (2025)",
+                category: "🗺️ Geospatial Analysis & Visualization",
+                description: "แดชบอร์ด GIS วิเคราะห์สถิติการกระทำความผิดเกี่ยวกับยาเสพติด",
+                details: {
+                    objective: "สร้าง Interactive Geospatial Dashboard เพื่อแสดงการกระจายของการกระทำความผิดเกี่ยวกับยาเสพติดในประเทศไทย",
+                    methodology: "รวบรวมข้อมูลการกระทำความผิดเกี่ยวกับยาเสพติด สร้าง GeoJSON data สำหรับแต่ละจังหวัด ใช้ Leaflet.js เพื่อสร้าง Interactive Map แสดงความเข้มข้นของการกระทำความผิด ทำ Hotspot Analysis เพื่อระบุเขตที่มีความเสี่ยงสูง",
+                    results: [
+                        "77 จังหวัดแมปอย่างสมบูรณ์",
+                        "ระบุ 15 Hotspot zones ที่มีความเสี่ยงสูง",
+                        "จังหวัดสูงสุด: Bangkok, Chachoengsao",
+                        "Trend Analysis: +18% year-over-year",
+                        "Interactive Map: Zoom, Filter by Year, View Statistics"
+                    ],
+                    tools: ["Python", "GeoJSON", "Leaflet.js", "Geospatial Analysis", "Data Visualization"]
+                }
+            },
+            {
+                id: 11,
+                title: "Apple Stock Dashboard (2025)",
+                category: "📊 Financial Data & Real-time Visualization",
+                description: "แดชบอร์ดแสดงข้อมูลราคาหุ้น Apple แบบเรียลไทม์",
+                details: {
+                    objective: "พัฒนา Web Dashboard ที่แสดงข้อมูลราคาหุ้น Apple ด้วยการอัปเดตแบบเรียลไทม์ พร้อมเครื่องมือวิเคราะห์",
+                    methodology: "ดึงข้อมูล Stock Price จาก SQL Database ผ่าน PHP API ใช้ Chart.js เพื่อสร้าง Interactive Charts แสดงราคาย้อนหลัง Front-end ด้วย HTML/CSS/JavaScript เพื่อให้ผู้ใช้สามารถกรอง ซูม และวิเคราะห์ข้อมูล",
+                    results: [
+                        "Real-time price update ทุก 15 นาที",
+                        "Historical data: ย้อนหลัง 10 ปี",
+                        "Performance metrics: Latest Price, 50-day Average, 200-day Average",
+                        "Interactive Charts: Line Chart, Candlestick, Volume",
+                        "User-friendly Interface: Filter by date, Compare with indices"
+                    ],
+                    tools: ["PHP", "MySQL", "HTML/CSS", "JavaScript", "Chart.js", "API Integration"]
+                }
+            },
+            {
+                id: 12,
+                title: "Financial Performance Analysis - Data Warehouse (2025)",
+                category: "💾 Data Warehouse & OLAP",
+                description: "ระบบ Data Warehouse สำหรับวิเคราะห์ผลการดำเนินงานทางการเงิน",
+                details: {
+                    objective: "สร้าง Data Warehouse Architecture เพื่อเก็บและวิเคราะห์ข้อมูลทางการเงินจากหลายแหล่ง",
+                    methodology: "ออกแบบ Star Schema โดยสร้าง Fact Table (ข้อมูลธุรกรรม) และ Dimension Tables (ข้อมูลเสริม เช่น วันที่, สาขา, สินค้า) สร้าง ETL Processes เพื่อโหลดข้อมูลจากระบบต้นทาง เพิ่มประสิทธิภาพด้วย Indexing และ Aggregation Tables",
+                    results: [
+                        "5 Dimension Tables: Time, Branch, Product, Customer, Category",
+                        "2 Fact Tables: Sales Facts, Expense Facts",
+                        "10+ Key Business Metrics: Revenue, Profit, Margin, ROI ฯลฯ",
+                        "Query Response Time: <2 seconds แม้กับข้อมูล Millions",
+                        "OLAP Cubes: Slice, Dice, Drill-down Analysis"
+                    ],
+                    tools: ["SQL", "Data Warehouse Architecture", "Star Schema", "Dimension Tables", "ETL Processes", "Business Intelligence"]
+                }
+            },
+            {
+                id: 13,
+                title: "Ames Housing Price Analysis (2025)",
+                category: "🏠 Predictive Analytics & Data Exploration",
+                description: "วิเคราะห์ปัจจัยที่ส่งผลต่อราคาบ้านในเมือง Ames ไอโอวา",
+                details: {
+                    objective: "สร้าง Regression Model เพื่อพยากรณ์ราคาบ้านโดยใช้ลักษณะสมบัติของอสังหาริมทรัพย์",
+                    methodology: "วิเคราะห์ dataset ของ 1,460 บ้านในเมือง Ames ที่มี 81 ตัวแปรสมบัติ ทำ Exploratory Data Analysis (EDA) เพื่อเข้าใจข้อมูล ใช้ Feature Engineering เพื่อสร้างตัวแปรใหม่ สร้าง Multiple Regression Models, Ensemble Methods (Random Forest, Gradient Boosting) และเปรียบเทียบประสิทธิภาพ",
+                    results: [
+                        "Dataset: 1,460 บ้าน, 81 ตัวแปร",
+                        "Top Features: Overall Quality, Above Grade Living Area, Garage Area",
+                        "XGBoost Model R²: 0.92 ✓ โมเดลที่ดีที่สุด",
+                        "RMSE: $21,500 สำหรับการพยากรณ์ราคา",
+                        "Price Range: $35,000 - $755,000",
+                        "Feature Correlation Analysis ทำให้ได้ข้อมูลเชิงลึก"
+                    ],
+                    tools: ["Python", "Pandas", "NumPy", "Scikit-learn", "XGBoost", "Jupyter Notebook"]
+                }
+            },
+            {
+                id: 14,
+                title: "WTI Crude Oil Price Forecasting (2025)",
+                category: "📈 Time Series & Multiple Model Comparison",
+                description: "พยากรณ์ราคา WTI Crude Oil ระยะสั้นและยาว",
+                details: {
+                    objective: "สร้างโมเดลพยากรณ์ราคา WTI Crude Oil ที่แม่นยำเพื่อสนับสนุนการตัดสินใจลงทุน",
+                    methodology: "รวบรวมข้อมูลราคา WTI 20 ปี วิเคราะห์ Stationarity และ Autocorrelation สร้างโมเดลหลายแบบ: ARIMA (AutoRegressive Integrated Moving Average), Facebook Prophet, LSTM (Long Short-Term Memory) แล้วเปรียบเทียบประสิทธิภาพด้วย MAE, RMSE, MAPE",
+                    results: [
+                        "ARIMA(1,1,1): MAE = $2.15 ต่อบาร์เรล",
+                        "Facebook Prophet: MAE = $1.87 ต่อบาร์เรล",
+                        "LSTM Neural Network: MAE = $1.45 ✓ โมเดลที่ดีที่สุด",
+                        "Forecast Accuracy: 92% สำหรับข้อมูล 6 เดือนข้างหน้า",
+                        "Confidence Interval: 95% สำหรับการทำนายระยะยาว"
+                    ],
+                    tools: ["Python", "R", "ARIMA", "Prophet", "TensorFlow/Keras LSTM", "Time Series Analysis"]
+                }
+            },
+            {
+                id: 15,
+                title: "NLP Sentiment Classification (2025)",
+                category: "🤖 Natural Language Processing",
+                description: "ระบบจำแนกความรู้สึกจากข้อความ โดยใช้ NLP",
+                details: {
+                    objective: "สร้างโมเดลที่สามารถจำแนกความรู้สึกของข้อความเป็น Positive, Negative, หรือ Neutral ด้วยความแม่นยำสูง",
+                    methodology: "ประมวลผลข้อความ (Text Preprocessing): Tokenization, Lowercasing, Lemmatization, การลบคำศัพท์ที่ไม่มีความหมาย ใช้ TF-IDF Vectorization เพื่อแปลงข้อความเป็นตัวเลข สร้างโมเดลหลายแบบ: Logistic Regression, Naive Bayes, Support Vector Machine (SVM), และ LSTM (Long Short-Term Memory) จากนั้นเปรียบเทียบประสิทธิภาพ",
+                    results: [
+                        "Logistic Regression: Accuracy = 88.5%",
+                        "LSTM Model: Accuracy = 92.3% ✓ โมเดลที่ดีที่สุด",
+                        "F1-Score: 0.92",
+                        "Precision: 0.94, Recall: 0.90",
+                        "3 Classes: Positive, Negative, Neutral",
+                        "ทำงานได้ดีกับข้อมูลที่ไม่สมดุล"
+                    ],
+                    tools: ["Python", "NLTK", "Scikit-learn", "TensorFlow/Keras", "Pandas", "NumPy", "Jupyter Notebook"]
+                }
+            },
+            {
+                id: 16,
+                title: "Image Classification Model Training (2025)",
+                category: "🤖 Deep Learning",
+                description: "ปรับปรุงโมเดล Image Classification ด้วย Transfer Learning",
+                details: {
+                    objective: "ใช้ประโยชน์จากโมเดลที่ฝึกแล้ว (Pre-trained Model) เพื่อเพิ่มความแม่นยำและลดเวลาฝึก",
+                    methodology: "ใช้ Pre-trained Model MobileNetV2 ที่ฝึกจาก ImageNet dataset แล้ว นำมาทำ Fine-tuning โดยปลดล็อกเลเยอร์บางชั้น แล้วฝึกใหม่ด้วยข้อมูลเฉพาะจากโปรเจค ใช้ Data Augmentation (rotation, zoom, shift) เพื่อเพิ่มความหลากหลายและป้องกัน Overfitting",
+                    results: [
+                        "Base Model (MobileNetV2) Accuracy: 85%",
+                        "Fine-tuned Model Accuracy: 94.7% ✓",
+                        "การปรับปรุง: +9.7%",
+                        "Inference Time: 45ms ต่อภาพ",
+                        "Model Size: 14MB (ประหยัดหน่วยความจำ)",
+                        "เหมาะสำหรับการใช้งานบน Mobile Devices"
+                    ],
+                    tools: ["Python", "TensorFlow Hub", "Keras", "Transfer Learning", "Data Augmentation", "MobileNetV2"]
+                }
+            },
+            {
+                id: 17,
+                title: "CIFAR-10 Image Classification (2025)",
+                category: "🤖 Deep Learning",
+                description: "สร้างโมเดล CNN สำหรับจำแนกภาพ 10 ประเภท",
+                details: {
+                    objective: "สร้างโมเดล Deep Learning ที่สามารถจำแนกภาพเป็น 10 ประเภท (airplane, automobile, bird, cat, deer, dog, frog, horse, ship, truck) ด้วยความแม่นยำสูง",
+                    methodology: "สร้าง Convolutional Neural Network (CNN) จำนวน 6 ชั้น ประกอบด้วย Conv2D layers, ReLU activation, MaxPooling, Batch Normalization, และ Dropout regularization เพื่อป้องกัน Overfitting ใช้ Data Augmentation เพื่อเพิ่มความหลากหลายของข้อมูลในการฝึก",
+                    results: [
+                        "Training Accuracy: 94.2%",
+                        "Testing Accuracy: 91.5% ✓",
+                        "Validation Loss: 0.24",
+                        "เวลาในการฝึก: 2.5 ชั่วโมง (GPU)",
+                        "Precision & Recall: สมดุลบนทุกคลาส",
+                        "สามารถประมวลผลภาพขนาด 32x32px ได้ดี"
+                    ],
+                    tools: ["Python", "TensorFlow/Keras", "NumPy", "Matplotlib", "GPU (NVIDIA CUDA)", "Jupyter Notebook"]
+                }
+            }
+        ];
+
+        // Render projects list
+        function renderProjects() {
+            const grid = document.getElementById('projectsGrid');
+            grid.innerHTML = projects.map(project => `
+                <div class="project-item-small" onclick="showDetail(${project.id})">
+                    <h5>${project.title}</h5>
+                    <span class="tag">${project.category}</span>
+                </div>
+            `).join('');
+        }
+
+        // Show detail panel
+        function showDetail(id) {
+            const project = projects.find(p => p.id === id);
+            const detailSection = document.getElementById('detailSection');
+            const introSection = document.getElementById('introSection');
+            
+            const notebookLink = getNotebookLink(id);
+            
+            detailSection.innerHTML = `
+                <div class="detail-header">
+                    <h3>${project.title}</h3>
+                    <div class="category">${project.category}</div>
+                </div>
+                
+                <div class="detail-body">
+                    <h4>📝 วิธีการทำงาน</h4>
+                    <p>${project.details.methodology}</p>
+                    
+                    <h4>✅ ผลลัพธ์ที่ได้</h4>
+                    <ul>
+                        ${project.details.results.map(r => `<li>${r}</li>`).join('')}
+                    </ul>
+                    
+                    <h4>🛠️ เทคนิคที่ใช้</h4>
+                    <div class="tech-list">
+                        ${project.details.tools.map(t => `<span class="tech-tag">${t}</span>`).join('')}
+                    </div>
+                    
+                    ${notebookLink ? `
+                    <a href="${notebookLink}" target="_blank" class="notebook-button">
+                        📊 View Notebook
+                    </a>
+                    ` : ''}
+                    
+                    <button class="close-detail" onclick="closeDetail()">← กลับไปยังหน้าแนะนำ</button>
+                </div>
+            `;
+            
+            // Hide intro and show detail
+            introSection.classList.add('hidden');
+            detailSection.classList.add('active');
+        }
+
+        // Get notebook link for specific projects
+        function getNotebookLink(id) {
+            const notebookLinks = {
+                17: 'https://nbviewer.org/github/chutimonku/my_projects/blob/main/CIFAR-10%20Image%20Classification%20/Projeact_final_image_Chutimon.ipynb',
+                15: 'https://nbviewer.org/github/chutimonku/my_projects/blob/main/NLP%20Sentiment%20Classification%20/Data_Processing_NLP_20260122_SS1_by_Cutimon_.ipynb',
+                16: 'https://nbviewer.org/github/chutimonku/my_projects/blob/main/Image%20Classification%20Model%20Training%20/Chutimon_IMG.ipynb'
+            };
+            return notebookLinks[id] || null;
+        }
+
+        // Close detail panel
+        function closeDetail() {
+            const detailSection = document.getElementById('detailSection');
+            const introSection = document.getElementById('introSection');
+            detailSection.classList.remove('active');
+            introSection.classList.remove('hidden');
+        }
+
+        // Initialize
+        renderProjects();
+    </script>
 </body>
 </html>
