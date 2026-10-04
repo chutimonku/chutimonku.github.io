@@ -463,58 +463,6 @@
             margin: 0;
         }
 
-        /* Comparison Table */
-        .comparison-table-wrapper {
-            overflow-x: auto;
-            margin: 25px 0;
-            border: 1px solid var(--border);
-            border-radius: 10px;
-        }
-
-        .comparison-table {
-            width: 100%;
-            border-collapse: collapse;
-            font-size: 0.88em;
-            text-align: left;
-        }
-
-        .comparison-table th {
-            background: var(--bg-page);
-            padding: 12px 16px;
-            font-weight: 700;
-            color: var(--dark);
-            border-bottom: 1px solid var(--border);
-        }
-
-        .comparison-table td {
-            padding: 12px 16px;
-            border-bottom: 1px solid var(--border);
-            vertical-align: top;
-            line-height: 1.55;
-        }
-
-        .comparison-table tr:last-child td {
-            border-bottom: none;
-        }
-
-        .badge-old {
-            background: #fee2e2;
-            color: #991b1b;
-            padding: 2px 7px;
-            border-radius: 4px;
-            font-size: 0.78em;
-            font-weight: 600;
-        }
-
-        .badge-new {
-            background: #dcfce7;
-            color: #166534;
-            padding: 2px 7px;
-            border-radius: 4px;
-            font-size: 0.78em;
-            font-weight: 600;
-        }
-
         /* 11 Steps Interactive Timeline */
         .timeline-container {
             margin-top: 30px;
@@ -1070,30 +1018,22 @@
             <!-- VIEW 2: CUSTOM 11-STEP WORKFLOW -->
             <div class="page-view" id="viewWorkflow">
                 <div class="workflow-hero">
-                    <h2 id="uiWfTitle">⚡ กระบวนการทำงานมาตรฐาน 11 ขั้นตอนของฉัน (Chutimon's Governed ML Lifecycle)</h2>
+                    <h2 id="uiWfTitle">⚡ กระบวนการทำงานมาตรฐาน 11 ขั้นตอน (Master Universal ML Lifecycle)</h2>
                     <p id="uiWfIntro">
-                        กระบวนการนี้พัฒนาขึ้นจากการลงมือทำโปรเจคจริง เพื่อแก้ปัญหาข้อจำกัดของ Workflow ทั่วไปที่มักพบการรั่วไหลของข้อมูล (Data/Outcome Leakage), ขาดการแยกหน่วยวิเคราะห์ (Unit of Analysis), และไม่มีการทดสอบ Deployment หรือเฝ้าระวัง Data Drift
+                        กรอบกระบวนการทำงานทางวิทยาศาสตร์ข้อมูลและ Machine Learning ที่เป็นกลางระดับ Enterprise ครอบคลุมทั้ง Classification, Regression, Clustering, Time-Series Forecasting, NLP, Computer Vision และ Multimodal มุ่งเน้นธรรมาภิบาลข้อมูล การป้องกัน Data Leakage อย่างเคร่งครัด ความโปร่งใสที่ตรวจสอบย้อนกลับได้ และการส่งมอบ MLOps ที่เฝ้าระวัง Data Drift ต่อเนื่อง
                     </p>
                 </div>
 
                 <div class="section-subhead" id="uiWfInnovationsTitle">
-                    <span>🌟</span> <span>5 เสาหลักสำคัญที่เพิ่มเข้าไปจากงานจริง (Core Innovations)</span>
+                    <span>🌟</span> <span>5 เสาหลักสำคัญด้านธรรมาภิบาลและการปฏิบัติการ (Core Architectural Pillars)</span>
                 </div>
 
                 <div class="workflow-innovations-grid" id="workflowInnovationsGrid">
                     <!-- dynamically rendered based on language -->
                 </div>
 
-                <div class="section-subhead" id="uiWfCompareTitle">
-                    <span>⚖️</span> <span>เปรียบเทียบ: Workflow ทั่วไป vs กระบวนการทำงานของฉัน</span>
-                </div>
-
-                <div class="comparison-table-wrapper" id="comparisonTableWrapper">
-                    <!-- dynamically rendered based on language -->
-                </div>
-
                 <div class="section-subhead" id="uiWfStepsTitle">
-                    <span>🗺️</span> <span>เจาะลึกกระบวนการทำงานทั้ง 11 ขั้นตอน (Step-by-Step Breakdown)</span>
+                    <span>🗺️</span> <span>เจาะลึกกระบวนการทำงานทั้ง 11 ขั้นตอน (Step-by-Step Universal Breakdown)</span>
                 </div>
 
                 <div class="timeline-container" id="timelineContainer">
@@ -2744,172 +2684,172 @@
         }
 ];
         const workflowSteps = [
-        {
+            {
                 "step": 1,
                 "th": {
-                        "title": "Step 1: กำหนดปัญหาและขอบเขตทางจริยธรรม (Problem Definition & Ethical Boundaries)",
-                        "desc": "ระบุวัตถุประสงค์ คำถามวิจัย หน่วยวิเคราะห์ (Unit of Analysis) ชนิดของงาน และผู้ใช้งานจริง กำหนดขอบเขตทางจริยธรรมชัดเจน เช่น ไม่ใช้ผลการจัดกลุ่มมาตัดสินหรือลงโทษนักศึกษา และไม่ตั้งเป้าหมาย threshold ลอย ๆ โดยไม่มีหลักฐานอ้างอิง",
-                        "badge": "Governance",
-                        "artifact": "problem_definition.json"
+                    "title": "Step 1: กำหนดปัญหาและธรรมาภิบาล (Problem Definition and Governance)",
+                    "desc": "ระบุวัตถุประสงค์ ปัญหาที่ต้องแก้ไข ผู้มีส่วนได้ส่วนเสีย และหน่วยวิเคราะห์ (Unit of Analysis) กำหนดประเภทงาน (Classification, Regression, Clustering, Forecasting, NLP, CV, Multimodal) ระบุตัวแปรเป้าหมาย เกณฑ์ความสำเร็จหลายมิติ (Technical, Business, Operational) พร้อมวางกรอบธรรมาภิบาล สิทธิความเป็นส่วนตัว (PDPA/GDPR) และข้อจำกัดทางจริยธรรม",
+                    "badge": "Governance & Scope",
+                    "artifact": "problem_definition.json, project_config.yaml"
                 },
                 "en": {
-                        "title": "Step 1: Problem Definition & Ethical Boundaries",
-                        "desc": "Define research objectives, unit of analysis, task type, intended stakeholders, and ethical boundaries. Prohibit using cluster labels punitively and avoid ungrounded metric thresholds.",
-                        "badge": "Governance",
-                        "artifact": "problem_definition.json"
+                    "title": "Step 1: Problem Definition and Governance",
+                    "desc": "Define problem scope, stakeholders, decision context, and the unit of analysis. Identify task type (classification, regression, clustering, forecasting, NLP, computer vision, multimodal), specify target outcomes, define multi-criteria success thresholds, and enforce regulatory, privacy (PDPA/GDPR), and ethical boundaries.",
+                    "badge": "Governance & Scope",
+                    "artifact": "problem_definition.json, project_config.yaml"
                 }
-        },
-        {
+            },
+            {
                 "step": 2,
                 "th": {
-                        "title": "Step 2: รวบรวมข้อมูลและกักกันตัวแปรผลลัพธ์ (Data Gathering & Outcome Quarantine)",
-                        "desc": "ตรวจสอบที่มา ตรวจ schema, dtype, missingness และ duplicates พร้อมบันทึก SHA-256 Checksum รับประกันข้อมูลต้นฉบับ ที่สำคัญที่สุดคือทำการแยกกักกันตัวแปรผลลัพธ์ (เช่น certified, grade, explored) ไว้ในโฟลเดอร์ quarantine ทันที เพื่อป้องกันโมเดลแอบเห็นเฉลย (Anti-Leakage) 100%",
-                        "badge": "Strict Anti-Leakage",
-                        "artifact": "quarantined_outcomes.parquet, data_provenance.json"
+                    "title": "Step 2: การรวบรวม การนำเข้าข้อมูล และที่มาของข้อมูล (Data Gathering, Ingestion & Provenance)",
+                    "desc": "จัดหาข้อมูลจากแหล่งที่เชื่อถือได้และได้รับอนุญาต (ฐานข้อมูล, Data Warehouse, API, เซนเซอร์, ชุดข้อมูลสาธารณะ) รองรับข้อมูลหลากหลายมิติ (Tabular, Text, Image, Audio, Time Series) บันทึกประวัติแหล่งที่มา (Data Provenance) พร้อมคำนวณ SHA-256 Checksum ตรวจสอบ Schema เบื้องต้น และป้องกันความเสี่ยงด้าน Train-Serving Inconsistency",
+                    "badge": "Provenance & Ingestion",
+                    "artifact": "data_provenance.json, raw_data_schema.yaml"
                 },
                 "en": {
-                        "title": "Step 2: Data Gathering & Outcome Quarantine",
-                        "desc": "Validate data source, schema, dtypes, and SHA-256 checksums for immutability. Strictly quarantine all downstream outcome labels (grade, certified, explored) to eliminate data snooping.",
-                        "badge": "Strict Anti-Leakage",
-                        "artifact": "quarantined_outcomes.parquet, data_provenance.json"
+                    "title": "Step 2: Data Gathering, Ingestion & Provenance",
+                    "desc": "Ingest data from reliable, authorized sources across tabular, text, image, time-series, or multimodal modalities. Record provenance metadata, ownership, and SHA-256 hashes in an audit log, validating ingestion schemas and verifying train-serving consistency.",
+                    "badge": "Provenance & Ingestion",
+                    "artifact": "data_provenance.json, raw_data_schema.yaml"
                 }
-        },
-        {
+            },
+            {
                 "step": 3,
                 "th": {
-                        "title": "Step 3: ทำความสะอาดและปรับระดับข้อมูลสู่หน่วยวิเคราะห์จริง (Data Cleaning & Unit Alignment)",
-                        "desc": "ตรวจสอบกฎทางคณิตศาสตร์ ขจัดค่าผิดปกติ และแปลงข้อมูลให้อยู่ในระดับหน่วยวิเคราะห์ที่ถูกต้อง เช่น ยุบรวมข้อมูล 416,921 รายการลงทะเบียนให้กลายเป็น 335,650 นักศึกษาไม่ซ้ำ (หนึ่งแถวต่อนักศึกษา) เพื่อไม่ให้ผู้เรียนที่ลงหลายวิชามีน้ำหนักเอียงในโมเดล",
-                        "badge": "Data Integrity",
-                        "artifact": "students_cleaned.parquet, cleaning_audit.json"
+                    "title": "Step 3: การควบคุมคุณภาพข้อมูลและการทำความสะอาด (Data Quality Control & Cleaning)",
+                    "desc": "แยกตัวแปรผลลัพธ์ (Target Isolation) ไม่ให้ปะปนในกระบวนการทำความสะอาด จัดการค่าสูญหายอย่างมีหลักวิชาการ (MCAR, MAR, MNAR) ขจัดค่าซ้ำซ้อน ตรวจสอบความถูกต้องของ Data Types ตรวจสอบกฎข้อจำกัดทางคณิตศาสตร์และตรรกะของโดเมน บันทึกบันทึกการตรวจสอบการทำความสะอาด (Cleaning Audit Trail) ที่ตรวจสอบย้อนกลับได้ทุกขั้นตอน",
+                    "badge": "Quality & Isolation",
+                    "artifact": "cleaning_audit.json, data_schema.yaml"
                 },
                 "en": {
-                        "title": "Step 3: Data Cleaning & Unit-of-Analysis Alignment",
-                        "desc": "Enforce mathematical consistency, domain bounds, and aggregate raw transactional records into the true unit of analysis (e.g. 1 row per unique student) preventing multi-course bias.",
-                        "badge": "Data Integrity",
-                        "artifact": "students_cleaned.parquet, cleaning_audit.json"
+                    "title": "Step 3: Data Quality Control & Cleaning",
+                    "desc": "Enforce strict target isolation to prevent leakage. Systematically resolve missing data (MCAR, MAR, MNAR), duplicate records, invalid types, and boundary anomalies. Enforce mathematical and domain logic validation rules while maintaining a complete, auditable cleaning trail.",
+                    "badge": "Quality & Isolation",
+                    "artifact": "cleaning_audit.json, data_schema.yaml"
                 }
-        },
-        {
+            },
+            {
                 "step": 4,
                 "th": {
-                        "title": "Step 4: การสำรวจข้อมูลเชิงลึกแบบปราศจากอคติ (Exploratory Data Analysis - EDA)",
-                        "desc": "วิเคราะห์การกระจายตัว ตรวจสอบค่าศูนย์แท้เทียบกับค่าสูญหาย วิเคราะห์ความเบ้ (Skewness) และความซ้ำซ้อนของฟีเจอร์ด้วย Spearman Correlation บนประชากรจริง โดยไม่แตะต้องตัวแปรผลลัพธ์",
-                        "badge": "Outcome-Free EDA",
-                        "artifact": "eda_summary.csv, feature_screening.csv"
+                    "title": "Step 4: การสำรวจข้อมูลเชิงลึก (Exploratory Data Analysis - EDA)",
+                    "desc": "จัดทำบัญชีแจกแจงฟีเจอร์ครบถ้วน (Feature Inventory) วิเคราะห์การกระจายตัวแบบตัวแปรเดี่ยว (Univariate) ตรวจสอบความสัมพันธ์แบบหลายตัวแปร (Bivariate/Multivariate) วิเคราะห์ Multicollinearity ตรวจจับและแยกแยะ Outliers และประเมินความเสี่ยงของการเกิด Data Leakage โดยไม่แอบดูผลลัพธ์เพื่อรักษาความเป็นกลางทางสถิติ",
+                    "badge": "Audited EDA",
+                    "artifact": "eda_summary.csv, feature_inventory.json"
                 },
                 "en": {
-                        "title": "Step 4: Outcome-Free Exploratory Data Analysis (EDA)",
-                        "desc": "Audit distributional skewness, sparsity, zero inflation versus missingness, and pairwise redundancy across the entire dataset without snooping on quarantined outcomes.",
-                        "badge": "Outcome-Free EDA",
-                        "artifact": "eda_summary.csv, feature_screening.csv"
+                    "title": "Step 4: Exploratory Data Analysis (EDA)",
+                    "desc": "Construct a comprehensive feature inventory auditing distributions, quantiles, and skewness. Perform univariate, bivariate, and multivariate association analyses, detect authentic outliers versus erroneous entries, and evaluate data leakage risks with strict analytical neutrality.",
+                    "badge": "Audited EDA",
+                    "artifact": "eda_summary.csv, feature_inventory.json"
                 }
-        },
-        {
+            },
+            {
                 "step": 5,
                 "th": {
-                        "title": "Step 5: วิศวกรรมฟีเจอร์และสร้างไปป์ไลน์แปลงข้อมูล (Feature Engineering Pipeline)",
-                        "desc": "สร้างฟีเจอร์จากพฤติกรรมจริง ลดฟีเจอร์ที่ซ้ำซ้อน จัดการความเบ้ด้วย log1p และ Standardize ตัวแปร โดยบันทึกตัวแปลงข้อมูลทั้งหมดลงใน fitted pipeline เพื่อใช้ในการรันซ้ำและดีพลอยต์จริง",
-                        "badge": "Pipeline Engineering",
-                        "artifact": "preprocessing_pipeline.joblib, feature_matrix.parquet"
+                    "title": "Step 5: การทบทวนวรรณกรรมและการประเมินหลักฐาน (Literature Review & Evidence Assessment)",
+                    "desc": "สืบค้นและทบทวนงานวิจัยมาตรฐานสากล (Peer-reviewed Literature), ชุดข้อมูล Benchmark, แนวทางปฏิบัติในอุตสาหกรรม และระเบียบวิธีที่ผ่านการพิสูจน์แล้ว เพื่อเป็นหลักฐานทางวิชาการในการคัดเลือกโมเดล ตัวชี้วัดที่เหมาะสม และแนวทางการลดความเสี่ยงด้านจริยธรรมและความเป็นธรรม",
+                    "badge": "Evidence-Based Design",
+                    "artifact": "literature_review.md, evidence_summary.json"
                 },
                 "en": {
-                        "title": "Step 5: Feature Engineering & Preprocessing Pipeline",
-                        "desc": "Extract behavioral indicators, mitigate multi-collinearity, apply log1p transforms on skewed counts, and package all scalers into a reproducible, leak-free fitted pipeline.",
-                        "badge": "Pipeline Engineering",
-                        "artifact": "preprocessing_pipeline.joblib, feature_matrix.parquet"
+                    "title": "Step 5: Literature Review & Evidence Assessment",
+                    "desc": "Review peer-reviewed studies, benchmark datasets, industry standards, and established algorithmic methods. Use empirical literature to scientifically justify model candidates, task-appropriate evaluation metrics, interpretability requirements, and fairness protocols.",
+                    "badge": "Evidence-Based Design",
+                    "artifact": "literature_review.md, evidence_summary.json"
                 }
-        },
-        {
+            },
+            {
                 "step": 6,
                 "th": {
-                        "title": "Step 6: การคัดเลือกและเปรียบเทียบหลากหลายตระกูลโมเดล (Multi-Family Model Screening)",
-                        "desc": "ไม่เลือกโมเดลเพียงเพื่อให้ครบจำนวน แต่คัดสรรตัวแทนจากตระกูลอัลกอริทึมที่แตกต่างกันจริงตามหลักวิทยาศาสตร์ (Centroid, Probabilistic, Hierarchical, Tree-based, Neural Networks) ครอบคลุม 6–10 ตระกูลโมเดล เพื่อเปรียบเทียบแนวคิดทางคณิตศาสตร์ที่หลากหลาย",
-                        "badge": "Scientific Breadth",
-                        "artifact": "candidate_models.csv, model_selection_rationale.md"
+                    "title": "Step 6: วิศวกรรมฟีเจอร์และการคัดเลือกฟีเจอร์ (Feature Engineering & Selection)",
+                    "desc": "แบ่งชุดข้อมูล (Data Split) ก่อนกระบวนการ Fit ฟีเจอร์ทุกชนิด เพื่อป้องกัน Preprocessing Leakage อย่างแท้จริง สร้างตัวแปรใหม่จากตรรกะของปัญหา จัดการแปลงสเกล (Scaling, Log Transform, Encodings) คัดเลือกฟีเจอร์ที่มีนัยสำคัญ และทำ Ablation Studies เพื่อพิสูจน์คุณค่าของฟีเจอร์ที่สร้างขึ้น พร้อมบันทึกเป็น Fitted Preprocessing Pipeline",
+                    "badge": "Leak-Free Engineering",
+                    "artifact": "preprocessing_pipeline.joblib, feature_lineage.json"
                 },
                 "en": {
-                        "title": "Step 6: Multi-Family Model Screening & Selection",
-                        "desc": "Select algorithm candidates across diverse mathematical families (Centroid, Probabilistic, Hierarchical, Tree Ensembles, Deep Learning) grounded in academic literature and geometry.",
-                        "badge": "Scientific Breadth",
-                        "artifact": "candidate_models.csv, model_selection_rationale.md"
+                    "title": "Step 6: Feature Engineering & Selection",
+                    "desc": "Enforce data splitting before fitting any transformers to ensure zero preprocessing leakage. Create domain-driven features, apply robust transformations (scaling, power transforms, encodings), execute rigorous feature selection, and conduct ablation experiments within a reproducible fitted pipeline.",
+                    "badge": "Leak-Free Engineering",
+                    "artifact": "preprocessing_pipeline.joblib, feature_lineage.json"
                 }
-        },
-        {
+            },
+            {
                 "step": 7,
                 "th": {
-                        "title": "Step 7: การฝึก จูน และทดสอบความเสถียรของโมเดล (Model Training, Tuning & Stability Audit)",
-                        "desc": "แยกชุดฝึกและชุดประเมินอย่างเคร่งครัด ใช้ Random Seed ที่อิงจาก Checksum ของข้อมูลต้นทางเพื่อความโปร่งใส จูนพารามิเตอร์ และทดสอบความเสถียรของโมเดลด้วย Resample Stability (ARI) ข้ามรอบสุ่ม",
-                        "badge": "Reproducible Tuning",
-                        "artifact": "model_tuning_results.csv, training_config.json"
+                    "title": "Step 7: การคัดเลือกโมเดล การฝึก และการติดตามการทดลอง (Model Selection, Training & Experiment Tracking)",
+                    "desc": "คัดเลือกโมเดลผู้ท้าชิงจากหลากหลายตระกูลคณิตศาสตร์ที่สอดคล้องกับงาน ออกแบบกลยุทธ์การแบ่งชุดข้อมูลที่เคารพโครงสร้างข้อมูล (Stratified, Group, หรือ Temporal CV) จัดการปัญหาความไม่สมดุลของข้อมูล จูน Hyperparameters บน Validation Set โดยไม่แตะต้อง Test Set และบันทึกรหัสการทดลอง พารามิเตอร์ และ Seed อย่างละเอียด",
+                    "badge": "Reproducible Training",
+                    "artifact": "experiment_log.json, candidate_models.csv, model_tuning_results.csv"
                 },
                 "en": {
-                        "title": "Step 7: Model Training, Tuning & Stability Audit",
-                        "desc": "Train and tune candidate models on disjoint evaluation samples using reproducible deterministic seeds, auditing convergence runtime and resample stability (ARI).",
-                        "badge": "Reproducible Tuning",
-                        "artifact": "model_tuning_results.csv, training_config.json"
+                    "title": "Step 7: Model Selection, Training & Experiment Tracking",
+                    "desc": "Screen candidate models across diverse mathematical families appropriate to the task. Apply entity-aware, stratified, or time-series cross-validation, address class imbalance, tune hyperparameters strictly on validation folds, and log all runs, seeds, and configurations into an experiment tracking manifest.",
+                    "badge": "Reproducible Training",
+                    "artifact": "experiment_log.json, candidate_models.csv, model_tuning_results.csv"
                 }
-        },
-        {
+            },
+            {
                 "step": 8,
                 "th": {
-                        "title": "Step 8: การประเมินผล การล็อกโมเดล และการตรวจหลังเปิดเฉลย (Model Evaluation, Lock & Post-Hoc)",
-                        "desc": "ตัดสินใจเลือกโมเดลแชมเปี้ยนด้วยเกณฑ์ภายในที่เหมาะสม (เช่น Silhouette, Davies-Bouldin, PR-AUC) ทำการบันทึก Checksum เพื่อ 'ล็อกโมเดล' (Model Lock) ให้เสร็จสิ้น แล้วจึงเปิดตัวแปรผลลัพธ์ใน Quarantine มาตรวจวิเคราะห์แบบ Post-hoc เพื่อรักษาความบริสุทธิ์ทางวิทยาศาสตร์",
-                        "badge": "Model Lock & Post-Hoc",
-                        "artifact": "prelock_review.json, post_hoc_validation.csv"
+                    "title": "Step 8: การประเมินผลโมเดล การปรับแต่ง และการวิเคราะห์ข้อผิดพลาด (Model Evaluation, Optimization & Error Analysis)",
+                    "desc": "เปรียบเทียบกับ Baseline ที่ชัดเจน ประเมินด้วยตัวชี้วัดหลายมิติ (Accuracy, Precision, Recall, F1, ROC-AUC, PR-AUC, MAE, RMSE, Silhouette ตามชนิดงาน) ล็อกโมเดลก่อนทดสอบบน Test Set ปรับแต่ง Calibration และ Decision Threshold วิเคราะห์เจาะลึก Error Cases ตรวจสอบ Explainable AI (SHAP, Permutation Importance) และประเมินความเท่าเทียม (Fairness Audit)",
+                    "badge": "Evaluation & Fairness",
+                    "artifact": "model_evaluation_report.json, fairness_audit.json, explainability_summary.json"
                 },
                 "en": {
-                        "title": "Step 8: Model Evaluation, Locking & Post-Hoc Validation",
-                        "desc": "Select provisional champion via composite internal metrics. Cryptographically LOCK the model before unlocking quarantined outcomes for honest post-hoc validation.",
-                        "badge": "Model Lock & Post-Hoc",
-                        "artifact": "prelock_review.json, post_hoc_validation.csv"
+                    "title": "Step 8: Model Evaluation, Optimization & Error Analysis",
+                    "desc": "Benchmark models against robust baselines using multi-dimensional metrics. Lock champion model configurations prior to final unseen test evaluation, calibrate decision thresholds, conduct granular error and residual analyses, and audit explainability (SHAP) alongside demographic fairness.",
+                    "badge": "Evaluation & Fairness",
+                    "artifact": "model_evaluation_report.json, fairness_audit.json, explainability_summary.json"
                 }
-        },
-        {
+            },
+            {
                 "step": 9,
                 "th": {
-                        "title": "Step 9: การวิเคราะห์ข้อผิดพลาด ความโปร่งใส และความเป็นธรรม (Error Analysis, XAI & Fairness)",
-                        "desc": "เจาะลึกกรณีที่มีความกำกวม (Negative Silhouette หรือ False Alerts) ตรวจสอบความสำคัญของตัวแปรด้วย SHAP และทดสอบความเท่าเทียม (Fairness Audit) ข้ามกลุ่มประชากรย่อย เพื่อให้มั่นใจว่าโมเดลไม่มีอคติต่อเพศ วัย หรือกลุ่มเปราะบาง",
-                        "badge": "Explainability & Ethics",
-                        "artifact": "fairness_audit.json, shap_summary.png"
+                    "title": "Step 9: การส่งมอบสู่การปฏิบัติการและการทดสอบความพร้อม (Deployment & Operational Validation)",
+                    "desc": "สร้างและแพ็กเกจ Unified Inference Pipeline ที่รวมการตรวจสอบ Input Schema, Data Cleaning, การแปลงฟีเจอร์ และการทำนายเข้าด้วยกัน เลือกระบบการส่งมอบ (Batch, REST API, Streaming, Edge) ทำการทดสอบ Pre-production (Unit Test, Integration Test, Latency, Load, Rollback Tests) พร้อมจัดทำ Model Card ครอบคลุมขอบเขตและข้อจำกัด",
+                    "badge": "MLOps & Validation",
+                    "artifact": "inference_pipeline.joblib, input_schema.json, model_card.md"
                 },
                 "en": {
-                        "title": "Step 9: Error Analysis, Explainability (XAI) & Fairness",
-                        "desc": "Inspect borderline assignments, compute SHAP / Integrated Gradients feature attributions, and run subgroup fairness audits to ensure demographic parity and ethical safety.",
-                        "badge": "Explainability & Ethics",
-                        "artifact": "fairness_audit.json, shap_summary.png"
+                    "title": "Step 9: Deployment & Operational Validation",
+                    "desc": "Build a serialized, unified inference pipeline integrating input schema validation, cleaning, feature transformation, and inference. Execute comprehensive pre-production tests (schema parity, latency, load, rollback) and author a standardized Model Card detailing operational boundaries.",
+                    "badge": "MLOps & Validation",
+                    "artifact": "inference_pipeline.joblib, input_schema.json, model_card.md"
                 }
-        },
-        {
+            },
+            {
                 "step": 10,
                 "th": {
-                        "title": "Step 10: การส่งมอบโมเดลและสร้างแดชบอร์ดอัตโนมัติ (Production Deployment & Dashboard)",
-                        "desc": "แพ็กโมเดลและฟังก์ชัน Preprocessing เป็นไฟล์เดียวพร้อมใช้งาน สร้าง Input Schema ตรวจสอบชนิดข้อมูล ช่วงค่า และดักจับความผิดปกติ พร้อมสร้าง Interactive HTML Dashboard ที่ดึงข้อมูลจาก Artifacts จริงโดยอัตโนมัติ ไม่กรอกตัวเลขด้วยมือ",
-                        "badge": "MLOps Deployment",
-                        "artifact": "clustering_pipeline.joblib, input_schema.json, report.html"
+                    "title": "Step 10: การสื่อสารผลลัพธ์และรายงานแดชบอร์ดเชิงโต้ตอบ (Communication & Interactive HTML Reporting)",
+                    "desc": "สร้างรายงานและแดชบอร์ดเชิงโต้ตอบที่ตอบสนองอย่างรวดเร็ว (Responsive Interactive HTML Report) ถ่ายทอดผลลัพธ์ ข้อสมมติฐาน ข้อจำกัด และคำแนะนำทางธุรกิจอย่างโปร่งใส ข้อมูลทั้งหมดเชื่อมโยงจาก Artifacts การคำนวณจริง พร้อมระบบจำลองผลลัพธ์ (What-if Simulator) ที่มีมาตรการป้องกันการอนุมานเกินจริง",
+                    "badge": "Transparent Reporting",
+                    "artifact": "interactive_report.html, report_manifest.json"
                 },
                 "en": {
-                        "title": "Step 10: Production Deployment & Artifact-Driven Dashboard",
-                        "desc": "Serialize full inference pipeline with input schema validation. Auto-generate interactive bilingual HTML dashboards populated directly from saved calculation artifacts.",
-                        "badge": "MLOps Deployment",
-                        "artifact": "clustering_pipeline.joblib, input_schema.json, report.html"
+                    "title": "Step 10: Communication & Interactive HTML Reporting",
+                    "desc": "Deliver responsive, bilingual, interactive HTML reports and dashboards communicating executive summaries, data provenance, evaluation plots, fairness findings, and business recommendations. Direct artifact binding guarantees transparency, complemented by safeguarded what-if simulators.",
+                    "badge": "Transparent Reporting",
+                    "artifact": "interactive_report.html, report_manifest.json"
                 }
-        },
-        {
+            },
+            {
                 "step": 11,
                 "th": {
-                        "title": "Step 11: การเฝ้าระวัง Data Drift และระบบฟีดแบ็ก (Live Monitoring & Feedback Loop)",
-                        "desc": "ตั้งค่าเกณฑ์เฝ้าระวังการเคลื่อนตัวของข้อมูลด้วยดัชนี Population Stability Index (PSI) และความถูกต้องของ Schema ในระบบจริง หากตรวจพบ Data Drift หรือประสิทธิภาพลดลง จะส่งสัญญาณฟีดแบ็กกลับไปยัง Step 2 เพื่อเริ่มต้นวงรอบการฝึกโมเดลใหม่ทันที",
-                        "badge": "Continuous Monitoring",
-                        "artifact": "monitoring_config.json, monitoring_report.html, retraining_decision.json"
+                    "title": "Step 11: การเฝ้าระวัง การบำรุงรักษา และวงรอบผลป้อนกลับ (Monitoring, Maintenance & Feedback Loop)",
+                    "desc": "ติดตาม Data Quality, Schema, Data Drift และ Concept Drift อย่างต่อเนื่องด้วยดัชนี Population Stability Index (PSI) กำหนดเกณฑ์แจ้งเตือน (Alert Triggers) เมื่อประสิทธิภาพหรือการกระจายตัวของข้อมูลเปลี่ยนรูป และเชื่อมต่อ Closed Feedback Loop สำหรับการรวบรวมข้อมูลใหม่และฝึกโมเดลซ้ำ (Automated Retraining Policy)",
+                    "badge": "Continuous Monitoring",
+                    "artifact": "monitoring_config.json, drift_report.json, retraining_policy.md"
                 },
                 "en": {
-                        "title": "Step 11: Production Monitoring & Closed Feedback Loop",
-                        "desc": "Track real-world data drift using Population Stability Index (PSI) and schema integrity gates. When drift occurs, automatically trigger feedback to Step 2 for governed re-training.",
-                        "badge": "Continuous Monitoring",
-                        "artifact": "monitoring_config.json, monitoring_report.html, retraining_decision.json"
+                    "title": "Step 11: Monitoring, Maintenance & Feedback Loop",
+                    "desc": "Continuously track real-world data quality, schema integrity, and distribution drift using the Population Stability Index (PSI). Configure automated alert triggers for performance decay and implement closed-loop retraining policies to trigger governed data recollection and model refresh.",
+                    "badge": "Continuous Monitoring",
+                    "artifact": "monitoring_config.json, drift_report.json, retraining_policy.md"
                 }
-        }
-];
+            }
+        ];
 
         // Current Application State
         let currentLang = localStorage.getItem('portfolio_lang') || 'th';
@@ -2942,14 +2882,13 @@
                 hCard2Desc: 'Bachelor of Data Science (คาดจบ ค.ศ. 2027) พื้นฐานคณิตศาสตร์และสถิติการอนุมานแน่น',
                 hCard3Title: '🔬 End-to-End Governed Pipelines',
                 hCard3Desc: 'สร้างมาตรฐาน MLOps 11 ขั้นตอน รันซ้ำได้ 100% ตรวจสอบความถูกต้องและดริฟต์ของข้อมูล',
-                calloutHead: '👉 สนใจดูกระบวนการทำงานทางวิทยาศาสตร์ข้อมูลที่ฉันพัฒนาขึ้น?',
-                calloutSub: 'ดูมาตรฐาน 11 ขั้นตอนที่แก้ปัญหา Data Leakage และนำไปใช้จริงในโปรเจค MOOC, EKG, และ Claims Intelligence',
+                calloutHead: '👉 สนใจดูกระบวนการทำงานทางวิทยาศาสตร์ข้อมูลและ Machine Learning?',
+                calloutSub: 'ดูมาตรฐาน 11 ขั้นตอนที่เป็นกลาง ตรวจสอบได้ (Audit-Ready) ป้องกัน Data Leakage และรองรับงาน Machine Learning ครบวงจร',
                 calloutBtn: '⚡ ดูกระบวนการทำงาน',
-                wfTitle: '⚡ กระบวนการทำงานมาตรฐาน 11 ขั้นตอนของฉัน (Chutimon\'s Governed ML Lifecycle)',
-                wfIntro: 'กระบวนการนี้พัฒนาขึ้นจากการลงมือทำโปรเจคจริง เพื่อแก้ปัญหาข้อจำกัดของ Workflow ทั่วไปที่มักพบการรั่วไหลของข้อมูล (Data/Outcome Leakage), ขาดการแยกหน่วยวิเคราะห์ (Unit of Analysis), และไม่มีการทดสอบ Deployment หรือเฝ้าระวัง Data Drift',
-                wfInnovationsTitle: '5 เสาหลักสำคัญที่เพิ่มเข้าไปจากงานจริง (Core Innovations)',
-                wfCompareTitle: 'เปรียบเทียบ: Workflow ทั่วไป vs กระบวนการทำงานของฉัน',
-                wfStepsTitle: 'เจาะลึกกระบวนการทำงานทั้ง 11 ขั้นตอน (Step-by-Step Breakdown)',
+                wfTitle: '⚡ กระบวนการทำงานมาตรฐาน 11 ขั้นตอน (Master Universal ML Lifecycle)',
+                wfIntro: 'กรอบกระบวนการทำงานทางวิทยาศาสตร์ข้อมูลและ Machine Learning ที่เป็นกลางระดับ Enterprise ครอบคลุมทั้ง Classification, Regression, Clustering, Time-Series Forecasting, NLP, Computer Vision และ Multimodal มุ่งเน้นธรรมาภิบาลข้อมูล การป้องกัน Data Leakage อย่างเคร่งครัด ความโปร่งใสที่ตรวจสอบย้อนกลับได้ และการส่งมอบ MLOps ที่เฝ้าระวัง Data Drift ต่อเนื่อง',
+                wfInnovationsTitle: '5 เสาหลักสำคัญด้านธรรมาภิบาลและการปฏิบัติการ (Core Architectural Pillars)',
+                wfStepsTitle: 'เจาะลึกกระบวนการทำงานทั้ง 11 ขั้นตอน (Step-by-Step Universal Breakdown)',
                 projectsListHeader: '📋 รายการโปรเจค',
                 searchPlaceholder: '🔍 ค้นหาโปรเจค หรือ เทคโนโลยี...',
                 fBtnAll: 'ทั้งหมด',
@@ -2972,7 +2911,7 @@
                 valLocation: 'Bangkok, Thailand',
                 labelLine: 'Line Contact (Add Line)',
                 tabOverview: 'Overview & Profile',
-                tabWorkflow: 'My Governed 11-Step ML Lifecycle',
+                tabWorkflow: 'Governed 11-Step ML Lifecycle',
                 heroGreeting: '👋 Welcome to Chutimon\'s Portfolio',
                 heroIntro: 'Hello! I am <strong>Chutimon Nunthasena</strong>, a passionate Data Scientist and AI researcher from Kasetsart University. I design audit-ready, reproducible Machine Learning pipelines with strict data governance, zero outcome leakage, and high clinical & commercial applicability.',
                 skillsTitle: 'Core Competencies & Technical Skills',
@@ -2983,14 +2922,13 @@
                 hCard2Desc: 'Bachelor of Data Science (Class of 2027) with rigorous grounding in inferential statistics and mathematics.',
                 hCard3Title: '🔬 End-to-End Governed Pipelines',
                 hCard3Desc: 'Author of the 11-Step Governed Lifecycle: 100% reproducible, schema-validated, and drift-monitored.',
-                calloutHead: '👉 Explore My Custom 11-Step Data Science Workflow?',
-                calloutSub: 'Discover the audit-ready framework that prevents outcome leakage and powers my MOOC, EKG, and Insurance systems.',
+                calloutHead: '👉 Explore the 11-Step Data Science & ML Workflow?',
+                calloutSub: 'Discover the audit-ready, modality-neutral framework that prevents data leakage and ensures end-to-end MLOps governance.',
                 calloutBtn: '⚡ Explore Workflow',
-                wfTitle: '⚡ Chutimon\'s Governed 11-Step Machine Learning Lifecycle',
-                wfIntro: 'An enterprise-grade, audit-ready data science standard engineered through actual project execution to overcome fatal flaws in generic workflows: outcome leakage, misaligned grains, metric gaming, and lack of production MLOps.',
-                wfInnovationsTitle: '5 Core Architectural Innovations',
-                wfCompareTitle: 'Comparative Audit: Generic Workflow vs My Governed Workflow',
-                wfStepsTitle: 'Step-by-Step Lifecycle Breakdown (11 Phases)',
+                wfTitle: '⚡ Master Universal 11-Step Machine Learning Lifecycle',
+                wfIntro: 'An enterprise-grade, audit-ready, and modality-neutral standard adaptable to classification, regression, clustering, forecasting, NLP, computer vision, and multimodal projects. Engineered with strict data governance, zero target leakage, reproducible pipelines, and live MLOps drift monitoring.',
+                wfInnovationsTitle: '5 Core Architectural & Governance Pillars',
+                wfStepsTitle: 'Step-by-Step Universal Lifecycle Breakdown (11 Phases)',
                 projectsListHeader: '📋 Projects Portfolio',
                 searchPlaceholder: '🔍 Search projects or technologies...',
                 fBtnAll: 'All',
@@ -3046,103 +2984,46 @@
         const innovations = {
             th: [
                 {
-                    title: "🛡️ 1. กักกันตัวแปรผลลัพธ์ (Strict Outcome Quarantine)",
-                    desc: "แยกตัวแปรเฉลย (เช่น certified, grade, explored) ออกจากฟีเจอร์ทางกายภาพตั้งแต่ Step 2 และบันทึก SHA-256 Checksum ป้องกันโมเดลแอบเห็นผลลัพธ์ล่วงหน้า 100%"
+                    title: "🛡️ 1. การแยกและกักกันตัวแปรผลลัพธ์ (Strict Target Isolation)",
+                    desc: "แยกตัวแปรเฉลยและข้อมูลหลังผลลัพธ์ (Post-outcome) ออกจากฟีเจอร์อย่างเด็ดขาดตั้งแต่เริ่มต้น พร้อมบันทึก SHA-256 Checksum ตรวจสอบย้อนกลับได้ ป้องกัน Data Leakage และ Target Snooping อย่างแท้จริง"
                 },
                 {
-                    title: "🎯 2. จัดระเบียบหน่วยวิเคราะห์ (Unit Alignment)",
-                    desc: "แปลงข้อมูลให้อยู่ในหน่วยวิเคราะห์จริง เช่น รวมข้อมูล 4.1 แสนแถววิชาสู่ 3.3 แสนคน ป้องกันไม่ให้นักศึกษาที่ลงหลายวิชามีน้ำหนักเอียงในโมเดล"
+                    title: "🎯 2. จัดระเบียบหน่วยวิเคราะห์ (Strict Unit-of-Analysis Alignment)",
+                    desc: "กำหนดหน่วยวิเคราะห์ (Grain / Entity Identifier) ให้ตรงกับหน่วยการตัดสินใจจริง พร้อมออกแบบ Data Splitting (เช่น Group, Stratified, Temporal CV) ไม่ให้ข้อมูลจากหน่วยเดียวกันปะปนข้ามชุดฝึกและชุดทดสอบ"
                 },
                 {
-                    title: "🔄 3. เปรียบเทียบหลากหลายตระกูลโมเดล (Multi-Family)",
-                    desc: "คัดเลือกตัวแทนจาก 6-10 ตระกูลโมเดลที่ต่างกันจริงตามหลักคณิตศาสตร์ (Centroid, Probabilistic, Hierarchical, Tree, Neural Networks) ไม่ใช่แค่เปลี่ยนพารามิเตอร์"
+                    title: "🔄 3. เปรียบเทียบหลากหลายตระกูลโมเดลตามโจทย์ (Task-Driven Multi-Family Benchmarking)",
+                    desc: "คัดสรรโมเดลตัวแทนจากหลากหลายตระกูลคณิตศาสตร์ที่สอดคล้องกับธรรมชาติของข้อมูลและประเภทงาน (เช่น Linear, Tree-based, Probabilistic, Neural Networks) โดยอิงตามหลักฐานวรรณกรรมทางวิชาการ"
                 },
                 {
-                    title: "🔒 4. ล็อกโมเดลก่อนเปิดเฉลย (Model Lock Before Post-Hoc)",
-                    desc: "ประเมินและคัดเลือกโมเดลด้วยตัวชี้วัดภายใน บันทึกผลล็อกโมเดลให้เสร็จสิ้น แล้วจึงเปิดตัวแปรผลลัพธ์มาตรวจพิสูจน์ภายหลัง (Post-hoc) อย่างโปร่งใส"
+                    title: "🔒 4. ความโปร่งใสและการล็อกโมเดลก่อนตัดสิน (Evaluation Integrity & Model Lock)",
+                    desc: "กำหนดเกณฑ์วัดผลและ Baseline ชัดเจน ปรับแต่งพารามิเตอร์เฉพาะบน Train/Validation และล็อกผลคอนฟิกโมเดลก่อนประเมินบน Test Set พร้อมทดสอบความเท่าเทียม (Fairness) และความสามารถในการอธิบาย (XAI)"
                 },
                 {
-                    title: "📈 5. เฝ้าระวัง Data Drift & MLOps (PSI Monitoring)",
-                    desc: "บรรจุเป็นไปป์ไลน์พร้อมใช้ ตรวจสอบ Input Schema และเฝ้าระวังการเปลี่ยนรูปของประชากรด้วยดัชนี PSI หากเกิด Drift จะส่งฟีดแบ็กเริ่มฝึกใหม่ทันที"
+                    title: "📈 5. เฝ้าระวัง Data Drift และระบบ MLOps (Production MLOps & PSI Monitoring)",
+                    desc: "แพ็กเกจเป็น Inference Pipeline เดี่ยวพร้อม Input Schema Validation ตรวจสอบความถูกต้องของข้อมูลนำเข้า และเฝ้าระวัง Population Stability Index (PSI) เพื่อส่งฟีดแบ็กเริ่มวงรอบ Retraining อัตโนมัติ"
                 }
             ],
             en: [
                 {
-                    title: "🛡️ 1. Cryptographic Outcome Quarantine",
-                    desc: "Physically segregates target outcomes (grade, certified) into restricted storage with SHA-256 hashes at Step 2, eliminating data snooping before modeling."
+                    title: "🛡️ 1. Strict Target Isolation & Leakage Prevention",
+                    desc: "Physically and logically separates target labels and post-outcome variables from feature sets from the outset, backed by cryptographic SHA-256 provenance tracking to eliminate data leakage."
                 },
                 {
                     title: "🎯 2. Strict Unit-of-Analysis Alignment",
-                    desc: "Aggregates transactional enrollment records to the true decision grain (1 row per student), preventing multi-course students from distorting clusters."
+                    desc: "Explicitly defines the decision grain and entity identifiers, enforcing entity-aware, stratified, or temporal data splitting so observations from the same entity never bleed across train and test sets."
                 },
                 {
-                    title: "🔄 3. Genuine Multi-Family Screening",
-                    desc: "Benchmarks across 6–10 fundamentally distinct mathematical families (Centroid, Density, Probabilistic, Tree Ensembles, Deep Learning) rather than superficial hyperparameter tweaks."
+                    title: "🔄 3. Task-Driven Multi-Family Model Screening",
+                    desc: "Benchmarks candidate algorithms across fundamentally distinct mathematical families (linear, tree-based ensembles, probabilistic, deep learning) tailored to task objectives and literature evidence."
                 },
                 {
-                    title: "🔒 4. Pre-Lock Integrity & Post-Hoc Auditing",
-                    desc: "Locks champion models via internal metrics before exposing quarantined outcome labels for impartial, audit-grade post-hoc validation."
+                    title: "🔒 4. Evaluation Integrity & Deterministic Model Lock",
+                    desc: "Establishes rigorous baseline comparisons, fits all transformers strictly on training folds, locks model configurations before final test evaluation, and mandates fairness and explainability (XAI) audits."
                 },
                 {
-                    title: "📈 5. Live Drift Monitoring & Closed Feedback",
-                    desc: "Integrates Population Stability Index (PSI) drift tracking and schema gates into production, triggering automated retraining loops upon empirical drift."
-                }
-            ]
-        };
-
-        const comparisonData = {
-            th: [
-                {
-                    aspect: "การจัดการข้อมูลรั่วไหล (Data Leakage)",
-                    old: "มีความเสี่ยงสูง ตัวแปรเฉลยมักปะปนในขั้นตอนสกัดฟีเจอร์",
-                    custom: "กักกันตัวแปรผลลัพธ์ (Outcome Quarantine) ทางกายภาพตั้งแต่ Step 2 และบันทึก SHA-256 รับรองความถูกต้อง 100%"
-                },
-                {
-                    aspect: "หน่วยวิเคราะห์ (Unit of Analysis)",
-                    old: "ใช้ข้อมูลดิบตามยถากรรม ทำให้ข้อมูลที่มีหลายวิชาเอียงน้ำหนัก",
-                    custom: "แปลงข้อมูลให้ตรงกับหน่วยตัดสินใจจริง (เช่น 1 แถวต่อนักศึกษา หรือแยก GroupKFold ตามผู้ป่วย EKG)"
-                },
-                {
-                    aspect: "การเลือกตระกูลโมเดล (Model Selection)",
-                    old: "บังคับเลือกทั้ง classification และ clustering อย่างละ 5 โมเดลโดยไม่สนโจทย์",
-                    custom: "ปรับตามธรรมชาติของโจทย์จริง เปรียบเทียบหลากหลายตระกูลอัลกอริทึมจริง (6–10 families) บนพื้นฐานวรรณกรรม"
-                },
-                {
-                    aspect: "การวัดผลและการล็อกโมเดล",
-                    old: "บังคับใช้ Confusion matrix แม้เป็น Unsupervised และแอบดูเฉลยก่อนเลือก",
-                    custom: "ประเมินด้วย Internal Metrics ล็อกโมเดล (Model Lock) ให้จบก่อน แล้วจึงเปิดเฉลยมาทำ Post-Hoc Validation"
-                },
-                {
-                    aspect: "การส่งมอบและการเฝ้าระวัง (MLOps)",
-                    old: "ไม่มีการทำ Deployment, ไม่มี Input Schema และไม่มี Monitoring",
-                    custom: "ส่งมอบเป็น Pipeline พร้อม Input Schema Validation, Automated Tests (ผ่าน 100%) และเฝ้าระวัง Data Drift ด้วยค่า PSI"
-                }
-            ],
-            en: [
-                {
-                    aspect: "Outcome Leakage Governance",
-                    old: "High leakage risk; target labels frequently contaminate exploratory feature sets.",
-                    custom: "Physical quarantine of all target outcomes at Step 2 with SHA-256 immutability guarantees."
-                },
-                {
-                    aspect: "Unit of Analysis Alignment",
-                    old: "Raw records fed blindly; multi-enrollment students distort cluster geometry.",
-                    custom: "Aggregated strictly to the decision entity (1 row per student, or patient-level GroupKFold in EKG)."
-                },
-                {
-                    aspect: "Model Screening Strategy",
-                    old: "Rigid mandates forcing 5 classification and 5 clustering models regardless of task.",
-                    custom: "Task-tailored evaluation across 6–10 distinct mathematical algorithm families grounded in literature."
-                },
-                {
-                    aspect: "Evaluation & Integrity Lock",
-                    old: "Inappropriate metrics (e.g. confusion matrices on clustering) and outcome snooping.",
-                    custom: "Internal metric selection followed by cryptographic Model Lock before blinded post-hoc outcome review."
-                },
-                {
-                    aspect: "MLOps Deployment & Drift",
-                    old: "No serialized pipeline, no input validation schemas, and zero post-deployment monitoring.",
-                    custom: "Production-ready pipeline with schema validation, 100% automated tests, and live PSI drift tracking."
+                    title: "📈 5. Production MLOps & Continuous Drift Monitoring",
+                    desc: "Packages end-to-end reproducible inference pipelines with input schema validation gates, active Population Stability Index (PSI) drift tracking, and automated feedback loops for retraining."
                 }
             ]
         };
@@ -3174,7 +3055,6 @@
             updateUILanguage();
             renderCompetencies();
             renderInnovations();
-            renderComparisonTable();
             renderTimeline();
             renderProjects();
 
@@ -3221,7 +3101,6 @@
             document.getElementById('uiWfTitle').innerText = t.wfTitle;
             document.getElementById('uiWfIntro').innerText = t.wfIntro;
             document.getElementById('uiWfInnovationsTitle').children[1].innerText = t.wfInnovationsTitle;
-            document.getElementById('uiWfCompareTitle').children[1].innerText = t.wfCompareTitle;
             document.getElementById('uiWfStepsTitle').children[1].innerText = t.wfStepsTitle;
 
             document.getElementById('uiProjectsListHeader').innerText = t.projectsListHeader;
@@ -3249,35 +3128,6 @@
                     <p>${item.desc}</p>
                 </div>
             `).join('');
-        }
-
-        function renderComparisonTable() {
-            const rows = comparisonData[currentLang];
-            const wrapper = document.getElementById('comparisonTableWrapper');
-            const th1 = currentLang === 'th' ? 'มิติด้านวิทยาศาสตร์ข้อมูล' : 'Data Science Dimension';
-            const th2 = currentLang === 'th' ? 'Workflow ดั้งเดิมทั่วไป (Traditional)' : 'Generic Standard Workflow';
-            const th3 = currentLang === 'th' ? 'กระบวนการ 11 ขั้นตอนของฉัน (Chutimon\'s Lifecycle)' : 'My Governed 11-Step Lifecycle';
-
-            wrapper.innerHTML = `
-                <table class="comparison-table">
-                    <thead>
-                        <tr>
-                            <th style="width: 25%;">${th1}</th>
-                            <th style="width: 35%;"><span class="badge-old">Traditional</span> ${th2}</th>
-                            <th style="width: 40%;"><span class="badge-new">Chutimon's ML</span> ${th3}</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        ${rows.map(r => `
-                            <tr>
-                                <td><strong>${r.aspect}</strong></td>
-                                <td style="color: #64748b;">${r.old}</td>
-                                <td style="color: #1e3a8a; font-weight: 500;">${r.custom}</td>
-                            </tr>
-                        `).join('')}
-                    </tbody>
-                </table>
-            `;
         }
 
         function renderTimeline() {
@@ -3424,7 +3274,6 @@
         updateUILanguage();
         renderCompetencies();
         renderInnovations();
-        renderComparisonTable();
         renderTimeline();
         renderProjects();
     </script>
