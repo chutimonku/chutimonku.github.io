@@ -4,6 +4,7 @@
 Thumbs.db
 .idea/
 .vscode/
+node_modules/
 
 # Python caches and build artifacts
 __pycache__/
