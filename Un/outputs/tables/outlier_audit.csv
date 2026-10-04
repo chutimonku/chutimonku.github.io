@@ -1,0 +1,6 @@
+﻿column,display_name,record_count,missing_count,zero_count,q1,median,q3,p95,p99,max,iqr_outlier_count,iqr_outlier_pct,action
+nevents_clean,Total Events,416921,0,17358,2.0,20.0,135.0,1884.0,7135.799999999988,53180.0,64763,15.533638267201699,Retain as observed value; use log-scale for visualisation and robust preprocessing where required.
+ndays_act_clean,Active Days,416921,0,5324,1.0,2.0,4.0,23.0,60.0,205.0,54649,13.107759023891816,Retain as observed value; use log-scale for visualisation and robust preprocessing where required.
+nchapters_clean,Chapters Accessed,416921,0,135700,0.0,1.0,3.0,12.0,20.0,48.0,37019,8.8791401728385,Retain as observed value; use log-scale for visualisation and robust preprocessing where required.
+nplay_video_clean,Video Plays,416921,255528,0,5.0,17.0,69.0,510.0,1453.0799999999872,34596.0,22546,5.407739116043567,Retain as observed value; use log-scale for visualisation and robust preprocessing where required.
+nforum_posts_clean,Forum Posts,416921,0,411623,0.0,0.0,0.0,0.0,1.0,8.0,0,0.0,Retain as observed value; use log-scale for visualisation and robust preprocessing where required.

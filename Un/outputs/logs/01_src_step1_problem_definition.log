@@ -1,0 +1,14 @@
+STEP: Step 1: Problem Definition
+MODULE: src.step1_problem_definition
+RETURN CODE: 0
+RUNTIME_SECONDS: 0.023
+
+STDOUT
+========================================================================
+[Step 1] Problem definition written to: data/processed/problem_definition.json
+[Step 1] Behavioural clustering features: mean_course_events_percentile, mean_course_active_days_percentile, mean_course_chapters_percentile, mean_course_forum_posts_percentile
+
+
+STDERR
+========================================================================
+

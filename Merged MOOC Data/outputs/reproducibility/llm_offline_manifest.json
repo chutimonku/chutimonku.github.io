@@ -1,0 +1,41 @@
+{
+  "status": "completed",
+  "run_timestamp": "2026-09-28T13:10:41+07:00",
+  "seed": 42,
+  "benchmark_type": "Offline Behavioral NLP — No External API",
+  "text_field": "student_behavior_text",
+  "leakage_controls": [
+    "No target/certified/grade/userid_DI in features or text",
+    "All preprocessing and classifiers fitted on train split only",
+    "Threshold selected from validation set only",
+    "Test labels loaded from quarantine — not used for fitting"
+  ],
+  "train_students": 8400,
+  "val_students": 1800,
+  "test_students": 1800,
+  "positive_test_students": 58,
+  "models_attempted": [
+    "TF-IDF Unigram + Logistic Regression",
+    "TF-IDF (1-2 grams) + Logistic Regression",
+    "TF-IDF + Linear SVM",
+    "Sentence Transformer + Logistic Regression",
+    "DistilBERT Embeddings + Logistic Regression",
+    "MiniLM Embeddings + Logistic Regression",
+    "DistilGPT2 Embeddings + Logistic Regression"
+  ],
+  "models_completed": [
+    "TF-IDF Unigram + Logistic Regression",
+    "TF-IDF (1-2 grams) + Logistic Regression",
+    "TF-IDF + Linear SVM",
+    "Sentence Transformer + Logistic Regression",
+    "DistilBERT Embeddings + Logistic Regression",
+    "MiniLM Embeddings + Logistic Regression",
+    "DistilGPT2 Embeddings + Logistic Regression"
+  ],
+  "models_pending": [],
+  "best_model": "DistilBERT Embeddings + Logistic Regression",
+  "best_pr_auc": 0.7246827927999624,
+  "comparison_artifact": "outputs/tables/llm_offline_model_comparison.csv",
+  "confusion_matrix_artifact": "outputs/tables/llm_offline_confusion_matrices.csv",
+  "predictions_artifact": "outputs/tables/llm_offline_predictions.csv"
+}

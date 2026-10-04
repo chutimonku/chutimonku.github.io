@@ -1,0 +1,4 @@
+method,kind,runtime_sec,test_pr_auc,test_f1,status
+TF-IDF (1–2 grams) + Logistic Regression,lexical NLP baseline,0.20584879201487638,0.48264335742371417,0.6037735849056604,True
+DistilBERT Embeddings + Logistic Regression,frozen transformer encoder,143.79753462498775,0.4571814465212644,0.5238095238095238,False
+TF-IDF + Logistic Regression,lexical NLP baseline,0.11490108401631005,0.24827145521989963,0.36363636363636365,False

@@ -1,0 +1,252 @@
+{"kind":"deck","id":"pr/5pyy2d","name":"Deck"}
+{"kind":"layout","layoutId":"7cb7e623-69e3-4fd0-ac70-683ae70e5df0","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"465f4230-b534-4ccf-b683-a31b3d83f518","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/u8j6f5","slide":1,"title":"MOOC Student Analytics","textShapes":4}
+{"kind":"shape","id":"sh/q5wfehw7","slide":1,"bbox":[90,54,7,120]}
+{"kind":"textbox","id":"sh/ds7y9wfy","slide":1,"text":"MOOC Student Analytics","textPreview":"MOOC Student Analytics","textChars":22,"textLines":1,"bbox":[125,60,980,58]}
+{"kind":"textbox","id":"sh/cryxgred","slide":1,"text":"Merged learner behavior, segmentation, supervised prediction, deep learning and LLM evidence","textPreview":"Merged learner behavior, segmentation, supervised prediction, deep learning and LLM evidence","textChars":92,"textLines":1,"bbox":[128,123,980,38]}
+{"kind":"textbox","id":"sh/ytgfi1w3","slide":1,"text":"สไลด์นี้เล่างานทั้งหมดตั้งแต่รวมข้อมูล ทำความสะอาด EDA เลือก K สร้าง persona ทำนาย certification และเปรียบเทียบโมเดลทุก track ด้วยผลจริงจากไฟล์งาน","textPreview":"สไลด์นี้เล่างานทั้งหมดตั้งแต่รวมข้อมูล ทำความสะอาด EDA เลือก K สร้าง persona ทำนาย certification และเปรียบเทียบโมเดลทุก track ด้วยผลจริงจ...","textChars":146,"textLines":1,"bbox":[150,570,980,52]}
+{"kind":"textbox","id":"sh/lw7ydgfu","slide":1,"text":"Prepared from current Merged MOOC Data, Sup and Un project outputs","textPreview":"Prepared from current Merged MOOC Data, Sup and Un project outputs","textChars":66,"textLines":1,"bbox":[80,676,920,24]}
+{"kind":"image","id":"im/ilcze50f","slide":1,"name":"","alt":"All track model comparison","bbox":[190,205,900,330]}
+{"kind":"notes","id":"nt/u8j6f5","slide":1,"text":""}
+{"kind":"slide","id":"sl/kggti9","slide":2,"title":"Agenda and evidence map","textShapes":4}
+{"kind":"shape","id":"sh/rip83mlk","slide":2,"bbox":[74,42,6,86]}
+{"kind":"textbox","id":"sh/sjy9crm5","slide":2,"text":"Agenda and evidence map","textPreview":"Agenda and evidence map","textChars":23,"textLines":1,"bbox":[105,42,1080,58]}
+{"kind":"textbox","id":"sh/tk7a5w3q","slide":2,"text":"เล่าตาม pipeline จริง ไม่ใช่แค่ผลลัพธ์สุดท้าย","textPreview":"เล่าตาม pipeline จริง ไม่ใช่แค่ผลลัพธ์สุดท้าย","textChars":45,"textLines":1,"bbox":[108,103,1040,35]}
+{"kind":"textbox","id":"sh/je58zmlo","slide":2,"text":"หลักฐานที่ใช้: CSV/JSON audit logs, output tables, PNG figures, dashboard reports และ slide/PDF reference เฉพาะด้านรูปแบบการเล่าเรื่อง","textPreview":"หลักฐานที่ใช้: CSV/JSON audit logs, output tables, PNG figures, dashboard reports และ slide/PDF reference เฉพาะด้านรูปแบบการเล่าเรื่อง","textChars":134,"textLines":1,"bbox":[140,575,1000,50]}
+{"kind":"textbox","id":"sh/4fy98rm9","slide":2,"text":"MOOC Student Analytics | HarvardX-MITx learner behavior pipeline","textPreview":"MOOC Student Analytics | HarvardX-MITx learner behavior pipeline","textChars":64,"textLines":1,"bbox":[80,676,920,24]}
+{"kind":"table","id":"tb/be5gna10","slide":2,"name":"","rows":7,"cols":2,"preview":"Part | What the slides show","bbox":[125,170,1030,360]}
+{"kind":"notes","id":"nt/kggti9","slide":2,"text":""}
+{"kind":"slide","id":"sl/xbxejt","slide":3,"title":"Problem definition","textShapes":15}
+{"kind":"shape","id":"sh/fmlw7al4","slide":3,"bbox":[74,42,6,86]}
+{"kind":"textbox","id":"sh/gnudgfmp","slide":3,"text":"Problem definition","textPreview":"Problem definition","textChars":18,"textLines":1,"bbox":[105,42,1080,58]}
+{"kind":"textbox","id":"sh/ho3e9k3a","slide":3,"text":"โจทย์หลักคือเข้าใจพฤติกรรมผู้เรียนและทำนายผลลัพธ์การเรียนจากข้อมูล MOOC ขนาดใหญ่","textPreview":"โจทย์หลักคือเข้าใจพฤติกรรมผู้เรียนและทำนายผลลัพธ์การเรียนจากข้อมูล MOOC ขนาดใหญ่","textChars":80,"textLines":1,"bbox":[108,103,1040,35]}
+{"kind":"textbox","id":"sh/6xsva54n","slide":3,"text":"• Unit of analysis หลักหลัง merge คือหนึ่งแถวต่อ learner ที่รวมพฤติกรรมข้าม course-run อย่างมี audit trail","textPreview":"• Unit of analysis หลักหลัง merge คือหนึ่งแถวต่อ learner ที่รวมพฤติกรรมข้าม course-run อย่างมี audit trail","textChars":106,"textLines":1,"bbox":[150,185,980,51]}
+{"kind":"textbox","id":"sh/7y1w3al8","slide":3,"text":"• Unsupervised track ใช้เพื่อหา persona หรือกลุ่มพฤติกรรมโดยไม่ใช้ target เป็นตัวนำ","textPreview":"• Unsupervised track ใช้เพื่อหา persona หรือกลุ่มพฤติกรรมโดยไม่ใช้ target เป็นตัวนำ","textChars":83,"textLines":1,"bbox":[150,230,980,51]}
+{"kind":"textbox","id":"sh/szadcfmt","slide":3,"text":"• Supervised track ใช้ทำนาย certified/completion outcome ด้วย split ที่กัน leakage","textPreview":"• Supervised track ใช้ทำนาย certified/completion outcome ด้วย split ที่กัน leakage","textChars":82,"textLines":1,"bbox":[150,275,980,51]}
+{"kind":"textbox","id":"sh/tk3e5k3e","slide":3,"text":"• Deep and LLM track ใช้เปรียบเทียบวิธีที่ซับซ้อนกว่า tabular ML และอธิบายขอบเขตการใช้งานจริง","textPreview":"• Deep and LLM track ใช้เปรียบเทียบวิธีที่ซับซ้อนกว่า tabular ML และอธิบายขอบเขตการใช้งานจริง","textChars":93,"textLines":1,"bbox":[150,320,980,51]}
+{"kind":"textbox","id":"sh/qtwvmp4r","slide":3,"text":"755,144","textPreview":"755,144","textChars":7,"textLines":1,"bbox":[150,450,230,42]}
+{"kind":"textbox","id":"sh/ru5wfulc","slide":3,"text":"Raw harmonized rows","textPreview":"Raw harmonized rows","textChars":19,"textLines":1,"bbox":[150,493,230,42]}
+{"kind":"textbox","id":"sh/3a1grulk","slide":3,"text":"446,766","textPreview":"446,766","textChars":7,"textLines":1,"bbox":[410,450,230,42]}
+{"kind":"textbox","id":"sh/29szip4z","slide":3,"text":"Unique learners","textPreview":"Unique learners","textChars":15,"textLines":1,"bbox":[410,493,230,42]}
+{"kind":"textbox","id":"sh/pc3ytk3q","slide":3,"text":"624,674","textPreview":"624,674","textChars":7,"textLines":1,"bbox":[680,450,300,42]}
+{"kind":"textbox","id":"sh/4bahkzm5","slide":3,"text":"Course-run rows if preserved","textPreview":"Course-run rows if preserved","textChars":28,"textLines":1,"bbox":[680,493,300,42]}
+{"kind":"textbox","id":"sh/relgvulg","slide":3,"text":"5","textPreview":"5","textChars":1,"textLines":1,"bbox":[1010,450,120,42]}
+{"kind":"textbox","id":"sh/qdczmp4b","slide":3,"text":"Final Un K","textPreview":"Final Un K","textChars":10,"textLines":1,"bbox":[1010,493,120,42]}
+{"kind":"textbox","id":"sh/dg3yx43m","slide":3,"text":"MOOC Student Analytics | HarvardX-MITx learner behavior pipeline","textPreview":"MOOC Student Analytics | HarvardX-MITx learner behavior pipeline","textChars":64,"textLines":1,"bbox":[80,676,920,24]}
+{"kind":"notes","id":"nt/xbxejt","slide":3,"text":""}
+{"kind":"slide","id":"sl/c2obqg","slide":4,"title":"Merged data foundation","textShapes":4}
+{"kind":"shape","id":"sh/i14jehgb","slide":4,"bbox":[74,42,6,86]}
+{"kind":"textbox","id":"sh/p4v29czm","slide":4,"text":"Merged data foundation","textPreview":"Merged data foundation","textChars":22,"textLines":1,"bbox":[105,42,1080,58]}
+{"kind":"textbox","id":"sh/43m1g7y1","slide":4,"text":"การ merge ใหม่ทำให้เห็นทั้งภาพ learner-level และ course-run-level ชัดขึ้น","textPreview":"การ merge ใหม่ทำให้เห็นทั้งภาพ learner-level และ course-run-level ชัดขึ้น","textChars":73,"textLines":1,"bbox":[108,103,1040,35]}
+{"kind":"textbox","id":"sh/uxkjaxgz","slide":4,"text":"หลัง recheck พบว่า key แบบ userid + course อาจทำให้ course-run บางส่วนถูก collapse จึงต้องรายงาน caveat นี้บน dashboard/slide และแยกการตีความ learner-level ออกจาก enrollment-level","textPreview":"หลัง recheck พบว่า key แบบ userid + course อาจทำให้ course-run บางส่วนถูก collapse จึงต้องรายงาน caveat นี้บน dashboard/slide และแยกการตี...","textChars":179,"textLines":1,"bbox":[120,515,1040,78]}
+{"kind":"textbox","id":"sh/h0b25czq","slide":4,"text":"Source: outputs/reproducibility/data_reclean_audit_summary.json","textPreview":"Source: outputs/reproducibility/data_reclean_audit_summary.json","textChars":63,"textLines":1,"bbox":[80,676,920,24]}
+{"kind":"table","id":"tb/e9kvy94f","slide":4,"name":"","rows":6,"cols":3,"preview":"Metric | Current value | Meaning","bbox":[95,165,1090,310]}
+{"kind":"notes","id":"nt/c2obqg","slide":4,"text":""}
+{"kind":"slide","id":"sl/3h8pt3","slide":5,"title":"Data cleaning audit","textShapes":4}
+{"kind":"shape","id":"sh/0jmdgrq5","slide":5,"bbox":[74,42,6,86]}
+{"kind":"textbox","id":"sh/fitw7mp0","slide":5,"text":"Data cleaning audit","textPreview":"Data cleaning audit","textChars":19,"textLines":1,"bbox":[105,42,1080,58]}
+{"kind":"textbox","id":"sh/ehkve18f","slide":5,"text":"ขั้นตอนทำความสะอาดข้อมูลถูกบันทึกเป็น issue, decision และจำนวน record ที่กระทบ","textPreview":"ขั้นตอนทำความสะอาดข้อมูลถูกบันทึกเป็น issue, decision และจำนวน record ที่กระทบ","textChars":78,"textLines":1,"bbox":[108,103,1040,35]}
+{"kind":"textbox","id":"sh/sf2dcrq9","slide":5,"text":"ประเด็นสำคัญ: การ clean ไม่ได้ลบข้อมูลทิ้งแบบง่าย ๆ แต่แยก invalid/sentinel/quarantine เพื่อให้ downstream track ใช้ข้อมูลถูกประเภทและลด leakage","textPreview":"ประเด็นสำคัญ: การ clean ไม่ได้ลบข้อมูลทิ้งแบบง่าย ๆ แต่แยก invalid/sentinel/quarantine เพื่อให้ downstream track ใช้ข้อมูลถูกประเภทและลด ...","textChars":144,"textLines":1,"bbox":[100,590,1050,44]}
+{"kind":"textbox","id":"sh/retw3mpo","slide":5,"text":"Source: outputs/tables/cleaning_summary.csv","textPreview":"Source: outputs/tables/cleaning_summary.csv","textChars":43,"textLines":1,"bbox":[80,676,920,24]}
+{"kind":"table","id":"tb/g7yhwb29","slide":5,"name":"","rows":7,"cols":3,"preview":"Issue | Decision | Affected","bbox":[70,160,1140,400]}
+{"kind":"notes","id":"nt/3h8pt3","slide":5,"text":""}
+{"kind":"slide","id":"sl/wci9r3","slide":6,"title":"Missingness and zero profile","textShapes":4}
+{"kind":"shape","id":"sh/n2p0vihk","slide":6,"bbox":[74,42,6,86]}
+{"kind":"textbox","id":"sh/o3yh4nyp","slide":6,"text":"Missingness and zero profile","textPreview":"Missingness and zero profile","textChars":28,"textLines":1,"bbox":[105,42,1080,58]}
+{"kind":"textbox","id":"sh/p4rixsza","slide":6,"text":"ตรวจ missing, zero และ sparsity ก่อนสรุปพฤติกรรมผู้เรียน","textPreview":"ตรวจ missing, zero และ sparsity ก่อนสรุปพฤติกรรมผู้เรียน","textChars":56,"textLines":1,"bbox":[108,103,1040,35]}
+{"kind":"textbox","id":"sh/b690z2hg","slide":6,"text":"กราฟนี้ใช้ตรวจว่าคอลัมน์ใดเป็น missing จริง คอลัมน์ใดมีค่า 0 ตามธรรมชาติ และคอลัมน์ใดเสี่ยงต่อ outlier ก่อนนำไปทำ feature engineering","textPreview":"กราฟนี้ใช้ตรวจว่าคอลัมน์ใดเป็น missing จริง คอลัมน์ใดมีค่า 0 ตามธรรมชาติ และคอลัมน์ใดเสี่ยงต่อ outlier ก่อนนำไปทำ feature engineering","textChars":133,"textLines":1,"bbox":[135,600,1010,42]}
+{"kind":"textbox","id":"sh/c7ih87y1","slide":6,"text":"MOOC Student Analytics | HarvardX-MITx learner behavior pipeline","textPreview":"MOOC Student Analytics | HarvardX-MITx learner behavior pipeline","textChars":64,"textLines":1,"bbox":[80,676,920,24]}
+{"kind":"image","id":"im/r2hwjmpo","slide":6,"name":"","alt":"Zero missing outlier profile","bbox":[105,155,1070,430]}
+{"kind":"notes","id":"nt/wci9r3","slide":6,"text":""}
+{"kind":"slide","id":"sl/v43tno","slide":7,"title":"Behavior distributions","textShapes":4}
+{"kind":"shape","id":"sh/knadgjat","slide":7,"bbox":[74,42,6,86]}
+{"kind":"textbox","id":"sh/jm1cne98","slide":7,"text":"Behavior distributions","textPreview":"Behavior distributions","textChars":22,"textLines":1,"bbox":[105,42,1080,58]}
+{"kind":"textbox","id":"sh/yl8ve9sn","slide":7,"text":"พฤติกรรมผู้เรียนมี skew สูง จึงต้องใช้ transformation และ robust features","textPreview":"พฤติกรรมผู้เรียนมี skew สูง จึงต้องใช้ transformation และ robust features","textChars":73,"textLines":1,"bbox":[108,103,1040,35]}
+{"kind":"textbox","id":"sh/wzqtszax","slide":7,"text":"distribution ของ events, active days, chapters และ video activity ไม่สมมาตร ผู้เรียนส่วนใหญ่กิจกรรมน้อย แต่มีผู้เรียนกลุ่มเล็กที่ active สูงมาก","textPreview":"distribution ของ events, active days, chapters และ video activity ไม่สมมาตร ผู้เรียนส่วนใหญ่กิจกรรมน้อย แต่มีผู้เรียนกลุ่มเล็กที่ active ...","textChars":143,"textLines":1,"bbox":[125,600,1030,42]}
+{"kind":"textbox","id":"sh/byhcju9c","slide":7,"text":"MOOC Student Analytics | HarvardX-MITx learner behavior pipeline","textPreview":"MOOC Student Analytics | HarvardX-MITx learner behavior pipeline","textChars":64,"textLines":1,"bbox":[80,676,920,24]}
+{"kind":"image","id":"im/k7qdkzy1","slide":7,"name":"","alt":"Full distributions","bbox":[85,150,1110,430]}
+{"kind":"notes","id":"nt/v43tno","slide":7,"text":""}
+{"kind":"slide","id":"sl/qmpjvb","slide":8,"title":"Correlation and relationships","textShapes":4}
+{"kind":"shape","id":"sh/e94zu1o7","slide":8,"bbox":[74,42,6,86]}
+{"kind":"textbox","id":"sh/1cvi5gny","slide":8,"text":"Correlation and relationships","textPreview":"Correlation and relationships","textChars":29,"textLines":1,"bbox":[105,42,1080,58]}
+{"kind":"textbox","id":"sh/0bmhwb6d","slide":8,"text":"ตรวจความสัมพันธ์ของ feature เพื่อลด feature ซ้ำและเลือก feature สำคัญ","textPreview":"ตรวจความสัมพันธ์ของ feature เพื่อลด feature ซ้ำและเลือก feature สำคัญ","textChars":69,"textLines":1,"bbox":[108,103,1040,35]}
+{"kind":"textbox","id":"sh/q5kzq1ob","slide":8,"text":"correlation ช่วยบอกว่าพฤติกรรมบางชุดซ้ำกัน เช่น activity, chapter progress และ video engagement จึงควรใช้ feature screening ก่อนเข้าโมเดล","textPreview":"correlation ช่วยบอกว่าพฤติกรรมบางชุดซ้ำกัน เช่น activity, chapter progress และ video engagement จึงควรใช้ feature screening ก่อนเข้าโมเดล","textChars":137,"textLines":1,"bbox":[135,600,1010,42]}
+{"kind":"textbox","id":"sh/d8vi1w7m","slide":8,"text":"MOOC Student Analytics | HarvardX-MITx learner behavior pipeline","textPreview":"MOOC Student Analytics | HarvardX-MITx learner behavior pipeline","textChars":64,"textLines":1,"bbox":[80,676,920,24]}
+{"kind":"image","id":"im/21wbid0b","slide":8,"name":"","alt":"Correlation matrix","bbox":[125,150,1000,430]}
+{"kind":"notes","id":"nt/qmpjvb","slide":8,"text":""}
+{"kind":"slide","id":"sl/rrrjb1","slide":9,"title":"Outliers and video quality","textShapes":4}
+{"kind":"shape","id":"sh/p8v6lc7e","slide":9,"bbox":[74,42,6,86]}
+{"kind":"textbox","id":"sh/25knqh83","slide":9,"text":"Outliers and video quality","textPreview":"Outliers and video quality","textChars":26,"textLines":1,"bbox":[105,42,1080,58]}
+{"kind":"textbox","id":"sh/36dojmpo","slide":9,"text":"แยก outlier เชิงกิจกรรมและคุณภาพ video ก่อนตีความ segment","textPreview":"แยก outlier เชิงกิจกรรมและคุณภาพ video ก่อนตีความ segment","textChars":57,"textLines":1,"bbox":[108,103,1040,35]}
+{"kind":"textbox","id":"sh/q94nuhoz","slide":9,"text":"outlier ไม่ได้แปลว่าข้อมูลผิดเสมอไป ใน MOOC ผู้เรียน active สูงมากอาจเป็นกลุ่มที่มีความหมาย ส่วน video sentinel ต้องแปลงเป็น missing ก่อนวิเคราะห์","textPreview":"outlier ไม่ได้แปลว่าข้อมูลผิดเสมอไป ใน MOOC ผู้เรียน active สูงมากอาจเป็นกลุ่มที่มีความหมาย ส่วน video sentinel ต้องแปลงเป็น missing ก่อน...","textChars":146,"textLines":1,"bbox":[95,585,1080,48]}
+{"kind":"textbox","id":"sh/budonmpk","slide":9,"text":"MOOC Student Analytics | HarvardX-MITx learner behavior pipeline","textPreview":"MOOC Student Analytics | HarvardX-MITx learner behavior pipeline","textChars":64,"textLines":1,"bbox":[80,676,920,24]}
+{"kind":"image","id":"im/18nipkj6","slide":9,"name":"","alt":"Activity outlier diagnostics","bbox":[70,150,560,400]}
+{"kind":"image","id":"im/07e1gf21","slide":9,"name":"","alt":"Video quality diagnostics","bbox":[650,150,560,400]}
+{"kind":"notes","id":"nt/rrrjb1","slide":9,"text":""}
+{"kind":"slide","id":"sl/t8yvv7","slide":10,"title":"Why merged data improved the analysis","textShapes":4}
+{"kind":"shape","id":"sh/69w7218n","slide":10,"bbox":[74,42,6,86]}
+{"kind":"textbox","id":"sh/tc7qdg7y","slide":10,"text":"Why merged data improved the analysis","textPreview":"Why merged data improved the analysis","textChars":37,"textLines":1,"bbox":[105,42,1080,58]}
+{"kind":"textbox","id":"sh/8bep4bqd","slide":10,"text":"merged pipeline ทำให้ผลลัพธ์ตีความได้ครบกว่าแยก Sup/Un แบบเดิม","textPreview":"merged pipeline ทำให้ผลลัพธ์ตีความได้ครบกว่าแยก Sup/Un แบบเดิม","textChars":62,"textLines":1,"bbox":[108,103,1040,35]}
+{"kind":"textbox","id":"sh/udg76l8j","slide":10,"text":"ผลที่ดีขึ้นหลักคือความน่าเชื่อถือและ traceability ไม่ใช่แค่คะแนนโมเดลสูงขึ้น เพราะเรารู้ว่าแต่ละค่ามาจาก grain ไหนและผ่าน cleaning rule อะไร","textPreview":"ผลที่ดีขึ้นหลักคือความน่าเชื่อถือและ traceability ไม่ใช่แค่คะแนนโมเดลสูงขึ้น เพราะเรารู้ว่าแต่ละค่ามาจาก grain ไหนและผ่าน cleaning rule อะไร","textChars":140,"textLines":1,"bbox":[90,605,1100,44]}
+{"kind":"textbox","id":"sh/hg7qhg7a","slide":10,"text":"MOOC Student Analytics | HarvardX-MITx learner behavior pipeline","textPreview":"MOOC Student Analytics | HarvardX-MITx learner behavior pipeline","textChars":64,"textLines":1,"bbox":[80,676,920,24]}
+{"kind":"table","id":"tb/etkzq5g3","slide":10,"name":"","rows":6,"cols":3,"preview":"Improvement | Before risk | After merge/recheck","bbox":[70,155,1140,420]}
+{"kind":"notes","id":"nt/t8yvv7","slide":10,"text":""}
+{"kind":"slide","id":"sl/uqgi3l","slide":11,"title":"Unsupervised K selection","textShapes":4}
+{"kind":"shape","id":"sh/pcfixk36","slide":11,"bbox":[74,42,6,86]}
+{"kind":"textbox","id":"sh/29oj2p4f","slide":11,"text":"Unsupervised K selection","textPreview":"Unsupervised K selection","textChars":24,"textLines":1,"bbox":[105,42,1080,58]}
+{"kind":"textbox","id":"sh/nax0val0","slide":11,"text":"เลือก K ด้วยหลาย metric ไม่ใช้ elbow เพียงตัวเดียว","textPreview":"เลือก K ด้วยหลาย metric ไม่ใช้ elbow เพียงตัวเดียว","textChars":50,"textLines":1,"bbox":[108,103,1040,35]}
+{"kind":"textbox","id":"sh/xgzi1432","slide":11,"text":"ใน merged dashboard ชุดล่าสุดใช้ six-metric composite และ gap evidence เพื่ออธิบายทิศทาง metric แต่ Un track หลักรายงาน Final K = 5 จาก gap one-SE บน sample 12,000","textPreview":"ใน merged dashboard ชุดล่าสุดใช้ six-metric composite และ gap evidence เพื่ออธิบายทิศทาง metric แต่ Un track หลักรายงาน Final K = 5 จาก g...","textChars":163,"textLines":1,"bbox":[115,595,1050,48]}
+{"kind":"textbox","id":"sh/adoj6p4r","slide":11,"text":"Sources: outputs/tables/k_selection_decision.csv and Un/outputs/tables/k_selection_metrics.csv","textPreview":"Sources: outputs/tables/k_selection_decision.csv and Un/outputs/tables/k_selection_metrics.csv","textChars":94,"textLines":1,"bbox":[80,676,920,24]}
+{"kind":"image","id":"im/9w7m18r2","slide":11,"name":"","alt":"Multi metric K selection gap","bbox":[95,145,1090,430]}
+{"kind":"notes","id":"nt/uqgi3l","slide":11,"text":""}
+{"kind":"slide","id":"sl/7wxgsm","slide":12,"title":"K selection metrics table","textShapes":4}
+{"kind":"shape","id":"sh/vedcb69c","slide":12,"bbox":[74,42,6,86]}
+{"kind":"textbox","id":"sh/gfmtkbqx","slide":12,"text":"K selection metrics table","textPreview":"K selection metrics table","textChars":25,"textLines":1,"bbox":[105,42,1080,58]}
+{"kind":"textbox","id":"sh/hgvudwri","slide":12,"text":"ค่า K ต้องอ่านตามทิศทาง metric ไม่ใช่ดูตัวเลขแบบเดียวกันทุกกราฟ","textPreview":"ค่า K ต้องอ่านตามทิศทาง metric ไม่ใช่ดูตัวเลขแบบเดียวกันทุกกราฟ","textChars":63,"textLines":1,"bbox":[108,103,1040,35]}
+{"kind":"textbox","id":"sh/7qts7m90","slide":12,"text":"สไลด์นี้แก้ปัญหาที่เคยสับสนเรื่องลูกศร metric: แต่ละ metric มีทิศทางต่างกัน และบาง metric เช่น inertia เป็น monotonic จึงต้องใช้ bend หรือ composite rule","textPreview":"สไลด์นี้แก้ปัญหาที่เคยสับสนเรื่องลูกศร metric: แต่ละ metric มีทิศทางต่างกัน และบาง metric เช่น inertia เป็น monotonic จึงต้องใช้ bend หรื...","textChars":153,"textLines":1,"bbox":[120,555,1040,70]}
+{"kind":"textbox","id":"sh/8r2tgral","slide":12,"text":"MOOC Student Analytics | HarvardX-MITx learner behavior pipeline","textPreview":"MOOC Student Analytics | HarvardX-MITx learner behavior pipeline","textChars":64,"textLines":1,"bbox":[80,676,920,24]}
+{"kind":"table","id":"tb/rmxof618","slide":12,"name":"","rows":6,"cols":3,"preview":"Metric | Direction | Best / selected evidence","bbox":[100,160,1080,350]}
+{"kind":"notes","id":"nt/7wxgsm","slide":12,"text":""}
+{"kind":"slide","id":"sl/wuml3s","slide":13,"title":"Unsupervised model family comparison","textShapes":4}
+{"kind":"shape","id":"sh/nmpcfu1w","slide":13,"bbox":[74,42,6,86]}
+{"kind":"textbox","id":"sh/onytozih","slide":13,"text":"Unsupervised model family comparison","textPreview":"Unsupervised model family comparison","textChars":36,"textLines":1,"bbox":[105,42,1080,58]}
+{"kind":"textbox","id":"sh/po7uh4j2","slide":13,"text":"ทดลองหลาย family ก่อนล็อกโมเดล ไม่เลือกจาก K อย่างเดียว","textPreview":"ทดลองหลาย family ก่อนล็อกโมเดล ไม่เลือกจาก K อย่างเดียว","textChars":55,"textLines":1,"bbox":[108,103,1040,35]}
+{"kind":"textbox","id":"sh/bqpcju1s","slide":13,"text":"K-Means K=5 ให้ balance ระหว่าง silhouette, Davies-Bouldin, Calinski-Harabasz และ stability ดีที่สุดในตารางเปรียบเทียบหลักของ Un track","textPreview":"K-Means K=5 ให้ balance ระหว่าง silhouette, Davies-Bouldin, Calinski-Harabasz และ stability ดีที่สุดในตารางเปรียบเทียบหลักของ Un track","textChars":134,"textLines":1,"bbox":[125,590,1030,46]}
+{"kind":"textbox","id":"sh/crydszid","slide":13,"text":"Source: Un/outputs/tables/unsupervised_model_comparison.csv","textPreview":"Source: Un/outputs/tables/unsupervised_model_comparison.csv","textChars":59,"textLines":1,"bbox":[80,676,920,24]}
+{"kind":"image","id":"im/jqtwbulk","slide":13,"name":"","alt":"Un model comparison","bbox":[100,145,1080,420]}
+{"kind":"notes","id":"nt/wuml3s","slide":13,"text":""}
+{"kind":"slide","id":"sl/wsemdy","slide":14,"title":"Persona size and behavior radar","textShapes":4}
+{"kind":"shape","id":"sh/ry58jatk","slide":14,"bbox":[74,42,6,86]}
+{"kind":"textbox","id":"sh/czepsvu5","slide":14,"text":"Persona size and behavior radar","textPreview":"Persona size and behavior radar","textChars":31,"textLines":1,"bbox":[105,42,1080,58]}
+{"kind":"textbox","id":"sh/d0nql0bq","slide":14,"text":"Final Un track แบ่งผู้เรียนเป็น 5 persona ตาม pattern พฤติกรรม","textPreview":"Final Un track แบ่งผู้เรียนเป็น 5 persona ตาม pattern พฤติกรรม","textChars":62,"textLines":1,"bbox":[108,103,1040,35]}
+{"kind":"textbox","id":"sh/0nypwfuh","slide":14,"text":"Cluster มีสัดส่วนประมาณ 13.8%, 18.5%, 16.5%, 29.1% และ 22.1% ทำให้ตีความเป็น persona ได้สมดุลกว่าการแบ่งที่กลุ่มหนึ่งใหญ่เกินไป","textPreview":"Cluster มีสัดส่วนประมาณ 13.8%, 18.5%, 16.5%, 29.1% และ 22.1% ทำให้ตีความเป็น persona ได้สมดุลกว่าการแบ่งที่กลุ่มหนึ่งใหญ่เกินไป","textChars":127,"textLines":1,"bbox":[105,585,1060,46]}
+{"kind":"textbox","id":"sh/1o7qpkb2","slide":14,"text":"Source: Un/outputs/tables/cluster_profiles.csv","textPreview":"Source: Un/outputs/tables/cluster_profiles.csv","textChars":46,"textLines":1,"bbox":[80,676,920,24]}
+{"kind":"image","id":"im/nmdcry5k","slide":14,"name":"","alt":"Persona donut","bbox":[90,150,500,395]}
+{"kind":"image","id":"im/ml4vitoz","slide":14,"name":"","alt":"Persona radar","bbox":[630,150,560,395]}
+{"kind":"notes","id":"nt/wsemdy","slide":14,"text":""}
+{"kind":"slide","id":"sl/91vswi","slide":15,"title":"PCA projection and posthoc outcomes","textShapes":4}
+{"kind":"shape","id":"sh/psrmpcby","slide":15,"bbox":[74,42,6,86]}
+{"kind":"textbox","id":"sh/2p0nehsn","slide":15,"text":"PCA projection and posthoc outcomes","textPreview":"PCA projection and posthoc outcomes","textChars":35,"textLines":1,"bbox":[105,42,1080,58]}
+{"kind":"textbox","id":"sh/3q94n2t8","slide":15,"text":"ตรวจว่า segment แยกเชิงพฤติกรรมและสัมพันธ์กับ outcome จริงหรือไม่","textPreview":"ตรวจว่า segment แยกเชิงพฤติกรรมและสัมพันธ์กับ outcome จริงหรือไม่","textChars":65,"textLines":1,"bbox":[108,103,1040,35]}
+{"kind":"textbox","id":"sh/u1g3axsb","slide":15,"text":"posthoc validation ไม่ได้ใช้เลือกโมเดล แต่ใช้ตรวจว่ากลุ่มพฤติกรรมมีความสัมพันธ์กับ certification, mean grade และ incomplete rate อย่างมีนัยสำคัญ","textPreview":"posthoc validation ไม่ได้ใช้เลือกโมเดล แต่ใช้ตรวจว่ากลุ่มพฤติกรรมมีความสัมพันธ์กับ certification, mean grade และ incomplete rate อย่างมีน...","textChars":144,"textLines":1,"bbox":[95,585,1080,46]}
+{"kind":"textbox","id":"sh/f2p4j2tw","slide":15,"text":"MOOC Student Analytics | HarvardX-MITx learner behavior pipeline","textPreview":"MOOC Student Analytics | HarvardX-MITx learner behavior pipeline","textChars":64,"textLines":1,"bbox":[80,676,920,24]}
+{"kind":"image","id":"im/t43y5cra","slide":15,"name":"","alt":"PCA 3D","bbox":[70,145,550,410]}
+{"kind":"image","id":"im/83uhw7qp","slide":15,"name":"","alt":"Posthoc outcomes","bbox":[650,145,560,410]}
+{"kind":"notes","id":"nt/91vswi","slide":15,"text":""}
+{"kind":"slide","id":"sl/g54aq3","slide":16,"title":"Supervised prediction setup","textShapes":4}
+{"kind":"shape","id":"sh/z2t0b2xc","slide":16,"bbox":[74,42,6,86]}
+{"kind":"textbox","id":"sh/032147yx","slide":16,"text":"Supervised prediction setup","textPreview":"Supervised prediction setup","textChars":27,"textLines":1,"bbox":[105,42,1080,58]}
+{"kind":"textbox","id":"sh/lobidcf2","slide":16,"text":"Supervised track ทำนาย certified learner ด้วย split ที่กัน leakage","textPreview":"Supervised track ทำนาย certified learner ด้วย split ที่กัน leakage","textChars":66,"textLines":1,"bbox":[108,103,1040,35]}
+{"kind":"textbox","id":"sh/by9072x0","slide":16,"text":"class imbalance สูงมาก จึงใช้ ROC-AUC, PR-AUC, recall, precision, F1 และ threshold optimization แทนการดู accuracy อย่างเดียว","textPreview":"class imbalance สูงมาก จึงใช้ ROC-AUC, PR-AUC, recall, precision, F1 และ threshold optimization แทนการดู accuracy อย่างเดียว","textChars":124,"textLines":1,"bbox":[155,580,970,50]}
+{"kind":"textbox","id":"sh/czih07yl","slide":16,"text":"Sources: Sup/data/processed/cleaning_audit.json and Sup/outputs/reproducibility/split_summary.json","textPreview":"Sources: Sup/data/processed/cleaning_audit.json and Sup/outputs/reproducibility/split_summary.json","textChars":98,"textLines":1,"bbox":[80,676,920,24]}
+{"kind":"table","id":"tb/fmt8b6d4","slide":16,"name":"","rows":7,"cols":2,"preview":"Item | Value","bbox":[150,155,980,385]}
+{"kind":"notes","id":"nt/g54aq3","slide":16,"text":""}
+{"kind":"slide","id":"sl/ua6i8a","slide":17,"title":"Supervised EDA","textShapes":4}
+{"kind":"shape","id":"sh/u5snuts3","slide":17,"bbox":[74,42,6,86]}
+{"kind":"textbox","id":"sh/h83mpobu","slide":17,"text":"Supervised EDA","textPreview":"Supervised EDA","textChars":14,"textLines":1,"bbox":[105,42,1080,58]}
+{"kind":"textbox","id":"sh/w7u5wja9","slide":17,"text":"ก่อนเทรนโมเดลต้องดู class imbalance และพฤติกรรมของ completer/non-completer","textPreview":"ก่อนเทรนโมเดลต้องดู class imbalance และพฤติกรรมของ completer/non-completer","textChars":74,"textLines":1,"bbox":[108,103,1040,35]}
+{"kind":"textbox","id":"sh/94jmloby","slide":17,"text":"ผู้เรียน certified มีสัดส่วนเพียง 4.136% แต่มี activity ต่างจากกลุ่มอื่นชัดเจน ทำให้ threshold และ PR-AUC สำคัญมากกว่าความแม่นยำรวม","textPreview":"ผู้เรียน certified มีสัดส่วนเพียง 4.136% แต่มี activity ต่างจากกลุ่มอื่นชัดเจน ทำให้ threshold และ PR-AUC สำคัญมากกว่าความแม่นยำรวม","textChars":131,"textLines":1,"bbox":[105,585,1060,46]}
+{"kind":"textbox","id":"sh/83a5sjad","slide":17,"text":"MOOC Student Analytics | HarvardX-MITx learner behavior pipeline","textPreview":"MOOC Student Analytics | HarvardX-MITx learner behavior pipeline","textChars":64,"textLines":1,"bbox":[80,676,920,24]}
+{"kind":"image","id":"im/epkza5kj","slide":17,"name":"","alt":"Class imbalance","bbox":[85,150,520,400]}
+{"kind":"image","id":"im/fqtg3a14","slide":17,"name":"","alt":"Activity distributions","bbox":[640,150,560,400]}
+{"kind":"notes","id":"nt/ua6i8a","slide":17,"text":""}
+{"kind":"slide","id":"sl/pr5yvv","slide":18,"title":"Supervised model comparison","textShapes":3}
+{"kind":"shape","id":"sh/2h4z2p8b","slide":18,"bbox":[74,42,6,86]}
+{"kind":"textbox","id":"sh/pkvyxk7m","slide":18,"text":"Supervised model comparison","textPreview":"Supervised model comparison","textChars":27,"textLines":1,"bbox":[105,42,1080,58]}
+{"kind":"textbox","id":"sh/ojmh4zqh","slide":18,"text":"Random Forest เป็น champion จาก balance ของ PR-AUC, F1 และ recall","textPreview":"Random Forest เป็น champion จาก balance ของ PR-AUC, F1 และ recall","textChars":65,"textLines":1,"bbox":[108,103,1040,35]}
+{"kind":"textbox","id":"sh/1gvytk7q","slide":18,"text":"Source: Sup/outputs/tables/test_evaluation_summary.csv","textPreview":"Source: Sup/outputs/tables/test_evaluation_summary.csv","textChars":54,"textLines":1,"bbox":[80,676,920,24]}
+{"kind":"table","id":"tb/7ex03qt8","slide":18,"name":"","rows":2,"cols":7,"preview":"Champion | ROC-AUC | PR-AUC | F1 | Precision | Recall | Accuracy","bbox":[120,590,1040,78]}
+{"kind":"image","id":"im/qtsju5sb","slide":18,"name":"","alt":"Supervised comparison","bbox":[90,150,1100,410]}
+{"kind":"notes","id":"nt/pr5yvv","slide":18,"text":""}
+{"kind":"slide","id":"sl/963dj7","slide":19,"title":"Confusion matrix and error analysis","textShapes":4}
+{"kind":"shape","id":"sh/rmxg3ylc","slide":19,"bbox":[74,42,6,86]}
+{"kind":"textbox","id":"sh/sn6hw3mx","slide":19,"text":"Confusion matrix and error analysis","textPreview":"Confusion matrix and error analysis","textChars":35,"textLines":1,"bbox":[105,42,1080,58]}
+{"kind":"textbox","id":"sh/tofy583i","slide":19,"text":"ผลลัพธ์ต้องอ่านร่วมกับ false negative และ false positive","textPreview":"ผลลัพธ์ต้องอ่านร่วมกับ false negative และ false positive","textChars":56,"textLines":1,"bbox":[108,103,1040,35]}
+{"kind":"textbox","id":"sh/4jmhs3m1","slide":19,"text":"False negatives คือ completer ที่ถูกพลาด ส่วน false positives คือผู้เรียน active สูงแต่ไม่ certified จึงควรใช้โมเดลเพื่อจัดลำดับ intervention ไม่ใช่ตัดสินผลลัพธ์แบบเด็ดขาด","textPreview":"False negatives คือ completer ที่ถูกพลาด ส่วน false positives คือผู้เรียน active สูงแต่ไม่ certified จึงควรใช้โมเดลเพื่อจัดลำดับ interven...","textChars":171,"textLines":1,"bbox":[665,485,545,90]}
+{"kind":"textbox","id":"sh/5kvy1o36","slide":19,"text":"Source: Sup/outputs/tables/error_analysis.csv","textPreview":"Source: Sup/outputs/tables/error_analysis.csv","textChars":45,"textLines":1,"bbox":[80,676,920,24]}
+{"kind":"table","id":"tb/ixsfytw3","slide":19,"name":"","rows":4,"cols":5,"preview":"Type | Count | Mean events | Mean active days | Mean prob","bbox":[670,165,540,285]}
+{"kind":"image","id":"im/jml4ju9c","slide":19,"name":"","alt":"Confusion matrices comparison","bbox":[70,145,570,410]}
+{"kind":"notes","id":"nt/963dj7","slide":19,"text":""}
+{"kind":"slide","id":"sl/xgqd0q","slide":20,"title":"ROC, PR and calibration","textShapes":4}
+{"kind":"shape","id":"sh/net0jed0","slide":20,"bbox":[74,42,6,86]}
+{"kind":"textbox","id":"sh/8f2hcjul","slide":20,"text":"ROC, PR and calibration","textPreview":"ROC, PR and calibration","textChars":23,"textLines":1,"bbox":[105,42,1080,58]}
+{"kind":"textbox","id":"sh/9gbilov6","slide":20,"text":"ตรวจความสามารถแยกกลุ่มและความน่าเชื่อถือของ probability","textPreview":"ตรวจความสามารถแยกกลุ่มและความน่าเชื่อถือของ probability","textChars":55,"textLines":1,"bbox":[108,103,1040,35]}
+{"kind":"textbox","id":"sh/lcbih4va","slide":20,"text":"ROC-AUC สูงมาก แต่เพราะ positive class น้อย PR curve และ calibration สำคัญต่อการใช้งานจริง โดยเฉพาะการเลือก threshold ที่ลด missed completer","textPreview":"ROC-AUC สูงมาก แต่เพราะ positive class น้อย PR curve และ calibration สำคัญต่อการใช้งานจริง โดยเฉพาะการเลือก threshold ที่ลด missed completer","textChars":140,"textLines":1,"bbox":[95,585,1080,46]}
+{"kind":"textbox","id":"sh/ql0z2pcn","slide":20,"text":"MOOC Student Analytics | HarvardX-MITx learner behavior pipeline","textPreview":"MOOC Student Analytics | HarvardX-MITx learner behavior pipeline","textChars":64,"textLines":1,"bbox":[80,676,920,24]}
+{"kind":"image","id":"im/z6l8fa5c","slide":20,"name":"","alt":"ROC curves","bbox":[55,145,380,390]}
+{"kind":"image","id":"im/y5cr65or","slide":20,"name":"","alt":"PR curves","bbox":[450,145,380,390]}
+{"kind":"image","id":"im/l83qh0ni","slide":20,"name":"","alt":"Calibration curves","bbox":[845,145,380,390]}
+{"kind":"notes","id":"nt/xgqd0q","slide":20,"text":""}
+{"kind":"slide","id":"sl/4rcuc3","slide":21,"title":"Feature importance","textShapes":4}
+{"kind":"shape","id":"sh/e9o3ul0n","slide":21,"bbox":[74,42,6,86]}
+{"kind":"textbox","id":"sh/1cf2p0ze","slide":21,"text":"Feature importance","textPreview":"Feature importance","textChars":18,"textLines":1,"bbox":[105,42,1080,58]}
+{"kind":"textbox","id":"sh/gb6lwvit","slide":21,"text":"โมเดลพึ่งพา feature เชิง activity และ course progress เป็นหลัก","textPreview":"โมเดลพึ่งพา feature เชิง activity และ course progress เป็นหลัก","textChars":62,"textLines":1,"bbox":[108,103,1040,35]}
+{"kind":"textbox","id":"sh/2do3y50z","slide":21,"text":"feature สำคัญสูงสุดคือ max_chapters_single_course, total_chapters, total_active_days, overall_span_days, max_events_single_course และ total_events","textPreview":"feature สำคัญสูงสุดคือ max_chapters_single_course, total_chapters, total_active_days, overall_span_days, max_events_single_course และ tot...","textChars":146,"textLines":1,"bbox":[130,585,1020,46]}
+{"kind":"textbox","id":"sh/p0f2t0za","slide":21,"text":"Source: Sup/outputs/tables/feature_importance.csv","textPreview":"Source: Sup/outputs/tables/feature_importance.csv","textChars":49,"textLines":1,"bbox":[80,676,920,24]}
+{"kind":"image","id":"im/ilgnatsv","slide":21,"name":"","alt":"Feature importance","bbox":[120,145,1040,410]}
+{"kind":"notes","id":"nt/4rcuc3","slide":21,"text":""}
+{"kind":"slide","id":"sl/chtsnz","slide":22,"title":"Deep learning track","textShapes":4}
+{"kind":"shape","id":"sh/sfexg3a1","slide":22,"bbox":[74,42,6,86]}
+{"kind":"textbox","id":"sh/re5w7i9g","slide":22,"text":"Deep learning track","textPreview":"Deep learning track","textChars":19,"textLines":1,"bbox":[105,42,1080,58]}
+{"kind":"textbox","id":"sh/qdwfedsv","slide":22,"text":"MLP ให้ผลใกล้ supervised champion แต่ยังต้องดู runtime และการอธิบายผล","textPreview":"MLP ให้ผลใกล้ supervised champion แต่ยังต้องดู runtime และการอธิบายผล","textChars":69,"textLines":1,"bbox":[108,103,1040,35]}
+{"kind":"textbox","id":"sh/3alw3y9k","slide":22,"text":"Deep model ชนะบาง metric เช่น ROC-AUC และ F1 ใกล้เคียงมาก แต่ Random Forest ยังตีความง่ายกว่าและมี feature importance ที่ตรงกับพฤติกรรมผู้เรียน","textPreview":"Deep model ชนะบาง metric เช่น ROC-AUC และ F1 ใกล้เคียงมาก แต่ Random Forest ยังตีความง่ายกว่าและมี feature importance ที่ตรงกับพฤติกรรมผู...","textChars":143,"textLines":1,"bbox":[790,350,390,125]}
+{"kind":"textbox","id":"sh/i9cfatsz","slide":22,"text":"Source: outputs/tables/deep_learning_model_comparison.csv","textPreview":"Source: outputs/tables/deep_learning_model_comparison.csv","textChars":57,"textLines":1,"bbox":[80,676,920,24]}
+{"kind":"table","id":"tb/tsj69gb2","slide":22,"name":"","rows":2,"cols":6,"preview":"Selected deep model | PR-AUC | ROC-AUC | F1 | Recall | Precision","bbox":[790,190,390,120]}
+{"kind":"image","id":"im/ofit8rid","slide":22,"name":"","alt":"Deep model comparison","bbox":[90,145,670,410]}
+{"kind":"notes","id":"nt/chtsnz","slide":22,"text":""}
+{"kind":"slide","id":"sl/an9x6v","slide":23,"title":"LLM and transformer track","textShapes":4}
+{"kind":"shape","id":"sh/87ehs72h","slide":23,"bbox":[74,42,6,86]}
+{"kind":"textbox","id":"sh/765gz2lc","slide":23,"text":"LLM and transformer track","textPreview":"LLM and transformer track","textChars":25,"textLines":1,"bbox":[105,42,1080,58]}
+{"kind":"textbox","id":"sh/m5wzqxkr","slide":23,"text":"LLM ใช้แปลงพฤติกรรมผู้เรียนเป็นข้อความแล้วประเมินผ่านโมเดล AI ที่รันได้จริง","textPreview":"LLM ใช้แปลงพฤติกรรมผู้เรียนเป็นข้อความแล้วประเมินผ่านโมเดล AI ที่รันได้จริง","textChars":75,"textLines":1,"bbox":[108,103,1040,35]}
+{"kind":"textbox","id":"sh/z2lgvil0","slide":23,"text":"ผลจริงที่ครบคือ Gemini full test 1,800 students: Accuracy 0.9628, Precision 0.4615, Recall 0.9310, F1 0.6171, ROC-AUC 0.9810 ส่วน OpenAI/Claude simulated ถูก quarantine ไม่ใช้เป็นผลจริง","textPreview":"ผลจริงที่ครบคือ Gemini full test 1,800 students: Accuracy 0.9628, Precision 0.4615, Recall 0.9310, F1 0.6171, ROC-AUC 0.9810 ส่วน OpenAI/...","textChars":185,"textLines":1,"bbox":[90,585,1100,54]}
+{"kind":"textbox","id":"sh/y1cfmdkf","slide":23,"text":"Source: outputs/tables/llm_comparative_model_comparison.csv and llm_api_provider_status.csv","textPreview":"Source: outputs/tables/llm_comparative_model_comparison.csv and llm_api_provider_status.csv","textChars":91,"textLines":1,"bbox":[80,676,920,24]}
+{"kind":"image","id":"im/47itorul","slide":23,"name":"","alt":"LLM embedding projection","bbox":[75,145,540,400]}
+{"kind":"image","id":"im/58rahwb6","slide":23,"name":"","alt":"LLM model comparison","bbox":[650,145,540,400]}
+{"kind":"notes","id":"nt/an9x6v","slide":23,"text":""}
+{"kind":"slide","id":"sl/6omez9","slide":24,"title":"All-track comparison","textShapes":4}
+{"kind":"shape","id":"sh/qxoz2h83","slide":24,"bbox":[74,42,6,86]}
+{"kind":"textbox","id":"sh/d0fyxw7e","slide":24,"text":"All-track comparison","textPreview":"All-track comparison","textChars":20,"textLines":1,"bbox":[105,42,1080,58]}
+{"kind":"textbox","id":"sh/cz6h4rqt","slide":24,"text":"เปรียบเทียบผลจาก Un, Sup, Deep และ LLM ใน narrative เดียว","textPreview":"เปรียบเทียบผลจาก Un, Sup, Deep และ LLM ใน narrative เดียว","textChars":57,"textLines":1,"bbox":[108,103,1040,35]}
+{"kind":"textbox","id":"sh/y1oz618z","slide":24,"text":"ผลรวมชี้ว่า tabular supervised และ deep learning เหมาะกับ prediction ส่วน unsupervised เหมาะกับ persona และ LLM เหมาะกับการอธิบายพฤติกรรมจากข้อความ แต่มีข้อจำกัดเรื่อง cost, API และ comparability","textPreview":"ผลรวมชี้ว่า tabular supervised และ deep learning เหมาะกับ prediction ส่วน unsupervised เหมาะกับ persona และ LLM เหมาะกับการอธิบายพฤติกรรม...","textChars":195,"textLines":1,"bbox":[105,585,1060,52]}
+{"kind":"textbox","id":"sh/lozi1w7q","slide":24,"text":"MOOC Student Analytics | HarvardX-MITx learner behavior pipeline","textPreview":"MOOC Student Analytics | HarvardX-MITx learner behavior pipeline","textChars":64,"textLines":1,"bbox":[80,676,920,24]}
+{"kind":"image","id":"im/qhwfi1sj","slide":24,"name":"","alt":"All tracks summary","bbox":[90,145,1100,400]}
+{"kind":"notes","id":"nt/6omez9","slide":24,"text":""}
+{"kind":"slide","id":"sl/3cubrp","slide":25,"title":"Deployment and monitoring","textShapes":4}
+{"kind":"shape","id":"sh/be5onuhs","slide":25,"bbox":[74,42,6,86]}
+{"kind":"textbox","id":"sh/wfe5wzyd","slide":25,"text":"Deployment and monitoring","textPreview":"Deployment and monitoring","textChars":25,"textLines":1,"bbox":[105,42,1080,58]}
+{"kind":"textbox","id":"sh/xg76p4zi","slide":25,"text":"ผลลัพธ์ถูกเตรียมเป็น pipeline, schema และ dashboard เพื่อตรวจซ้ำได้","textPreview":"ผลลัพธ์ถูกเตรียมเป็น pipeline, schema และ dashboard เพื่อตรวจซ้ำได้","textChars":67,"textLines":1,"bbox":[108,103,1040,35]}
+{"kind":"textbox","id":"sh/na5ojuhg","slide":25,"text":"ควร monitor distribution ของ feature, persona share, recall/F1 และ data drift เพราะ MOOC behavior อาจเปลี่ยนตาม course offering และ platform design","textPreview":"ควร monitor distribution ของ feature, persona share, recall/F1 และ data drift เพราะ MOOC behavior อาจเปลี่ยนตาม course offering และ platf...","textChars":147,"textLines":1,"bbox":[140,545,1000,70]}
+{"kind":"textbox","id":"sh/obe5szy1","slide":25,"text":"MOOC Student Analytics | HarvardX-MITx learner behavior pipeline","textPreview":"MOOC Student Analytics | HarvardX-MITx learner behavior pipeline","textChars":64,"textLines":1,"bbox":[80,676,920,24]}
+{"kind":"table","id":"tb/fap4ny1g","slide":25,"name":"","rows":6,"cols":2,"preview":"Artifact | Purpose","bbox":[120,165,1040,330]}
+{"kind":"notes","id":"nt/3cubrp","slide":25,"text":""}
+{"kind":"slide","id":"sl/0s3rcb","slide":26,"title":"Main findings","textShapes":8}
+{"kind":"shape","id":"sh/547e9gjm","slide":26,"bbox":[74,42,6,86]}
+{"kind":"textbox","id":"sh/i1gfylkb","slide":26,"text":"Main findings","textPreview":"Main findings","textChars":13,"textLines":1,"bbox":[105,42,1080,58]}
+{"kind":"textbox","id":"sh/32pw7q1w","slide":26,"text":"ข้อสรุปที่ใช้เล่าในห้องนำเสนอ","textPreview":"ข้อสรุปที่ใช้เล่าในห้องนำเสนอ","textChars":29,"textLines":1,"bbox":[108,103,1040,35]}
+{"kind":"textbox","id":"sh/sryx4v2d","slide":26,"text":"• Merged pipeline ทำให้ grain และ cleaning audit ชัดขึ้น โดยเฉพาะ course-run issue ที่ต้องแยกจาก learner-level analysis","textPreview":"• Merged pipeline ทำให้ grain และ cleaning audit ชัดขึ้น โดยเฉพาะ course-run issue ที่ต้องแยกจาก learner-level analysis","textChars":119,"textLines":1,"bbox":[120,165,1040,61]}
+{"kind":"textbox","id":"sh/dsred0jy","slide":26,"text":"• EDA ยืนยันว่า behavior data มี skew, sparsity และ outlier สูง จึงต้องใช้ robust transformation และ feature screening","textPreview":"• EDA ยืนยันว่า behavior data มี skew, sparsity และ outlier สูง จึงต้องใช้ robust transformation และ feature screening","textChars":118,"textLines":1,"bbox":[120,220,1040,61]}
+{"kind":"textbox","id":"sh/qpgf2lk7","slide":26,"text":"• Unsupervised track สรุป persona 5 กลุ่มจาก gap one-SE และตรวจด้วย radar, PCA และ posthoc outcomes","textPreview":"• Unsupervised track สรุป persona 5 กลุ่มจาก gap one-SE และตรวจด้วย radar, PCA และ posthoc outcomes","textChars":99,"textLines":1,"bbox":[120,275,1040,61]}
+{"kind":"textbox","id":"sh/rqpwbq1s","slide":26,"text":"• Supervised Random Forest ทำงานดีที่สุดโดยรวมในงาน prediction: ROC-AUC 0.9933, PR-AUC 0.8476, F1 0.7889","textPreview":"• Supervised Random Forest ทำงานดีที่สุดโดยรวมในงาน prediction: ROC-AUC 0.9933, PR-AUC 0.8476, F1 0.7889","textChars":104,"textLines":1,"bbox":[120,330,1040,61]}
+{"kind":"textbox","id":"sh/0vix8v29","slide":26,"text":"• Deep MLP ให้ผลใกล้เคียง supervised champion ส่วน LLM/Gemini recall สูงแต่ precision ต่ำกว่า จึงเหมาะเป็น evidence track เพิ่มเติม","textPreview":"• Deep MLP ให้ผลใกล้เคียง supervised champion ส่วน LLM/Gemini recall สูงแต่ precision ต่ำกว่า จึงเหมาะเป็น evidence track เพิ่มเติม","textChars":131,"textLines":1,"bbox":[120,385,1040,61]}
+{"kind":"textbox","id":"sh/1wreh0ju","slide":26,"text":"MOOC Student Analytics | HarvardX-MITx learner behavior pipeline","textPreview":"MOOC Student Analytics | HarvardX-MITx learner behavior pipeline","textChars":64,"textLines":1,"bbox":[80,676,920,24]}
+{"kind":"notes","id":"nt/0s3rcb","slide":26,"text":""}
+{"kind":"slide","id":"sl/6nrh31","slide":27,"title":"Limitations","textShapes":8}
+{"kind":"shape","id":"sh/gzyxsb6d","slide":27,"bbox":[74,42,6,86]}
+{"kind":"textbox","id":"sh/vypgjqps","slide":27,"text":"Limitations","textPreview":"Limitations","textChars":11,"textLines":1,"bbox":[105,42,1080,58]}
+{"kind":"textbox","id":"sh/uxgfqlon","slide":27,"text":"ข้อจำกัดที่ต้องพูดให้ชัดเพื่อไม่ให้ตีความเกินข้อมูล","textPreview":"ข้อจำกัดที่ต้องพูดให้ชัดเพื่อไม่ให้ตีความเกินข้อมูล","textChars":51,"textLines":1,"bbox":[108,103,1040,35]}
+{"kind":"textbox","id":"sh/tcnyhg72","slide":27,"text":"• course-run key ต้องรายงาน caveat เพราะ student-course key เดิม collapse multi-run groups 49,614 กลุ่ม","textPreview":"• course-run key ต้องรายงาน caveat เพราะ student-course key เดิม collapse multi-run groups 49,614 กลุ่ม","textChars":103,"textLines":1,"bbox":[120,165,1040,64]}
+{"kind":"textbox","id":"sh/8bexob6h","slide":27,"text":"• Unsupervised K ไม่มีคำตอบจาก metric เดียว ต้องระบุ rule ที่ใช้เลือกและเก็บ metric อื่นเป็น audit evidence","textPreview":"• Unsupervised K ไม่มีคำตอบจาก metric เดียว ต้องระบุ rule ที่ใช้เลือกและเก็บ metric อื่นเป็น audit evidence","textChars":107,"textLines":1,"bbox":[120,223,1040,64]}
+{"kind":"textbox","id":"sh/7a5gf6pw","slide":27,"text":"• positive class ของ supervised มีเพียงประมาณ 4.136% จึงห้ามสรุปจาก accuracy อย่างเดียว","textPreview":"• positive class ของ supervised มีเพียงประมาณ 4.136% จึงห้ามสรุปจาก accuracy อย่างเดียว","textChars":87,"textLines":1,"bbox":[120,281,1040,64]}
+{"kind":"textbox","id":"sh/69wfm1ob","slide":27,"text":"• LLM provider ไม่เท่ากันทั้งหมด เพราะมีเพียง Gemini full test ที่เป็น API run ครบ ส่วน OpenAI/Claude simulated ถูก quarantine","textPreview":"• LLM provider ไม่เท่ากันทั้งหมด เพราะมีเพียง Gemini full test ที่เป็น API run ครบ ส่วน OpenAI/Claude simulated ถูก quarantine","textChars":126,"textLines":1,"bbox":[120,339,1040,64]}
+{"kind":"textbox","id":"sh/l8nydw7q","slide":27,"text":"• ผล posthoc ของ cluster ใช้อธิบายความสัมพันธ์กับ outcome ไม่ได้ใช้เลือก cluster เพื่อหลีกเลี่ยง target leakage","textPreview":"• ผล posthoc ของ cluster ใช้อธิบายความสัมพันธ์กับ outcome ไม่ได้ใช้เลือก cluster เพื่อหลีกเลี่ยง target leakage","textChars":111,"textLines":1,"bbox":[120,397,1040,64]}
+{"kind":"textbox","id":"sh/k7exkr65","slide":27,"text":"MOOC Student Analytics | HarvardX-MITx learner behavior pipeline","textPreview":"MOOC Student Analytics | HarvardX-MITx learner behavior pipeline","textChars":64,"textLines":1,"bbox":[80,676,920,24]}
+{"kind":"notes","id":"nt/6nrh31","slide":27,"text":""}
+{"kind":"slide","id":"sl/j6ox9k","slide":28,"title":"Final recommendation","textShapes":4}
+{"kind":"shape","id":"sh/fyt8z65k","slide":28,"bbox":[74,42,6,86]}
+{"kind":"textbox","id":"sh/0z2psbm5","slide":28,"text":"Final recommendation","textPreview":"Final recommendation","textChars":20,"textLines":1,"bbox":[105,42,1080,58]}
+{"kind":"textbox","id":"sh/10bq1g3q","slide":28,"text":"รายงานผลเป็น workflow เดียวและแยกหน้าที่ของแต่ละ model family","textPreview":"รายงานผลเป็น workflow เดียวและแยกหน้าที่ของแต่ละ model family","textChars":61,"textLines":1,"bbox":[108,103,1040,35]}
+{"kind":"textbox","id":"sh/ra9ov65o","slide":28,"text":"ประโยคสรุป: งาน merged ทำให้ผลเล่าได้น่าเชื่อถือขึ้น เพราะเห็น data quality, grain, EDA, model evidence และ limitation อยู่ใน pipeline เดียวกัน","textPreview":"ประโยคสรุป: งาน merged ทำให้ผลเล่าได้น่าเชื่อถือขึ้น เพราะเห็น data quality, grain, EDA, model evidence และ limitation อยู่ใน pipeline เด...","textChars":143,"textLines":1,"bbox":[130,565,1020,62]}
+{"kind":"textbox","id":"sh/sv2pobm9","slide":28,"text":"MOOC Student Analytics | HarvardX-MITx learner behavior pipeline","textPreview":"MOOC Student Analytics | HarvardX-MITx learner behavior pipeline","textChars":64,"textLines":1,"bbox":[80,676,920,24]}
+{"kind":"table","id":"tb/nylcfupo","slide":28,"name":"","rows":6,"cols":2,"preview":"Decision area | Recommended use","bbox":[115,160,1050,360]}
+{"kind":"notes","id":"nt/j6ox9k","slide":28,"text":""}

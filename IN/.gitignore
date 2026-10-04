@@ -1,0 +1,10 @@
+.DS_Store
+__pycache__/
+*.pyc
+models/experiments/
+models/final/
+outputs/
+logs/
+data/cleaned/
+data/processed/
+data/raw_quarantine/

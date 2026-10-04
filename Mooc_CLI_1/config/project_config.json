@@ -1,0 +1,29 @@
+{
+  "project_name": "MOOC certification classification and learner segmentation",
+  "raw_data_path": "data/raw/big_student_clear_third_version.csv",
+  "random_seed": 42,
+  "split": {"train": 0.70, "validation": 0.15, "test": 0.15},
+  "classification": {
+    "target": "certified",
+    "candidate_training_max_rows": 120000,
+    "cross_validation_max_rows": 45000,
+    "cv_folds": 3,
+    "selection_metric": "predefined weighted validation utility",
+    "selection_weights": {"pr_auc": 0.40, "balanced_accuracy": 0.25, "f1_macro": 0.20, "positive_recall": 0.15}
+  },
+  "clustering": {
+    "training_max_rows": 18000,
+    "validation_max_rows": 6000,
+    "test_max_rows": 6000,
+    "k_values": [2, 3, 4, 5, 6],
+    "stability_seeds": [42, 101, 777]
+  },
+  "source": {
+    "dataset_name": "HarvardX Person-Course Academic Year 2013 De-Identified dataset, version 3.0 (local derivative)",
+    "owner": "HarvardX",
+    "canonical_url": "https://doi.org/10.7910/DVN/26147",
+    "local_secondary_source": "https://www.kaggle.com/datasets/kanikanarang94/mooc-dataset",
+    "license": "Custom Harvard Dataverse terms; attribution and non-reidentification obligations",
+    "access_date": "2026-09-11"
+  }
+}

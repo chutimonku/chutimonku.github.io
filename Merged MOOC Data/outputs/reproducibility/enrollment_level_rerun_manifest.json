@@ -1,0 +1,143 @@
+{
+  "status": "completed",
+  "run_timestamp": "2026-09-29T20:57:08.177004+07:00",
+  "records": 575060,
+  "source": "data/processed/enrollments_cleaned.parquet",
+  "target_source": "data/quarantine/supervised_outcomes_cleaned.parquet",
+  "features": {
+    "numeric": [
+      "nevents_filled",
+      "ndays_act_filled",
+      "nplay_video_filled",
+      "nchapters_filled",
+      "nforum_posts_filled",
+      "events_percentile_within_course",
+      "active_days_percentile_within_course",
+      "video_plays_percentile_within_course",
+      "chapters_percentile_within_course",
+      "forum_posts_percentile_within_course",
+      "age_clean",
+      "age_missing",
+      "nevents_missing",
+      "ndays_act_missing",
+      "nplay_video_missing",
+      "nchapters_missing",
+      "nforum_posts_missing",
+      "date_inversion_flag",
+      "date_missing_flag",
+      "source_count"
+    ],
+    "categorical": [
+      "course_id",
+      "institute",
+      "year",
+      "semester",
+      "gender_clean",
+      "LoE_clean",
+      "country_clean",
+      "source_dataset"
+    ]
+  },
+  "unsupervised": {
+    "sample_size": 20000,
+    "selected_k": 2,
+    "selected_family": "K-Means",
+    "selected_metrics": {
+      "family": "K-Means",
+      "k": 2,
+      "sample_size": 20000,
+      "runtime_sec": 0.0835287910012994,
+      "silhouette": 0.9970783876487298,
+      "davies_bouldin": 0.002315917298475633,
+      "calinski_harabasz": 15199.585356111125,
+      "smallest_cluster_pct": 0.005,
+      "largest_cluster_pct": 99.995,
+      "rank_silhouette": 1.0,
+      "rank_davies_bouldin": 1.0,
+      "rank_calinski_harabasz": 1.0,
+      "mean_rank": 1.0,
+      "selected": true
+    },
+    "k_selection_rule": "Data-driven mean rank over Silhouette, Davies-Bouldin, Calinski-Harabasz, ARI stability, and NMI stability. Inertia is displayed but not used to force larger K."
+  },
+  "supervised": {
+    "eligible_rows": 574982,
+    "positive_rows": 15155,
+    "split": {
+      "train": 402487,
+      "validation": 86247,
+      "test": 86248
+    },
+    "selected": {
+      "model_id": "random_forest",
+      "model_name": "Random Forest",
+      "runtime_sec": 28.92040950001683,
+      "threshold_from_validation": 0.8599999999999999,
+      "test_pr_auc": 0.8779818363247794,
+      "test_roc_auc": 0.9967493079432237,
+      "test_brier": 0.01408523790928545,
+      "test_balanced_accuracy": 0.9336732446335161,
+      "test_precision": 0.7638248847926268,
+      "test_recall": 0.8746701846965699,
+      "test_f1": 0.8154981549815498,
+      "tn": 83359,
+      "fp": 615,
+      "fn": 285,
+      "tp": 1989,
+      "selected": true
+    }
+  },
+  "deep": {
+    "eligible_rows": 574982,
+    "positive_rows": 15155,
+    "split": {
+      "train": 402487,
+      "validation": 86247,
+      "test": 86248
+    },
+    "selected": {
+      "model_id": "mlp_128_64",
+      "model_name": "Mlp 128 64",
+      "runtime_sec": 19.24724666698603,
+      "threshold_from_validation": 0.49999999999999994,
+      "test_pr_auc": 0.8849816173496344,
+      "test_roc_auc": 0.9968138539300361,
+      "test_brier": 0.0072147549200108395,
+      "test_balanced_accuracy": 0.9176945427196872,
+      "test_precision": 0.7834629553827261,
+      "test_recall": 0.841688654353562,
+      "test_f1": 0.8115327538689845,
+      "tn": 83445,
+      "fp": 529,
+      "fn": 360,
+      "tp": 1914,
+      "selected": true
+    }
+  },
+  "llm_text": {
+    "sample_rows": 20000,
+    "split": {
+      "train": 14000,
+      "validation": 3000,
+      "test": 3000
+    },
+    "selected": {
+      "model_id": "tfidf_bigram_logistic",
+      "model_name": "Tfidf Bigram Logistic",
+      "runtime_sec": 0.5074238340021111,
+      "threshold_from_validation": 0.74,
+      "test_pr_auc": 0.7279869206922184,
+      "test_roc_auc": 0.9863287584806573,
+      "test_balanced_accuracy": 0.8759324835274203,
+      "test_precision": 0.5841584158415841,
+      "test_recall": 0.7662337662337663,
+      "test_f1": 0.6629213483146067,
+      "tn": 2881,
+      "fp": 42,
+      "fn": 18,
+      "tp": 59,
+      "selected": true
+    }
+  },
+  "runtime_sec": 205.31335179199232
+}

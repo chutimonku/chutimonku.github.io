@@ -1,0 +1,14 @@
+======================================================================
+STEP 11: MONITORING BASELINES & OPERATIONAL FEEDBACK LOOP
+======================================================================
+[+] Monitoring configuration saved to: monitoring/monitoring_config.json
+[+] Monitoring history log saved to: monitoring/monitoring_history.csv
+[+] Retraining decision saved to: monitoring/retraining_decision.json
+[+] Monitoring report saved to: monitoring/monitoring_report.html
+
+STDERR
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+W20260916 14:59:54.797704 1847554048 cpu_info.cc:239] IOError: sysctlbyname failed for 'hw.l1dcachesize'. Detail: [errno 1] Operation not permitted
+W20260916 14:59:54.797946 1847554048 cpu_info.cc:239] IOError: sysctlbyname failed for 'hw.l2cachesize'. Detail: [errno 1] Operation not permitted
+W20260916 14:59:54.798087 1847554048 cpu_info.cc:239] IOError: sysctlbyname failed for 'hw.l3cachesize'. Detail: [errno 1] Operation not permitted
+W20260916 14:59:54.798167 1847554048 cpu_info.cc:239] IOError: sysctlbyname failed for 'hw.optional.neon'. Detail: [errno 1] Operation not permitted

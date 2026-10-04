@@ -1,0 +1,5 @@
+feature,q1,q3,upper_iqr_threshold,outlier_students,outlier_pct,p99,maximum
+total_events,0.0,99.0,247.5,72812,16.29756964495955,7172.0,53180.0
+total_active_days,1.0,4.0,8.5,58800,13.161252199137804,67.0,582.0
+total_video_plays,0.0,5.0,12.5,86264,19.308541831741895,823.0,39057.0
+total_forum_posts,0.0,0.0,0.0,5476,1.2256975687496363,1.0,13.0

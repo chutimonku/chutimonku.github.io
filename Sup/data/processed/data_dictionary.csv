@@ -1,0 +1,23 @@
+column_name,logical_type,analytical_role,is_target_variable,actual_dtype,null_count,null_pct,unique_values,description
+Unnamed: 0,integer,metadata_index,False,int64,0,0.0,416921,Original export row index
+institute,categorical,course_context,False,object,0,0.0,2,"Delivering institute (HarvardX, MITx)"
+course_id,categorical,course_context,False,object,0,0.0,13,"Course identifier (e.g. 6.00x, CS50x)"
+year,integer,course_context,False,int64,0,0.0,2,"Academic year (2012, 2013)"
+semester,categorical,course_context,False,object,0,0.0,3,"Offering semester (Spring, Fall, Summer)"
+userid_DI,string,entity_identifier,False,object,0,0.0,335650,De-identified student unique identifier
+viewed,binary,observational_engagement,False,int64,0,0.0,2,1 if student accessed course materials
+explored,binary,target_auxiliary_label,True,int64,0,0.0,2,TARGET: 1 if student accessed >=50% of chapters
+certified,binary,target_primary_label,True,int64,0,0.0,2,TARGET: 1 if student earned course certificate
+final_cc_cname_DI,categorical,demographic,False,object,0,0.0,34,Student country of origin/access
+LoE_DI,categorical,demographic,False,object,0,0.0,5,Student highest level of education
+gender,categorical,demographic,False,object,23211,5.567,3,"Student reported gender (m, f, o, null)"
+grade,float,target_auxiliary_label,True,float64,0,0.0,101,TARGET: Final course grade achieved (0.0 to 1.0)
+start_time_DI,date,temporal_metadata,False,object,0,0.0,411,Course registration timestamp
+last_event_DI,date,temporal_metadata,False,object,0,0.0,404,Last recorded interaction timestamp
+nevents,integer,observational_engagement,False,int64,0,0.0,9702,Total count of interaction events logged
+ndays_act,integer,observational_engagement,False,int64,0,0.0,152,Distinct active days on platform
+nplay_video,integer,observational_engagement,False,int64,0,0.0,2534,Video play events count (contains sentinel 197757)
+nchapters,integer,observational_engagement,False,int64,0,0.0,49,Count of chapters/modules accessed
+nforum_posts,integer,observational_engagement,False,int64,0,0.0,9,Discussion forum posts contributed
+incomplete_flag,binary,target_auxiliary_label,True,int64,0,0.0,2,TARGET: Course incomplete status indicator
+age,integer,demographic,False,int64,0,0.0,76,Student calculated age

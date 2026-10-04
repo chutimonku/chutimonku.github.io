@@ -1,0 +1,24 @@
+STEP: Step 9: Deployment Packaging
+MODULE: src.deployment
+RETURN CODE: 0
+RUNTIME_SECONDS: 1.535
+
+STDOUT
+========================================================================
+========================================================================
+STEP 9: DEPLOYMENT PACKAGING AND INPUT SCHEMA VALIDATION
+========================================================================
+[Step 9] Input schema: models/final/input_schema.json
+[Step 9] Deployment validation: models/final/deployment_check.json
+[Step 9] Model lock: models/final/model_lock.json
+[Step 9] Deployment input schema validation passed.
+
+
+STDERR
+========================================================================
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+W20260921 19:38:31.720218 1876570112 cpu_info.cc:239] IOError: sysctlbyname failed for 'hw.l1dcachesize'. Detail: [errno 1] Operation not permitted
+W20260921 19:38:31.720366 1876570112 cpu_info.cc:239] IOError: sysctlbyname failed for 'hw.l2cachesize'. Detail: [errno 1] Operation not permitted
+W20260921 19:38:31.720434 1876570112 cpu_info.cc:239] IOError: sysctlbyname failed for 'hw.l3cachesize'. Detail: [errno 1] Operation not permitted
+W20260921 19:38:31.720501 1876570112 cpu_info.cc:239] IOError: sysctlbyname failed for 'hw.optional.neon'. Detail: [errno 1] Operation not permitted
+

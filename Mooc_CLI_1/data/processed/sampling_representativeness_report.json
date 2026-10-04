@@ -1,0 +1,131 @@
+{
+  "theoretical_framework": "Cochran's Sample Size Formula for Finite Population with Margin-of-Error Bounds",
+  "confidence_level_pct": 99.0,
+  "z_critical_value": 2.5758,
+  "target_margin_of_error_pct": 0.55,
+  "cochran_recommended_sample_size": 47133,
+  "empirical_sample_size": 50000,
+  "achieved_margin_of_error_pct": 0.531,
+  "population_size": 335650,
+  "sampling_ratio": 0.149,
+  "sampling_method": "Uniform random sampling without replacement from student-level aggregated population",
+  "random_seed": 42,
+  "computational_rationale": "Pairwise Euclidean distance matrix (O(N^2)) and silhouette sweeps on N=335,650 students would consume 839.4 GB RAM. An analytical sample of N=50,000 reduces complexity by 45.1x while retaining 99% confidence and 0.53% precision.",
+  "kolmogorov_smirnov_tests": {
+    "n_courses": {
+      "ks_statistic": 0.00228,
+      "p_value": 0.97722,
+      "representative": true
+    },
+    "n_institutes": {
+      "ks_statistic": 0.0013,
+      "p_value": 1.0,
+      "representative": true
+    },
+    "total_courses_viewed": {
+      "ks_statistic": 0.0025,
+      "p_value": 0.94784,
+      "representative": true
+    },
+    "view_rate": {
+      "ks_statistic": 0.00263,
+      "p_value": 0.92391,
+      "representative": true
+    },
+    "total_events": {
+      "ks_statistic": 0.00352,
+      "p_value": 0.6511,
+      "representative": true
+    },
+    "mean_events_per_course": {
+      "ks_statistic": 0.00355,
+      "p_value": 0.64131,
+      "representative": true
+    },
+    "total_active_days": {
+      "ks_statistic": 0.00206,
+      "p_value": 0.99244,
+      "representative": true
+    },
+    "mean_active_days_per_course": {
+      "ks_statistic": 0.00358,
+      "p_value": 0.63111,
+      "representative": true
+    },
+    "total_video_plays": {
+      "ks_statistic": 0.00402,
+      "p_value": 0.48317,
+      "representative": true
+    },
+    "mean_video_plays_per_course": {
+      "ks_statistic": 0.00337,
+      "p_value": 0.7056,
+      "representative": true
+    },
+    "total_chapters": {
+      "ks_statistic": 0.00247,
+      "p_value": 0.9535,
+      "representative": true
+    },
+    "mean_chapters_per_course": {
+      "ks_statistic": 0.00161,
+      "p_value": 0.99987,
+      "representative": true
+    },
+    "total_forum_posts": {
+      "ks_statistic": 0.00039,
+      "p_value": 1.0,
+      "representative": true
+    },
+    "age": {
+      "ks_statistic": 0.00295,
+      "p_value": 0.84266,
+      "representative": true
+    },
+    "overall_span_days": {
+      "ks_statistic": 0.00291,
+      "p_value": 0.8539,
+      "representative": true
+    },
+    "event_intensity": {
+      "ks_statistic": 0.00404,
+      "p_value": 0.47618,
+      "representative": true
+    },
+    "video_play_ratio": {
+      "ks_statistic": 0.00295,
+      "p_value": 0.84139,
+      "representative": true
+    }
+  },
+  "chi_square_tests": {
+    "LoE_DI": {
+      "chi2_statistic": 3.9878,
+      "p_value": 0.4077,
+      "representative": true
+    },
+    "gender": {
+      "chi2_statistic": 2.3925,
+      "p_value": 0.495,
+      "representative": true
+    },
+    "has_forum_activity": {
+      "chi2_statistic": 0.0191,
+      "p_value": 0.8901,
+      "representative": true
+    },
+    "has_multiple_courses": {
+      "chi2_statistic": 1.7964,
+      "p_value": 0.1801,
+      "representative": true
+    }
+  },
+  "representativeness_summary": {
+    "all_numeric_ks_passed": true,
+    "all_categorical_chi2_passed": true,
+    "max_ks_statistic": 0.00404,
+    "min_ks_p_value": 0.47618
+  },
+  "limitations": "Rare extreme-tail outliers (top 0.01% activity power-users) are sampled with lower frequency; however, continuous behavioral geometries, channel sparsity, and core student clusters are faithfully preserved.",
+  "outcome_usage": "STRICTLY ZERO: Quarantined outcome variables were never loaded, accessed, or evaluated."
+}

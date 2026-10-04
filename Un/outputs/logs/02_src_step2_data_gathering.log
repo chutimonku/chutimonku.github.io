@@ -1,0 +1,22 @@
+STEP: Step 2: Data Gathering & Quarantine
+MODULE: src.step2_data_gathering
+RETURN CODE: 0
+RUNTIME_SECONDS: 1.736
+
+STDOUT
+========================================================================
+========================================================================
+STEP 2: DATA GATHERING, SCHEMA VALIDATION, AND OUTCOME QUARANTINE
+========================================================================
+[Step 2] Loading raw file: data/raw/big_student_clear_third_version.csv
+[Step 2] Raw rows loaded: 416,921
+[Step 2] Raw columns validated: 22
+[Step 2] Non-outcome features exported: data/processed/raw_features.parquet
+[Step 2] Outcome columns quarantined: data/quarantine/raw_outcomes.parquet
+[Step 2] Provenance written: data/processed/data_provenance.json
+[Step 2] SHA-256: 24858a3afe182d4a17b5083ed4ffcd6ced622821fc37626932628240b31773f9
+
+
+STDERR
+========================================================================
+

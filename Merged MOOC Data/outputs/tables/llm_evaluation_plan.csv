@@ -1,0 +1,6 @@
+component,metrics,evaluation_data
+ASR,"WER, CER, insertions, deletions, substitutions, timestamp alignment",Stratified human-verified audio sample
+Sentence segmentation,"Boundary precision, recall, F1",Human-checked sentence boundaries
+Retrieval,"Recall@K, Precision@K, MRR, nDCG, evidence coverage",Questions with relevant transcript chunks
+Generation,"Answer correctness, groundedness, citation correctness, refusal quality, hallucination rate",Blind human rubric plus deterministic checks
+Multilingual quality,"Meaning preservation, terminology consistency, language correctness",Thai/English paired review sample

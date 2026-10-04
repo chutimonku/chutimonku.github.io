@@ -1,0 +1,13 @@
+======================================================================
+STEP 2: DATA GATHERING & ANTI-LEAKAGE LABEL SEPARATION
+======================================================================
+[+] Ingesting raw records from: data/raw/big_student_clear_third_version.csv
+    Raw records ingested: 416,921
+    Raw columns count:   22
+    Unique students:     335,650
+    Enrollment ratio:    1.242 records/student
+[+] Data dictionary written to: data/processed/data_dictionary.csv
+[+] Enforcing Anti-Leakage Isolation: Separating targets from features...
+    Raw non-target features (18 cols) -> data/processed/raw_features.parquet
+    Raw ground-truth targets (6 cols) -> data/labels/raw_targets.parquet
+[+] Provenance metadata saved to: data/processed/data_provenance.json

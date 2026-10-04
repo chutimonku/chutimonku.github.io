@@ -1,0 +1,3 @@
+cluster,nevents_filled,ndays_act_filled,nplay_video_filled,nchapters_filled,nforum_posts_filled,events_percentile_within_course,active_days_percentile_within_course,video_plays_percentile_within_course,chapters_percentile_within_course,forum_posts_percentile_within_course,count,share_pct
+0,278.43157157857894,4.020551027551377,31.76208810440522,2.1985599279963997,0.013700685034251713,0.5016724704937019,0.5005986318780132,0.5038874337720605,0.5011373017332749,0.49971513586321475,19999,99.995
+1,28383.0,43.0,24564.0,16.0,0.0,0.9999347684279191,0.9737606001304632,1.0,0.9782452707110242,0.49620026092628833,1,0.005

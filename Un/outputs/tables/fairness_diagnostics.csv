@@ -1,0 +1,4 @@
+attribute,chi_square,p_value,effect_size,effect_value,interpretation_rule,used_for_clustering
+gender,1019.5619349279591,1.0426135565860794e-213,Cramer's V,0.03182019621189603,Report association for human review; no arbitrary pass/fail threshold.,False
+LoE_DI,942.6799352871479,3.906292247629575e-194,Cramer's V,0.03059695294075538,Report association for human review; no arbitrary pass/fail threshold.,False
+country,6639.300348845794,0.0,Cramer's V,0.08120021978283659,Report association for human review; no arbitrary pass/fail threshold.,False

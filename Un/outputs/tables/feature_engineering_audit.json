@@ -1,0 +1,60 @@
+{
+  "generated_at_utc": "2026-09-21T13:02:29.261491+00:00",
+  "input_path": "data/processed/students_cleaned.parquet",
+  "raw_behavior_output": "data/processed/behavior_features_unscaled.parquet",
+  "feature_matrix_output": "data/processed/feature_matrix.parquet",
+  "preprocessor_output": "models/preprocessing_candidates/behavioral_preprocessor.joblib",
+  "student_count": 335650,
+  "feature_count": 4,
+  "selected_behavior_features": [
+    "mean_course_events_percentile",
+    "mean_course_active_days_percentile",
+    "mean_course_chapters_percentile",
+    "mean_course_forum_posts_percentile"
+  ],
+  "excluded_profile_columns_present_in_source": [
+    "userid_DI"
+  ],
+  "excluded_outcome_columns": [
+    "certified",
+    "grade",
+    "viewed",
+    "explored",
+    "incomplete_flag"
+  ],
+  "outcomes_detected_in_source": [],
+  "identifier_excluded_from_model_input": "userid_DI",
+  "missing_count_before_imputation": {
+    "mean_course_events_percentile": 0,
+    "mean_course_active_days_percentile": 0,
+    "mean_course_chapters_percentile": 0,
+    "mean_course_forum_posts_percentile": 0
+  },
+  "out_of_range_values_converted_to_missing": {
+    "mean_course_events_percentile": 0,
+    "mean_course_active_days_percentile": 0,
+    "mean_course_chapters_percentile": 0,
+    "mean_course_forum_posts_percentile": 0
+  },
+  "median_imputation_statistics": {
+    "mean_course_events_percentile": 0.49891034954277413,
+    "mean_course_active_days_percentile": 0.4982078853046595,
+    "mean_course_chapters_percentile": 0.5061533202290402,
+    "mean_course_forum_posts_percentile": 0.49429535937099395
+  },
+  "preprocessing_geometry": "median imputation followed by identity transform on bounded percentile inputs",
+  "robust_scaler_center": {
+    "mean_course_events_percentile": 0.0,
+    "mean_course_active_days_percentile": 0.0,
+    "mean_course_chapters_percentile": 0.0,
+    "mean_course_forum_posts_percentile": 0.0
+  },
+  "robust_scaler_scale": {
+    "mean_course_events_percentile": 1.0,
+    "mean_course_active_days_percentile": 1.0,
+    "mean_course_chapters_percentile": 1.0,
+    "mean_course_forum_posts_percentile": 1.0
+  },
+  "output_contains_missing_values": false,
+  "outcome_leakage_prevented": true
+}

@@ -1,0 +1,30 @@
+# Operating System files
+.DS_Store
+*.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Python caches and build artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.matplotlib-cache/
+.cache/
+
+# Large dependency packages & model weight caches (>100MB)
+.offline_deps/
+.dashboard_deps/
+.hf_cache/
+.chart-data-*/
+
+# Raw large external waveform records in EKG2 (to stay within GitHub size limits)
+EKG2/ptb-xl-a-large-publicly-available-electrocardiography-dataset-1.0.3/records100/
+EKG2/ptb-xl-a-large-publicly-available-electrocardiography-dataset-1.0.3/records500/
+
+# Environment and sensitive files
+.env
+*.env
+Key.gitignore/

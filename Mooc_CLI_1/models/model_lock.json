@@ -1,0 +1,28 @@
+{
+  "lock_status": "LOCKED",
+  "lock_timestamp": "2026-09-04T17:56:39.739018",
+  "sha256_checksum": "7237b45f9e60ca3579a11a2470d166668b4467406d80a3a61d79272bac502e23",
+  "algorithm": "KMeans",
+  "hyperparameters": {
+    "n_clusters": 4,
+    "init": "k-means++",
+    "n_init": 10,
+    "random_state": 42
+  },
+  "feature_count": 10,
+  "features": [
+    "log_total_events",
+    "log_total_active_days",
+    "log_total_video_plays",
+    "log_total_chapters",
+    "log_total_forum_posts",
+    "log_overall_span_days",
+    "log_event_intensity",
+    "video_play_ratio",
+    "view_rate",
+    "n_courses"
+  ],
+  "population_size": 335650,
+  "selection_criteria": "Optimized based exclusively on internal metrics (Silhouette score, Davies-Bouldin index, Calinski-Harabasz index, and bootstrap stability ARI). Outlier outcomes exerted exactly 0.00% influence.",
+  "integrity_guarantee": "Outcome variables remained strictly quarantined and unaccessed during all tuning and model locking procedures."
+}

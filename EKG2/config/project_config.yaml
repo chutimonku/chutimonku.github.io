@@ -1,0 +1,156 @@
+# ==============================================================================
+# PTB-XL ECG Classification Pipeline Configuration
+# Governed by EKG_Workflow specifications (Phases 1 - 5)
+# ==============================================================================
+
+project:
+  name: "PTB-XL ECG Classification System"
+  description: "Multilabel 12-lead ECG diagnostic prediction pipeline with longitudinal governance"
+  version: "1.0.0"
+  random_seed: 42
+  environment: "development"  # development | staging | production
+
+# ------------------------------------------------------------------------------
+# Directory & File Paths (Relative to project_root)
+# ------------------------------------------------------------------------------
+paths:
+  raw_data_dir: "data/raw"
+  raw_source_backup_dir: "../Raw Data"  # Workspace source backup
+  quarantine_dir: "data/quarantine"
+  interim_data_dir: "data/interim"
+  cleaned_data_dir: "data/cleaned"
+  processed_data_dir: "data/processed"
+  models_dir: "models"
+  outputs_dir: "outputs"
+  reports_dir: "reports"
+  logs_dir: "logs"
+
+files:
+  ptbxl_database: "ptbxl_database.csv"
+  scp_statements: "scp_statements.csv"
+  data_provenance: "logs/data_provenance.json"
+  cleaning_audit: "logs/cleaning_audit.json"
+  experiment_log: "logs/experiment_log.json"
+  evaluation_log: "logs/evaluation_log.json"
+  monitoring_log: "logs/monitoring_log.json"
+
+# ------------------------------------------------------------------------------
+# Phase 1: Problem Governance & Unit of Analysis (Data Grain)
+# ------------------------------------------------------------------------------
+unit_of_analysis:
+  grain: "encounter_observation"  # 1 row = 1 10-second ECG recording episode
+  primary_key: "ecg_id"
+  entity_id: "patient_id"         # Crucial for repeated observations / longitudinal tracking
+  timestamp_col: "recording_date"
+  allow_repeated_observations: true
+
+task:
+  task_type: "multilabel_classification"  # Superclasses: NORM, MI, STTC, CD, HYP
+  label_source_col: "scp_codes"
+  target_scheme: "diagnostic_superclass"  # Mapping via scp_statements.csv
+  target_classes:
+    - NORM  # Normal ECG
+    - MI    # Myocardial Infarction
+    - STTC  # ST/T Change
+    - CD    # Conduction Disturbance
+    - HYP   # Hypertrophy
+  decision_threshold_default: 0.5
+
+# ------------------------------------------------------------------------------
+# Splitting Strategy (Guardrail against Patient/Entity Data Leakage)
+# ------------------------------------------------------------------------------
+splitting:
+  strategy: "GroupKFold"  # Must anchor on patient_id to prevent entity leakage
+  group_column: "patient_id"
+  n_splits: 5
+  val_size: 0.1
+  test_size: 0.1
+  use_ptbxl_strat_fold: true  # Aligns with PTB-XL pre-assigned folds (1-10)
+  test_fold_indices: [9, 10]
+  validation_fold_indices: [8]
+  train_fold_indices: [1, 2, 3, 4, 5, 6, 7]
+
+# ------------------------------------------------------------------------------
+# Phase 2 & 3: Signal Specifications & Preprocessing Rules
+# ------------------------------------------------------------------------------
+signals:
+  sampling_rate_hz: 100       # 100 Hz low-res default, 500 Hz high-res optional
+  duration_seconds: 10
+  num_channels: 12
+  lead_names:
+    - "I"
+    - "II"
+    - "III"
+    - "aVR"
+    - "aVL"
+    - "aVF"
+    - "V1"
+    - "V2"
+    - "V3"
+    - "V4"
+    - "V5"
+    - "V6"
+
+preprocessing:
+  filtering:
+    apply_bandpass: true
+    bandpass_lowcut_hz: 0.5
+    bandpass_highcut_hz: 45.0
+    filter_order: 3
+    apply_notch: true
+    notch_freq_hz: 50.0       # European power line frequency in PTB-XL acquisition
+    notch_quality_factor: 30.0
+    baseline_wander_removal: true
+    baseline_method: "median_filter"
+
+  quarantine_rules:
+    age_min: 0
+    age_max: 120
+    quarantine_burst_noise: false
+    quarantine_electrode_problems: false
+    quarantine_missing_patient_id: true
+
+  missing_imputation:
+    tabular_strategy: "median_train_fit"  # Train-only fit for numeric features
+    categorical_strategy: "constant_unknown"
+
+# ------------------------------------------------------------------------------
+# Phase 4: Modeling & Feature Engineering
+# ------------------------------------------------------------------------------
+modeling:
+  candidate_pools:
+    - name: "lightgbm_baseline"
+      type: "gradient_boosting"
+      input_type: "extracted_features"
+    - name: "resnet1d_deep_learning"
+      type: "1d_convolutional"
+      input_type: "raw_waveform"
+  cross_validation:
+    metric: "macro_roc_auc"
+  training_hyperparameters:
+    batch_size: 64
+    epochs: 50
+    learning_rate: 0.001
+    early_stopping_patience: 7
+
+# ------------------------------------------------------------------------------
+# Phase 5: Evaluation Criteria & Governance Guardrails
+# ------------------------------------------------------------------------------
+success_criteria:
+  macro_roc_auc_min: 0.85
+  macro_f1_min: 0.70
+  recall_min: 0.80             # High sensitivity for acute cardiac conditions
+  inference_latency_max_ms: 200
+
+fairness_audit:
+  subgroup_columns:
+    - "sex"
+    - "age_group"
+    - "device"
+  age_bins: [0, 30, 50, 70, 120]
+  age_labels: ["<30", "30-50", "50-70", "70+"]
+
+explainability:
+  methods:
+    tabular: "shap"
+    waveform: "integrated_gradients"

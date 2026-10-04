@@ -1,0 +1,33 @@
+{
+  "problem": "MOOC records contain heterogeneous learner behavior and an imbalanced certification outcome, requiring separate governed analyses rather than one feature set for every task.",
+  "objectives": "Describe the data, discover behavior-based student segments, test a non-linear representation, predict certification in a separate supervised track, and produce grounded bilingual explanations without leaking outcomes into clustering.",
+  "desired_outcomes": "Auditable clean data, defensible student segments, an evaluated certification model, grounded explanation artifacts, deployment artifacts, and an honest monitoring baseline.",
+  "unit_of_analysis": "Exactly one record per student (userid_DI), synthesized across all enrolled courses.",
+  "task_type": "Multi-track: unsupervised clustering, deep representation learning, supervised classification, and grounded LLM-supported communication",
+  "constraints": {
+    "strict_outcome_quarantine": "Variables reflecting course completion or achievement (certified, grade, viewed, explored, incomplete_flag) are strictly quarantined at ingestion. Zero leakage into feature construction, representation learning, candidate selection, tuning, or model locking.",
+    "behavior_only_assignment": "Age, gender, and education are excluded from every clustering representation and retained only for post-hoc subgroup diagnostics.",
+    "ethical_boundaries": "Discovered segments must represent observed engagement patterns and support needs, never deficit-based student labeling or automated punitive sorting.",
+    "computational_efficiency": "Feasible memory and runtime footprint allowing scalable inference across hundreds of thousands of learners."
+  },
+  "success_criteria": {
+    "internal_clustering_quality": "Compare candidates using Silhouette, Davies-Bouldin, Calinski-Harabasz, and resample ARI on unseen evaluation data.",
+    "cluster_balance": "All requested clusters must be populated and the selected solution must avoid negligible clusters.",
+    "reproducibility": "Deterministic training pipelines with documented random seeds and cryptographic artifact checksums.",
+    "robustness": "Measure assignment stability across repeated fits using Adjusted Rand Index.",
+    "fairness_sensitivity": "Report demographic association diagnostics without treating them as proof of fairness.",
+    "post_hoc_relevance": "After model lock, report outcome associations and effect sizes descriptively; do not use them as an optimization or pass/fail gate."
+  },
+  "versioning": {
+    "project_version": "3.0.0",
+    "data_version": "v3.0-unified",
+    "schema_version": "3.0",
+    "created_at": "2026-09-18"
+  },
+  "analysis_tracks": [
+    "Track 1: Traditional Unsupervised on data-selected course-adjusted behavioral features",
+    "Track 2: Deep Learning classification with Multilayer Perceptron (MLP) architectures to predict certification",
+    "Track 3: Supervised certification classification with a separately governed target",
+    "Track 4: Generative LLM-supported communication using computed artifacts as grounding evidence"
+  ]
+}

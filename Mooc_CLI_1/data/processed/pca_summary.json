@@ -1,0 +1,62 @@
+{
+  "explained_variance_ratio": [
+    0.5019,
+    0.1281,
+    0.0995,
+    0.095,
+    0.0628,
+    0.0568,
+    0.0281,
+    0.0171,
+    0.0105,
+    0.0002
+  ],
+  "cumulative_variance_ratio": [
+    0.5019,
+    0.63,
+    0.7295,
+    0.8245,
+    0.8873,
+    0.9441,
+    0.9722,
+    0.9893,
+    0.9998,
+    1.0
+  ],
+  "top_loadings_pc1": {
+    "log_total_events": 0.429,
+    "log_total_active_days": 0.3777,
+    "log_total_video_plays": 0.3683,
+    "log_total_chapters": 0.4011,
+    "log_total_forum_posts": 0.0855,
+    "log_overall_span_days": 0.2872,
+    "log_event_intensity": 0.3771,
+    "video_play_ratio": 0.1781,
+    "view_rate": 0.304,
+    "n_courses": 0.1435
+  },
+  "top_loadings_pc2": {
+    "log_total_events": -0.0181,
+    "log_total_active_days": 0.2975,
+    "log_total_video_plays": -0.1608,
+    "log_total_chapters": 0.08,
+    "log_total_forum_posts": 0.1783,
+    "log_overall_span_days": 0.3435,
+    "log_event_intensity": -0.2462,
+    "video_play_ratio": -0.4484,
+    "view_rate": -0.341,
+    "n_courses": 0.5926
+  },
+  "top_loadings_pc3": {
+    "log_total_events": -0.1061,
+    "log_total_active_days": 0.0257,
+    "log_total_video_plays": 0.2693,
+    "log_total_chapters": -0.1272,
+    "log_total_forum_posts": -0.5519,
+    "log_overall_span_days": 0.0313,
+    "log_event_intensity": -0.1748,
+    "video_play_ratio": 0.5615,
+    "view_rate": -0.2343,
+    "n_courses": 0.4395
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "project": "Student Risk & Performance Segmentation",
+  "dataset_source": "https://www.kaggle.com/datasets/kanikanarang94/mooc-dataset",
+  "raw_data_path": "data/raw/big_student_clear_third_version.csv",
+  "unit_of_analysis": "userid_DI",
+  "course_identifier": "course_id",
+  "record_identifier_columns": [
+    "userid_DI",
+    "course_id",
+    "Unnamed: 0"
+  ],
+  "expected_raw_columns": [
+    "Unnamed: 0",
+    "institute",
+    "course_id",
+    "year",
+    "semester",
+    "userid_DI",
+    "viewed",
+    "explored",
+    "certified",
+    "final_cc_cname_DI",
+    "LoE_DI",
+    "gender",
+    "grade",
+    "start_time_DI",
+    "last_event_DI",
+    "nevents",
+    "ndays_act",
+    "nplay_video",
+    "nchapters",
+    "nforum_posts",
+    "incomplete_flag",
+    "age"
+  ],
+  "task_type": "supervised_classification",
+  "target_column": "certified_student",
+  "outcome_columns": [
+    "certified",
+    "grade",
+    "incomplete_flag",
+    "explored"
+  ],
+  "anti_leakage_constraint": "Target variables (certified, grade, incomplete_flag, explored) must only be used as labels (y), strictly preventing data leakage into input features (X) or train/test splits.",
+  "split_strategy": {
+    "method": "stratified",
+    "train_ratio": 0.70,
+    "val_ratio": 0.15,
+    "test_ratio": 0.15,
+    "random_seed": 42
+  },
+  "risk_tiers": {
+    "tier_1": {
+      "name": "Low Risk / Likely Completer",
+      "min_probability": 0.50,
+      "recommended_action": "Advanced enrichment, optional peer tutoring leadership, self-directed pacing"
+    },
+    "tier_2": {
+      "name": "Moderate Risk / Target for Nudge",
+      "min_probability": 0.15,
+      "recommended_action": "Proactive check-ins, study group matchmaking, milestone reminders, assignment nudges"
+    },
+    "tier_3": {
+      "name": "High Risk / Early Dropout",
+      "min_probability": 0.00,
+      "recommended_action": "Urgent advisor outreach, onboarding diagnostic, course prerequisite remediation, technical support"
+    }
+  },
+  "success_criteria": {
+    "roc_auc_min": 0.85,
+    "pr_auc_min": 0.35,
+    "positive_class_baseline": 0.0413,
+    "brier_score_max": 0.05
+  },
+  "supported_new_data": "Later MOOC cohorts with identical non-outcome feature definitions and raw person-course schema.",
+  "incompatible_data_policy": "If feature definitions or course structures change, retraining via Step 2 is mandatory."
+}

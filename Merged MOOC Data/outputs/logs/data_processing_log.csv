@@ -1,0 +1,73 @@
+workflow_step,operation,input_records,output_records,affected_records,rule,output_file,timestamp_utc,step,rows_in,rows_out,details
+2.0,raw_source_inventory,755144.0,755144.0,0.0,Profile every file and every column before harmonization; preserve raw files unchanged.,outputs/tables/source_file_inventory.csv,2026-09-17T20:20:20.156967+00:00,,,,
+2.0,cross_source_enrollment_deduplication,755144.0,609637.0,145507.0,"Retain one highest-completeness record per student, institution, course, year, and semester using stable source order for ties.",data/processed/raw_non_outcomes.parquet,2026-09-17T20:20:20.156967+00:00,,,,
+2.0,outcome_quarantine,609637.0,609637.0,609637.0,"Physically separate outcomes before cleaning, feature engineering, sampling, or model selection.",data/quarantine/quarantined_enrollment_outcomes.parquet,2026-09-17T20:20:20.156967+00:00,,,,
+3.0,clean_enrollment_records,609637.0,609637.0,257437.0,Preserve rows; flag/impute invalid values; swap valid reversed date pairs; retain original values for audit.,data/processed/enrollments_cleaned.parquet,2026-09-17T20:22:10.100813+00:00,,,,
+3.0,supervised_outcome_quality_filter,609637.0,609636.0,1.0,Exclude definite outcome contradictions only from the supervised-target eligibility file.,data/quarantine/supervised_outcomes_cleaned.parquet,2026-09-17T20:22:10.100813+00:00,,,,
+3.0,aggregate_to_student,609637.0,446766.0,162871.0,Aggregate exact enrollment records to one row per userid_DI for student-level analysis.,data/processed/students_cleaned.parquet,2026-09-17T20:22:10.100813+00:00,,,,
+2.0,raw_source_inventory,755144.0,755144.0,0.0,Profile every file and every column before harmonization; preserve raw files unchanged.,outputs/tables/source_file_inventory.csv,2026-09-17T22:53:07.286692+00:00,,,,
+2.0,cross_source_enrollment_deduplication,755144.0,609637.0,145507.0,"Retain one highest-completeness record per student, institution, course, year, and semester using stable source order for ties.",data/processed/raw_non_outcomes.parquet,2026-09-17T22:53:07.286692+00:00,,,,
+2.0,outcome_quarantine,609637.0,609637.0,609637.0,"Physically separate outcomes before cleaning, feature engineering, sampling, or model selection.",data/quarantine/quarantined_enrollment_outcomes.parquet,2026-09-17T22:53:07.286692+00:00,,,,
+3.0,clean_enrollment_records,609637.0,609637.0,257437.0,Preserve rows; flag/impute invalid values; swap valid reversed date pairs; retain original values for audit.,data/processed/enrollments_cleaned.parquet,2026-09-17T22:54:37.539626+00:00,,,,
+3.0,supervised_outcome_quality_filter,609637.0,609636.0,1.0,Exclude definite outcome contradictions only from the supervised-target eligibility file.,data/quarantine/supervised_outcomes_cleaned.parquet,2026-09-17T22:54:37.539626+00:00,,,,
+3.0,aggregate_to_student,609637.0,446766.0,162871.0,Aggregate exact enrollment records to one row per userid_DI for student-level analysis.,data/processed/students_cleaned.parquet,2026-09-17T22:54:37.539626+00:00,,,,
+2.0,raw_source_inventory,755144.0,755144.0,0.0,Profile every file and every column before harmonization; preserve raw files unchanged.,outputs/tables/source_file_inventory.csv,2026-09-17T22:58:02.028153+00:00,,,,
+2.0,cross_source_enrollment_deduplication,755144.0,609637.0,145507.0,"Retain one highest-completeness record per student, institution, course, year, and semester using stable source order for ties.",data/processed/raw_non_outcomes.parquet,2026-09-17T22:58:02.028153+00:00,,,,
+2.0,outcome_quarantine,609637.0,609637.0,609637.0,"Physically separate outcomes before cleaning, feature engineering, sampling, or model selection.",data/quarantine/quarantined_enrollment_outcomes.parquet,2026-09-17T22:58:02.028153+00:00,,,,
+3.0,clean_enrollment_records,609637.0,609637.0,257437.0,Preserve rows; flag/impute invalid values; swap valid reversed date pairs; retain original values for audit.,data/processed/enrollments_cleaned.parquet,2026-09-17T22:59:31.491882+00:00,,,,
+3.0,supervised_outcome_quality_filter,609637.0,609636.0,1.0,Exclude definite outcome contradictions only from the supervised-target eligibility file.,data/quarantine/supervised_outcomes_cleaned.parquet,2026-09-17T22:59:31.491882+00:00,,,,
+3.0,aggregate_to_student,609637.0,446766.0,162871.0,Aggregate exact enrollment records to one row per userid_DI for student-level analysis.,data/processed/students_cleaned.parquet,2026-09-17T22:59:31.491882+00:00,,,,
+3.0,clean_enrollment_records,609637.0,609637.0,257437.0,Preserve rows; flag/impute invalid values; swap valid reversed date pairs; retain original values for audit.,data/processed/enrollments_cleaned.parquet,2026-09-17T23:54:11.040467+00:00,,,,
+3.0,supervised_outcome_quality_filter,609637.0,609636.0,1.0,Exclude definite outcome contradictions only from the supervised-target eligibility file.,data/quarantine/supervised_outcomes_cleaned.parquet,2026-09-17T23:54:11.040467+00:00,,,,
+3.0,aggregate_to_student,609637.0,446766.0,162871.0,Aggregate exact enrollment records to one row per userid_DI for student-level analysis.,data/processed/students_cleaned.parquet,2026-09-17T23:54:11.040467+00:00,,,,
+,raw_source_audit,,,,,,2026-09-18T00:43:49.835970+00:00,2.0,338223.0,338223.0,HXPC13_DI_v3_11-13-2019.csv
+,raw_source_audit,,,,,,2026-09-18T00:43:49.835970+00:00,2.0,416921.0,416921.0,big_student_clear_third_version.csv
+,harmonize_without_merge,,,,,,2026-09-18T00:43:49.835970+00:00,2.0,755144.0,755144.0,Two interim source tables retained separately
+,raw_source_audit,,,,,,2026-09-18T00:51:42.893559+00:00,2.0,338223.0,338223.0,HXPC13_DI_v3_11-13-2019.csv
+,raw_source_audit,,,,,,2026-09-18T00:51:42.893559+00:00,2.0,416921.0,416921.0,big_student_clear_third_version.csv
+,harmonize_without_merge,,,,,,2026-09-18T00:51:42.893559+00:00,2.0,755144.0,755144.0,Two interim source tables retained separately
+,raw_source_audit,,,,,,2026-09-18T01:00:18.239992+00:00,2.0,338223.0,338223.0,HXPC13_DI_v3_11-13-2019.csv
+,raw_source_audit,,,,,,2026-09-18T01:00:18.239992+00:00,2.0,416921.0,416921.0,big_student_clear_third_version.csv
+,harmonize_without_merge,,,,,,2026-09-18T01:00:18.239992+00:00,2.0,755144.0,755144.0,Two interim source tables retained separately
+,raw_source_audit,,,,,,2026-09-18T01:08:42.633130+00:00,2.0,338223.0,338223.0,HXPC13_DI_v3_11-13-2019.csv
+,raw_source_audit,,,,,,2026-09-18T01:08:42.633130+00:00,2.0,416921.0,416921.0,big_student_clear_third_version.csv
+,harmonize_without_merge,,,,,,2026-09-18T01:08:42.633130+00:00,2.0,755144.0,755144.0,Two interim source tables retained separately
+,source_cleaning,,,,,,2026-09-18T01:15:39.839015+00:00,3.0,338223.0,338223.0,HXPC13_DI_v3_11-13-2019.csv
+,source_cleaning,,,,,,2026-09-18T01:15:39.839015+00:00,3.0,416921.0,416921.0,big_student_clear_third_version.csv
+,reconcile_and_aggregate,,,,,,2026-09-18T01:15:39.839015+00:00,3.0,755144.0,446766.0,624674 cleaned enrollments
+,raw_source_audit,,,,,,2026-09-18T01:45:56.225534+00:00,2.0,338223.0,338223.0,HXPC13_DI_v3_11-13-2019.csv
+,raw_source_audit,,,,,,2026-09-18T01:45:56.225534+00:00,2.0,416921.0,416921.0,big_student_clear_third_version.csv
+,harmonize_without_merge,,,,,,2026-09-18T01:45:56.225534+00:00,2.0,755144.0,755144.0,Two interim source tables retained separately
+,source_cleaning,,,,,,2026-09-18T01:52:50.630125+00:00,3.0,338223.0,338223.0,HXPC13_DI_v3_11-13-2019.csv
+,source_cleaning,,,,,,2026-09-18T01:52:50.630125+00:00,3.0,416921.0,416921.0,big_student_clear_third_version.csv
+,reconcile_and_aggregate,,,,,,2026-09-18T01:52:50.630125+00:00,3.0,755144.0,446766.0,624674 cleaned enrollments
+,raw_source_audit,,,,,,2026-09-18T02:19:22.769360+00:00,2.0,338223.0,338223.0,HXPC13_DI_v3_11-13-2019.csv
+,raw_source_audit,,,,,,2026-09-18T02:19:22.769360+00:00,2.0,416921.0,416921.0,big_student_clear_third_version.csv
+,harmonize_without_merge,,,,,,2026-09-18T02:19:22.769360+00:00,2.0,755144.0,755144.0,Two interim source tables retained separately
+,source_cleaning,,,,,,2026-09-18T02:26:18.251408+00:00,3.0,338223.0,338223.0,HXPC13_DI_v3_11-13-2019.csv
+,source_cleaning,,,,,,2026-09-18T02:26:18.251408+00:00,3.0,416921.0,416921.0,big_student_clear_third_version.csv
+,reconcile_and_aggregate,,,,,,2026-09-18T02:26:18.251408+00:00,3.0,755144.0,446766.0,624674 cleaned enrollments
+,raw_source_audit,,,,,,2026-09-18T03:45:52.703206+00:00,2.0,338223.0,338223.0,HXPC13_DI_v3_11-13-2019.csv
+,raw_source_audit,,,,,,2026-09-18T03:45:52.703206+00:00,2.0,416921.0,416921.0,big_student_clear_third_version.csv
+,harmonize_without_merge,,,,,,2026-09-18T03:45:52.703206+00:00,2.0,755144.0,755144.0,Two interim source tables retained separately
+,source_cleaning,,,,,,2026-09-18T03:52:54.517519+00:00,3.0,338223.0,338223.0,HXPC13_DI_v3_11-13-2019.csv
+,source_cleaning,,,,,,2026-09-18T03:52:54.517519+00:00,3.0,416921.0,416921.0,big_student_clear_third_version.csv
+,reconcile_and_aggregate,,,,,,2026-09-18T03:52:54.517519+00:00,3.0,755144.0,446766.0,624674 cleaned enrollments
+,raw_source_audit,,,,,,2026-09-28T06:57:40.948282+00:00,2.0,338223.0,338223.0,HXPC13_DI_v3_11-13-2019.csv
+,raw_source_audit,,,,,,2026-09-28T06:57:40.948282+00:00,2.0,416921.0,416921.0,big_student_clear_third_version.csv
+,harmonize_without_merge,,,,,,2026-09-28T06:57:40.948282+00:00,2.0,755144.0,755144.0,Two interim source tables retained separately
+,source_cleaning,,,,,,2026-09-28T07:03:49.293524+00:00,3.0,338223.0,338223.0,HXPC13_DI_v3_11-13-2019.csv
+,source_cleaning,,,,,,2026-09-28T07:03:49.293524+00:00,3.0,416921.0,416921.0,big_student_clear_third_version.csv
+,reconcile_and_aggregate,,,,,,2026-09-28T07:03:49.293524+00:00,3.0,755144.0,446766.0,624674 cleaned enrollments
+,raw_source_audit,,,,,,2026-09-28T08:01:19.280861+00:00,2.0,338223.0,338223.0,HXPC13_DI_v3_11-13-2019.csv
+,raw_source_audit,,,,,,2026-09-28T08:01:19.280861+00:00,2.0,416921.0,416921.0,big_student_clear_third_version.csv
+,harmonize_without_merge,,,,,,2026-09-28T08:01:19.280861+00:00,2.0,755144.0,755144.0,Two interim source tables retained separately
+,source_cleaning,,,,,,2026-09-28T08:07:34.041198+00:00,3.0,338223.0,338223.0,HXPC13_DI_v3_11-13-2019.csv
+,source_cleaning,,,,,,2026-09-28T08:07:34.041198+00:00,3.0,416921.0,416921.0,big_student_clear_third_version.csv
+,reconcile_and_aggregate,,,,,,2026-09-28T08:07:34.041198+00:00,3.0,755144.0,446766.0,624674 cleaned enrollments
+,source_cleaning,,,,,,2026-09-28T09:42:14.289099+00:00,3.0,338223.0,338223.0,HXPC13_DI_v3_11-13-2019.csv
+,source_cleaning,,,,,,2026-09-28T09:42:14.289099+00:00,3.0,416921.0,416921.0,big_student_clear_third_version.csv
+,reconcile_and_aggregate,,,,,,2026-09-28T09:42:14.289099+00:00,3.0,755144.0,446766.0,575060 cleaned enrollments
+,source_cleaning,,,,,,2026-09-29T18:52:55.663738+00:00,3,338223.0,338223.0,HXPC13_DI_v3_11-13-2019.csv
+,source_cleaning,,,,,,2026-09-29T18:52:55.663738+00:00,3,416921.0,416921.0,big_student_clear_third_version.csv
+,reconcile_and_aggregate,,,,,,2026-09-29T18:52:55.663738+00:00,3,755144.0,446766.0,575060 cleaned enrollments

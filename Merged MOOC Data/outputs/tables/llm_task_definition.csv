@@ -1,0 +1,7 @@
+field,specification
+Unit of analysis,One row = one de-identified student
+Input conversion,Audited behavioral values are rendered as one factual sentence set per student
+Video interpretation,total_video_plays is a play/click count; no watch-duration claim is made
+Prediction target,Ever certified in an eligible enrollment; stored separately from text
+Models,TF-IDF baselines and locally cached DistilBERT embeddings with a class-weighted classifier
+Success metric,"Test PR-AUC, supported by recall, precision, F1, ROC-AUC, Brier score, and confusion matrix"

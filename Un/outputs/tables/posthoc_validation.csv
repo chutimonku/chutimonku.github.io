@@ -1,0 +1,6 @@
+outcome,test,statistic,p_value,effect_size,effect_value,used_for_model_selection
+any_certified,Chi-square,42893.25549041297,0.0,Cramer's V,0.3574795305310994,False
+any_explored,Chi-square,80076.4757138317,0.0,Cramer's V,0.4884376687109578,False
+certification_rate,Kruskal-Wallis,42854.6021949796,0.0,Epsilon-squared,0.1276690387937875,False
+mean_grade,Kruskal-Wallis,127214.85438430244,0.0,Epsilon-squared,0.37900601939037687,False
+incomplete_rate,Kruskal-Wallis,11214.459037610624,0.0,Epsilon-squared,0.03340262966819394,False

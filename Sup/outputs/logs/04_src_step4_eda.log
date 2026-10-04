@@ -1,0 +1,13 @@
+======================================================================
+STEP 4: EXPLORATORY DATA ANALYSIS & ANTI-LEAKAGE SCREENING
+======================================================================
+[+] Feature descriptive statistics saved to: outputs/tables/eda_summary.csv
+[+] Feature screening results saved to: outputs/tables/feature_screening.csv
+[+] All EDA figures successfully saved to: outputs/figures/eda
+
+STDERR
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+W20260916 14:58:37.759155 1884106752 cpu_info.cc:239] IOError: sysctlbyname failed for 'hw.l1dcachesize'. Detail: [errno 1] Operation not permitted
+W20260916 14:58:37.759312 1884106752 cpu_info.cc:239] IOError: sysctlbyname failed for 'hw.l2cachesize'. Detail: [errno 1] Operation not permitted
+W20260916 14:58:37.759385 1884106752 cpu_info.cc:239] IOError: sysctlbyname failed for 'hw.l3cachesize'. Detail: [errno 1] Operation not permitted
+W20260916 14:58:37.759496 1884106752 cpu_info.cc:239] IOError: sysctlbyname failed for 'hw.optional.neon'. Detail: [errno 1] Operation not permitted

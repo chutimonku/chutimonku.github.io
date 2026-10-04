@@ -1,0 +1,113 @@
+{
+  "baseline_established_at": "2026-09-16T18:16:05.447829+00:00",
+  "reference_student_count": 335650,
+  "reference_test_scored": 50348,
+  "future_cohorts_evaluated": 0,
+  "monitoring_status": "not_evaluated",
+  "monitoring_status_reason": "No genuine later cohort was supplied; baseline creation is not a drift evaluation.",
+  "monitoring_cadence": "Weekly batch audit / per new course run",
+  "drift_thresholds": {
+    "psi_warning_level": 0.1,
+    "psi_critical_alarm": 0.25,
+    "wasserstein_standardized_warning": 2.5,
+    "tier_redistribution_alert_pct": 15.0,
+    "data_quality_missingness_max_pct": 5.0
+  },
+  "reference_distributions": {
+    "total_events": {
+      "mean": 467.8921,
+      "std": 1610.3335,
+      "p10": 1.0,
+      "p25": 3.0,
+      "median": 27.0,
+      "p75": 182.0,
+      "p90": 937.0,
+      "p99": 8181.51
+    },
+    "total_active_days": {
+      "mean": 6.4973,
+      "std": 13.9252,
+      "p10": 1.0,
+      "p25": 1.0,
+      "median": 2.0,
+      "p75": 5.0,
+      "p90": 15.0,
+      "p99": 72.0
+    },
+    "total_chapters": {
+      "mean": 3.303,
+      "std": 5.5935,
+      "p10": 0.0,
+      "p25": 0.0,
+      "median": 2.0,
+      "p75": 3.0,
+      "p90": 9.0,
+      "p99": 30.0
+    },
+    "total_video_plays": {
+      "mean": 120.7019,
+      "std": 386.9314,
+      "p10": 2.0,
+      "p25": 5.0,
+      "median": 20.0,
+      "p75": 78.0,
+      "p90": 283.0,
+      "p99": 1597.0
+    },
+    "total_forum_posts": {
+      "mean": 0.0229,
+      "std": 0.2155,
+      "p10": 0.0,
+      "p25": 0.0,
+      "median": 0.0,
+      "p75": 0.0,
+      "p90": 0.0,
+      "p99": 1.0
+    },
+    "event_intensity": {
+      "mean": 35.0181,
+      "std": 57.3264,
+      "p10": 1.0,
+      "p25": 2.2056,
+      "median": 12.0,
+      "p75": 45.25,
+      "p90": 100.8013,
+      "p99": 242.0
+    },
+    "video_play_ratio": {
+      "mean": 0.1361,
+      "std": 1.5352,
+      "p10": 0.0,
+      "p25": 0.0,
+      "median": 0.0,
+      "p75": 0.1145,
+      "p90": 0.2158,
+      "p99": 0.6145
+    },
+    "overall_span_days": {
+      "mean": 54.4957,
+      "std": 83.3532,
+      "p10": 0.0,
+      "p25": 0.0,
+      "median": 10.0,
+      "p75": 77.0,
+      "p90": 181.0,
+      "p99": 332.0
+    },
+    "prediction_drift": {
+      "mean_predicted_probability": 0.0708,
+      "std_predicted_probability": 0.2248,
+      "tier_proportions": {
+        "Tier 3: High Risk / Early Dropout": 0.9035,
+        "Tier 1: Low Risk / Likely Completer": 0.0659,
+        "Tier 2: Moderate Risk / Target for Nudge": 0.0307
+      }
+    }
+  },
+  "retraining_triggers": [
+    "Population Stability Index (PSI) >= 0.25 on active_days or chapters",
+    "Observed completion rate diverges by > 25% from predicted tier expectations",
+    "Significant change in course structure (e.g. curriculum length, grading format)",
+    "Elapsed production tenure > 6 months without recalibration"
+  ]
+}

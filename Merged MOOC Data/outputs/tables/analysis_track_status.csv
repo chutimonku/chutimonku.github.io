@@ -1,0 +1,5 @@
+track,status,reason
+Traditional Unsupervised,Completed,"Behavioral features are selected from merged clean data using coverage, variation, redundancy, and leakage rules."
+Deep Learning,Completed,Neural-network classifier predicts certification using governed pre-outcome features.
+Supervised Learning,Completed,Certification is available as a separately governed target.
+LLM / Transformer Text Classification,Completed,One audited student row was converted to factual behavior text; TF-IDF and DistilBERT representations were trained and tested for certification prediction.

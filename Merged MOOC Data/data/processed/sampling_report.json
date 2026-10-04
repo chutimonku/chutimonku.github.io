@@ -1,0 +1,46 @@
+{
+  "full_cohort_size": 446766,
+  "sample_size": 15000,
+  "purpose": "Reduce memory and runtime for PCA, UMAP, and candidate-model comparison on the large student cohort.",
+  "sampling_method": "Simple random sampling without replacement from the student-level table; outcomes were not used.",
+  "random_seed": 42,
+  "outcomes_used_for_sampling": false,
+  "representativeness_checks": {
+    "standardized_mean_difference_by_numeric_feature": {
+      "n_courses": 0.0024499575576876383,
+      "n_institutes": 0.0061224379670735225,
+      "total_events": 0.014765983114159094,
+      "mean_events_per_course": 0.009011381545814781,
+      "total_active_days": 0.014491232263939877,
+      "mean_active_days_per_course": 0.006247565178400647,
+      "total_video_plays": 0.0070526562867186575,
+      "total_chapters": 0.014225105149489999,
+      "mean_chapters_per_course": 0.004884446960761921,
+      "total_forum_posts": 0.004208123722192602,
+      "demog_age": 0.011323721837202068,
+      "demog_loe_rank": 0.001542468905137215,
+      "overall_span_days": 0.004410970470099881,
+      "event_intensity": 0.01665953282496622,
+      "video_intensity": 0.001034140736294087,
+      "chapters_per_day": 0.0013703397194085418
+    },
+    "maximum_absolute_standardized_mean_difference": 0.01665953282496622,
+    "maximum_category_proportion_difference": {
+      "institutes_enrolled": 0.005247368868714353,
+      "demog_gender": 0.0022354834521874922,
+      "demog_loe": 0.0022551429607445828
+    }
+  },
+  "limitations": [
+    "Rare behavioral or demographic subgroups can be underrepresented in a finite random sample.",
+    "Model conclusions should be checked again on a real future cohort before operational use."
+  ],
+  "pca_explained_variance_pc1": 0.8192453244436778,
+  "pca_explained_variance_pc2": 0.1058460250833353,
+  "pca_cumulative_variance_top5": 0.9951888671141251,
+  "umap_parameters": {
+    "n_neighbors": 25,
+    "min_dist": 0.3,
+    "metric": "cosine"
+  }
+}

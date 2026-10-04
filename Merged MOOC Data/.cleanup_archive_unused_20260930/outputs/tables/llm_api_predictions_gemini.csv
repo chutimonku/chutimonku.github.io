@@ -1,0 +1,1801 @@
+provider,model_name,row_id,predicted_certified,probability,reason,userid_DI,actual_certified
+Gemini,gemini-3.5-flash-lite,0,0,0.1,"Moderate event count and active days, but lacks sufficient overall engagement.",MHxPC130364859,0
+Gemini,gemini-3.5-flash-lite,1,0,0.0,Zero activity and zero events recorded.,MHxPC130402267,0
+Gemini,gemini-3.5-flash-lite,2,1,0.85,"High video plays, many active days, and significant event count.",MHxPC130153646,1
+Gemini,gemini-3.5-flash-lite,3,0,0.05,Very low active days and minimal total events.,MHxPC130357648,0
+Gemini,gemini-3.5-flash-lite,4,0,0.05,Low event count and few active days.,MHxPC130255925,0
+Gemini,gemini-3.5-flash-lite,5,0,0.05,Minimal active days and low total events.,MHxPC130312722,0
+Gemini,gemini-3.5-flash-lite,6,0,0.0,Zero activity and zero events recorded.,MHxPC130340572,0
+Gemini,gemini-3.5-flash-lite,7,1,0.9,"High video plays, substantial active days, and high event count.",MHxPC130109670,0
+Gemini,gemini-3.5-flash-lite,8,0,0.0,Zero activity and zero events recorded.,MHxPC130037925,0
+Gemini,gemini-3.5-flash-lite,9,0,0.02,Only one active day and minimal events.,MHxPC130203384,0
+Gemini,gemini-3.5-flash-lite,10,1,0.75,High active days and substantial event count.,MHxPC130344182,1
+Gemini,gemini-3.5-flash-lite,11,0,0.05,Very few active days despite some events.,MHxPC130474721,0
+Gemini,gemini-3.5-flash-lite,12,0,0.01,Extremely low events and activity.,MHxPC130550852,0
+Gemini,gemini-3.5-flash-lite,13,0,0.05,Very few active days and low event count.,MHxPC130466960,0
+Gemini,gemini-3.5-flash-lite,14,0,0.0,Zero activity and zero events recorded.,MHxPC130176380,0
+Gemini,gemini-3.5-flash-lite,15,0,0.0,Zero activity and zero events recorded.,MHxPC130300804,0
+Gemini,gemini-3.5-flash-lite,16,0,0.0,Negligible events and active days.,MHxPC130005060,0
+Gemini,gemini-3.5-flash-lite,17,0,0.0,Zero activity and zero events recorded.,MHxPC130084873,0
+Gemini,gemini-3.5-flash-lite,18,0,0.0,Negligible events and active days.,MHxPC130185763,0
+Gemini,gemini-3.5-flash-lite,19,0,0.0,Negligible events and active days.,MHxPC130056898,0
+Gemini,gemini-3.5-flash-lite,20,0,0.0,Zero events and zero activity indicate no engagement.,MHxPC130019742,0
+Gemini,gemini-3.5-flash-lite,21,0,0.0,No events and minimal chapter access show no real participation.,MHxPC130045257,0
+Gemini,gemini-3.5-flash-lite,22,0,0.0,Zero events and zero active days reflect complete inactivity.,MHxPC130012192,0
+Gemini,gemini-3.5-flash-lite,23,0,0.0,Extremely low events and activity insufficient for completion.,MHxPC130506928,0
+Gemini,gemini-3.5-flash-lite,24,0,0.05,Only one active day with very few events.,MHxPC130244691,0
+Gemini,gemini-3.5-flash-lite,25,0,0.0,Negligible events across a single active day.,MHxPC130183493,0
+Gemini,gemini-3.5-flash-lite,26,0,0.0,Very low event count and minimal engagement.,MHxPC130095354,0
+Gemini,gemini-3.5-flash-lite,27,0,0.1,Low events and limited active days fail to reach criteria.,MHxPC130236588,0
+Gemini,gemini-3.5-flash-lite,28,0,0.0,Almost no engagement with only two events.,MHxPC130267661,0
+Gemini,gemini-3.5-flash-lite,29,0,0.0,Extremely low events and single active day.,MHxPC130420227,0
+Gemini,gemini-3.5-flash-lite,30,0,0.0,Minimal activity insufficient for certification.,MHxPC130478273,0
+Gemini,gemini-3.5-flash-lite,31,0,0.1,Low event count and minimal active days.,MHxPC130211699,0
+Gemini,gemini-3.5-flash-lite,32,0,0.2,Moderate video plays and events but insufficient overall depth.,MHxPC130343975,0
+Gemini,gemini-3.5-flash-lite,33,0,0.05,Very low event count and minimal active days.,MHxPC130022810,0
+Gemini,gemini-3.5-flash-lite,34,0,0.0,Single event indicates no meaningful participation.,MHxPC130335700,0
+Gemini,gemini-3.5-flash-lite,35,0,0.0,Zero events and zero active days.,MHxPC130567575,0
+Gemini,gemini-3.5-flash-lite,36,0,0.0,Extremely low activity with only three events.,MHxPC130596903,0
+Gemini,gemini-3.5-flash-lite,37,0,0.0,Minimal events and no video engagement.,MHxPC130205446,0
+Gemini,gemini-3.5-flash-lite,38,0,0.0,Negligible activity with two events.,MHxPC130007324,0
+Gemini,gemini-3.5-flash-lite,39,0,0.0,Single event shows no course completion effort.,MHxPC130566350,0
+Gemini,gemini-3.5-flash-lite,40,0,0.0,Zero events and zero active days indicate no engagement.,MHxPC130161848,0
+Gemini,gemini-3.5-flash-lite,41,0,0.05,Very low event count and minimal active days.,MHxPC130548617,0
+Gemini,gemini-3.5-flash-lite,42,0,0.0,Zero events and zero active days indicate no engagement.,MHxPC130547058,0
+Gemini,gemini-3.5-flash-lite,43,0,0.05,Low event count and few active days.,MHxPC130241956,0
+Gemini,gemini-3.5-flash-lite,44,0,0.1,Low overall events and few active days.,MHxPC130393068,0
+Gemini,gemini-3.5-flash-lite,45,0,0.05,Active on only two days with very few events.,MHxPC130059851,0
+Gemini,gemini-3.5-flash-lite,46,0,0.0,Zero events and zero active days indicate no engagement.,MHxPC130041466,0
+Gemini,gemini-3.5-flash-lite,47,0,0.05,Low event count and minimal chapter access.,MHxPC130522869,0
+Gemini,gemini-3.5-flash-lite,48,0,0.0,Extremely low events and only two active days.,MHxPC130357041,0
+Gemini,gemini-3.5-flash-lite,49,0,0.0,Zero events and zero active days indicate no engagement.,MHxPC130153511,0
+Gemini,gemini-3.5-flash-lite,50,0,0.05,Very low event count across multiple courses.,MHxPC130500820,0
+Gemini,gemini-3.5-flash-lite,51,0,0.0,Very low event count and minimal chapter access.,MHxPC130490217,0
+Gemini,gemini-3.5-flash-lite,52,0,0.0,Zero events and minimal activity.,MHxPC130576830,0
+Gemini,gemini-3.5-flash-lite,53,0,0.0,Extremely low events and short duration.,MHxPC130109338,0
+Gemini,gemini-3.5-flash-lite,54,0,0.0,Very low event count and single active day.,MHxPC130555869,0
+Gemini,gemini-3.5-flash-lite,55,0,0.0,Minimal events and single active day.,MHxPC130088930,0
+Gemini,gemini-3.5-flash-lite,56,0,0.05,Low event count and only two active days.,MHxPC130558867,0
+Gemini,gemini-3.5-flash-lite,57,0,0.05,Low active days despite some events.,MHxPC130081815,0
+Gemini,gemini-3.5-flash-lite,58,0,0.05,Low event count and only two active days.,MHxPC130020572,0
+Gemini,gemini-3.5-flash-lite,59,0,0.1,Moderate activity but insufficient overall depth for certification.,MHxPC130041737,0
+Gemini,gemini-3.5-flash-lite,60,0,0.1,Low active days and events indicate insufficient engagement for certification.,MHxPC130523364,0
+Gemini,gemini-3.5-flash-lite,61,0,0.0,Zero activity and zero events indicate no course participation.,MHxPC130177930,0
+Gemini,gemini-3.5-flash-lite,62,0,0.0,Very low events and active days suggest dropout.,MHxPC130086741,0
+Gemini,gemini-3.5-flash-lite,63,0,0.0,Only two active days with minimal chapter access.,MHxPC130224679,0
+Gemini,gemini-3.5-flash-lite,64,0,0.0,Minimal video plays and active days suggest lack of progress.,MHxPC130070199,0
+Gemini,gemini-3.5-flash-lite,65,0,0.0,Only one event and zero chapters accessed.,MHxPC130337474,0
+Gemini,gemini-3.5-flash-lite,66,0,0.0,Minimal events and active days indicate no sustained engagement.,MHxPC130533102,0
+Gemini,gemini-3.5-flash-lite,67,0,0.0,Zero events and minimal chapter access show no real participation.,MHxPC130413856,0
+Gemini,gemini-3.5-flash-lite,68,0,0.0,Very few events and zero chapters accessed.,MHxPC130507193,0
+Gemini,gemini-3.5-flash-lite,69,0,0.0,Zero activity across all metrics.,MHxPC130133281,0
+Gemini,gemini-3.5-flash-lite,70,0,0.1,Activity concentrated in a single day is insufficient for certification.,MHxPC130188557,0
+Gemini,gemini-3.5-flash-lite,71,0,0.2,Moderate active days but low total events and chapters.,MHxPC130418846,0
+Gemini,gemini-3.5-flash-lite,72,0,0.0,Almost no events or engagement recorded.,MHxPC130140721,0
+Gemini,gemini-3.5-flash-lite,73,0,0.0,Zero events and single chapter access indicate inactivity.,MHxPC130182875,0
+Gemini,gemini-3.5-flash-lite,74,0,0.1,Low events and few chapters accessed suggest failure to complete.,MHxPC130356908,0
+Gemini,gemini-3.5-flash-lite,75,0,0.0,Single event recorded with zero chapters accessed.,MHxPC130308595,0
+Gemini,gemini-3.5-flash-lite,76,0,0.0,Very low events and active days.,MHxPC130292804,0
+Gemini,gemini-3.5-flash-lite,77,0,0.0,Minimal events on a single active day.,MHxPC130204946,0
+Gemini,gemini-3.5-flash-lite,78,0,0.0,Zero events and zero chapters accessed.,MHxPC130501906,0
+Gemini,gemini-3.5-flash-lite,79,0,0.0,Low events and zero chapters accessed show insufficient progress.,MHxPC130115227,0
+Gemini,gemini-3.5-flash-lite,80,0,0.05,"Very low event count and active days, no video activity.",MHxPC130596509,0
+Gemini,gemini-3.5-flash-lite,81,0,0.0,Zero activity across all metrics.,MHxPC130117832,0
+Gemini,gemini-3.5-flash-lite,82,0,0.01,Extremely low events and active days.,MHxPC130165316,0
+Gemini,gemini-3.5-flash-lite,83,0,0.1,Low events and few active days despite some videos.,MHxPC130022798,0
+Gemini,gemini-3.5-flash-lite,84,0,0.01,Minimal events and single active day.,MHxPC130199943,0
+Gemini,gemini-3.5-flash-lite,85,0,0.01,Very low engagement and active days.,MHxPC130538973,0
+Gemini,gemini-3.5-flash-lite,86,0,0.02,Single active day with low total engagement.,MHxPC130206602,0
+Gemini,gemini-3.5-flash-lite,87,0,0.05,Low active days despite moderate events.,MHxPC130019735,0
+Gemini,gemini-3.5-flash-lite,88,0,0.01,Insignificant activity and single active day.,MHxPC130049019,0
+Gemini,gemini-3.5-flash-lite,89,0,0.0,Negligible events and chapter access.,MHxPC130458988,0
+Gemini,gemini-3.5-flash-lite,90,0,0.05,Low overall events and course engagement.,MHxPC130130683,0
+Gemini,gemini-3.5-flash-lite,91,0,0.0,Zero activity across all metrics.,MHxPC130360258,0
+Gemini,gemini-3.5-flash-lite,92,0,0.0,No meaningful engagement recorded.,MHxPC130275432,0
+Gemini,gemini-3.5-flash-lite,93,0,0.2,Moderate engagement but insufficient overall depth for certification.,MHxPC130208326,0
+Gemini,gemini-3.5-flash-lite,94,0,0.0,Minimal activity and zero chapters accessed.,MHxPC130224819,0
+Gemini,gemini-3.5-flash-lite,95,0,0.01,Very low event count and active days.,MHxPC130029226,0
+Gemini,gemini-3.5-flash-lite,96,0,0.01,Single active day with low engagement.,MHxPC130110641,0
+Gemini,gemini-3.5-flash-lite,97,0,0.01,Minimal engagement and single active day.,MHxPC130526768,0
+Gemini,gemini-3.5-flash-lite,98,0,0.05,Low event count and active days.,MHxPC130262159,0
+Gemini,gemini-3.5-flash-lite,99,0,0.0,Zero meaningful engagement recorded.,MHxPC130588792,0
+Gemini,gemini-3.5-flash-lite,100,1,0.85,High event count and active days over multiple weeks indicate strong engagement.,MHxPC130345954,1
+Gemini,gemini-3.5-flash-lite,101,0,0.0,Very low events and active days indicate no meaningful course completion.,MHxPC130594021,0
+Gemini,gemini-3.5-flash-lite,102,0,0.0,Zero events and no engagement beyond minimal chapter access.,MHxPC130125776,0
+Gemini,gemini-3.5-flash-lite,103,0,0.0,Minimal activity across two days is insufficient for certification.,MHxPC130553479,0
+Gemini,gemini-3.5-flash-lite,104,0,0.05,Low event count and few active days suggest course abandonment.,MHxPC130525502,0
+Gemini,gemini-3.5-flash-lite,105,0,0.0,Zero activity recorded.,MHxPC130366074,0
+Gemini,gemini-3.5-flash-lite,106,0,0.0,Very low event count across two days.,MHxPC130042543,0
+Gemini,gemini-3.5-flash-lite,107,0,0.0,Extremely minimal activity.,MHxPC130206552,0
+Gemini,gemini-3.5-flash-lite,108,0,0.0,Minimal events and low active days.,MHxPC130141294,0
+Gemini,gemini-3.5-flash-lite,109,0,0.0,Zero activity recorded.,MHxPC130309810,0
+Gemini,gemini-3.5-flash-lite,110,1,0.9,"High video plays, many active days, and strong event count indicate success.",MHxPC130375935,1
+Gemini,gemini-3.5-flash-lite,111,0,0.0,Very low event count and no video plays.,MHxPC130291020,0
+Gemini,gemini-3.5-flash-lite,112,0,0.0,Minimal events and lack of meaningful participation.,MHxPC130569393,0
+Gemini,gemini-3.5-flash-lite,113,0,0.0,Low event count and minimal active days.,MHxPC130473599,0
+Gemini,gemini-3.5-flash-lite,114,0,0.05,Low total events and few active days indicate lack of completion.,MHxPC130132044,0
+Gemini,gemini-3.5-flash-lite,115,0,0.0,Zero activity recorded.,MHxPC130176069,0
+Gemini,gemini-3.5-flash-lite,116,0,0.1,Low events and missing video engagement make certification unlikely.,MHxPC130461128,0
+Gemini,gemini-3.5-flash-lite,117,0,0.0,Minimal activity and zero video engagement.,MHxPC130027636,0
+Gemini,gemini-3.5-flash-lite,118,1,0.8,Very high event count and substantial video activity indicate completion.,MHxPC130144456,0
+Gemini,gemini-3.5-flash-lite,119,0,0.0,Extremely low activity across a single day.,MHxPC130249963,0
+Gemini,gemini-3.5-flash-lite,120,0,0.01,Very low event count and minimal engagement indicate lack of certification.,MHxPC130385630,0
+Gemini,gemini-3.5-flash-lite,121,0,0.0,Almost zero activity with one event and zero chapters accessed.,MHxPC130334237,0
+Gemini,gemini-3.5-flash-lite,122,0,0.02,Very low event count and minimal active days.,MHxPC130321246,0
+Gemini,gemini-3.5-flash-lite,123,0,0.01,Low events and minimal active days suggest non-completion.,MHxPC130558049,0
+Gemini,gemini-3.5-flash-lite,124,0,0.0,Extremely low engagement with only 1 active day.,MHxPC130401940,0
+Gemini,gemini-3.5-flash-lite,125,0,0.01,Minimal activity and very few events.,MHxPC130153100,0
+Gemini,gemini-3.5-flash-lite,126,0,0.0,Zero activity across all metrics.,MHxPC130166768,0
+Gemini,gemini-3.5-flash-lite,127,0,0.01,Very low event count and zero chapters accessed.,MHxPC130168035,0
+Gemini,gemini-3.5-flash-lite,128,0,0.05,Low overall events and few active days.,MHxPC130521782,0
+Gemini,gemini-3.5-flash-lite,129,0,0.0,Zero activity across all metrics.,MHxPC130291498,0
+Gemini,gemini-3.5-flash-lite,130,0,0.02,Very low event count and only one chapter accessed.,MHxPC130327974,0
+Gemini,gemini-3.5-flash-lite,131,0,0.03,Low event count and minimal active days.,MHxPC130053134,0
+Gemini,gemini-3.5-flash-lite,132,0,0.0,Virtually no activity recorded.,MHxPC130198608,0
+Gemini,gemini-3.5-flash-lite,133,0,0.0,Virtually no activity recorded.,MHxPC130001392,0
+Gemini,gemini-3.5-flash-lite,134,0,0.05,Low event count and limited chapter access.,MHxPC130029259,0
+Gemini,gemini-3.5-flash-lite,135,0,0.0,Zero activity across all metrics.,MHxPC130164626,0
+Gemini,gemini-3.5-flash-lite,136,0,0.01,Very low engagement and few active days.,MHxPC130139939,0
+Gemini,gemini-3.5-flash-lite,137,0,0.0,Minimal activity with only 4 events.,MHxPC130516120,0
+Gemini,gemini-3.5-flash-lite,138,0,0.0,Zero activity across all metrics.,MHxPC130116884,0
+Gemini,gemini-3.5-flash-lite,139,0,0.0,Minimal activity with only 8 events on one day.,MHxPC130460289,0
+Gemini,gemini-3.5-flash-lite,140,0,0.1,Moderate activity across 11 days with no video engagement is insufficient for certification.,MHxPC130491532,0
+Gemini,gemini-3.5-flash-lite,141,0,0.05,Low events and short duration with zero video plays indicate lack of engagement.,MHxPC130024756,0
+Gemini,gemini-3.5-flash-lite,142,0,0.0,Minimal activity with only one event and zero chapters accessed.,MHxPC130196601,0
+Gemini,gemini-3.5-flash-lite,143,1,0.85,"High event count, substantial video plays, and consistent active days across multiple courses.",MHxPC130305675,0
+Gemini,gemini-3.5-flash-lite,144,0,0.0,Zero events and zero active days.,MHxPC130210736,0
+Gemini,gemini-3.5-flash-lite,145,0,0.0,Zero events and zero active days.,MHxPC130324067,0
+Gemini,gemini-3.5-flash-lite,146,0,0.0,Zero events and zero active days.,MHxPC130513854,0
+Gemini,gemini-3.5-flash-lite,147,0,0.02,Very low activity with only 27 events and 3 active days.,MHxPC130548834,0
+Gemini,gemini-3.5-flash-lite,148,0,0.15,Too few active days and low chapter access despite video plays.,MHxPC130559273,0
+Gemini,gemini-3.5-flash-lite,149,0,0.01,Extremely low overall engagement across 3 active days.,MHxPC130099053,0
+Gemini,gemini-3.5-flash-lite,150,1,0.8,"Strong engagement with high video plays, many events, and good active days.",MHxPC130583472,0
+Gemini,gemini-3.5-flash-lite,151,0,0.0,Zero events recorded with no meaningful interaction.,MHxPC130226915,0
+Gemini,gemini-3.5-flash-lite,152,0,0.0,Negligible interaction with only 2 events.,MHxPC130063818,0
+Gemini,gemini-3.5-flash-lite,153,0,0.0,Zero events recorded.,MHxPC130385158,0
+Gemini,gemini-3.5-flash-lite,154,0,0.0,Almost no activity with only 6 events.,MHxPC130005160,0
+Gemini,gemini-3.5-flash-lite,155,0,0.1,Insufficient event volume and low chapter exploration across courses.,MHxPC130540155,0
+Gemini,gemini-3.5-flash-lite,156,0,0.0,Zero events recorded.,MHxPC130034087,0
+Gemini,gemini-3.5-flash-lite,157,0,0.0,No meaningful activity recorded.,MHxPC130093174,0
+Gemini,gemini-3.5-flash-lite,158,0,0.0,Extremely minimal activity with only 3 events.,MHxPC130583642,0
+Gemini,gemini-3.5-flash-lite,159,0,0.0,Zero events recorded.,MHxPC130177800,0
+Gemini,gemini-3.5-flash-lite,160,0,0.02,"Very low event count and active days, indicating insufficient engagement.",MHxPC130064613,0
+Gemini,gemini-3.5-flash-lite,161,0,0.01,Minimal activity with only one event and one active day.,MHxPC130513916,0
+Gemini,gemini-3.5-flash-lite,162,0,0.01,Extremely low engagement with only three events and no chapters accessed.,MHxPC130373989,0
+Gemini,gemini-3.5-flash-lite,163,0,0.0,Zero events and zero active days.,MHxPC130191916,0
+Gemini,gemini-3.5-flash-lite,164,0,0.0,No activity recorded at all.,MHxPC130321750,0
+Gemini,gemini-3.5-flash-lite,165,0,0.02,Very low event count and only one active day.,MHxPC130562840,0
+Gemini,gemini-3.5-flash-lite,166,0,0.0,Zero events and zero active days.,MHxPC130329631,0
+Gemini,gemini-3.5-flash-lite,167,0,0.01,Zero total events generated despite minimal video plays.,MHxPC130501310,0
+Gemini,gemini-3.5-flash-lite,168,0,0.05,Low event count and minimal chapter access.,MHxPC130335813,0
+Gemini,gemini-3.5-flash-lite,169,0,0.01,Very low engagement with only seven events and one active day.,MHxPC130191182,0
+Gemini,gemini-3.5-flash-lite,170,0,0.0,No activity or events recorded.,MHxPC130072300,0
+Gemini,gemini-3.5-flash-lite,171,0,0.05,Moderate activity but low chapter access and event count for certification.,MHxPC130288609,0
+Gemini,gemini-3.5-flash-lite,172,0,0.02,Low events and few active days.,MHxPC130186040,0
+Gemini,gemini-3.5-flash-lite,173,0,0.08,Decent active days but low overall event count.,MHxPC130096626,0
+Gemini,gemini-3.5-flash-lite,174,0,0.0,Zero events recorded.,MHxPC130503928,0
+Gemini,gemini-3.5-flash-lite,175,0,0.02,Low event count across multiple courses.,MHxPC130216980,0
+Gemini,gemini-3.5-flash-lite,176,0,0.01,Very low event count and no chapter access.,MHxPC130271942,0
+Gemini,gemini-3.5-flash-lite,177,1,0.85,"High video activity, strong event count, and consistent active days.",MHxPC130236155,0
+Gemini,gemini-3.5-flash-lite,178,0,0.25,"Moderate events and chapter access, but likely insufficient for certification.",MHxPC130413897,0
+Gemini,gemini-3.5-flash-lite,179,0,0.01,Extremely low engagement and event count.,MHxPC130534007,0
+Gemini,gemini-3.5-flash-lite,180,0,0.0,Zero activity and zero events indicate no participation.,MHxPC130378343,0
+Gemini,gemini-3.5-flash-lite,181,0,0.05,Low events and few active days are insufficient for certification.,MHxPC130293350,0
+Gemini,gemini-3.5-flash-lite,182,0,0.1,High video plays but very few active days and chapters.,MHxPC130373313,0
+Gemini,gemini-3.5-flash-lite,183,0,0.0,Very low engagement across only 3 active days.,MHxPC130240053,0
+Gemini,gemini-3.5-flash-lite,184,0,0.0,Zero events and zero active days.,MHxPC130301083,0
+Gemini,gemini-3.5-flash-lite,185,0,0.0,Minimal activity with only 4 events.,MHxPC130339202,0
+Gemini,gemini-3.5-flash-lite,186,0,0.0,Negligible activity with 3 events and 0 chapters.,MHxPC130322384,0
+Gemini,gemini-3.5-flash-lite,187,0,0.15,Moderate active days but low total event count.,MHxPC130384626,0
+Gemini,gemini-3.5-flash-lite,188,0,0.1,Insufficient events and chapters for completion.,MHxPC130139418,0
+Gemini,gemini-3.5-flash-lite,189,0,0.0,Extremely low engagement on a single active day.,MHxPC130202747,0
+Gemini,gemini-3.5-flash-lite,190,0,0.0,No events recorded.,MHxPC130578872,0
+Gemini,gemini-3.5-flash-lite,191,0,0.2,High events but very few chapters accessed.,MHxPC130051440,0
+Gemini,gemini-3.5-flash-lite,192,0,0.05,Low active days across multiple courses.,MHxPC130104033,0
+Gemini,gemini-3.5-flash-lite,193,0,0.05,Too few active days and chapters accessed.,MHxPC130559077,0
+Gemini,gemini-3.5-flash-lite,194,0,0.0,Very low event count and no video engagement.,MHxPC130418427,0
+Gemini,gemini-3.5-flash-lite,195,0,0.0,Minimal engagement across only two active days.,MHxPC130110341,0
+Gemini,gemini-3.5-flash-lite,196,0,0.05,Low event count and limited chapter access.,MHxPC130163031,0
+Gemini,gemini-3.5-flash-lite,197,0,0.0,Low event count and minimal active days.,MHxPC130418539,0
+Gemini,gemini-3.5-flash-lite,198,0,0.0,Zero participation.,MHxPC130474912,0
+Gemini,gemini-3.5-flash-lite,199,0,0.0,Almost no activity recorded.,MHxPC130527644,0
+Gemini,gemini-3.5-flash-lite,200,0,0.0,Zero activity and zero events indicate no engagement.,MHxPC130057985,0
+Gemini,gemini-3.5-flash-lite,201,0,0.05,Extremely low events and active days suggest dropping out.,MHxPC130356499,0
+Gemini,gemini-3.5-flash-lite,202,0,0.0,Minimal events across very few days with no chapters.,MHxPC130269449,0
+Gemini,gemini-3.5-flash-lite,203,1,0.95,"High video plays, many events, and active participation.",MHxPC130165933,0
+Gemini,gemini-3.5-flash-lite,204,0,0.1,Very few active days despite some video plays.,MHxPC130351503,0
+Gemini,gemini-3.5-flash-lite,205,0,0.0,Zero activity and zero events indicate no engagement.,MHxPC130557911,0
+Gemini,gemini-3.5-flash-lite,206,0,0.0,Negligible event count and no chapter access.,MHxPC130067522,0
+Gemini,gemini-3.5-flash-lite,207,0,0.0,Zero events and zero active days.,MHxPC130089627,0
+Gemini,gemini-3.5-flash-lite,208,0,0.15,Low event count and few active days for multiple courses.,MHxPC130208992,0
+Gemini,gemini-3.5-flash-lite,209,1,0.99,"Extremely high video plays, events, and many active days.",MHxPC130206420,1
+Gemini,gemini-3.5-flash-lite,210,0,0.0,No video plays and very few total events.,MHxPC130292611,0
+Gemini,gemini-3.5-flash-lite,211,0,0.02,Low events and minimal active days.,MHxPC130392939,0
+Gemini,gemini-3.5-flash-lite,212,0,0.0,Virtually no activity recorded.,MHxPC130035020,0
+Gemini,gemini-3.5-flash-lite,213,0,0.0,Single event and zero chapter access.,MHxPC130449961,0
+Gemini,gemini-3.5-flash-lite,214,0,0.0,Zero activity and zero events indicate no engagement.,MHxPC130285175,0
+Gemini,gemini-3.5-flash-lite,215,0,0.01,Very low event count on a single active day.,MHxPC130214411,0
+Gemini,gemini-3.5-flash-lite,216,0,0.0,Zero activity and zero events indicate no engagement.,MHxPC130448615,0
+Gemini,gemini-3.5-flash-lite,217,1,0.9,High video activity and substantial event count.,MHxPC130287306,0
+Gemini,gemini-3.5-flash-lite,218,1,0.95,High video plays and thousands of events across many days.,MHxPC130080570,0
+Gemini,gemini-3.5-flash-lite,219,0,0.0,Negligible event count and single active day.,MHxPC130208498,0
+Gemini,gemini-3.5-flash-lite,220,0,0.05,Very low event count and active days indicate minimal engagement.,MHxPC130000399,0
+Gemini,gemini-3.5-flash-lite,221,0,0.08,Low overall events and no video plays indicate lack of completion.,MHxPC130478164,0
+Gemini,gemini-3.5-flash-lite,222,0,0.12,Low active days despite some video plays.,MHxPC130551619,0
+Gemini,gemini-3.5-flash-lite,223,0,0.01,Extremely low activity with only one event.,MHxPC130011133,0
+Gemini,gemini-3.5-flash-lite,224,0,0.01,Minimal engagement with two events on one active day.,MHxPC130555480,0
+Gemini,gemini-3.5-flash-lite,225,0,0.03,Low event count and few active days.,MHxPC130060825,0
+Gemini,gemini-3.5-flash-lite,226,0,0.02,Minimal events and active days.,MHxPC130098609,0
+Gemini,gemini-3.5-flash-lite,227,0,0.0,Zero activity recorded.,MHxPC130524481,0
+Gemini,gemini-3.5-flash-lite,228,0,0.05,Low event count across few active days.,MHxPC130561945,0
+Gemini,gemini-3.5-flash-lite,229,0,0.04,Very few active days despite some events.,MHxPC130106047,0
+Gemini,gemini-3.5-flash-lite,230,0,0.01,Minimal engagement with two events.,MHxPC130043712,0
+Gemini,gemini-3.5-flash-lite,231,0,0.01,Only one event recorded on a single day.,MHxPC130150732,0
+Gemini,gemini-3.5-flash-lite,232,0,0.03,Very low event count and active days.,MHxPC130575734,0
+Gemini,gemini-3.5-flash-lite,233,0,0.02,Low activity with minimal chapters accessed.,MHxPC130475165,0
+Gemini,gemini-3.5-flash-lite,234,0,0.04,Very low event count and active days.,MHxPC130319798,0
+Gemini,gemini-3.5-flash-lite,235,1,0.85,High event count and strong video engagement.,MHxPC130310126,0
+Gemini,gemini-3.5-flash-lite,236,0,0.01,Zero events despite multiple active days logged.,MHxPC130441385,0
+Gemini,gemini-3.5-flash-lite,237,0,0.03,Low engagement across all metrics.,MHxPC130461767,0
+Gemini,gemini-3.5-flash-lite,238,0,0.0,Zero activity recorded.,MHxPC130163391,0
+Gemini,gemini-3.5-flash-lite,239,0,0.01,Negligible event count and no video activity.,MHxPC130059669,0
+Gemini,gemini-3.5-flash-lite,240,1,0.95,"Very high event count, extensive active days, and substantial video plays indicate successful completion.",MHxPC130413238,1
+Gemini,gemini-3.5-flash-lite,241,0,0.01,Minimal activity with almost no events and zero video plays.,MHxPC130250707,0
+Gemini,gemini-3.5-flash-lite,242,0,0.0,Zero engagement across all metrics.,MHxPC130048418,0
+Gemini,gemini-3.5-flash-lite,243,0,0.0,Zero engagement and no recorded activity.,MHxPC130149431,0
+Gemini,gemini-3.5-flash-lite,244,0,0.0,No events and negligible interaction.,MHxPC130100245,0
+Gemini,gemini-3.5-flash-lite,245,0,0.02,Very low activity with only a few events across two days.,MHxPC130587730,0
+Gemini,gemini-3.5-flash-lite,246,0,0.01,Insignificant activity and zero video engagement.,MHxPC130353504,0
+Gemini,gemini-3.5-flash-lite,247,0,0.02,Very low event count and no video plays.,MHxPC130020221,0
+Gemini,gemini-3.5-flash-lite,248,0,0.0,Extremely low engagement with only one event.,MHxPC130353966,0
+Gemini,gemini-3.5-flash-lite,249,0,0.05,Low event count and minimal active days indicate lack of completion.,MHxPC130281050,0
+Gemini,gemini-3.5-flash-lite,250,0,0.0,No engagement recorded.,MHxPC130335620,0
+Gemini,gemini-3.5-flash-lite,251,0,0.01,Very low events and only one active day.,MHxPC130047406,0
+Gemini,gemini-3.5-flash-lite,252,0,0.0,No events or video plays recorded.,MHxPC130134585,0
+Gemini,gemini-3.5-flash-lite,253,0,0.08,Moderate events but zero video plays and limited active days.,MHxPC130044054,0
+Gemini,gemini-3.5-flash-lite,254,0,0.03,Low event count and few active days.,MHxPC130035202,0
+Gemini,gemini-3.5-flash-lite,255,0,0.04,Low engagement and zero video plays.,MHxPC130497028,0
+Gemini,gemini-3.5-flash-lite,256,0,0.01,Minimal events and no video plays.,MHxPC130211642,0
+Gemini,gemini-3.5-flash-lite,257,1,0.9,"High event count, extensive active days, and significant video engagement.",MHxPC130347101,0
+Gemini,gemini-3.5-flash-lite,258,0,0.05,Low event count and insufficient engagement for certification.,MHxPC130547452,0
+Gemini,gemini-3.5-flash-lite,259,0,0.08,Limited active days despite some video plays.,MHxPC130488689,0
+Gemini,gemini-3.5-flash-lite,260,0,0.1,Low active days and few events indicate insufficient engagement for certification.,MHxPC130497894,0
+Gemini,gemini-3.5-flash-lite,261,0,0.2,No video plays and moderate events suggest non-certifying browsing behavior.,MHxPC130577459,0
+Gemini,gemini-3.5-flash-lite,262,0,0.0,Zero events and zero chapters accessed indicate inactivity.,MHxPC130010506,0
+Gemini,gemini-3.5-flash-lite,263,0,0.0,Extremely low activity with only 3 events.,MHxPC130381835,0
+Gemini,gemini-3.5-flash-lite,264,0,0.2,Limited active days and chapter engagement despite decent event count.,MHxPC130457731,0
+Gemini,gemini-3.5-flash-lite,265,0,0.0,Negligible activity with only 3 events recorded.,MHxPC130278997,0
+Gemini,gemini-3.5-flash-lite,266,0,0.1,Only one chapter accessed indicates minimal course progression.,MHxPC130502357,0
+Gemini,gemini-3.5-flash-lite,267,0,0.1,Low event count and few chapters accessed without videos.,MHxPC130408457,0
+Gemini,gemini-3.5-flash-lite,268,0,0.0,Single event indicates no meaningful participation.,MHxPC130465349,0
+Gemini,gemini-3.5-flash-lite,269,0,0.0,Only one active day and minimal events.,MHxPC130536428,0
+Gemini,gemini-3.5-flash-lite,270,0,0.0,Very low active days and chapter access.,MHxPC130105423,0
+Gemini,gemini-3.5-flash-lite,271,0,0.0,Low events and minimal chapter access.,MHxPC130159478,0
+Gemini,gemini-3.5-flash-lite,272,1,0.95,"Extremely high events, active days, and video plays indicate completion.",MHxPC130123605,1
+Gemini,gemini-3.5-flash-lite,273,0,0.0,Very low event count and minimal participation.,MHxPC130313977,0
+Gemini,gemini-3.5-flash-lite,274,0,0.1,Low event count and active days without video engagement.,MHxPC130143554,0
+Gemini,gemini-3.5-flash-lite,275,0,0.1,Low active days and chapter count.,MHxPC130178271,0
+Gemini,gemini-3.5-flash-lite,276,0,0.0,Almost zero activity recorded.,MHxPC130432985,0
+Gemini,gemini-3.5-flash-lite,277,0,0.1,Low events and lack of video activity.,MHxPC130348299,0
+Gemini,gemini-3.5-flash-lite,278,0,0.0,Low active days and chapter access.,MHxPC130582661,0
+Gemini,gemini-3.5-flash-lite,279,0,0.0,Zero meaningful engagement.,MHxPC130330683,0
+Gemini,gemini-3.5-flash-lite,280,0,0.1,Low event count and active days indicate insufficient engagement for certification.,MHxPC130549277,0
+Gemini,gemini-3.5-flash-lite,281,0,0.05,Very few active days and low total events suggest dropping out early.,MHxPC130414612,0
+Gemini,gemini-3.5-flash-lite,282,0,0.05,Active on only two days with minimal chapters accessed.,MHxPC130169212,0
+Gemini,gemini-3.5-flash-lite,283,0,0.1,Insufficient overall events and active days for course completion.,MHxPC130083909,0
+Gemini,gemini-3.5-flash-lite,284,0,0.05,Low engagement metrics across all categories.,MHxPC130238252,0
+Gemini,gemini-3.5-flash-lite,285,0,0.0,Zero activity recorded.,MHxPC130346423,0
+Gemini,gemini-3.5-flash-lite,286,0,0.0,Minimal events and no video plays indicate lack of serious participation.,MHxPC130271585,0
+Gemini,gemini-3.5-flash-lite,287,0,0.0,Zero activity recorded.,MHxPC130026122,0
+Gemini,gemini-3.5-flash-lite,288,0,0.0,No events and negligible interaction.,MHxPC130187522,0
+Gemini,gemini-3.5-flash-lite,289,0,0.0,Almost no engagement.,MHxPC130452759,0
+Gemini,gemini-3.5-flash-lite,290,0,0.1,Moderate video plays but total events and active days are too low.,MHxPC130015131,0
+Gemini,gemini-3.5-flash-lite,291,0,0.0,Insignificant activity.,MHxPC130511992,0
+Gemini,gemini-3.5-flash-lite,292,0,0.0,Insignificant activity.,MHxPC130050984,0
+Gemini,gemini-3.5-flash-lite,293,0,0.05,Low event count and no video views.,MHxPC130371689,0
+Gemini,gemini-3.5-flash-lite,294,0,0.05,Minimal activity on a single day.,MHxPC130214573,0
+Gemini,gemini-3.5-flash-lite,295,0,0.05,Active on only two days.,MHxPC130354606,0
+Gemini,gemini-3.5-flash-lite,296,0,0.0,Zero activity recorded.,MHxPC130114769,0
+Gemini,gemini-3.5-flash-lite,297,0,0.0,Insignificant activity.,MHxPC130183339,0
+Gemini,gemini-3.5-flash-lite,298,0,0.0,Zero events recorded.,MHxPC130539056,0
+Gemini,gemini-3.5-flash-lite,299,0,0.0,Extremely low engagement.,MHxPC130076880,0
+Gemini,gemini-3.5-flash-lite,300,0,0.01,Zero active days and zero events indicate no meaningful engagement.,MHxPC130506756,0
+Gemini,gemini-3.5-flash-lite,301,0,0.05,Very low engagement across only one active day.,MHxPC130586363,0
+Gemini,gemini-3.5-flash-lite,302,1,0.85,High event count and sustained activity across forty-four active days.,MHxPC130237522,0
+Gemini,gemini-3.5-flash-lite,303,1,0.78,Substantial chapter access and events across seventeen active days.,MHxPC130335862,1
+Gemini,gemini-3.5-flash-lite,304,0,0.02,Minimal activity with only one active day and few events.,MHxPC130414008,0
+Gemini,gemini-3.5-flash-lite,305,0,0.02,Very low event count across only two active days.,MHxPC130024730,0
+Gemini,gemini-3.5-flash-lite,306,0,0.15,Short active duration despite moderate video activity.,MHxPC130452486,0
+Gemini,gemini-3.5-flash-lite,307,0,0.01,Extremely low activity with only two events.,MHxPC130356355,0
+Gemini,gemini-3.5-flash-lite,308,0,0.01,Insignificant activity level with a single event.,MHxPC130582214,0
+Gemini,gemini-3.5-flash-lite,309,0,0.01,Insignificant activity level with a single event.,MHxPC130263064,0
+Gemini,gemini-3.5-flash-lite,310,0,0.0,No activity recorded.,MHxPC130354472,0
+Gemini,gemini-3.5-flash-lite,311,0,0.12,Low event count and active days for multiple courses.,MHxPC130012365,0
+Gemini,gemini-3.5-flash-lite,312,0,0.2,High video plays but very short active duration.,MHxPC130044589,0
+Gemini,gemini-3.5-flash-lite,313,0,0.01,Insignificant activity level with a single event.,MHxPC130233044,0
+Gemini,gemini-3.5-flash-lite,314,0,0.02,Minimal events and zero chapter access.,MHxPC130497802,0
+Gemini,gemini-3.5-flash-lite,315,0,0.08,Short active duration with minimal engagement.,MHxPC130301035,0
+Gemini,gemini-3.5-flash-lite,316,0,0.0,No active days recorded.,MHxPC130010956,0
+Gemini,gemini-3.5-flash-lite,317,0,0.0,No activity recorded.,MHxPC130573883,0
+Gemini,gemini-3.5-flash-lite,318,0,0.0,No active days recorded.,MHxPC130156976,0
+Gemini,gemini-3.5-flash-lite,319,0,0.0,No active days recorded.,MHxPC130407360,0
+Gemini,gemini-3.5-flash-lite,320,0,0.0,"Minimal events and activity, indicating no certification.",MHxPC130183307,0
+Gemini,gemini-3.5-flash-lite,321,1,0.85,"High event count, many active days, and substantial chapter access.",MHxPC130345985,1
+Gemini,gemini-3.5-flash-lite,322,0,0.05,Very low events and active days.,MHxPC130564075,0
+Gemini,gemini-3.5-flash-lite,323,0,0.1,Low events and limited active days.,MHxPC130574341,0
+Gemini,gemini-3.5-flash-lite,324,0,0.1,Few active days and low total events.,MHxPC130379239,0
+Gemini,gemini-3.5-flash-lite,325,0,0.0,Very low activity and few events.,MHxPC130279479,0
+Gemini,gemini-3.5-flash-lite,326,0,0.0,Extremely minimal engagement.,MHxPC130541099,0
+Gemini,gemini-3.5-flash-lite,327,0,0.0,No events recorded.,MHxPC130193281,0
+Gemini,gemini-3.5-flash-lite,328,0,0.0,Almost no engagement.,MHxPC130434554,0
+Gemini,gemini-3.5-flash-lite,329,0,0.05,Low event count and minimal progress.,MHxPC130067632,0
+Gemini,gemini-3.5-flash-lite,330,0,0.0,Negligible activity.,MHxPC130082544,0
+Gemini,gemini-3.5-flash-lite,331,0,0.0,Extremely low event count.,MHxPC130354505,0
+Gemini,gemini-3.5-flash-lite,332,0,0.0,Very low engagement.,MHxPC130154988,0
+Gemini,gemini-3.5-flash-lite,333,0,0.0,Minimal activity and chapters accessed.,MHxPC130507797,0
+Gemini,gemini-3.5-flash-lite,334,1,0.9,"High video plays, extensive events, and many active days.",MHxPC130066889,0
+Gemini,gemini-3.5-flash-lite,335,0,0.0,Very low activity.,MHxPC130110910,0
+Gemini,gemini-3.5-flash-lite,336,0,0.1,Low active days and few events.,MHxPC130063722,0
+Gemini,gemini-3.5-flash-lite,337,0,0.1,Low overall engagement.,MHxPC130477597,0
+Gemini,gemini-3.5-flash-lite,338,0,0.0,Zero events recorded.,MHxPC130531728,0
+Gemini,gemini-3.5-flash-lite,339,0,0.0,No activity recorded.,MHxPC130016500,0
+Gemini,gemini-3.5-flash-lite,340,0,0.01,Extremely low activity with negligible event count and no engagement.,MHxPC130557951,0
+Gemini,gemini-3.5-flash-lite,341,1,0.95,"High event count, many active days, and substantial video plays indicate completion.",MHxPC130523490,0
+Gemini,gemini-3.5-flash-lite,342,0,0.1,Moderate events but very few chapters accessed and short duration.,MHxPC130177084,0
+Gemini,gemini-3.5-flash-lite,343,0,0.0,Zero engagement and zero events recorded.,MHxPC130398316,0
+Gemini,gemini-3.5-flash-lite,344,0,0.05,Very low event count across only four active days.,MHxPC130352420,0
+Gemini,gemini-3.5-flash-lite,345,0,0.0,No activity recorded whatsoever.,MHxPC130249564,0
+Gemini,gemini-3.5-flash-lite,346,0,0.15,Low event count and minimal active days.,MHxPC130026468,0
+Gemini,gemini-3.5-flash-lite,347,0,0.01,Minimal events and chapters accessed.,MHxPC130252707,0
+Gemini,gemini-3.5-flash-lite,348,0,0.01,Almost no engagement or activity recorded.,MHxPC130077349,0
+Gemini,gemini-3.5-flash-lite,349,0,0.1,Brief activity over only two active days.,MHxPC130179973,0
+Gemini,gemini-3.5-flash-lite,350,0,0.01,Very low event count and minimal chapters.,MHxPC130539268,0
+Gemini,gemini-3.5-flash-lite,351,0,0.02,"Low events, no chapters accessed, and no videos.",MHxPC130463753,0
+Gemini,gemini-3.5-flash-lite,352,0,0.0,Zero activity and zero events.,MHxPC130518004,0
+Gemini,gemini-3.5-flash-lite,353,0,0.05,Low event count and few chapters.,MHxPC130260199,0
+Gemini,gemini-3.5-flash-lite,354,0,0.01,Negligible events and no chapter access.,MHxPC130349769,0
+Gemini,gemini-3.5-flash-lite,355,0,0.1,Low event count despite spanning multiple days.,MHxPC130272931,0
+Gemini,gemini-3.5-flash-lite,356,0,0.01,Very low activity with only four events.,MHxPC130447059,0
+Gemini,gemini-3.5-flash-lite,357,0,0.2,"Moderate events and chapters, but insufficient for certification.",MHxPC130572441,0
+Gemini,gemini-3.5-flash-lite,358,0,0.02,Low event count and minimal chapter exploration.,MHxPC130513473,0
+Gemini,gemini-3.5-flash-lite,359,0,0.01,Minimal events and no chapters accessed.,MHxPC130187936,0
+Gemini,gemini-3.5-flash-lite,360,0,0.0,"Very low events and active days, indicating lack of serious engagement.",MHxPC130245215,0
+Gemini,gemini-3.5-flash-lite,361,0,0.05,Low active days and minimal chapter access.,MHxPC130332447,0
+Gemini,gemini-3.5-flash-lite,362,0,0.0,Zero activity across all metrics.,MHxPC130207964,0
+Gemini,gemini-3.5-flash-lite,363,0,0.1,Insufficient active days and event volume for completion.,MHxPC130422128,0
+Gemini,gemini-3.5-flash-lite,364,0,0.0,Only one active day of engagement.,MHxPC130484122,0
+Gemini,gemini-3.5-flash-lite,365,0,0.0,Negligible event count and zero chapters accessed.,MHxPC130406989,0
+Gemini,gemini-3.5-flash-lite,366,0,0.0,Negligible event count and zero chapters accessed.,MHxPC130149291,0
+Gemini,gemini-3.5-flash-lite,367,0,0.0,Single active day with no chapter access.,MHxPC130202348,0
+Gemini,gemini-3.5-flash-lite,368,0,0.0,Very low event count and active days.,MHxPC130307352,0
+Gemini,gemini-3.5-flash-lite,369,0,0.05,Too few active days to sustain a certificate path.,MHxPC130177925,0
+Gemini,gemini-3.5-flash-lite,370,0,0.0,Zero activity across all metrics.,MHxPC130105920,0
+Gemini,gemini-3.5-flash-lite,371,0,0.0,Extremely low event count and only two active days.,MHxPC130183066,0
+Gemini,gemini-3.5-flash-lite,372,0,0.0,Minimal video plays and single active day.,MHxPC130511517,0
+Gemini,gemini-3.5-flash-lite,373,0,0.0,Negligible event count and zero chapters accessed.,MHxPC130227437,0
+Gemini,gemini-3.5-flash-lite,374,1,0.85,"High event count, many active days, and substantial chapter access.",MHxPC130292307,0
+Gemini,gemini-3.5-flash-lite,375,0,0.0,Zero activity across all metrics.,MHxPC130397978,0
+Gemini,gemini-3.5-flash-lite,376,0,0.0,Minimal activity on a single day.,MHxPC130427507,0
+Gemini,gemini-3.5-flash-lite,377,0,0.0,Very low event count on a single active day.,MHxPC130107863,0
+Gemini,gemini-3.5-flash-lite,378,1,0.95,Extremely high event count and solid active day duration.,MHxPC130540693,0
+Gemini,gemini-3.5-flash-lite,379,0,0.0,Limited to a single active day of participation.,MHxPC130226071,0
+Gemini,gemini-3.5-flash-lite,380,0,0.0,Zero events and zero active days indicate no meaningful course engagement.,MHxPC130291357,0
+Gemini,gemini-3.5-flash-lite,381,0,0.05,Very low activity with only one active day and sixteen events.,MHxPC130254818,0
+Gemini,gemini-3.5-flash-lite,382,0,0.0,No activity recorded across any metrics.,MHxPC130592191,0
+Gemini,gemini-3.5-flash-lite,383,0,0.15,Moderate events but insufficient chapter access and activity for certification.,MHxPC130207038,0
+Gemini,gemini-3.5-flash-lite,384,0,0.05,Low event count and minimal active days fail to indicate completion.,MHxPC130164298,0
+Gemini,gemini-3.5-flash-lite,385,0,0.0,Extremely minimal activity across only two days.,MHxPC130004721,0
+Gemini,gemini-3.5-flash-lite,386,0,0.0,Very low event count and minimal engagement.,MHxPC130157500,0
+Gemini,gemini-3.5-flash-lite,387,0,0.0,Insufficient overall engagement with only nine events.,MHxPC130377258,0
+Gemini,gemini-3.5-flash-lite,388,0,0.0,Zero engagement recorded.,MHxPC130128571,0
+Gemini,gemini-3.5-flash-lite,389,0,0.05,Low event count and minimal active days.,MHxPC130173184,0
+Gemini,gemini-3.5-flash-lite,390,0,0.0,Low event count and no video activity.,MHxPC130002605,0
+Gemini,gemini-3.5-flash-lite,391,0,0.0,Minimal events and zero chapters accessed.,MHxPC130141914,0
+Gemini,gemini-3.5-flash-lite,392,0,0.0,Zero events and zero active days.,MHxPC130348192,0
+Gemini,gemini-3.5-flash-lite,393,0,0.05,Low event count and minimal active days.,MHxPC130233947,0
+Gemini,gemini-3.5-flash-lite,394,0,0.05,Low engagement across only four active days.,MHxPC130454514,0
+Gemini,gemini-3.5-flash-lite,395,0,0.0,No activity recorded.,MHxPC130551343,0
+Gemini,gemini-3.5-flash-lite,396,0,0.0,No activity recorded.,MHxPC130376895,0
+Gemini,gemini-3.5-flash-lite,397,0,0.0,Minimal events and low active days.,MHxPC130510023,0
+Gemini,gemini-3.5-flash-lite,398,0,0.1,Low event count and insufficient chapter access.,MHxPC130013373,0
+Gemini,gemini-3.5-flash-lite,399,0,0.05,Minimal activity and low event count.,MHxPC130475551,0
+Gemini,gemini-3.5-flash-lite,400,0,0.01,Very low event count and active days.,MHxPC130384679,0
+Gemini,gemini-3.5-flash-lite,401,0,0.15,Moderate active days but low event and chapter engagement.,MHxPC130532678,0
+Gemini,gemini-3.5-flash-lite,402,0,0.02,Very low events and active days.,MHxPC130237365,0
+Gemini,gemini-3.5-flash-lite,403,0,0.01,Minimal activity and no chapters accessed.,MHxPC130096335,0
+Gemini,gemini-3.5-flash-lite,404,0,0.01,Minimal activity and no chapters accessed.,MHxPC130556951,0
+Gemini,gemini-3.5-flash-lite,405,0,0.0,No activity recorded.,MHxPC130423208,0
+Gemini,gemini-3.5-flash-lite,406,0,0.25,"Decent chapters and days, but low overall engagement.",MHxPC130055400,0
+Gemini,gemini-3.5-flash-lite,407,0,0.05,Very few active days and low events.,MHxPC130119109,0
+Gemini,gemini-3.5-flash-lite,408,0,0.01,Minimal activity and no chapters accessed.,MHxPC130429472,0
+Gemini,gemini-3.5-flash-lite,409,0,0.0,No activity recorded.,MHxPC130365354,0
+Gemini,gemini-3.5-flash-lite,410,0,0.02,Zero events and minimal active days.,MHxPC130075942,0
+Gemini,gemini-3.5-flash-lite,411,0,0.01,Minimal activity and no chapters accessed.,MHxPC130377232,0
+Gemini,gemini-3.5-flash-lite,412,0,0.02,Very low event count on a single active day.,MHxPC130506984,0
+Gemini,gemini-3.5-flash-lite,413,0,0.02,Low event count and minimal engagement.,MHxPC130470574,0
+Gemini,gemini-3.5-flash-lite,414,0,0.01,Minimal activity and no chapters accessed.,MHxPC130317773,0
+Gemini,gemini-3.5-flash-lite,415,0,0.03,Low event count and few active days.,MHxPC130395356,0
+Gemini,gemini-3.5-flash-lite,416,0,0.1,Short duration of active days with moderate video plays.,MHxPC130057695,0
+Gemini,gemini-3.5-flash-lite,417,0,0.04,Low event count and minimal active days.,MHxPC130173351,0
+Gemini,gemini-3.5-flash-lite,418,0,0.08,Too few active days to sustain certification.,MHxPC130158668,0
+Gemini,gemini-3.5-flash-lite,419,0,0.0,No activity recorded.,MHxPC130007951,0
+Gemini,gemini-3.5-flash-lite,420,0,0.05,Very few active days and low events indicate lack of sustained engagement.,MHxPC130075036,0
+Gemini,gemini-3.5-flash-lite,421,0,0.15,Low active days and chapters accessed despite moderate event count.,MHxPC130221751,0
+Gemini,gemini-3.5-flash-lite,422,0,0.0,Zero activity and zero events.,MHxPC130032999,0
+Gemini,gemini-3.5-flash-lite,423,0,0.02,Extremely low active days and minimal chapter access.,MHxPC130594312,0
+Gemini,gemini-3.5-flash-lite,424,0,0.0,Zero activity and zero events.,MHxPC130248075,0
+Gemini,gemini-3.5-flash-lite,425,0,0.0,Zero activity and zero events.,MHxPC130368443,0
+Gemini,gemini-3.5-flash-lite,426,0,0.0,Minimal events and zero chapters accessed.,MHxPC130098868,0
+Gemini,gemini-3.5-flash-lite,427,1,0.95,"High active days, high event count, and extensive chapter access.",MHxPC130249217,0
+Gemini,gemini-3.5-flash-lite,428,0,0.05,Low event count and minimal chapters accessed.,MHxPC130223029,0
+Gemini,gemini-3.5-flash-lite,429,0,0.0,Zero activity and zero events.,MHxPC130588966,0
+Gemini,gemini-3.5-flash-lite,430,0,0.0,Virtually no events and negligible active days.,MHxPC130360409,0
+Gemini,gemini-3.5-flash-lite,431,0,0.05,Very low event count and minimal active days.,MHxPC130012269,0
+Gemini,gemini-3.5-flash-lite,432,1,0.85,High event count across many active days and substantial chapters.,MHxPC130344206,1
+Gemini,gemini-3.5-flash-lite,433,0,0.1,Low event count and few chapters accessed.,MHxPC130573631,0
+Gemini,gemini-3.5-flash-lite,434,0,0.01,Single active day with very few events.,MHxPC130136259,0
+Gemini,gemini-3.5-flash-lite,435,0,0.0,Minimal activity and zero chapters accessed.,MHxPC130196922,0
+Gemini,gemini-3.5-flash-lite,436,0,0.01,Extremely low events and active days.,MHxPC130097877,0
+Gemini,gemini-3.5-flash-lite,437,0,0.2,Decent active days but low event count and chapters.,MHxPC130393128,0
+Gemini,gemini-3.5-flash-lite,438,0,0.0,Minimal events and single active day.,MHxPC130497416,0
+Gemini,gemini-3.5-flash-lite,439,0,0.0,Zero activity and zero events.,MHxPC130081786,0
+Gemini,gemini-3.5-flash-lite,440,0,0.01,Zero activity and zero events indicate no meaningful engagement.,MHxPC130533212,0
+Gemini,gemini-3.5-flash-lite,441,0,0.01,Extremely low activity with only one event and no chapters.,MHxPC130368165,0
+Gemini,gemini-3.5-flash-lite,442,0,0.02,Low event count and minimal chapter access without certification indicators.,MHxPC130345986,0
+Gemini,gemini-3.5-flash-lite,443,0,0.01,Zero engagement across all metrics.,MHxPC130514381,0
+Gemini,gemini-3.5-flash-lite,444,0,0.03,Low events and few chapters accessed suggest abandonment.,MHxPC130165483,0
+Gemini,gemini-3.5-flash-lite,445,0,0.01,Zero activity across all measured metrics.,MHxPC130086440,0
+Gemini,gemini-3.5-flash-lite,446,0,0.01,No activity recorded.,MHxPC130054811,0
+Gemini,gemini-3.5-flash-lite,447,0,0.01,Minimal events and no chapters accessed.,MHxPC130418179,0
+Gemini,gemini-3.5-flash-lite,448,0,0.01,Zero events and no engagement.,MHxPC130385005,0
+Gemini,gemini-3.5-flash-lite,449,0,0.02,Low event count and few chapters accessed.,MHxPC130204536,0
+Gemini,gemini-3.5-flash-lite,450,0,0.01,Very low events and no chapter access.,MHxPC130151940,0
+Gemini,gemini-3.5-flash-lite,451,0,0.01,Low video activity and minimal event generation.,MHxPC130468946,0
+Gemini,gemini-3.5-flash-lite,452,0,0.01,Minimal interaction with course content.,MHxPC130345551,0
+Gemini,gemini-3.5-flash-lite,453,0,0.01,Very low event count and single chapter access.,MHxPC130095940,0
+Gemini,gemini-3.5-flash-lite,454,0,0.01,Zero recorded activity.,MHxPC130515923,0
+Gemini,gemini-3.5-flash-lite,455,0,0.01,Insignificant engagement with the course.,MHxPC130458245,0
+Gemini,gemini-3.5-flash-lite,456,0,0.01,Low event count and minimal chapter access.,MHxPC130429139,0
+Gemini,gemini-3.5-flash-lite,457,0,0.01,Minimal activity and insufficient chapter exploration.,MHxPC130391671,0
+Gemini,gemini-3.5-flash-lite,458,0,0.05,Moderate events but lacks sufficient depth for certification.,MHxPC130369621,0
+Gemini,gemini-3.5-flash-lite,459,0,0.04,High video plays but active on very few days.,MHxPC130106806,0
+Gemini,gemini-3.5-flash-lite,460,0,0.0,Zero activity and zero events indicate no participation.,MHxPC130186500,0
+Gemini,gemini-3.5-flash-lite,461,0,0.0,Zero activity and zero events indicate no participation.,MHxPC130233766,0
+Gemini,gemini-3.5-flash-lite,462,0,0.02,Very low event count and minimal active days.,MHxPC130594548,0
+Gemini,gemini-3.5-flash-lite,463,0,0.0,No events and zero activity.,MHxPC130548744,0
+Gemini,gemini-3.5-flash-lite,464,0,0.01,Very low engagement across only two days.,MHxPC130492056,0
+Gemini,gemini-3.5-flash-lite,465,0,0.0,Extremely low activity with only one event.,MHxPC130467902,0
+Gemini,gemini-3.5-flash-lite,466,0,0.0,Zero activity and zero events.,MHxPC130384719,0
+Gemini,gemini-3.5-flash-lite,467,0,0.0,Only one event and zero active participation.,MHxPC130298283,0
+Gemini,gemini-3.5-flash-lite,468,0,0.05,Low event count and active days for multiple courses.,MHxPC130557065,0
+Gemini,gemini-3.5-flash-lite,469,0,0.0,Only one event recorded.,MHxPC130242042,0
+Gemini,gemini-3.5-flash-lite,470,0,0.01,Minimal events and active days.,MHxPC130538895,0
+Gemini,gemini-3.5-flash-lite,471,0,0.0,Only one event recorded.,MHxPC130589652,0
+Gemini,gemini-3.5-flash-lite,472,0,0.04,Low active days despite some video plays.,MHxPC130400792,0
+Gemini,gemini-3.5-flash-lite,473,0,0.08,Insufficient overall events and chapter access for certification.,MHxPC130467282,0
+Gemini,gemini-3.5-flash-lite,474,0,0.01,Very low event count on a single day.,MHxPC130251346,0
+Gemini,gemini-3.5-flash-lite,475,0,0.0,Zero events generated.,MHxPC130325266,0
+Gemini,gemini-3.5-flash-lite,476,0,0.0,Zero activity and zero events.,MHxPC130244076,0
+Gemini,gemini-3.5-flash-lite,477,0,0.0,Only one event recorded.,MHxPC130193163,0
+Gemini,gemini-3.5-flash-lite,478,0,0.01,Very few events and active days.,MHxPC130550143,0
+Gemini,gemini-3.5-flash-lite,479,0,0.01,Low event count and minimal active days.,MHxPC130110142,0
+Gemini,gemini-3.5-flash-lite,480,0,0.05,Very low event count and active days indicate minimal engagement.,MHxPC130098219,0
+Gemini,gemini-3.5-flash-lite,481,0,0.01,Extremely low events and zero video plays suggest dropping out.,MHxPC130562073,0
+Gemini,gemini-3.5-flash-lite,482,0,0.01,Zero events and zero chapters accessed indicate no real participation.,MHxPC130437223,0
+Gemini,gemini-3.5-flash-lite,483,1,0.85,"High event count, many active days, and substantial video plays strongly indicate completion.",MHxPC130240707,0
+Gemini,gemini-3.5-flash-lite,484,0,0.05,Very few events and low video interaction.,MHxPC130335809,0
+Gemini,gemini-3.5-flash-lite,485,0,0.01,Minimal activity with only one event and one active day.,MHxPC130491047,0
+Gemini,gemini-3.5-flash-lite,486,1,0.7,High active days and chapters accessed despite lack of video logging.,MHxPC130296900,0
+Gemini,gemini-3.5-flash-lite,487,0,0.05,Low events and few active days across multiple courses.,MHxPC130353739,0
+Gemini,gemini-3.5-flash-lite,488,0,0.02,Only one active day and very low event count.,MHxPC130294681,0
+Gemini,gemini-3.5-flash-lite,489,0,0.2,Moderate events but insufficient depth for certification.,MHxPC130216908,0
+Gemini,gemini-3.5-flash-lite,490,0,0.05,Low active days and minimal event generation.,MHxPC130215484,0
+Gemini,gemini-3.5-flash-lite,491,0,0.05,Low event count and sparse activity across multiple courses.,MHxPC130447471,0
+Gemini,gemini-3.5-flash-lite,492,0,0.02,Very few events and active days.,MHxPC130371980,0
+Gemini,gemini-3.5-flash-lite,493,0,0.1,Short duration of activity with low active days.,MHxPC130332153,0
+Gemini,gemini-3.5-flash-lite,494,0,0.01,Virtually no engagement or activity recorded.,MHxPC130056349,0
+Gemini,gemini-3.5-flash-lite,495,0,0.15,High video plays but confined to a single active day.,MHxPC130576079,0
+Gemini,gemini-3.5-flash-lite,496,0,0.02,Very low event count and active days.,MHxPC130161299,0
+Gemini,gemini-3.5-flash-lite,497,0,0.01,Only one active day with minimal events.,MHxPC130206283,0
+Gemini,gemini-3.5-flash-lite,498,0,0.0,Zero engagement and no activity recorded.,MHxPC130559350,0
+Gemini,gemini-3.5-flash-lite,499,0,0.1,Some chapter access but very low overall event volume.,MHxPC130282701,0
+Gemini,gemini-3.5-flash-lite,500,0,0.01,Very low events and active days indicate lack of engagement.,MHxPC130544483,0
+Gemini,gemini-3.5-flash-lite,501,0,0.05,Too few active days and events for certification.,MHxPC130361016,0
+Gemini,gemini-3.5-flash-lite,502,0,0.0,Zero activity and zero events.,MHxPC130379143,0
+Gemini,gemini-3.5-flash-lite,503,0,0.15,Low event count despite some active days.,MHxPC130326223,0
+Gemini,gemini-3.5-flash-lite,504,0,0.0,Minimal engagement with one event.,MHxPC130273675,0
+Gemini,gemini-3.5-flash-lite,505,1,0.72,High active days and substantial chapter access suggest serious study.,MHxPC130440698,0
+Gemini,gemini-3.5-flash-lite,506,1,0.99,"Extremely high event count, video plays, and active days.",MHxPC130175062,0
+Gemini,gemini-3.5-flash-lite,507,0,0.1,Too few active days and chapters accessed.,MHxPC130164470,0
+Gemini,gemini-3.5-flash-lite,508,0,0.05,Very low active days and event count.,MHxPC130176471,0
+Gemini,gemini-3.5-flash-lite,509,0,0.02,Low events and active days.,MHxPC130197020,0
+Gemini,gemini-3.5-flash-lite,510,0,0.03,Low activity level and few events.,MHxPC130230177,0
+Gemini,gemini-3.5-flash-lite,511,0,0.01,Only one active day and minimal events.,MHxPC130504461,0
+Gemini,gemini-3.5-flash-lite,512,0,0.0,Virtually no activity recorded.,MHxPC130204399,0
+Gemini,gemini-3.5-flash-lite,513,0,0.0,Almost zero events and zero active days.,MHxPC130404152,0
+Gemini,gemini-3.5-flash-lite,514,0,0.0,No events and zero active days.,MHxPC130297579,0
+Gemini,gemini-3.5-flash-lite,515,0,0.02,Low events and few active days.,MHxPC130353004,0
+Gemini,gemini-3.5-flash-lite,516,1,0.95,"High video plays, events, and consistent active days.",MHxPC130397485,1
+Gemini,gemini-3.5-flash-lite,517,0,0.0,Zero activity recorded.,MHxPC130411885,0
+Gemini,gemini-3.5-flash-lite,518,1,0.65,Sufficient active days and video plays for completion.,MHxPC130145216,0
+Gemini,gemini-3.5-flash-lite,519,0,0.05,Low event count and chapters accessed.,MHxPC130257038,0
+Gemini,gemini-3.5-flash-lite,520,0,0.0,Zero activity and zero events indicate no participation.,MHxPC130266134,0
+Gemini,gemini-3.5-flash-lite,521,1,0.95,High engagement with over 6000 events and 55 active days.,MHxPC130118969,1
+Gemini,gemini-3.5-flash-lite,522,0,0.01,Extremely low activity with only one active day.,MHxPC130055336,0
+Gemini,gemini-3.5-flash-lite,523,0,0.05,Low event count and minimal chapter access.,MHxPC130386720,0
+Gemini,gemini-3.5-flash-lite,524,0,0.0,Almost no engagement with only one event.,MHxPC130396377,0
+Gemini,gemini-3.5-flash-lite,525,0,0.0,Zero activity and zero events recorded.,MHxPC130095011,0
+Gemini,gemini-3.5-flash-lite,526,0,0.05,Single active day despite some events.,MHxPC130201714,0
+Gemini,gemini-3.5-flash-lite,527,0,0.01,Very low overall activity and event count.,MHxPC130421562,0
+Gemini,gemini-3.5-flash-lite,528,1,0.85,High event count and active days despite zero video plays.,MHxPC130001534,1
+Gemini,gemini-3.5-flash-lite,529,0,0.0,Minimal engagement with only two events.,MHxPC130392605,0
+Gemini,gemini-3.5-flash-lite,530,0,0.0,Almost no engagement with one event.,MHxPC130491483,0
+Gemini,gemini-3.5-flash-lite,531,0,0.05,Low active days and insufficient overall progress.,MHxPC130213111,0
+Gemini,gemini-3.5-flash-lite,532,0,0.0,Very few events and no chapter access.,MHxPC130514623,0
+Gemini,gemini-3.5-flash-lite,533,0,0.0,No events generated despite chapter access.,MHxPC130582937,0
+Gemini,gemini-3.5-flash-lite,534,0,0.0,Zero activity and zero events recorded.,MHxPC130139360,0
+Gemini,gemini-3.5-flash-lite,535,0,0.0,Minimal events and zero chapter access.,MHxPC130314623,0
+Gemini,gemini-3.5-flash-lite,536,0,0.0,Very low event count and no chapter access.,MHxPC130285595,0
+Gemini,gemini-3.5-flash-lite,537,0,0.1,Low active days and few chapter accesses.,MHxPC130225748,0
+Gemini,gemini-3.5-flash-lite,538,0,0.0,Zero activity and events.,MHxPC130224263,0
+Gemini,gemini-3.5-flash-lite,539,0,0.02,Very low event count and insufficient engagement.,MHxPC130597402,0
+Gemini,gemini-3.5-flash-lite,540,0,0.0,"Minimal events and activity, indicating no certification.",MHxPC130265300,0
+Gemini,gemini-3.5-flash-lite,541,0,0.0,"Zero events and activity, indicating no certification.",MHxPC130307447,0
+Gemini,gemini-3.5-flash-lite,542,0,0.0,Very low events and no chapter access.,MHxPC130357352,0
+Gemini,gemini-3.5-flash-lite,543,0,0.0,Low events and minimal chapter access.,MHxPC130313738,0
+Gemini,gemini-3.5-flash-lite,544,0,0.0,Zero events and activity.,MHxPC130259711,0
+Gemini,gemini-3.5-flash-lite,545,0,0.0,Negligible event count and no chapter access.,MHxPC130003152,0
+Gemini,gemini-3.5-flash-lite,546,0,0.0,Very low event count on a single day.,MHxPC130374067,0
+Gemini,gemini-3.5-flash-lite,547,0,0.0,Extremely low overall activity.,MHxPC130500620,0
+Gemini,gemini-3.5-flash-lite,548,0,0.0,Zero activity and zero chapter access.,MHxPC130319970,0
+Gemini,gemini-3.5-flash-lite,549,0,0.0,Low events and few active days.,MHxPC130347972,0
+Gemini,gemini-3.5-flash-lite,550,0,0.0,No activity recorded.,MHxPC130480136,0
+Gemini,gemini-3.5-flash-lite,551,0,0.0,Low events and minimal active days.,MHxPC130292127,0
+Gemini,gemini-3.5-flash-lite,552,0,0.0,Zero events recorded.,MHxPC130422731,0
+Gemini,gemini-3.5-flash-lite,553,0,0.0,Low events concentrated on a single active day.,MHxPC130125644,0
+Gemini,gemini-3.5-flash-lite,554,0,0.0,Very few active days and low events.,MHxPC130351019,0
+Gemini,gemini-3.5-flash-lite,555,0,0.0,Insufficient engagement for certification.,MHxPC130154419,0
+Gemini,gemini-3.5-flash-lite,556,0,0.0,Low event count and minimal active days.,MHxPC130272577,0
+Gemini,gemini-3.5-flash-lite,557,1,0.85,High event count and extensive active days.,MHxPC130265114,0
+Gemini,gemini-3.5-flash-lite,558,0,0.0,Zero meaningful engagement.,MHxPC130590348,0
+Gemini,gemini-3.5-flash-lite,559,0,0.0,Very low event count and minimal duration.,MHxPC130462445,0
+Gemini,gemini-3.5-flash-lite,560,0,0.0,Very low events and active days indicate no certification.,MHxPC130281635,0
+Gemini,gemini-3.5-flash-lite,561,0,0.1,Moderate events but insufficient active days and chapters for certification.,MHxPC130361552,0
+Gemini,gemini-3.5-flash-lite,562,0,0.0,Minimal activity and no video plays suggest non-completion.,MHxPC130100884,0
+Gemini,gemini-3.5-flash-lite,563,0,0.0,Zero events and zero active days.,MHxPC130561201,0
+Gemini,gemini-3.5-flash-lite,564,0,0.0,Low events and active days indicate non-completion.,MHxPC130444862,0
+Gemini,gemini-3.5-flash-lite,565,0,0.0,Very low event count and minimal chapter access.,MHxPC130272298,0
+Gemini,gemini-3.5-flash-lite,566,0,0.0,Extremely low engagement with zero chapters accessed.,MHxPC130392583,0
+Gemini,gemini-3.5-flash-lite,567,0,0.0,Minimal events and active days.,MHxPC130164961,0
+Gemini,gemini-3.5-flash-lite,568,0,0.0,Very low overall activity across multiple courses.,MHxPC130093238,0
+Gemini,gemini-3.5-flash-lite,569,0,0.0,Low event count and minimal chapter access.,MHxPC130565538,0
+Gemini,gemini-3.5-flash-lite,570,0,0.2,"Decent events and active days, but lacks sufficient chapter depth.",MHxPC130074406,0
+Gemini,gemini-3.5-flash-lite,571,0,0.0,Minimal activity and single active day.,MHxPC130166670,0
+Gemini,gemini-3.5-flash-lite,572,0,0.0,Very low events and active days.,MHxPC130287785,0
+Gemini,gemini-3.5-flash-lite,573,0,0.1,Moderate video plays but low active days and chapter access.,MHxPC130347821,0
+Gemini,gemini-3.5-flash-lite,574,0,0.0,Low event count and minimal chapter engagement.,MHxPC130548759,0
+Gemini,gemini-3.5-flash-lite,575,0,0.0,Very few active days and low total events.,MHxPC130437235,0
+Gemini,gemini-3.5-flash-lite,576,0,0.0,Extremely low activity with zero chapters accessed.,MHxPC130470000,0
+Gemini,gemini-3.5-flash-lite,577,0,0.0,Very low event count and minimal chapter access.,MHxPC130123324,0
+Gemini,gemini-3.5-flash-lite,578,0,0.0,Minimal events and active days.,MHxPC130096269,0
+Gemini,gemini-3.5-flash-lite,579,0,0.0,Extremely low engagement and event count.,MHxPC130373110,0
+Gemini,gemini-3.5-flash-lite,580,0,0.01,Zero engagement and activity.,MHxPC130064916,0
+Gemini,gemini-3.5-flash-lite,581,0,0.05,Low events and chapters with no video plays.,MHxPC130349839,0
+Gemini,gemini-3.5-flash-lite,582,0,0.01,Minimal activity and no chapters accessed.,MHxPC130089747,0
+Gemini,gemini-3.5-flash-lite,583,0,0.01,Very low events and active days.,MHxPC130104015,0
+Gemini,gemini-3.5-flash-lite,584,0,0.08,Moderate event count but lacks sufficient overall engagement.,MHxPC130145492,0
+Gemini,gemini-3.5-flash-lite,585,0,0.01,No activity recorded.,MHxPC130513283,0
+Gemini,gemini-3.5-flash-lite,586,0,0.05,Low event count and minimal chapter access.,MHxPC130257111,0
+Gemini,gemini-3.5-flash-lite,587,0,0.01,Minimal activity and no chapters accessed.,MHxPC130453466,0
+Gemini,gemini-3.5-flash-lite,588,0,0.01,Low events and active days.,MHxPC130468539,0
+Gemini,gemini-3.5-flash-lite,589,0,0.02,Very low video activity and minimal events.,MHxPC130053503,0
+Gemini,gemini-3.5-flash-lite,590,0,0.01,Zero engagement and activity.,MHxPC130350429,0
+Gemini,gemini-3.5-flash-lite,591,0,0.01,Minimal activity and no chapters accessed.,MHxPC130585551,0
+Gemini,gemini-3.5-flash-lite,592,0,0.01,Extremely low event count.,MHxPC130433008,0
+Gemini,gemini-3.5-flash-lite,593,0,0.02,Low event count and minimal chapters.,MHxPC130346228,0
+Gemini,gemini-3.5-flash-lite,594,0,0.01,Zero events and minimal chapter access.,MHxPC130591403,0
+Gemini,gemini-3.5-flash-lite,595,0,0.03,Low active days and few events.,MHxPC130130195,0
+Gemini,gemini-3.5-flash-lite,596,0,0.02,Single active day with very few events.,MHxPC130141176,0
+Gemini,gemini-3.5-flash-lite,597,0,0.01,Low video plays and minimal events.,MHxPC130012450,0
+Gemini,gemini-3.5-flash-lite,598,0,0.01,Minimal activity and no chapters accessed.,MHxPC130117496,0
+Gemini,gemini-3.5-flash-lite,599,0,0.01,Zero engagement and activity.,MHxPC130130142,0
+Gemini,gemini-3.5-flash-lite,600,0,0.1,Few active days and low chapter access indicate lack of deep course engagement.,MHxPC130412631,0
+Gemini,gemini-3.5-flash-lite,601,0,0.0,Minimal events and zero video plays show no meaningful participation.,MHxPC130102662,0
+Gemini,gemini-3.5-flash-lite,602,0,0.0,Extremely low event count and zero chapters accessed.,MHxPC130195861,0
+Gemini,gemini-3.5-flash-lite,603,0,0.0,Very low activity with only one active day.,MHxPC130008862,0
+Gemini,gemini-3.5-flash-lite,604,0,0.2,Moderate events but insufficient active days and chapter progression for certification.,MHxPC130420166,0
+Gemini,gemini-3.5-flash-lite,605,0,0.0,Almost no engagement recorded.,MHxPC130272637,0
+Gemini,gemini-3.5-flash-lite,606,1,0.85,"High active days, significant events, and extensive chapter access strongly indicate completion.",MHxPC130556843,1
+Gemini,gemini-3.5-flash-lite,607,0,0.0,Minimal activity with zero chapters accessed.,MHxPC130287750,0
+Gemini,gemini-3.5-flash-lite,608,0,0.0,Low event count and single active day.,MHxPC130272387,0
+Gemini,gemini-3.5-flash-lite,609,0,0.0,Low engagement across multiple courses without sufficient depth.,MHxPC130066109,0
+Gemini,gemini-3.5-flash-lite,610,0,0.0,Zero events and zero active days.,MHxPC130302275,0
+Gemini,gemini-3.5-flash-lite,611,0,0.0,Negligible event count and no chapters accessed.,MHxPC130331284,0
+Gemini,gemini-3.5-flash-lite,612,0,0.3,Decent event count but active days are too few for reliable completion.,MHxPC130352098,1
+Gemini,gemini-3.5-flash-lite,613,0,0.0,Almost no activity recorded.,MHxPC130352883,0
+Gemini,gemini-3.5-flash-lite,614,0,0.0,Very low events and no chapter access.,MHxPC130412407,0
+Gemini,gemini-3.5-flash-lite,615,0,0.0,Insignificant engagement.,MHxPC130260815,0
+Gemini,gemini-3.5-flash-lite,616,0,0.0,Minimal activity on a single day.,MHxPC130375536,0
+Gemini,gemini-3.5-flash-lite,617,0,0.0,Zero engagement across the board.,MHxPC130022871,0
+Gemini,gemini-3.5-flash-lite,618,0,0.1,High video plays but active days are too few.,MHxPC130321761,0
+Gemini,gemini-3.5-flash-lite,619,0,0.0,Zero events and zero active days.,MHxPC130094683,0
+Gemini,gemini-3.5-flash-lite,620,0,0.0,Very low events and active days indicate lack of engagement.,MHxPC130052666,0
+Gemini,gemini-3.5-flash-lite,621,0,0.0,Minimal events and no video plays indicate drop out.,MHxPC130057116,0
+Gemini,gemini-3.5-flash-lite,622,0,0.0,Extremely low active days and events.,MHxPC130376186,0
+Gemini,gemini-3.5-flash-lite,623,0,0.0,Zero chapter access and minimal events.,MHxPC130067755,0
+Gemini,gemini-3.5-flash-lite,624,0,0.0,Very low events and only one active day.,MHxPC130191456,0
+Gemini,gemini-3.5-flash-lite,625,0,0.0,No meaningful engagement or chapter access.,MHxPC130059236,0
+Gemini,gemini-3.5-flash-lite,626,0,0.0,Almost no activity recorded.,MHxPC130377510,0
+Gemini,gemini-3.5-flash-lite,627,0,0.0,Zero events and zero active days.,MHxPC130290177,0
+Gemini,gemini-3.5-flash-lite,628,1,0.95,"High video plays, many active days, and substantial events.",MHxPC130358978,0
+Gemini,gemini-3.5-flash-lite,629,0,0.0,Zero events and zero active days.,MHxPC130235643,0
+Gemini,gemini-3.5-flash-lite,630,0,0.0,No activity recorded.,MHxPC130525996,0
+Gemini,gemini-3.5-flash-lite,631,0,0.0,Insufficient activity for certification.,MHxPC130485477,0
+Gemini,gemini-3.5-flash-lite,632,0,0.0,Low events and few active days.,MHxPC130565686,0
+Gemini,gemini-3.5-flash-lite,633,0,0.0,Zero events recorded.,MHxPC130003940,0
+Gemini,gemini-3.5-flash-lite,634,0,0.0,Zero activity profile.,MHxPC130260842,0
+Gemini,gemini-3.5-flash-lite,635,0,0.0,Low active days and minimal total events.,MHxPC130306308,0
+Gemini,gemini-3.5-flash-lite,636,0,0.0,Minimal engagement with only one active day.,MHxPC130092700,0
+Gemini,gemini-3.5-flash-lite,637,0,0.0,No chapter access and very few events.,MHxPC130186896,0
+Gemini,gemini-3.5-flash-lite,638,0,0.0,Zero events and no video plays.,MHxPC130486836,0
+Gemini,gemini-3.5-flash-lite,639,0,0.0,Extremely low events and no chapter access.,MHxPC130493849,0
+Gemini,gemini-3.5-flash-lite,640,0,0.0,Zero engagement and activity.,MHxPC130336234,0
+Gemini,gemini-3.5-flash-lite,641,0,0.0,Zero engagement and activity.,MHxPC130262306,0
+Gemini,gemini-3.5-flash-lite,642,0,0.01,Minimal activity with only two events.,MHxPC130468803,0
+Gemini,gemini-3.5-flash-lite,643,0,0.0,No events or video plays recorded.,MHxPC130276560,0
+Gemini,gemini-3.5-flash-lite,644,1,0.85,High event count and active days.,MHxPC130114586,0
+Gemini,gemini-3.5-flash-lite,645,0,0.0,Almost no activity recorded.,MHxPC130163655,0
+Gemini,gemini-3.5-flash-lite,646,0,0.0,Zero engagement and activity.,MHxPC130195975,0
+Gemini,gemini-3.5-flash-lite,647,0,0.05,Very low event count across four days.,MHxPC130011230,0
+Gemini,gemini-3.5-flash-lite,648,0,0.1,Short activity duration despite video plays.,MHxPC130495850,0
+Gemini,gemini-3.5-flash-lite,649,0,0.01,Very low total events and engagement.,MHxPC130262761,0
+Gemini,gemini-3.5-flash-lite,650,0,0.15,Limited active days and event volume.,MHxPC130413451,0
+Gemini,gemini-3.5-flash-lite,651,0,0.01,Minimal single-day engagement.,MHxPC130264450,0
+Gemini,gemini-3.5-flash-lite,652,0,0.02,Low events and active days.,MHxPC130311654,0
+Gemini,gemini-3.5-flash-lite,653,0,0.02,Low event count and no video activity.,MHxPC130441179,0
+Gemini,gemini-3.5-flash-lite,654,0,0.01,Very low overall events.,MHxPC130361806,0
+Gemini,gemini-3.5-flash-lite,655,0,0.0,Zero engagement and activity.,MHxPC130324221,0
+Gemini,gemini-3.5-flash-lite,656,0,0.08,Insufficient event volume for certification.,MHxPC130438178,0
+Gemini,gemini-3.5-flash-lite,657,0,0.0,Minimal activity with zero chapters.,MHxPC130268609,0
+Gemini,gemini-3.5-flash-lite,658,0,0.0,Minimal activity with zero chapters.,MHxPC130215049,0
+Gemini,gemini-3.5-flash-lite,659,0,0.03,Low event count across few active days.,MHxPC130434489,0
+Gemini,gemini-3.5-flash-lite,660,0,0.01,Very minimal activity across all metrics.,MHxPC130052558,0
+Gemini,gemini-3.5-flash-lite,661,0,0.12,Low active days and events.,MHxPC130029443,0
+Gemini,gemini-3.5-flash-lite,662,0,0.2,Moderate events but insufficient active days.,MHxPC130401865,0
+Gemini,gemini-3.5-flash-lite,663,0,0.02,Very low engagement and only one active day.,MHxPC130438051,0
+Gemini,gemini-3.5-flash-lite,664,0,0.05,Low events and limited active days.,MHxPC130317727,0
+Gemini,gemini-3.5-flash-lite,665,0,0.0,No activity recorded.,MHxPC130209993,0
+Gemini,gemini-3.5-flash-lite,666,1,0.85,"High events, multiple active days, and forum participation.",MHxPC130574982,0
+Gemini,gemini-3.5-flash-lite,667,0,0.03,Low event count and minimal duration.,MHxPC130166137,0
+Gemini,gemini-3.5-flash-lite,668,0,0.0,No activity recorded.,MHxPC130540802,0
+Gemini,gemini-3.5-flash-lite,669,0,0.08,Low active days and events.,MHxPC130368840,0
+Gemini,gemini-3.5-flash-lite,670,1,0.95,"Extremely high events, active days, and video engagement.",MHxPC130314443,1
+Gemini,gemini-3.5-flash-lite,671,0,0.01,Very low events and active days.,MHxPC130278785,0
+Gemini,gemini-3.5-flash-lite,672,1,0.99,Extremely high events and active days with forum activity.,MHxPC130070487,1
+Gemini,gemini-3.5-flash-lite,673,1,0.95,"Extremely high events, active days, and video plays.",MHxPC130532304,1
+Gemini,gemini-3.5-flash-lite,674,0,0.0,Negligible activity.,MHxPC130090727,0
+Gemini,gemini-3.5-flash-lite,675,0,0.02,Very low event count.,MHxPC130030273,0
+Gemini,gemini-3.5-flash-lite,676,0,0.05,Low active days and events.,MHxPC130367523,0
+Gemini,gemini-3.5-flash-lite,677,0,0.1,Short duration of activity.,MHxPC130581729,0
+Gemini,gemini-3.5-flash-lite,678,0,0.08,Low event count and video plays.,MHxPC130563411,0
+Gemini,gemini-3.5-flash-lite,679,0,0.04,Low total events without video plays.,MHxPC130283838,0
+Gemini,gemini-3.5-flash-lite,680,0,0.0,Zero activity and zero events indicate the learner did not engage with the course.,MHxPC130452444,0
+Gemini,gemini-3.5-flash-lite,681,1,0.75,High event count and multiple active days across courses suggest strong engagement.,MHxPC130552575,0
+Gemini,gemini-3.5-flash-lite,682,0,0.05,Very low event count and minimal active days are insufficient for certification.,MHxPC130038715,0
+Gemini,gemini-3.5-flash-lite,683,0,0.0,No events generated and zero active days indicate no participation.,MHxPC130469684,0
+Gemini,gemini-3.5-flash-lite,684,0,0.15,Active days are too few despite some video plays.,MHxPC130575856,0
+Gemini,gemini-3.5-flash-lite,685,0,0.0,Zero activity and zero events indicate the learner did not engage.,MHxPC130589448,0
+Gemini,gemini-3.5-flash-lite,686,0,0.1,Low event count and few active days are insufficient for certification.,MHxPC130460185,0
+Gemini,gemini-3.5-flash-lite,687,0,0.0,Almost no events and only one active day indicate lack of engagement.,MHxPC130560150,0
+Gemini,gemini-3.5-flash-lite,688,0,0.0,Almost no events and only one active day indicate lack of engagement.,MHxPC130540400,0
+Gemini,gemini-3.5-flash-lite,689,0,0.0,Minimal activity with only one event and one active day.,MHxPC130446384,0
+Gemini,gemini-3.5-flash-lite,690,0,0.0,Zero activity and zero events indicate the learner did not engage.,MHxPC130086849,0
+Gemini,gemini-3.5-flash-lite,691,0,0.0,Only one event across one active day is far below certification requirements.,MHxPC130147548,0
+Gemini,gemini-3.5-flash-lite,692,0,0.0,Zero events generated and no active days indicate no participation.,MHxPC130226478,0
+Gemini,gemini-3.5-flash-lite,693,0,0.2,Moderate engagement but overall event and chapter metrics are too low.,MHxPC130592915,0
+Gemini,gemini-3.5-flash-lite,694,0,0.05,Low active days and minimal events suggest insufficient coursework completion.,MHxPC130243659,0
+Gemini,gemini-3.5-flash-lite,695,0,0.0,Zero activity and zero events indicate the learner did not engage.,MHxPC130550819,0
+Gemini,gemini-3.5-flash-lite,696,0,0.0,Zero events generated and no active days indicate no participation.,MHxPC130334061,0
+Gemini,gemini-3.5-flash-lite,697,0,0.0,Minimal events and single active day are insufficient for certification.,MHxPC130353279,0
+Gemini,gemini-3.5-flash-lite,698,0,0.05,Very low event count and few active days indicate lack of sustained engagement.,MHxPC130439634,0
+Gemini,gemini-3.5-flash-lite,699,0,0.0,Only a few events across two active days without meaningful progress.,MHxPC130141190,0
+Gemini,gemini-3.5-flash-lite,700,0,0.05,Extremely low engagement with only fifteen events and four active days.,MHxPC130404736,0
+Gemini,gemini-3.5-flash-lite,701,1,0.95,"Very high engagement across numerous events, active days, and video plays.",MHxPC130564793,1
+Gemini,gemini-3.5-flash-lite,702,0,0.01,Almost zero activity with only two events.,MHxPC130532047,0
+Gemini,gemini-3.5-flash-lite,703,0,0.1,Low active days and minimal chapter access.,MHxPC130046154,0
+Gemini,gemini-3.5-flash-lite,704,0,0.0,Zero events and zero active days.,MHxPC130193549,0
+Gemini,gemini-3.5-flash-lite,705,0,0.0,Completely inactive profile with zero events.,MHxPC130020641,0
+Gemini,gemini-3.5-flash-lite,706,0,0.0,No events and zero active days.,MHxPC130373445,0
+Gemini,gemini-3.5-flash-lite,707,0,0.02,Very low engagement with only sixty-six events and three active days.,MHxPC130561815,0
+Gemini,gemini-3.5-flash-lite,708,0,0.03,Minimal activity with only fifty events and four active days.,MHxPC130282865,0
+Gemini,gemini-3.5-flash-lite,709,0,0.15,Decent active days but lacks video engagement and course completion signals.,MHxPC130198070,0
+Gemini,gemini-3.5-flash-lite,710,0,0.01,Extremely low activity with only five events.,MHxPC130076251,0
+Gemini,gemini-3.5-flash-lite,711,0,0.05,Very low event count and no video engagement.,MHxPC130330262,0
+Gemini,gemini-3.5-flash-lite,712,1,0.85,Strong engagement with high video plays and substantial event count.,MHxPC130587554,0
+Gemini,gemini-3.5-flash-lite,713,0,0.02,Very low activity with only thirty-six events.,MHxPC130374132,0
+Gemini,gemini-3.5-flash-lite,714,0,0.35,Moderate video plays but insufficient active days and events.,MHxPC130363806,0
+Gemini,gemini-3.5-flash-lite,715,0,0.01,Almost no engagement with only six events.,MHxPC130134548,0
+Gemini,gemini-3.5-flash-lite,716,0,0.0,Zero events and zero active days.,MHxPC130423682,0
+Gemini,gemini-3.5-flash-lite,717,0,0.01,Almost no activity with only two events.,MHxPC130416415,0
+Gemini,gemini-3.5-flash-lite,718,0,0.02,Very low event count and minimal engagement.,MHxPC130367914,0
+Gemini,gemini-3.5-flash-lite,719,0,0.0,Completely inactive profile with zero events.,MHxPC130435525,0
+Gemini,gemini-3.5-flash-lite,720,0,0.0,"Minimal events and activity, indicating abandonment.",MHxPC130385887,0
+Gemini,gemini-3.5-flash-lite,721,0,0.0,Zero activity and zero engagement.,MHxPC130543988,0
+Gemini,gemini-3.5-flash-lite,722,0,0.05,Low event count and few active days.,MHxPC130317530,0
+Gemini,gemini-3.5-flash-lite,723,0,0.0,Zero total events generated despite video plays.,MHxPC130449720,0
+Gemini,gemini-3.5-flash-lite,724,0,0.1,Insufficient event count and chapter reach for certification.,MHxPC130014411,0
+Gemini,gemini-3.5-flash-lite,725,0,0.05,Low event count and limited active days.,MHxPC130071824,0
+Gemini,gemini-3.5-flash-lite,726,0,0.0,Zero events and no meaningful participation.,MHxPC130090681,0
+Gemini,gemini-3.5-flash-lite,727,0,0.0,Minimal activity and negligible event count.,MHxPC130507437,0
+Gemini,gemini-3.5-flash-lite,728,0,0.0,Zero events generated.,MHxPC130026440,0
+Gemini,gemini-3.5-flash-lite,729,0,0.0,No events and zero active days.,MHxPC130083472,0
+Gemini,gemini-3.5-flash-lite,730,0,0.0,Very low event count on a single active day.,MHxPC130519923,0
+Gemini,gemini-3.5-flash-lite,731,0,0.0,Extremely low event count across courses.,MHxPC130127439,0
+Gemini,gemini-3.5-flash-lite,732,0,0.1,Moderate activity but insufficient overall engagement depth.,MHxPC130358938,0
+Gemini,gemini-3.5-flash-lite,733,0,0.0,Zero engagement and no activity.,MHxPC130393029,0
+Gemini,gemini-3.5-flash-lite,734,0,0.0,Almost no events recorded.,MHxPC130227666,0
+Gemini,gemini-3.5-flash-lite,735,0,0.0,Low event count on a single day.,MHxPC130060588,0
+Gemini,gemini-3.5-flash-lite,736,0,0.0,Minimal activity and zero chapter access.,MHxPC130134019,0
+Gemini,gemini-3.5-flash-lite,737,0,0.0,Zero participation.,MHxPC130461364,0
+Gemini,gemini-3.5-flash-lite,738,0,0.05,Low event total and very few chapters accessed.,MHxPC130251248,0
+Gemini,gemini-3.5-flash-lite,739,0,0.0,Minimal events on a single active day.,MHxPC130028347,0
+Gemini,gemini-3.5-flash-lite,740,0,0.0,Zero activity and zero engagement indicate non-completion.,MHxPC130230866,0
+Gemini,gemini-3.5-flash-lite,741,1,0.85,High event count across multiple days indicates strong engagement.,MHxPC130501731,1
+Gemini,gemini-3.5-flash-lite,742,0,0.0,Zero events and zero active days show no participation.,MHxPC130555802,0
+Gemini,gemini-3.5-flash-lite,743,0,0.05,Very low event count and no video activity indicate dropping out.,MHxPC130469316,0
+Gemini,gemini-3.5-flash-lite,744,0,0.01,Minimal events and short duration suggest lack of sustained effort.,MHxPC130035106,0
+Gemini,gemini-3.5-flash-lite,745,0,0.0,Negligible engagement with only one event recorded.,MHxPC130548612,0
+Gemini,gemini-3.5-flash-lite,746,0,0.0,Zero activity and zero engagement indicate non-completion.,MHxPC130035465,0
+Gemini,gemini-3.5-flash-lite,747,0,0.0,Virtually no activity across the course.,MHxPC130535837,0
+Gemini,gemini-3.5-flash-lite,748,0,0.02,Low event count and single active day show insufficient engagement.,MHxPC130151318,0
+Gemini,gemini-3.5-flash-lite,749,0,0.0,Extremely low activity across two courses.,MHxPC130363619,0
+Gemini,gemini-3.5-flash-lite,750,0,0.05,Low event count and minimal active days fail to meet certification standards.,MHxPC130106736,0
+Gemini,gemini-3.5-flash-lite,751,0,0.08,Low overall activity and very few active days.,MHxPC130425837,0
+Gemini,gemini-3.5-flash-lite,752,0,0.0,Negligible interaction with course material.,MHxPC130260387,0
+Gemini,gemini-3.5-flash-lite,753,0,0.02,Very low event count and lack of video engagement.,MHxPC130073513,0
+Gemini,gemini-3.5-flash-lite,754,0,0.0,No activity recorded.,MHxPC130262036,0
+Gemini,gemini-3.5-flash-lite,755,0,0.01,Minimal events and low video plays indicate abandonment.,MHxPC130091631,0
+Gemini,gemini-3.5-flash-lite,756,0,0.0,Zero activity recorded.,MHxPC130198330,0
+Gemini,gemini-3.5-flash-lite,757,0,0.2,Moderate activity but insufficient total events for likely certification.,MHxPC130113615,0
+Gemini,gemini-3.5-flash-lite,758,0,0.0,Almost no engagement with the course.,MHxPC130294990,0
+Gemini,gemini-3.5-flash-lite,759,0,0.15,Low event count and active days are below typical certification thresholds.,MHxPC130207658,0
+Gemini,gemini-3.5-flash-lite,760,1,0.85,"High engagement with 44 active days, 4180 events, and robust video plays.",MHxPC130445599,1
+Gemini,gemini-3.5-flash-lite,761,0,0.01,Minimal activity with only 1 event and 1 active day.,MHxPC130072436,0
+Gemini,gemini-3.5-flash-lite,762,0,0.05,Very low engagement with only 2 active days and 172 events.,MHxPC130106564,0
+Gemini,gemini-3.5-flash-lite,763,0,0.0,No events generated and zero active days recorded.,MHxPC130414405,0
+Gemini,gemini-3.5-flash-lite,764,0,0.01,Extremely low activity with only 2 events on 1 active day.,MHxPC130022976,0
+Gemini,gemini-3.5-flash-lite,765,0,0.0,No activity generated and zero active days.,MHxPC130300584,0
+Gemini,gemini-3.5-flash-lite,766,0,0.15,Moderate engagement across multiple courses but insufficient total events.,MHxPC130160655,0
+Gemini,gemini-3.5-flash-lite,767,0,0.0,Zero active days and no events generated.,MHxPC130426890,0
+Gemini,gemini-3.5-flash-lite,768,0,0.1,Low engagement with only 5 active days and 261 events.,MHxPC130233901,0
+Gemini,gemini-3.5-flash-lite,769,1,0.75,High event count and active days despite moderate video logging.,MHxPC130141052,1
+Gemini,gemini-3.5-flash-lite,770,0,0.05,Low activity with only 52 events and 4 active days.,MHxPC130596056,0
+Gemini,gemini-3.5-flash-lite,771,0,0.02,Very low engagement with only 1 active day.,MHxPC130345265,0
+Gemini,gemini-3.5-flash-lite,772,0,0.01,Minimal activity with 1 event on 1 active day.,MHxPC130127842,0
+Gemini,gemini-3.5-flash-lite,773,0,0.2,Moderate video plays but insufficient active days and total events.,MHxPC130506324,0
+Gemini,gemini-3.5-flash-lite,774,0,0.05,Low engagement with only 50 events and 2 active days.,MHxPC130149224,0
+Gemini,gemini-3.5-flash-lite,775,0,0.08,Low overall event count despite 18 active days.,MHxPC130085542,0
+Gemini,gemini-3.5-flash-lite,776,0,0.15,Moderate activity across 4 courses but insufficient depth for certification.,MHxPC130202995,0
+Gemini,gemini-3.5-flash-lite,777,0,0.02,Low engagement with only 42 events on 1 active day.,MHxPC130379771,0
+Gemini,gemini-3.5-flash-lite,778,0,0.12,Low active days and limited event count for certification.,MHxPC130186026,0
+Gemini,gemini-3.5-flash-lite,779,0,0.2,High event count but concentrated in only 4 active days.,MHxPC130205104,0
+Gemini,gemini-3.5-flash-lite,780,0,0.05,Low engagement with very few events and active days.,MHxPC130108070,0
+Gemini,gemini-3.5-flash-lite,781,0,0.02,Minimal activity and no video plays.,MHxPC130318290,0
+Gemini,gemini-3.5-flash-lite,782,0,0.02,Very low event count across only two days.,MHxPC130318371,0
+Gemini,gemini-3.5-flash-lite,783,0,0.05,Insufficient activity level to indicate course completion.,MHxPC130222732,0
+Gemini,gemini-3.5-flash-lite,784,0,0.02,Extremely low overall engagement.,MHxPC130491591,0
+Gemini,gemini-3.5-flash-lite,785,1,0.72,High video plays and significant event count.,MHxPC130287938,0
+Gemini,gemini-3.5-flash-lite,786,0,0.01,Zero events and no video activity.,MHxPC130570931,0
+Gemini,gemini-3.5-flash-lite,787,1,0.65,High video activity and substantial total events.,MHxPC130515438,0
+Gemini,gemini-3.5-flash-lite,788,0,0.01,Zero engagement across all metrics.,MHxPC130259024,0
+Gemini,gemini-3.5-flash-lite,789,0,0.02,Very low event generation and no videos.,MHxPC130344213,0
+Gemini,gemini-3.5-flash-lite,790,0,0.1,Low active days despite moderate video plays.,MHxPC130506180,0
+Gemini,gemini-3.5-flash-lite,791,0,0.01,Almost no engagement.,MHxPC130449829,0
+Gemini,gemini-3.5-flash-lite,792,0,0.02,Minimal events and low video views.,MHxPC130139501,0
+Gemini,gemini-3.5-flash-lite,793,0,0.01,Virtually inactive.,MHxPC130070771,0
+Gemini,gemini-3.5-flash-lite,794,0,0.01,Zero chapters accessed and minimal events.,MHxPC130012782,0
+Gemini,gemini-3.5-flash-lite,795,0,0.01,Very low event count and no video plays.,MHxPC130505105,0
+Gemini,gemini-3.5-flash-lite,796,0,0.01,Negligible activity.,MHxPC130471315,0
+Gemini,gemini-3.5-flash-lite,797,1,0.68,High video plays and solid event generation.,MHxPC130224959,0
+Gemini,gemini-3.5-flash-lite,798,0,0.01,No activity recorded.,MHxPC130532517,0
+Gemini,gemini-3.5-flash-lite,799,0,0.01,Single event with no progress.,MHxPC130149050,0
+Gemini,gemini-3.5-flash-lite,800,0,0.05,Very low engagement across few active days with no videos.,MHxPC130477776,0
+Gemini,gemini-3.5-flash-lite,801,0,0.15,Low events and active days despite some video plays.,MHxPC130292523,0
+Gemini,gemini-3.5-flash-lite,802,0,0.0,Zero activity and zero events recorded.,MHxPC130029220,0
+Gemini,gemini-3.5-flash-lite,803,0,0.05,Very low total events and active days.,MHxPC130125440,0
+Gemini,gemini-3.5-flash-lite,804,0,0.0,Minimal activity with almost no events or chapters.,MHxPC130143328,0
+Gemini,gemini-3.5-flash-lite,805,0,0.1,Low event count and few active days.,MHxPC130078133,0
+Gemini,gemini-3.5-flash-lite,806,0,0.0,No activity recorded.,MHxPC130395291,0
+Gemini,gemini-3.5-flash-lite,807,0,0.05,Low event count and low video activity.,MHxPC130126206,0
+Gemini,gemini-3.5-flash-lite,808,0,0.0,Extremely low engagement and zero chapters.,MHxPC130158792,0
+Gemini,gemini-3.5-flash-lite,809,0,0.05,Very low event count across only one active day.,MHxPC130301614,0
+Gemini,gemini-3.5-flash-lite,810,0,0.0,No events or chapters accessed.,MHxPC130251411,0
+Gemini,gemini-3.5-flash-lite,811,0,0.05,Very low overall engagement.,MHxPC130268038,0
+Gemini,gemini-3.5-flash-lite,812,0,0.0,Zero activity.,MHxPC130334705,0
+Gemini,gemini-3.5-flash-lite,813,1,0.9,"High event count, many active days, and substantial video plays.",MHxPC130238275,1
+Gemini,gemini-3.5-flash-lite,814,0,0.0,No activity recorded.,MHxPC130582468,0
+Gemini,gemini-3.5-flash-lite,815,0,0.02,Very low events and only one active day.,MHxPC130406202,0
+Gemini,gemini-3.5-flash-lite,816,0,0.05,Low active days and zero video engagement.,MHxPC130578761,0
+Gemini,gemini-3.5-flash-lite,817,0,0.0,Zero events and virtually no engagement.,MHxPC130522550,0
+Gemini,gemini-3.5-flash-lite,818,0,0.0,Extremely minimal event count.,MHxPC130468575,0
+Gemini,gemini-3.5-flash-lite,819,0,0.05,Low event count and minimal active days.,MHxPC130476288,0
+Gemini,gemini-3.5-flash-lite,820,0,0.0,Very low engagement across all metrics.,MHxPC130263865,0
+Gemini,gemini-3.5-flash-lite,821,0,0.0,Minimal activity and no chapters accessed.,MHxPC130264004,0
+Gemini,gemini-3.5-flash-lite,822,0,0.05,Insufficient active days and total events for certification.,MHxPC130371079,0
+Gemini,gemini-3.5-flash-lite,823,0,0.0,Low event count and minimal active days.,MHxPC130461481,0
+Gemini,gemini-3.5-flash-lite,824,0,0.0,Low engagement with only a few events.,MHxPC130083741,0
+Gemini,gemini-3.5-flash-lite,825,0,0.0,Low event volume and few active days.,MHxPC130301219,0
+Gemini,gemini-3.5-flash-lite,826,0,0.0,Extremely minimal activity on a single day.,MHxPC130236713,0
+Gemini,gemini-3.5-flash-lite,827,0,0.0,Zero active days and zero events.,MHxPC130037839,0
+Gemini,gemini-3.5-flash-lite,828,0,0.0,Zero events and zero active days recorded.,MHxPC130548423,0
+Gemini,gemini-3.5-flash-lite,829,0,0.0,No active days and zero total events.,MHxPC130152490,0
+Gemini,gemini-3.5-flash-lite,830,0,0.1,Moderate engagement but lacks sufficient depth for certification.,MHxPC130490849,0
+Gemini,gemini-3.5-flash-lite,831,0,0.0,Low event count and very few chapters accessed.,MHxPC130296407,0
+Gemini,gemini-3.5-flash-lite,832,0,0.0,Low event volume and limited active days.,MHxPC130050866,0
+Gemini,gemini-3.5-flash-lite,833,0,0.0,Zero activity across all measures.,MHxPC130148551,0
+Gemini,gemini-3.5-flash-lite,834,0,0.0,Negligible events and no chapter access.,MHxPC130337424,0
+Gemini,gemini-3.5-flash-lite,835,0,0.0,Low active days and minimal total events.,MHxPC130261868,0
+Gemini,gemini-3.5-flash-lite,836,0,0.0,Single active day with very low events.,MHxPC130021222,0
+Gemini,gemini-3.5-flash-lite,837,0,0.0,No recorded events or active days.,MHxPC130588185,0
+Gemini,gemini-3.5-flash-lite,838,0,0.0,Almost no activity or engagement.,MHxPC130045935,0
+Gemini,gemini-3.5-flash-lite,839,0,0.0,Only one event recorded on a single day.,MHxPC130365937,0
+Gemini,gemini-3.5-flash-lite,840,0,0.0,"Very low events and active days, no certification likelihood.",MHxPC130191643,0
+Gemini,gemini-3.5-flash-lite,841,0,0.2,Moderate activity but insufficient engagement for certification.,MHxPC130395192,0
+Gemini,gemini-3.5-flash-lite,842,0,0.0,Zero activity and engagement.,MHxPC130337262,0
+Gemini,gemini-3.5-flash-lite,843,0,0.0,Zero activity and engagement.,MHxPC130038063,0
+Gemini,gemini-3.5-flash-lite,844,0,0.0,Zero activity and engagement.,MHxPC130447659,0
+Gemini,gemini-3.5-flash-lite,845,1,0.9,"Extremely high events, active days, and video plays.",MHxPC130573372,0
+Gemini,gemini-3.5-flash-lite,846,0,0.0,Minimal events and active days.,MHxPC130427662,0
+Gemini,gemini-3.5-flash-lite,847,0,0.0,Minimal events and active days.,MHxPC130208799,0
+Gemini,gemini-3.5-flash-lite,848,0,0.0,Low activity and only one active day.,MHxPC130193540,0
+Gemini,gemini-3.5-flash-lite,849,0,0.0,Zero activity and engagement.,MHxPC130185376,0
+Gemini,gemini-3.5-flash-lite,850,0,0.0,Low events and active days despite one forum post.,MHxPC130199071,0
+Gemini,gemini-3.5-flash-lite,851,0,0.0,Minimal events and active days.,MHxPC130093923,0
+Gemini,gemini-3.5-flash-lite,852,1,0.85,"High chapters accessed, events, and active days.",MHxPC130367894,1
+Gemini,gemini-3.5-flash-lite,853,0,0.0,Minimal events and active days.,MHxPC130421624,0
+Gemini,gemini-3.5-flash-lite,854,0,0.0,Zero activity and engagement.,MHxPC130372531,0
+Gemini,gemini-3.5-flash-lite,855,0,0.0,Low active days and events.,MHxPC130229506,0
+Gemini,gemini-3.5-flash-lite,856,0,0.0,Zero activity and engagement.,MHxPC130055927,0
+Gemini,gemini-3.5-flash-lite,857,0,0.0,Zero activity and engagement.,MHxPC130409686,0
+Gemini,gemini-3.5-flash-lite,858,0,0.0,Low events and active days.,MHxPC130464791,0
+Gemini,gemini-3.5-flash-lite,859,0,0.0,Low events and active days.,MHxPC130515201,0
+Gemini,gemini-3.5-flash-lite,860,0,0.0,Extremely low activity with only 1 event and 1 active day.,MHxPC130418042,0
+Gemini,gemini-3.5-flash-lite,861,0,0.0,Zero events and zero active days indicate no meaningful engagement.,MHxPC130563779,0
+Gemini,gemini-3.5-flash-lite,862,0,0.0,Minimal activity with only 2 events and 1 active day.,MHxPC130175390,0
+Gemini,gemini-3.5-flash-lite,863,0,0.0,"No events, chapters, or active days recorded.",MHxPC130345314,0
+Gemini,gemini-3.5-flash-lite,864,0,0.01,Very low activity with only 10 events and 2 active days.,MHxPC130354678,0
+Gemini,gemini-3.5-flash-lite,865,0,0.0,Zero events and zero active days recorded.,MHxPC130223044,0
+Gemini,gemini-3.5-flash-lite,866,0,0.0,Low activity with only 34 events across 1 active day.,MHxPC130420007,0
+Gemini,gemini-3.5-flash-lite,867,0,0.0,Minimal engagement with only 3 events across 2 active days.,MHxPC130286232,0
+Gemini,gemini-3.5-flash-lite,868,0,0.05,Moderate event count but insufficient active days and chapters for certification.,MHxPC130234439,0
+Gemini,gemini-3.5-flash-lite,869,0,0.0,Very low activity with only 3 events across 3 active days.,MHxPC130314117,0
+Gemini,gemini-3.5-flash-lite,870,0,0.05,Short active duration with only 3 active days and 179 events.,MHxPC130010409,0
+Gemini,gemini-3.5-flash-lite,871,0,0.0,Very low engagement with 17 events across 4 active days.,MHxPC130021353,0
+Gemini,gemini-3.5-flash-lite,872,0,0.15,"Moderate engagement with 1257 events, but active days and chapters are too low.",MHxPC130144417,0
+Gemini,gemini-3.5-flash-lite,873,0,0.01,Low activity with only 30 events across 4 active days.,MHxPC130185766,0
+Gemini,gemini-3.5-flash-lite,874,0,0.0,Minimal activity with only 4 events and 1 active day.,MHxPC130064562,0
+Gemini,gemini-3.5-flash-lite,875,0,0.0,Zero events and zero active days recorded.,MHxPC130151046,0
+Gemini,gemini-3.5-flash-lite,876,0,0.0,Zero events and zero active days recorded.,MHxPC130152126,0
+Gemini,gemini-3.5-flash-lite,877,0,0.0,Zero events and zero active days recorded.,MHxPC130048308,0
+Gemini,gemini-3.5-flash-lite,878,0,0.02,Low engagement with only 82 events across 8 active days.,MHxPC130270076,0
+Gemini,gemini-3.5-flash-lite,879,0,0.0,Extremely low activity with only 1 event and 1 active day.,MHxPC130291973,0
+Gemini,gemini-3.5-flash-lite,880,1,0.95,"Extremely high engagement with 99 active days and over 10,000 events.",MHxPC130288187,1
+Gemini,gemini-3.5-flash-lite,881,0,0.0,No activity or events recorded.,MHxPC130303398,0
+Gemini,gemini-3.5-flash-lite,882,0,0.01,Very low activity with only one active day and minimal events.,MHxPC130300124,0
+Gemini,gemini-3.5-flash-lite,883,0,0.15,"Moderate event count, but zero video plays and low active days.",MHxPC130576260,0
+Gemini,gemini-3.5-flash-lite,884,0,0.05,Low engagement with only four active days and few events.,MHxPC130511908,0
+Gemini,gemini-3.5-flash-lite,885,0,0.08,Insufficient overall event volume and chapters accessed.,MHxPC130565675,0
+Gemini,gemini-3.5-flash-lite,886,0,0.0,No activity recorded.,MHxPC130054155,0
+Gemini,gemini-3.5-flash-lite,887,0,0.05,Low engagement with only nine active days and few events.,MHxPC130543612,0
+Gemini,gemini-3.5-flash-lite,888,0,0.0,Minimal activity with only one active day.,MHxPC130454657,0
+Gemini,gemini-3.5-flash-lite,889,0,0.0,Almost zero activity across two active days.,MHxPC130299649,0
+Gemini,gemini-3.5-flash-lite,890,0,0.0,No activity or events recorded.,MHxPC130154103,0
+Gemini,gemini-3.5-flash-lite,891,1,0.85,"High video plays, strong event count, and multiple active days.",MHxPC130381986,0
+Gemini,gemini-3.5-flash-lite,892,0,0.1,Moderate active days but insufficient overall events for certification.,MHxPC130233512,0
+Gemini,gemini-3.5-flash-lite,893,0,0.01,Very low event count across two active days.,MHxPC130554880,0
+Gemini,gemini-3.5-flash-lite,894,0,0.05,Single active day with no video usage.,MHxPC130588167,0
+Gemini,gemini-3.5-flash-lite,895,1,0.8,Strong engagement with solid active days and high event count.,MHxPC130584193,0
+Gemini,gemini-3.5-flash-lite,896,0,0.02,Very low event count despite multiple active days.,MHxPC130031280,0
+Gemini,gemini-3.5-flash-lite,897,0,0.0,Minimal activity on a single day.,MHxPC130592269,0
+Gemini,gemini-3.5-flash-lite,898,0,0.01,Very low event count and zero chapters accessed.,MHxPC130522771,0
+Gemini,gemini-3.5-flash-lite,899,0,0.2,Moderate events but too few active days to sustain certification.,MHxPC130319157,0
+Gemini,gemini-3.5-flash-lite,900,0,0.0,Zero events and zero active days indicate no engagement.,MHxPC130083240,0
+Gemini,gemini-3.5-flash-lite,901,0,0.05,Very low activity with only 2 active days.,MHxPC130596570,0
+Gemini,gemini-3.5-flash-lite,902,1,0.75,High event count and multiple chapters accessed across 11 days.,MHxPC130247680,0
+Gemini,gemini-3.5-flash-lite,903,0,0.0,Zero events and no activity recorded.,MHxPC130356876,0
+Gemini,gemini-3.5-flash-lite,904,0,0.0,Extremely minimal activity with only 5 events on 1 day.,MHxPC130463392,0
+Gemini,gemini-3.5-flash-lite,905,0,0.0,Very low event count across only 2 active days.,MHxPC130379133,0
+Gemini,gemini-3.5-flash-lite,906,0,0.05,Low event count and minimal chapter access.,MHxPC130447998,0
+Gemini,gemini-3.5-flash-lite,907,0,0.0,Negligible event count and no chapters accessed.,MHxPC130176987,0
+Gemini,gemini-3.5-flash-lite,908,0,0.0,Minimal activity on a single active day.,MHxPC130240067,0
+Gemini,gemini-3.5-flash-lite,909,0,0.0,Very low overall engagement with only 12 events.,MHxPC130311074,0
+Gemini,gemini-3.5-flash-lite,910,1,0.8,"High video plays, substantial events, and good active days.",MHxPC130541755,0
+Gemini,gemini-3.5-flash-lite,911,0,0.1,Activity is restricted to a single active day.,MHxPC130528376,0
+Gemini,gemini-3.5-flash-lite,912,0,0.0,Extremely low event count and minimal participation.,MHxPC130576956,0
+Gemini,gemini-3.5-flash-lite,913,0,0.05,Low event count and limited active days.,MHxPC130291309,0
+Gemini,gemini-3.5-flash-lite,914,0,0.0,Zero events recorded.,MHxPC130197242,0
+Gemini,gemini-3.5-flash-lite,915,0,0.0,Insignificant engagement with only 1 event.,MHxPC130186822,0
+Gemini,gemini-3.5-flash-lite,916,0,0.05,Low activity restricted to a single active day.,MHxPC130186415,0
+Gemini,gemini-3.5-flash-lite,917,0,0.0,Zero events and no engagement.,MHxPC130446468,0
+Gemini,gemini-3.5-flash-lite,918,0,0.15,Moderate events but insufficient active days.,MHxPC130540174,0
+Gemini,gemini-3.5-flash-lite,919,1,0.9,"High video activity, thousands of events, and extensive active days.",MHxPC130226535,1
+Gemini,gemini-3.5-flash-lite,920,0,0.0,Extremely low activity with only 1 event and 1 active day.,MHxPC130046957,0
+Gemini,gemini-3.5-flash-lite,921,0,0.0,Zero events and zero video plays indicate no engagement.,MHxPC130480091,0
+Gemini,gemini-3.5-flash-lite,922,0,0.0,No activity recorded at all.,MHxPC130251958,0
+Gemini,gemini-3.5-flash-lite,923,0,0.0,Minimal activity with only 3 events and no chapters accessed.,MHxPC130224835,0
+Gemini,gemini-3.5-flash-lite,924,0,0.0,Very low events and no chapter access.,MHxPC130097572,0
+Gemini,gemini-3.5-flash-lite,925,0,0.0,Low engagement with only 1 active day.,MHxPC130006666,0
+Gemini,gemini-3.5-flash-lite,926,0,0.0,Zero events and no engagement.,MHxPC130463290,0
+Gemini,gemini-3.5-flash-lite,927,0,0.0,Very low activity with only 1 active day.,MHxPC130595172,0
+Gemini,gemini-3.5-flash-lite,928,0,0.15,"Moderate event count across 19 days, but insufficient for certification.",MHxPC130203772,0
+Gemini,gemini-3.5-flash-lite,929,0,0.0,No course events recorded.,MHxPC130386880,0
+Gemini,gemini-3.5-flash-lite,930,0,0.0,Only 1 event on 1 active day.,MHxPC130178281,0
+Gemini,gemini-3.5-flash-lite,931,0,0.0,Minimal activity with only 2 events.,MHxPC130205116,0
+Gemini,gemini-3.5-flash-lite,932,1,0.85,"High video plays, many active days, and thousands of events indicate completion.",MHxPC130569640,1
+Gemini,gemini-3.5-flash-lite,933,0,0.0,Very low engagement with only 1 active day.,MHxPC130290906,0
+Gemini,gemini-3.5-flash-lite,934,0,0.1,Moderate video plays but very few active days.,MHxPC130243406,0
+Gemini,gemini-3.5-flash-lite,935,0,0.0,No events recorded.,MHxPC130122015,0
+Gemini,gemini-3.5-flash-lite,936,0,0.0,Very low event count and no video activity.,MHxPC130410488,0
+Gemini,gemini-3.5-flash-lite,937,0,0.0,Low event count on a single active day.,MHxPC130456297,0
+Gemini,gemini-3.5-flash-lite,938,0,0.0,Activity confined to a single active day.,MHxPC130456664,0
+Gemini,gemini-3.5-flash-lite,939,0,0.05,"Some chapters accessed, but low overall engagement.",MHxPC130175307,0
+Gemini,gemini-3.5-flash-lite,940,0,0.05,"Low active days and few events, unlikely to achieve certification.",MHxPC130142274,0
+Gemini,gemini-3.5-flash-lite,941,0,0.01,Minimal activity with only 3 events and 1 active day.,MHxPC130252055,0
+Gemini,gemini-3.5-flash-lite,942,0,0.01,Extremely low event count and no video activity.,MHxPC130556112,0
+Gemini,gemini-3.5-flash-lite,943,0,0.0,Zero events and zero active days indicate no engagement.,MHxPC130541308,0
+Gemini,gemini-3.5-flash-lite,944,0,0.02,Very low event count across only two active days.,MHxPC130454279,0
+Gemini,gemini-3.5-flash-lite,945,0,0.0,Zero active days and zero events.,MHxPC130013911,0
+Gemini,gemini-3.5-flash-lite,946,0,0.01,Negligible event count and no video plays.,MHxPC130400646,0
+Gemini,gemini-3.5-flash-lite,947,0,0.01,Almost no engagement with only 2 events.,MHxPC130430380,0
+Gemini,gemini-3.5-flash-lite,948,0,0.0,No active days or events recorded.,MHxPC130197763,0
+Gemini,gemini-3.5-flash-lite,949,0,0.0,Zero events and minimal chapter access.,MHxPC130062610,0
+Gemini,gemini-3.5-flash-lite,950,0,0.01,Single event recorded with no meaningful progress.,MHxPC130279875,0
+Gemini,gemini-3.5-flash-lite,951,0,0.0,Completely inactive learner profile.,MHxPC130218391,0
+Gemini,gemini-3.5-flash-lite,952,0,0.15,Moderate event count but insufficient active days and low video activity.,MHxPC130517976,0
+Gemini,gemini-3.5-flash-lite,953,0,0.02,Only one active day with very few total events.,MHxPC130438439,0
+Gemini,gemini-3.5-flash-lite,954,0,0.02,Low event count and lack of video engagement.,MHxPC130228715,0
+Gemini,gemini-3.5-flash-lite,955,0,0.01,Very low activity with only 12 events.,MHxPC130586262,0
+Gemini,gemini-3.5-flash-lite,956,0,0.03,Single active day despite some video plays.,MHxPC130355009,0
+Gemini,gemini-3.5-flash-lite,957,0,0.0,Zero engagement across all metrics.,MHxPC130313702,0
+Gemini,gemini-3.5-flash-lite,958,0,0.01,Minimal activity with only 3 events.,MHxPC130168163,0
+Gemini,gemini-3.5-flash-lite,959,0,0.02,Low event count and single active day.,MHxPC130594438,0
+Gemini,gemini-3.5-flash-lite,960,0,0.0,Very low event count and only one active day indicates lack of sustained engagement.,MHxPC130065676,0
+Gemini,gemini-3.5-flash-lite,961,0,0.0,Minimal activity and zero video plays indicate the learner dropped out.,MHxPC130431854,0
+Gemini,gemini-3.5-flash-lite,962,0,0.0,Zero events and zero active days show no participation.,MHxPC130175528,0
+Gemini,gemini-3.5-flash-lite,963,0,0.0,No activity recorded at all.,MHxPC130439984,0
+Gemini,gemini-3.5-flash-lite,964,0,0.0,Extremely low events and single active day.,MHxPC130217578,0
+Gemini,gemini-3.5-flash-lite,965,0,0.0,No engagement or event activity.,MHxPC130292228,0
+Gemini,gemini-3.5-flash-lite,966,0,0.0,Zero engagement across all metrics.,MHxPC130404404,0
+Gemini,gemini-3.5-flash-lite,967,0,0.0,Zero events and minimal chapter access.,MHxPC130123726,0
+Gemini,gemini-3.5-flash-lite,968,0,0.05,Too few active days and low event count to reach certification.,MHxPC130255791,0
+Gemini,gemini-3.5-flash-lite,969,0,0.0,Minimal activity on a single day.,MHxPC130068864,0
+Gemini,gemini-3.5-flash-lite,970,0,0.0,No activity recorded.,MHxPC130119395,0
+Gemini,gemini-3.5-flash-lite,971,0,0.0,Very low event count and single active day.,MHxPC130419278,0
+Gemini,gemini-3.5-flash-lite,972,0,0.0,Negligible event count and zero video plays.,MHxPC130233948,0
+Gemini,gemini-3.5-flash-lite,973,0,0.0,Minimal events on a single day.,MHxPC130393579,0
+Gemini,gemini-3.5-flash-lite,974,0,0.0,Extremely low engagement.,MHxPC130464227,0
+Gemini,gemini-3.5-flash-lite,975,0,0.0,Zero activity.,MHxPC130258969,0
+Gemini,gemini-3.5-flash-lite,976,0,0.0,Zero activity.,MHxPC130227221,0
+Gemini,gemini-3.5-flash-lite,977,0,0.1,Low event count and few active days fall short of typical certified profiles.,MHxPC130506377,0
+Gemini,gemini-3.5-flash-lite,978,0,0.0,Almost no engagement recorded.,MHxPC130448722,0
+Gemini,gemini-3.5-flash-lite,979,0,0.0,Almost no engagement recorded.,MHxPC130302807,0
+Gemini,gemini-3.5-flash-lite,980,0,0.05,Very low activity across only one day suggests lack of sustained engagement.,MHxPC130359398,0
+Gemini,gemini-3.5-flash-lite,981,0,0.0,Zero events and zero active days indicate no interaction with the course.,MHxPC130551116,0
+Gemini,gemini-3.5-flash-lite,982,0,0.01,Minimal events and single active day indicate non-completion.,MHxPC130107670,0
+Gemini,gemini-3.5-flash-lite,983,0,0.0,No activity recorded at all.,MHxPC130089241,0
+Gemini,gemini-3.5-flash-lite,984,0,0.02,Very low event count and minimal chapter access.,MHxPC130196999,0
+Gemini,gemini-3.5-flash-lite,985,0,0.01,Negligible engagement with only two events.,MHxPC130256168,0
+Gemini,gemini-3.5-flash-lite,986,0,0.0,Zero active days and no events.,MHxPC130567635,0
+Gemini,gemini-3.5-flash-lite,987,0,0.0,No activity recorded.,MHxPC130210312,0
+Gemini,gemini-3.5-flash-lite,988,0,0.0,No activity recorded.,MHxPC130498994,0
+Gemini,gemini-3.5-flash-lite,989,0,0.02,Very low event count and minimal active days.,MHxPC130084299,0
+Gemini,gemini-3.5-flash-lite,990,0,0.08,Low active days and limited chapter access despite some video plays.,MHxPC130071628,0
+Gemini,gemini-3.5-flash-lite,991,0,0.15,"Moderate video activity and events, but active days are too few for certification.",MHxPC130501748,0
+Gemini,gemini-3.5-flash-lite,992,0,0.0,No active days or events.,MHxPC130130777,0
+Gemini,gemini-3.5-flash-lite,993,0,0.03,Very low engagement across only two active days.,MHxPC130045512,0
+Gemini,gemini-3.5-flash-lite,994,0,0.01,Extremely low event count on a single day.,MHxPC130456938,0
+Gemini,gemini-3.5-flash-lite,995,0,0.01,Zero events generated and minimal chapter access.,MHxPC130374741,0
+Gemini,gemini-3.5-flash-lite,996,0,0.02,Very low event count and single active day.,MHxPC130562576,0
+Gemini,gemini-3.5-flash-lite,997,0,0.01,Almost no engagement.,MHxPC130021492,0
+Gemini,gemini-3.5-flash-lite,998,0,0.01,Extremely low activity levels.,MHxPC130020004,0
+Gemini,gemini-3.5-flash-lite,999,0,0.0,Zero activity recorded.,MHxPC130237913,0
+Gemini,gemini-3.5-flash-lite,1000,0,0.05,Very few events and active days indicate lack of serious engagement.,MHxPC130349561,0
+Gemini,gemini-3.5-flash-lite,1001,0,0.15,"Moderate active days and chapter accesses, but zero video engagement.",MHxPC130426848,0
+Gemini,gemini-3.5-flash-lite,1002,0,0.02,Minimal activity across all metrics with only one active day.,MHxPC130392820,0
+Gemini,gemini-3.5-flash-lite,1003,1,0.95,"Extremely high event count, video plays, and consistent active days.",MHxPC130560262,0
+Gemini,gemini-3.5-flash-lite,1004,0,0.08,Low event count and few active days suggest course abandonment.,MHxPC130138480,0
+Gemini,gemini-3.5-flash-lite,1005,0,0.0,Zero events and zero active days.,MHxPC130375875,0
+Gemini,gemini-3.5-flash-lite,1006,0,0.0,Zero events and zero active days.,MHxPC130279823,0
+Gemini,gemini-3.5-flash-lite,1007,0,0.01,Extremely low activity with only one active day.,MHxPC130246293,0
+Gemini,gemini-3.5-flash-lite,1008,0,0.01,Almost no engagement and only one active day.,MHxPC130359272,0
+Gemini,gemini-3.5-flash-lite,1009,0,0.01,Minimal events and chapters accessed.,MHxPC130300988,0
+Gemini,gemini-3.5-flash-lite,1010,0,0.04,Very low event count and few active days.,MHxPC130230792,0
+Gemini,gemini-3.5-flash-lite,1011,0,0.0,Zero events and zero active days.,MHxPC130264574,0
+Gemini,gemini-3.5-flash-lite,1012,0,0.0,Negligible event count and zero chapters accessed.,MHxPC130290282,0
+Gemini,gemini-3.5-flash-lite,1013,0,0.01,Extremely low event count and single active day.,MHxPC130497676,0
+Gemini,gemini-3.5-flash-lite,1014,0,0.0,Negligible activity and single active day.,MHxPC130040523,0
+Gemini,gemini-3.5-flash-lite,1015,1,0.88,"High video plays, substantial event count, and good active days.",MHxPC130112696,0
+Gemini,gemini-3.5-flash-lite,1016,0,0.1,High video plays but confined to only one active day.,MHxPC130536833,0
+Gemini,gemini-3.5-flash-lite,1017,0,0.02,Very low event count and minimal chapter interaction.,MHxPC130525427,0
+Gemini,gemini-3.5-flash-lite,1018,0,0.0,Zero events and zero active days.,MHxPC130382695,0
+Gemini,gemini-3.5-flash-lite,1019,0,0.01,Zero total events recorded despite minimal video plays.,MHxPC130479519,0
+Gemini,gemini-3.5-flash-lite,1020,0,0.0,Zero activity and engagement.,MHxPC130564143,0
+Gemini,gemini-3.5-flash-lite,1021,0,0.05,Very low events and active days.,MHxPC130332759,0
+Gemini,gemini-3.5-flash-lite,1022,0,0.01,Minimal events and single active day.,MHxPC130423649,0
+Gemini,gemini-3.5-flash-lite,1023,0,0.0,Zero activity and engagement.,MHxPC130489563,0
+Gemini,gemini-3.5-flash-lite,1024,0,0.0,Zero activity and engagement.,MHxPC130152260,0
+Gemini,gemini-3.5-flash-lite,1025,0,0.02,Very few events despite four active days.,MHxPC130456997,0
+Gemini,gemini-3.5-flash-lite,1026,0,0.01,Extremely low event count.,MHxPC130235531,0
+Gemini,gemini-3.5-flash-lite,1027,0,0.05,Low event count and chapters accessed.,MHxPC130396543,0
+Gemini,gemini-3.5-flash-lite,1028,0,0.01,Minimal interaction and events.,MHxPC130485096,0
+Gemini,gemini-3.5-flash-lite,1029,1,0.85,"High events, active days, and chapters.",MHxPC130249472,1
+Gemini,gemini-3.5-flash-lite,1030,0,0.03,Low event count and active days.,MHxPC130329417,0
+Gemini,gemini-3.5-flash-lite,1031,0,0.0,Zero activity and engagement.,MHxPC130574493,0
+Gemini,gemini-3.5-flash-lite,1032,1,0.75,"High events, chapters, and active days.",MHxPC130167815,1
+Gemini,gemini-3.5-flash-lite,1033,0,0.0,Virtually no activity recorded.,MHxPC130015501,0
+Gemini,gemini-3.5-flash-lite,1034,0,0.1,Low active days and few chapters.,MHxPC130266008,0
+Gemini,gemini-3.5-flash-lite,1035,0,0.0,Zero activity and engagement.,MHxPC130332177,0
+Gemini,gemini-3.5-flash-lite,1036,0,0.0,Zero activity and engagement.,MHxPC130085560,0
+Gemini,gemini-3.5-flash-lite,1037,0,0.2,Moderate activity but few chapters accessed.,MHxPC130013946,0
+Gemini,gemini-3.5-flash-lite,1038,0,0.0,Zero activity and engagement.,MHxPC130037094,0
+Gemini,gemini-3.5-flash-lite,1039,0,0.0,Almost no engagement across multiple courses.,MHxPC130303617,0
+Gemini,gemini-3.5-flash-lite,1040,0,0.0,Zero activity and zero events indicate no participation.,MHxPC130392121,0
+Gemini,gemini-3.5-flash-lite,1041,0,0.0,Minimal interaction with zero events and no video plays.,MHxPC130004625,0
+Gemini,gemini-3.5-flash-lite,1042,0,0.0,Extremely low engagement with only one event on one day.,MHxPC130335023,0
+Gemini,gemini-3.5-flash-lite,1043,0,0.0,Very low engagement with only six events.,MHxPC130159246,0
+Gemini,gemini-3.5-flash-lite,1044,1,0.9,High event count across many active days and chapters.,MHxPC130074170,1
+Gemini,gemini-3.5-flash-lite,1045,0,0.0,Low events and minimal active days fail to meet standards.,MHxPC130534684,0
+Gemini,gemini-3.5-flash-lite,1046,0,0.0,Zero activity indicates no course engagement.,MHxPC130571659,0
+Gemini,gemini-3.5-flash-lite,1047,0,0.0,Very few events and active days without video plays.,MHxPC130177286,0
+Gemini,gemini-3.5-flash-lite,1048,0,0.0,Low event count and minimal video plays.,MHxPC130000968,0
+Gemini,gemini-3.5-flash-lite,1049,0,0.0,Zero events and no video activity.,MHxPC130181617,0
+Gemini,gemini-3.5-flash-lite,1050,0,0.0,No active days or events recorded.,MHxPC130501064,0
+Gemini,gemini-3.5-flash-lite,1051,0,0.0,Insolvent participation with only one event.,MHxPC130548960,0
+Gemini,gemini-3.5-flash-lite,1052,0,0.0,Minimal events and zero video plays.,MHxPC130204436,0
+Gemini,gemini-3.5-flash-lite,1053,0,0.0,Zero events and no active participation.,MHxPC130225077,0
+Gemini,gemini-3.5-flash-lite,1054,0,0.0,Zero events and no engagement.,MHxPC130316696,0
+Gemini,gemini-3.5-flash-lite,1055,0,0.0,Minimal activity with only one event.,MHxPC130168965,0
+Gemini,gemini-3.5-flash-lite,1056,0,0.0,Low events and insufficient active days.,MHxPC130590391,0
+Gemini,gemini-3.5-flash-lite,1057,0,0.0,Zero activity and events.,MHxPC130259791,0
+Gemini,gemini-3.5-flash-lite,1058,1,0.85,High event count and active days indicate strong persistence.,MHxPC130253483,0
+Gemini,gemini-3.5-flash-lite,1059,0,0.2,High video plays but very few active days and events.,MHxPC130081276,0
+Gemini,gemini-3.5-flash-lite,1060,0,0.05,Very low event count and minimal active days indicate lack of engagement.,MHxPC130101320,0
+Gemini,gemini-3.5-flash-lite,1061,0,0.01,Extremely low activity with only one active day and few events.,MHxPC130474663,0
+Gemini,gemini-3.5-flash-lite,1062,0,0.0,Almost zero engagement with only one event and zero chapters accessed.,MHxPC130570969,0
+Gemini,gemini-3.5-flash-lite,1063,0,0.01,Minimal activity with only two events and zero chapters accessed.,MHxPC130349871,0
+Gemini,gemini-3.5-flash-lite,1064,0,0.0,No activity recorded across any metrics.,MHxPC130548581,0
+Gemini,gemini-3.5-flash-lite,1065,0,0.0,Zero events and zero active days indicate inactive enrollment.,MHxPC130463621,0
+Gemini,gemini-3.5-flash-lite,1066,0,0.0,No events or chapter access recorded.,MHxPC130315893,0
+Gemini,gemini-3.5-flash-lite,1067,1,0.85,"High video plays, substantial events, and good active days.",MHxPC130333253,1
+Gemini,gemini-3.5-flash-lite,1068,0,0.05,Low event count and very few active days.,MHxPC130502988,0
+Gemini,gemini-3.5-flash-lite,1069,0,0.0,Negligible activity with only one event.,MHxPC130466127,0
+Gemini,gemini-3.5-flash-lite,1070,0,0.0,No events and zero active days.,MHxPC130209821,0
+Gemini,gemini-3.5-flash-lite,1071,0,0.0,Completely inactive with zero events.,MHxPC130105330,0
+Gemini,gemini-3.5-flash-lite,1072,0,0.05,Very low active days and minimal event count.,MHxPC130557414,0
+Gemini,gemini-3.5-flash-lite,1073,1,0.75,High video activity and strong event count indicate sustained participation.,MHxPC130269632,0
+Gemini,gemini-3.5-flash-lite,1074,0,0.02,Very low engagement across multiple courses with no video activity.,MHxPC130233710,0
+Gemini,gemini-3.5-flash-lite,1075,0,0.05,Low event count and minimal active days.,MHxPC130253445,0
+Gemini,gemini-3.5-flash-lite,1076,0,0.0,Virtually no activity with a single event.,MHxPC130184392,0
+Gemini,gemini-3.5-flash-lite,1077,0,0.02,Very low active days and minimal total events.,MHxPC130200172,0
+Gemini,gemini-3.5-flash-lite,1078,0,0.0,Zero activity recorded.,MHxPC130377502,0
+Gemini,gemini-3.5-flash-lite,1079,0,0.05,Low event count and few active days.,MHxPC130002794,0
+Gemini,gemini-3.5-flash-lite,1080,0,0.0,"Zero activity, no engagement, did not complete course requirements.",MHxPC130554140,0
+Gemini,gemini-3.5-flash-lite,1081,0,0.05,"Very low event count and active days, insufficient for certification.",MHxPC130235282,0
+Gemini,gemini-3.5-flash-lite,1082,0,0.0,Minimal events across only 1 active day.,MHxPC130160451,0
+Gemini,gemini-3.5-flash-lite,1083,0,0.0,Almost no activity and zero chapters accessed.,MHxPC130233985,0
+Gemini,gemini-3.5-flash-lite,1084,0,0.1,Low active days and few chapters accessed despite some video plays.,MHxPC130053716,0
+Gemini,gemini-3.5-flash-lite,1085,0,0.0,Very low overall engagement and active days.,MHxPC130222673,0
+Gemini,gemini-3.5-flash-lite,1086,0,0.0,Minimal events and single active day.,MHxPC130172315,0
+Gemini,gemini-3.5-flash-lite,1087,0,0.0,Completely inactive learner profile.,MHxPC130256767,0
+Gemini,gemini-3.5-flash-lite,1088,0,0.05,"Low active days and event count, lack of video activity.",MHxPC130214939,0
+Gemini,gemini-3.5-flash-lite,1089,0,0.0,Only 1 event generated and zero chapters accessed.,MHxPC130506228,0
+Gemini,gemini-3.5-flash-lite,1090,0,0.0,Very low engagement across only 2 active days.,MHxPC130513733,0
+Gemini,gemini-3.5-flash-lite,1091,0,0.0,Minimal activity and zero chapters accessed.,MHxPC130060367,0
+Gemini,gemini-3.5-flash-lite,1092,0,0.0,Low activity confined to a single day.,MHxPC130213819,0
+Gemini,gemini-3.5-flash-lite,1093,0,0.0,Negligible events and no chapter access.,MHxPC130267570,0
+Gemini,gemini-3.5-flash-lite,1094,0,0.0,Very low event count on a single active day.,MHxPC130555519,0
+Gemini,gemini-3.5-flash-lite,1095,0,0.0,Minimal engagement across one active day.,MHxPC130372217,0
+Gemini,gemini-3.5-flash-lite,1096,0,0.0,Very low event volume and single active day.,MHxPC130026099,0
+Gemini,gemini-3.5-flash-lite,1097,0,0.0,"No events recorded, insufficient participation.",MHxPC130571119,0
+Gemini,gemini-3.5-flash-lite,1098,0,0.05,Insufficient active days and chapter progress.,MHxPC130193997,0
+Gemini,gemini-3.5-flash-lite,1099,0,0.1,High videos but insufficient active days and chapter reach.,MHxPC130098444,0
+Gemini,gemini-3.5-flash-lite,1100,0,0.01,Zero activity and zero events indicate no engagement.,MHxPC130434985,0
+Gemini,gemini-3.5-flash-lite,1101,0,0.05,Very low event count and minimal active days.,MHxPC130487939,0
+Gemini,gemini-3.5-flash-lite,1102,0,0.02,Low events and few chapters accessed across two courses.,MHxPC130154580,0
+Gemini,gemini-3.5-flash-lite,1103,0,0.05,Low event count and minimal active days.,MHxPC130263899,0
+Gemini,gemini-3.5-flash-lite,1104,0,0.01,Zero activity and zero events indicate no engagement.,MHxPC130060518,0
+Gemini,gemini-3.5-flash-lite,1105,0,0.08,"Moderate video plays, but low event count and active days.",MHxPC130135208,0
+Gemini,gemini-3.5-flash-lite,1106,0,0.02,Extremely low events and active days.,MHxPC130102271,0
+Gemini,gemini-3.5-flash-lite,1107,0,0.01,Zero activity and zero events indicate no engagement.,MHxPC130088590,0
+Gemini,gemini-3.5-flash-lite,1108,0,0.01,Virtually no events or chapters accessed.,MHxPC130426210,0
+Gemini,gemini-3.5-flash-lite,1109,0,0.02,Extremely low event count and short duration.,MHxPC130349429,0
+Gemini,gemini-3.5-flash-lite,1110,0,0.02,Very few events and active days.,MHxPC130335025,0
+Gemini,gemini-3.5-flash-lite,1111,0,0.01,Single event and zero chapters accessed.,MHxPC130301688,0
+Gemini,gemini-3.5-flash-lite,1112,0,0.05,Low event count and minimal active days.,MHxPC130120773,0
+Gemini,gemini-3.5-flash-lite,1113,0,0.01,Very low events and no substantial engagement.,MHxPC130156412,0
+Gemini,gemini-3.5-flash-lite,1114,0,0.01,Single event and zero chapters accessed.,MHxPC130261329,0
+Gemini,gemini-3.5-flash-lite,1115,0,0.01,Very low events and no chapter engagement.,MHxPC130361954,0
+Gemini,gemini-3.5-flash-lite,1116,0,0.02,Low event count and minimal active days.,MHxPC130450998,0
+Gemini,gemini-3.5-flash-lite,1117,0,0.01,Zero activity and zero events indicate no engagement.,MHxPC130183842,0
+Gemini,gemini-3.5-flash-lite,1118,0,0.25,"High video activity and events, but active days are too few.",MHxPC130565742,0
+Gemini,gemini-3.5-flash-lite,1119,0,0.01,Single event and zero chapters accessed.,MHxPC130483428,0
+Gemini,gemini-3.5-flash-lite,1120,0,0.1,"Only active for 3 days despite high video count, indicating low persistence.",MHxPC130117435,0
+Gemini,gemini-3.5-flash-lite,1121,0,0.05,Very low active days and events.,MHxPC130038394,0
+Gemini,gemini-3.5-flash-lite,1122,1,0.85,High event count and sustained activity across 44 days.,MHxPC130431016,0
+Gemini,gemini-3.5-flash-lite,1123,0,0.1,Low events and limited active days.,MHxPC130184011,0
+Gemini,gemini-3.5-flash-lite,1124,0,0.01,Minimal activity with only 1 active day.,MHxPC130039051,0
+Gemini,gemini-3.5-flash-lite,1125,0,0.0,No activity recorded.,MHxPC130493252,0
+Gemini,gemini-3.5-flash-lite,1126,0,0.05,Active for only 1 day despite video plays.,MHxPC130116726,0
+Gemini,gemini-3.5-flash-lite,1127,0,0.0,Virtually no engagement.,MHxPC130348638,0
+Gemini,gemini-3.5-flash-lite,1128,0,0.05,Very low engagement across only 2 days.,MHxPC130131555,0
+Gemini,gemini-3.5-flash-lite,1129,0,0.0,No activity recorded.,MHxPC130509019,0
+Gemini,gemini-3.5-flash-lite,1130,0,0.05,Extremely low events and no video plays.,MHxPC130524248,0
+Gemini,gemini-3.5-flash-lite,1131,0,0.05,Low engagement across 3 days.,MHxPC130125404,0
+Gemini,gemini-3.5-flash-lite,1132,0,0.0,Zero events and no video interaction.,MHxPC130087874,0
+Gemini,gemini-3.5-flash-lite,1133,0,0.05,Low event count and single active day.,MHxPC130427196,0
+Gemini,gemini-3.5-flash-lite,1134,0,0.05,Very low event volume.,MHxPC130266559,0
+Gemini,gemini-3.5-flash-lite,1135,0,0.0,Almost no engagement.,MHxPC130199722,0
+Gemini,gemini-3.5-flash-lite,1136,0,0.0,No meaningful activity.,MHxPC130434745,0
+Gemini,gemini-3.5-flash-lite,1137,0,0.1,Active for only 2 days.,MHxPC130394934,0
+Gemini,gemini-3.5-flash-lite,1138,0,0.2,Moderate days active but zero video plays.,MHxPC130044133,0
+Gemini,gemini-3.5-flash-lite,1139,0,0.0,Minimal events and no videos.,MHxPC130359714,0
+Gemini,gemini-3.5-flash-lite,1140,0,0.1,Low active days and few events indicate insufficient engagement for certification.,MHxPC130560569,0
+Gemini,gemini-3.5-flash-lite,1141,0,0.0,No activity recorded.,MHxPC130499847,0
+Gemini,gemini-3.5-flash-lite,1142,0,0.0,Zero events and no video plays.,MHxPC130371864,0
+Gemini,gemini-3.5-flash-lite,1143,0,0.0,No video plays and zero chapters accessed.,MHxPC130020920,0
+Gemini,gemini-3.5-flash-lite,1144,0,0.05,Very low event count and minimal chapter access.,MHxPC130152633,0
+Gemini,gemini-3.5-flash-lite,1145,0,0.1,High video plays but very low active days.,MHxPC130057445,0
+Gemini,gemini-3.5-flash-lite,1146,0,0.0,Minimal events and single active day.,MHxPC130272019,0
+Gemini,gemini-3.5-flash-lite,1147,0,0.0,Almost no engagement.,MHxPC130299163,0
+Gemini,gemini-3.5-flash-lite,1148,1,0.7,"Strong event count, multiple active days, and solid video engagement.",MHxPC130541622,0
+Gemini,gemini-3.5-flash-lite,1149,0,0.0,Inactive profile.,MHxPC130310092,0
+Gemini,gemini-3.5-flash-lite,1150,0,0.0,Almost no activity.,MHxPC130229272,0
+Gemini,gemini-3.5-flash-lite,1151,0,0.2,Some active days but zero video plays and low events.,MHxPC130078020,1
+Gemini,gemini-3.5-flash-lite,1152,0,0.0,Minimal activity.,MHxPC130403848,0
+Gemini,gemini-3.5-flash-lite,1153,0,0.05,Low events and no video plays.,MHxPC130459467,0
+Gemini,gemini-3.5-flash-lite,1154,0,0.0,No activity.,MHxPC130392461,0
+Gemini,gemini-3.5-flash-lite,1155,0,0.1,Low engagement across multiple courses.,MHxPC130132423,0
+Gemini,gemini-3.5-flash-lite,1156,0,0.0,Very low event count.,MHxPC130567945,0
+Gemini,gemini-3.5-flash-lite,1157,0,0.0,Minimal activity.,MHxPC130086720,0
+Gemini,gemini-3.5-flash-lite,1158,0,0.1,Too few active days to sustain progress.,MHxPC130084325,0
+Gemini,gemini-3.5-flash-lite,1159,0,0.2,Moderate engagement but insufficient total events.,MHxPC130440171,0
+Gemini,gemini-3.5-flash-lite,1160,0,0.01,Minimal engagement with only 1 event and 1 active day.,MHxPC130136501,0
+Gemini,gemini-3.5-flash-lite,1161,0,0.05,Brief single-day activity with low events and video plays.,MHxPC130469216,0
+Gemini,gemini-3.5-flash-lite,1162,1,0.72,Sustained engagement across 24 active days with good event volume.,MHxPC130182893,0
+Gemini,gemini-3.5-flash-lite,1163,0,0.0,Zero total events and no meaningful engagement.,MHxPC130326238,0
+Gemini,gemini-3.5-flash-lite,1164,0,0.02,Very low activity with only 10 events across 2 days.,MHxPC130035030,0
+Gemini,gemini-3.5-flash-lite,1165,0,0.05,Low overall engagement across only 2 active days.,MHxPC130156516,0
+Gemini,gemini-3.5-flash-lite,1166,0,0.08,Short-lived activity limited to just 2 active days.,MHxPC130231007,0
+Gemini,gemini-3.5-flash-lite,1167,0,0.02,Minimal activity with only 10 events on 1 active day.,MHxPC130119029,0
+Gemini,gemini-3.5-flash-lite,1168,0,0.0,Zero events recorded despite 3 active days.,MHxPC130045168,0
+Gemini,gemini-3.5-flash-lite,1169,0,0.15,Low event count and chapters accessed across 6 active days.,MHxPC130442583,0
+Gemini,gemini-3.5-flash-lite,1170,0,0.01,Extremely low activity with only 4 events.,MHxPC130388995,0
+Gemini,gemini-3.5-flash-lite,1171,0,0.0,No activity recorded at all.,MHxPC130209242,0
+Gemini,gemini-3.5-flash-lite,1172,1,0.95,"High video plays, thousands of events, and many active days.",MHxPC130222823,0
+Gemini,gemini-3.5-flash-lite,1173,0,0.01,Minimal activity with only 4 events.,MHxPC130233488,0
+Gemini,gemini-3.5-flash-lite,1174,0,0.0,No activity recorded.,MHxPC130082003,0
+Gemini,gemini-3.5-flash-lite,1175,1,0.98,Extensive engagement with high video plays and thousands of events.,MHxPC130298737,1
+Gemini,gemini-3.5-flash-lite,1176,0,0.0,No activity recorded.,MHxPC130395989,0
+Gemini,gemini-3.5-flash-lite,1177,0,0.01,Almost no engagement with only 2 events.,MHxPC130567710,0
+Gemini,gemini-3.5-flash-lite,1178,0,0.01,Minimal engagement with 1 event on 1 active day.,MHxPC130091783,0
+Gemini,gemini-3.5-flash-lite,1179,0,0.02,Very low event count across multiple courses.,MHxPC130314877,0
+Gemini,gemini-3.5-flash-lite,1180,0,0.01,Very low event count and active days indicate minimal engagement.,MHxPC130147508,0
+Gemini,gemini-3.5-flash-lite,1181,0,0.0,Zero events and minimal activity demonstrate lack of engagement.,MHxPC130374731,0
+Gemini,gemini-3.5-flash-lite,1182,0,0.0,Extremely low events and no chapter access show no progress.,MHxPC130579602,0
+Gemini,gemini-3.5-flash-lite,1183,0,0.0,Very few events and zero chapters accessed indicate abandonment.,MHxPC130361338,0
+Gemini,gemini-3.5-flash-lite,1184,0,0.0,Minimal activity with only one event and no chapters.,MHxPC130440096,0
+Gemini,gemini-3.5-flash-lite,1185,0,0.0,Zero total events and no active days indicate non-participation.,MHxPC130475341,0
+Gemini,gemini-3.5-flash-lite,1186,0,0.0,Zero events generated despite multiple active days.,MHxPC130410989,0
+Gemini,gemini-3.5-flash-lite,1187,0,0.01,Extremely low event count and minimal video plays.,MHxPC130156541,0
+Gemini,gemini-3.5-flash-lite,1188,0,0.02,Short duration of active days despite some video plays.,MHxPC130110306,0
+Gemini,gemini-3.5-flash-lite,1189,0,0.0,No activity recorded at all.,MHxPC130454961,0
+Gemini,gemini-3.5-flash-lite,1190,0,0.0,Zero events and no active days.,MHxPC130000160,0
+Gemini,gemini-3.5-flash-lite,1191,0,0.0,Zero events generated across all active days.,MHxPC130090389,0
+Gemini,gemini-3.5-flash-lite,1192,0,0.02,Low event count and few chapters accessed.,MHxPC130123365,0
+Gemini,gemini-3.5-flash-lite,1193,0,0.0,Negligible events and no chapter access.,MHxPC130171705,0
+Gemini,gemini-3.5-flash-lite,1194,0,0.01,Very low event count and only one active day.,MHxPC130360405,0
+Gemini,gemini-3.5-flash-lite,1195,0,0.02,Low engagement with only two active days and minimal events.,MHxPC130504554,0
+Gemini,gemini-3.5-flash-lite,1196,0,0.0,Zero events and no recorded participation.,MHxPC130402630,0
+Gemini,gemini-3.5-flash-lite,1197,0,0.01,Very few events generated and minimal active days.,MHxPC130084775,0
+Gemini,gemini-3.5-flash-lite,1198,0,0.0,Insignificant event count and zero chapters.,MHxPC130587954,0
+Gemini,gemini-3.5-flash-lite,1199,0,0.0,Zero events and no active days recorded.,MHxPC130168189,0
+Gemini,gemini-3.5-flash-lite,1200,0,0.15,Low active days and events suggest insufficient engagement.,MHxPC130595533,0
+Gemini,gemini-3.5-flash-lite,1201,0,0.05,No video plays and very few active days.,MHxPC130144680,0
+Gemini,gemini-3.5-flash-lite,1202,0,0.2,Low active days and chapters despite forum participation.,MHxPC130408825,0
+Gemini,gemini-3.5-flash-lite,1203,0,0.05,Minimal events and no video activity.,MHxPC130297912,0
+Gemini,gemini-3.5-flash-lite,1204,0,0.01,Almost zero engagement and no chapters accessed.,MHxPC130351600,0
+Gemini,gemini-3.5-flash-lite,1205,0,0.1,Very few active days and low chapter access.,MHxPC130180808,0
+Gemini,gemini-3.5-flash-lite,1206,0,0.08,Only one active day of engagement.,MHxPC130130289,0
+Gemini,gemini-3.5-flash-lite,1207,1,0.75,"High video plays, substantial events, and good active days.",MHxPC130424901,0
+Gemini,gemini-3.5-flash-lite,1208,0,0.1,Low active days and minimal chapter access.,MHxPC130140504,0
+Gemini,gemini-3.5-flash-lite,1209,0,0.12,Low video activity and events overall.,MHxPC130328127,0
+Gemini,gemini-3.5-flash-lite,1210,0,0.01,Zero meaningful engagement recorded.,MHxPC130517048,0
+Gemini,gemini-3.5-flash-lite,1211,0,0.05,Extremely low events and only one active day.,MHxPC130471619,0
+Gemini,gemini-3.5-flash-lite,1212,0,0.01,Very low events and no chapter access.,MHxPC130091756,0
+Gemini,gemini-3.5-flash-lite,1213,0,0.05,Low event count and single active day.,MHxPC130352157,0
+Gemini,gemini-3.5-flash-lite,1214,0,0.08,Very low event count and no video usage.,MHxPC130148323,0
+Gemini,gemini-3.5-flash-lite,1215,0,0.1,Low active days and minimal chapter exploration.,MHxPC130300970,0
+Gemini,gemini-3.5-flash-lite,1216,0,0.05,Low video plays and few active days.,MHxPC130571040,0
+Gemini,gemini-3.5-flash-lite,1217,0,0.15,Moderate active days but low overall event count.,MHxPC130315864,0
+Gemini,gemini-3.5-flash-lite,1218,0,0.0,No activity recorded at all.,MHxPC130460571,0
+Gemini,gemini-3.5-flash-lite,1219,0,0.05,Low events and no video activity.,MHxPC130467513,0
+Gemini,gemini-3.5-flash-lite,1220,0,0.0,No activity or engagement recorded.,MHxPC130159836,0
+Gemini,gemini-3.5-flash-lite,1221,0,0.01,Extremely low activity with only 1 active day.,MHxPC130319725,0
+Gemini,gemini-3.5-flash-lite,1222,0,0.01,Minimal events and only 1 active day.,MHxPC130149576,0
+Gemini,gemini-3.5-flash-lite,1223,0,0.0,No activity or engagement recorded.,MHxPC130499885,0
+Gemini,gemini-3.5-flash-lite,1224,0,0.05,Low active days and minimal event count.,MHxPC130212966,0
+Gemini,gemini-3.5-flash-lite,1225,0,0.0,No activity or engagement recorded.,MHxPC130525123,0
+Gemini,gemini-3.5-flash-lite,1226,0,0.02,Only 1 active day and low engagement.,MHxPC130339172,0
+Gemini,gemini-3.5-flash-lite,1227,0,0.01,Very few events and 1 active day.,MHxPC130325557,0
+Gemini,gemini-3.5-flash-lite,1228,0,0.01,Minimal events across only 2 active days.,MHxPC130088148,0
+Gemini,gemini-3.5-flash-lite,1229,0,0.08,Low event count and insufficient active days.,MHxPC130453436,0
+Gemini,gemini-3.5-flash-lite,1230,0,0.0,No event generation or active days.,MHxPC130174686,0
+Gemini,gemini-3.5-flash-lite,1231,0,0.03,Very brief engagement across only 2 active days.,MHxPC130591627,0
+Gemini,gemini-3.5-flash-lite,1232,0,0.01,Single event and active day.,MHxPC130545997,0
+Gemini,gemini-3.5-flash-lite,1233,0,0.0,No activity recorded.,MHxPC130337746,0
+Gemini,gemini-3.5-flash-lite,1234,0,0.0,No activity recorded.,MHxPC130111838,0
+Gemini,gemini-3.5-flash-lite,1235,0,0.01,Minimal events and 1 active day.,MHxPC130085902,0
+Gemini,gemini-3.5-flash-lite,1236,0,0.15,Moderate events but too few active days for certification.,MHxPC130526336,0
+Gemini,gemini-3.5-flash-lite,1237,0,0.08,Low active days despite some video plays.,MHxPC130486519,0
+Gemini,gemini-3.5-flash-lite,1238,0,0.02,Very low event count and engagement.,MHxPC130285235,0
+Gemini,gemini-3.5-flash-lite,1239,0,0.01,Negligible engagement and active days.,MHxPC130411664,0
+Gemini,gemini-3.5-flash-lite,1240,0,0.05,Minimal events and active days indicate lack of serious engagement.,MHxPC130436683,0
+Gemini,gemini-3.5-flash-lite,1241,0,0.0,Zero activity and zero chapters accessed.,MHxPC130380789,0
+Gemini,gemini-3.5-flash-lite,1242,0,0.01,Almost no engagement with only one event.,MHxPC130169370,0
+Gemini,gemini-3.5-flash-lite,1243,0,0.02,Low event count and minimal active days.,MHxPC130285555,0
+Gemini,gemini-3.5-flash-lite,1244,0,0.08,Very low event count and few active days.,MHxPC130001565,0
+Gemini,gemini-3.5-flash-lite,1245,0,0.01,Negligible events and no chapter access.,MHxPC130001892,0
+Gemini,gemini-3.5-flash-lite,1246,0,0.15,Moderate activity but insufficient for certification.,MHxPC130169397,0
+Gemini,gemini-3.5-flash-lite,1247,0,0.0,Zero engagement across all metrics.,MHxPC130155244,0
+Gemini,gemini-3.5-flash-lite,1248,0,0.12,Too few active days and events.,MHxPC130533719,0
+Gemini,gemini-3.5-flash-lite,1249,0,0.08,Low active days and chapters accessed.,MHxPC130122957,0
+Gemini,gemini-3.5-flash-lite,1250,0,0.05,Too few active days and low chapter access.,MHxPC130296647,0
+Gemini,gemini-3.5-flash-lite,1251,0,0.08,Low active days despite some video plays.,MHxPC130582162,0
+Gemini,gemini-3.5-flash-lite,1252,0,0.0,No activity recorded.,MHxPC130152682,0
+Gemini,gemini-3.5-flash-lite,1253,0,0.04,Only two active days of engagement.,MHxPC130139312,0
+Gemini,gemini-3.5-flash-lite,1254,0,0.01,Extremely low activity and no chapters.,MHxPC130102506,0
+Gemini,gemini-3.5-flash-lite,1255,0,0.01,Minimal events and zero chapters.,MHxPC130460438,0
+Gemini,gemini-3.5-flash-lite,1256,0,0.01,Minimal events and zero chapters.,MHxPC130195218,0
+Gemini,gemini-3.5-flash-lite,1257,0,0.03,Single active day with very low events.,MHxPC130576263,0
+Gemini,gemini-3.5-flash-lite,1258,0,0.02,Low event count and very few active days.,MHxPC130528844,0
+Gemini,gemini-3.5-flash-lite,1259,0,0.0,Zero participation.,MHxPC130589507,0
+Gemini,gemini-3.5-flash-lite,1260,0,0.0,Zero activity and zero engagement.,MHxPC130296936,0
+Gemini,gemini-3.5-flash-lite,1261,1,0.95,"High video plays, many events, and consistent active days.",MHxPC130318426,1
+Gemini,gemini-3.5-flash-lite,1262,0,0.01,Very low events and active days.,MHxPC130039658,0
+Gemini,gemini-3.5-flash-lite,1263,0,0.05,Low engagement across few active days.,MHxPC130524942,1
+Gemini,gemini-3.5-flash-lite,1264,0,0.02,Minimal events and chapters accessed.,MHxPC130440815,0
+Gemini,gemini-3.5-flash-lite,1265,0,0.0,Virtually no activity recorded.,MHxPC130497376,0
+Gemini,gemini-3.5-flash-lite,1266,0,0.01,Extremely low event count.,MHxPC130419112,0
+Gemini,gemini-3.5-flash-lite,1267,0,0.02,Low engagement and minimal events.,MHxPC130477921,0
+Gemini,gemini-3.5-flash-lite,1268,0,0.03,Very few events and active days.,MHxPC130399017,0
+Gemini,gemini-3.5-flash-lite,1269,0,0.01,Insignificant activity level.,MHxPC130448050,0
+Gemini,gemini-3.5-flash-lite,1270,0,0.04,Low active days and zero video activity.,MHxPC130184163,0
+Gemini,gemini-3.5-flash-lite,1271,0,0.0,No events or activity recorded.,MHxPC130009380,0
+Gemini,gemini-3.5-flash-lite,1272,0,0.15,Moderate chapters but insufficient overall engagement.,MHxPC130167655,0
+Gemini,gemini-3.5-flash-lite,1273,0,0.03,Low active days and lack of video plays.,MHxPC130000457,0
+Gemini,gemini-3.5-flash-lite,1274,0,0.0,Single event with no progress.,MHxPC130162621,0
+Gemini,gemini-3.5-flash-lite,1275,0,0.01,Minimal activity and events.,MHxPC130077465,0
+Gemini,gemini-3.5-flash-lite,1276,0,0.0,No recorded events.,MHxPC130433986,0
+Gemini,gemini-3.5-flash-lite,1277,0,0.0,Insufficient activity.,MHxPC130511814,0
+Gemini,gemini-3.5-flash-lite,1278,0,0.08,Low video activity and few active days.,MHxPC130474416,0
+Gemini,gemini-3.5-flash-lite,1279,0,0.0,Zero events and activity.,MHxPC130556569,0
+Gemini,gemini-3.5-flash-lite,1280,0,0.05,Very low engagement with only 17 events across 9 active days.,MHxPC130504522,0
+Gemini,gemini-3.5-flash-lite,1281,0,0.02,Minimal activity with 22 events and 1 active day.,MHxPC130089907,0
+Gemini,gemini-3.5-flash-lite,1282,0,0.0,Zero events and zero active days recorded.,MHxPC130415822,0
+Gemini,gemini-3.5-flash-lite,1283,1,0.82,High engagement with 2168 events across 23 active days and 13 chapters.,MHxPC130382287,1
+Gemini,gemini-3.5-flash-lite,1284,0,0.0,Zero events generated and no active days.,MHxPC130277929,0
+Gemini,gemini-3.5-flash-lite,1285,0,0.0,Zero events generated and no active days.,MHxPC130059426,0
+Gemini,gemini-3.5-flash-lite,1286,0,0.01,Extremely low activity with only 1 event.,MHxPC130078781,0
+Gemini,gemini-3.5-flash-lite,1287,0,0.0,Zero events and zero active days.,MHxPC130108075,0
+Gemini,gemini-3.5-flash-lite,1288,0,0.01,Almost no activity with only 2 events.,MHxPC130467400,0
+Gemini,gemini-3.5-flash-lite,1289,1,0.75,Solid engagement with 1423 events across 29 active days.,MHxPC130236453,0
+Gemini,gemini-3.5-flash-lite,1290,0,0.15,Moderate event count but very few active days.,MHxPC130131621,0
+Gemini,gemini-3.5-flash-lite,1291,0,0.01,Very low engagement with only 3 events.,MHxPC130415742,0
+Gemini,gemini-3.5-flash-lite,1292,0,0.03,Low activity with only 55 events and 1 active day.,MHxPC130283383,0
+Gemini,gemini-3.5-flash-lite,1293,0,0.02,Minimal activity with 7 events and 1 active day.,MHxPC130199684,0
+Gemini,gemini-3.5-flash-lite,1294,0,0.01,Zero events generated despite 1 active day.,MHxPC130551822,0
+Gemini,gemini-3.5-flash-lite,1295,0,0.01,Very low engagement with only 5 events.,MHxPC130231841,0
+Gemini,gemini-3.5-flash-lite,1296,0,0.1,Low event count across only 4 active days.,MHxPC130048410,0
+Gemini,gemini-3.5-flash-lite,1297,0,0.02,Very low activity with only 16 events.,MHxPC130113435,0
+Gemini,gemini-3.5-flash-lite,1298,1,0.65,Good engagement with 886 events across 27 active days.,MHxPC130067965,0
+Gemini,gemini-3.5-flash-lite,1299,0,0.12,Moderate video plays but only 3 active days.,MHxPC130284597,0
+Gemini,gemini-3.5-flash-lite,1300,0,0.05,Low events and few active days indicate lack of engagement.,MHxPC130016097,0
+Gemini,gemini-3.5-flash-lite,1301,0,0.0,Zero events and no activity.,MHxPC130454747,0
+Gemini,gemini-3.5-flash-lite,1302,0,0.02,Very low total events and zero videos.,MHxPC130067230,0
+Gemini,gemini-3.5-flash-lite,1303,0,0.0,Zero engagement and no activity recorded.,MHxPC130452549,0
+Gemini,gemini-3.5-flash-lite,1304,0,0.0,No events generated.,MHxPC130167844,0
+Gemini,gemini-3.5-flash-lite,1305,0,0.03,Very low event count and minimal participation.,MHxPC130263528,0
+Gemini,gemini-3.5-flash-lite,1306,0,0.1,Too few active days despite some video plays.,MHxPC130048225,0
+Gemini,gemini-3.5-flash-lite,1307,0,0.05,Low event count and minimal active days.,MHxPC130405024,0
+Gemini,gemini-3.5-flash-lite,1308,1,0.85,"High events, substantial video plays, and consistent active days.",MHxPC130589259,1
+Gemini,gemini-3.5-flash-lite,1309,0,0.1,Zero video plays and moderate events insufficient for certification.,MHxPC130097754,0
+Gemini,gemini-3.5-flash-lite,1310,0,0.0,Extremely minimal activity.,MHxPC130473609,0
+Gemini,gemini-3.5-flash-lite,1311,0,0.0,No activity recorded.,MHxPC130387006,0
+Gemini,gemini-3.5-flash-lite,1312,0,0.35,High video plays but insufficient active days and total events.,MHxPC130292094,0
+Gemini,gemini-3.5-flash-lite,1313,0,0.05,Low overall engagement.,MHxPC130111058,0
+Gemini,gemini-3.5-flash-lite,1314,0,0.0,Almost zero activity.,MHxPC130335524,0
+Gemini,gemini-3.5-flash-lite,1315,0,0.02,Low events and minimal active days.,MHxPC130370193,0
+Gemini,gemini-3.5-flash-lite,1316,0,0.0,Very minimal events and zero videos.,MHxPC130321975,0
+Gemini,gemini-3.5-flash-lite,1317,0,0.02,Very low activity overall.,MHxPC130228368,0
+Gemini,gemini-3.5-flash-lite,1318,0,0.0,Virtually no activity.,MHxPC130224653,0
+Gemini,gemini-3.5-flash-lite,1319,0,0.05,Low event count and insufficient active days.,MHxPC130548357,0
+Gemini,gemini-3.5-flash-lite,1320,0,0.05,Very low active days and event count.,MHxPC130180813,0
+Gemini,gemini-3.5-flash-lite,1321,0,0.0,No activity recorded.,MHxPC130064463,0
+Gemini,gemini-3.5-flash-lite,1322,0,0.0,No activity recorded.,MHxPC130198649,0
+Gemini,gemini-3.5-flash-lite,1323,0,0.05,Low active days and minimal event count.,MHxPC130104911,0
+Gemini,gemini-3.5-flash-lite,1324,1,0.9,High active days and large event count.,MHxPC130071941,1
+Gemini,gemini-3.5-flash-lite,1325,0,0.1,Low events and limited chapter access.,MHxPC130071683,0
+Gemini,gemini-3.5-flash-lite,1326,0,0.2,Too few active days despite some video plays.,MHxPC130554942,0
+Gemini,gemini-3.5-flash-lite,1327,0,0.0,Almost no activity.,MHxPC130264174,0
+Gemini,gemini-3.5-flash-lite,1328,0,0.0,No events recorded.,MHxPC130120453,0
+Gemini,gemini-3.5-flash-lite,1329,0,0.05,Low active days and minimal events.,MHxPC130141442,0
+Gemini,gemini-3.5-flash-lite,1330,0,0.0,Minimal activity.,MHxPC130253939,0
+Gemini,gemini-3.5-flash-lite,1331,0,0.1,Low active days.,MHxPC130073170,0
+Gemini,gemini-3.5-flash-lite,1332,0,0.0,Negligible activity.,MHxPC130091932,0
+Gemini,gemini-3.5-flash-lite,1333,0,0.05,Low engagement and event count.,MHxPC130231699,0
+Gemini,gemini-3.5-flash-lite,1334,0,0.05,Very few active days.,MHxPC130503158,0
+Gemini,gemini-3.5-flash-lite,1335,0,0.15,Low active days despite chapter access.,MHxPC130436119,0
+Gemini,gemini-3.5-flash-lite,1336,0,0.0,No activity.,MHxPC130112417,0
+Gemini,gemini-3.5-flash-lite,1337,1,0.85,Sufficient active days and high chapters accessed.,MHxPC130227752,1
+Gemini,gemini-3.5-flash-lite,1338,1,0.8,High active days and significant event count.,MHxPC130026382,0
+Gemini,gemini-3.5-flash-lite,1339,0,0.0,No events recorded.,MHxPC130428704,0
+Gemini,gemini-3.5-flash-lite,1340,0,0.05,Very low event count and active days suggest lack of engagement for certification.,MHxPC130476570,0
+Gemini,gemini-3.5-flash-lite,1341,0,0.0,Minimal events and zero chapters accessed indicate no completion.,MHxPC130428315,0
+Gemini,gemini-3.5-flash-lite,1342,0,0.0,Almost zero activity with one event and no chapters.,MHxPC130491824,0
+Gemini,gemini-3.5-flash-lite,1343,0,0.0,Extremely low engagement with only two events.,MHxPC130307733,0
+Gemini,gemini-3.5-flash-lite,1344,0,0.0,Zero active days and zero events recorded.,MHxPC130285620,0
+Gemini,gemini-3.5-flash-lite,1345,0,0.0,Very low interaction with only eight events and one chapter.,MHxPC130149485,0
+Gemini,gemini-3.5-flash-lite,1346,0,0.0,Insufficient overall events and chapters accessed.,MHxPC130025426,0
+Gemini,gemini-3.5-flash-lite,1347,0,0.02,Low event count and minimal active days.,MHxPC130229327,0
+Gemini,gemini-3.5-flash-lite,1348,0,0.15,Moderate activity but active days and event count are borderline.,MHxPC130338131,0
+Gemini,gemini-3.5-flash-lite,1349,1,0.75,Substantial event count and active days indicate strong engagement.,MHxPC130298904,1
+Gemini,gemini-3.5-flash-lite,1350,0,0.01,Low event total and few active days.,MHxPC130355725,0
+Gemini,gemini-3.5-flash-lite,1351,0,0.08,Moderate events but insufficient active days and chapter depth.,MHxPC130244175,0
+Gemini,gemini-3.5-flash-lite,1352,0,0.0,Extremely low activity with only one event.,MHxPC130347551,0
+Gemini,gemini-3.5-flash-lite,1353,1,0.9,"High video plays, many active days, and strong overall event count.",MHxPC130528109,0
+Gemini,gemini-3.5-flash-lite,1354,0,0.0,No activity recorded.,MHxPC130058355,0
+Gemini,gemini-3.5-flash-lite,1355,0,0.03,Too few active days and low event volume.,MHxPC130067252,0
+Gemini,gemini-3.5-flash-lite,1356,0,0.0,Zero events and minimal chapter access.,MHxPC130309055,0
+Gemini,gemini-3.5-flash-lite,1357,0,0.0,Very low activity with only fourteen events on one day.,MHxPC130241827,0
+Gemini,gemini-3.5-flash-lite,1358,0,0.02,Only one active day with limited overall engagement.,MHxPC130264902,0
+Gemini,gemini-3.5-flash-lite,1359,0,0.1,Decent video activity but too few active days overall.,MHxPC130261355,0
+Gemini,gemini-3.5-flash-lite,1360,0,0.0,Very minimal activity with only 2 events and 1 active day.,MHxPC130347354,0
+Gemini,gemini-3.5-flash-lite,1361,1,0.9,"Extensive engagement with over 11000 events, 43 active days, and 37 chapters.",MHxPC130017954,1
+Gemini,gemini-3.5-flash-lite,1362,0,0.0,No events generated and zero active days.,MHxPC130549592,0
+Gemini,gemini-3.5-flash-lite,1363,0,0.05,Very low activity spanning only 2 active days.,MHxPC130537543,0
+Gemini,gemini-3.5-flash-lite,1364,0,0.0,Extremely low activity with only 3 events.,MHxPC130309252,0
+Gemini,gemini-3.5-flash-lite,1365,0,0.0,No recorded engagement or activity.,MHxPC130456637,0
+Gemini,gemini-3.5-flash-lite,1366,0,0.0,Minimal activity on a single active day.,MHxPC130108672,0
+Gemini,gemini-3.5-flash-lite,1367,0,0.0,Almost no engagement with only 1 event.,MHxPC130423759,0
+Gemini,gemini-3.5-flash-lite,1368,0,0.0,Low event count and zero chapter access.,MHxPC130138486,0
+Gemini,gemini-3.5-flash-lite,1369,1,0.95,Extremely high engagement with thousands of events and 102 active days.,MHxPC130091807,1
+Gemini,gemini-3.5-flash-lite,1370,0,0.0,Insignificant activity with only 1 event.,MHxPC130377976,0
+Gemini,gemini-3.5-flash-lite,1371,0,0.0,Low event count and short duration of 2 active days.,MHxPC130449808,0
+Gemini,gemini-3.5-flash-lite,1372,0,0.0,Almost no activity with only 2 events.,MHxPC130504772,0
+Gemini,gemini-3.5-flash-lite,1373,0,0.0,Zero events and zero active days.,MHxPC130313988,0
+Gemini,gemini-3.5-flash-lite,1374,0,0.0,Very low activity with only 27 events on 1 active day.,MHxPC130444647,0
+Gemini,gemini-3.5-flash-lite,1375,0,0.0,Minimal activity across only 2 active days.,MHxPC130538474,0
+Gemini,gemini-3.5-flash-lite,1376,0,0.0,No events generated.,MHxPC130097500,0
+Gemini,gemini-3.5-flash-lite,1377,0,0.0,No events generated.,MHxPC130168553,0
+Gemini,gemini-3.5-flash-lite,1378,0,0.0,No events generated.,MHxPC130252278,0
+Gemini,gemini-3.5-flash-lite,1379,0,0.0,No events generated.,MHxPC130127500,0
+Gemini,gemini-3.5-flash-lite,1380,0,0.01,Extremely low activity with only 3 events and 1 active day indicates non-completion.,MHxPC130375716,0
+Gemini,gemini-3.5-flash-lite,1381,0,0.0,Zero events and zero active days clearly shows no meaningful engagement.,MHxPC130597425,0
+Gemini,gemini-3.5-flash-lite,1382,0,0.0,Zero events and zero active days indicates the student never started.,MHxPC130012704,0
+Gemini,gemini-3.5-flash-lite,1383,0,0.05,Low engagement with only 38 events and 6 active days is insufficient for certification.,MHxPC130582173,0
+Gemini,gemini-3.5-flash-lite,1384,1,0.75,"High video plays, substantial events, and active participation across 17 days support certification.",MHxPC130430850,0
+Gemini,gemini-3.5-flash-lite,1385,0,0.01,Minimal activity with only 1 event on 1 active day.,MHxPC130191538,0
+Gemini,gemini-3.5-flash-lite,1386,0,0.02,Low overall events and limited chapter access suggest course abandonment.,MHxPC130329207,0
+Gemini,gemini-3.5-flash-lite,1387,0,0.0,Zero events and zero active days indicates no course participation.,MHxPC130434264,0
+Gemini,gemini-3.5-flash-lite,1388,0,0.01,Almost no engagement with a single event.,MHxPC130081483,0
+Gemini,gemini-3.5-flash-lite,1389,0,0.01,Very low activity with only 2 events on 1 active day.,MHxPC130398826,0
+Gemini,gemini-3.5-flash-lite,1390,0,0.0,Zero events and zero active days indicate no interaction.,MHxPC130012062,0
+Gemini,gemini-3.5-flash-lite,1391,0,0.01,Very minimal events and active days are insufficient for passing.,MHxPC130338999,0
+Gemini,gemini-3.5-flash-lite,1392,0,0.01,Only 4 events on 1 active day shows lack of sustained effort.,MHxPC130329146,0
+Gemini,gemini-3.5-flash-lite,1393,0,0.0,No events recorded and zero active days.,MHxPC130271534,0
+Gemini,gemini-3.5-flash-lite,1394,0,0.0,Zero events and zero active days.,MHxPC130352909,0
+Gemini,gemini-3.5-flash-lite,1395,0,0.02,Low event count and only 1 active day indicate a brief visit.,MHxPC130558021,0
+Gemini,gemini-3.5-flash-lite,1396,0,0.04,Insufficient activity span with only 4 active days and low chapter access.,MHxPC130292715,0
+Gemini,gemini-3.5-flash-lite,1397,1,0.7,High event count across 32 active days and 27 chapters accessed indicate strong persistence.,MHxPC130143785,1
+Gemini,gemini-3.5-flash-lite,1398,0,0.0,Zero events generated despite 1 active day indicates no real progress.,MHxPC130376677,0
+Gemini,gemini-3.5-flash-lite,1399,0,0.0,Zero events and zero active days show no engagement.,MHxPC130101129,0
+Gemini,gemini-3.5-flash-lite,1400,1,0.85,"High video plays, events, and active days indicate strong engagement.",MHxPC130453853,0
+Gemini,gemini-3.5-flash-lite,1401,0,0.0,No video plays and minimal activity.,MHxPC130028946,0
+Gemini,gemini-3.5-flash-lite,1402,0,0.05,Very low engagement across all metrics.,MHxPC130554727,0
+Gemini,gemini-3.5-flash-lite,1403,0,0.1,Active on only one day with few events.,MHxPC130176507,0
+Gemini,gemini-3.5-flash-lite,1404,0,0.05,Low events and zero video plays.,MHxPC130176527,0
+Gemini,gemini-3.5-flash-lite,1405,1,0.95,"Extremely high events, active days, and chapter accesses.",MHxPC130553369,1
+Gemini,gemini-3.5-flash-lite,1406,0,0.1,Low overall activity and minimal video plays.,MHxPC130253951,0
+Gemini,gemini-3.5-flash-lite,1407,0,0.05,Very low event count and active days.,MHxPC130135320,0
+Gemini,gemini-3.5-flash-lite,1408,0,0.2,Moderate video plays but very few active days.,MHxPC130026240,0
+Gemini,gemini-3.5-flash-lite,1409,0,0.05,No video plays and low event count.,MHxPC130374056,0
+Gemini,gemini-3.5-flash-lite,1410,0,0.0,Zero activity recorded.,MHxPC130331722,0
+Gemini,gemini-3.5-flash-lite,1411,0,0.0,Negligible activity.,MHxPC130367672,0
+Gemini,gemini-3.5-flash-lite,1412,0,0.1,Few active days and low total events.,MHxPC130392239,0
+Gemini,gemini-3.5-flash-lite,1413,0,0.0,Zero activity recorded.,MHxPC130483787,0
+Gemini,gemini-3.5-flash-lite,1414,0,0.02,Extremely low events and video plays.,MHxPC130189756,0
+Gemini,gemini-3.5-flash-lite,1415,0,0.0,Zero activity recorded.,MHxPC130489979,0
+Gemini,gemini-3.5-flash-lite,1416,0,0.0,Zero activity recorded.,MHxPC130574651,0
+Gemini,gemini-3.5-flash-lite,1417,0,0.0,Negligible activity.,MHxPC130055963,0
+Gemini,gemini-3.5-flash-lite,1418,0,0.0,Zero activity recorded.,MHxPC130515217,0
+Gemini,gemini-3.5-flash-lite,1419,0,0.0,Zero activity recorded.,MHxPC130420347,0
+Gemini,gemini-3.5-flash-lite,1420,0,0.05,Very low events and active days indicate minimal engagement.,MHxPC130010583,0
+Gemini,gemini-3.5-flash-lite,1421,0,0.1,Low active days and minimal chapters accessed suggest lack of sustained progress.,MHxPC130146083,0
+Gemini,gemini-3.5-flash-lite,1422,0,0.02,Extremely low event count and active days.,MHxPC130355883,0
+Gemini,gemini-3.5-flash-lite,1423,1,0.85,"High events, multiple active days, and substantial chapter access.",MHxPC130593341,0
+Gemini,gemini-3.5-flash-lite,1424,0,0.01,Only one active day with very few events.,MHxPC130317240,0
+Gemini,gemini-3.5-flash-lite,1425,0,0.05,Low active days and zero video engagement.,MHxPC130434430,0
+Gemini,gemini-3.5-flash-lite,1426,0,0.0,Negligible activity with only one event.,MHxPC130472439,0
+Gemini,gemini-3.5-flash-lite,1427,0,0.0,Zero active days and no events generated.,MHxPC130238703,0
+Gemini,gemini-3.5-flash-lite,1428,0,0.03,Very low event count and lack of video engagement.,MHxPC130091580,0
+Gemini,gemini-3.5-flash-lite,1429,0,0.0,Zero events and zero active days.,MHxPC130447502,0
+Gemini,gemini-3.5-flash-lite,1430,0,0.0,Zero events and no active participation.,MHxPC130590165,0
+Gemini,gemini-3.5-flash-lite,1431,0,0.01,Minimal events on a single active day.,MHxPC130217413,0
+Gemini,gemini-3.5-flash-lite,1432,0,0.2,Reasonable active days but very low total events and no videos.,MHxPC130337220,0
+Gemini,gemini-3.5-flash-lite,1433,0,0.01,Extremely low overall activity.,MHxPC130262895,0
+Gemini,gemini-3.5-flash-lite,1434,0,0.0,Zero events recorded.,MHxPC130358124,0
+Gemini,gemini-3.5-flash-lite,1435,0,0.0,Zero events and active days.,MHxPC130387128,0
+Gemini,gemini-3.5-flash-lite,1436,0,0.0,No activity recorded.,MHxPC130368129,0
+Gemini,gemini-3.5-flash-lite,1437,0,0.0,No activity recorded.,MHxPC130281991,0
+Gemini,gemini-3.5-flash-lite,1438,0,0.0,Only a single event recorded.,MHxPC130177216,0
+Gemini,gemini-3.5-flash-lite,1439,0,0.0,Zero events and active days.,MHxPC130508311,0
+Gemini,gemini-3.5-flash-lite,1440,1,0.85,"High events, video plays, and active days indicate strong engagement and certification.",MHxPC130210216,1
+Gemini,gemini-3.5-flash-lite,1441,0,0.05,Very low activity across all metrics suggests non-completion.,MHxPC130570019,0
+Gemini,gemini-3.5-flash-lite,1442,0,0.02,Minimal events and zero video plays indicate drop-out.,MHxPC130381974,0
+Gemini,gemini-3.5-flash-lite,1443,0,0.01,No activity recorded.,MHxPC130569284,0
+Gemini,gemini-3.5-flash-lite,1444,0,0.01,No activity recorded.,MHxPC130505831,0
+Gemini,gemini-3.5-flash-lite,1445,0,0.1,Low events and limited chapter access suggest non-certification.,MHxPC130523383,0
+Gemini,gemini-3.5-flash-lite,1446,1,0.7,High event count and active days demonstrate strong commitment.,MHxPC130481250,1
+Gemini,gemini-3.5-flash-lite,1447,0,0.05,Low event count and minimal engagement.,MHxPC130309811,0
+Gemini,gemini-3.5-flash-lite,1448,0,0.02,Extremely low activity with only one active day.,MHxPC130462083,0
+Gemini,gemini-3.5-flash-lite,1449,0,0.01,Almost no engagement.,MHxPC130287237,0
+Gemini,gemini-3.5-flash-lite,1450,0,0.01,Zero active days and minimal access.,MHxPC130204683,0
+Gemini,gemini-3.5-flash-lite,1451,0,0.02,Very low events and no chapter access.,MHxPC130467599,0
+Gemini,gemini-3.5-flash-lite,1452,0,0.15,Moderate activity but insufficient for certification.,MHxPC130158389,0
+Gemini,gemini-3.5-flash-lite,1453,0,0.01,Minimal activity and no video engagement.,MHxPC130446424,0
+Gemini,gemini-3.5-flash-lite,1454,0,0.1,Low event count and restricted chapter access.,MHxPC130120210,0
+Gemini,gemini-3.5-flash-lite,1455,0,0.01,No activity recorded.,MHxPC130047375,0
+Gemini,gemini-3.5-flash-lite,1456,0,0.08,Short duration and low engagement.,MHxPC130548304,0
+Gemini,gemini-3.5-flash-lite,1457,0,0.01,Insignificant activity.,MHxPC130192248,0
+Gemini,gemini-3.5-flash-lite,1458,0,0.03,Single active day with very low overall usage.,MHxPC130030247,0
+Gemini,gemini-3.5-flash-lite,1459,0,0.01,No activity recorded.,MHxPC130151288,0
+Gemini,gemini-3.5-flash-lite,1460,0,0.0,Zero activity and engagement indicates no participation.,MHxPC130099039,0
+Gemini,gemini-3.5-flash-lite,1461,0,0.0,Extremely low events and active days.,MHxPC130363060,0
+Gemini,gemini-3.5-flash-lite,1462,0,0.0,No activity or engagement recorded.,MHxPC130481147,0
+Gemini,gemini-3.5-flash-lite,1463,0,0.0,Zero activity and zero events.,MHxPC130340906,0
+Gemini,gemini-3.5-flash-lite,1464,0,0.05,Very few active days and events despite some videos.,MHxPC130035619,0
+Gemini,gemini-3.5-flash-lite,1465,0,0.0,Minimal events and no video plays.,MHxPC130128929,0
+Gemini,gemini-3.5-flash-lite,1466,0,0.25,Moderate events but insufficient active days and chapter variety.,MHxPC130587252,0
+Gemini,gemini-3.5-flash-lite,1467,0,0.0,Very low events and single active day.,MHxPC130463376,0
+Gemini,gemini-3.5-flash-lite,1468,0,0.0,Negligible events and single active day.,MHxPC130349286,0
+Gemini,gemini-3.5-flash-lite,1469,0,0.05,Low total events and few active days.,MHxPC130587025,0
+Gemini,gemini-3.5-flash-lite,1470,0,0.0,Zero events generated.,MHxPC130564419,0
+Gemini,gemini-3.5-flash-lite,1471,0,0.02,Extremely low total event count.,MHxPC130405743,0
+Gemini,gemini-3.5-flash-lite,1472,0,0.0,Very low events and no video plays.,MHxPC130590304,0
+Gemini,gemini-3.5-flash-lite,1473,0,0.0,Only one active day with minimal events.,MHxPC130499870,0
+Gemini,gemini-3.5-flash-lite,1474,0,0.0,No activity or events recorded.,MHxPC130354966,0
+Gemini,gemini-3.5-flash-lite,1475,0,0.0,Zero events across all enrolled courses.,MHxPC130589996,0
+Gemini,gemini-3.5-flash-lite,1476,0,0.0,Minimal events on a single active day.,MHxPC130314952,0
+Gemini,gemini-3.5-flash-lite,1477,0,0.0,Very low event count and few active days.,MHxPC130513483,0
+Gemini,gemini-3.5-flash-lite,1478,0,0.35,"High video plays and events, but active days are slightly low.",MHxPC130576029,0
+Gemini,gemini-3.5-flash-lite,1479,0,0.0,Zero events and zero active days.,MHxPC130597503,0
+Gemini,gemini-3.5-flash-lite,1480,0,0.0,Zero engagement and no activity indicates the student dropped out immediately.,MHxPC130225032,0
+Gemini,gemini-3.5-flash-lite,1481,0,0.05,"Very low event count and active days, insufficient for certification.",MHxPC130143105,0
+Gemini,gemini-3.5-flash-lite,1482,0,0.0,Minimal events on a single active day indicate non-completion.,MHxPC130593261,0
+Gemini,gemini-3.5-flash-lite,1483,0,0.02,Extremely low video plays and few active days suggest course abandonment.,MHxPC130254299,0
+Gemini,gemini-3.5-flash-lite,1484,0,0.03,Low event count and lack of video activity point to non-certification.,MHxPC130531852,0
+Gemini,gemini-3.5-flash-lite,1485,0,0.0,Single event and zero chapters accessed indicate no real participation.,MHxPC130438273,0
+Gemini,gemini-3.5-flash-lite,1486,0,0.0,Zero engagement and no activity indicates the student dropped out immediately.,MHxPC130232493,0
+Gemini,gemini-3.5-flash-lite,1487,0,0.0,Virtually no activity with zero events recorded.,MHxPC130547369,0
+Gemini,gemini-3.5-flash-lite,1488,0,0.0,Zero engagement and no activity indicates the student dropped out immediately.,MHxPC130317559,0
+Gemini,gemini-3.5-flash-lite,1489,0,0.0,Negligible event count and zero chapters accessed.,MHxPC130023849,0
+Gemini,gemini-3.5-flash-lite,1490,0,0.0,No recorded events or video activity.,MHxPC130174433,0
+Gemini,gemini-3.5-flash-lite,1491,0,0.0,Zero events and no video interaction show no progress.,MHxPC130128869,0
+Gemini,gemini-3.5-flash-lite,1492,0,0.01,Very low event count across multiple courses suggests failure to progress.,MHxPC130416486,0
+Gemini,gemini-3.5-flash-lite,1493,0,0.05,Low events and limited active days indicate incomplete coursework.,MHxPC130292591,0
+Gemini,gemini-3.5-flash-lite,1494,0,0.08,Too few active days and events to meet certification thresholds.,MHxPC130094816,0
+Gemini,gemini-3.5-flash-lite,1495,1,0.95,"Extremely high event count, extensive active days, and deep chapter access.",MHxPC130114802,1
+Gemini,gemini-3.5-flash-lite,1496,0,0.03,Low video activity and few events are insufficient for certification.,MHxPC130295804,0
+Gemini,gemini-3.5-flash-lite,1497,0,0.02,Zero recorded events despite some video plays indicate inconsistent engagement.,MHxPC130406337,0
+Gemini,gemini-3.5-flash-lite,1498,0,0.15,"Moderate video plays and events, but likely insufficient overall depth.",MHxPC130371218,0
+Gemini,gemini-3.5-flash-lite,1499,0,0.0,Almost zero activity across multiple enrolled courses.,MHxPC130570973,0
+Gemini,gemini-3.5-flash-lite,1500,0,0.0,Zero active days and zero events indicate no meaningful engagement.,MHxPC130138971,0
+Gemini,gemini-3.5-flash-lite,1501,0,0.0,Minimal events and single active day indicate no certification.,MHxPC130222445,0
+Gemini,gemini-3.5-flash-lite,1502,0,0.1,Low events and active days are insufficient for completion.,MHxPC130311820,0
+Gemini,gemini-3.5-flash-lite,1503,0,0.0,Zero active days and zero events indicate no meaningful engagement.,MHxPC130507719,0
+Gemini,gemini-3.5-flash-lite,1504,0,0.0,Very few events and active days fail to meet standards.,MHxPC130391804,0
+Gemini,gemini-3.5-flash-lite,1505,0,0.0,Low overall activity level strongly suggests no certificate.,MHxPC130311349,0
+Gemini,gemini-3.5-flash-lite,1506,0,0.0,Zero active days and zero events indicate no meaningful engagement.,MHxPC130317495,0
+Gemini,gemini-3.5-flash-lite,1507,0,0.1,Very few active days despite some video plays.,MHxPC130575673,0
+Gemini,gemini-3.5-flash-lite,1508,0,0.0,Zero active days and zero events indicate no meaningful engagement.,MHxPC130003409,0
+Gemini,gemini-3.5-flash-lite,1509,0,0.0,Extremely low events and single active day show non-completion.,MHxPC130565293,0
+Gemini,gemini-3.5-flash-lite,1510,0,0.0,Extremely low events and single active day show non-completion.,MHxPC130551195,0
+Gemini,gemini-3.5-flash-lite,1511,0,0.0,Low active days and zero chapters accessed indicate failure.,MHxPC130260648,0
+Gemini,gemini-3.5-flash-lite,1512,0,0.0,Zero active days and zero events indicate no meaningful engagement.,MHxPC130443551,0
+Gemini,gemini-3.5-flash-lite,1513,0,0.0,Minimal events and single active day indicate no certification.,MHxPC130140327,0
+Gemini,gemini-3.5-flash-lite,1514,0,0.0,Very few events and single active day fail to qualify.,MHxPC130583696,0
+Gemini,gemini-3.5-flash-lite,1515,0,0.0,Zero active days and zero events indicate no meaningful engagement.,MHxPC130340584,0
+Gemini,gemini-3.5-flash-lite,1516,0,0.0,Minimal engagement with only one active day and few events.,MHxPC130232864,0
+Gemini,gemini-3.5-flash-lite,1517,0,0.0,Low event count and single active day suggest non-completion.,MHxPC130157254,0
+Gemini,gemini-3.5-flash-lite,1518,0,0.0,Zero active days and zero events indicate no meaningful engagement.,MHxPC130031054,0
+Gemini,gemini-3.5-flash-lite,1519,0,0.0,Zero events and no engagement signify non-completion.,MHxPC130486176,0
+Gemini,gemini-3.5-flash-lite,1520,0,0.05,Very low active days and event count indicate lack of sustained course engagement.,MHxPC130281896,0
+Gemini,gemini-3.5-flash-lite,1521,0,0.01,Minimal events and single active day suggest negligible course participation.,MHxPC130028725,0
+Gemini,gemini-3.5-flash-lite,1522,0,0.02,Extremely low event count and active days point to non-completion.,MHxPC130017212,0
+Gemini,gemini-3.5-flash-lite,1523,0,0.0,Zero events and zero active days indicate no engagement.,MHxPC130254228,0
+Gemini,gemini-3.5-flash-lite,1524,0,0.0,Zero events and zero active days indicate no engagement.,MHxPC130244405,0
+Gemini,gemini-3.5-flash-lite,1525,0,0.25,Moderate active days but lack of video plays and low event count.,MHxPC130252485,0
+Gemini,gemini-3.5-flash-lite,1526,0,0.0,Zero events and zero active days indicate no engagement.,MHxPC130512893,0
+Gemini,gemini-3.5-flash-lite,1527,0,0.02,Very low event count and minimal active days.,MHxPC130031702,0
+Gemini,gemini-3.5-flash-lite,1528,0,0.02,Low event count and minimal active days.,MHxPC130357897,0
+Gemini,gemini-3.5-flash-lite,1529,0,0.01,Single active day with very few events.,MHxPC130493912,0
+Gemini,gemini-3.5-flash-lite,1530,0,0.03,Low event count and few active days.,MHxPC130340765,0
+Gemini,gemini-3.5-flash-lite,1531,0,0.05,Low event count and very few active days.,MHxPC130133510,0
+Gemini,gemini-3.5-flash-lite,1532,1,0.85,High event count across many active days and chapters accessed.,MHxPC130367413,1
+Gemini,gemini-3.5-flash-lite,1533,0,0.0,Negligible event count and single active day.,MHxPC130284770,0
+Gemini,gemini-3.5-flash-lite,1534,0,0.0,Almost zero activity and events.,MHxPC130103580,0
+Gemini,gemini-3.5-flash-lite,1535,0,0.01,Very few events and active days.,MHxPC130374462,0
+Gemini,gemini-3.5-flash-lite,1536,1,0.82,"Substantial event count, active days, and chapter access.",MHxPC130126220,1
+Gemini,gemini-3.5-flash-lite,1537,0,0.15,Moderate video activity but too few active days and events.,MHxPC130008594,0
+Gemini,gemini-3.5-flash-lite,1538,0,0.0,Zero meaningful engagement.,MHxPC130096044,0
+Gemini,gemini-3.5-flash-lite,1539,0,0.0,Zero events and zero active days.,MHxPC130560324,0
+Gemini,gemini-3.5-flash-lite,1540,0,0.01,Minimal engagement with only one event and one active day.,MHxPC130356963,0
+Gemini,gemini-3.5-flash-lite,1541,0,0.0,Zero events and zero active days.,MHxPC130410305,0
+Gemini,gemini-3.5-flash-lite,1542,1,0.85,High event count and active days indicating strong commitment.,MHxPC130541184,0
+Gemini,gemini-3.5-flash-lite,1543,0,0.05,Low event count and minimal active days.,MHxPC130405176,0
+Gemini,gemini-3.5-flash-lite,1544,0,0.01,Very low overall engagement with only two events.,MHxPC130194893,0
+Gemini,gemini-3.5-flash-lite,1545,0,0.1,Moderate events but insufficient overall activity depth.,MHxPC130295536,0
+Gemini,gemini-3.5-flash-lite,1546,0,0.02,Low event count spread across multiple courses.,MHxPC130216570,0
+Gemini,gemini-3.5-flash-lite,1547,0,0.08,Limited events and chapters accessed.,MHxPC130250173,0
+Gemini,gemini-3.5-flash-lite,1548,1,0.78,High video plays and substantial event count.,MHxPC130597462,0
+Gemini,gemini-3.5-flash-lite,1549,0,0.0,Virtually no activity recorded.,MHxPC130021341,0
+Gemini,gemini-3.5-flash-lite,1550,0,0.0,Zero events generated.,MHxPC130175841,0
+Gemini,gemini-3.5-flash-lite,1551,0,0.02,Very low event count across multiple courses.,MHxPC130308536,0
+Gemini,gemini-3.5-flash-lite,1552,1,0.95,Extremely high activity across numerous active days and video plays.,MHxPC130202287,1
+Gemini,gemini-3.5-flash-lite,1553,0,0.03,Low overall engagement and few events.,MHxPC130078178,0
+Gemini,gemini-3.5-flash-lite,1554,0,0.05,Low event count and minimal chapter access.,MHxPC130441917,0
+Gemini,gemini-3.5-flash-lite,1555,0,0.0,No activity recorded.,MHxPC130402524,0
+Gemini,gemini-3.5-flash-lite,1556,0,0.0,No activity recorded.,MHxPC130512785,0
+Gemini,gemini-3.5-flash-lite,1557,0,0.05,Very few active days despite some video plays.,MHxPC130548242,0
+Gemini,gemini-3.5-flash-lite,1558,1,0.9,High video plays and significant event generation over many days.,MHxPC130381097,0
+Gemini,gemini-3.5-flash-lite,1559,0,0.01,Minimal activity with only five events.,MHxPC130527208,0
+Gemini,gemini-3.5-flash-lite,1560,0,0.05,Low events and lack of video plays indicate minimal engagement.,MHxPC130249225,0
+Gemini,gemini-3.5-flash-lite,1561,0,0.02,Very low active days and minimal chapter access.,MHxPC130227648,0
+Gemini,gemini-3.5-flash-lite,1562,0,0.0,Zero activity across all metrics.,MHxPC130429912,0
+Gemini,gemini-3.5-flash-lite,1563,0,0.0,Almost zero events and no course progression.,MHxPC130049023,0
+Gemini,gemini-3.5-flash-lite,1564,0,0.1,Insufficient overall engagement for certification.,MHxPC130041924,0
+Gemini,gemini-3.5-flash-lite,1565,0,0.05,Low event count and active days.,MHxPC130198013,0
+Gemini,gemini-3.5-flash-lite,1566,0,0.2,Moderate events but insufficient chapter depth.,MHxPC130351669,0
+Gemini,gemini-3.5-flash-lite,1567,0,0.01,Very minimal participation.,MHxPC130082373,0
+Gemini,gemini-3.5-flash-lite,1568,0,0.0,No recorded activity.,MHxPC130169152,0
+Gemini,gemini-3.5-flash-lite,1569,0,0.0,Negligible events and single active day.,MHxPC130172153,0
+Gemini,gemini-3.5-flash-lite,1570,0,0.0,No meaningful engagement.,MHxPC130534514,0
+Gemini,gemini-3.5-flash-lite,1571,0,0.0,Zero active days recorded.,MHxPC130200256,0
+Gemini,gemini-3.5-flash-lite,1572,0,0.0,No activity recorded.,MHxPC130401443,0
+Gemini,gemini-3.5-flash-lite,1573,0,0.0,Insignificant activity.,MHxPC130417248,0
+Gemini,gemini-3.5-flash-lite,1574,0,0.02,Low event count and zero chapters accessed.,MHxPC130200090,0
+Gemini,gemini-3.5-flash-lite,1575,1,0.85,"High video plays, numerous events, and extended active days.",MHxPC130310426,1
+Gemini,gemini-3.5-flash-lite,1576,0,0.0,Extremely low engagement.,MHxPC130480802,0
+Gemini,gemini-3.5-flash-lite,1577,0,0.05,Low event count and minimal chapter access.,MHxPC130019525,0
+Gemini,gemini-3.5-flash-lite,1578,0,0.0,Zero activity.,MHxPC130572182,0
+Gemini,gemini-3.5-flash-lite,1579,0,0.15,Some video plays but insufficient overall depth for certification.,MHxPC130269170,0
+Gemini,gemini-3.5-flash-lite,1580,0,0.05,Very low engagement across all metrics.,MHxPC130460164,0
+Gemini,gemini-3.5-flash-lite,1581,0,0.05,Insufficient overall activity for certification.,MHxPC130100309,0
+Gemini,gemini-3.5-flash-lite,1582,0,0.0,Zero events and zero active days.,MHxPC130033285,0
+Gemini,gemini-3.5-flash-lite,1583,1,0.95,Extremely high event count and active days.,MHxPC130216792,1
+Gemini,gemini-3.5-flash-lite,1584,0,0.0,No activity recorded.,MHxPC130486664,0
+Gemini,gemini-3.5-flash-lite,1585,0,0.05,Activity is restricted to a single day.,MHxPC130099677,0
+Gemini,gemini-3.5-flash-lite,1586,0,0.0,Zero events and zero active days.,MHxPC130037177,0
+Gemini,gemini-3.5-flash-lite,1587,0,0.05,Low events and minimal chapter access.,MHxPC130354542,0
+Gemini,gemini-3.5-flash-lite,1588,0,0.05,Extremely low events and no chapters accessed.,MHxPC130584040,0
+Gemini,gemini-3.5-flash-lite,1589,0,0.05,Very low overall engagement.,MHxPC130022349,0
+Gemini,gemini-3.5-flash-lite,1590,0,0.1,Active on only one day.,MHxPC130162950,0
+Gemini,gemini-3.5-flash-lite,1591,0,0.1,Brief activity span of only two days.,MHxPC130268079,0
+Gemini,gemini-3.5-flash-lite,1592,0,0.15,Moderate events but insufficient depth.,MHxPC130138538,0
+Gemini,gemini-3.5-flash-lite,1593,0,0.05,Minimal events and short duration.,MHxPC130230493,0
+Gemini,gemini-3.5-flash-lite,1594,0,0.0,Almost no activity.,MHxPC130010159,0
+Gemini,gemini-3.5-flash-lite,1595,0,0.05,Extremely low event count.,MHxPC130444907,0
+Gemini,gemini-3.5-flash-lite,1596,0,0.0,Zero events recorded.,MHxPC130394734,0
+Gemini,gemini-3.5-flash-lite,1597,0,0.0,Only one event recorded.,MHxPC130554810,0
+Gemini,gemini-3.5-flash-lite,1598,0,0.0,Completely inactive profile.,MHxPC130327199,0
+Gemini,gemini-3.5-flash-lite,1599,0,0.05,Low event count and minimal chapter access.,MHxPC130430181,0
+Gemini,gemini-3.5-flash-lite,1600,0,0.15,Low active days and chapter count indicate lack of sustained engagement.,MHxPC130543861,0
+Gemini,gemini-3.5-flash-lite,1601,0,0.01,Zero events and activity.,MHxPC130187508,0
+Gemini,gemini-3.5-flash-lite,1602,0,0.05,Very low event count and minimal active days.,MHxPC130174993,0
+Gemini,gemini-3.5-flash-lite,1603,0,0.01,Extremely low activity with zero chapters accessed.,MHxPC130375351,0
+Gemini,gemini-3.5-flash-lite,1604,0,0.1,Low active days and no video activity.,MHxPC130298871,0
+Gemini,gemini-3.5-flash-lite,1605,0,0.02,Virtually no engagement or chapter access.,MHxPC130261404,0
+Gemini,gemini-3.5-flash-lite,1606,0,0.03,Minimal events and active days.,MHxPC130043832,0
+Gemini,gemini-3.5-flash-lite,1607,0,0.04,Very low events and active days.,MHxPC130062616,0
+Gemini,gemini-3.5-flash-lite,1608,0,0.03,Extremely low event count.,MHxPC130146917,0
+Gemini,gemini-3.5-flash-lite,1609,0,0.12,Too few active days despite some video plays.,MHxPC130137483,0
+Gemini,gemini-3.5-flash-lite,1610,0,0.05,Only one active day of participation.,MHxPC130539176,0
+Gemini,gemini-3.5-flash-lite,1611,0,0.05,Very low event count with no videos.,MHxPC130034106,0
+Gemini,gemini-3.5-flash-lite,1612,0,0.2,Good video count but too few active days.,MHxPC130387629,0
+Gemini,gemini-3.5-flash-lite,1613,0,0.06,Low events and limited active days.,MHxPC130357412,0
+Gemini,gemini-3.5-flash-lite,1614,0,0.02,Almost no engagement.,MHxPC130286306,0
+Gemini,gemini-3.5-flash-lite,1615,0,0.18,Moderate events but insufficient active days.,MHxPC130352294,0
+Gemini,gemini-3.5-flash-lite,1616,0,0.01,Zero activity recorded.,MHxPC130413575,0
+Gemini,gemini-3.5-flash-lite,1617,0,0.35,"Decent active days and chapters, but low overall events.",MHxPC130173069,0
+Gemini,gemini-3.5-flash-lite,1618,0,0.01,Zero activity recorded.,MHxPC130010876,0
+Gemini,gemini-3.5-flash-lite,1619,0,0.01,Zero activity recorded.,MHxPC130213227,0
+Gemini,gemini-3.5-flash-lite,1620,0,0.02,Very low events and active days indicate lack of engagement.,MHxPC130225630,0
+Gemini,gemini-3.5-flash-lite,1621,0,0.05,Too few active days and low events for certification.,MHxPC130304794,0
+Gemini,gemini-3.5-flash-lite,1622,0,0.15,Low event count and zero video availability despite some chapters.,MHxPC130313161,0
+Gemini,gemini-3.5-flash-lite,1623,0,0.03,Minimal events and active days show low persistence.,MHxPC130195839,0
+Gemini,gemini-3.5-flash-lite,1624,0,0.0,Zero activity across all metrics.,MHxPC130020818,0
+Gemini,gemini-3.5-flash-lite,1625,0,0.01,Almost no engagement recorded.,MHxPC130280254,0
+Gemini,gemini-3.5-flash-lite,1626,0,0.1,Moderate events but low active days and chapter access.,MHxPC130434391,0
+Gemini,gemini-3.5-flash-lite,1627,0,0.02,Only one active day with very few events.,MHxPC130297737,0
+Gemini,gemini-3.5-flash-lite,1628,0,0.0,Negligible activity and events.,MHxPC130328075,0
+Gemini,gemini-3.5-flash-lite,1629,0,0.02,Very few events and active days.,MHxPC130429951,0
+Gemini,gemini-3.5-flash-lite,1630,0,0.05,Concentrated events on a single active day.,MHxPC130363388,0
+Gemini,gemini-3.5-flash-lite,1631,0,0.04,Low active days and chapter interaction.,MHxPC130066571,0
+Gemini,gemini-3.5-flash-lite,1632,0,0.0,Virtually no engagement.,MHxPC130423534,0
+Gemini,gemini-3.5-flash-lite,1633,0,0.0,Zero activity.,MHxPC130503589,0
+Gemini,gemini-3.5-flash-lite,1634,0,0.08,Insufficient event volume and chapter access for certification.,MHxPC130496837,0
+Gemini,gemini-3.5-flash-lite,1635,0,0.02,Low event count and minimal active days.,MHxPC130070755,0
+Gemini,gemini-3.5-flash-lite,1636,0,0.0,No events recorded.,MHxPC130241855,0
+Gemini,gemini-3.5-flash-lite,1637,0,0.0,Zero activity across the board.,MHxPC130418031,0
+Gemini,gemini-3.5-flash-lite,1638,0,0.0,Zero events and minimal duration.,MHxPC130176370,0
+Gemini,gemini-3.5-flash-lite,1639,1,0.85,"High active days, extensive event count, and solid chapter access.",MHxPC130523015,0
+Gemini,gemini-3.5-flash-lite,1640,0,0.05,"Very low event count and active days, suggesting lack of sustained engagement.",MHxPC130108689,0
+Gemini,gemini-3.5-flash-lite,1641,0,0.02,Only one active day and low total events indicate minimal course interaction.,MHxPC130490550,0
+Gemini,gemini-3.5-flash-lite,1642,0,0.0,Zero events and active days clearly indicate no participation.,MHxPC130097300,0
+Gemini,gemini-3.5-flash-lite,1643,0,0.02,Extremely low activity across only two active days.,MHxPC130256206,0
+Gemini,gemini-3.5-flash-lite,1644,0,0.01,Negligible event count and no chapter access.,MHxPC130484101,0
+Gemini,gemini-3.5-flash-lite,1645,0,0.05,Very low active days and events insufficient for certification.,MHxPC130543121,0
+Gemini,gemini-3.5-flash-lite,1646,0,0.01,Very minimal events and only one chapter accessed.,MHxPC130474761,0
+Gemini,gemini-3.5-flash-lite,1647,0,0.0,Zero activity recorded across all metrics.,MHxPC130317070,0
+Gemini,gemini-3.5-flash-lite,1648,0,0.01,Only one event and zero chapters accessed.,MHxPC130489050,0
+Gemini,gemini-3.5-flash-lite,1649,0,0.0,Completely inactive profile with zero events.,MHxPC130366531,0
+Gemini,gemini-3.5-flash-lite,1650,0,0.15,Moderate events but active days and chapter access are too low for certification.,MHxPC130269455,0
+Gemini,gemini-3.5-flash-lite,1651,0,0.1,Low chapter access despite decent event count.,MHxPC130407412,0
+Gemini,gemini-3.5-flash-lite,1652,0,0.01,Virtually no engagement across multiple enrolled courses.,MHxPC130193167,0
+Gemini,gemini-3.5-flash-lite,1653,0,0.02,Very low event count and minimal active days.,MHxPC130149518,0
+Gemini,gemini-3.5-flash-lite,1654,0,0.0,Zero events and chapters accessed.,MHxPC130103316,0
+Gemini,gemini-3.5-flash-lite,1655,0,0.03,Low events and limited chapter interaction.,MHxPC130512259,0
+Gemini,gemini-3.5-flash-lite,1656,0,0.02,Very short duration of engagement over two active days.,MHxPC130236860,0
+Gemini,gemini-3.5-flash-lite,1657,0,0.01,Extremely sparse activity with zero chapters accessed.,MHxPC130091339,0
+Gemini,gemini-3.5-flash-lite,1658,0,0.1,High video plays but very few active days and low chapter depth.,MHxPC130286265,0
+Gemini,gemini-3.5-flash-lite,1659,0,0.01,Single active day with minimal events and zero chapters.,MHxPC130578947,0
+Gemini,gemini-3.5-flash-lite,1660,0,0.01,Extremely low activity with only 1 event and 1 active day.,MHxPC130288369,0
+Gemini,gemini-3.5-flash-lite,1661,0,0.0,Zero events and zero active days recorded.,MHxPC130552344,0
+Gemini,gemini-3.5-flash-lite,1662,0,0.02,Very low event count and only 2 active days.,MHxPC130537036,0
+Gemini,gemini-3.5-flash-lite,1663,0,0.0,Minimal activity with only 3 events and no chapters accessed.,MHxPC130312885,0
+Gemini,gemini-3.5-flash-lite,1664,0,0.05,Low event count and active days despite some chapter access.,MHxPC130287374,0
+Gemini,gemini-3.5-flash-lite,1665,0,0.01,Very low engagement across all metrics.,MHxPC130565059,0
+Gemini,gemini-3.5-flash-lite,1666,0,0.0,Minimal activity with 7 events on a single day.,MHxPC130464331,0
+Gemini,gemini-3.5-flash-lite,1667,0,0.01,Low event count and only 1 active day.,MHxPC130258041,0
+Gemini,gemini-3.5-flash-lite,1668,0,0.01,Very low event count of 4 with minimal engagement.,MHxPC130456982,0
+Gemini,gemini-3.5-flash-lite,1669,0,0.03,Events concentrated on a single active day.,MHxPC130025829,0
+Gemini,gemini-3.5-flash-lite,1670,1,0.78,High engagement with 1707 events and 47 active days.,MHxPC130021223,1
+Gemini,gemini-3.5-flash-lite,1671,1,0.85,"High engagement with 3104 events, 43 active days, and forum posts.",MHxPC130593231,0
+Gemini,gemini-3.5-flash-lite,1672,0,0.01,Very low engagement with only 12 events.,MHxPC130492947,0
+Gemini,gemini-3.5-flash-lite,1673,0,0.02,Low event count and only 2 active days.,MHxPC130577505,0
+Gemini,gemini-3.5-flash-lite,1674,0,0.0,Zero events and zero active days recorded.,MHxPC130118313,0
+Gemini,gemini-3.5-flash-lite,1675,0,0.25,Decent event count but very few active days.,MHxPC130001686,0
+Gemini,gemini-3.5-flash-lite,1676,0,0.01,Minimal engagement with only 8 events.,MHxPC130536504,0
+Gemini,gemini-3.5-flash-lite,1677,0,0.0,Zero events and zero active days recorded.,MHxPC130012634,0
+Gemini,gemini-3.5-flash-lite,1678,0,0.01,Very low event count of 12 on a single day.,MHxPC130147553,0
+Gemini,gemini-3.5-flash-lite,1679,0,0.15,Moderate activity but insufficient overall engagement for certification.,MHxPC130554757,0
+Gemini,gemini-3.5-flash-lite,1680,0,0.05,Very low activity across only one active day indicates lack of sustained engagement.,MHxPC130452433,0
+Gemini,gemini-3.5-flash-lite,1681,0,0.01,Zero events and zero active days indicate no participation.,MHxPC130293585,0
+Gemini,gemini-3.5-flash-lite,1682,1,0.75,"Substantial events, active days, and video plays indicate strong course completion behavior.",MHxPC130305525,0
+Gemini,gemini-3.5-flash-lite,1683,0,0.1,Very few active days despite some video plays indicate insufficient engagement.,MHxPC130060764,0
+Gemini,gemini-3.5-flash-lite,1684,0,0.05,Low event count and single active day suggest quick abandonment.,MHxPC130117995,0
+Gemini,gemini-3.5-flash-lite,1685,0,0.01,Minimal events and single active day show negligible engagement.,MHxPC130491361,0
+Gemini,gemini-3.5-flash-lite,1686,0,0.01,Extremely low activity with only one event recorded.,MHxPC130303068,0
+Gemini,gemini-3.5-flash-lite,1687,0,0.05,Low event count and minimal active days are insufficient for certification.,MHxPC130554825,0
+Gemini,gemini-3.5-flash-lite,1688,0,0.01,Zero events and zero active days indicate no course interaction.,MHxPC130512927,0
+Gemini,gemini-3.5-flash-lite,1689,0,0.05,Very limited events and active days point to non-completion.,MHxPC130289389,0
+Gemini,gemini-3.5-flash-lite,1690,0,0.01,Only one event recorded on a single active day.,MHxPC130235568,0
+Gemini,gemini-3.5-flash-lite,1691,0,0.05,Activity is restricted to a single active day.,MHxPC130353904,0
+Gemini,gemini-3.5-flash-lite,1692,0,0.08,Activity is limited to only two active days.,MHxPC130497273,0
+Gemini,gemini-3.5-flash-lite,1693,0,0.01,Minimal single-event participation.,MHxPC130226209,0
+Gemini,gemini-3.5-flash-lite,1694,0,0.01,Zero events and zero active days.,MHxPC130511657,0
+Gemini,gemini-3.5-flash-lite,1695,0,0.01,Only two events on a single active day.,MHxPC130512370,0
+Gemini,gemini-3.5-flash-lite,1696,0,0.01,Virtually no engagement with a single event.,MHxPC130554246,0
+Gemini,gemini-3.5-flash-lite,1697,0,0.1,Low active day count is insufficient for earning a certificate.,MHxPC130338158,0
+Gemini,gemini-3.5-flash-lite,1698,0,0.02,Very low event count across multiple enrolled courses.,MHxPC130088820,0
+Gemini,gemini-3.5-flash-lite,1699,0,0.01,Zero activity recorded.,MHxPC130479728,0
+Gemini,gemini-3.5-flash-lite,1700,1,0.85,High event count and active days indicate strong engagement.,MHxPC130074980,0
+Gemini,gemini-3.5-flash-lite,1701,0,0.01,No activity recorded.,MHxPC130147379,0
+Gemini,gemini-3.5-flash-lite,1702,1,0.82,Sustained high event count across multiple active days.,MHxPC130539444,0
+Gemini,gemini-3.5-flash-lite,1703,0,0.05,Low event count and minimal active days.,MHxPC130115469,0
+Gemini,gemini-3.5-flash-lite,1704,0,0.01,Minimal activity and zero chapters accessed.,MHxPC130189358,0
+Gemini,gemini-3.5-flash-lite,1705,0,0.01,No activity recorded.,MHxPC130493722,0
+Gemini,gemini-3.5-flash-lite,1706,0,0.01,Zero events and minimal engagement.,MHxPC130110511,0
+Gemini,gemini-3.5-flash-lite,1707,0,0.02,Very low event count and engagement.,MHxPC130060683,0
+Gemini,gemini-3.5-flash-lite,1708,0,0.04,Low events and only one active day.,MHxPC130593657,0
+Gemini,gemini-3.5-flash-lite,1709,0,0.01,Very low event count.,MHxPC130113531,0
+Gemini,gemini-3.5-flash-lite,1710,0,0.01,Extremely low events and active days.,MHxPC130449231,0
+Gemini,gemini-3.5-flash-lite,1711,0,0.02,Low events and minimal active days.,MHxPC130473175,0
+Gemini,gemini-3.5-flash-lite,1712,0,0.03,Low event count and single active day.,MHxPC130162359,0
+Gemini,gemini-3.5-flash-lite,1713,0,0.01,No activity recorded.,MHxPC130548265,0
+Gemini,gemini-3.5-flash-lite,1714,0,0.01,Zero events and minimal engagement.,MHxPC130226350,0
+Gemini,gemini-3.5-flash-lite,1715,0,0.01,Minimal activity recorded.,MHxPC130133460,0
+Gemini,gemini-3.5-flash-lite,1716,0,0.05,Low event count and few active days.,MHxPC130584707,0
+Gemini,gemini-3.5-flash-lite,1717,0,0.01,Very low events and active days.,MHxPC130512338,0
+Gemini,gemini-3.5-flash-lite,1718,0,0.01,No activity recorded.,MHxPC130357058,0
+Gemini,gemini-3.5-flash-lite,1719,0,0.02,Low event count and single active day.,MHxPC130089733,0
+Gemini,gemini-3.5-flash-lite,1720,0,0.01,Extremely low activity with only 1 event and 1 active day.,MHxPC130567024,0
+Gemini,gemini-3.5-flash-lite,1721,0,0.05,"Moderate activity level, but active days and event counts are insufficient for certification.",MHxPC130212874,0
+Gemini,gemini-3.5-flash-lite,1722,0,0.01,Very low active days and chapter engagement.,MHxPC130184417,0
+Gemini,gemini-3.5-flash-lite,1723,0,0.1,"Moderate events across 12 active days, but lacks the deep sustained engagement typical of certificate earners.",MHxPC130329063,0
+Gemini,gemini-3.5-flash-lite,1724,0,0.01,Minimal event count and active days.,MHxPC130490249,0
+Gemini,gemini-3.5-flash-lite,1725,0,0.0,Zero events and zero active days.,MHxPC130354504,0
+Gemini,gemini-3.5-flash-lite,1726,0,0.0,Zero events and zero active days.,MHxPC130545216,0
+Gemini,gemini-3.5-flash-lite,1727,0,0.01,Very low engagement with only 15 events.,MHxPC130581758,0
+Gemini,gemini-3.5-flash-lite,1728,0,0.0,Zero events and zero active days.,MHxPC130020766,0
+Gemini,gemini-3.5-flash-lite,1729,0,0.01,Almost no events and zero chapters accessed.,MHxPC130061700,0
+Gemini,gemini-3.5-flash-lite,1730,0,0.0,Zero events and zero active days.,MHxPC130524786,0
+Gemini,gemini-3.5-flash-lite,1731,1,0.85,High event count over 22 active days and 15 chapters accessed.,MHxPC130007504,1
+Gemini,gemini-3.5-flash-lite,1732,0,0.01,Very low activity with only 7 events.,MHxPC130221040,0
+Gemini,gemini-3.5-flash-lite,1733,0,0.0,Zero events and zero active days.,MHxPC130584019,0
+Gemini,gemini-3.5-flash-lite,1734,0,0.01,Zero events recorded despite accessing a few chapters.,MHxPC130411394,0
+Gemini,gemini-3.5-flash-lite,1735,1,0.9,"Strong engagement with thousands of events, high video plays, and 35 active days.",MHxPC130588776,1
+Gemini,gemini-3.5-flash-lite,1736,0,0.02,Very low event count despite some video activity.,MHxPC130118133,0
+Gemini,gemini-3.5-flash-lite,1737,0,0.02,Low active days and minimal overall engagement.,MHxPC130334498,0
+Gemini,gemini-3.5-flash-lite,1738,0,0.0,No events and zero chapters accessed.,MHxPC130246574,0
+Gemini,gemini-3.5-flash-lite,1739,1,0.88,High engagement with over 5600 events and 44 active days.,MHxPC130352958,1
+Gemini,gemini-3.5-flash-lite,1740,0,0.01,Very low event count and active days indicate minimal engagement.,MHxPC130464515,0
+Gemini,gemini-3.5-flash-lite,1741,0,0.01,Extremely low activity and no video plays.,MHxPC130577076,0
+Gemini,gemini-3.5-flash-lite,1742,0,0.01,Almost zero engagement with no chapters accessed.,MHxPC130293032,0
+Gemini,gemini-3.5-flash-lite,1743,0,0.02,Low events and only one active day.,MHxPC130117820,0
+Gemini,gemini-3.5-flash-lite,1744,0,0.02,Insufficient overall activity across courses.,MHxPC130225911,0
+Gemini,gemini-3.5-flash-lite,1745,0,0.08,Moderate events but insufficient depth for certification.,MHxPC130498974,0
+Gemini,gemini-3.5-flash-lite,1746,0,0.0,Zero engagement across all metrics.,MHxPC130165102,0
+Gemini,gemini-3.5-flash-lite,1747,0,0.05,Some video activity but too few active days and events.,MHxPC130595042,0
+Gemini,gemini-3.5-flash-lite,1748,0,0.01,Single event and one active day.,MHxPC130090152,0
+Gemini,gemini-3.5-flash-lite,1749,0,0.05,Active for only 5 days with low chapter access.,MHxPC130158623,0
+Gemini,gemini-3.5-flash-lite,1750,0,0.1,Decent events but zero video logging and limited active days.,MHxPC130065837,1
+Gemini,gemini-3.5-flash-lite,1751,0,0.01,Very low engagement and no video tracking.,MHxPC130441666,0
+Gemini,gemini-3.5-flash-lite,1752,0,0.02,Very low event count and minimal duration.,MHxPC130054266,0
+Gemini,gemini-3.5-flash-lite,1753,0,0.0,No active days or events recorded.,MHxPC130589538,0
+Gemini,gemini-3.5-flash-lite,1754,0,0.01,Minimal activity with one event on one day.,MHxPC130271909,0
+Gemini,gemini-3.5-flash-lite,1755,0,0.04,Short duration of activity and low chapter access.,MHxPC130107444,0
+Gemini,gemini-3.5-flash-lite,1756,0,0.0,Zero engagement recorded.,MHxPC130107320,0
+Gemini,gemini-3.5-flash-lite,1757,0,0.15,"Good video activity and events, but active days are somewhat low.",MHxPC130405966,0
+Gemini,gemini-3.5-flash-lite,1758,0,0.05,Moderate events but no video plays and few active days.,MHxPC130388965,0
+Gemini,gemini-3.5-flash-lite,1759,0,0.01,Almost no participation.,MHxPC130511776,0
+Gemini,gemini-3.5-flash-lite,1760,0,0.1,Low event count and few active days indicate lack of sustained engagement.,MHxPC130395283,0
+Gemini,gemini-3.5-flash-lite,1761,0,0.0,Zero events and zero active days.,MHxPC130578952,0
+Gemini,gemini-3.5-flash-lite,1762,0,0.0,Zero events and zero active days.,MHxPC130174290,0
+Gemini,gemini-3.5-flash-lite,1763,1,0.85,High event count across many active days strongly correlates with certification.,MHxPC130417497,0
+Gemini,gemini-3.5-flash-lite,1764,1,0.75,Sustained high video activity and strong event count indicate successful completion.,MHxPC130323698,0
+Gemini,gemini-3.5-flash-lite,1765,0,0.1,Too few active days despite some video plays.,MHxPC130030800,0
+Gemini,gemini-3.5-flash-lite,1766,0,0.0,Minimal activity and very few days engaged.,MHxPC130333094,0
+Gemini,gemini-3.5-flash-lite,1767,0,0.2,Low events and no video plays indicate incomplete participation.,MHxPC130034635,0
+Gemini,gemini-3.5-flash-lite,1768,0,0.0,Minimal activity across a single day.,MHxPC130010052,0
+Gemini,gemini-3.5-flash-lite,1769,0,0.1,Low event volume and limited engagement.,MHxPC130008389,0
+Gemini,gemini-3.5-flash-lite,1770,1,0.8,High active days and significant event count despite low video plays.,MHxPC130091190,0
+Gemini,gemini-3.5-flash-lite,1771,0,0.0,Almost zero activity.,MHxPC130237451,0
+Gemini,gemini-3.5-flash-lite,1772,0,0.0,Only one active day of minimal engagement.,MHxPC130463118,0
+Gemini,gemini-3.5-flash-lite,1773,0,0.1,Low events and minimal active days.,MHxPC130440385,0
+Gemini,gemini-3.5-flash-lite,1774,0,0.0,Very low event count and no video activity.,MHxPC130184968,0
+Gemini,gemini-3.5-flash-lite,1775,0,0.0,Zero activity.,MHxPC130548391,0
+Gemini,gemini-3.5-flash-lite,1776,0,0.0,Zero activity.,MHxPC130324727,0
+Gemini,gemini-3.5-flash-lite,1777,0,0.1,Low event count and no video plays.,MHxPC130152159,0
+Gemini,gemini-3.5-flash-lite,1778,0,0.0,No recorded events.,MHxPC130038300,0
+Gemini,gemini-3.5-flash-lite,1779,0,0.0,Minimal activity and negligible event count.,MHxPC130029721,0
+Gemini,gemini-3.5-flash-lite,1780,0,0.05,Very low event count and short active days.,MHxPC130474503,0
+Gemini,gemini-3.5-flash-lite,1781,0,0.1,Low events and short duration across ten days.,MHxPC130569912,0
+Gemini,gemini-3.5-flash-lite,1782,0,0.02,Very few active days and low events.,MHxPC130254835,0
+Gemini,gemini-3.5-flash-lite,1783,0,0.03,Low active days and minimal chapter access.,MHxPC130280202,0
+Gemini,gemini-3.5-flash-lite,1784,0,0.15,Moderate chapter access but low overall engagement.,MHxPC130273857,0
+Gemini,gemini-3.5-flash-lite,1785,0,0.0,Zero events and no activity recorded.,MHxPC130119361,0
+Gemini,gemini-3.5-flash-lite,1786,0,0.02,Very low event count and minimal duration.,MHxPC130442177,0
+Gemini,gemini-3.5-flash-lite,1787,0,0.01,Virtually no activity recorded.,MHxPC130262947,0
+Gemini,gemini-3.5-flash-lite,1788,0,0.03,Very low engagement metrics.,MHxPC130553989,0
+Gemini,gemini-3.5-flash-lite,1789,0,0.02,Low event count and minimal active days.,MHxPC130356410,0
+Gemini,gemini-3.5-flash-lite,1790,0,0.0,No events and zero active days.,MHxPC130477635,0
+Gemini,gemini-3.5-flash-lite,1791,0,0.01,Extremely low events and single active day.,MHxPC130283550,0
+Gemini,gemini-3.5-flash-lite,1792,0,0.0,Zero events and no recorded activity.,MHxPC130241406,0
+Gemini,gemini-3.5-flash-lite,1793,1,0.95,Extremely high event count and active days.,MHxPC130216444,1
+Gemini,gemini-3.5-flash-lite,1794,0,0.05,Low event count and minimal duration.,MHxPC130511653,0
+Gemini,gemini-3.5-flash-lite,1795,0,0.0,No events and zero active days.,MHxPC130586759,0
+Gemini,gemini-3.5-flash-lite,1796,0,0.01,Very few events and single active day.,MHxPC130479257,0
+Gemini,gemini-3.5-flash-lite,1797,1,0.85,High event count and extensive chapter access.,MHxPC130589065,0
+Gemini,gemini-3.5-flash-lite,1798,0,0.02,Low event count and very few active days.,MHxPC130419594,0
+Gemini,gemini-3.5-flash-lite,1799,0,0.0,Virtually zero activity.,MHxPC130362231,0

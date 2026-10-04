@@ -1,0 +1,84 @@
+{
+  "raw_record_count": 416921,
+  "student_unit_count": 335650,
+  "compression_ratio": 1.242,
+  "anomalies_detected": {
+    "video_sentinel_count": 255528,
+    "video_sentinel_pct": 61.29,
+    "invalid_age_count": 241,
+    "invalid_age_pct": 0.058,
+    "inverted_dates_count": 1231,
+    "inverted_dates_pct": 0.295,
+    "missing_gender_count": 23211,
+    "missing_gender_pct": 5.57
+  },
+  "feature_count": 29,
+  "features": [
+    "userid_DI",
+    "n_courses",
+    "unique_courses",
+    "n_institutes",
+    "first_start_dt",
+    "last_event_dt",
+    "total_courses_viewed",
+    "view_rate",
+    "total_events",
+    "mean_events_per_course",
+    "max_events_single_course",
+    "total_active_days",
+    "mean_active_days_per_course",
+    "max_active_days_single_course",
+    "total_video_plays",
+    "mean_video_plays_per_course",
+    "total_chapters",
+    "mean_chapters_per_course",
+    "max_chapters_single_course",
+    "total_forum_posts",
+    "age",
+    "gender",
+    "country",
+    "LoE_DI",
+    "overall_span_days",
+    "event_intensity",
+    "video_play_ratio",
+    "has_forum_activity",
+    "has_multiple_courses"
+  ],
+  "demographics": {
+    "gender_breakdown": {
+      "m": 233688,
+      "f": 84631,
+      "unknown": 17327,
+      "o": 4
+    },
+    "education_breakdown": {
+      "Bachelor's": 147714,
+      "Secondary": 97067,
+      "Master's": 74229,
+      "Doctorate": 8781,
+      "Less than Secondary": 7859
+    },
+    "top_10_countries": {
+      "United States": 103733,
+      "India": 54567,
+      "Other Europe": 24451,
+      "Other Africa": 15638,
+      "United Kingdom": 12860,
+      "Brazil": 11684,
+      "Other Middle East/Central Asia": 10840,
+      "Other South Asia": 7991,
+      "Canada": 6897,
+      "Spain": 6033
+    },
+    "mean_age": 27.22,
+    "median_age": 25.0
+  },
+  "behavioral_overview": {
+    "pct_multi_course": 17.52,
+    "pct_with_forum_activity": 1.56,
+    "median_events": 27.0,
+    "median_active_days": 2.0,
+    "median_video_plays": 0.0,
+    "median_chapters": 2.0
+  }
+}

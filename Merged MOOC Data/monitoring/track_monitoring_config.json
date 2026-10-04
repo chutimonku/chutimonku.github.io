@@ -1,0 +1,12 @@
+{
+  "frequency": "per new academic cohort",
+  "checks": [
+    "schema and required fields",
+    "missingness and invalid ranges",
+    "behavior-feature distribution drift",
+    "cluster proportion and outlier drift",
+    "supervised discrimination and calibration when outcomes mature"
+  ],
+  "feedback_loop": "When material drift or performance degradation is confirmed, return to Step 2 and rerun the governed workflow.",
+  "threshold_policy": "Thresholds must be calibrated on genuine later cohorts; no future-cohort values are simulated here."
+}

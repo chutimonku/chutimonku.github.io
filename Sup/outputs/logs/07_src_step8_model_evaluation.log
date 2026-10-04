@@ -1,0 +1,32 @@
+======================================================================
+STEP 8: MODEL EVALUATION, RISK TIERING & MODEL LOCKING
+======================================================================
+[+] Loading holdout test partitions (unseen evaluation)...
+[+] Selected Champion Architecture from Validation: random_forest_d15
+    Validation PR-AUC: 0.8529 | Optimal Threshold: 0.8404
+[+] Full model comparison on holdout test set saved to: outputs/tables/model_comparison.csv
+[+] Champion evaluation summary saved to: outputs/tables/test_evaluation_summary.csv
+[+] Test predictions with assigned risk tiers saved to: outputs/data/test_predictions.csv
+[+] Computing Permutation Feature Importance on holdout test set...
+[+] Feature importance saved to: outputs/tables/feature_importance.csv
+[+] Conducting Demographic Subgroup Fairness Diagnostics...
+[+] Fairness diagnostics saved to: outputs/tables/fairness_diagnostics.csv
+[+] Conducting Misclassification Error Analysis...
+[+] Error analysis summary saved to: outputs/tables/error_analysis.csv
+[+] All evaluation figures saved to: outputs/figures/evaluation
+[+] Locking Champion Model and writing cryptographic integrity manifest...
+[+] Model locked: models/final/supervised_model.joblib (SHA-256: 37475d07443546ea...)
+[+] Lock specification saved to: models/final/model_lock.json
+
+STDERR
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+W20260916 14:59:45.288683 1847046144 cpu_info.cc:239] IOError: sysctlbyname failed for 'hw.l1dcachesize'. Detail: [errno 1] Operation not permitted
+W20260916 14:59:45.288849 1847046144 cpu_info.cc:239] IOError: sysctlbyname failed for 'hw.l2cachesize'. Detail: [errno 1] Operation not permitted
+W20260916 14:59:45.288925 1847046144 cpu_info.cc:239] IOError: sysctlbyname failed for 'hw.l3cachesize'. Detail: [errno 1] Operation not permitted
+W20260916 14:59:45.288995 1847046144 cpu_info.cc:239] IOError: sysctlbyname failed for 'hw.optional.neon'. Detail: [errno 1] Operation not permitted
+/opt/anaconda3/lib/python3.13/site-packages/joblib/externals/loky/backend/context.py:136: UserWarning: Could not find the number of physical cores for the following reason:
+invalid literal for int() with base 10: ''
+Returning the number of logical cores instead. You can silence this warning by setting LOKY_MAX_CPU_COUNT to the number of cores you want to use.
+  warnings.warn(
+  File "/opt/anaconda3/lib/python3.13/site-packages/joblib/externals/loky/backend/context.py", line 276, in _count_physical_cores
+    cpu_count_physical = int(cpu_info)

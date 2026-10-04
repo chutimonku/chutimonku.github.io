@@ -1,0 +1,435 @@
+{
+  "verified_artifacts": {
+    "Merged_Workflow.md": {
+      "exists": true,
+      "size_bytes": 53925,
+      "sha256": "28f595a4ac13eb08f9e07f6cae493895a6a0fe897a4d9a55c43cb211f8d7aa2f"
+    },
+    "agy_workflow_Merged.md": {
+      "exists": true,
+      "size_bytes": 7580,
+      "sha256": "8778f73fcf0e1cbd3557b1aa974281bdd0e84f1ea2e3f68c132de5afdc40b601"
+    },
+    "config/project_config.json": {
+      "exists": true,
+      "size_bytes": 3501,
+      "sha256": "c4282f70a802f5f344e77ac59e69a447929e33b9fe5d600e0683c93ea7954fd2"
+    },
+    "requirements.txt": {
+      "exists": true,
+      "size_bytes": 157,
+      "sha256": "3276ef905a74751f09867796ec235760555b975b843aea4546e2a09970d4d912"
+    },
+    "data/processed/data_provenance.json": {
+      "exists": true,
+      "size_bytes": 3964,
+      "sha256": "39e612677abbf31670a33fb47901914fb8efaf50f43399f58baea85cd5369fb8"
+    },
+    "outputs/tables/source_file_inventory.csv": {
+      "exists": true,
+      "size_bytes": 1782,
+      "sha256": "3a373da4a79504a91651990cf18d6fa429f86c3d4b6b9b99552aa492e4190009"
+    },
+    "outputs/tables/raw_column_profile.csv": {
+      "exists": true,
+      "size_bytes": 7030,
+      "sha256": "9d9340e6c2cd64e20b0c898610823546386f5a58bffd328bc0dbd2c3d63efad3"
+    },
+    "outputs/tables/raw_column_value_counts.csv": {
+      "exists": true,
+      "size_bytes": 65529,
+      "sha256": "1f34976cade44c8a1de8182b52863218be77b73992e565afe06a430187f64bde"
+    },
+    "data/processed/enrollments_cleaned.parquet": {
+      "exists": true,
+      "size_bytes": 17156921,
+      "sha256": "3e11e40e2446998172d6fc95e9bd41cf87b0afe20d9dbde7e51be5e53b62b12e"
+    },
+    "data/processed/enrollments_cleaned.csv.gz": {
+      "exists": true,
+      "size_bytes": 20747927,
+      "sha256": "5fb047808f6fc3f70a97f1329ebcf0dcb582ae22ac34c5da6096e68e19c8d16b"
+    },
+    "data/processed/students_cleaned.parquet": {
+      "exists": true,
+      "size_bytes": 18825909,
+      "sha256": "f527e7f280fcbc999c4dec38e983b54779bf813206fa8f6e2d76c9184f66f819"
+    },
+    "data/processed/students_cleaned.csv.gz": {
+      "exists": true,
+      "size_bytes": 25065975,
+      "sha256": "24a1769b98fdeed8c8112340169a6a30cdc7c45729151f736e4a977aefbda9f2"
+    },
+    "outputs/tables/missing_value_decisions.csv": {
+      "exists": true,
+      "size_bytes": 1050,
+      "sha256": "1d6e9f955e305cb42e95efc18a862b93ca49009cb233567f0a7a65d3f3fb6cd3"
+    },
+    "outputs/tables/course_offering_profile.csv": {
+      "exists": true,
+      "size_bytes": 1621,
+      "sha256": "984f1559be03fc1a07c78bfcb7b56b1a79f1a7e14889e6a11a5687a055a05451"
+    },
+    "outputs/tables/distribution_diagnostics.csv": {
+      "exists": true,
+      "size_bytes": 3175,
+      "sha256": "eeebb1d159ebbc27dc6dacc123bd3eab5ae3d324952b10ba68cc02e4bd7bc95b"
+    },
+    "outputs/tables/segment_comparison.csv": {
+      "exists": true,
+      "size_bytes": 1076,
+      "sha256": "972fa6fe64009feea7c52d4613ba729b12c32cfa5152c4dba1703f8a7c57062f"
+    },
+    "outputs/tables/activity_outlier_audit.csv": {
+      "exists": true,
+      "size_bytes": 340,
+      "sha256": "b64e6d2d51315f2c4badd79ef9d450b148ed039948263f362d8f059f2b4db768"
+    },
+    "outputs/tables/video_quality_audit.csv": {
+      "exists": true,
+      "size_bytes": 322,
+      "sha256": "996955a5d8badfdc0ec8c1e646c5d1e031a35fae7e036d68e919a3be8d33b461"
+    },
+    "outputs/tables/segment_feature_distributions.csv": {
+      "exists": true,
+      "size_bytes": 2301,
+      "sha256": "da5e40796a2fb7704d761c6bb43c82e7fee1656efa3fa7e41389ab8f03573e13"
+    },
+    "data/quarantine/outcome_quality_flags.parquet": {
+      "exists": true,
+      "size_bytes": 4920876,
+      "sha256": "03aa599ed2dc500b3aecf9475d6910850fda7d5572ec9807f08c62879de0b459"
+    },
+    "data/quarantine/supervised_outcomes_cleaned.parquet": {
+      "exists": true,
+      "size_bytes": 4920699,
+      "sha256": "378586ac4c3c71839202ac91baf13482323e02b450bee88cb30f550a97db8bc2"
+    },
+    "outputs/tables/k_selection_elbow.csv": {
+      "exists": true,
+      "size_bytes": 1140,
+      "sha256": "64a62539bd7cdbd25c2903b8ec81d6a77f8cefdf74b10062345bea14b5477217"
+    },
+    "outputs/tables/unsupervised_model_comparison.csv": {
+      "exists": true,
+      "size_bytes": 11435,
+      "sha256": "71491cdff3197bfcfa9200f8a46d554937e6268c4c5c388069fab58a21d4706a"
+    },
+    "outputs/tables/gap_statistic_by_k.csv": {
+      "exists": true,
+      "size_bytes": 638,
+      "sha256": "a1b0bcfb89fedab89fe5c37be85c33b2acca5663d085dd199c13ef855e6e177f"
+    },
+    "outputs/tables/k_selection_decision.csv": {
+      "exists": true,
+      "size_bytes": 216,
+      "sha256": "a75a0ee89cf5ff5ce6e767c322042a3c807cae565355a5b585551204763b051c"
+    },
+    "outputs/tables/k_sensitivity_multiseed_runs.csv": {
+      "exists": true,
+      "size_bytes": 2568,
+      "sha256": "af8661d002b28b1c199dcc070a64c52078daa288d600dbaa9a2569c5679a1387"
+    },
+    "outputs/tables/k_sensitivity_multiseed_audit.csv": {
+      "exists": true,
+      "size_bytes": 3319,
+      "sha256": "9b5efc97bcd3b37af93bc673947d044fb665df6266f886c7b6d3e6127b632837"
+    },
+    "outputs/tables/deep_learning_model_comparison.csv": {
+      "exists": true,
+      "size_bytes": 1873,
+      "sha256": "b7656512e420b0f6c504e3770701b80e23d45fe6e554ea054efbec14e136d957"
+    },
+    "outputs/tables/supervised_model_comparison.csv": {
+      "exists": true,
+      "size_bytes": 1899,
+      "sha256": "14428ab90df18386b2b2132d717f56289317b4fa8d63fab729c9cd341ebf783c"
+    },
+    "outputs/tables/supervised_confusion_matrices_comparison.csv": {
+      "exists": true,
+      "size_bytes": 696,
+      "sha256": "7b5d0b5992ef3d81766678a05ae1a7ee0058eddbe7c7d5e2dc32a27b6843ecb2"
+    },
+    "outputs/tables/supervised_feature_specification.csv": {
+      "exists": true,
+      "size_bytes": 2269,
+      "sha256": "2e5a053a77c94a3c73f751391f7e8f8fda3418f07fc0e4df2b1bf51293d2e7c7"
+    },
+    "outputs/tables/supervised_transformed_features.csv": {
+      "exists": true,
+      "size_bytes": 2650,
+      "sha256": "bf0e96cc20cbd55657dc3a378c83f2fb9367c71c0452b4411cb968d1651cea33"
+    },
+    "outputs/tables/llm_method_availability.csv": {
+      "exists": true,
+      "size_bytes": 429,
+      "sha256": "365d0e0e6b2910a581d6d287148209a330971e5349f2f6d9e756fbcba7a13b3a"
+    },
+    "outputs/tables/llm_student_text_inputs.csv": {
+      "exists": true,
+      "size_bytes": 4458798,
+      "sha256": "9156a75bc50db042c4ca421ed8ed39a7321dac0664d9a83c7bcd838a3b5c47eb"
+    },
+    "outputs/tables/llm_text_classifier_comparison.csv": {
+      "exists": true,
+      "size_bytes": 1013,
+      "sha256": "8c223b60374af0de97119a238aead30c06a4c8709dfc54b35d3709627aa49457"
+    },
+    "outputs/tables/llm_text_confusion_matrices.csv": {
+      "exists": true,
+      "size_bytes": 247,
+      "sha256": "4154288551766ed09e88d889810d057f72b7fc7ba69896c40196fbed9b2e98ef"
+    },
+    "outputs/tables/llm_text_test_predictions.csv": {
+      "exists": true,
+      "size_bytes": 70775,
+      "sha256": "fc65f9a1ccb9a62ad8230a4163243f381737251dd6436a886a99c47ec16f019e"
+    },
+    "outputs/tables/llm_task_definition.csv": {
+      "exists": true,
+      "size_bytes": 558,
+      "sha256": "83c3f4f3e25a8453b09c6e35e6efdb6aa82fe866da64a5c7b10ce02b24dc593d"
+    },
+    "outputs/tables/llm_generative_model_comparison.csv": {
+      "exists": true,
+      "size_bytes": 488,
+      "sha256": "6e3bb87d3bb0371f9c4890b0a77e93758426f0fc43aa6275cd8b3326c106506d"
+    },
+    "outputs/tables/llm_api_provider_status.csv": {
+      "exists": true,
+      "size_bytes": 432,
+      "sha256": "007654c37c358fda21b3e5fc64966f27167a1c2fba27e8bb6016588dd3a5e5ea"
+    },
+    "outputs/tables/llm_api_predictions_all.csv": {
+      "exists": true,
+      "size_bytes": 184507,
+      "sha256": "01073b026b6a7deeba5097c9ff1344d6e7378d3ea1c73d02b838e196026f804f"
+    },
+    "outputs/reproducibility/llm_api_benchmark_manifest.json": {
+      "exists": true,
+      "size_bytes": 605,
+      "sha256": "c614ebdbed436c71397b258e101446f6f5ec7896c50ce5d4189c7316346c8952"
+    },
+    "outputs/figures/tracks/llm_text_model_comparison.png": {
+      "exists": true,
+      "size_bytes": 106123,
+      "sha256": "a8126da0353e3b9a170b2678057492e87da06699fdc2fd18c76638947172c64e"
+    },
+    "outputs/figures/tracks/llm_text_confusion_matrices.png": {
+      "exists": true,
+      "size_bytes": 63692,
+      "sha256": "44173ebc56a17584ad94defe87fe01774036d17bb4f74287258e3632a57d2fc7"
+    },
+    "models/tracks/llm_student_text_classifier.joblib": {
+      "exists": true,
+      "size_bytes": 103749,
+      "sha256": "6cb7f3660f0e3a79c10dcad8c7533b80ac7906c79ffc2b7208e27036ec6b52f0"
+    },
+    "outputs/reproducibility/llm_track_manifest.json": {
+      "exists": true,
+      "size_bytes": 1900,
+      "sha256": "f430d8afca33a8983e9dbcbb6ed60610d08c574ce8877e5a8dfed4bbc70e1fad"
+    },
+    "outputs/tables/deployment_runtime.csv": {
+      "exists": true,
+      "size_bytes": 234,
+      "sha256": "d9917af7295289a307204cea053fb021210505e1dc3ebbf7c132207332d3060d"
+    },
+    "outputs/data/unsupervised_cluster_assignments.csv": {
+      "exists": true,
+      "size_bytes": 7595053,
+      "sha256": "850b0c047b20db556b0a89367f567636d281605d16dd5ebf5944fc0b02390f6c"
+    },
+    "outputs/data/deep_certification_predictions.csv": {
+      "exists": true,
+      "size_bytes": 18359512,
+      "sha256": "1e29cb4a9f6446659b15e47580fbeb2231d77ace7936d2296d6144087fa3fdd3"
+    },
+    "outputs/data/supervised_certification_predictions.csv": {
+      "exists": true,
+      "size_bytes": 18206942,
+      "sha256": "f54f516a7238fdec96eb0e456905583fa6bb4e5f9be210c220a4b88d69a90547"
+    },
+    "outputs/figures/tracks/kmeans_elbow.png": {
+      "exists": true,
+      "size_bytes": 62311,
+      "sha256": "4a4b240d3904bc6c92e4a6632137000544ab56b24f7958727904a228e36a2c38"
+    },
+    "outputs/figures/tracks/behavior_hyperspace_3d.png": {
+      "exists": true,
+      "size_bytes": 308028,
+      "sha256": "852f0d8797a3123c5e3103be9bfc6c3f62d98e989bb0ff54c468e62142b2777d"
+    },
+    "outputs/figures/tracks/unsupervised_model_radar.png": {
+      "exists": true,
+      "size_bytes": 242393,
+      "sha256": "872924bcd39f151f161603b9d61c05cb26c3f77c719a36632e1d898ca801bb6c"
+    },
+    "outputs/figures/tracks/cluster_profile_radar.png": {
+      "exists": true,
+      "size_bytes": 212581,
+      "sha256": "2d1424689ac2aa2934f92cc4e374d834d4f5509db4c1b1bd86b08dff94e80cd9"
+    },
+    "outputs/figures/tracks/multi_metric_k_selection_gap.png": {
+      "exists": true,
+      "size_bytes": 254515,
+      "sha256": "549d861555a7536ccd33d663b9a5a56c37d246e27b86c638c9ee7b533974d0c2"
+    },
+    "outputs/figures/tracks/persona_proportions.png": {
+      "exists": true,
+      "size_bytes": 41013,
+      "sha256": "601a504faecf8581d67dbce12cfa69bdbaae2cd6323457c564125b73f240245b"
+    },
+    "outputs/figures/tracks/deep_model_comparison.png": {
+      "exists": true,
+      "size_bytes": 220012,
+      "sha256": "f884eb3591e761a13dbd9ce7ae7ed975ba1ab922d1187fdad4281d3e9a26dcf1"
+    },
+    "outputs/figures/tracks/deep_confusion_matrices.png": {
+      "exists": true,
+      "size_bytes": 105465,
+      "sha256": "7fac723aaf73f4f87bed3b6c12ed67365d6d8e2aa27bb54a22a54733f5381dad"
+    },
+    "outputs/figures/tracks/deep_roc_calibration.png": {
+      "exists": true,
+      "size_bytes": 178458,
+      "sha256": "0d3a4385ff15f9beaeb105b9a8ad8360cc9850fde6a7a399cb44f13e54369640"
+    },
+    "outputs/figures/tracks/supervised_model_comparison.png": {
+      "exists": true,
+      "size_bytes": 79536,
+      "sha256": "dfeb7b20e53a21242ff6d7df182bc7f0d3040231bc28a5734138e101736ca15c"
+    },
+    "outputs/figures/tracks/certification_class_balance.png": {
+      "exists": true,
+      "size_bytes": 33475,
+      "sha256": "6a8c39959abac0f3ad04a5e142278e8b36c5fd5b43bde0fc136f49ee9c80c5a3"
+    },
+    "outputs/figures/tracks/supervised_confusion_matrix.png": {
+      "exists": true,
+      "size_bytes": 73618,
+      "sha256": "5575c627377a62589aaa2e3f4cc21aabe8a72114fcbbd3262f3514d8c6f54559"
+    },
+    "outputs/figures/tracks/supervised_confusion_matrices_comparison.png": {
+      "exists": true,
+      "size_bytes": 131322,
+      "sha256": "e9bd064eb886e0f0fd586b1805f3ea736a2c0d50c312746ce5bf320f820cfaaa"
+    },
+    "outputs/figures/eda/full_distributions.png": {
+      "exists": true,
+      "size_bytes": 622594,
+      "sha256": "88bc7f06df26dc857a4a80d3d67949bf3aa0aed6bf0cce3619ab3a3654bcb881"
+    },
+    "outputs/figures/eda/robust_boxplots.png": {
+      "exists": true,
+      "size_bytes": 132993,
+      "sha256": "98d5695f8d77d24d0a1f327a5e21a405206b5b2ef729f810457a8a2f26760e59"
+    },
+    "outputs/figures/eda/zero_missing_outlier_profile.png": {
+      "exists": true,
+      "size_bytes": 118640,
+      "sha256": "fab1d09615858dd214a5d4f3b4a8edc994c91286b3da5e8b05d7a7fb5a1cb99b"
+    },
+    "outputs/figures/eda/behavior_relationships.png": {
+      "exists": true,
+      "size_bytes": 624068,
+      "sha256": "3a5f5ed4572055d4414f7f26afd455b42c7a15144b00e6e29a2106bc5d2ab1f6"
+    },
+    "outputs/figures/eda/activity_outlier_diagnostics.png": {
+      "exists": true,
+      "size_bytes": 159523,
+      "sha256": "2ffe0113d406e89cc51679a29d4177c3b170a929047526706cd302fa88926f30"
+    },
+    "outputs/figures/eda/video_quality_diagnostics.png": {
+      "exists": true,
+      "size_bytes": 153868,
+      "sha256": "82f51ff950880f51487174ec5fa228621349f3e73fe4e893e9e6ff52ea8757c9"
+    },
+    "outputs/figures/tracks/segment_feature_comparison.png": {
+      "exists": true,
+      "size_bytes": 68486,
+      "sha256": "54b0f531294b655d5513f7b64782020f1f43db971f2eb0cda6b00a43e0d56235"
+    },
+    "outputs/figures/tracks/segment_outcome_comparison.png": {
+      "exists": true,
+      "size_bytes": 91257,
+      "sha256": "fc7f1d88e34b3ffead5319dcbdb03ab2f6ad96b09f749338981afd4a8261e7c3"
+    },
+    "outputs/figures/tracks/segment_cluster_comparison.png": {
+      "exists": true,
+      "size_bytes": 76114,
+      "sha256": "a1c2654dc62fb56f0a17a2c104cf2d221031a41f0fbdbfee58a1436be684deaa"
+    },
+    "outputs/figures/tracks/segment_distribution_comparison.png": {
+      "exists": true,
+      "size_bytes": 158799,
+      "sha256": "b057b2d8fa820ede6366bb3bd64747e3d38a217f0cd8add2ac8d17f1d3343ca2"
+    },
+    "models/tracks/unsupervised_pipeline.joblib": {
+      "exists": true,
+      "size_bytes": 1789528,
+      "sha256": "c002038e37ad4f8a21829c83c85ceaab935da912e13c99c6c5f8a39b0ae58479"
+    },
+    "models/tracks/deep_certification_pipeline.joblib": {
+      "exists": true,
+      "size_bytes": 451082,
+      "sha256": "d80674532d6f21af7a6466da22d696b91b7a51b099e263e4b9626a61db0924d7"
+    },
+    "models/tracks/supervised_certification_pipeline.joblib": {
+      "exists": true,
+      "size_bytes": 371250,
+      "sha256": "6d1e5ee56ec81bc5daba7796b9e19741d10093d8918d2f91a8b85f18a5d75a64"
+    },
+    "models/tracks/input_contract.json": {
+      "exists": true,
+      "size_bytes": 3398,
+      "sha256": "7f511290aba78a78febbe606a943c2950bbe1abc042a90a5c5735be1147dc172"
+    },
+    "models/tracks/model_cards.md": {
+      "exists": true,
+      "size_bytes": 788,
+      "sha256": "513d5a2b7194498faa0f12b174da0352190c55ee4fd2952075835e6b84eecd69"
+    },
+    "outputs/reproducibility/analysis_tracks_manifest.json": {
+      "exists": true,
+      "size_bytes": 8457,
+      "sha256": "6dfdce9b1ed7a1efc007e4393b863ad5bb39ca83a2a31271e72c78c003899b2c"
+    },
+    "outputs/reproducibility/dashboard_segment_summary.json": {
+      "exists": true,
+      "size_bytes": 6521,
+      "sha256": "b5507298ece3a2400ddc5817504003c5de78f5d607ea92bbefeeadfdf7463b57"
+    },
+    "reports/student_segmentation_report.html": {
+      "exists": true,
+      "size_bytes": 5432710,
+      "sha256": "c299e9bf74acb3562ccccec91f3bfa7aa2a4c75916798b559db62021302dff27"
+    },
+    "reports/report_manifest.json": {
+      "exists": true,
+      "size_bytes": 2388,
+      "sha256": "4cc19253428e47233b2196ac72483ed1e7a2523000670272280c12268271a432"
+    },
+    "monitoring/track_monitoring_baseline.json": {
+      "exists": true,
+      "size_bytes": 4315,
+      "sha256": "35cf98440fa66d63e8d73e5708de26919f3508ccca83305f76372c9ce1fad41b"
+    },
+    "monitoring/track_monitoring_config.json": {
+      "exists": true,
+      "size_bytes": 549,
+      "sha256": "d469265cef3a873acea6135b8af717845a71ea8eaf14f6c47e22a8339f0bda5d"
+    },
+    "monitoring/track_monitoring_history.csv": {
+      "exists": true,
+      "size_bytes": 136,
+      "sha256": "90412d40ed5ec6ecb71f61734500c825301d11ee9314491fbf28917755545685"
+    },
+    "monitoring/track_retraining_decision.json": {
+      "exists": true,
+      "size_bytes": 186,
+      "sha256": "2b5eade2a950e18d73bee84b2799690afe099d37a5c1facc87db02a4ad7a5729"
+    }
+  },
+  "all_passed": true
+}

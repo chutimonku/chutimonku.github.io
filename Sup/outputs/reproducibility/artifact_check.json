@@ -1,0 +1,489 @@
+{
+  "checked_at_utc": "2026-09-17T05:35:17.375507+00:00",
+  "required_count": 74,
+  "required_file_count": 71,
+  "required_group_count": 3,
+  "complete": true,
+  "missing": [],
+  "artifacts": [
+    {
+      "path": "Workflow.md",
+      "exists": true,
+      "size_bytes": 1679,
+      "sha256": "ef182154b89f8803f383f9b71a923f85b47147de6a80adf109b4925bce210e31"
+    },
+    {
+      "path": "agy_workflow_Sup.md",
+      "exists": true,
+      "size_bytes": 32202,
+      "sha256": "716a42549fecae17c0a3029d4e885c45eb22339077f85ccc024852e49a87deac"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "exists": true,
+      "size_bytes": 5425,
+      "sha256": "f934568847484c922f49044a7348c71cc180eaefb8faf76d64d041b2606bf71c"
+    },
+    {
+      "path": "PRESENTATION_GUIDE_TH.md",
+      "exists": true,
+      "size_bytes": 11778,
+      "sha256": "f05e9189a77b7ef0d8402f50bdc9691b85780ae75a24f2af6d2be226dda8d811"
+    },
+    {
+      "path": "run_project.py",
+      "exists": true,
+      "size_bytes": 9045,
+      "sha256": "9947cf75d2af6b3fa03f0c26c4872a4ac06636c60a2454c9026d3918df3fbebf"
+    },
+    {
+      "path": "prediction_app.py",
+      "exists": true,
+      "size_bytes": 4959,
+      "sha256": "a9e2003486105fc555ee958b348e68a928a7106e4ea0218afb4d877b5497d9c6"
+    },
+    {
+      "path": "requirements.txt",
+      "exists": true,
+      "size_bytes": 144,
+      "sha256": "1acd8ab4fe5ba6ec86e4a4ad72fbbf140b6def51ee656cc82dcc56f7433998f2"
+    },
+    {
+      "path": "config/project_config.json",
+      "exists": true,
+      "size_bytes": 2373,
+      "sha256": "ce5c3c424abd75dc61a53f784caef0e2d477edae8e915ade5c1010f5a3d60eb9"
+    },
+    {
+      "path": "src/__init__.py",
+      "exists": true,
+      "size_bytes": 69,
+      "sha256": "55c3bdf614406403b6e2f1c9c61df9c8d1ebb3d059767f6f7c64676eb532fc62"
+    },
+    {
+      "path": "src/feature_transformer.py",
+      "exists": true,
+      "size_bytes": 475,
+      "sha256": "01b2dbfffea378514d9337a2cf23e019a4e85644bee65785ce4d40ebb303a46b"
+    },
+    {
+      "path": "src/deployment.py",
+      "exists": true,
+      "size_bytes": 9458,
+      "sha256": "b051f725dcadd6038a0629be73fa2723f01043029e36f8574addaf6591e158d2"
+    },
+    {
+      "path": "src/pipeline.py",
+      "exists": true,
+      "size_bytes": 8999,
+      "sha256": "c6555679f877bccc687a31f690261edcc2dbaea43ec816f0037adb5495c972e7"
+    },
+    {
+      "path": "src/predict_risk.py",
+      "exists": true,
+      "size_bytes": 1798,
+      "sha256": "5a4c09dc36c78ca5a16d940e4c6371ad7e3c9863618fcffeab266fb8d2c5830e"
+    },
+    {
+      "path": "src/step1_problem_definition.py",
+      "exists": true,
+      "size_bytes": 3207,
+      "sha256": "1a29fec48a261494b3c1a753889c4a0c0ed452efb6bf96a438b542bdcbd714ef"
+    },
+    {
+      "path": "src/step2_data_gathering.py",
+      "exists": true,
+      "size_bytes": 8259,
+      "sha256": "b5284ebbc86fa433445cdaec28caaa2f5dd84756901442518873a1ab976a0273"
+    },
+    {
+      "path": "src/step3_data_cleaning.py",
+      "exists": true,
+      "size_bytes": 12322,
+      "sha256": "305a3c847087bef80378b6c45e14dcfd2274e2587dfc4f852b6fce8412021e21"
+    },
+    {
+      "path": "src/step4_eda.py",
+      "exists": true,
+      "size_bytes": 11968,
+      "sha256": "1f28b36d80ef9e4a96f2f61ba0a752850eaf3c2f6fdb0a782a6b90965b4f8b49"
+    },
+    {
+      "path": "src/step5_feature_engineering.py",
+      "exists": true,
+      "size_bytes": 10013,
+      "sha256": "997d01745ae7d918a861c53441f25962dd49e0a3dfdb484a7c843e132428cf15"
+    },
+    {
+      "path": "src/step6_7_model_training.py",
+      "exists": true,
+      "size_bytes": 17953,
+      "sha256": "041d98969358bfe8fbdcb1f765a5e814e165503fd79b3f9e29270442d9895014"
+    },
+    {
+      "path": "src/step8_model_evaluation.py",
+      "exists": true,
+      "size_bytes": 26416,
+      "sha256": "4bf65d0962399303da867b88c80baf6d19109e3194cf1f1849206c8aa071a30a"
+    },
+    {
+      "path": "src/generate_report.py",
+      "exists": true,
+      "size_bytes": 120578,
+      "sha256": "43191b04b0fe491babe64802d64b3fe0f364d6ba86bf3c3ccc56bdefa12c7a13"
+    },
+    {
+      "path": "src/step11_monitoring.py",
+      "exists": true,
+      "size_bytes": 8784,
+      "sha256": "1c83106916e090bb63643a8fb6b08ee088f773c4547ed39f5134e1a63c24a6bd"
+    },
+    {
+      "path": "tests/test_pipeline.py",
+      "exists": true,
+      "size_bytes": 4000,
+      "sha256": "4fb9a2259c7b7880e13a45ef03f052aec11543e850a0dfe56c092aa795ddb91f"
+    },
+    {
+      "path": "examples/sample_student_input.csv",
+      "exists": true,
+      "size_bytes": 780,
+      "sha256": "4955c836f3b04a558121c08c017dd5b8570571bae757e3309f2b85208ce66a97"
+    },
+    {
+      "path": "examples/sample_prediction_output.csv",
+      "exists": true,
+      "size_bytes": 646,
+      "sha256": "845593db8fa823596cd7b7f59f7d2c6c83f2457f0e0d29175f46a32a823719d9"
+    },
+    {
+      "path": "data/processed/problem_definition.json",
+      "exists": true,
+      "size_bytes": 2969,
+      "sha256": "822da9cfea45469ce86fd9fb3bebec36df443e5180a61eb82240c5dbfd83e3ac"
+    },
+    {
+      "path": "data/processed/data_provenance.json",
+      "exists": true,
+      "size_bytes": 752,
+      "sha256": "481455f3347430dcf5ae7789a35ab3333ee1177c31aecb924b9dac2fb3a34c36"
+    },
+    {
+      "path": "data/processed/data_dictionary.csv",
+      "exists": true,
+      "size_bytes": 2262,
+      "sha256": "00bbd57d91a75238abe45308f52686d3818023e42dfe96115191f6c53ec7f5af"
+    },
+    {
+      "path": "data/processed/raw_features.parquet",
+      "exists": true,
+      "size_bytes": 8657040,
+      "sha256": "d3378c9cae270b7441ae70f91acc7f585c4ff302e3a2c604fa78e0fe35b0ea6f"
+    },
+    {
+      "path": "data/labels/raw_targets.parquet",
+      "exists": true,
+      "size_bytes": 3238304,
+      "sha256": "ecf1caf39b0fcf4332e87ff1c1db7f098c32ef42aad3cb4b8ec8463e08c36108"
+    },
+    {
+      "path": "data/processed/students_cleaned.parquet",
+      "exists": true,
+      "size_bytes": 10004842,
+      "sha256": "b8a566d5c4dd61e7fcdd34bbf1a7d42be8fe165d04b15278d376c3b8bd309288"
+    },
+    {
+      "path": "data/labels/student_labels.parquet",
+      "exists": true,
+      "size_bytes": 2062219,
+      "sha256": "dcb05de9cf16910e6e84fa952996d0adf0cc375351feaf70b586fd2a7db041d1"
+    },
+    {
+      "path": "data/processed/cleaning_rules.json",
+      "exists": true,
+      "size_bytes": 776,
+      "sha256": "8342b85683de0f8e21556c182fd5bbbbea7692f2afcd58f6e51988e6015a2f1c"
+    },
+    {
+      "path": "data/processed/cleaning_audit.json",
+      "exists": true,
+      "size_bytes": 662,
+      "sha256": "602d5dee1c18ba4452a55430862fe25e4418183dc26b36924c0a9471d26a39e2"
+    },
+    {
+      "path": "data/processed/feature_definitions.csv",
+      "exists": true,
+      "size_bytes": 5058,
+      "sha256": "3f3e4105c26f1b5761ace747aa89aadac43f835a186408c29696a1e52de88433"
+    },
+    {
+      "path": "data/processed/train_features.parquet",
+      "exists": true,
+      "size_bytes": 7792346,
+      "sha256": "f014dd4eec6e4bd98b7e09bc11f067dd4ae0480ef8ca89686d61ed9687fd6368"
+    },
+    {
+      "path": "data/processed/val_features.parquet",
+      "exists": true,
+      "size_bytes": 1876324,
+      "sha256": "020a2c916c8bc58824847663b00f67ce1db99f410258978cace9c04a82ed3c90"
+    },
+    {
+      "path": "data/processed/test_features.parquet",
+      "exists": true,
+      "size_bytes": 1866915,
+      "sha256": "817cf37644903a159e09e586b1091faf16716228b9eb307cceed8a9e14a41017"
+    },
+    {
+      "path": "data/labels/train_labels.parquet",
+      "exists": true,
+      "size_bytes": 1951949,
+      "sha256": "4d27743492aa558885b34dd47c4df45e24f47a034410b596866c57377a2f2259"
+    },
+    {
+      "path": "data/labels/val_labels.parquet",
+      "exists": true,
+      "size_bytes": 498413,
+      "sha256": "555efeb5a118b2c6ae052dac02b836786f1d28b792c22f164294a5fb134ef5a1"
+    },
+    {
+      "path": "data/labels/test_labels.parquet",
+      "exists": true,
+      "size_bytes": 498704,
+      "sha256": "19e1c65530ac4791bb60bf636eeba1cfc72cbf1177da169b6d83cff83754027b"
+    },
+    {
+      "path": "models/preprocessing_pipeline.joblib",
+      "exists": true,
+      "size_bytes": 9996,
+      "sha256": "995a6411ed4a61ef029477f4b19be3894af8834673f704cfebd333bcd4ad18b3"
+    },
+    {
+      "path": "models/final/supervised_model.joblib",
+      "exists": true,
+      "size_bytes": 11350521,
+      "sha256": "1af5eeee4ad0b0c4db3ebbe07d2a72048d53dbca8bf4caa561ce27acd2484972"
+    },
+    {
+      "path": "models/final/model_lock.json",
+      "exists": true,
+      "size_bytes": 1251,
+      "sha256": "4b51ea4ad32c4c003a89b049d49347b9522f9af429869235b3f188f8fc4fd751"
+    },
+    {
+      "path": "models/final/deployment_pipeline.joblib",
+      "exists": true,
+      "size_bytes": 11368680,
+      "sha256": "19052b7dd4b1ff2fc32422f3fedb5fd4f26dec15532adc6edd16f16fa7a359bb"
+    },
+    {
+      "path": "models/final/input_schema.json",
+      "exists": true,
+      "size_bytes": 6517,
+      "sha256": "4d518de89598eab6d51900442fd2ef9361f1ffb2dcdc771a0a270d31b6c00f9c"
+    },
+    {
+      "path": "models/final/model_card.md",
+      "exists": true,
+      "size_bytes": 2890,
+      "sha256": "14920630c59c5f6139a2db4bf1b76ad249ddf272b2439d28e481132fb89cefa4"
+    },
+    {
+      "path": "outputs/research/literature_review.md",
+      "exists": true,
+      "size_bytes": 8775,
+      "sha256": "8a62792c4a046c61d861636a10dc126bfa24aa6dd54233aa8016a802eb9ddea6"
+    },
+    {
+      "path": "outputs/research/model_selection_rationale.md",
+      "exists": true,
+      "size_bytes": 3299,
+      "sha256": "efbfcd4d6c9a1ba87e15ae71f0d903547a95d44f691e756aaa013d7e5edb2a64"
+    },
+    {
+      "path": "outputs/tables/eda_summary.csv",
+      "exists": true,
+      "size_bytes": 2248,
+      "sha256": "5a07c1d61469921629f3777b2e6bc09784440274a78c0953c68db3a56e76412d"
+    },
+    {
+      "path": "outputs/tables/feature_screening.csv",
+      "exists": true,
+      "size_bytes": 2905,
+      "sha256": "c136cfd9685e60466a9e0f742cfee8a3d2e99817f0e90db21a3087fadefe9a97"
+    },
+    {
+      "path": "outputs/tables/candidate_models.csv",
+      "exists": true,
+      "size_bytes": 3236,
+      "sha256": "acba13ca2d0c341a08093a7d9c20bc19d8f1f528b9df128ade74a9b99d63b1f0"
+    },
+    {
+      "path": "outputs/tables/model_tuning_results.csv",
+      "exists": true,
+      "size_bytes": 2029,
+      "sha256": "e0932105053e1a886f0dbd61b360210e2dd9c9e0ddd065c2b6a925c62abe461c"
+    },
+    {
+      "path": "outputs/tables/model_comparison.csv",
+      "exists": true,
+      "size_bytes": 2287,
+      "sha256": "c4ca56c034a60927114f784622e5328a27b9cd7d7f53bfec94570f2d13be0e4a"
+    },
+    {
+      "path": "outputs/tables/test_evaluation_summary.csv",
+      "exists": true,
+      "size_bytes": 474,
+      "sha256": "058bbdb977729a1953258677db7cb5ca427762b244a448ef1699030849e94370"
+    },
+    {
+      "path": "outputs/tables/feature_importance.csv",
+      "exists": true,
+      "size_bytes": 3465,
+      "sha256": "7bd9c6094cf5d809532fc0297a6a023b22a16228730ffdee1d2e637e9c80f1e9"
+    },
+    {
+      "path": "outputs/tables/fairness_diagnostics.csv",
+      "exists": true,
+      "size_bytes": 579,
+      "sha256": "5c5a982e44254fb4dfd0da270427168cda9842719d65cbab478fe518a052f028"
+    },
+    {
+      "path": "outputs/tables/error_analysis.csv",
+      "exists": true,
+      "size_bytes": 464,
+      "sha256": "31b7533c51c5035a3455462e3d9c06e97ae325abfd80516a4229bbb64ee483ff"
+    },
+    {
+      "path": "outputs/tables/feature_engineering_comparison.csv",
+      "exists": true,
+      "size_bytes": 389,
+      "sha256": "a53d70df7a2c69b317dd2f863d389dae390ea116921b408a75c6dd6c18b4a1ba"
+    },
+    {
+      "path": "outputs/tables/optimization_history.csv",
+      "exists": true,
+      "size_bytes": 882,
+      "sha256": "f489afbb40a8a8dec64be80f4b73b3b2254b4f9c30f6c351f0854dad71af79bb"
+    },
+    {
+      "path": "outputs/reproducibility/split_summary.json",
+      "exists": true,
+      "size_bytes": 357,
+      "sha256": "7d3f41716b064655b97727f455a5d7abc2624fa9c20fb891cb8bba47a4024948"
+    },
+    {
+      "path": "outputs/reproducibility/training_config.json",
+      "exists": true,
+      "size_bytes": 1842,
+      "sha256": "4f2a592975a6ee00e52193dff89a9607280cefa436cb9e33bb919950c5e0297b"
+    },
+    {
+      "path": "outputs/reproducibility/experiment_log.md",
+      "exists": true,
+      "size_bytes": 2404,
+      "sha256": "9a5e7015c590d6da6acf7b33b9acdffb4b0a1059cd3ad800f8e37a511e6f56a6"
+    },
+    {
+      "path": "outputs/logs/model_training_log.csv",
+      "exists": true,
+      "size_bytes": 958,
+      "sha256": "26603d2e913b9d60d3f9e6bf66e567ef4ac0f1c3504b656101512a8c720b6cc8"
+    },
+    {
+      "path": "outputs/data/test_predictions.csv",
+      "exists": true,
+      "size_bytes": 8015857,
+      "sha256": "87b5f919e0550baf08295eaed4972486f20796dc17850273b97b4f7532382ed5"
+    },
+    {
+      "path": "reports/student_risk_prediction_report.html",
+      "exists": true,
+      "size_bytes": 1749811,
+      "sha256": "1d413d2736ac29d76410ca52de8fc262c2cb28d224ba48d13905ab9b594b0d62"
+    },
+    {
+      "path": "reports/report_manifest.json",
+      "exists": true,
+      "size_bytes": 3652,
+      "sha256": "09432ce8caa9ec6f0acfb2e57b5130ce1796753d5656775463366832cb6fa590"
+    },
+    {
+      "path": "monitoring/monitoring_config.json",
+      "exists": true,
+      "size_bytes": 2862,
+      "sha256": "2ebaf827823eb625d073fb26aca0f59084076c8ff7b9e41b6184d4c7799b6035"
+    },
+    {
+      "path": "monitoring/monitoring_report.html",
+      "exists": true,
+      "size_bytes": 3365,
+      "sha256": "9b63e858937baa454507ad0ce96dc17a2a5245e5e85237669df6e07055a60bf7"
+    },
+    {
+      "path": "monitoring/monitoring_history.csv",
+      "exists": true,
+      "size_bytes": 329,
+      "sha256": "b53abd02033f7ba94f209fb58d97ada38fb39336676c6d28615ec3d89309a50b"
+    },
+    {
+      "path": "monitoring/retraining_decision.json",
+      "exists": true,
+      "size_bytes": 561,
+      "sha256": "cff3c78bdb7dde588e5cc0c2e4d10918cb79e7434cf01264badca865f8609b6b"
+    }
+  ],
+  "artifact_groups": [
+    {
+      "label": "EDA figures",
+      "pattern": "outputs/figures/eda/*.png",
+      "minimum_count": 1,
+      "observed_count": 4,
+      "complete": true,
+      "matches": [
+        "outputs/figures/eda/activity_distributions.png",
+        "outputs/figures/eda/class_imbalance.png",
+        "outputs/figures/eda/correlation_matrix.png",
+        "outputs/figures/eda/demographics_completion.png"
+      ]
+    },
+    {
+      "label": "model evaluation figures",
+      "pattern": "outputs/figures/evaluation/*.png",
+      "minimum_count": 1,
+      "observed_count": 6,
+      "complete": true,
+      "matches": [
+        "outputs/figures/evaluation/calibration_curves.png",
+        "outputs/figures/evaluation/confusion_matrices.png",
+        "outputs/figures/evaluation/feature_importance.png",
+        "outputs/figures/evaluation/pr_curves.png",
+        "outputs/figures/evaluation/risk_tier_distribution.png",
+        "outputs/figures/evaluation/roc_curves.png"
+      ]
+    },
+    {
+      "label": "trained candidate models",
+      "pattern": "models/candidates/*.joblib",
+      "minimum_count": 1,
+      "observed_count": 14,
+      "complete": true,
+      "matches": [
+        "models/candidates/decision_tree_d10.joblib",
+        "models/candidates/dummy_baseline.joblib",
+        "models/candidates/extra_trees_d15.joblib",
+        "models/candidates/gaussian_naive_bayes.joblib",
+        "models/candidates/hist_gbdt_lr05.joblib",
+        "models/candidates/hist_gbdt_lr10.joblib",
+        "models/candidates/linear_svm_calibrated.joblib",
+        "models/candidates/logistic_reg_c01.joblib",
+        "models/candidates/logistic_reg_c10.joblib",
+        "models/candidates/logistic_reg_unweighted.joblib",
+        "models/candidates/mlp_neural_net.joblib",
+        "models/candidates/random_forest_d10.joblib",
+        "models/candidates/random_forest_d15.joblib",
+        "models/candidates/sgd_elasticnet.joblib"
+      ]
+    }
+  ]
+}

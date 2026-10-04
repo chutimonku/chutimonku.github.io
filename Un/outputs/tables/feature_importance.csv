@@ -1,0 +1,9 @@
+feature,mean_assignment_ari_loss,std_assignment_ari_loss,repetitions,interpretation
+view_rate,0.36364079732518123,0.010812955978927154,3,Higher values indicate greater sensitivity of cluster assignments to this feature.
+log_total_active_days,0.2803616000696632,0.005050155820273539,3,Higher values indicate greater sensitivity of cluster assignments to this feature.
+log_total_events,0.24076129873649954,0.007724902134476541,3,Higher values indicate greater sensitivity of cluster assignments to this feature.
+log_total_chapters,0.23879982620806287,0.009738585157686578,3,Higher values indicate greater sensitivity of cluster assignments to this feature.
+log_overall_span_days,0.19681888250625415,0.0051229411893484855,3,Higher values indicate greater sensitivity of cluster assignments to this feature.
+log_event_intensity,0.18063311757461828,0.006024826967517282,3,Higher values indicate greater sensitivity of cluster assignments to this feature.
+log_n_courses,0.13562481366541088,0.007573783104561186,3,Higher values indicate greater sensitivity of cluster assignments to this feature.
+log_total_forum_posts,0.048747810410067594,0.00044048272591655654,3,Higher values indicate greater sensitivity of cluster assignments to this feature.

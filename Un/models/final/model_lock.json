@@ -1,0 +1,46 @@
+{
+  "locked_at_utc": "2026-09-21T13:06:02.991996+00:00",
+  "project": "Student Segmentation for Responsible Support Planning",
+  "task_type": "unsupervised_clustering",
+  "random_seed": 42,
+  "selected_k": 5,
+  "behavior_features": [
+    "mean_course_events_percentile",
+    "mean_course_active_days_percentile",
+    "mean_course_chapters_percentile",
+    "mean_course_forum_posts_percentile"
+  ],
+  "outcome_columns_excluded": [
+    "certified",
+    "grade",
+    "viewed",
+    "explored",
+    "incomplete_flag"
+  ],
+  "profile_columns_excluded": [
+    "userid_DI",
+    "course_id",
+    "institute",
+    "year",
+    "semester",
+    "gender",
+    "LoE_DI",
+    "final_cc_cname_DI",
+    "age"
+  ],
+  "pipeline_file": "models/final/clustering_pipeline.joblib",
+  "pipeline_sha256": "ae32a8161040a2e5179ab3d0797249f32088932f97a44fc1454bc57daf629350",
+  "model_file": "models/final/cluster_model.joblib",
+  "model_sha256": "7b4b7e675d026526a7eabb492ddb097a555b7fd3ee92733bcfb8fc6794dd6f8c",
+  "input_schema_file": "models/final/input_schema.json",
+  "input_schema_sha256": "8bef6fb55cfe268abbf9544c8de09a5a805f734beada294525d4be79496b4737",
+  "cluster_profile_file": "outputs/tables/cluster_profiles.csv",
+  "cluster_profile_sha256": "567c2d6544d6b9df59c661a3b1dcb02323f37b4c35e07531f18a5cf09486ebb4",
+  "model_status": "locked_for_compatible_student_level_inputs_only",
+  "retraining_required_when": [
+    "New data has different behavioural feature definitions.",
+    "New data contains different course-normalisation rules.",
+    "Required behavioural features are unavailable.",
+    "The source data schema or outcome definitions change."
+  ]
+}

@@ -1,0 +1,228 @@
+{"kind":"deck","id":"pr/28unk7","name":"Deck"}
+{"kind":"layout","layoutId":"dfe7c051-816d-4712-a221-9fc3e8beb31f","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"62fda003-814d-49b1-b4e6-fe27d04be1ac","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/ienqs9","slide":1,"title":"MOOC Student Analytics","textShapes":5}
+{"kind":"textbox","id":"sh/j65szat8","slide":1,"text":"MOOC Student Analytics","textPreview":"MOOC Student Analytics","textChars":22,"textLines":1,"bbox":[68,90,880,64]}
+{"kind":"textbox","id":"sh/47yt8fat","slide":1,"text":"การวิเคราะห์พฤติกรรมนักศึกษา การแบ่งกลุ่ม Persona และการทำนายผลลัพธ์การเรียน","textPreview":"การวิเคราะห์พฤติกรรมนักศึกษา การแบ่งกลุ่ม Persona และการทำนายผลลัพธ์การเรียน","textChars":76,"textLines":1,"bbox":[70,158,960,56]}
+{"kind":"shape","id":"sh/587a10be","slide":1,"bbox":[72,274,1030,170]}
+{"kind":"textbox","id":"sh/69gba5sz","slide":1,"text":"• ฐานข้อมูลหลักหลังรวมและทำความสะอาด: 446,766 นักศึกษา\n• งานวิเคราะห์ครอบคลุม EDA, Traditional Unsupervised, Supervised, Deep Learning และ LLM/Transformer\n• รายงานนี้ใช้ค่าจริงจากไฟล์ผลลัพธ์ใน outputs/tables และกราฟจริงจาก outputs/figures","textPreview":"• ฐานข้อมูลหลักหลังรวมและทำความสะอาด: 446,766 นักศึกษา | • งานวิเคราะห์ครอบคลุม EDA, Traditional Unsupervised, Supervised, Deep Learning ...","textChars":238,"textLines":3,"bbox":[104,306,960,110]}
+{"kind":"textbox","id":"sh/raps3atk","slide":1,"text":"MOOC Student Analytics, 2012–2013","textPreview":"MOOC Student Analytics, 2012–2013","textChars":33,"textLines":1,"bbox":[58,682,520,20]}
+{"kind":"textbox","id":"sh/svytcfa5","slide":1,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[1174,680,48,22]}
+{"kind":"notes","id":"nt/ienqs9","slide":1,"text":"แหล่งข้อมูล: student_segmentation_report.html และผลลัพธ์ในโฟลเดอร์ outputs ของโครงการ"}
+{"kind":"slide","id":"sl/nswcfy","slide":2,"title":"คำถามวิจัยและขอบเขตงาน","textShapes":13}
+{"kind":"textbox","id":"sh/6d4naxk7","slide":2,"text":"คำถามวิจัยและขอบเขตงาน","textPreview":"คำถามวิจัยและขอบเขตงาน","textChars":22,"textLines":1,"bbox":[56,38,900,58]}
+{"kind":"textbox","id":"sh/tgv65c3i","slide":2,"text":"นิยามปัญหาและการจัดวางงานตาม data science workflow","textPreview":"นิยามปัญหาและการจัดวางงานตาม data science workflow","textChars":50,"textLines":1,"bbox":[58,92,1000,36]}
+{"kind":"shape","id":"sh/8fmpc72x","slide":2,"bbox":[58,128,1100,3]}
+{"kind":"shape","id":"sh/v2do72lo","slide":2,"bbox":[70,170,210,92]}
+{"kind":"textbox","id":"sh/u147exk3","slide":2,"text":"1 นักศึกษา","textPreview":"1 นักศึกษา","textChars":10,"textLines":1,"bbox":[86,188,178,34]}
+{"kind":"textbox","id":"sh/h4f69c3u","slide":2,"text":"หน่วยวิเคราะห์","textPreview":"หน่วยวิเคราะห์","textChars":14,"textLines":1,"bbox":[86,224,178,30]}
+{"kind":"shape","id":"sh/g3mpg729","slide":2,"bbox":[312,170,210,92]}
+{"kind":"textbox","id":"sh/36xobmlk","slide":2,"text":"446,766","textPreview":"446,766","textChars":7,"textLines":1,"bbox":[328,188,178,34]}
+{"kind":"textbox","id":"sh/i5o7ihkf","slide":2,"text":"จำนวนหลังรวมข้อมูล","textPreview":"จำนวนหลังรวมข้อมูล","textChars":18,"textLines":1,"bbox":[328,224,178,30]}
+{"kind":"shape","id":"sh/8nmhkv6l","slide":2,"bbox":[554,170,210,92]}
+{"kind":"textbox","id":"sh/tovid0n6","slide":2,"text":"4 งาน","textPreview":"4 งาน","textChars":5,"textLines":1,"bbox":[570,188,178,34]}
+{"kind":"textbox","id":"sh/6l4zilof","slide":2,"text":"Track ที่วิเคราะห์","textPreview":"Track ที่วิเคราะห์","textChars":18,"textLines":1,"bbox":[570,224,178,30]}
+{"kind":"shape","id":"sh/7md0bq50","slide":2,"bbox":[796,170,210,92]}
+{"kind":"textbox","id":"sh/gr6hofmx","slide":2,"text":"Certificate","textPreview":"Certificate","textChars":11,"textLines":1,"bbox":[812,188,178,34]}
+{"kind":"textbox","id":"sh/hsfih0n2","slide":2,"text":"เป้าหมายสำคัญ","textPreview":"เป้าหมายสำคัญ","textChars":13,"textLines":1,"bbox":[812,224,178,30]}
+{"kind":"shape","id":"sh/up4zm54r","slide":2,"bbox":[70,315,1060,250]}
+{"kind":"textbox","id":"sh/vqx0fa5c","slide":2,"text":"• Unsupervised ใช้ฟีเจอร์พฤติกรรมเพื่อแบ่งกลุ่มผู้เรียนและอธิบาย Persona โดยไม่ใช้ target label\n• Supervised และ Deep Learning ใช้ฟีเจอร์ที่ผ่านการคัดกรองเพื่อทำนายการได้รับใบรับรอง\n• LLM/Transformer แปลงหนึ่งแถวนักศึกษาเป็นประโยคเชิงพฤติกรรมก่อนสร้าง embedding และเทรน classifier\n• ทุกผลลัพธ์เลือกจากข้อมูลที่ทำความสะอาดและตรวจสอบการรั่วไหลของ target แล้ว","textPreview":"• Unsupervised ใช้ฟีเจอร์พฤติกรรมเพื่อแบ่งกลุ่มผู้เรียนและอธิบาย Persona โดยไม่ใช้ target label | • Supervised และ Deep Learning ใช้ฟีเจอ...","textChars":356,"textLines":4,"bbox":[105,348,990,170]}
+{"kind":"textbox","id":"sh/4f61sfmt","slide":2,"text":"MOOC Student Analytics, 2012–2013","textPreview":"MOOC Student Analytics, 2012–2013","textChars":33,"textLines":1,"bbox":[58,682,520,20]}
+{"kind":"textbox","id":"sh/pgfilkne","slide":2,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[1174,680,48,22]}
+{"kind":"notes","id":"nt/nswcfy","slide":2,"text":""}
+{"kind":"slide","id":"sl/88k67r","slide":3,"title":"การทำความสะอาดข้อมูล","textShapes":6}
+{"kind":"textbox","id":"sh/ap47e50b","slide":3,"text":"การทำความสะอาดข้อมูล","textPreview":"การทำความสะอาดข้อมูล","textChars":20,"textLines":1,"bbox":[56,38,900,58]}
+{"kind":"textbox","id":"sh/xcf690jm","slide":3,"text":"สรุปกฎสำคัญที่ใช้ก่อนสร้างฟีเจอร์และเทรนโมเดล","textPreview":"สรุปกฎสำคัญที่ใช้ก่อนสร้างฟีเจอร์และเทรนโมเดล","textChars":45,"textLines":1,"bbox":[58,92,1000,36]}
+{"kind":"shape","id":"sh/wbmpgvih","slide":3,"bbox":[58,128,1100,3]}
+{"kind":"textbox","id":"sh/ml4nal0z","slide":3,"text":"ข้อสรุป","textPreview":"ข้อสรุป","textChars":7,"textLines":1,"bbox":[70,510,180,28]}
+{"kind":"textbox","id":"sh/9ov650jq","slide":3,"text":"• ข้อมูลทำความสะอาดแบบ source-first แล้วจึง reconcile ข้ามแหล่งข้อมูล\n• ค่าผิดปกติ เช่น video sentinel, invalid age, reversed dates และ outcome contradiction ถูกบันทึกเป็น audit trail\n• ผลลัพธ์สุดท้ายใช้ student aggregation หนึ่งคนต่อหนึ่งแถวสำหรับงานวิเคราะห์หลัก","textPreview":"• ข้อมูลทำความสะอาดแบบ source-first แล้วจึง reconcile ข้ามแหล่งข้อมูล | • ค่าผิดปกติ เช่น video sentinel, invalid age, reversed dates และ...","textChars":264,"textLines":3,"bbox":[92,548,1040,90]}
+{"kind":"textbox","id":"sh/onmpcvi5","slide":3,"text":"MOOC Student Analytics, 2012–2013","textPreview":"MOOC Student Analytics, 2012–2013","textChars":33,"textLines":1,"bbox":[58,682,520,20]}
+{"kind":"textbox","id":"sh/zitoz61o","slide":3,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[1174,680,48,22]}
+{"kind":"table","id":"tb/6dorexor","slide":3,"name":"","rows":8,"cols":3,"preview":"ประเด็น | วิธีจัดการ | จำนวนที่กระทบ","bbox":[58,160,1120,310]}
+{"kind":"notes","id":"nt/88k67r","slide":3,"text":""}
+{"kind":"slide","id":"sl/ka379i","slide":4,"title":"EDA: การกระจายและคุณภาพข้อมูล","textShapes":5}
+{"kind":"textbox","id":"sh/mt43epcz","slide":4,"text":"EDA: การกระจายและคุณภาพข้อมูล","textPreview":"EDA: การกระจายและคุณภาพข้อมูล","textChars":29,"textLines":1,"bbox":[56,38,900,58]}
+{"kind":"textbox","id":"sh/9wf294bq","slide":4,"text":"ตรวจ distribution, missing, zero, sparsity และ outlier ก่อนสร้างโมเดล","textPreview":"ตรวจ distribution, missing, zero, sparsity และ outlier ก่อนสร้างโมเดล","textChars":69,"textLines":1,"bbox":[58,92,1000,36]}
+{"kind":"shape","id":"sh/8vmlgzu5","slide":4,"bbox":[58,128,1100,3]}
+{"kind":"textbox","id":"sh/axo3i9cv","slide":4,"text":"กราฟนี้ใช้ดูรูปทรงการกระจายของฟีเจอร์พฤติกรรมทั้งหมด เพื่อแยกฟีเจอร์ที่เบ้มาก มีศูนย์จำนวนมาก หรือมีค่าผิดปกติสูง ก่อนตัดสินใจแปลงค่าและคัดเลือกฟีเจอร์","textPreview":"กราฟนี้ใช้ดูรูปทรงการกระจายของฟีเจอร์พฤติกรรมทั้งหมด เพื่อแยกฟีเจอร์ที่เบ้มาก มีศูนย์จำนวนมาก หรือมีค่าผิดปกติสูง ก่อนตัดสินใจแปลงค่าและค...","textChars":151,"textLines":1,"bbox":[88,555,1040,62]}
+{"kind":"textbox","id":"sh/xkfmdobm","slide":4,"text":"MOOC Student Analytics, 2012–2013","textPreview":"MOOC Student Analytics, 2012–2013","textChars":33,"textLines":1,"bbox":[58,682,520,20]}
+{"kind":"textbox","id":"sh/wj6lkju1","slide":4,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[1174,680,48,22]}
+{"kind":"image","id":"im/q9c3m1sj","slide":4,"name":"","alt":"Full feature distributions","bbox":[74,155,1060,380]}
+{"kind":"notes","id":"nt/ka379i","slide":4,"text":""}
+{"kind":"slide","id":"sl/dzxein","slide":5,"title":"EDA: ความสัมพันธ์และความผิดปกติของพฤติกรรม","textShapes":5}
+{"kind":"textbox","id":"sh/sv25k3ex","slide":5,"text":"EDA: ความสัมพันธ์และความผิดปกติของพฤติกรรม","textPreview":"EDA: ความสัมพันธ์และความผิดปกติของพฤติกรรม","textChars":42,"textLines":1,"bbox":[56,38,900,58]}
+{"kind":"textbox","id":"sh/rut4rydc","slide":5,"text":"ใช้ correlation และ outlier diagnostics เพื่อตรวจความซ้ำซ้อนของฟีเจอร์","textPreview":"ใช้ correlation และ outlier diagnostics เพื่อตรวจความซ้ำซ้อนของฟีเจอร์","textChars":70,"textLines":1,"bbox":[58,92,1000,36]}
+{"kind":"shape","id":"sh/6tknitwr","slide":5,"bbox":[58,128,1100,3]}
+{"kind":"textbox","id":"sh/j694ned0","slide":5,"text":"Correlation ช่วยระบุฟีเจอร์ที่สัมพันธ์กันสูง ส่วน outlier diagnostics ใช้ตรวจผู้เรียนที่มีกิจกรรมสูงผิดปกติ เพื่อป้องกันไม่ให้โมเดลถูกครอบงำจากค่าปลายหาง","textPreview":"Correlation ช่วยระบุฟีเจอร์ที่สัมพันธ์กันสูง ส่วน outlier diagnostics ใช้ตรวจผู้เรียนที่มีกิจกรรมสูงผิดปกติ เพื่อป้องกันไม่ให้โมเดลถูกครอ...","textChars":153,"textLines":1,"bbox":[94,558,1030,60]}
+{"kind":"textbox","id":"sh/i50ne9wv","slide":5,"text":"MOOC Student Analytics, 2012–2013","textPreview":"MOOC Student Analytics, 2012–2013","textChars":33,"textLines":1,"bbox":[58,682,520,20]}
+{"kind":"textbox","id":"sh/pov61sva","slide":5,"text":"05","textPreview":"05","textChars":2,"textLines":1,"bbox":[1174,680,48,22]}
+{"kind":"image","id":"im/k7q1gzax","slide":5,"name":"","alt":"Correlation matrix","bbox":[88,150,500,385]}
+{"kind":"image","id":"im/l8z294bi","slide":5,"name":"","alt":"Activity outlier diagnostics","bbox":[665,150,470,385]}
+{"kind":"notes","id":"nt/dzxein","slide":5,"text":""}
+{"kind":"slide","id":"sl/89eam2","slide":6,"title":"การเลือกจำนวนกลุ่ม K","textShapes":13}
+{"kind":"textbox","id":"sh/sb6xkbyh","slide":6,"text":"การเลือกจำนวนกลุ่ม K","textPreview":"การเลือกจำนวนกลุ่ม K","textChars":20,"textLines":1,"bbox":[56,38,900,58]}
+{"kind":"textbox","id":"sh/raxgr6hc","slide":6,"text":"เลือก K จากหลักฐานหลายตัวชี้วัด ไม่ยึดเฉพาะ Elbow","textPreview":"เลือก K จากหลักฐานหลายตัวชี้วัด ไม่ยึดเฉพาะ Elbow","textChars":49,"textLines":1,"bbox":[58,92,1000,36]}
+{"kind":"shape","id":"sh/q9ofi1gr","slide":6,"bbox":[58,128,1100,3]}
+{"kind":"shape","id":"sh/476xgbyl","slide":6,"bbox":[890,160,220,82]}
+{"kind":"textbox","id":"sh/3mdgn6h0","slide":6,"text":"5","textPreview":"5","textChars":1,"textLines":1,"bbox":[906,178,188,34]}
+{"kind":"textbox","id":"sh/il4fe1gf","slide":6,"text":"K ที่เลือก","textPreview":"K ที่เลือก","textChars":10,"textLines":1,"bbox":[906,214,188,30]}
+{"kind":"shape","id":"sh/p4zy10za","slide":6,"bbox":[890,258,220,82]}
+{"kind":"textbox","id":"sh/o3qhsvyp","slide":6,"text":"0.4275","textPreview":"0.4275","textChars":6,"textLines":1,"bbox":[906,276,188,34]}
+{"kind":"textbox","id":"sh/i943excv","slide":6,"text":"Silhouette","textPreview":"Silhouette","textChars":10,"textLines":1,"bbox":[906,312,188,30]}
+{"kind":"shape","id":"sh/3ad4n2tg","slide":6,"bbox":[890,356,220,82]}
+{"kind":"textbox","id":"sh/4bmlg7u1","slide":6,"text":"0.8827","textPreview":"0.8827","textChars":6,"textLines":1,"bbox":[906,374,188,34]}
+{"kind":"textbox","id":"sh/5cvmpcbm","slide":6,"text":"Davies-Bouldin","textPreview":"Davies-Bouldin","textChars":14,"textLines":1,"bbox":[906,410,188,30]}
+{"kind":"shape","id":"sh/u5k3axcz","slide":6,"bbox":[890,454,220,82]}
+{"kind":"textbox","id":"sh/v6t4j2dk","slide":6,"text":"0.9935","textPreview":"0.9935","textChars":6,"textLines":1,"bbox":[906,472,188,34]}
+{"kind":"textbox","id":"sh/g72lc7u5","slide":6,"text":"ARI stability","textPreview":"ARI stability","textChars":13,"textLines":1,"bbox":[906,508,188,30]}
+{"kind":"textbox","id":"sh/h8vmlcbq","slide":6,"text":"เกณฑ์ที่ใช้ร่วมกันคือ Silhouette, Davies-Bouldin, Calinski-Harabasz, ARI stability, inertia และ Gap statistic. ผลสุดท้ายใช้ K=5 เพราะให้สมดุลระหว่างคุณภาพการแบ่งกลุ่มและความเสถียรของกลุ่ม","textPreview":"เกณฑ์ที่ใช้ร่วมกันคือ Silhouette, Davies-Bouldin, Calinski-Harabasz, ARI stability, inertia และ Gap statistic. ผลสุดท้ายใช้ K=5 เพราะให้ส...","textChars":187,"textLines":1,"bbox":[80,575,1060,58]}
+{"kind":"textbox","id":"sh/e1onmhc3","slide":6,"text":"MOOC Student Analytics, 2012–2013","textPreview":"MOOC Student Analytics, 2012–2013","textChars":33,"textLines":1,"bbox":[58,682,520,20]}
+{"kind":"textbox","id":"sh/f2x4vmto","slide":6,"text":"06","textPreview":"06","textChars":2,"textLines":1,"bbox":[1174,680,48,22]}
+{"kind":"image","id":"im/s7epobeh","slide":6,"name":"","alt":"K selection diagnostics","bbox":[70,150,780,405]}
+{"kind":"notes","id":"nt/89eam2","slide":6,"text":""}
+{"kind":"slide","id":"sl/u4wond","slide":7,"title":"Traditional Unsupervised: ผลเปรียบเทียบโมเดล","textShapes":5}
+{"kind":"textbox","id":"sh/d8b6xo7e","slide":7,"text":"Traditional Unsupervised: ผลเปรียบเทียบโมเดล","textPreview":"Traditional Unsupervised: ผลเปรียบเทียบโมเดล","textChars":44,"textLines":1,"bbox":[56,38,900,58]}
+{"kind":"textbox","id":"sh/qlk72t8n","slide":7,"text":"โมเดลที่เลือกคือ K-Means ที่ K=5","textPreview":"โมเดลที่เลือกคือ K-Means ที่ K=5","textChars":32,"textLines":1,"bbox":[58,92,1000,36]}
+{"kind":"shape","id":"sh/r6tovyp8","slide":7,"bbox":[58,128,1100,3]}
+{"kind":"textbox","id":"sh/e9k7qt8z","slide":7,"text":"• Champion: K-Means, K=5\n• Silhouette 0.4276, Davies-Bouldin 0.8827, ARI 0.9931\n• ผลนี้ใช้สำหรับสร้าง Persona และเปรียบเทียบรูปแบบพฤติกรรมของผู้เรียน","textPreview":"• Champion: K-Means, K=5 | • Silhouette 0.4276, Davies-Bouldin 0.8827, ARI 0.9931 | • ผลนี้ใช้สำหรับสร้าง Persona และเปรียบเทียบรูปแบบพฤต...","textChars":149,"textLines":3,"bbox":[706,398,445,115]}
+{"kind":"textbox","id":"sh/zadozypk","slide":7,"text":"MOOC Student Analytics, 2012–2013","textPreview":"MOOC Student Analytics, 2012–2013","textChars":33,"textLines":1,"bbox":[58,682,520,20]}
+{"kind":"textbox","id":"sh/gfi5wzql","slide":7,"text":"07","textPreview":"07","textChars":2,"textLines":1,"bbox":[1174,680,48,22]}
+{"kind":"table","id":"tb/kzadkb61","slide":7,"name":"","rows":5,"cols":5,"preview":"โมเดล | Sil. | DB | ARI | ผล","bbox":[700,155,470,210]}
+{"kind":"image","id":"im/pwji9wvy","slide":7,"name":"","alt":"Unsupervised model comparison","bbox":[70,155,600,340]}
+{"kind":"notes","id":"nt/u4wond","slide":7,"text":""}
+{"kind":"slide","id":"sl/bpcog3","slide":8,"title":"Persona ผู้เรียน 5 กลุ่ม","textShapes":5}
+{"kind":"textbox","id":"sh/cbi5cjat","slide":8,"text":"Persona ผู้เรียน 5 กลุ่ม","textPreview":"Persona ผู้เรียน 5 กลุ่ม","textChars":24,"textLines":1,"bbox":[56,38,900,58]}
+{"kind":"textbox","id":"sh/ra9ojet8","slide":8,"text":"สัดส่วนและพฤติกรรมเฉลี่ยของแต่ละกลุ่ม","textPreview":"สัดส่วนและพฤติกรรมเฉลี่ยของแต่ละกลุ่ม","textChars":37,"textLines":1,"bbox":[58,92,1000,36]}
+{"kind":"shape","id":"sh/qp0na9sn","slide":8,"bbox":[58,128,1100,3]}
+{"kind":"textbox","id":"sh/zetonyt4","slide":8,"text":"กลุ่มที่ใหญ่ที่สุดคือ Cluster 3 มี 97,719 คน หรือ 29.1% และมีระดับพฤติกรรมเฉลี่ยต่ำกว่าอีกหลายกลุ่ม ขณะที่ Cluster 1 มีพฤติกรรมสูงสุดและคิดเป็น 18.5% ของประชากร","textPreview":"กลุ่มที่ใหญ่ที่สุดคือ Cluster 3 มี 97,719 คน หรือ 29.1% และมีระดับพฤติกรรมเฉลี่ยต่ำกว่าอีกหลายกลุ่ม ขณะที่ Cluster 1 มีพฤติกรรมสูงสุดและค...","textChars":160,"textLines":1,"bbox":[620,430,520,88]}
+{"kind":"textbox","id":"sh/edknetsj","slide":8,"text":"MOOC Student Analytics, 2012–2013","textPreview":"MOOC Student Analytics, 2012–2013","textChars":33,"textLines":1,"bbox":[58,682,520,20]}
+{"kind":"textbox","id":"sh/9kv6t8r6","slide":8,"text":"08","textPreview":"08","textChars":2,"textLines":1,"bbox":[1174,680,48,22]}
+{"kind":"table","id":"tb/1wn658zm","slide":8,"name":"","rows":6,"cols":5,"preview":"กลุ่ม | จำนวน | สัดส่วน | พฤติกรรมเฉลี่ย | ระดับ","bbox":[610,150,560,250]}
+{"kind":"image","id":"im/4vy5gfed","slide":8,"name":"","alt":"Persona donut","bbox":[70,150,500,350]}
+{"kind":"notes","id":"nt/bpcog3","slide":8,"text":""}
+{"kind":"slide","id":"sl/v9st9d","slide":9,"title":"โปรไฟล์พฤติกรรมของ Persona","textShapes":5}
+{"kind":"textbox","id":"sh/n214je54","slide":9,"text":"โปรไฟล์พฤติกรรมของ Persona","textPreview":"โปรไฟล์พฤติกรรมของ Persona","textChars":26,"textLines":1,"bbox":[56,38,900,58]}
+{"kind":"textbox","id":"sh/83a5sj6p","slide":9,"text":"เรดาร์และ PCA ใช้อธิบายลักษณะเฉพาะของแต่ละกลุ่ม","textPreview":"เรดาร์และ PCA ใช้อธิบายลักษณะเฉพาะของแต่ละกลุ่ม","textChars":47,"textLines":1,"bbox":[58,92,1000,36]}
+{"kind":"shape","id":"sh/94jmlona","slide":9,"bbox":[58,128,1100,3]}
+{"kind":"textbox","id":"sh/0fq5oz6d","slide":9,"text":"เรดาร์แสดงจุดแข็งของแต่ละ Persona เช่น event, active days, chapters และ forum posts ส่วน PCA แสดงการแยกตัวของกลุ่มในพื้นที่พฤติกรรมหลายมิติ","textPreview":"เรดาร์แสดงจุดแข็งของแต่ละ Persona เช่น event, active days, chapters และ forum posts ส่วน PCA แสดงการแยกตัวของกลุ่มในพื้นที่พฤติกรรมหลายมิติ","textChars":139,"textLines":1,"bbox":[82,535,1050,62]}
+{"kind":"textbox","id":"sh/lgjmh4ny","slide":9,"text":"MOOC Student Analytics, 2012–2013","textPreview":"MOOC Student Analytics, 2012–2013","textChars":33,"textLines":1,"bbox":[58,682,520,20]}
+{"kind":"textbox","id":"sh/q98nipob","slide":9,"text":"09","textPreview":"09","textChars":2,"textLines":1,"bbox":[1174,680,48,22]}
+{"kind":"image","id":"im/zi9kfedw","slide":9,"name":"","alt":"Persona radar","bbox":[70,150,510,350]}
+{"kind":"image","id":"im/yh0369cb","slide":9,"name":"","alt":"PCA projection","bbox":[650,150,500,350]}
+{"kind":"notes","id":"nt/v9st9d","slide":9,"text":""}
+{"kind":"slide","id":"sl/03etu7","slide":10,"title":"Supervised Learning Classification","textShapes":15}
+{"kind":"textbox","id":"sh/m9onid47","slide":10,"text":"Supervised Learning Classification","textPreview":"Supervised Learning Classification","textChars":34,"textLines":1,"bbox":[56,38,900,58]}
+{"kind":"textbox","id":"sh/9cz6ds3i","slide":10,"text":"ทำนายการได้รับใบรับรองจากฟีเจอร์ที่ผ่านการควบคุม target leakage","textPreview":"ทำนายการได้รับใบรับรองจากฟีเจอร์ที่ผ่านการควบคุม target leakage","textChars":63,"textLines":1,"bbox":[58,92,1000,36]}
+{"kind":"shape","id":"sh/obq5knmx","slide":10,"bbox":[58,128,1100,3]}
+{"kind":"shape","id":"sh/ad8nmd43","slide":10,"bbox":[760,155,260,82]}
+{"kind":"textbox","id":"sh/x0z6hs3u","slide":10,"text":"Random Forest","textPreview":"Random Forest","textChars":13,"textLines":1,"bbox":[776,173,228,34]}
+{"kind":"textbox","id":"sh/wfq5onm9","slide":10,"text":"Champion","textPreview":"Champion","textChars":8,"textLines":1,"bbox":[776,209,228,30]}
+{"kind":"shape","id":"sh/j21oj2l0","slide":10,"bbox":[1040,155,140,82]}
+{"kind":"textbox","id":"sh/y1s7qx4f","slide":10,"text":"0.861","textPreview":"0.861","textChars":5,"textLines":1,"bbox":[1056,173,108,34]}
+{"kind":"textbox","id":"sh/czut47ed","slide":10,"text":"PR-AUC","textPreview":"PR-AUC","textChars":6,"textLines":1,"bbox":[1056,209,108,30]}
+{"kind":"shape","id":"sh/dk3uxcvy","slide":10,"bbox":[760,252,140,82]}
+{"kind":"textbox","id":"sh/qxcb2xw7","slide":10,"text":"0.862","textPreview":"0.862","textChars":5,"textLines":1,"bbox":[776,270,108,34]}
+{"kind":"textbox","id":"sh/rylcv2ds","slide":10,"text":"Recall","textPreview":"Recall","textChars":6,"textLines":1,"bbox":[776,306,108,30]}
+{"kind":"shape","id":"sh/0net87e9","slide":10,"bbox":[920,252,140,82]}
+{"kind":"textbox","id":"sh/1onu1cvu","slide":10,"text":"0.801","textPreview":"0.801","textChars":5,"textLines":1,"bbox":[936,270,108,34]}
+{"kind":"textbox","id":"sh/elcb6hwj","slide":10,"text":"F1-score","textPreview":"F1-score","textChars":8,"textLines":1,"bbox":[936,306,108,30]}
+{"kind":"shape","id":"sh/zm5cz2d4","slide":10,"bbox":[1080,252,100,82]}
+{"kind":"textbox","id":"sh/oretcrel","slide":10,"text":"0.986","textPreview":"0.986","textChars":5,"textLines":1,"bbox":[1096,270,68,34]}
+{"kind":"textbox","id":"sh/9snu5wv6","slide":10,"text":"Accuracy","textPreview":"Accuracy","textChars":8,"textLines":1,"bbox":[1096,306,68,30]}
+{"kind":"textbox","id":"sh/xwj29sjy","slide":10,"text":"Random Forest ให้สมดุลระหว่าง PR-AUC, recall และ F1 ดีกว่า baseline อย่างชัดเจน เหมาะกับปัญหาที่ class positive มีสัดส่วนน้อย","textPreview":"Random Forest ให้สมดุลระหว่าง PR-AUC, recall และ F1 ดีกว่า baseline อย่างชัดเจน เหมาะกับปัญหาที่ class positive มีสัดส่วนน้อย","textChars":125,"textLines":1,"bbox":[760,380,390,92]}
+{"kind":"textbox","id":"sh/wval0n2d","slide":10,"text":"MOOC Student Analytics, 2012–2013","textPreview":"MOOC Student Analytics, 2012–2013","textChars":33,"textLines":1,"bbox":[58,682,520,20]}
+{"kind":"textbox","id":"sh/buhk7i1s","slide":10,"text":"10","textPreview":"10","textChars":2,"textLines":1,"bbox":[1174,680,48,22]}
+{"kind":"image","id":"im/6lsryx07","slide":10,"name":"","alt":"Supervised model comparison","bbox":[65,150,650,350]}
+{"kind":"notes","id":"nt/03etu7","slide":10,"text":""}
+{"kind":"slide","id":"sl/m5ag3c","slide":11,"title":"Supervised: Confusion Matrix และ Error Analysis","textShapes":5}
+{"kind":"textbox","id":"sh/i9crq1sr","slide":11,"text":"Supervised: Confusion Matrix และ Error Analysis","textPreview":"Supervised: Confusion Matrix และ Error Analysis","textChars":47,"textLines":1,"bbox":[56,38,900,58]}
+{"kind":"textbox","id":"sh/5cna1gr2","slide":11,"text":"ตรวจ false positive และ false negative เพื่อประเมินผลลัพธ์บน test set","textPreview":"ตรวจ false positive และ false negative เพื่อประเมินผลลัพธ์บน test set","textChars":69,"textLines":1,"bbox":[58,92,1000,36]}
+{"kind":"shape","id":"sh/kbetsbax","slide":11,"bbox":[58,128,1100,3]}
+{"kind":"textbox","id":"sh/a5crm1sf","slide":11,"text":"Confusion matrix ใช้ตรวจว่าโมเดลพลาดในรูปแบบใด โดยเฉพาะ false negative ของผู้เรียนที่ควรได้รับใบรับรองแต่โมเดลทำนายว่าไม่ผ่าน ซึ่งมีผลต่อการวางแผนช่วยเหลือผู้เรียน","textPreview":"Confusion matrix ใช้ตรวจว่าโมเดลพลาดในรูปแบบใด โดยเฉพาะ false negative ของผู้เรียนที่ควรได้รับใบรับรองแต่โมเดลทำนายว่าไม่ผ่าน ซึ่งมีผลต่อ...","textChars":163,"textLines":1,"bbox":[90,565,1020,58]}
+{"kind":"textbox","id":"sh/x83axwr6","slide":11,"text":"MOOC Student Analytics, 2012–2013","textPreview":"MOOC Student Analytics, 2012–2013","textChars":33,"textLines":1,"bbox":[58,682,520,20]}
+{"kind":"textbox","id":"sh/w7u9obal","slide":11,"text":"11","textPreview":"11","textChars":2,"textLines":1,"bbox":[1174,680,48,22]}
+{"kind":"image","id":"im/yt4nu9sn","slide":11,"name":"","alt":"Supervised confusion matrices","bbox":[75,145,1040,405]}
+{"kind":"notes","id":"nt/m5ag3c","slide":11,"text":""}
+{"kind":"slide","id":"sl/awg4sr","slide":12,"title":"Deep Learning Classification","textShapes":5}
+{"kind":"textbox","id":"sh/wfulsjat","slide":12,"text":"Deep Learning Classification","textPreview":"Deep Learning Classification","textChars":28,"textLines":1,"bbox":[56,38,900,58]}
+{"kind":"textbox","id":"sh/bel4jet8","slide":12,"text":"ใช้ MLP หลายสถาปัตยกรรมเพื่อทำนาย certification","textPreview":"ใช้ MLP หลายสถาปัตยกรรมเพื่อทำนาย certification","textChars":47,"textLines":1,"bbox":[58,92,1000,36]}
+{"kind":"shape","id":"sh/adc3q9cn","slide":12,"bbox":[58,128,1100,3]}
+{"kind":"textbox","id":"sh/na14futc","slide":12,"text":"โมเดลที่เลือกคือ MLP Neural Network (128, 64). ผลทดสอบได้ PR-AUC 0.839, Recall 0.842 และ F1 0.792 จึงใช้เป็น deep learning challenger เทียบกับ supervised champion","textPreview":"โมเดลที่เลือกคือ MLP Neural Network (128, 64). ผลทดสอบได้ PR-AUC 0.839, Recall 0.842 และ F1 0.792 จึงใช้เป็น deep learning challenger เที...","textChars":162,"textLines":1,"bbox":[82,535,1050,62]}
+{"kind":"textbox","id":"sh/m9s3mpcr","slide":12,"text":"MOOC Student Analytics, 2012–2013","textPreview":"MOOC Student Analytics, 2012–2013","textChars":33,"textLines":1,"bbox":[58,682,520,20]}
+{"kind":"textbox","id":"sh/t8nmt8bm","slide":12,"text":"12","textPreview":"12","textChars":2,"textLines":1,"bbox":[1174,680,48,22]}
+{"kind":"image","id":"im/07ep4f65","slide":12,"name":"","alt":"Deep model comparison","bbox":[60,150,610,350]}
+{"kind":"image","id":"im/l8n6dknq","slide":12,"name":"","alt":"Deep confusion matrices","bbox":[705,150,470,350]}
+{"kind":"notes","id":"nt/awg4sr","slide":12,"text":""}
+{"kind":"slide","id":"sl/42vxt9","slide":13,"title":"LLM / Transformer Text Classification","textShapes":14}
+{"kind":"textbox","id":"sh/j6ls7ex8","slide":13,"text":"LLM / Transformer Text Classification","textPreview":"LLM / Transformer Text Classification","textChars":37,"textLines":1,"bbox":[56,38,900,58]}
+{"kind":"textbox","id":"sh/k7ut0jyt","slide":13,"text":"แปลงหนึ่งแถวนักศึกษาเป็นข้อความเชิงพฤติกรรมก่อนเข้าโมเดล","textPreview":"แปลงหนึ่งแถวนักศึกษาเป็นข้อความเชิงพฤติกรรมก่อนเข้าโมเดล","textChars":56,"textLines":1,"bbox":[58,92,1000,36]}
+{"kind":"shape","id":"sh/l83a9ofe","slide":13,"bbox":[58,128,1100,3]}
+{"kind":"shape","id":"sh/a1sru9gr","slide":13,"bbox":[70,155,1070,124]}
+{"kind":"textbox","id":"sh/b21s3exc","slide":13,"text":"กระบวนการ","textPreview":"กระบวนการ","textChars":9,"textLines":1,"bbox":[92,176,150,26]}
+{"kind":"textbox","id":"sh/w3u9wjyx","slide":13,"text":"1. สรุปพฤติกรรมจากข้อมูลรายแถว  2. แปลงเป็นประโยคเชิงพฤติกรรม  3. สร้าง Transformer embedding  4. เทรน Logistic Regression หรือ classifier  5. วัดผลด้วย PR-AUC, ROC-AUC, Recall และ F1","textPreview":"1. สรุปพฤติกรรมจากข้อมูลรายแถว  2. แปลงเป็นประโยคเชิงพฤติกรรม  3. สร้าง Transformer embedding  4. เทรน Logistic Regression หรือ classifie...","textChars":183,"textLines":1,"bbox":[92,212,1010,45]}
+{"kind":"shape","id":"sh/mdsrqpgf","slide":13,"bbox":[770,320,250,82]}
+{"kind":"textbox","id":"sh/ny1szux0","slide":13,"text":"DistilBERT + LR","textPreview":"DistilBERT + LR","textChars":15,"textLines":1,"bbox":[786,338,218,34]}
+{"kind":"textbox","id":"sh/zedwj6ts","slide":13,"text":"Champion","textPreview":"Champion","textChars":8,"textLines":1,"bbox":[786,374,218,30]}
+{"kind":"shape","id":"sh/ed4fq1s7","slide":13,"bbox":[1040,320,130,82]}
+{"kind":"textbox","id":"sh/1gvylgbi","slide":13,"text":"0.725","textPreview":"0.725","textChars":5,"textLines":1,"bbox":[1056,338,98,34]}
+{"kind":"textbox","id":"sh/0fmxsbad","slide":13,"text":"PR-AUC","textPreview":"PR-AUC","textChars":6,"textLines":1,"bbox":[1056,374,98,30]}
+{"kind":"shape","id":"sh/nidgnqto","slide":13,"bbox":[770,420,130,82]}
+{"kind":"textbox","id":"sh/mh4fuls3","slide":13,"text":"0.793","textPreview":"0.793","textChars":5,"textLines":1,"bbox":[786,438,98,34]}
+{"kind":"textbox","id":"sh/9kfypgbu","slide":13,"text":"Recall","textPreview":"Recall","textChars":6,"textLines":1,"bbox":[786,474,98,30]}
+{"kind":"shape","id":"sh/ojmxwba9","slide":13,"bbox":[920,420,130,82]}
+{"kind":"textbox","id":"sh/3mtwbmtk","slide":13,"text":"0.697","textPreview":"0.697","textChars":5,"textLines":1,"bbox":[936,438,98,34]}
+{"kind":"textbox","id":"sh/ilkfihsz","slide":13,"text":"F1-score","textPreview":"F1-score","textChars":8,"textLines":1,"bbox":[936,474,98,30]}
+{"kind":"textbox","id":"sh/6h8zqpcn","slide":13,"text":"MOOC Student Analytics, 2012–2013","textPreview":"MOOC Student Analytics, 2012–2013","textChars":33,"textLines":1,"bbox":[58,682,520,20]}
+{"kind":"textbox","id":"sh/72h0jud8","slide":13,"text":"13","textPreview":"13","textChars":2,"textLines":1,"bbox":[1174,680,48,22]}
+{"kind":"image","id":"im/oj6hkvqd","slide":13,"name":"","alt":"LLM text model comparison","bbox":[75,320,650,250]}
+{"kind":"notes","id":"nt/42vxt9","slide":13,"text":""}
+{"kind":"slide","id":"sl/uyu6pq","slide":14,"title":"LLM / Transformer: ผลลัพธ์และหลักฐาน","textShapes":4}
+{"kind":"textbox","id":"sh/0bal8rit","slide":14,"text":"LLM / Transformer: ผลลัพธ์และหลักฐาน","textPreview":"LLM / Transformer: ผลลัพธ์และหลักฐาน","textChars":36,"textLines":1,"bbox":[56,38,900,58]}
+{"kind":"textbox","id":"sh/za1kzmh8","slide":14,"text":"เปรียบเทียบ representation แบบ lexical baseline และ transformer embedding","textPreview":"เปรียบเทียบ representation แบบ lexical baseline และ transformer embedding","textChars":73,"textLines":1,"bbox":[58,92,1000,36]}
+{"kind":"shape","id":"sh/e9sj610n","slide":14,"bbox":[58,128,1100,3]}
+{"kind":"textbox","id":"sh/mds3a10j","slide":14,"text":"MOOC Student Analytics, 2012–2013","textPreview":"MOOC Student Analytics, 2012–2013","textChars":33,"textLines":1,"bbox":[58,682,520,20]}
+{"kind":"textbox","id":"sh/p4z2tcz6","slide":14,"text":"14","textPreview":"14","textChars":2,"textLines":1,"bbox":[1174,680,48,22]}
+{"kind":"table","id":"tb/yx4n2d07","slide":14,"name":"","rows":8,"cols":5,"preview":"โมเดล | PR-AUC | Recall | F1 | ผล","bbox":[70,505,1080,145]}
+{"kind":"image","id":"im/gri5wv2l","slide":14,"name":"","alt":"LLM confusion matrices","bbox":[70,145,540,330]}
+{"kind":"image","id":"im/hsrmp036","slide":14,"name":"","alt":"LLM embedding projection","bbox":[650,145,500,330]}
+{"kind":"notes","id":"nt/uyu6pq","slide":14,"text":""}
+{"kind":"slide","id":"sl/gb5zdi","slide":15,"title":"ตารางเปรียบเทียบผลโมเดลหลัก","textShapes":5}
+{"kind":"textbox","id":"sh/1cvqp83e","slide":15,"text":"ตารางเปรียบเทียบผลโมเดลหลัก","textPreview":"ตารางเปรียบเทียบผลโมเดลหลัก","textChars":27,"textLines":1,"bbox":[56,38,900,58]}
+{"kind":"textbox","id":"sh/e947udk3","slide":15,"text":"สรุป champion ของแต่ละงาน","textPreview":"สรุป champion ของแต่ละงาน","textChars":25,"textLines":1,"bbox":[58,92,1000,36]}
+{"kind":"shape","id":"sh/fad8nylo","slide":15,"bbox":[58,128,1100,3]}
+{"kind":"textbox","id":"sh/p0fqtsjq","slide":15,"text":"• Supervised และ Deep Learning ให้ผลดีมากในงานทำนาย certification เพราะใช้ฟีเจอร์เชิงพฤติกรรมแบบมีโครงสร้าง\n• LLM/Transformer มีบทบาทเป็นตัวแปลงข้อความเป็น embedding แล้วให้ classifier เรียนรู้ต่อ\n• Unsupervised ใช้สำหรับอธิบาย Persona และ pattern discovery ไม่ใช่งานทำนาย target โดยตรง","textPreview":"• Supervised และ Deep Learning ให้ผลดีมากในงานทำนาย certification เพราะใช้ฟีเจอร์เชิงพฤติกรรมแบบมีโครงสร้าง | • LLM/Transformer มีบทบาทเป...","textChars":286,"textLines":3,"bbox":[95,465,1040,130]}
+{"kind":"textbox","id":"sh/2do7ydkz","slide":15,"text":"MOOC Student Analytics, 2012–2013","textPreview":"MOOC Student Analytics, 2012–2013","textChars":33,"textLines":1,"bbox":[58,682,520,20]}
+{"kind":"textbox","id":"sh/nyx8rilk","slide":15,"text":"15","textPreview":"15","textChars":2,"textLines":1,"bbox":[1174,680,48,22]}
+{"kind":"table","id":"tb/tczatgvi","slide":15,"name":"","rows":5,"cols":5,"preview":"Track | โมเดลที่เลือก | Metric หลัก | ค่า | Metric สนับสนุน","bbox":[72,170,1090,240]}
+{"kind":"notes","id":"nt/gb5zdi","slide":15,"text":""}
+{"kind":"slide","id":"sl/gu5c7b","slide":16,"title":"ภาพรวมผลลัพธ์ทุก Track","textShapes":5}
+{"kind":"textbox","id":"sh/xw3ytobq","slide":16,"text":"ภาพรวมผลลัพธ์ทุก Track","textPreview":"ภาพรวมผลลัพธ์ทุก Track","textChars":22,"textLines":1,"bbox":[56,38,900,58]}
+{"kind":"textbox","id":"sh/atczitcz","slide":16,"text":"กราฟรวมใช้เปรียบเทียบความเหมาะสมของวิธีวิเคราะห์แต่ละประเภท","textPreview":"กราฟรวมใช้เปรียบเทียบความเหมาะสมของวิธีวิเคราะห์แต่ละประเภท","textChars":59,"textLines":1,"bbox":[58,92,1000,36]}
+{"kind":"shape","id":"sh/bulgrytk","slide":16,"bbox":[58,128,1100,3]}
+{"kind":"textbox","id":"sh/9s3ypobu","slide":16,"text":"การเปรียบเทียบข้าม Track ต้องตีความตามชนิดงาน เพราะ Unsupervised วัดคุณภาพคลัสเตอร์ ส่วน Supervised, Deep และ LLM วัดความสามารถในการทำนายผลลัพธ์","textPreview":"การเปรียบเทียบข้าม Track ต้องตีความตามชนิดงาน เพราะ Unsupervised วัดคุณภาพคลัสเตอร์ ส่วน Supervised, Deep และ LLM วัดความสามารถในการทำนาย...","textChars":144,"textLines":1,"bbox":[92,565,1020,58]}
+{"kind":"textbox","id":"sh/mpsze9c3","slide":16,"text":"MOOC Student Analytics, 2012–2013","textPreview":"MOOC Student Analytics, 2012–2013","textChars":33,"textLines":1,"bbox":[58,682,520,20]}
+{"kind":"textbox","id":"sh/nqlgneto","slide":16,"text":"16","textPreview":"16","textChars":2,"textLines":1,"bbox":[1174,680,48,22]}
+{"kind":"image","id":"im/h4bmp8be","slide":16,"name":"","alt":"All tracks comparison","bbox":[72,150,1040,390]}
+{"kind":"notes","id":"nt/gu5c7b","slide":16,"text":""}
+{"kind":"slide","id":"sl/hzrcfb","slide":17,"title":"ข้อสรุปจากผลวิเคราะห์","textShapes":5}
+{"kind":"textbox","id":"sh/hony9sr6","slide":17,"text":"ข้อสรุปจากผลวิเคราะห์","textPreview":"ข้อสรุปจากผลวิเคราะห์","textChars":21,"textLines":1,"bbox":[56,38,900,58]}
+{"kind":"textbox","id":"sh/ulwfex8f","slide":17,"text":"คำตอบหลักที่ได้จากข้อมูลและโมเดล","textPreview":"คำตอบหลักที่ได้จากข้อมูลและโมเดล","textChars":32,"textLines":1,"bbox":[58,92,1000,36]}
+{"kind":"shape","id":"sh/vm5w7290","slide":17,"bbox":[58,128,1100,3]}
+{"kind":"shape","id":"sh/8juxcnq9","slide":17,"bbox":[75,160,1040,360]}
+{"kind":"textbox","id":"sh/9kne5sru","slide":17,"text":"• ข้อมูลหลังทำความสะอาดและรวมแหล่งข้อมูลสามารถสร้าง student-level dataset ที่ใช้วิเคราะห์ได้ 446,766 คน\n• การแบ่งกลุ่มผู้เรียนเหมาะกับ K=5 ตามผล Gap statistic และตัววัดสนับสนุนหลายตัว\n• กลุ่ม Persona แสดงความต่างของกิจกรรมเรียน เช่น event, active days, chapters และ forum posts\n• Random Forest เป็น supervised champion สำหรับทำนาย certification จากตารางผลปัจจุบัน\n• Deep Learning ให้ผลใกล้เคียง supervised แต่ต้องใช้เวลาและการจูนมากกว่า\n• LLM/Transformer track ทำงานได้ในรูปแบบ row-to-text embedding โดย DistilBERT + Logistic Regression ให้ผลดีที่สุดในกลุ่ม text model","textPreview":"• ข้อมูลหลังทำความสะอาดและรวมแหล่งข้อมูลสามารถสร้าง student-level dataset ที่ใช้วิเคราะห์ได้ 446,766 คน | • การแบ่งกลุ่มผู้เรียนเหมาะกับ ...","textChars":568,"textLines":6,"bbox":[110,190,970,300]}
+{"kind":"textbox","id":"sh/mxcfadsj","slide":17,"text":"MOOC Student Analytics, 2012–2013","textPreview":"MOOC Student Analytics, 2012–2013","textChars":33,"textLines":1,"bbox":[58,682,520,20]}
+{"kind":"textbox","id":"sh/7ylw3i9o","slide":17,"text":"17","textPreview":"17","textChars":2,"textLines":1,"bbox":[1174,680,48,22]}
+{"kind":"notes","id":"nt/hzrcfb","slide":17,"text":""}
+{"kind":"slide","id":"sl/xcbfm0","slide":18,"title":"ข้อจำกัดและข้อเสนอแนะ","textShapes":8}
+{"kind":"textbox","id":"sh/e9szalwj","slide":18,"text":"ข้อจำกัดและข้อเสนอแนะ","textPreview":"ข้อจำกัดและข้อเสนอแนะ","textChars":21,"textLines":1,"bbox":[56,38,900,58]}
+{"kind":"textbox","id":"sh/1cjyl0fa","slide":18,"text":"ประเด็นที่ควรระวังเมื่อนำผลไปใช้งานจริง","textPreview":"ประเด็นที่ควรระวังเมื่อนำผลไปใช้งานจริง","textChars":39,"textLines":1,"bbox":[58,92,1000,36]}
+{"kind":"shape","id":"sh/0bahcvep","slide":18,"bbox":[58,128,1100,3]}
+{"kind":"shape","id":"sh/ne1gnaxg","slide":18,"bbox":[75,165,500,330]}
+{"kind":"textbox","id":"sh/mdsze5wv","slide":18,"text":"ข้อจำกัด","textPreview":"ข้อจำกัด","textChars":8,"textLines":1,"bbox":[104,190,220,30]}
+{"kind":"textbox","id":"sh/9gjyp0f6","slide":18,"text":"• ข้อมูล MOOC มี class imbalance สูง จึงควรดู recall, F1 และ PR-AUC มากกว่า accuracy เพียงอย่างเดียว\n• การแปลพฤติกรรมเป็นข้อความใน LLM track ขึ้นกับ template ประโยคที่ออกแบบ\n• K ใน clustering เป็นผลจากเกณฑ์เชิงประจักษ์และการตีความ Persona ไม่ใช่ label จริงจากผู้สอน","textPreview":"• ข้อมูล MOOC มี class imbalance สูง จึงควรดู recall, F1 และ PR-AUC มากกว่า accuracy เพียงอย่างเดียว | • การแปลพฤติกรรมเป็นข้อความใน LLM ...","textChars":265,"textLines":3,"bbox":[105,235,420,210]}
+{"kind":"shape","id":"sh/ofahgfe1","slide":18,"bbox":[630,165,500,330]}
+{"kind":"textbox","id":"sh/3ihgb6xw","slide":18,"text":"ข้อเสนอแนะ","textPreview":"ข้อเสนอแนะ","textChars":10,"textLines":1,"bbox":[660,190,220,30]}
+{"kind":"textbox","id":"sh/ihof21gb","slide":18,"text":"• ใช้ Persona เพื่อออกแบบการช่วยเหลือผู้เรียนต่างกลุ่ม เช่น กลุ่มกิจกรรมต่ำและกลุ่มดูเนื้อหาไม่ต่อเนื่อง\n• ใช้ supervised champion เป็น baseline สำหรับระบบแจ้งเตือนความเสี่ยง\n• ติดตาม drift ของฟีเจอร์และ retrain เมื่อพฤติกรรมผู้เรียนเปลี่ยนจากชุดข้อมูลเดิม","textPreview":"• ใช้ Persona เพื่อออกแบบการช่วยเหลือผู้เรียนต่างกลุ่ม เช่น กลุ่มกิจกรรมต่ำและกลุ่มดูเนื้อหาไม่ต่อเนื่อง | • ใช้ supervised champion เป็น...","textChars":256,"textLines":3,"bbox":[660,235,420,210]}
+{"kind":"textbox","id":"sh/4j258rat","slide":18,"text":"MOOC Student Analytics, 2012–2013","textPreview":"MOOC Student Analytics, 2012–2013","textChars":33,"textLines":1,"bbox":[58,682,520,20]}
+{"kind":"textbox","id":"sh/5kbm1cre","slide":18,"text":"18","textPreview":"18","textChars":2,"textLines":1,"bbox":[1174,680,48,22]}
+{"kind":"notes","id":"nt/xcbfm0","slide":18,"text":""}

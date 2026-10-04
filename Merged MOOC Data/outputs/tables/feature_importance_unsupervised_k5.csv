@@ -1,0 +1,5 @@
+feature,importance,std_across_personas,method
+mean_course_events_percentile,0.700390873847164,0.26558342282266834,max-min difference across K=5 persona profiles
+mean_course_chapters_percentile,0.6652583142411217,0.25999587682888475,max-min difference across K=5 persona profiles
+mean_course_active_days_percentile,0.6431217076201979,0.27541816558152915,max-min difference across K=5 persona profiles
+mean_course_forum_posts_percentile,0.02038892391565006,0.008426641824381145,max-min difference across K=5 persona profiles

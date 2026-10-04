@@ -1,0 +1,7 @@
+{
+  "model_family": "K-Means",
+  "parameter": "selected downstream by Gap one-SE",
+  "sample_size": 4000,
+  "selection_status": "family recommendation, not an automatic cross-family winner",
+  "selection_rule": "K-Means is retained because it is stable, scalable to the full cohort, supports deterministic out-of-sample assignment, and matches the bounded Euclidean percentile space. Raw internal-index ranks are diagnostic only and are not averaged into a universal truth across algorithms."
+}

@@ -1,0 +1,119 @@
+{
+  "generated_at_utc": "2026-09-21T13:06:02.990477+00:00",
+  "artifact_type": "scikit_learn_pipeline",
+  "task_type": "unsupervised_clustering",
+  "unit_of_analysis": "one row per userid_DI",
+  "pipeline_path": "models/final/clustering_pipeline.joblib",
+  "input_contract": {
+    "optional_identifier_column": "userid_DI",
+    "required_feature_order": [
+      "mean_course_events_percentile",
+      "mean_course_active_days_percentile",
+      "mean_course_chapters_percentile",
+      "mean_course_forum_posts_percentile"
+    ],
+    "required_feature_count": 4,
+    "feature_data_type": "numeric",
+    "allowed_range": {
+      "mean_course_events_percentile": {
+        "minimum": 0.0,
+        "maximum": 1.0,
+        "missing_allowed": true,
+        "missing_handling": "Median imputation stored in the locked preprocessing pipeline."
+      },
+      "mean_course_active_days_percentile": {
+        "minimum": 0.0,
+        "maximum": 1.0,
+        "missing_allowed": true,
+        "missing_handling": "Median imputation stored in the locked preprocessing pipeline."
+      },
+      "mean_course_chapters_percentile": {
+        "minimum": 0.0,
+        "maximum": 1.0,
+        "missing_allowed": true,
+        "missing_handling": "Median imputation stored in the locked preprocessing pipeline."
+      },
+      "mean_course_forum_posts_percentile": {
+        "minimum": 0.0,
+        "maximum": 1.0,
+        "missing_allowed": true,
+        "missing_handling": "Median imputation stored in the locked preprocessing pipeline."
+      }
+    }
+  },
+  "forbidden_input_columns": {
+    "outcomes": [
+      "certified",
+      "grade",
+      "viewed",
+      "explored",
+      "incomplete_flag"
+    ],
+    "profiles": [
+      "course_id",
+      "institute",
+      "year",
+      "semester",
+      "gender",
+      "LoE_DI",
+      "final_cc_cname_DI",
+      "age"
+    ]
+  },
+  "output_contract": {
+    "column": "cluster",
+    "data_type": "integer",
+    "known_cluster_values": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "cluster_metadata": {
+      "0": {
+        "cluster_name": "Cluster 0",
+        "relative_behavior_level": "Moderate relative behavioural activity",
+        "student_count_at_training": 46296,
+        "student_pct_at_training": 13.792939073439594
+      },
+      "1": {
+        "cluster_name": "Cluster 1",
+        "relative_behavior_level": "Higher relative behavioural activity",
+        "student_count_at_training": 62225,
+        "student_pct_at_training": 18.538656338447787
+      },
+      "2": {
+        "cluster_name": "Cluster 2",
+        "relative_behavior_level": "Moderate relative behavioural activity",
+        "student_count_at_training": 55365,
+        "student_pct_at_training": 16.494860718009832
+      },
+      "3": {
+        "cluster_name": "Cluster 3",
+        "relative_behavior_level": "Lower relative behavioural activity",
+        "student_count_at_training": 97719,
+        "student_pct_at_training": 29.113362133174437
+      },
+      "4": {
+        "cluster_name": "Cluster 4",
+        "relative_behavior_level": "Moderate relative behavioural activity",
+        "student_count_at_training": 74045,
+        "student_pct_at_training": 22.060181736928342
+      }
+    }
+  },
+  "validation_policy": {
+    "reject_missing_required_columns": true,
+    "reject_unknown_columns": true,
+    "reject_outcome_columns": true,
+    "reject_profile_columns": true,
+    "reject_non_numeric_values_that_cannot_be_coerced": false,
+    "reject_values_outside_zero_to_one": true
+  },
+  "model_limitations": [
+    "PCA is a visualization only and does not define clusters.",
+    "Post-hoc outcomes are descriptive associations, not causal effects.",
+    "Clusters must not be used as automated high-stakes decisions."
+  ]
+}

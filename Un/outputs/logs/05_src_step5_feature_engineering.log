@@ -1,0 +1,26 @@
+STEP: Step 5: Feature Engineering
+MODULE: src.step5_feature_engineering
+RETURN CODE: 0
+RUNTIME_SECONDS: 1.947
+
+STDOUT
+========================================================================
+========================================================================
+STEP 5: FOUR-BEHAVIOURAL-FEATURE ENGINEERING
+========================================================================
+[Step 5] Raw behavioural features: data/processed/behavior_features_unscaled.parquet
+[Step 5] Scaled feature matrix: data/processed/feature_matrix.parquet
+[Step 5] Preprocessor: models/preprocessing_candidates/behavioral_preprocessor.joblib
+[Step 5] Feature definitions: data/processed/feature_definitions.csv
+[Step 5] Transformation audit: outputs/tables/feature_engineering_audit.json
+[Step 5] Clustering input features: mean_course_events_percentile, mean_course_active_days_percentile, mean_course_chapters_percentile, mean_course_forum_posts_percentile
+
+
+STDERR
+========================================================================
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+W20260921 20:02:28.952140 1840541696 cpu_info.cc:239] IOError: sysctlbyname failed for 'hw.l1dcachesize'. Detail: [errno 1] Operation not permitted
+W20260921 20:02:28.952322 1840541696 cpu_info.cc:239] IOError: sysctlbyname failed for 'hw.l2cachesize'. Detail: [errno 1] Operation not permitted
+W20260921 20:02:28.952399 1840541696 cpu_info.cc:239] IOError: sysctlbyname failed for 'hw.l3cachesize'. Detail: [errno 1] Operation not permitted
+W20260921 20:02:28.952472 1840541696 cpu_info.cc:239] IOError: sysctlbyname failed for 'hw.optional.neon'. Detail: [errno 1] Operation not permitted
+

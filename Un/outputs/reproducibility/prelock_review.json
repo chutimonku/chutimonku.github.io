@@ -1,0 +1,33 @@
+{
+  "selected_model": {
+    "algorithm": "kmeans",
+    "k": 4,
+    "silhouette": 0.3736794061721835,
+    "davies_bouldin": 0.9857621746071944,
+    "calinski_harabasz": 3193.546226443139,
+    "resample_stability_ari": 0.9803348067132056,
+    "smallest_cluster_fraction": 0.017092541436464,
+    "runtime_seconds": 0.7623225830029696
+  },
+  "checks": {
+    "candidate_metrics_available": true,
+    "selected_model_deployable": true,
+    "cluster_count_matches": true,
+    "all_clusters_nonempty": true,
+    "cluster_size_distribution_reviewed": true,
+    "interpretability_documented": true,
+    "sensitivity_review_complete": true,
+    "assignment_ambiguity_review_complete": true,
+    "feature_group_ablation_review_complete": true,
+    "runtime_reviewed": true,
+    "outcomes_not_accessed": true
+  },
+  "reviewed_evidence": {
+    "smallest_cluster_fraction": 0.015596603604945627,
+    "runtime_seconds": 0.7623225830029696,
+    "largest_negative_silhouette_fraction": 0.13894888408927286,
+    "minimum_ablation_agreement_ari": 0.5560646131644557,
+    "decision_policy": "Evidence completeness review without invented universal pass thresholds."
+  },
+  "decision": "APPROVED_FOR_LOCK"
+}

@@ -1,0 +1,6 @@
+feature,raw_skewness,transformed_skewness,raw_range,transformation
+total_events,7.51,0.44,"[0, 53180]",Log1p + RobustScaler
+mean_events_per_course,7.7,0.46,"[0, 53180]",Log1p + RobustScaler
+max_events_single_course,6.93,0.44,"[0, 53180]",Log1p + RobustScaler
+total_active_days,6.27,1.38,"[0, 582]",Log1p + RobustScaler
+mean_active_days_per_course,4.91,1.51,"[0, 157]",Log1p + RobustScaler

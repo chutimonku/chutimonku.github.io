@@ -1,0 +1,3 @@
+algorithm,family,k_requested,deployable,counts_as_distinct_family,status,error,silhouette,davies_bouldin,calinski_harabasz,n_clusters_observed,noise_fraction,smallest_cluster_fraction,resample_stability_ari,runtime_seconds,configuration,feature_set
+kmeans,centroid,4,True,True,success,,0.3736794061721835,0.9857621746071945,3193.546226443139,4,0.0,0.01709254143646409,0.9803348067132055,0.7437922090175562,"{""k"": 4}",core
+kmeans,centroid,4,True,True,success,,0.32680754346400376,1.119758955620952,2463.3485708765825,4,0.0,0.01709254143646409,0.9584000096615826,0.3645737919723615,"{""k"": 4}",core_plus_video

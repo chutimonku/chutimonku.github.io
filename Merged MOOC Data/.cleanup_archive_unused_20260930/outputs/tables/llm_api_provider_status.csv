@@ -1,0 +1,5 @@
+provider,model_name,status,evaluation_students,reason,quarantined,quarantine_note
+Gemini,gemini-3.5-flash-lite,completed,1800,full_test_cohort_completed_via_real_api,False,
+OpenAI,gpt-4o,not_evaluated,0,paid_api_excluded_by_free_only_policy,True,outputs/quarantine/llm_api_predictions_gpt_SIMULATED_20260924_1624.csv
+Anthropic,claude-3-5-sonnet,not_evaluated,0,paid_api_excluded_by_free_only_policy,True,outputs/quarantine/llm_api_predictions_claude_SIMULATED_20260924_1624.csv
+Ollama,qwen3-4b / llama3.2-3b / mistral-7b,pilot_completed,20,completed_on_device_comparative_pilot,False,

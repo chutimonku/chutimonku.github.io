@@ -1,0 +1,21 @@
+provider,model_name,row_id,userid_DI,actual_certified,predicted_certified,probability,reason
+Gemini,gemini-3.5-flash-lite,0,MHxPC130153646,1,1,0.85,"High video plays, many active days, and significant event count."
+Gemini,gemini-3.5-flash-lite,1,MHxPC130347551,0,0,0.0,Extremely low activity with only one event.
+Gemini,gemini-3.5-flash-lite,2,MHxPC130169212,0,0,0.05,Active on only two days with minimal chapters accessed.
+Gemini,gemini-3.5-flash-lite,3,MHxPC130413238,1,1,0.95,"Very high event count, extensive active days, and substantial video plays indicate successful completion."
+Gemini,gemini-3.5-flash-lite,4,MHxPC130114802,1,1,0.95,"Extremely high event count, extensive active days, and deep chapter access."
+Gemini,gemini-3.5-flash-lite,5,MHxPC130021223,1,1,0.78,High engagement with 1707 events and 47 active days.
+Gemini,gemini-3.5-flash-lite,6,MHxPC130548242,0,0,0.05,Very few active days despite some video plays.
+Gemini,gemini-3.5-flash-lite,7,MHxPC130556843,1,1,0.85,"High active days, significant events, and extensive chapter access strongly indicate completion."
+Gemini,gemini-3.5-flash-lite,8,MHxPC130222823,0,1,0.95,"High video plays, thousands of events, and many active days."
+Gemini,gemini-3.5-flash-lite,9,MHxPC130385005,0,0,0.01,Zero events and no engagement.
+Gemini,gemini-3.5-flash-lite,10,MHxPC130266008,0,0,0.1,Low active days and few chapters.
+Gemini,gemini-3.5-flash-lite,11,MHxPC130524942,1,0,0.05,Low engagement across few active days.
+Gemini,gemini-3.5-flash-lite,12,MHxPC130001534,1,1,0.85,High event count and active days despite zero video plays.
+Gemini,gemini-3.5-flash-lite,13,MHxPC130358978,0,1,0.95,"High video plays, many active days, and substantial events."
+Gemini,gemini-3.5-flash-lite,14,MHxPC130210216,1,1,0.85,"High events, video plays, and active days indicate strong engagement and certification."
+Gemini,gemini-3.5-flash-lite,15,MHxPC130506377,0,0,0.1,Low event count and few active days fall short of typical certified profiles.
+Gemini,gemini-3.5-flash-lite,16,MHxPC130226535,1,1,0.9,"High video activity, thousands of events, and extensive active days."
+Gemini,gemini-3.5-flash-lite,17,MHxPC130371980,0,0,0.02,Very few events and active days.
+Gemini,gemini-3.5-flash-lite,18,MHxPC130014411,0,0,0.1,Insufficient event count and chapter reach for certification.
+Gemini,gemini-3.5-flash-lite,19,MHxPC130071941,1,1,0.9,High active days and large event count.

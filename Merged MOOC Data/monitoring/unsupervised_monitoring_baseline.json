@@ -1,0 +1,28 @@
+{
+  "selected_model": "K-Means",
+  "selected_k": 3,
+  "students": 446766,
+  "features": [
+    "mean_course_forum_posts_percentile",
+    "mean_course_chapters_percentile",
+    "mean_course_active_days_percentile",
+    "mean_course_events_percentile"
+  ],
+  "cluster_distribution": {
+    "0": 0.9879556635912312,
+    "1": 0.007021572814403961,
+    "2": 0.0050227635943648355
+  },
+  "resample_ari_reference": 1.0,
+  "distance_and_uncertainty": {
+    "available": true,
+    "assigned_distance_p50": 1.141549044017883,
+    "assigned_distance_p95": 2.2569206071544636,
+    "assigned_distance_p99_outlier_threshold": 2.6465371124689976,
+    "assignment_margin_p05_uncertainty_threshold": 27.55275209012248,
+    "baseline_outlier_rate_at_p99": 0.010000761024787025,
+    "baseline_uncertain_rate_at_p05": 0.050001566815737995
+  },
+  "future_cohorts_evaluated": 0,
+  "status": "BASELINE_READY_NO_FUTURE_COHORT"
+}

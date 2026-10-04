@@ -1,0 +1,41 @@
+feature,coefficient,importance_abs,direction,method
+accessed chapters,-10.856151216434615,10.856151216434615,negative_certification_signal,TF-IDF checkpoint logistic coefficient; DistilBERT embedding dimensions are not human-named
+across active,-10.007571976109388,10.007571976109388,negative_certification_signal,TF-IDF checkpoint logistic coefficient; DistilBERT embedding dimensions are not human-named
+generated events,-5.49518268948966,5.49518268948966,negative_certification_signal,TF-IDF checkpoint logistic coefficient; DistilBERT embedding dimensions are not human-named
+accessed 18,3.1549298637221996,3.1549298637221996,positive_certification_signal,TF-IDF checkpoint logistic coefficient; DistilBERT embedding dimensions are not human-named
+18 chapters,3.1549298637221996,3.1549298637221996,positive_certification_signal,TF-IDF checkpoint logistic coefficient; DistilBERT embedding dimensions are not human-named
+33 chapters,3.145719974321999,3.145719974321999,positive_certification_signal,TF-IDF checkpoint logistic coefficient; DistilBERT embedding dimensions are not human-named
+accessed 33,3.145719974321999,3.145719974321999,positive_certification_signal,TF-IDF checkpoint logistic coefficient; DistilBERT embedding dimensions are not human-named
+15 chapters,2.771898617349382,2.771898617349382,positive_certification_signal,TF-IDF checkpoint logistic coefficient; DistilBERT embedding dimensions are not human-named
+accessed 15,2.771898617349382,2.771898617349382,positive_certification_signal,TF-IDF checkpoint logistic coefficient; DistilBERT embedding dimensions are not human-named
+16 chapters,2.625357054372936,2.625357054372936,positive_certification_signal,TF-IDF checkpoint logistic coefficient; DistilBERT embedding dimensions are not human-named
+accessed 16,2.625357054372936,2.625357054372936,positive_certification_signal,TF-IDF checkpoint logistic coefficient; DistilBERT embedding dimensions are not human-named
+31 chapters,2.6112969425388526,2.6112969425388526,positive_certification_signal,TF-IDF checkpoint logistic coefficient; DistilBERT embedding dimensions are not human-named
+accessed 31,2.6112969425388526,2.6112969425388526,positive_certification_signal,TF-IDF checkpoint logistic coefficient; DistilBERT embedding dimensions are not human-named
+20 chapters,2.5640407792919766,2.5640407792919766,positive_certification_signal,TF-IDF checkpoint logistic coefficient; DistilBERT embedding dimensions are not human-named
+accessed 20,2.5640407792919766,2.5640407792919766,positive_certification_signal,TF-IDF checkpoint logistic coefficient; DistilBERT embedding dimensions are not human-named
+28 chapters,2.558670725668932,2.558670725668932,positive_certification_signal,TF-IDF checkpoint logistic coefficient; DistilBERT embedding dimensions are not human-named
+accessed 28,2.558670725668932,2.558670725668932,positive_certification_signal,TF-IDF checkpoint logistic coefficient; DistilBERT embedding dimensions are not human-named
+accessed 30,2.553137526742637,2.553137526742637,positive_certification_signal,TF-IDF checkpoint logistic coefficient; DistilBERT embedding dimensions are not human-named
+30 chapters,2.553137526742637,2.553137526742637,positive_certification_signal,TF-IDF checkpoint logistic coefficient; DistilBERT embedding dimensions are not human-named
+accessed 24,2.3888921520055466,2.3888921520055466,positive_certification_signal,TF-IDF checkpoint logistic coefficient; DistilBERT embedding dimensions are not human-named
+24 chapters,2.3888921520055466,2.3888921520055466,positive_certification_signal,TF-IDF checkpoint logistic coefficient; DistilBERT embedding dimensions are not human-named
+29 chapters,2.259124088816413,2.259124088816413,positive_certification_signal,TF-IDF checkpoint logistic coefficient; DistilBERT embedding dimensions are not human-named
+accessed 29,2.259124088816413,2.259124088816413,positive_certification_signal,TF-IDF checkpoint logistic coefficient; DistilBERT embedding dimensions are not human-named
+42 chapters,2.240532545897194,2.240532545897194,positive_certification_signal,TF-IDF checkpoint logistic coefficient; DistilBERT embedding dimensions are not human-named
+accessed 42,2.240532545897194,2.240532545897194,positive_certification_signal,TF-IDF checkpoint logistic coefficient; DistilBERT embedding dimensions are not human-named
+32 chapters,2.2238620139546006,2.2238620139546006,positive_certification_signal,TF-IDF checkpoint logistic coefficient; DistilBERT embedding dimensions are not human-named
+accessed 32,2.2238620139546006,2.2238620139546006,positive_certification_signal,TF-IDF checkpoint logistic coefficient; DistilBERT embedding dimensions are not human-named
+accessed 14,2.218647328473031,2.218647328473031,positive_certification_signal,TF-IDF checkpoint logistic coefficient; DistilBERT embedding dimensions are not human-named
+14 chapters,2.218647328473031,2.218647328473031,positive_certification_signal,TF-IDF checkpoint logistic coefficient; DistilBERT embedding dimensions are not human-named
+accessed 12,2.213882038051943,2.213882038051943,positive_certification_signal,TF-IDF checkpoint logistic coefficient; DistilBERT embedding dimensions are not human-named
+12 chapters,2.213882038051943,2.213882038051943,positive_certification_signal,TF-IDF checkpoint logistic coefficient; DistilBERT embedding dimensions are not human-named
+11 chapters,2.120368091361105,2.120368091361105,positive_certification_signal,TF-IDF checkpoint logistic coefficient; DistilBERT embedding dimensions are not human-named
+accessed 11,2.120368091361105,2.120368091361105,positive_certification_signal,TF-IDF checkpoint logistic coefficient; DistilBERT embedding dimensions are not human-named
+34 chapters,2.0823444234490345,2.0823444234490345,positive_certification_signal,TF-IDF checkpoint logistic coefficient; DistilBERT embedding dimensions are not human-named
+accessed 34,2.0823444234490345,2.0823444234490345,positive_certification_signal,TF-IDF checkpoint logistic coefficient; DistilBERT embedding dimensions are not human-named
+72,2.0545015448510777,2.0545015448510777,positive_certification_signal,TF-IDF checkpoint logistic coefficient; DistilBERT embedding dimensions are not human-named
+30,2.0495917171906592,2.0495917171906592,positive_certification_signal,TF-IDF checkpoint logistic coefficient; DistilBERT embedding dimensions are not human-named
+17 chapters,2.047522870103752,2.047522870103752,positive_certification_signal,TF-IDF checkpoint logistic coefficient; DistilBERT embedding dimensions are not human-named
+accessed 17,2.047522870103752,2.047522870103752,positive_certification_signal,TF-IDF checkpoint logistic coefficient; DistilBERT embedding dimensions are not human-named
+accessed 19,1.9630782186807834,1.9630782186807834,positive_certification_signal,TF-IDF checkpoint logistic coefficient; DistilBERT embedding dimensions are not human-named

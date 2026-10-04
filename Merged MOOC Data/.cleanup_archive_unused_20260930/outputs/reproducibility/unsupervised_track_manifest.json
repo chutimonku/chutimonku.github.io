@@ -1,0 +1,55 @@
+{
+  "input_features": [
+    "mean_course_forum_posts_percentile",
+    "mean_course_chapters_percentile",
+    "mean_course_active_days_percentile",
+    "mean_course_events_percentile"
+  ],
+  "feature_count": 4,
+  "feature_meaning": "Within-course behavioral percentile ranks aggregated from 446,766 cleaned student records.",
+  "sample_enrollments": 15000,
+  "training_enrollments": 10500,
+  "unseen_evaluation_enrollments": 4500,
+  "k_values_evaluated": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "detected_elbow_k": 4,
+  "elbow_used_for_selection": false,
+  "inertia_metric_k": 10,
+  "gap_statistic_k": 3,
+  "metric_votes": {
+    "Gap statistic one-standard-error rule": 3,
+    "Maximum Silhouette Score": 2,
+    "Minimum Davies-Bouldin Index": 3,
+    "Maximum Calinski-Harabasz Index": 5,
+    "Maximum Stability (ARI)": 2
+  },
+  "consensus_k_candidates": [
+    3
+  ],
+  "final_k_candidates": [
+    3
+  ],
+  "k_selection_score_columns": [
+    "inertia_score",
+    "silhouette_score",
+    "davies_bouldin_score",
+    "calinski_harabasz_score",
+    "ari_stability_score",
+    "nmi_stability_score"
+  ],
+  "selected_model_id": "kmeans_k3",
+  "selected_family": "K-Means",
+  "selected_k": 3,
+  "selection_rule": "K is selected by a weighted multi-metric score, not by Elbow alone and not by raw vote counting. The diagnostics include Gap statistic, Silhouette, Davies-Bouldin, Calinski-Harabasz, and ARI stability. The selected K is k=3 from consensus.",
+  "full_fit_enrollments": 446766,
+  "full_fit_runtime_sec": 0.7659132500120904
+}

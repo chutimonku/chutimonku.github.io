@@ -1,0 +1,129 @@
+{
+  "project": "Student Segmentation for Responsible Support Planning",
+  "created_at_utc": "2026-09-21T13:00:52.756208+00:00",
+  "workflow_step": 1,
+  "task_type": "unsupervised_clustering",
+  "unit_of_analysis": "one row per userid_DI",
+  "primary_objective_th": "แบ่งกลุ่มผู้เรียน MOOC จากพฤติกรรมการเรียนจริง เพื่อสนับสนุนการวางแผนช่วยเหลือผู้เรียนอย่างรับผิดชอบ",
+  "primary_objective_en": "Segment MOOC learners using observed learning behaviours to support responsible learner-support planning.",
+  "business_questions_th": [
+    "ผู้เรียนสามารถแบ่งเป็นกลุ่มพฤติกรรมการเรียนที่แตกต่างกันได้หรือไม่",
+    "จำนวนกลุ่ม K เท่าใดมีความเหมาะสมทั้งด้านคุณภาพและความเสถียร",
+    "แต่ละกลุ่มมีลักษณะด้านกิจกรรม การดูวิดีโอ และการมีส่วนร่วมใน forum อย่างไร",
+    "ผลลัพธ์ทางการเรียนมีความแตกต่างระหว่างกลุ่มหรือไม่ โดยตรวจหลังล็อกโมเดลแล้วเท่านั้น"
+  ],
+  "business_questions_en": [
+    "Can learners be segmented into distinct learning-behaviour groups?",
+    "Which K is supported by cluster quality and resampling stability?",
+    "How do clusters differ in activity, video engagement, and forum participation?",
+    "Do observed learning outcomes differ by cluster after model lock?"
+  ],
+  "clustering_features": [
+    "mean_course_events_percentile",
+    "mean_course_active_days_percentile",
+    "mean_course_chapters_percentile",
+    "mean_course_forum_posts_percentile"
+  ],
+  "feature_policy": {
+    "included": "Exactly four behavioural percentile features only.",
+    "excluded_profiles": [
+      "userid_DI",
+      "course_id",
+      "institute",
+      "year",
+      "semester",
+      "gender",
+      "LoE_DI",
+      "final_cc_cname_DI",
+      "age"
+    ],
+    "excluded_outcomes": [
+      "certified",
+      "grade",
+      "viewed",
+      "explored",
+      "incomplete_flag"
+    ],
+    "reason_for_exclusion": "Profile fields describe learner identity or context rather than learning behaviour. Outcome fields are quarantined to prevent leakage."
+  },
+  "outcome_quarantine": {
+    "columns": [
+      "certified",
+      "grade",
+      "viewed",
+      "explored",
+      "incomplete_flag"
+    ],
+    "policy": "Outcome columns are quarantined and must never enter clustering features, preprocessing, K selection, or model training. They may be used only for post-hoc validation after the clustering model has been locked.",
+    "allowed_use": "Post-hoc cluster validation and data-quality auditing only, after the final clustering model is locked.",
+    "forbidden_use": [
+      "EDA feature selection for clustering",
+      "imputation statistics for clustering",
+      "scaling for clustering",
+      "K selection",
+      "cluster model fitting"
+    ]
+  },
+  "k_selection_plan": {
+    "candidate_k_range": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "metrics": [
+      "silhouette",
+      "davies_bouldin",
+      "calinski_harabasz",
+      "resample_adjusted_rand_index"
+    ],
+    "stability_resamples": 10,
+    "selection_rule": "Rank each candidate K by Silhouette descending, Davies-Bouldin ascending, Calinski-Harabasz descending, and mean resample Adjusted Rand Index descending. Select the lowest mean rank, then use Davies-Bouldin and K as tie-breakers."
+  },
+  "data_quality_scope": {
+    "video_policy": {
+      "source_column": "nplay_video",
+      "sentinel_values": [
+        197757
+      ],
+      "sentinel_handling": "Convert sentinel values to missing and retain a sentinel flag. Do not replace them with zero or impute them because video plays are audit-only and are excluded from clustering.",
+      "duration_policy": "The dataset does not contain video duration. Report video plays, missingness, sentinel values, and outliers only. Do not claim to measure video duration."
+    },
+    "grade_audit_policy": {
+      "zero_grade_policy": "A grade of zero is retained as a valid observed outcome. Do not remove all grade-zero records.",
+      "inconsistency_rule": "Flag records where certified equals 1 and grade equals 0, or where certified equals 1 and grade is below the documented passing threshold.",
+      "use_in_clustering": "Never use grade or certification status as a clustering feature."
+    },
+    "raw_data_is_immutable": true,
+    "audit_requirement": "Keep raw data unchanged. Record missing values, sentinel values, duplicates, invalid dates, outliers, and outcome inconsistencies in audit outputs."
+  },
+  "success_criteria": {
+    "technical": [
+      "All four clustering features are behavioural and contain no outcome columns.",
+      "K selection is based on all four configured metrics.",
+      "The selected K is shown with a vertical dashed line in the metric chart.",
+      "Every cluster contains enough observations for interpretation.",
+      "The pipeline can score compatible later cohorts using the locked preprocessing and cluster model."
+    ],
+    "reporting": [
+      "Thai and English explanations are consistent.",
+      "All claims in the dashboard are supported by generated tables or figures.",
+      "Grade and certification anomalies are reported as flags, not silently corrected."
+    ]
+  },
+  "limitations_th": [
+    "ข้อมูลเป็น person-course record แบบสรุป จึงไม่สามารถใช้วัดพฤติกรรมรายสัปดาห์ได้",
+    "ข้อมูลไม่มีระยะเวลาวิดีโอ จึงวิเคราะห์ได้เพียงจำนวนการเล่นวิดีโอและคุณภาพข้อมูล",
+    "ผลการจัดกลุ่มเป็นเครื่องมือช่วยทำความเข้าใจพฤติกรรม ไม่ใช่การตัดสินคุณค่าหรือความสามารถของผู้เรียน"
+  ],
+  "limitations_en": [
+    "The source contains aggregated person-course records and cannot measure weekly behaviour.",
+    "The dataset has no video-duration field; analysis is limited to video-play counts and data quality.",
+    "Clusters support behavioural understanding and must not be used to judge learner ability or worth."
+  ]
+}

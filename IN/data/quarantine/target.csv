@@ -1,0 +1,150 @@
+life_insurer,year,category,claims_paid_ratio_no
+ABSL,2021-22,Group Death Claims,0.9959334565619224
+Aegon,2021-22,Group Death Claims,1.0
+Ageas,2021-22,Group Death Claims,0.8991935483870968
+Aviva,2021-22,Group Death Claims,0.9985152190051968
+Baj Alz,2021-22,Group Death Claims,0.998178562927546
+Bharti Axa,2021-22,Group Death Claims,0.9845047039291644
+Can HSBC,2021-22,Group Death Claims,0.9918498862774828
+Edelws,2021-22,Group Death Claims,0.9939498703543648
+Exide,2021-22,Group Death Claims,1.0
+Fut Genli,2021-22,Group Death Claims,0.9562841530054644
+HDFC,2021-22,Group Death Claims,0.9971931700471146
+ICICI,2021-22,Group Death Claims,0.9774295288783758
+Indiafirst,2021-22,Group Death Claims,0.991753263562738
+Industry,2021-22,Group Death Claims,0.9877172666444304
+Kotak,2021-22,Group Death Claims,0.9957939581719596
+LIC,2021-22,Group Death Claims,0.9708006224537968
+Max,2021-22,Group Death Claims,0.9940786357176692
+PNB Metlife,2021-22,Group Death Claims,0.9952636682330126
+PVT.,2021-22,Group Death Claims,0.9909227877867224
+Pramerica,2021-22,Group Death Claims,0.9842493297587132
+Reliance,2021-22,Group Death Claims,0.9949238578680204
+SBI Life,2021-22,Group Death Claims,0.9732690124858115
+SUD,2021-22,Group Death Claims,0.9822761621250288
+Sahara,2021-22,Group Death Claims,0.0
+Shriram,2021-22,Group Death Claims,0.9956191105967928
+Tata AIA,2021-22,Group Death Claims,0.994279176201373
+ABSL,2020-21,Group Death Claims,0.996852143320063
+Aditya Birla Life,2020-21,Group Death Claims,0.996852143320063
+Aegon,2020-21,Group Death Claims,1.0
+Ageas,2020-21,Group Death Claims,0.88
+Ageas Federal,2020-21,Group Death Claims,0.88
+Aviva,2020-21,Group Death Claims,0.9984362783424552
+Baj Alz,2020-21,Group Death Claims,0.998018805422485
+Bajaj Allianz,2020-21,Group Death Claims,0.998018805422485
+Bharti Axa,2020-21,Group Death Claims,0.9765395894428152
+Can HSBC,2020-21,Group Death Claims,0.9947205534316402
+Canara HSBC OBC,2020-21,Group Death Claims,0.9947205534316402
+Edelweiss Tokio,2020-21,Group Death Claims,0.9927404718693283
+Edelws,2020-21,Group Death Claims,0.9927404718693283
+Exide,2020-21,Group Death Claims,1.0
+Exide Life,2020-21,Group Death Claims,1.0
+Fut Genli,2020-21,Group Death Claims,0.9308380797396256
+Future Generali,2020-21,Group Death Claims,0.9308380797396256
+HDFC,2020-21,Group Death Claims,0.9949809151295266
+HDFC Life,2020-21,Group Death Claims,0.9949809151295266
+ICICI,2020-21,Group Death Claims,0.9792795006086054
+ICICI Prudential,2020-21,Group Death Claims,0.9792795006086054
+India First,2020-21,Group Death Claims,0.990655462184874
+Indiafirst,2020-21,Group Death Claims,0.990655462184874
+Industry,2020-21,Group Death Claims,0.9862410308341472
+Industry Total,2020-21,Group Death Claims,0.9862410308341472
+Kotak,2020-21,Group Death Claims,0.9942759780393554
+Kotak Mahindra,2020-21,Group Death Claims,0.9942759780393554
+LIC,2020-21,Group Death Claims,0.9679874727668846
+Max,2020-21,Group Death Claims,0.992747559274756
+Max Life,2020-21,Group Death Claims,0.992747559274756
+PNB Met Life,2020-21,Group Death Claims,0.9965281934634264
+PNB Metlife,2020-21,Group Death Claims,0.9965281934634264
+PVT.,2020-21,Group Death Claims,0.9907766951967312
+Pramerica,2020-21,Group Death Claims,0.9929057439738382
+Pramerica Life,2020-21,Group Death Claims,0.9929057439738382
+Private Total,2020-21,Group Death Claims,0.9907766951967312
+Reliance,2020-21,Group Death Claims,0.996309963099631
+Reliance Nippon,2020-21,Group Death Claims,0.996309963099631
+SBI Life,2020-21,Group Death Claims,0.9899385897576488
+SUD,2020-21,Group Death Claims,0.9033524294504562
+Sahara,2020-21,Group Death Claims,0.0
+Sahara Life,2020-21,Group Death Claims,0.0
+Shriram,2020-21,Group Death Claims,0.9917614028627976
+Star Union,2020-21,Group Death Claims,0.9033524294504562
+Tata AIA,2020-21,Group Death Claims,0.9932236205227492
+Aditya Birla Life,2019-20,Group Death Claims,0.9981022867444728
+Aegon,2019-20,Group Death Claims,1.0
+Ageas Federal,2019-20,Group Death Claims,0.9876160990712074
+Aviva,2019-20,Group Death Claims,0.9962453066332916
+Bajaj Allianz,2019-20,Group Death Claims,0.9981934064947596
+Bharti Axa,2019-20,Group Death Claims,0.966183574879227
+Canara HSBC OBC,2019-20,Group Death Claims,0.9938238453276048
+Edelweiss Tokio,2019-20,Group Death Claims,0.9438202247191012
+Exide Life,2019-20,Group Death Claims,1.0
+Future Generali,2019-20,Group Death Claims,0.9580279813457696
+HDFC Life,2019-20,Group Death Claims,0.99416920574213
+ICICI Prudential,2019-20,Group Death Claims,0.9517344800532312
+India First,2019-20,Group Death Claims,0.9876160990712074
+Industry Total,2019-20,Group Death Claims,0.972660339070276
+Kotak Mahindra,2019-20,Group Death Claims,0.9931759827545964
+LIC,2019-20,Group Death Claims,0.9107640927774516
+Max Life,2019-20,Group Death Claims,0.9952525488364852
+PNB Met Life,2019-20,Group Death Claims,0.9932515337423312
+Pramerica Life,2019-20,Group Death Claims,0.995704467353952
+Private Total,2019-20,Group Death Claims,0.9893588845516944
+Reliance Nippon,2019-20,Group Death Claims,0.9924694069657986
+SBI Life,2019-20,Group Death Claims,0.9887680898552812
+Sahara Life,2019-20,Group Death Claims,0.0
+Shriram,2019-20,Group Death Claims,1.0035003912201952
+Star Union,2019-20,Group Death Claims,0.9305486490966351
+Tata AIA,2019-20,Group Death Claims,0.9887429643527204
+Aditya Birla Life,2018-19,Group Death Claims,0.9968343697003956
+Aegon,2018-19,Group Death Claims,1.0
+Ageas Federal,2018-19,Group Death Claims,0.991941982272361
+Aviva,2018-19,Group Death Claims,0.9932432432432432
+Bajaj Allianz,2018-19,Group Death Claims,0.9968890990060292
+Bharti Axa,2018-19,Group Death Claims,0.9859943977591036
+Canara HSBC OBC,2018-19,Group Death Claims,0.9919517102615694
+Edelweiss Tokio,2018-19,Group Death Claims,0.990205680705191
+Exide Life,2018-19,Group Death Claims,0.999760421657882
+Future Generali,2018-19,Group Death Claims,0.943661971830986
+HDFC Life,2018-19,Group Death Claims,0.9930649412599302
+ICICI Prudential,2018-19,Group Death Claims,0.9425934690014198
+India First,2018-19,Group Death Claims,0.9457170774074476
+Industry Total,2018-19,Group Death Claims,0.9912762832139138
+Kotak Mahindra,2018-19,Group Death Claims,0.9909850813404304
+LIC,2018-19,Group Death Claims,0.9967989558958676
+Max Life,2018-19,Group Death Claims,0.992764857881137
+PNB Met Life,2018-19,Group Death Claims,0.98812351543943
+Pramerica Life,2018-19,Group Death Claims,0.9937900030478511
+Private Total,2018-19,Group Death Claims,0.9889356924970216
+Reliance Nippon,2018-19,Group Death Claims,0.8631676158226874
+SBI Life,2018-19,Group Death Claims,0.9929247792318332
+Sahara Life,2018-19,Group Death Claims,0.0
+Shriram,2018-19,Group Death Claims,0.9767714832890592
+Star Union,2018-19,Group Death Claims,0.9482283825959243
+Tata AIA,2018-19,Group Death Claims,1.0
+Aditya Birla Life,2017-18,Group Death Claims,0.9935107073329008
+Aegon,2017-18,Group Death Claims,1.0
+Ageas Federal,2017-18,Group Death Claims,0.9938366718027736
+Aviva,2017-18,Group Death Claims,0.9959349593495936
+Bajaj Allianz,2017-18,Group Death Claims,0.9959893048128342
+Bharti Axa,2017-18,Group Death Claims,0.9667774086378738
+Canara HSBC OBC,2017-18,Group Death Claims,0.9893390191897654
+Edelweiss Tokio,2017-18,Group Death Claims,1.0
+Exide Life,2017-18,Group Death Claims,1.0
+Future Generali,2017-18,Group Death Claims,0.8928987194412107
+HDFC Life,2017-18,Group Death Claims,0.9927192063254446
+ICICI Prudential,2017-18,Group Death Claims,0.9896026735982176
+India First,2017-18,Group Death Claims,0.9232673267326732
+Industry Total,2017-18,Group Death Claims,0.9942269522068424
+Kotak Mahindra,2017-18,Group Death Claims,0.9969826966891768
+LIC,2017-18,Group Death Claims,0.9979906911390182
+Max Life,2017-18,Group Death Claims,0.990138559480714
+PNB Met Life,2017-18,Group Death Claims,0.9619482496194824
+Pramerica Life,2017-18,Group Death Claims,0.9947412921985525
+Private Total,2017-18,Group Death Claims,0.992
+Reliance Nippon,2017-18,Group Death Claims,0.9905879143363796
+SBI Life,2017-18,Group Death Claims,0.993450440661596
+Sahara Life,2017-18,Group Death Claims,0.0
+Shriram,2017-18,Group Death Claims,0.989471756843358
+Star Union,2017-18,Group Death Claims,0.9059063136456212
+Tata AIA,2017-18,Group Death Claims,0.9982668977469672

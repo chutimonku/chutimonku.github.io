@@ -1,0 +1,122 @@
+{
+  "project": "Student Segmentation for Responsible Support Planning",
+  "dataset_source": "https://www.kaggle.com/datasets/kanikanarang94/mooc-dataset",
+  "raw_data_path": "data/raw/big_student_clear_third_version.csv",
+
+  "task_type": "unsupervised_clustering",
+  "unit_of_analysis": "one row per userid_DI",
+  "course_identifier": "course_id",
+
+  "record_identifier_columns": [
+    "userid_DI",
+    "course_id",
+    "Unnamed: 0"
+  ],
+
+  "expected_raw_columns": [
+    "Unnamed: 0",
+    "institute",
+    "course_id",
+    "year",
+    "semester",
+    "userid_DI",
+    "viewed",
+    "explored",
+    "certified",
+    "final_cc_cname_DI",
+    "LoE_DI",
+    "gender",
+    "grade",
+    "start_time_DI",
+    "last_event_DI",
+    "nevents",
+    "ndays_act",
+    "nplay_video",
+    "nchapters",
+    "nforum_posts",
+    "incomplete_flag",
+    "age"
+  ],
+
+  "behavior_features": [
+    "mean_course_events_percentile",
+    "mean_course_active_days_percentile",
+    "mean_course_chapters_percentile",
+    "mean_course_forum_posts_percentile"
+  ],
+
+  "profile_columns": [
+    "userid_DI",
+    "course_id",
+    "institute",
+    "year",
+    "semester",
+    "gender",
+    "LoE_DI",
+    "final_cc_cname_DI",
+    "age"
+  ],
+
+  "outcome_columns": [
+    "certified",
+    "grade",
+    "viewed",
+    "explored",
+    "incomplete_flag"
+  ],
+
+  "outcome_policy": "Outcome columns are quarantined and must never enter clustering features, preprocessing, K selection, or model training. They may be used only for post-hoc validation after the clustering model has been locked.",
+
+  "video_policy": {
+    "source_column": "nplay_video",
+    "sentinel_values": [
+      197757
+    ],
+    "sentinel_handling": "Convert sentinel values to missing and retain a sentinel flag. Do not replace them with zero or impute them because video plays are audit-only and are excluded from clustering.",
+    "duration_policy": "The dataset does not contain video duration. Report video plays, missingness, sentinel values, and outliers only. Do not claim to measure video duration."
+  },
+
+  "age_policy": {
+    "minimum_plausible_age": 6,
+    "handling": "Flag and set ages below 6 to missing. Do not impose an upper age limit because older learners can validly participate in MOOC courses. Age is profile-only and is excluded from clustering."
+  },
+
+  "grade_audit_policy": {
+    "zero_grade_policy": "A grade of zero is retained as a valid observed outcome. Do not remove all grade-zero records.",
+    "inconsistency_rule": "Flag records where certified equals 1 and grade equals 0, or where certified equals 1 and grade is below the documented passing threshold.",
+    "use_in_clustering": "Never use grade or certification status as a clustering feature."
+  },
+
+  "candidate_k_range": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+
+  "k_selection_metrics": [
+    "silhouette",
+    "davies_bouldin",
+    "calinski_harabasz",
+    "resample_adjusted_rand_index"
+  ],
+
+  "stability_resamples": 10,
+  "random_seed": 42,
+
+  "numerical_threshold_policy": "Use observed distributions, data-quality evidence, and documented rationale. Do not assume universal cutoffs.",
+
+  "supported_new_data": "Later MOOC cohorts with the same raw person-course schema, identical field definitions, and documented handling for missing video values.",
+
+  "incompatible_data_policy": "If fields, definitions, course structures, or outcome meanings differ, restart from Step 2, update the schema mapping, rerun cleaning and retrain the clustering model.",
+
+  "reporting_languages": [
+    "th",
+    "en"
+  ]
+}

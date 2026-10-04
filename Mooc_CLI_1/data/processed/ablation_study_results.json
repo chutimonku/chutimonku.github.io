@@ -1,0 +1,105 @@
+{
+  "Full Feature Set (10 features)": {
+    "feature_count": 10,
+    "features_used": [
+      "log_total_events",
+      "log_total_active_days",
+      "log_total_video_plays",
+      "log_total_chapters",
+      "log_total_forum_posts",
+      "log_overall_span_days",
+      "log_event_intensity",
+      "video_play_ratio",
+      "view_rate",
+      "n_courses"
+    ],
+    "silhouette": 0.3369,
+    "davies_bouldin": 1.2351,
+    "calinski_harabasz": 7815.57
+  },
+  "No Video Features (Omit Plays & Ratio)": {
+    "feature_count": 8,
+    "features_used": [
+      "log_total_events",
+      "log_total_active_days",
+      "log_total_chapters",
+      "log_total_forum_posts",
+      "log_overall_span_days",
+      "log_event_intensity",
+      "view_rate",
+      "n_courses"
+    ],
+    "silhouette": 0.3457,
+    "davies_bouldin": 1.1602,
+    "calinski_harabasz": 8555.87
+  },
+  "No Temporal Tenure (Omit Span Days)": {
+    "feature_count": 9,
+    "features_used": [
+      "log_total_events",
+      "log_total_active_days",
+      "log_total_video_plays",
+      "log_total_chapters",
+      "log_total_forum_posts",
+      "log_event_intensity",
+      "video_play_ratio",
+      "view_rate",
+      "n_courses"
+    ],
+    "silhouette": 0.3571,
+    "davies_bouldin": 1.1782,
+    "calinski_harabasz": 8193.54
+  },
+  "No Forum Activity (Omit Forum Posts)": {
+    "feature_count": 9,
+    "features_used": [
+      "log_total_events",
+      "log_total_active_days",
+      "log_total_video_plays",
+      "log_total_chapters",
+      "log_overall_span_days",
+      "log_event_intensity",
+      "video_play_ratio",
+      "view_rate",
+      "n_courses"
+    ],
+    "silhouette": 0.3464,
+    "davies_bouldin": 1.1827,
+    "calinski_harabasz": 9143.0
+  },
+  "No Event Intensity (Omit Intensity)": {
+    "feature_count": 9,
+    "features_used": [
+      "log_total_events",
+      "log_total_active_days",
+      "log_total_video_plays",
+      "log_total_chapters",
+      "log_total_forum_posts",
+      "log_overall_span_days",
+      "video_play_ratio",
+      "view_rate",
+      "n_courses"
+    ],
+    "silhouette": 0.3414,
+    "davies_bouldin": 1.2766,
+    "calinski_harabasz": 7276.28
+  },
+  "Untransformed Raw Features (No log1p)": {
+    "feature_count": 10,
+    "features_used": [
+      "total_events",
+      "total_active_days",
+      "total_video_plays",
+      "total_chapters",
+      "total_forum_posts",
+      "overall_span_days",
+      "event_intensity",
+      "video_play_ratio",
+      "view_rate",
+      "n_courses"
+    ],
+    "silhouette": 0.6409,
+    "davies_bouldin": 1.0886,
+    "calinski_harabasz": 4842.79
+  }
+}

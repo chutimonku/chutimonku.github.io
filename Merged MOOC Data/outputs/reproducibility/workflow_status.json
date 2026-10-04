@@ -1,0 +1,42 @@
+{
+  "workflow": "11-step governed data-science workflow",
+  "steps": {
+    "1": "Completed",
+    "2": "Completed",
+    "3": "Completed",
+    "4": "Completed",
+    "5": "Completed",
+    "6": "Completed",
+    "7": "Completed",
+    "8": "Completed",
+    "9": "Completed",
+    "10": "Completed",
+    "11": "Baseline Ready; evaluation waits for a genuine future cohort"
+  },
+  "tracks": {
+    "Traditional Unsupervised": "Completed",
+    "Deep Learning": "Completed",
+    "Supervised Learning": "Completed",
+    "Generative AI Student Text Classification": "Gemini completed on 1,800 unseen students; GPT pending OpenAI API credit"
+  },
+  "actual_results": {
+    "students": 446766,
+    "unsupervised_selected_model": "MiniBatch K-Means",
+    "unsupervised_selected_k": 3,
+    "supervised_selected_model": "Gradient Boosted Trees",
+    "supervised_source_features": 34,
+    "supervised_transformed_features": 75,
+    "deep_learning_selected_model": "MLP Neural Network (128, 64)",
+    "llm_status": "Completed — student rows converted to text and models evaluated"
+  },
+  "step_runtime_seconds": {
+    "Step 10: Bilingual Dashboard": 1.642,
+    "Step 11: Monitoring Baseline and Feedback Loop": 0.489
+  },
+  "total_runtime_seconds": 5.374,
+  "artifact_verification": {
+    "required": 86,
+    "missing": []
+  },
+  "status": "SUCCESS"
+}

@@ -1,0 +1,117 @@
+{
+  "generated_at_utc": "2026-09-21T09:30:37.778179+00:00",
+  "report_file": "reports/student_risk_prediction_report.html",
+  "report_size_bytes": 2112618,
+  "champion_model": "RandomForestClassifier",
+  "champion_model_sha256": "619b7d8621b0de1492852ba22f5c0c1ccc8f0b59f1c2bd8af6c0c77f922577e8",
+  "key_metrics": {
+    "test_roc_auc": 0.9933,
+    "test_pr_auc": 0.8476,
+    "test_brier_score": 0.0216,
+    "test_f1_optimal": 0.7889,
+    "test_recall_optimal": 0.842,
+    "test_precision_optimal": 0.7422,
+    "test_accuracy_optimal": 0.9814
+  },
+  "workflow_compliance": "Workflow.md 11-Step Process + Optimization Cycle + Feedback Loop",
+  "table_styling": "R-style gt/kableExtra/DT with crisp grid lines, cell borders, and interactive dropdowns",
+  "slide_drawer_navigation_enabled": true,
+  "bilingual_support": {
+    "default_language": "th",
+    "supported_languages": [
+      "en",
+      "th"
+    ],
+    "instant_toggle": true
+  },
+  "layout_architecture": {
+    "left": "Slide-out hidden drawer with backdrop",
+    "center": "Full-width 11-step report + Executive Brief"
+  },
+  "interactive_tables": [
+    {
+      "id": "comp-tbl",
+      "name": "Model Comparison Table",
+      "has_filter": true,
+      "has_limit_dropdown": true
+    },
+    {
+      "id": "dict-tbl",
+      "name": "Data Dictionary",
+      "has_filter": true,
+      "has_limit_dropdown": true
+    },
+    {
+      "id": "feat-def-tbl",
+      "name": "Feature Definitions",
+      "has_filter": true,
+      "has_limit_dropdown": true
+    },
+    {
+      "id": "screening-tbl",
+      "name": "Feature Screening Table",
+      "has_filter": true,
+      "has_limit_dropdown": true
+    },
+    {
+      "id": "skewness-tbl",
+      "name": "Skewness Reduction Table",
+      "has_filter": false,
+      "has_limit_dropdown": true
+    },
+    {
+      "id": "candidate-family-tbl",
+      "name": "Candidate Model Family Table",
+      "has_filter": false,
+      "has_limit_dropdown": true
+    },
+    {
+      "id": "tuning-tbl",
+      "name": "Validation-Set Tuning Table",
+      "has_filter": false,
+      "has_limit_dropdown": true
+    },
+    {
+      "id": "fairness-tbl",
+      "name": "Demographic Fairness Table",
+      "has_filter": true,
+      "has_limit_dropdown": true
+    },
+    {
+      "id": "error-tbl",
+      "name": "Error Analysis Table",
+      "has_filter": false,
+      "has_limit_dropdown": true
+    },
+    {
+      "id": "opt-tbl",
+      "name": "Optimization History Table",
+      "has_filter": false,
+      "has_limit_dropdown": true
+    },
+    {
+      "id": "ref-tbl",
+      "name": "Reference Baseline Distributions",
+      "has_filter": false,
+      "has_limit_dropdown": true
+    }
+  ],
+  "sections_included": [
+    "Executive Summary & 1-Minute Leadership Brief (แบบย่อ)",
+    "Step 1: Problem Definition & Operational Framing",
+    "Step 2: Data Gathering & Anti-Leakage Quarantine",
+    "Step 3: Data Cleaning & Student-Level Aggregation",
+    "Step 4: Exploratory Data Analysis & Statistical Feature Screening",
+    "Step 5: Feature Engineering & Preprocessing Pipeline",
+    "Step 6: Model Selection & Literature Review",
+    "Step 7: Model Training & Validation-Set Tuning",
+    "Step 8: Model Evaluation, Error Diagnostics & Model Locking",
+    "Model Optimization Cycle: Iteration Policy & History",
+    "Step 9: Model Deployment Packaging & Verification Testing",
+    "Step 10: Operational Decision Support & 3 Risk Tiers",
+    "Step 11: Monitor and Maintain & Drift Baselines",
+    "Feedback Loop: Operational Retraining Protocol",
+    "Limitations, Ethical Safeguards & Responsible Governance",
+    "Technical Appendix & Reproducibility Matrix"
+  ]
+}

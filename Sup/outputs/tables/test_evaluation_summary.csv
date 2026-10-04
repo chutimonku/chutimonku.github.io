@@ -1,0 +1,2 @@
+champion_model_id,test_instances,test_positive_instances,test_roc_auc,test_pr_auc,test_brier_score,test_log_loss,optimal_threshold,f1_at_optimal_threshold,precision_at_optimal_threshold,recall_at_optimal_threshold,accuracy_at_optimal_threshold,specificity_at_optimal_threshold,f1_at_default_50,confusion_matrix_optimal
+random_forest_d15,50348,2082,0.9933,0.8476,0.0216,0.0737,0.8404,0.7889,0.7422,0.842,0.9814,0.9874,0.7338,"{'TP': 1753, 'FP': 609, 'TN': 47657, 'FN': 329}"

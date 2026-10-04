@@ -1,0 +1,166 @@
+STEP: Step 4: EDA & Data Quality Audit
+MODULE: src.step4_eda
+RETURN CODE: 0
+RUNTIME_SECONDS: 11.277
+
+STDOUT
+========================================================================
+========================================================================
+STEP 4: EDA, VIDEO QUALITY, GRADE AUDIT, AND OUTLIER ANALYSIS
+========================================================================
+[Step 4] EDA summary: outputs/tables/eda_summary.csv
+[Step 4] Outlier audit: outputs/tables/outlier_audit.csv
+[Step 4] Video audit: outputs/tables/video_quality_audit_by_course.csv
+[Step 4] Grade audit: outputs/tables/grade_outcome_audit.csv
+[Step 4] Figures saved to: outputs/figures/eda
+[Step 4] Outcomes were used only for post-hoc audit; they were not added to clustering features.
+
+
+STDERR
+========================================================================
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+W20260921 20:02:18.112850 1874604032 cpu_info.cc:239] IOError: sysctlbyname failed for 'hw.l1dcachesize'. Detail: [errno 1] Operation not permitted
+W20260921 20:02:18.113040 1874604032 cpu_info.cc:239] IOError: sysctlbyname failed for 'hw.l2cachesize'. Detail: [errno 1] Operation not permitted
+W20260921 20:02:18.113125 1874604032 cpu_info.cc:239] IOError: sysctlbyname failed for 'hw.l3cachesize'. Detail: [errno 1] Operation not permitted
+W20260921 20:02:18.113193 1874604032 cpu_info.cc:239] IOError: sysctlbyname failed for 'hw.optional.neon'. Detail: [errno 1] Operation not permitted
+/Users/chingli/Desktop/Mooc_CLI_2/Un/src/step4_eda.py:225: UserWarning: Glyph 3648 (\N{THAI CHARACTER SARA E}) missing from font(s) Arial.
+  plt.tight_layout(rect=[0, 0, 1, 0.94])
+/Users/chingli/Desktop/Mooc_CLI_2/Un/src/step4_eda.py:225: UserWarning: Glyph 3611 (\N{THAI CHARACTER PO PLA}) missing from font(s) Arial.
+  plt.tight_layout(rect=[0, 0, 1, 0.94])
+/Users/chingli/Desktop/Mooc_CLI_2/Un/src/step4_eda.py:225: UserWarning: Glyph 3629 (\N{THAI CHARACTER O ANG}) missing from font(s) Arial.
+  plt.tight_layout(rect=[0, 0, 1, 0.94])
+/Users/chingli/Desktop/Mooc_CLI_2/Un/src/step4_eda.py:225: UserWarning: Glyph 3619 (\N{THAI CHARACTER RO RUA}) missing from font(s) Arial.
+  plt.tight_layout(rect=[0, 0, 1, 0.94])
+/Users/chingli/Desktop/Mooc_CLI_2/Un/src/step4_eda.py:225: UserWarning: Glyph 3660 (\N{THAI CHARACTER THANTHAKHAT}) missing from font(s) Arial.
+  plt.tight_layout(rect=[0, 0, 1, 0.94])
+/Users/chingli/Desktop/Mooc_CLI_2/Un/src/step4_eda.py:225: UserWarning: Glyph 3595 (\N{THAI CHARACTER SO SO}) missing from font(s) Arial.
+  plt.tight_layout(rect=[0, 0, 1, 0.94])
+/Users/chingli/Desktop/Mooc_CLI_2/Un/src/step4_eda.py:225: UserWarning: Glyph 3655 (\N{THAI CHARACTER MAITAIKHU}) missing from font(s) Arial.
+  plt.tight_layout(rect=[0, 0, 1, 0.94])
+/Users/chingli/Desktop/Mooc_CLI_2/Un/src/step4_eda.py:225: UserWarning: Glyph 3609 (\N{THAI CHARACTER NO NU}) missing from font(s) Arial.
+  plt.tight_layout(rect=[0, 0, 1, 0.94])
+/Users/chingli/Desktop/Mooc_CLI_2/Un/src/step4_eda.py:225: UserWarning: Glyph 3652 (\N{THAI CHARACTER SARA AI MAIMALAI}) missing from font(s) Arial.
+  plt.tight_layout(rect=[0, 0, 1, 0.94])
+/Users/chingli/Desktop/Mooc_CLI_2/Un/src/step4_eda.py:225: UserWarning: Glyph 3607 (\N{THAI CHARACTER THO THAHAN}) missing from font(s) Arial.
+  plt.tight_layout(rect=[0, 0, 1, 0.94])
+/Users/chingli/Desktop/Mooc_CLI_2/Un/src/step4_eda.py:225: UserWarning: Glyph 3621 (\N{THAI CHARACTER LO LING}) missing from font(s) Arial.
+  plt.tight_layout(rect=[0, 0, 1, 0.94])
+/Users/chingli/Desktop/Mooc_CLI_2/Un/src/step4_eda.py:225: UserWarning: Glyph 3585 (\N{THAI CHARACTER KO KAI}) missing from font(s) Arial.
+  plt.tight_layout(rect=[0, 0, 1, 0.94])
+/Users/chingli/Desktop/Mooc_CLI_2/Un/src/step4_eda.py:225: UserWarning: Glyph 3636 (\N{THAI CHARACTER SARA I}) missing from font(s) Arial.
+  plt.tight_layout(rect=[0, 0, 1, 0.94])
+/Users/chingli/Desktop/Mooc_CLI_2/Un/src/step4_eda.py:225: UserWarning: Glyph 3592 (\N{THAI CHARACTER CHO CHAN}) missing from font(s) Arial.
+  plt.tight_layout(rect=[0, 0, 1, 0.94])
+/Users/chingli/Desktop/Mooc_CLI_2/Un/src/step4_eda.py:225: UserWarning: Glyph 3617 (\N{THAI CHARACTER MO MA}) missing from font(s) Arial.
+  plt.tight_layout(rect=[0, 0, 1, 0.94])
+/Users/chingli/Desktop/Mooc_CLI_2/Un/src/step4_eda.py:225: UserWarning: Glyph 3633 (\N{THAI CHARACTER MAI HAN-AKAT}) missing from font(s) Arial.
+  plt.tight_layout(rect=[0, 0, 1, 0.94])
+/Users/chingli/Desktop/Mooc_CLI_2/Un/src/step4_eda.py:225: UserWarning: Glyph 3657 (\N{THAI CHARACTER MAI THO}) missing from font(s) Arial.
+  plt.tight_layout(rect=[0, 0, 1, 0.94])
+/Users/chingli/Desktop/Mooc_CLI_2/Un/src/step4_eda.py:225: UserWarning: Glyph 3591 (\N{THAI CHARACTER NGO NGU}) missing from font(s) Arial.
+  plt.tight_layout(rect=[0, 0, 1, 0.94])
+/Users/chingli/Desktop/Mooc_CLI_2/Un/src/step4_eda.py:225: UserWarning: Glyph 3627 (\N{THAI CHARACTER HO HIP}) missing from font(s) Arial.
+  plt.tight_layout(rect=[0, 0, 1, 0.94])
+/Users/chingli/Desktop/Mooc_CLI_2/Un/src/step4_eda.py:225: UserWarning: Glyph 3604 (\N{THAI CHARACTER DO DEK}) missing from font(s) Arial.
+  plt.tight_layout(rect=[0, 0, 1, 0.94])
+/Users/chingli/Desktop/Mooc_CLI_2/Un/src/step4_eda.py:225: UserWarning: Glyph 3635 (\N{THAI CHARACTER SARA AM}) missing from font(s) Arial.
+  plt.tight_layout(rect=[0, 0, 1, 0.94])
+/Users/chingli/Desktop/Mooc_CLI_2/Un/src/step4_eda.py:225: UserWarning: Glyph 3623 (\N{THAI CHARACTER WO WAEN}) missing from font(s) Arial.
+  plt.tight_layout(rect=[0, 0, 1, 0.94])
+/Users/chingli/Desktop/Mooc_CLI_2/Un/src/step4_eda.py:225: UserWarning: Glyph 3637 (\N{THAI CHARACTER SARA II}) missing from font(s) Arial.
+  plt.tight_layout(rect=[0, 0, 1, 0.94])
+/Users/chingli/Desktop/Mooc_CLI_2/Un/src/step4_eda.py:225: UserWarning: Glyph 3656 (\N{THAI CHARACTER MAI EK}) missing from font(s) Arial.
+  plt.tight_layout(rect=[0, 0, 1, 0.94])
+/Users/chingli/Desktop/Mooc_CLI_2/Un/src/step4_eda.py:225: UserWarning: Glyph 3610 (\N{THAI CHARACTER BO BAIMAI}) missing from font(s) Arial.
+  plt.tight_layout(rect=[0, 0, 1, 0.94])
+/Users/chingli/Desktop/Mooc_CLI_2/Un/src/step4_eda.py:225: UserWarning: Glyph 3618 (\N{THAI CHARACTER YO YAK}) missing from font(s) Arial.
+  plt.tight_layout(rect=[0, 0, 1, 0.94])
+/Users/chingli/Desktop/Mooc_CLI_2/Un/src/step4_eda.py:225: UserWarning: Glyph 3586 (\N{THAI CHARACTER KHO KHAI}) missing from font(s) Arial.
+  plt.tight_layout(rect=[0, 0, 1, 0.94])
+/Users/chingli/Desktop/Mooc_CLI_2/Un/src/step4_eda.py:225: UserWarning: Glyph 3634 (\N{THAI CHARACTER SARA AA}) missing from font(s) Arial.
+  plt.tight_layout(rect=[0, 0, 1, 0.94])
+/Users/chingli/Desktop/Mooc_CLI_2/Un/src/step4_eda.py:225: UserWarning: Glyph 3606 (\N{THAI CHARACTER THO THUNG}) missing from font(s) Arial.
+  plt.tight_layout(rect=[0, 0, 1, 0.94])
+/Users/chingli/Desktop/Mooc_CLI_2/Un/src/step4_eda.py:225: UserWarning: Glyph 3638 (\N{THAI CHARACTER SARA UE}) missing from font(s) Arial.
+  plt.tight_layout(rect=[0, 0, 1, 0.94])
+/Users/chingli/Desktop/Mooc_CLI_2/Un/src/step4_eda.py:225: UserWarning: Glyph 3650 (\N{THAI CHARACTER SARA O}) missing from font(s) Arial.
+  plt.tight_layout(rect=[0, 0, 1, 0.94])
+/Users/chingli/Desktop/Mooc_CLI_2/Un/src/step4_eda.py:225: UserWarning: Glyph 3614 (\N{THAI CHARACTER PHO PHAN}) missing from font(s) Arial.
+  plt.tight_layout(rect=[0, 0, 1, 0.94])
+/Users/chingli/Desktop/Mooc_CLI_2/Un/src/step4_eda.py:225: UserWarning: Glyph 3626 (\N{THAI CHARACTER SO SUA}) missing from font(s) Arial.
+  plt.tight_layout(rect=[0, 0, 1, 0.94])
+/Users/chingli/Desktop/Mooc_CLI_2/Un/src/step4_eda.py:225: UserWarning: Glyph 3605 (\N{THAI CHARACTER TO TAO}) missing from font(s) Arial.
+  plt.tight_layout(rect=[0, 0, 1, 0.94])
+/Users/chingli/Desktop/Mooc_CLI_2/Un/src/step4_eda.py:225: UserWarning: Glyph 3651 (\N{THAI CHARACTER SARA AI MAIMUAN}) missing from font(s) Arial.
+  plt.tight_layout(rect=[0, 0, 1, 0.94])
+/Users/chingli/Desktop/Mooc_CLI_2/Un/src/step4_eda.py:226: UserWarning: Glyph 3648 (\N{THAI CHARACTER SARA E}) missing from font(s) Arial.
+  fig.savefig(
+/Users/chingli/Desktop/Mooc_CLI_2/Un/src/step4_eda.py:226: UserWarning: Glyph 3611 (\N{THAI CHARACTER PO PLA}) missing from font(s) Arial.
+  fig.savefig(
+/Users/chingli/Desktop/Mooc_CLI_2/Un/src/step4_eda.py:226: UserWarning: Glyph 3629 (\N{THAI CHARACTER O ANG}) missing from font(s) Arial.
+  fig.savefig(
+/Users/chingli/Desktop/Mooc_CLI_2/Un/src/step4_eda.py:226: UserWarning: Glyph 3619 (\N{THAI CHARACTER RO RUA}) missing from font(s) Arial.
+  fig.savefig(
+/Users/chingli/Desktop/Mooc_CLI_2/Un/src/step4_eda.py:226: UserWarning: Glyph 3660 (\N{THAI CHARACTER THANTHAKHAT}) missing from font(s) Arial.
+  fig.savefig(
+/Users/chingli/Desktop/Mooc_CLI_2/Un/src/step4_eda.py:226: UserWarning: Glyph 3595 (\N{THAI CHARACTER SO SO}) missing from font(s) Arial.
+  fig.savefig(
+/Users/chingli/Desktop/Mooc_CLI_2/Un/src/step4_eda.py:226: UserWarning: Glyph 3655 (\N{THAI CHARACTER MAITAIKHU}) missing from font(s) Arial.
+  fig.savefig(
+/Users/chingli/Desktop/Mooc_CLI_2/Un/src/step4_eda.py:226: UserWarning: Glyph 3609 (\N{THAI CHARACTER NO NU}) missing from font(s) Arial.
+  fig.savefig(
+/Users/chingli/Desktop/Mooc_CLI_2/Un/src/step4_eda.py:226: UserWarning: Glyph 3652 (\N{THAI CHARACTER SARA AI MAIMALAI}) missing from font(s) Arial.
+  fig.savefig(
+/Users/chingli/Desktop/Mooc_CLI_2/Un/src/step4_eda.py:226: UserWarning: Glyph 3607 (\N{THAI CHARACTER THO THAHAN}) missing from font(s) Arial.
+  fig.savefig(
+/Users/chingli/Desktop/Mooc_CLI_2/Un/src/step4_eda.py:226: UserWarning: Glyph 3621 (\N{THAI CHARACTER LO LING}) missing from font(s) Arial.
+  fig.savefig(
+/Users/chingli/Desktop/Mooc_CLI_2/Un/src/step4_eda.py:226: UserWarning: Glyph 3585 (\N{THAI CHARACTER KO KAI}) missing from font(s) Arial.
+  fig.savefig(
+/Users/chingli/Desktop/Mooc_CLI_2/Un/src/step4_eda.py:226: UserWarning: Glyph 3636 (\N{THAI CHARACTER SARA I}) missing from font(s) Arial.
+  fig.savefig(
+/Users/chingli/Desktop/Mooc_CLI_2/Un/src/step4_eda.py:226: UserWarning: Glyph 3592 (\N{THAI CHARACTER CHO CHAN}) missing from font(s) Arial.
+  fig.savefig(
+/Users/chingli/Desktop/Mooc_CLI_2/Un/src/step4_eda.py:226: UserWarning: Glyph 3617 (\N{THAI CHARACTER MO MA}) missing from font(s) Arial.
+  fig.savefig(
+/Users/chingli/Desktop/Mooc_CLI_2/Un/src/step4_eda.py:226: UserWarning: Glyph 3633 (\N{THAI CHARACTER MAI HAN-AKAT}) missing from font(s) Arial.
+  fig.savefig(
+/Users/chingli/Desktop/Mooc_CLI_2/Un/src/step4_eda.py:226: UserWarning: Glyph 3657 (\N{THAI CHARACTER MAI THO}) missing from font(s) Arial.
+  fig.savefig(
+/Users/chingli/Desktop/Mooc_CLI_2/Un/src/step4_eda.py:226: UserWarning: Glyph 3591 (\N{THAI CHARACTER NGO NGU}) missing from font(s) Arial.
+  fig.savefig(
+/Users/chingli/Desktop/Mooc_CLI_2/Un/src/step4_eda.py:226: UserWarning: Glyph 3627 (\N{THAI CHARACTER HO HIP}) missing from font(s) Arial.
+  fig.savefig(
+/Users/chingli/Desktop/Mooc_CLI_2/Un/src/step4_eda.py:226: UserWarning: Glyph 3604 (\N{THAI CHARACTER DO DEK}) missing from font(s) Arial.
+  fig.savefig(
+/Users/chingli/Desktop/Mooc_CLI_2/Un/src/step4_eda.py:226: UserWarning: Glyph 3635 (\N{THAI CHARACTER SARA AM}) missing from font(s) Arial.
+  fig.savefig(
+/Users/chingli/Desktop/Mooc_CLI_2/Un/src/step4_eda.py:226: UserWarning: Glyph 3623 (\N{THAI CHARACTER WO WAEN}) missing from font(s) Arial.
+  fig.savefig(
+/Users/chingli/Desktop/Mooc_CLI_2/Un/src/step4_eda.py:226: UserWarning: Glyph 3637 (\N{THAI CHARACTER SARA II}) missing from font(s) Arial.
+  fig.savefig(
+/Users/chingli/Desktop/Mooc_CLI_2/Un/src/step4_eda.py:226: UserWarning: Glyph 3656 (\N{THAI CHARACTER MAI EK}) missing from font(s) Arial.
+  fig.savefig(
+/Users/chingli/Desktop/Mooc_CLI_2/Un/src/step4_eda.py:226: UserWarning: Glyph 3610 (\N{THAI CHARACTER BO BAIMAI}) missing from font(s) Arial.
+  fig.savefig(
+/Users/chingli/Desktop/Mooc_CLI_2/Un/src/step4_eda.py:226: UserWarning: Glyph 3618 (\N{THAI CHARACTER YO YAK}) missing from font(s) Arial.
+  fig.savefig(
+/Users/chingli/Desktop/Mooc_CLI_2/Un/src/step4_eda.py:226: UserWarning: Glyph 3586 (\N{THAI CHARACTER KHO KHAI}) missing from font(s) Arial.
+  fig.savefig(
+/Users/chingli/Desktop/Mooc_CLI_2/Un/src/step4_eda.py:226: UserWarning: Glyph 3634 (\N{THAI CHARACTER SARA AA}) missing from font(s) Arial.
+  fig.savefig(
+/Users/chingli/Desktop/Mooc_CLI_2/Un/src/step4_eda.py:226: UserWarning: Glyph 3606 (\N{THAI CHARACTER THO THUNG}) missing from font(s) Arial.
+  fig.savefig(
+/Users/chingli/Desktop/Mooc_CLI_2/Un/src/step4_eda.py:226: UserWarning: Glyph 3638 (\N{THAI CHARACTER SARA UE}) missing from font(s) Arial.
+  fig.savefig(
+/Users/chingli/Desktop/Mooc_CLI_2/Un/src/step4_eda.py:226: UserWarning: Glyph 3650 (\N{THAI CHARACTER SARA O}) missing from font(s) Arial.
+  fig.savefig(
+/Users/chingli/Desktop/Mooc_CLI_2/Un/src/step4_eda.py:226: UserWarning: Glyph 3614 (\N{THAI CHARACTER PHO PHAN}) missing from font(s) Arial.
+  fig.savefig(
+/Users/chingli/Desktop/Mooc_CLI_2/Un/src/step4_eda.py:226: UserWarning: Glyph 3626 (\N{THAI CHARACTER SO SUA}) missing from font(s) Arial.
+  fig.savefig(
+/Users/chingli/Desktop/Mooc_CLI_2/Un/src/step4_eda.py:226: UserWarning: Glyph 3605 (\N{THAI CHARACTER TO TAO}) missing from font(s) Arial.
+  fig.savefig(
+/Users/chingli/Desktop/Mooc_CLI_2/Un/src/step4_eda.py:226: UserWarning: Glyph 3651 (\N{THAI CHARACTER SARA AI MAIMUAN}) missing from font(s) Arial.
+  fig.savefig(
+

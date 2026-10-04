@@ -1,0 +1,11 @@
+{
+  "random_seed": 42,
+  "stratification_variable": "certified_student",
+  "train_students": 234955,
+  "val_students": 50347,
+  "test_students": 50348,
+  "train_positive_rate": 4.135685556808751,
+  "val_positive_rate": 4.135301010983772,
+  "test_positive_rate": 4.135218876618733,
+  "anti_leakage_note": "Splits partitioned prior to any pipeline fitting."
+}

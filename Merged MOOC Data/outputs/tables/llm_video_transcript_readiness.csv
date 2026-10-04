@@ -1,0 +1,9 @@
+stage,stage_name,status,evidence,required_next_step,available_in_current_dataset
+1,Governed media or official captions,blocked,No video/audio/caption asset or media manifest exists.,Acquire licensed media or official captions with course/video IDs and checksums.,False
+2,Audio extraction and validation,not_started,No source media is available for extraction.,"Extract a standardized speech channel; audit silence, clipping, corruption, and duration.",False
+3,"Language detection, VAD, and diarization",not_started,No audio segments exist.,Detect language and speech regions; add speaker labels when required.,False
+4,Word-level ASR with timestamps,not_started,No word-level ASR or caption text exists.,"Run an ASR model and retain words, timestamps, confidence, model version, and decoding settings.",False
+5,Transcript normalization,not_started,No raw transcript exists.,"Restore punctuation and casing while preserving terminology, code, formulas, names, and negation.",False
+6,Sentence segmentation and semantic chunking,not_started,No sentence-level text exists.,Create complete sentences and retrieval chunks retaining video and timestamp lineage.,False
+7,Transcript QA gate,not_started,No human-verified reference sample exists.,"Measure WER/CER, boundary quality, language accuracy, and low-confidence rate; quarantine failures.",False
+8,Grounded RAG / LLM evaluation,not_started,The transcript QA gate has not passed.,"Build retrieval first, then evaluate grounded summarization and Q&A before considering fine-tuning.",False

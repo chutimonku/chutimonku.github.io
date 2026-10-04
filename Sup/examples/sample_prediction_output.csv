@@ -1,0 +1,4 @@
+userid_DI,completion_probability,predicted_completion,decision_threshold,risk_tier,confidence_score,recommended_support_action
+SAMPLE_PROFILE_001,0.0,0,0.8404,Tier 3: High Risk / Early Dropout,1.0,"Urgent advisor outreach, onboarding diagnostic, course prerequisite remediation, technical support"
+SAMPLE_PROFILE_002,0.0,0,0.8404,Tier 3: High Risk / Early Dropout,1.0,"Urgent advisor outreach, onboarding diagnostic, course prerequisite remediation, technical support"
+SAMPLE_PROFILE_003,0.0123,0,0.8404,Tier 3: High Risk / Early Dropout,0.9877,"Urgent advisor outreach, onboarding diagnostic, course prerequisite remediation, technical support"

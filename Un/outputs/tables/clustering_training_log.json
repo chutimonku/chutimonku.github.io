@@ -1,0 +1,69 @@
+{
+  "generated_at_utc": "2026-09-21T13:05:25.318857+00:00",
+  "task_type": "unsupervised_clustering",
+  "algorithm": "KMeans",
+  "random_seed": 42,
+  "full_student_count": 335650,
+  "metric_sample_count": 12000,
+  "metric_sample_indices_saved": false,
+  "behavior_features": [
+    "mean_course_events_percentile",
+    "mean_course_active_days_percentile",
+    "mean_course_chapters_percentile",
+    "mean_course_forum_posts_percentile"
+  ],
+  "excluded_columns": {
+    "profiles": [
+      "userid_DI",
+      "course_id",
+      "institute",
+      "year",
+      "semester",
+      "gender",
+      "LoE_DI",
+      "final_cc_cname_DI",
+      "age"
+    ],
+    "outcomes": [
+      "certified",
+      "grade",
+      "viewed",
+      "explored",
+      "incomplete_flag"
+    ]
+  },
+  "candidate_k_range": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "stability_resamples": 10,
+  "selected_k": 5,
+  "selection_rule": "Gap Statistic one-standard-error rule, restricted to candidates passing cluster-size and resampling-stability guardrails; internal metrics are reported as diagnostics rather than averaged as if they measured the same construct.",
+  "selected_k_metrics": {
+    "silhouette": 0.4275483351996025,
+    "davies_bouldin": 0.8826519886824755,
+    "calinski_harabasz": 16546.023298574917,
+    "resample_ari_mean": 0.9934937554221588,
+    "resample_ari_std": 0.004801196503369656,
+    "smallest_cluster_pct": 13.225000000000001,
+    "gap_statistic": 1.1740995454618783,
+    "gap_standard_error": 0.005578055750531305
+  },
+  "final_fit_runtime_seconds": 9.992648083018139,
+  "artifacts": {
+    "k_metrics_table": "outputs/tables/k_selection_metrics.csv",
+    "k_metrics_figure": "outputs/figures/modeling/k_selection_four_metrics.png",
+    "candidate_model": "models/candidates/kmeans_k5.joblib",
+    "final_model": "models/final/cluster_model.joblib",
+    "deployment_pipeline": "models/final/clustering_pipeline.joblib",
+    "cluster_assignments": "outputs/data/cluster_assignments.csv",
+    "cluster_profiles": "outputs/tables/cluster_profiles.csv"
+  }
+}

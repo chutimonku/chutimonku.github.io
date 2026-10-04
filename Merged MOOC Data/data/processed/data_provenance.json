@@ -1,0 +1,66 @@
+{
+  "processing_order": "Audit raw sources -> harmonize each source -> clean each source separately in Step 3 -> reconcile/merge -> aggregate students",
+  "raw_records": 755144,
+  "source_count": 2,
+  "sources": [
+    {
+      "filename": "HXPC13_DI_v3_11-13-2019.csv",
+      "local_path": "data/raw/HXPC13_DI_v3_11-13-2019.csv",
+      "source_url": "https://doi.org/10.7910/DVN/26147",
+      "source_title": "HarvardX Person-Course Academic Year 2013 De-Identified dataset, version 3.0",
+      "source_authority": "HarvardX / Harvard Dataverse",
+      "source_verification": "Verified against the published filename and MD5 checksum",
+      "selection_rationale": "Official de-identified person-course release with documentation, a persistent DOI, and extensive reuse in MOOC research.",
+      "known_limitations": "HarvardX-only release; self-reported demographics; aggregate person-course records; no video-duration variable.",
+      "records": 338223,
+      "columns": 20,
+      "exact_duplicate_rows": 0,
+      "duplicate_enrollment_rows": 0,
+      "unique_students": 301609,
+      "distinct_course_offerings": 5,
+      "file_size_bytes": 34424055,
+      "sha256": "0a2ecdbbeda513edfd0c807a6f40dd6cce0a277889df0d296a70a4e5a9915eb9",
+      "md5": "53419b486c3b19c14d2f06612980f630",
+      "expected_md5": "53419b486c3b19c14d2f06612980f630",
+      "checksum_matches_published_source": true
+    },
+    {
+      "filename": "big_student_clear_third_version.csv",
+      "local_path": "data/raw/big_student_clear_third_version.csv",
+      "source_url": "https://www.kaggle.com/datasets/kanikanarang94/mooc-dataset",
+      "source_title": "Expanded HarvardX-MITx MOOC person-course file supplied with the project",
+      "source_authority": "Project-provided Kaggle-derived file",
+      "source_verification": "Source link supplied by the project owner; exact remote filename/version is not exposed by the current Kaggle page and requires manual provenance confirmation",
+      "selection_rationale": "Adds MITx records and broader course coverage using the same person-course schema needed for cross-course analysis.",
+      "known_limitations": "Derived file with an index column and no independently published checksum or version identifier; provenance is weaker than the Harvard Dataverse source.",
+      "records": 416921,
+      "columns": 22,
+      "exact_duplicate_rows": 0,
+      "duplicate_enrollment_rows": 0,
+      "unique_students": 335650,
+      "distinct_course_offerings": 18,
+      "file_size_bytes": 58659523,
+      "sha256": "24858a3afe182d4a17b5083ed4ffcd6ced622821fc37626932628240b31773f9",
+      "md5": "2c477dcb323f4d85a13bcf6a44b76c7d",
+      "expected_md5": "",
+      "checksum_matches_published_source": false
+    }
+  ],
+  "interim_harmonized_files": {
+    "HXPC13_DI_v3_11-13-2019.csv": "data/interim/HXPC13_harmonized.parquet",
+    "big_student_clear_third_version.csv": "data/interim/big_student_harmonized.parquet"
+  },
+  "merge_status": "NOT_MERGED_IN_STEP_2",
+  "selection_rationale": {
+    "HXPC13_DI_v3_11-13-2019.csv": "Official de-identified person-course release with documentation, a persistent DOI, and extensive reuse in MOOC research.",
+    "big_student_clear_third_version.csv": "Adds MITx records and broader course coverage using the same person-course schema needed for cross-course analysis."
+  },
+  "limitations": {
+    "HXPC13_DI_v3_11-13-2019.csv": "HarvardX-only release; self-reported demographics; aggregate person-course records; no video-duration variable.",
+    "big_student_clear_third_version.csv": "Derived file with an index column and no independently published checksum or version identifier; provenance is weaker than the Harvard Dataverse source."
+  },
+  "checksums": {
+    "data/raw/HXPC13_DI_v3_11-13-2019.csv": "0a2ecdbbeda513edfd0c807a6f40dd6cce0a277889df0d296a70a4e5a9915eb9",
+    "data/raw/big_student_clear_third_version.csv": "24858a3afe182d4a17b5083ed4ffcd6ced622821fc37626932628240b31773f9"
+  }
+}

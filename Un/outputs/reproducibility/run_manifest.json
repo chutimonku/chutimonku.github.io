@@ -1,0 +1,263 @@
+{
+  "workflow": "MOOC Unsupervised Student Segmentation",
+  "status": "complete",
+  "started_at_utc": "2026-09-21T13:00:52.736441+00:00",
+  "finished_at_utc": "2026-09-21T13:06:05.407737+00:00",
+  "python_executable": "/opt/anaconda3/bin/python",
+  "project_root": "/Users/chingli/Desktop/Mooc_CLI_2/Un",
+  "steps": [
+    {
+      "step_number": 1,
+      "step_title": "Step 1: Problem Definition",
+      "module": "src.step1_problem_definition",
+      "return_code": 0,
+      "runtime_seconds": 0.023,
+      "log_path": "outputs/logs/01_src_step1_problem_definition.log"
+    },
+    {
+      "step_number": 2,
+      "step_title": "Step 2: Data Gathering & Quarantine",
+      "module": "src.step2_data_gathering",
+      "return_code": 0,
+      "runtime_seconds": 1.736,
+      "log_path": "outputs/logs/02_src_step2_data_gathering.log"
+    },
+    {
+      "step_number": 3,
+      "step_title": "Step 3: Data Cleaning",
+      "module": "src.step3_data_cleaning",
+      "return_code": 0,
+      "runtime_seconds": 81.648,
+      "log_path": "outputs/logs/03_src_step3_data_cleaning.log"
+    },
+    {
+      "step_number": 4,
+      "step_title": "Step 4: EDA & Data Quality Audit",
+      "module": "src.step4_eda",
+      "return_code": 0,
+      "runtime_seconds": 11.277,
+      "log_path": "outputs/logs/04_src_step4_eda.log"
+    },
+    {
+      "step_number": 5,
+      "step_title": "Step 5: Feature Engineering",
+      "module": "src.step5_feature_engineering",
+      "return_code": 0,
+      "runtime_seconds": 1.947,
+      "log_path": "outputs/logs/05_src_step5_feature_engineering.log"
+    },
+    {
+      "step_number": 6,
+      "step_title": "Step 6: Broad Clustering Family Screening",
+      "module": "src.step6_model_family_screening",
+      "return_code": 0,
+      "runtime_seconds": 19.802,
+      "log_path": "outputs/logs/06_src_step6_model_family_screening.log"
+    },
+    {
+      "step_number": 7,
+      "step_title": "Step 6-7: K Selection & Model Training",
+      "module": "src.step6_7_model_training",
+      "return_code": 0,
+      "runtime_seconds": 156.303,
+      "log_path": "outputs/logs/07_src_step6_7_model_training.log"
+    },
+    {
+      "step_number": 8,
+      "step_title": "Step 8: Evaluation & Post-hoc Validation",
+      "module": "src.step8_evaluation_and_posthoc",
+      "return_code": 0,
+      "runtime_seconds": 12.367,
+      "log_path": "outputs/logs/08_src_step8_evaluation_and_posthoc.log"
+    },
+    {
+      "step_number": 9,
+      "step_title": "Step 8: Extended Unsupervised Diagnostics",
+      "module": "src.step8_extended_analysis",
+      "return_code": 0,
+      "runtime_seconds": 23.147,
+      "log_path": "outputs/logs/09_src_step8_extended_analysis.log"
+    },
+    {
+      "step_number": 10,
+      "step_title": "Step 9: Deployment Packaging",
+      "module": "src.deployment",
+      "return_code": 0,
+      "runtime_seconds": 2.097,
+      "log_path": "outputs/logs/10_src_deployment.log"
+    },
+    {
+      "step_number": 11,
+      "step_title": "Step 11: Monitoring Baseline",
+      "module": "src.step11_monitoring",
+      "return_code": 0,
+      "runtime_seconds": 1.177,
+      "log_path": "outputs/logs/11_src_step11_monitoring.log"
+    },
+    {
+      "step_number": 12,
+      "step_title": "Step 10: Final Bilingual Dashboard Assembly",
+      "module": "src.generate_report",
+      "return_code": 0,
+      "runtime_seconds": 1.07,
+      "log_path": "outputs/logs/12_src_generate_report.log"
+    }
+  ],
+  "artifact_check": {
+    "checked_at_utc": "2026-09-21T13:06:05.406738+00:00",
+    "complete": true,
+    "missing_artifacts": [],
+    "artifacts": [
+      {
+        "path": "data/processed/problem_definition.json",
+        "exists": true,
+        "size_bytes": 6943,
+        "sha256": "bda0f7418c7018870e17d2308dc96fdc09b3eabfc406c7524c8153258e807960"
+      },
+      {
+        "path": "data/processed/raw_features.parquet",
+        "exists": true,
+        "size_bytes": 8598127,
+        "sha256": "22879832462fed1b0edd91d1bcc91828493b81d2f76261caf62e8c48da606054"
+      },
+      {
+        "path": "data/quarantine/raw_outcomes.parquet",
+        "exists": true,
+        "size_bytes": 5245400,
+        "sha256": "1902dcc9ed4939881569801a7977b29b4053f682d4b08441c8e8a8d14ef2fed6"
+      },
+      {
+        "path": "data/processed/enrollments_cleaned.parquet",
+        "exists": true,
+        "size_bytes": 15318170,
+        "sha256": "bfe4acdc8c09a46b39c4f85b47b51342a93a8e83521b22034f23d05874344058"
+      },
+      {
+        "path": "data/processed/students_cleaned.parquet",
+        "exists": true,
+        "size_bytes": 9747916,
+        "sha256": "15743a3012e1b9f8702f9c852ecdeb2328eecbc06940e76263843857d8ee27a3"
+      },
+      {
+        "path": "data/processed/feature_matrix.parquet",
+        "exists": true,
+        "size_bytes": 5102203,
+        "sha256": "24e0fb32738ea1d10fd5e9cd3ed630bc1402db0b3b288a63766daaecbaedeb58"
+      },
+      {
+        "path": "outputs/tables/k_selection_metrics.csv",
+        "exists": true,
+        "size_bytes": 2758,
+        "sha256": "922b5f2bfba350892727d1b2e0945e41b56b9c5763b16ab109afea82dd96f616"
+      },
+      {
+        "path": "outputs/tables/broad_clustering_benchmark.csv",
+        "exists": true,
+        "size_bytes": 9221,
+        "sha256": "5b7559ba24d15770af6b6559e3348d7b85e03e2e9a787350b40ed07b1d1ced70"
+      },
+      {
+        "path": "outputs/tables/clustering_family_recommendation.json",
+        "exists": true,
+        "size_bytes": 494,
+        "sha256": "f53c500142d8c0f29cab84e2224772daa018816091a4250903cabfdbfb822ea4"
+      },
+      {
+        "path": "outputs/figures/modeling/k_selection_four_metrics.png",
+        "exists": true,
+        "size_bytes": 491185,
+        "sha256": "d6108c62d8d2cb3629e9e1794364deb926cd85659b46fedd468842c3953db5ed"
+      },
+      {
+        "path": "outputs/data/cluster_assignments.csv",
+        "exists": true,
+        "size_bytes": 5706071,
+        "sha256": "cabaf4875d62daf406b91b48d23462617df47f8c6646ea32265c184ed5f291a7"
+      },
+      {
+        "path": "outputs/tables/cluster_profiles.csv",
+        "exists": true,
+        "size_bytes": 1089,
+        "sha256": "567c2d6544d6b9df59c661a3b1dcb02323f37b4c35e07531f18a5cf09486ebb4"
+      },
+      {
+        "path": "outputs/tables/cluster_validation_summary.json",
+        "exists": true,
+        "size_bytes": 1217,
+        "sha256": "d0d5f692459b22c5ca97df9ff91bf52af996a0a336dc8a8b989f046bcc4b1daf"
+      },
+      {
+        "path": "outputs/tables/unsupervised_model_comparison.csv",
+        "exists": true,
+        "size_bytes": 895,
+        "sha256": "ed87d8f31a3b2af93cdf819b076597a133abbe28d2afb4f819ba36744d379547"
+      },
+      {
+        "path": "outputs/tables/cluster_feature_contribution.csv",
+        "exists": true,
+        "size_bytes": 459,
+        "sha256": "afb429aedee30ad33d9fc4bf05360d6d7920ab3fe54ec30241614ba6035fa06e"
+      },
+      {
+        "path": "outputs/tables/feature_ablation_sensitivity.csv",
+        "exists": true,
+        "size_bytes": 730,
+        "sha256": "e75803eac07665a5cf810f338cdb4679fd5bc25f6749958e5a725daab1b12718"
+      },
+      {
+        "path": "outputs/tables/student_persona_dossiers.csv",
+        "exists": true,
+        "size_bytes": 1059,
+        "sha256": "1f9969f480d62bd45b7b6c8526c38628a61d7e7c2f09cb3f7ec9b21bd166cd81"
+      },
+      {
+        "path": "outputs/data/cluster_assignment_diagnostics.csv",
+        "exists": true,
+        "size_bytes": 27267532,
+        "sha256": "5ce19d7c073d10c65a8b51db7b81a85da10ba2d17d8922d4e8ba3261c57615ed"
+      },
+      {
+        "path": "outputs/data/interactive_simulator_spec.json",
+        "exists": true,
+        "size_bytes": 2284,
+        "sha256": "506ddddf7abeacb62f543541cf8208bb0ee4fb59afa32b70c0d40cca336efcfc"
+      },
+      {
+        "path": "models/final/clustering_pipeline.joblib",
+        "exists": true,
+        "size_bytes": 1344474,
+        "sha256": "ae32a8161040a2e5179ab3d0797249f32088932f97a44fc1454bc57daf629350"
+      },
+      {
+        "path": "models/final/input_schema.json",
+        "exists": true,
+        "size_bytes": 3746,
+        "sha256": "8bef6fb55cfe268abbf9544c8de09a5a805f734beada294525d4be79496b4737"
+      },
+      {
+        "path": "models/final/model_lock.json",
+        "exists": true,
+        "size_bytes": 1643,
+        "sha256": "495f5dbbc76a34b2e3345b0381cf58901e69d4e6f337ffe88659c6eb6bfbd0c4"
+      },
+      {
+        "path": "reports/student_segmentation_report.html",
+        "exists": true,
+        "size_bytes": 72340,
+        "sha256": "d9497d17c91ce3b2bebdadff4c86fd6fa8f33640903fa7f403be850d9314d11a"
+      },
+      {
+        "path": "monitoring/monitoring_report.json",
+        "exists": true,
+        "size_bytes": 456,
+        "sha256": "bffef93e32058248522b8808ebc75884f3c3a78d8d8ac98ed4895d2954d7225f"
+      },
+      {
+        "path": "monitoring/retraining_decision.json",
+        "exists": true,
+        "size_bytes": 206,
+        "sha256": "9b0782387500b2861a5adb2fa3eedca0051acdd3209dd16f3ee817d2d127d44c"
+      }
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.13.5, pytest-8.3.4, pluggy-1.5.0
+rootdir: /Users/chingli/Desktop/Mooc_CLI_2/Sup
+configfile: pytest.ini
+plugins: anyio-4.7.0
+collected 10 items
+
+tests/test_pipeline.py ..........                                        [100%]
+
+============================== 10 passed in 1.55s ==============================

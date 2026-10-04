@@ -1,0 +1,257 @@
+{
+  "moved_count": 63,
+  "moved": [
+    {
+      "from": ".slide_build",
+      "to": ".cleanup_archive_unused_20260930/.slide_build"
+    },
+    {
+      "from": ".slide_build_full",
+      "to": ".cleanup_archive_unused_20260930/.slide_build_full"
+    },
+    {
+      "from": ".slide_build_k5",
+      "to": ".cleanup_archive_unused_20260930/.slide_build_k5"
+    },
+    {
+      "from": ".slide_build_codex_final",
+      "to": ".cleanup_archive_unused_20260930/.slide_build_codex_final"
+    },
+    {
+      "from": ".codex-finalizer",
+      "to": ".cleanup_archive_unused_20260930/.codex-finalizer"
+    },
+    {
+      "from": "reports/~$MOOC_Student_Analytics_Final_TH_Updated_v3.pptx",
+      "to": ".cleanup_archive_unused_20260930/reports/~$MOOC_Student_Analytics_Final_TH_Updated_v3.pptx"
+    },
+    {
+      "from": "reports/MOOC_Student_Analytics_Final_K3_TH.pptx",
+      "to": ".cleanup_archive_unused_20260930/reports/MOOC_Student_Analytics_Final_K3_TH.pptx"
+    },
+    {
+      "from": "reports/MOOC_Student_Analytics_Final_TH_Updated_v2.pptx",
+      "to": ".cleanup_archive_unused_20260930/reports/MOOC_Student_Analytics_Final_TH_Updated_v2.pptx"
+    },
+    {
+      "from": "reports/MOOC_Student_Analytics_Final_TH_446766_K5.pptx",
+      "to": ".cleanup_archive_unused_20260930/reports/MOOC_Student_Analytics_Final_TH_446766_K5.pptx"
+    },
+    {
+      "from": "reports/MOOC_Student_Analytics_Final_TH_Updated.pptx",
+      "to": ".cleanup_archive_unused_20260930/reports/MOOC_Student_Analytics_Final_TH_Updated.pptx"
+    },
+    {
+      "from": "reports/~$MOOC_Student_Analytics_Final_K3_TH.pptx",
+      "to": ".cleanup_archive_unused_20260930/reports/~$MOOC_Student_Analytics_Final_K3_TH.pptx"
+    },
+    {
+      "from": "outputs/quarantine",
+      "to": ".cleanup_archive_unused_20260930/outputs/quarantine"
+    },
+    {
+      "from": "outputs/figures/tracks/kmeans_elbow.png",
+      "to": ".cleanup_archive_unused_20260930/outputs/figures/tracks/kmeans_elbow.png"
+    },
+    {
+      "from": "outputs/figures/tracks/unsupervised_k_metric_grid.png",
+      "to": ".cleanup_archive_unused_20260930/outputs/figures/tracks/unsupervised_k_metric_grid.png"
+    },
+    {
+      "from": "outputs/tables/k_selection_elbow.csv",
+      "to": ".cleanup_archive_unused_20260930/outputs/tables/k_selection_elbow.csv"
+    },
+    {
+      "from": "outputs/tables/k_selection_decision.csv",
+      "to": ".cleanup_archive_unused_20260930/outputs/tables/k_selection_decision.csv"
+    },
+    {
+      "from": "outputs/tables/k_selection_composite_scores.csv",
+      "to": ".cleanup_archive_unused_20260930/outputs/tables/k_selection_composite_scores.csv"
+    },
+    {
+      "from": "outputs/tables/k_metric_direction_recheck.csv",
+      "to": ".cleanup_archive_unused_20260930/outputs/tables/k_metric_direction_recheck.csv"
+    },
+    {
+      "from": "outputs/tables/k_sensitivity_multiseed_audit.csv",
+      "to": ".cleanup_archive_unused_20260930/outputs/tables/k_sensitivity_multiseed_audit.csv"
+    },
+    {
+      "from": "outputs/tables/gap_statistic_by_k.csv",
+      "to": ".cleanup_archive_unused_20260930/outputs/tables/gap_statistic_by_k.csv"
+    },
+    {
+      "from": "outputs/tables/unsupervised_model_comparison.csv",
+      "to": ".cleanup_archive_unused_20260930/outputs/tables/unsupervised_model_comparison.csv"
+    },
+    {
+      "from": "outputs/tables/unsupervised_cluster_profiles.csv",
+      "to": ".cleanup_archive_unused_20260930/outputs/tables/unsupervised_cluster_profiles.csv"
+    },
+    {
+      "from": "outputs/tables/unsupervised_scenario_centers.csv",
+      "to": ".cleanup_archive_unused_20260930/outputs/tables/unsupervised_scenario_centers.csv"
+    },
+    {
+      "from": "outputs/tables/all_track_model_comparison.csv",
+      "to": ".cleanup_archive_unused_20260930/outputs/tables/all_track_model_comparison.csv"
+    },
+    {
+      "from": "outputs/figures/enrollment_level/enrollment_persona_donut.png",
+      "to": ".cleanup_archive_unused_20260930/outputs/figures/enrollment_level/enrollment_persona_donut.png"
+    },
+    {
+      "from": "outputs/figures/enrollment_level/enrollment_correlation_matrix.png",
+      "to": ".cleanup_archive_unused_20260930/outputs/figures/enrollment_level/enrollment_correlation_matrix.png"
+    },
+    {
+      "from": "outputs/figures/enrollment_level/enrollment_zero_missing_profile.png",
+      "to": ".cleanup_archive_unused_20260930/outputs/figures/enrollment_level/enrollment_zero_missing_profile.png"
+    },
+    {
+      "from": "outputs/figures/enrollment_level/enrollment_llm_text_confusion_matrices.png",
+      "to": ".cleanup_archive_unused_20260930/outputs/figures/enrollment_level/enrollment_llm_text_confusion_matrices.png"
+    },
+    {
+      "from": "outputs/figures/enrollment_level/enrollment_persona_behavior_radar.png",
+      "to": ".cleanup_archive_unused_20260930/outputs/figures/enrollment_level/enrollment_persona_behavior_radar.png"
+    },
+    {
+      "from": "outputs/figures/enrollment_level/enrollment_k_selection_6_metrics.png",
+      "to": ".cleanup_archive_unused_20260930/outputs/figures/enrollment_level/enrollment_k_selection_6_metrics.png"
+    },
+    {
+      "from": "outputs/figures/enrollment_level/enrollment_llm_text_model_comparison.png",
+      "to": ".cleanup_archive_unused_20260930/outputs/figures/enrollment_level/enrollment_llm_text_model_comparison.png"
+    },
+    {
+      "from": "outputs/figures/enrollment_level/enrollment_pca_3d_projection.png",
+      "to": ".cleanup_archive_unused_20260930/outputs/figures/enrollment_level/enrollment_pca_3d_projection.png"
+    },
+    {
+      "from": "outputs/figures/enrollment_level/enrollment_supervised_confusion_matrices.png",
+      "to": ".cleanup_archive_unused_20260930/outputs/figures/enrollment_level/enrollment_supervised_confusion_matrices.png"
+    },
+    {
+      "from": "outputs/figures/enrollment_level/enrollment_behavior_distributions.png",
+      "to": ".cleanup_archive_unused_20260930/outputs/figures/enrollment_level/enrollment_behavior_distributions.png"
+    },
+    {
+      "from": "outputs/figures/enrollment_level/enrollment_supervised_model_comparison.png",
+      "to": ".cleanup_archive_unused_20260930/outputs/figures/enrollment_level/enrollment_supervised_model_comparison.png"
+    },
+    {
+      "from": "outputs/figures/enrollment_level/enrollment_persona_shares.png",
+      "to": ".cleanup_archive_unused_20260930/outputs/figures/enrollment_level/enrollment_persona_shares.png"
+    },
+    {
+      "from": "outputs/figures/enrollment_level/enrollment_deep_confusion_matrices.png",
+      "to": ".cleanup_archive_unused_20260930/outputs/figures/enrollment_level/enrollment_deep_confusion_matrices.png"
+    },
+    {
+      "from": "outputs/figures/enrollment_level/enrollment_deep_model_comparison.png",
+      "to": ".cleanup_archive_unused_20260930/outputs/figures/enrollment_level/enrollment_deep_model_comparison.png"
+    },
+    {
+      "from": "outputs/figures/enrollment_level/enrollment_behavior_boxplots.png",
+      "to": ".cleanup_archive_unused_20260930/outputs/figures/enrollment_level/enrollment_behavior_boxplots.png"
+    },
+    {
+      "from": "outputs/figures/enrollment_level/enrollment_unsupervised_model_radar.png",
+      "to": ".cleanup_archive_unused_20260930/outputs/figures/enrollment_level/enrollment_unsupervised_model_radar.png"
+    },
+    {
+      "from": "outputs/tables/enrollment_unsupervised_model_comparison.csv",
+      "to": ".cleanup_archive_unused_20260930/outputs/tables/enrollment_unsupervised_model_comparison.csv"
+    },
+    {
+      "from": "outputs/tables/enrollment_deep_model_comparison.csv",
+      "to": ".cleanup_archive_unused_20260930/outputs/tables/enrollment_deep_model_comparison.csv"
+    },
+    {
+      "from": "outputs/tables/enrollment_deep_confusion_matrices.csv",
+      "to": ".cleanup_archive_unused_20260930/outputs/tables/enrollment_deep_confusion_matrices.csv"
+    },
+    {
+      "from": "outputs/tables/enrollment_supervised_confusion_matrices.csv",
+      "to": ".cleanup_archive_unused_20260930/outputs/tables/enrollment_supervised_confusion_matrices.csv"
+    },
+    {
+      "from": "outputs/tables/enrollment_cluster_behavior_profile.csv",
+      "to": ".cleanup_archive_unused_20260930/outputs/tables/enrollment_cluster_behavior_profile.csv"
+    },
+    {
+      "from": "outputs/tables/enrollment_supervised_model_comparison.csv",
+      "to": ".cleanup_archive_unused_20260930/outputs/tables/enrollment_supervised_model_comparison.csv"
+    },
+    {
+      "from": "outputs/tables/enrollment_llm_text_model_comparison.csv",
+      "to": ".cleanup_archive_unused_20260930/outputs/tables/enrollment_llm_text_model_comparison.csv"
+    },
+    {
+      "from": "outputs/tables/enrollment_k_selection_metrics.csv",
+      "to": ".cleanup_archive_unused_20260930/outputs/tables/enrollment_k_selection_metrics.csv"
+    },
+    {
+      "from": "outputs/tables/enrollment_eda_zero_missing_profile.csv",
+      "to": ".cleanup_archive_unused_20260930/outputs/tables/enrollment_eda_zero_missing_profile.csv"
+    },
+    {
+      "from": "outputs/tables/enrollment_cluster_profile_sample.csv",
+      "to": ".cleanup_archive_unused_20260930/outputs/tables/enrollment_cluster_profile_sample.csv"
+    },
+    {
+      "from": "outputs/tables/llm_api_predictions_ollama_llama3_2_3b.csv",
+      "to": ".cleanup_archive_unused_20260930/outputs/tables/llm_api_predictions_ollama_llama3_2_3b.csv"
+    },
+    {
+      "from": "outputs/tables/llm_api_provider_status.csv",
+      "to": ".cleanup_archive_unused_20260930/outputs/tables/llm_api_provider_status.csv"
+    },
+    {
+      "from": "outputs/tables/llm_api_predictions_ollama_mistral_7b.csv",
+      "to": ".cleanup_archive_unused_20260930/outputs/tables/llm_api_predictions_ollama_mistral_7b.csv"
+    },
+    {
+      "from": "outputs/tables/llm_api_predictions_gemini.csv",
+      "to": ".cleanup_archive_unused_20260930/outputs/tables/llm_api_predictions_gemini.csv"
+    },
+    {
+      "from": "outputs/tables/llm_api_predictions_all.csv",
+      "to": ".cleanup_archive_unused_20260930/outputs/tables/llm_api_predictions_all.csv"
+    },
+    {
+      "from": "outputs/tables/llm_api_predictions_gemini_full.csv",
+      "to": ".cleanup_archive_unused_20260930/outputs/tables/llm_api_predictions_gemini_full.csv"
+    },
+    {
+      "from": "outputs/tables/llm_api_predictions_ollama_qwen3_4b.csv",
+      "to": ".cleanup_archive_unused_20260930/outputs/tables/llm_api_predictions_ollama_qwen3_4b.csv"
+    },
+    {
+      "from": "outputs/tables/llm_api_predictions_gemini_pilot.csv",
+      "to": ".cleanup_archive_unused_20260930/outputs/tables/llm_api_predictions_gemini_pilot.csv"
+    },
+    {
+      "from": "outputs/tables/llm_comparative_pilot_predictions.csv",
+      "to": ".cleanup_archive_unused_20260930/outputs/tables/llm_comparative_pilot_predictions.csv"
+    },
+    {
+      "from": "outputs/tables/llm_comparative_model_comparison.csv",
+      "to": ".cleanup_archive_unused_20260930/outputs/tables/llm_comparative_model_comparison.csv"
+    },
+    {
+      "from": "outputs/tables/llm_comparative_pilot_model_comparison.csv",
+      "to": ".cleanup_archive_unused_20260930/outputs/tables/llm_comparative_pilot_model_comparison.csv"
+    },
+    {
+      "from": "outputs/tables/llm_generative_model_comparison.csv",
+      "to": ".cleanup_archive_unused_20260930/outputs/tables/llm_generative_model_comparison.csv"
+    },
+    {
+      "from": "outputs/tables/llm_generative_model_comparison_full_gemini.csv",
+      "to": ".cleanup_archive_unused_20260930/outputs/tables/llm_generative_model_comparison_full_gemini.csv"
+    }
+  ]
+}

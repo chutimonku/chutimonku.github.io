@@ -1,0 +1,23 @@
+{
+  "quarantined_columns": [
+    "certified",
+    "grade",
+    "incomplete_flag",
+    "explored"
+  ],
+  "isolation_timestamp": "2026-09-04T23:27:10.629948",
+  "raw_dataset_path": "data/raw/big_student_clear_third_version.csv",
+  "raw_dataset_sha256": "24858a3afe182d4a17b5083ed4ffcd6ced622821fc37626932628240b31773f9",
+  "quarantined_parquet_sha256": "b13ca3da469de67d9e199a58093d617fa5ea7eeb9739c2b3855ef65c88343ae8",
+  "total_quarantined_records": 416921,
+  "access_restriction": "LOCKED: Strictly prohibited from feature engineering, training, and tuning. Reserved for Step 8 Post-Hoc validation only.",
+  "outcome_statistics": {
+    "certified_count": 14889,
+    "certified_rate": 0.035712,
+    "explored_count": 32355,
+    "explored_rate": 0.077605,
+    "mean_grade": 0.040403,
+    "incomplete_count": 12114,
+    "incomplete_rate": 0.029056
+  }
+}

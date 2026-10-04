@@ -1,0 +1,15 @@
+======================================================================
+STEP 9: PACKAGING DEPLOYMENT PIPELINE & ARTIFACTS
+======================================================================
+[+] Portable deployment pipeline saved to: models/final/deployment_pipeline.joblib
+[+] Input schema contract saved to: models/final/input_schema.json
+[+] Model card documentation saved to: models/final/model_card.md
+[+] Generating sample student inputs and testing pipeline inference...
+[+] Example input saved to:  examples/sample_student_input.csv
+[+] Example output saved to: examples/sample_prediction_output.csv
+                      userid_DI  ...                         recommended_support_action
+0         STUDENT_HIGH_RISK_001  ...  Urgent advisor outreach, onboarding diagnostic...
+1     STUDENT_MODERATE_RISK_002  ...  Urgent advisor outreach, onboarding diagnostic...
+2  STUDENT_LIKELY_COMPLETER_003  ...  Proactive check-ins, study group matchmaking, ...
+
+[3 rows x 4 columns]

@@ -1,0 +1,29 @@
+{
+  "moved_count": 6,
+  "moved": [
+    {
+      "from": "PROJECT_CLEANUP_AUDIT_20260929.md",
+      "to": ".cleanup_archive_unused_20260930/PROJECT_CLEANUP_AUDIT_20260929.md"
+    },
+    {
+      "from": "PRESENTATION_GUIDE_TH.md",
+      "to": ".cleanup_archive_unused_20260930/PRESENTATION_GUIDE_TH.md"
+    },
+    {
+      "from": "outputs/reproducibility/analysis_tracks_manifest.json",
+      "to": ".cleanup_archive_unused_20260930/outputs/reproducibility/analysis_tracks_manifest.json"
+    },
+    {
+      "from": "outputs/reproducibility/unsupervised_track_manifest.json",
+      "to": ".cleanup_archive_unused_20260930/outputs/reproducibility/unsupervised_track_manifest.json"
+    },
+    {
+      "from": "src/k_sensitivity_audit.py",
+      "to": ".cleanup_archive_unused_20260930/src/k_sensitivity_audit.py"
+    },
+    {
+      "from": "Key.gitignore/Key.gitignore",
+      "to": ".cleanup_archive_unused_20260930/Key.gitignore/Key.gitignore"
+    }
+  ]
+}

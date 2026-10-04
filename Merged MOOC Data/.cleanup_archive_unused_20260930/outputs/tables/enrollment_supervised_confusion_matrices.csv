@@ -1,0 +1,8 @@
+model_id,tn,fp,fn,tp
+logistic_regression,83118,856,363,1911
+random_forest,83359,615,285,1989
+extra_trees,83248,726,324,1950
+hist_gradient_boosting,83368,606,292,1982
+decision_tree,83111,863,264,2010
+naive_bayes,77757,6217,93,2181
+linear_svm,83104,870,346,1928

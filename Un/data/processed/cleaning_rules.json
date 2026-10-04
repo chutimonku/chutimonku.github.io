@@ -1,0 +1,9 @@
+{
+  "duplicate_rule": "Remove only rows identical across all substantive non-outcome fields; repeated student-course keys are retained unless fully identical.",
+  "nplay_video_rule": "Convert derived-file placeholder 197757 to missing and retain an availability indicator; never equate missing with zero.",
+  "age_rule": "Treat age <= 0 or > 100 as missing; do not impute before EDA or clustering-feature selection.",
+  "date_rule": "Parse with coercion; flag last-event dates earlier than start dates and preserve their span as missing.",
+  "categorical_rule": "Trim text and use an explicit Unknown category for missing categorical values.",
+  "aggregation_rule": "Aggregate valid person-course records to one row per userid_DI using field-appropriate count, sum, mean, maximum, median, or mode operations.",
+  "source_documentation": "https://doi.org/10.7910/DVN/26147"
+}

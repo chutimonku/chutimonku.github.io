@@ -1,0 +1,199 @@
+{"kind":"deck","id":"pr/2sncrg","name":"Deck"}
+{"kind":"layout","layoutId":"/ppt/slideMasters/slideMaster1.xml","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout1.xml","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/y90nupkv","slide":1,"title":"MOOC LEARNING ANALYTICS","textShapes":11}
+{"kind":"shape","id":"sh/1cvuxc7e","slide":1,"bbox":[0,0,24,720]}
+{"kind":"shape","id":"sh/547294r6","slide":1,"bbox":[820,0,460,720]}
+{"kind":"textbox","id":"sh/k3yl0zql","slide":1,"text":"MOOC LEARNING ANALYTICS","textPreview":"MOOC LEARNING ANALYTICS","textChars":23,"textLines":1,"bbox":[72,72,650,26]}
+{"kind":"textbox","id":"sh/7qp4be9c","slide":1,"text":"การวิเคราะห์พฤติกรรม\nผู้เรียน MOOC","textPreview":"การวิเคราะห์พฤติกรรม | ผู้เรียน MOOC","textChars":34,"textLines":2,"bbox":[72,145,690,165]}
+{"kind":"textbox","id":"sh/65g3298r","slide":1,"text":"Student Segmentation and Certification Prediction","textPreview":"Student Segmentation and Certification Prediction","textChars":49,"textLines":1,"bbox":[75,330,710,44]}
+{"kind":"shape","id":"sh/ts7md4r2","slide":1,"bbox":[75,405,530,2]}
+{"kind":"textbox","id":"sh/sryl4zqx","slide":1,"text":"ข้อมูลผู้เรียน 446,766 คน  |  Unsupervised + Supervised + Deep Learning","textPreview":"ข้อมูลผู้เรียน 446,766 คน  |  Unsupervised + Supervised + Deep Learning","textChars":71,"textLines":1,"bbox":[75,430,690,58]}
+{"kind":"textbox","id":"sh/fu94fe98","slide":1,"text":"LLM track อยู่ระหว่างดำเนินการและไม่รวมในข้อสรุปผล","textPreview":"LLM track อยู่ระหว่างดำเนินการและไม่รวมในข้อสรุปผล","textChars":50,"textLines":1,"bbox":[75,515,680,34]}
+{"kind":"textbox","id":"sh/utg3698n","slide":1,"text":"DATA SCIENCE PIPELINE","textPreview":"DATA SCIENCE PIPELINE","textChars":21,"textLines":1,"bbox":[865,185,310,28]}
+{"kind":"shape","id":"sh/wn6dc7eh","slide":1,"bbox":[875,245,290,42]}
+{"kind":"textbox","id":"sh/hofulsf2","slide":1,"text":"EDA","textPreview":"EDA","textChars":3,"textLines":1,"bbox":[890,254,260,24]}
+{"kind":"shape","id":"sh/ul4vaxgb","slide":1,"bbox":[875,311,290,42]}
+{"kind":"textbox","id":"sh/vmdcj2xw","slide":1,"text":"K SENSITIVITY","textPreview":"K SENSITIVITY","textChars":13,"textLines":1,"bbox":[890,320,260,24]}
+{"kind":"shape","id":"sh/4r6dg7et","slide":1,"bbox":[875,377,290,42]}
+{"kind":"textbox","id":"sh/5sfepcfe","slide":1,"text":"PERSONAS","textPreview":"PERSONAS","textChars":8,"textLines":1,"bbox":[890,386,260,24]}
+{"kind":"shape","id":"sh/ipovexwn","slide":1,"bbox":[875,443,290,42]}
+{"kind":"textbox","id":"sh/3qxwn2x8","slide":1,"text":"PREDICTION","textPreview":"PREDICTION","textChars":10,"textLines":1,"bbox":[890,452,260,24]}
+{"kind":"shape","id":"sh/sfqdkrep","slide":1,"bbox":[875,509,290,42]}
+{"kind":"textbox","id":"sh/dgzetcfa","slide":1,"text":"ERROR ANALYSIS","textPreview":"ERROR ANALYSIS","textChars":14,"textLines":1,"bbox":[890,518,260,24]}
+{"kind":"notes","id":"nt/y90nupkv","slide":1,"text":"Deck purpose: academic presentation of verified MOOC analytics results.\nLLM evidence is intentionally excluded at the user's request because the track is incomplete."}
+{"kind":"slide","id":"sl/hwbqtkby","slide":2,"title":"01  PROBLEM DEFINITION","textShapes":10}
+{"kind":"shape","id":"sh/xk7qlczu","slide":2,"bbox":[0,0,1280,12]}
+{"kind":"textbox","id":"sh/9072xkry","slide":2,"text":"01  PROBLEM DEFINITION","textPreview":"01  PROBLEM DEFINITION","textChars":22,"textLines":1,"bbox":[72,35,760,24]}
+{"kind":"textbox","id":"sh/ozy1ofad","slide":2,"text":"โจทย์วิจัยและขอบเขตการวิเคราะห์","textPreview":"โจทย์วิจัยและขอบเขตการวิเคราะห์","textChars":31,"textLines":1,"bbox":[72,63,1135,58]}
+{"kind":"shape","id":"sh/b29kza94","slide":2,"bbox":[72,132,1136,2]}
+{"kind":"textbox","id":"sh/a10jqpsj","slide":2,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[1164,668,44,22]}
+{"kind":"textbox","id":"sh/x4r21kru","slide":2,"text":"หน่วยวิเคราะห์","textPreview":"หน่วยวิเคราะห์","textChars":14,"textLines":1,"bbox":[80,170,300,28]}
+{"kind":"textbox","id":"sh/w3i1sfa9","slide":2,"text":"1 แถว = ผู้เรียน 1 คน","textPreview":"1 แถว = ผู้เรียน 1 คน","textChars":21,"textLines":1,"bbox":[80,205,480,48]}
+{"kind":"shape","id":"sh/r65knqtk","slide":2,"bbox":[80,280,520,2]}
+{"kind":"textbox","id":"sh/q5wjelsz","slide":2,"text":"วัตถุประสงค์","textPreview":"วัตถุประสงค์","textChars":12,"textLines":1,"bbox":[80,315,300,28]}
+{"kind":"textbox","id":"sh/ove9o7yd","slide":2,"text":"• ค้นหารูปแบบพฤติกรรมและ Persona ของผู้เรียน\n• ทำนายการได้รับประกาศนียบัตรบนข้อมูลที่ไม่เคยเห็น\n• อธิบายความผิดพลาดและข้อจำกัดก่อนนำไปใช้จริง","textPreview":"• ค้นหารูปแบบพฤติกรรมและ Persona ของผู้เรียน | • ทำนายการได้รับประกาศนียบัตรบนข้อมูลที่ไม่เคยเห็น | • อธิบายความผิดพลาดและข้อจำกัดก่อนนำไ...","textChars":141,"textLines":3,"bbox":[80,353,560,150]}
+{"kind":"shape","id":"sh/9wnqhczy","slide":2,"bbox":[700,172,430,320]}
+{"kind":"textbox","id":"sh/mtwrmxg7","slide":2,"text":"เกณฑ์ความสำเร็จ","textPreview":"เกณฑ์ความสำเร็จ","textChars":15,"textLines":1,"bbox":[735,205,350,34]}
+{"kind":"textbox","id":"sh/nu58f2hs","slide":2,"text":"1  แบบจำลองเหนือกว่า baseline\n\n2  ประเมินด้วย PR-AUC, Recall, F1\n\n3  การเลือก K ต้องผ่านการตรวจหลาย seed\n\n4  ป้องกัน target leakage ตลอด pipeline","textPreview":"1  แบบจำลองเหนือกว่า baseline |  | 2  ประเมินด้วย PR-AUC, Recall, F1 |  | 3  การเลือก K ต้องผ่านการตรวจหลาย seed |  | 4  ป้องกัน target l...","textChars":145,"textLines":7,"bbox":[735,260,350,190]}
+{"kind":"textbox","id":"sh/wjy9sry9","slide":2,"text":"ผลลัพธ์ทุกส่วนอ้างอิงข้อมูลระดับผู้เรียนหลังรวมระเบียน และไม่ใช้ target ใน EDA หรือ clustering","textPreview":"ผลลัพธ์ทุกส่วนอ้างอิงข้อมูลระดับผู้เรียนหลังรวมระเบียน และไม่ใช้ target ใน EDA หรือ clustering","textChars":94,"textLines":1,"bbox":[82,615,1116,42]}
+{"kind":"notes","id":"nt/hwbqtkby","slide":2,"text":"Source: project methodology and current dashboard narrative.\nTarget isolation is used to avoid leakage into unsupervised analysis and preprocessing."}
+{"kind":"slide","id":"sl/ofy9wn61","slide":3,"title":"02  DATA GATHERING","textShapes":6}
+{"kind":"shape","id":"sh/n2l4fq98","slide":3,"bbox":[0,0,1280,12]}
+{"kind":"textbox","id":"sh/cza94vmx","slide":3,"text":"02  DATA GATHERING","textPreview":"02  DATA GATHERING","textChars":18,"textLines":1,"bbox":[72,35,760,24]}
+{"kind":"textbox","id":"sh/d0jax03i","slide":3,"text":"แหล่งข้อมูลและธรรมาภิบาลข้อมูล","textPreview":"แหล่งข้อมูลและธรรมาภิบาลข้อมูล","textChars":30,"textLines":1,"bbox":[72,63,1135,58]}
+{"kind":"shape","id":"sh/298ryl4v","slide":3,"bbox":[72,132,1136,2]}
+{"kind":"textbox","id":"sh/3ah8rqlg","slide":3,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[1164,668,44,22]}
+{"kind":"textbox","id":"sh/pcjqtg36","slide":3,"text":"หลักฐานที่บันทึก","textPreview":"หลักฐานที่บันทึก","textChars":16,"textLines":1,"bbox":[80,475,260,28]}
+{"kind":"textbox","id":"sh/m5cra54z","slide":3,"text":"URL ต้นทาง  •  SHA-256  •  จำนวนระเบียน  •  ขนาดไฟล์  •  เวอร์ชันข้อมูล  •  ข้อจำกัดการใช้งาน","textPreview":"URL ต้นทาง  •  SHA-256  •  จำนวนระเบียน  •  ขนาดไฟล์  •  เวอร์ชันข้อมูล  •  ข้อจำกัดการใช้งาน","textChars":93,"textLines":1,"bbox":[80,512,1120,42]}
+{"kind":"textbox","id":"sh/n6ls3alk","slide":3,"text":"ข้อจำกัดสำคัญ: แหล่งข้อมูลชุดที่สองยังต้องยืนยัน exact remote version จึงไม่ควรอ้างว่า provenance สมบูรณ์","textPreview":"ข้อจำกัดสำคัญ: แหล่งข้อมูลชุดที่สองยังต้องยืนยัน exact remote version จึงไม่ควรอ้างว่า provenance สมบูรณ์","textChars":105,"textLines":1,"bbox":[82,615,1116,42]}
+{"kind":"table","id":"tb/98bu1cbe","slide":3,"name":"","rows":4,"cols":5,"preview":"แหล่งข้อมูล | ระเบียน | ผู้เรียนไม่ซ้ำ | รายวิชา | สถานะ provenance","bbox":[80,180,1120,250]}
+{"kind":"notes","id":"nt/ofy9wn61","slide":3,"text":"Primary source: Harvard Dataverse, HarvardX-MITx Person-Course Academic Year 2013 De-Identified dataset.\nProject provenance artifacts: data_provenance.json and dashboard source table."}
+{"kind":"slide","id":"sl/jyx0ra1s","slide":4,"title":"03  DATA CLEANING","textShapes":6}
+{"kind":"shape","id":"sh/kbm987y5","slide":4,"bbox":[0,0,1280,12]}
+{"kind":"textbox","id":"sh/1cj2d8b6","slide":4,"text":"03  DATA CLEANING","textPreview":"03  DATA CLEANING","textChars":17,"textLines":1,"bbox":[72,35,760,24]}
+{"kind":"textbox","id":"sh/0ba143al","slide":4,"text":"จากข้อมูลดิบสู่ชุดข้อมูลระดับผู้เรียน","textPreview":"จากข้อมูลดิบสู่ชุดข้อมูลระดับผู้เรียน","textChars":37,"textLines":1,"bbox":[72,63,1135,58]}
+{"kind":"shape","id":"sh/rm1k7yt4","slide":4,"bbox":[72,132,1136,2]}
+{"kind":"textbox","id":"sh/ql8jytsj","slide":4,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[1164,668,44,22]}
+{"kind":"textbox","id":"sh/sna103ap","slide":4,"text":"กฎทำความสะอาดที่มีผล","textPreview":"กฎทำความสะอาดที่มีผล","textChars":20,"textLines":1,"bbox":[885,180,300,28]}
+{"kind":"textbox","id":"sh/3ihk3et8","slide":4,"text":"Raw harmonized rows: 755,144\nCurrent cleaned enrollments: 575,060 using userid_DI + course_id\nCourse-run count if preserved: 624,674\nRecheck found 49,614 student-course groups collapsed across multiple course-runs\nStudent-level unit remains consistent: 446,766 unique learners","textPreview":"Raw harmonized rows: 755,144 | Current cleaned enrollments: 575,060 using userid_DI + course_id | Course-run count if preserved: 624,674 ...","textChars":276,"textLines":5,"bbox":[885,225,300,220]}
+{"kind":"textbox","id":"sh/ih8ju9sn","slide":4,"text":"Cleaning caveat: use course-run key before making enrollment-level or course-offering claims.","textPreview":"Cleaning caveat: use course-run key before making enrollment-level or course-offering claims.","textChars":93,"textLines":1,"bbox":[82,615,1116,42]}
+{"kind":"chart","id":"ch/pwrm5kvq","slide":4,"name":"Chart","chartType":"bar","bbox":[80,175,760,355]}
+{"kind":"notes","id":"nt/jyx0ra1s","slide":4,"text":"Source: outputs/reproducibility/data_cleaning_recheck_report.md and outputs/reproducibility/data_reclean_audit_summary.json. The student-level unit is consistent, but the current student-course deduplication collapses some course-run contexts."}
+{"kind":"slide","id":"sl/i107q5of","slide":5,"title":"04  EXPLORATORY DATA ANALYSIS","textShapes":4}
+{"kind":"shape","id":"sh/n6dcr65o","slide":5,"bbox":[0,0,1280,12]}
+{"kind":"textbox","id":"sh/dgbulwnm","slide":5,"text":"04  EXPLORATORY DATA ANALYSIS","textPreview":"04  EXPLORATORY DATA ANALYSIS","textChars":29,"textLines":1,"bbox":[72,35,760,24]}
+{"kind":"textbox","id":"sh/cf2tcr61","slide":5,"text":"EDA: พฤติกรรมมีทั้งความเบาบางและหางยาว","textPreview":"EDA: พฤติกรรมมีทั้งความเบาบางและหางยาว","textChars":38,"textLines":1,"bbox":[72,63,1135,58]}
+{"kind":"shape","id":"sh/z2tcnm5s","slide":5,"bbox":[72,132,1136,2]}
+{"kind":"textbox","id":"sh/yhkbe1o7","slide":5,"text":"05","textPreview":"05","textChars":2,"textLines":1,"bbox":[1164,668,44,22]}
+{"kind":"textbox","id":"sh/032tgr6d","slide":5,"text":"การกระจายแบบ zero-inflated และ heavy-tailed ทำให้ค่าเฉลี่ยเพียงอย่างเดียวไม่น่าเชื่อถือ จึงใช้ percentile, robust scaling และตรวจ outlier แยกตัวแปร","textPreview":"การกระจายแบบ zero-inflated และ heavy-tailed ทำให้ค่าเฉลี่ยเพียงอย่างเดียวไม่น่าเชื่อถือ จึงใช้ percentile, robust scaling และตรวจ outlier...","textChars":147,"textLines":1,"bbox":[82,615,1116,42]}
+{"kind":"chart","id":"ch/y1svitcj","slide":5,"name":"Chart","chartType":"bar","bbox":[100,175,1050,360]}
+{"kind":"notes","id":"nt/i107q5of","slide":5,"text":"Source: outputs/figures/eda/zero_missing_outlier_profile.png and project EDA summary.\nVideo zero rate 67.35%; outlier rates: video 19.35%, events 16.21%, active days 14.14%, forum 1.2288%."}
+{"kind":"slide","id":"sl/x8f69ofe","slide":6,"title":"04  EXPLORATORY DATA ANALYSIS","textShapes":4}
+{"kind":"shape","id":"sh/oryp8fah","slide":6,"bbox":[0,0,1280,12]}
+{"kind":"textbox","id":"sh/yhg7epsj","slide":6,"text":"04  EXPLORATORY DATA ANALYSIS","textPreview":"04  EXPLORATORY DATA ANALYSIS","textChars":29,"textLines":1,"bbox":[72,35,760,24]}
+{"kind":"textbox","id":"sh/zi98nu94","slide":6,"text":"EDA: ความสัมพันธ์ระหว่างกิจกรรมการเรียน","textPreview":"EDA: ความสัมพันธ์ระหว่างกิจกรรมการเรียน","textChars":39,"textLines":1,"bbox":[72,63,1135,58]}
+{"kind":"shape","id":"sh/87ipkzal","slide":6,"bbox":[72,132,1136,2]}
+{"kind":"textbox","id":"sh/98rqt4r6","slide":6,"text":"06","textPreview":"06","textChars":2,"textLines":1,"bbox":[1164,668,44,22]}
+{"kind":"textbox","id":"sh/7m98ru9g","slide":6,"text":"Correlation ใช้ค้นหาตัวแปรซ้ำซ้อนและโครงสร้างพฤติกรรม แต่ไม่ตีความเป็นเหตุและผล โดยเฉพาะตัวแปรกิจกรรมที่เบ้และมีค่าศูนย์จำนวนมาก","textPreview":"Correlation ใช้ค้นหาตัวแปรซ้ำซ้อนและโครงสร้างพฤติกรรม แต่ไม่ตีความเป็นเหตุและผล โดยเฉพาะตัวแปรกิจกรรมที่เบ้และมีค่าศูนย์จำนวนมาก","textChars":128,"textLines":1,"bbox":[82,615,1116,42]}
+{"kind":"image","id":"im/0vel47m1","slide":6,"name":"","bbox":[388,160,504,420]}
+{"kind":"notes","id":"nt/x8f69ofe","slide":6,"text":"Source image: outputs/figures/eda/correlation_matrix.png.\nInterpretation is descriptive; correlation does not establish causality."}
+{"kind":"slide","id":"sl/gnmp4jqx","slide":7,"title":"04  EXPLORATORY DATA ANALYSIS","textShapes":4}
+{"kind":"shape","id":"sh/eh0ba1sr","slide":7,"bbox":[0,0,1280,12]}
+{"kind":"textbox","id":"sh/cb2tkvap","slide":7,"text":"04  EXPLORATORY DATA ANALYSIS","textPreview":"04  EXPLORATORY DATA ANALYSIS","textChars":29,"textLines":1,"bbox":[72,35,760,24]}
+{"kind":"textbox","id":"sh/dcbud0ra","slide":7,"text":"EDA: คุณภาพข้อมูลวิดีโอและความไม่สมดุลของผลลัพธ์","textPreview":"EDA: คุณภาพข้อมูลวิดีโอและความไม่สมดุลของผลลัพธ์","textChars":48,"textLines":1,"bbox":[72,63,1135,58]}
+{"kind":"shape","id":"sh/ydkbm5sv","slide":7,"bbox":[72,132,1136,2]}
+{"kind":"textbox","id":"sh/zedcfa9g","slide":7,"text":"07","textPreview":"07","textChars":2,"textLines":1,"bbox":[1164,668,44,22]}
+{"kind":"textbox","id":"sh/l0vuh0rm","slide":7,"text":"video plays คือจำนวนคลิก/การเล่น ไม่ใช่ระยะเวลาที่รับชม ส่วน target มี positive เพียง 3.18% จึงเน้น PR-AUC, Recall และ F1 แทน Accuracy เพียงตัวเดียว","textPreview":"video plays คือจำนวนคลิก/การเล่น ไม่ใช่ระยะเวลาที่รับชม ส่วน target มี positive เพียง 3.18% จึงเน้น PR-AUC, Recall และ F1 แทน Accuracy เพ...","textChars":148,"textLines":1,"bbox":[82,615,1116,42]}
+{"kind":"chart","id":"ch/rixkvyd0","slide":7,"name":"Chart","chartType":"bar","bbox":[135,180,1010,345]}
+{"kind":"notes","id":"nt/gnmp4jqx","slide":7,"text":"Source: video quality diagnostics and certification class balance artifacts.\nClass counts: 432,553 not certified and 14,213 ever certified; ratio 30.43:1."}
+{"kind":"slide","id":"sl/fu1gfa1s","slide":8,"title":"05–07  FEATURE ENGINEERING AND TRAINING","textShapes":17}
+{"kind":"shape","id":"sh/5sne5wne","slide":8,"bbox":[0,0,1280,12]}
+{"kind":"textbox","id":"sh/18byd4zy","slide":8,"text":"05–07  FEATURE ENGINEERING AND TRAINING","textPreview":"05–07  FEATURE ENGINEERING AND TRAINING","textChars":39,"textLines":1,"bbox":[72,35,760,24]}
+{"kind":"textbox","id":"sh/g72x4zyd","slide":8,"text":"การสร้างคุณลักษณะและการทดลองที่ป้องกัน Leakage","textPreview":"การสร้างคุณลักษณะและการทดลองที่ป้องกัน Leakage","textChars":46,"textLines":1,"bbox":[72,63,1135,58]}
+{"kind":"shape","id":"sh/ri9g7uhw","slide":8,"bbox":[72,132,1136,2]}
+{"kind":"textbox","id":"sh/6h0fypgb","slide":8,"text":"08","textPreview":"08","textChars":2,"textLines":1,"bbox":[1164,668,44,22]}
+{"kind":"shape","id":"sh/tkby9kzm","slide":8,"bbox":[80,205,210,250]}
+{"kind":"textbox","id":"sh/sjix0zy1","slide":8,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[98,225,42,28]}
+{"kind":"textbox","id":"sh/je9g3ahk","slide":8,"text":"แยกข้อมูล","textPreview":"แยกข้อมูล","textChars":9,"textLines":1,"bbox":[98,265,174,35]}
+{"kind":"textbox","id":"sh/id0fu50z","slide":8,"text":"Train / Validation / Test\nแบบ stratified","textPreview":"Train / Validation / Test | แบบ stratified","textChars":40,"textLines":2,"bbox":[98,322,175,105]}
+{"kind":"shape","id":"sh/o7ydoret","slide":8,"bbox":[330,205,210,250]}
+{"kind":"textbox","id":"sh/98rehwve","slide":8,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[348,225,42,28]}
+{"kind":"textbox","id":"sh/m5gvmhwn","slide":8,"text":"Fit on Train","textPreview":"Fit on Train","textChars":12,"textLines":1,"bbox":[348,265,174,35]}
+{"kind":"textbox","id":"sh/n6pwfmd8","slide":8,"text":"fit scaler และ encoder\nเฉพาะ training set","textPreview":"fit scaler และ encoder | เฉพาะ training set","textChars":41,"textLines":2,"bbox":[348,322,175,105]}
+{"kind":"shape","id":"sh/0jydkreh","slide":8,"bbox":[580,205,210,250]}
+{"kind":"textbox","id":"sh/1k7edwv2","slide":8,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[598,225,42,28]}
+{"kind":"textbox","id":"sh/ehgvihwr","slide":8,"text":"แปลงข้อมูล","textPreview":"แปลงข้อมูล","textChars":10,"textLines":1,"bbox":[598,265,174,35]}
+{"kind":"textbox","id":"sh/zipwbmdc","slide":8,"text":"percentile features\nrobust scaling\nlog1p เมื่อเบ้สูง","textPreview":"percentile features | robust scaling | log1p เมื่อเบ้สูง","textChars":52,"textLines":3,"bbox":[598,322,175,105]}
+{"kind":"shape","id":"sh/kfixwbe1","slide":8,"bbox":[830,205,210,250]}
+{"kind":"textbox","id":"sh/lgbepgvm","slide":8,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[848,225,42,28]}
+{"kind":"textbox","id":"sh/tw7e9gnq","slide":8,"text":"ประเมินผล","textPreview":"ประเมินผล","textChars":9,"textLines":1,"bbox":[848,265,174,35]}
+{"kind":"textbox","id":"sh/svydgb65","slide":8,"text":"ทดสอบบน unseen test\nบันทึก seed และ runtime","textPreview":"ทดสอบบน unseen test | บันทึก seed และ runtime","textChars":43,"textLines":2,"bbox":[848,322,175,105]}
+{"kind":"textbox","id":"sh/7u5w765k","slide":8,"text":"Feature set แยกตามงาน","textPreview":"Feature set แยกตามงาน","textChars":21,"textLines":1,"bbox":[80,510,280,28]}
+{"kind":"textbox","id":"sh/6twve1oz","slide":8,"text":"Clustering ใช้ตัวแทนพฤติกรรมที่ไม่รวม target  |  Classification ใช้ตัวแปรพฤติกรรมและบริบท โดย target แยกไว้จนถึงขั้น training","textPreview":"Clustering ใช้ตัวแทนพฤติกรรมที่ไม่รวม target  |  Classification ใช้ตัวแปรพฤติกรรมและบริบท โดย target แยกไว้จนถึงขั้น training","textChars":125,"textLines":1,"bbox":[80,548,1120,42]}
+{"kind":"notes","id":"nt/fu1gfa1s","slide":8,"text":"Source: project feature engineering and experiment log.\nAll preprocessing is fitted on training data and only transformed on validation/test data."}
+{"kind":"slide","id":"sl/udsvah03","slide":9,"title":"06–08  UNSUPERVISED EVALUATION","textShapes":6}
+{"kind":"shape","id":"sh/oza1gfyh","slide":9,"bbox":[0,0,1280,12]}
+{"kind":"textbox","id":"sh/1cfmhgne","slide":9,"text":"06–08  UNSUPERVISED EVALUATION","textPreview":"06–08  UNSUPERVISED EVALUATION","textChars":30,"textLines":1,"bbox":[72,35,760,24]}
+{"kind":"textbox","id":"sh/0b65obm9","slide":9,"text":"การเลือก K: ไม่มีค่าหนึ่งเดียวที่ชนะทุกตัวชี้วัด","textPreview":"การเลือก K: ไม่มีค่าหนึ่งเดียวที่ชนะทุกตัวชี้วัด","textChars":48,"textLines":1,"bbox":[72,63,1135,58]}
+{"kind":"shape","id":"sh/nex4jq5k","slide":9,"bbox":[72,132,1136,2]}
+{"kind":"textbox","id":"sh/mdonql4z","slide":9,"text":"09","textPreview":"09","textChars":2,"textLines":1,"bbox":[1164,668,44,22]}
+{"kind":"textbox","id":"sh/ofq5svm5","slide":9,"text":"หลักฐานประกอบ","textPreview":"หลักฐานประกอบ","textChars":13,"textLines":1,"bbox":[1015,180,190,28]}
+{"kind":"textbox","id":"sh/bih4na5w","slide":9,"text":"Final K = 3\n\nPrimary rule: Gap statistic one-standard-error → K=3\nCorroborating index: Davies-Bouldin minimum → K=3\nAudit evidence: Elbow K=4, CH K=5, Silhouette K=2","textPreview":"Final K = 3 |  | Primary rule: Gap statistic one-standard-error → K=3 | Corroborating index: Davies-Bouldin minimum → K=3 | Audit evidenc...","textChars":165,"textLines":5,"bbox":[1015,225,185,210]}
+{"kind":"textbox","id":"sh/ah8nu54b","slide":9,"text":"Final clustering result reports K=3. Other K values remain diagnostic evidence, not the final decision rule.","textPreview":"Final clustering result reports K=3. Other K values remain diagnostic evidence, not the final decision rule.","textChars":108,"textLines":1,"bbox":[82,615,1116,42]}
+{"kind":"chart","id":"ch/to3qhgje","slide":9,"name":"Chart","chartType":"line","bbox":[80,160,900,390]}
+{"kind":"notes","id":"nt/udsvah03","slide":9,"text":"Source: outputs/tables/k_metric_direction_recheck.csv and outputs/reproducibility/k_metric_direction_recheck_summary.json. Final K=3 because Gap Statistic one-standard-error rule and Davies-Bouldin both select K=3."}
+{"kind":"slide","id":"sl/m90b6t0r","slide":10,"title":"06–08  UNSUPERVISED RESULTS","textShapes":6}
+{"kind":"shape","id":"sh/s7yt4b21","slide":10,"bbox":[0,0,1280,12]}
+{"kind":"textbox","id":"sh/xc3mho32","slide":10,"text":"06–08  UNSUPERVISED RESULTS","textPreview":"06–08  UNSUPERVISED RESULTS","textChars":27,"textLines":1,"bbox":[72,35,760,24]}
+{"kind":"textbox","id":"sh/cbu58j2h","slide":10,"text":"Persona ผู้เรียนจาก Final K=3","textPreview":"Persona ผู้เรียนจาก Final K=3","textChars":29,"textLines":1,"bbox":[72,63,1135,58]}
+{"kind":"shape","id":"sh/zelojyl8","slide":10,"bbox":[72,132,1136,2]}
+{"kind":"textbox","id":"sh/ydcnatkn","slide":10,"text":"10","textPreview":"10","textChars":2,"textLines":1,"bbox":[1164,668,44,22]}
+{"kind":"textbox","id":"sh/kzu5c32t","slide":10,"text":"ความหมายเชิงพฤติกรรม","textPreview":"ความหมายเชิงพฤติกรรม","textChars":20,"textLines":1,"bbox":[845,175,330,28]}
+{"kind":"textbox","id":"sh/725onyl4","slide":10,"text":"Cluster 0  กิจกรรมทั่วไปส่วนใหญ่\n441,385 คน (98.80%)\n\nCluster 1  กิจกรรมสูงมาก\n3,137 คน (0.70%)\n\nCluster 2  กิจกรรมสูงเฉพาะด้าน\n2,244 คน (0.50%)","textPreview":"Cluster 0  กิจกรรมทั่วไปส่วนใหญ่ | 441,385 คน (98.80%) |  | Cluster 1  กิจกรรมสูงมาก | 3,137 คน (0.70%) |  | Cluster 2  กิจกรรมสูงเฉพาะด้...","textChars":144,"textLines":8,"bbox":[845,220,330,245]}
+{"kind":"textbox","id":"sh/m1cnetkj","slide":10,"text":"ข้อควรอ่าน: สัดส่วนกลุ่มไม่สมดุลมาก จึงควรตีความเป็น activity-extreme segmentation มากกว่า persona ที่สมดุลเท่ากัน","textPreview":"ข้อควรอ่าน: สัดส่วนกลุ่มไม่สมดุลมาก จึงควรตีความเป็น activity-extreme segmentation มากกว่า persona ที่สมดุลเท่ากัน","textChars":114,"textLines":1,"bbox":[82,615,1116,42]}
+{"kind":"chart","id":"ch/twj21wjy","slide":10,"name":"Chart","chartType":"bar","bbox":[80,165,720,365]}
+{"kind":"notes","id":"nt/m90b6t0r","slide":10,"text":"Source: outputs/tables/unsupervised_cluster_profiles.csv. Latest cluster shares: 98.80%, 0.70%, and 0.50% of 446,766 learners."}
+{"kind":"slide","id":"sl/jetc3ut0","slide":11,"title":"08  MODEL EVALUATION","textShapes":4}
+{"kind":"shape","id":"sh/72t03qp0","slide":11,"bbox":[0,0,1280,12]}
+{"kind":"textbox","id":"sh/xcryxg7y","slide":11,"text":"08  MODEL EVALUATION","textPreview":"08  MODEL EVALUATION","textChars":20,"textLines":1,"bbox":[72,35,760,24]}
+{"kind":"textbox","id":"sh/wbih4b6d","slide":11,"text":"ผล Supervised: Gradient Boosted Trees ให้ผลดีที่สุด","textPreview":"ผล Supervised: Gradient Boosted Trees ให้ผลดีที่สุด","textChars":51,"textLines":1,"bbox":[72,63,1135,58]}
+{"kind":"shape","id":"sh/n69grmpw","slide":11,"bbox":[72,132,1136,2]}
+{"kind":"textbox","id":"sh/250zy18b","slide":11,"text":"11","textPreview":"11","textChars":2,"textLines":1,"bbox":[1164,668,44,22]}
+{"kind":"textbox","id":"sh/o7ih0r6h","slide":11,"text":"เลือก Gradient Boosted Trees จาก PR-AUC 0.875, Recall 0.829 และ F1 0.814 ซึ่งสมดุลกว่าการตัดสินด้วย Accuracy ในโจทย์ positive เพียง 3.18%","textPreview":"เลือก Gradient Boosted Trees จาก PR-AUC 0.875, Recall 0.829 และ F1 0.814 ซึ่งสมดุลกว่าการตัดสินด้วย Accuracy ในโจทย์ positive เพียง 3.18%","textChars":137,"textLines":1,"bbox":[82,615,1116,42]}
+{"kind":"chart","id":"ch/ahsjedkr","slide":11,"name":"Chart","chartType":"bar","bbox":[65,155,1150,420]}
+{"kind":"notes","id":"nt/jetc3ut0","slide":11,"text":"Source: supervised model comparison table and outputs/figures/tracks/supervised_model_comparison.png.\nMetrics are reported on the held-out test set."}
+{"kind":"slide","id":"sl/8f2psfyx","slide":12,"title":"08  CONFUSION MATRIX","textShapes":8}
+{"kind":"shape","id":"sh/atc7epon","slide":12,"bbox":[0,0,1280,12]}
+{"kind":"textbox","id":"sh/1gbm9s3a","slide":12,"text":"08  CONFUSION MATRIX","textPreview":"08  CONFUSION MATRIX","textChars":20,"textLines":1,"bbox":[72,35,760,24]}
+{"kind":"textbox","id":"sh/0f2lgnmp","slide":12,"text":"Error Analysis ของ Gradient Boosted Trees","textPreview":"Error Analysis ของ Gradient Boosted Trees","textChars":41,"textLines":1,"bbox":[72,63,1135,58]}
+{"kind":"shape","id":"sh/ra943il8","slide":12,"bbox":[72,132,1136,2]}
+{"kind":"textbox","id":"sh/q903ad4n","slide":12,"text":"12","textPreview":"12","textChars":2,"textLines":1,"bbox":[1164,668,44,22]}
+{"kind":"textbox","id":"sh/dcbm583y","slide":12,"text":"ค่าทำนาย","textPreview":"ค่าทำนาย","textChars":8,"textLines":1,"bbox":[340,155,600,30]}
+{"kind":"textbox","id":"sh/b6d4f2lc","slide":12,"text":"Recall 0.829","textPreview":"Recall 0.829","textChars":12,"textLines":1,"bbox":[265,505,220,34]}
+{"kind":"textbox","id":"sh/a543mx4r","slide":12,"text":"Precision 0.799","textPreview":"Precision 0.799","textChars":15,"textLines":1,"bbox":[525,505,230,34]}
+{"kind":"textbox","id":"sh/wvupgz6t","slide":12,"text":"F1 0.814","textPreview":"F1 0.814","textChars":8,"textLines":1,"bbox":[805,505,210,34]}
+{"kind":"textbox","id":"sh/xw3q94ne","slide":12,"text":"FN 365 คนคือผู้เรียนที่สำเร็จจริงแต่โมเดลพลาด จึงควรทบทวน threshold ตามต้นทุนของการพลาดกลุ่มเสี่ยงก่อนนำไปใช้แจ้งเตือน","textPreview":"FN 365 คนคือผู้เรียนที่สำเร็จจริงแต่โมเดลพลาด จึงควรทบทวน threshold ตามต้นทุนของการพลาดกลุ่มเสี่ยงก่อนนำไปใช้แจ้งเตือน","textChars":118,"textLines":1,"bbox":[82,615,1116,42]}
+{"kind":"table","id":"tb/ojuh8jex","slide":12,"name":"","rows":3,"cols":3,"preview":"Actual / Predicted | ไม่สำเร็จ | สำเร็จ","bbox":[250,205,780,260]}
+{"kind":"notes","id":"nt/8f2psfyx","slide":12,"text":"Source: supervised confusion matrices comparison output.\nGradient Boosted Trees confusion matrix: TN 64,440; FP 444; FN 365; TP 1,766."}
+{"kind":"slide","id":"sl/hgzapcr6","slide":13,"title":"08  DEEP MODEL EVALUATION","textShapes":4}
+{"kind":"shape","id":"sh/gzy5s3a1","slide":13,"bbox":[0,0,1280,12]}
+{"kind":"textbox","id":"sh/q50nydsj","slide":13,"text":"08  DEEP MODEL EVALUATION","textPreview":"08  DEEP MODEL EVALUATION","textChars":25,"textLines":1,"bbox":[72,35,760,24]}
+{"kind":"textbox","id":"sh/bq9orito","slide":13,"text":"Deep Learning: MLP ดีขึ้นด้าน Recall แต่ยังไม่ชนะ GBT","textPreview":"Deep Learning: MLP ดีขึ้นด้าน Recall แต่ยังไม่ชนะ GBT","textChars":53,"textLines":1,"bbox":[72,63,1135,58]}
+{"kind":"shape","id":"sh/o3i5w3ad","slide":13,"bbox":[72,132,1136,2]}
+{"kind":"textbox","id":"sh/p4r6p8by","slide":13,"text":"13","textPreview":"13","textChars":2,"textLines":1,"bbox":[1164,668,44,22]}
+{"kind":"textbox","id":"sh/32ponyts","slide":13,"text":"MLP 128×64 มี Recall 0.855 แต่ PR-AUC 0.842 ต่ำกว่า GBT 0.875 จึงยังไม่มีหลักฐานว่าความซับซ้อนเพิ่มขึ้นให้ประโยชน์โดยรวม","textPreview":"MLP 128×64 มี Recall 0.855 แต่ PR-AUC 0.842 ต่ำกว่า GBT 0.875 จึงยังไม่มีหลักฐานว่าความซับซ้อนเพิ่มขึ้นให้ประโยชน์โดยรวม","textChars":120,"textLines":1,"bbox":[82,615,1116,42]}
+{"kind":"chart","id":"ch/9oru98je","slide":13,"name":"Chart","chartType":"bar","bbox":[60,155,1160,415]}
+{"kind":"notes","id":"nt/hgzapcr6","slide":13,"text":"Source: deep model comparison output.\nSelected deep candidate MLP (128,64): PR-AUC 0.8415, recall 0.855467, precision 0.734488, F1 0.790375."}
+{"kind":"slide","id":"sl/6lsnupw7","slide":14,"title":"09–11  DECISION AND MONITORING","textShapes":10}
+{"kind":"shape","id":"sh/ls7idofu","slide":14,"bbox":[0,0,1280,12]}
+{"kind":"textbox","id":"sh/xc7eds76","slide":14,"text":"09–11  DECISION AND MONITORING","textPreview":"09–11  DECISION AND MONITORING","textChars":30,"textLines":1,"bbox":[72,35,760,24]}
+{"kind":"textbox","id":"sh/wbydknq1","slide":14,"text":"ข้อสรุป ข้อจำกัด และงานถัดไป","textPreview":"ข้อสรุป ข้อจำกัด และงานถัดไป","textChars":28,"textLines":1,"bbox":[72,63,1135,58]}
+{"kind":"shape","id":"sh/jepwf2pc","slide":14,"bbox":[72,132,1136,2]}
+{"kind":"textbox","id":"sh/idgvmx8r","slide":14,"text":"14","textPreview":"14","textChars":2,"textLines":1,"bbox":[1164,668,44,22]}
+{"kind":"textbox","id":"sh/5grehs7i","slide":14,"text":"ข้อค้นพบที่ใช้ตัดสินใจได้","textPreview":"ข้อค้นพบที่ใช้ตัดสินใจได้","textChars":25,"textLines":1,"bbox":[80,170,500,32]}
+{"kind":"textbox","id":"sh/kfidonqx","slide":14,"text":"• Final unsupervised K = 3 from Gap Statistic and Davies-Bouldin\n• Student-level unit is valid: 446,766 unique learners\n• Enrollment cleaning needs course-run key review before course-level claims\n• Persona shares are highly imbalanced, so interpret clusters as activity extremes\n• LLM results remain separate until full comparable model runs finish","textPreview":"• Final unsupervised K = 3 from Gap Statistic and Davies-Bouldin | • Student-level unit is valid: 446,766 unique learners | • Enrollment ...","textChars":349,"textLines":5,"bbox":[80,215,550,190]}
+{"kind":"shape","id":"sh/zi5c3y98","slide":14,"bbox":[675,170,500,250]}
+{"kind":"textbox","id":"sh/ehwvat8n","slide":14,"text":"งานถัดไป","textPreview":"งานถัดไป","textChars":8,"textLines":1,"bbox":[710,205,420,30]}
+{"kind":"textbox","id":"sh/c3e1gjyd","slide":14,"text":"1  เปรียบเทียบ K=2/3/4 กับผลลัพธ์เชิงธุรกิจ\n2  ปรับ threshold ตามต้นทุน FN และ FP\n3  ตรวจ fairness และ calibration รายกลุ่ม\n4  ติดตาม PSI และ Recall/F1 หลัง deployment","textPreview":"1  เปรียบเทียบ K=2/3/4 กับผลลัพธ์เชิงธุรกิจ | 2  ปรับ threshold ตามต้นทุน FN และ FP | 3  ตรวจ fairness และ calibration รายกลุ่ม | 4  ติดต...","textChars":167,"textLines":4,"bbox":[710,255,420,130]}
+{"kind":"shape","id":"sh/x4ni9ofy","slide":14,"bbox":[80,455,1095,78]}
+{"kind":"textbox","id":"sh/a1wze9g7","slide":14,"text":"LLM TRACK","textPreview":"LLM TRACK","textChars":9,"textLines":1,"bbox":[105,478,150,28]}
+{"kind":"textbox","id":"sh/b2507exs","slide":14,"text":"อยู่ระหว่างดำเนินการ  •  ยังไม่มีผลที่ผ่านการตรวจสอบ  •  ไม่รวมในข้อสรุปหรือการเปรียบเทียบโมเดลชุดนี้","textPreview":"อยู่ระหว่างดำเนินการ  •  ยังไม่มีผลที่ผ่านการตรวจสอบ  •  ไม่รวมในข้อสรุปหรือการเปรียบเทียบโมเดลชุดนี้","textChars":101,"textLines":1,"bbox":[260,474,870,38]}
+{"kind":"textbox","id":"sh/kre1k3y9","slide":14,"text":"ข้อเสนอหลัก: รายงาน Final K=3 พร้อม data-cleaning caveat และใช้ dashboard audit tables เป็นหลักฐานประกอบการนำเสนอ","textPreview":"ข้อเสนอหลัก: รายงาน Final K=3 พร้อม data-cleaning caveat และใช้ dashboard audit tables เป็นหลักฐานประกอบการนำเสนอ","textChars":113,"textLines":1,"bbox":[82,615,1116,42]}
+{"kind":"notes","id":"nt/6lsnupw7","slide":14,"text":"Summary reflects latest dashboard artifacts: final K=3, data cleaning recheck, and latest cluster profile. LLM track remains separated where full comparable results are not complete."}
+{"kind":"slide","id":"sl/bwuez8","slide":15,"title":"LATEST AUDIT","textShapes":3}
+{"kind":"shape","id":"sh/7algzmhs","slide":15,"bbox":[0,0,1280,12]}
+{"kind":"textbox","id":"sh/sbuhsryd","slide":15,"text":"LATEST AUDIT","textPreview":"LATEST AUDIT","textChars":12,"textLines":1,"bbox":[72,35,760,24]}
+{"kind":"textbox","id":"sh/tw3i1cfy","slide":15,"text":"Data cleaning recheck","textPreview":"Data cleaning recheck","textChars":21,"textLines":1,"bbox":[72,63,1136,58]}
+{"kind":"shape","id":"sh/uxczuhgj","slide":15,"bbox":[72,132,1136,2]}
+{"kind":"textbox","id":"sh/fyl03mx4","slide":15,"text":"Student-level data remains consistent, but the current student-course deduplication collapses some course-run contexts. Use this caveat when presenting enrollment-level results.","textPreview":"Student-level data remains consistent, but the current student-course deduplication collapses some course-run contexts. Use this caveat w...","textChars":177,"textLines":1,"bbox":[80,155,1080,70]}
+{"kind":"table","id":"tb/x4bi9ozu","slide":15,"name":"","rows":6,"cols":3,"preview":"Audit item | Latest value | Interpretation","bbox":[95,245,1090,290]}
+{"kind":"notes","id":"nt/bwuez8","slide":15,"text":"Source: outputs/reproducibility/data_cleaning_recheck_report.md and data_reclean_audit_summary.json."}
+{"kind":"slide","id":"sl/lo1b05","slide":16,"title":"UNSUPERVISED TRACK","textShapes":3}
+{"kind":"shape","id":"sh/hcbyhgjm","slide":16,"bbox":[0,0,1280,12]}
+{"kind":"textbox","id":"sh/u90fml0v","slide":16,"text":"UNSUPERVISED TRACK","textPreview":"UNSUPERVISED TRACK","textChars":18,"textLines":1,"bbox":[72,35,760,24]}
+{"kind":"textbox","id":"sh/vatgfq1g","slide":16,"text":"Final K decision","textPreview":"Final K decision","textChars":16,"textLines":1,"bbox":[72,63,1136,58]}
+{"kind":"shape","id":"sh/4f2hsvix","slide":16,"bbox":[72,132,1136,2]}
+{"kind":"textbox","id":"sh/5gbyl0ji","slide":16,"text":"Final K = 3. The decision uses Gap Statistic as the primary rule and Davies-Bouldin as the corroborating internal index. Other metrics remain diagnostic checks.","textPreview":"Final K = 3. The decision uses Gap Statistic as the primary rule and Davies-Bouldin as the corroborating internal index. Other metrics re...","textChars":160,"textLines":1,"bbox":[80,155,1080,70]}
+{"kind":"table","id":"tb/3mlsfi1g","slide":16,"name":"","rows":6,"cols":4,"preview":"Metric | Direction | K indicated | Decision role","bbox":[80,245,1120,300]}
+{"kind":"notes","id":"nt/lo1b05","slide":16,"text":"Source: outputs/tables/k_metric_direction_recheck.csv and k_metric_direction_recheck_summary.json. Final K=3 because Gap Statistic and Davies-Bouldin both indicate K=3."}

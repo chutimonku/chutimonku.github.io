@@ -1,0 +1,5 @@
+feature,available,missing_pct,zero_pct,median,p95,maximum
+total_video_plays,True,0.0,67.34666469695544,0.0,163.0,39057.0
+video_intensity,True,0.0,67.34666469695544,0.0,0.2596401028277635,353.0
+video_missing_records,True,0.0,22.774338244181518,1.0,2.0,13.0
+video_data_available_rate,True,0.0,67.34666469695544,0.0,1.0,1.0

@@ -1,0 +1,57 @@
+{
+  "project": "Student Risk & Performance Segmentation",
+  "objective": "Build a calibrated supervised classification model to predict student outcome status and segment students into actionable risk tiers for targeted support planning.",
+  "unit_of_analysis": "One row per student (userid_DI)",
+  "task_type": "Supervised Learning (Binary Classification & Risk Tiering)",
+  "target_label": "certified_student",
+  "operational_tiers": {
+    "tier_1": {
+      "name": "Low Risk / Likely Completer",
+      "min_probability": 0.5,
+      "recommended_action": "Advanced enrichment, optional peer tutoring leadership, self-directed pacing"
+    },
+    "tier_2": {
+      "name": "Moderate Risk / Target for Nudge",
+      "min_probability": 0.15,
+      "recommended_action": "Proactive check-ins, study group matchmaking, milestone reminders, assignment nudges"
+    },
+    "tier_3": {
+      "name": "High Risk / Early Dropout",
+      "min_probability": 0.0,
+      "recommended_action": "Urgent advisor outreach, onboarding diagnostic, course prerequisite remediation, technical support"
+    }
+  },
+  "research_questions": [
+    "What behavioral and engagement patterns reliably predict student completion vs dropout?",
+    "How accurately can candidate models distinguish completers from non-completers in an imbalanced cohort?",
+    "Are the predicted probabilities well-calibrated for reliable risk-tier segmentation?",
+    "Does the model maintain fair and equitable performance across demographic subgroups?",
+    "How can predicted probabilities be translated into targeted, non-punitive student support interventions?"
+  ],
+  "intended_users": [
+    "Academic advisors",
+    "Instructional teams",
+    "Student-success coordinators",
+    "Learning analytics researchers"
+  ],
+  "success_criteria": {
+    "discrimination": "ROC-AUC >= 0.85 and PR-AUC >= 0.35 against ~4.1% baseline",
+    "calibration": "Brier score <= 0.05 and verified empirical calibration across deciles",
+    "anti_leakage": "Strict isolation of all outcome variables (certified, grade, incomplete_flag, explored) from features X; zero leakage across train/validation/test splits.",
+    "fairness": "Equal opportunity and subgroup parity audits across gender, education, and geography",
+    "actionability": "Clear translation of probabilities into 3 operational support tiers"
+  },
+  "governance": {
+    "anti_leakage_enforced": true,
+    "forbidden_outcome_columns": [
+      "certified",
+      "grade",
+      "incomplete_flag",
+      "explored"
+    ],
+    "intended_use": "Proactive educational assistance, early nudges, prerequisite review",
+    "prohibited_use": "Automated exclusion, punitive course dropping, discriminatory admission decisions"
+  },
+  "supported_new_data": "Later MOOC cohorts with identical non-outcome feature definitions and raw person-course schema.",
+  "incompatible_data_policy": "If feature definitions or course structures change, retraining via Step 2 is mandatory."
+}

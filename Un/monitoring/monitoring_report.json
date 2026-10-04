@@ -1,0 +1,9 @@
+{
+  "generated_at_utc": "2026-09-21T13:06:04.211747+00:00",
+  "status": "not_evaluated",
+  "reason": "No current cohort file was supplied. Baseline artifacts were created successfully.",
+  "baseline_student_count": 335650,
+  "current_cohort_input_path": "monitoring/current_cohort_behavior_features.csv",
+  "feature_baseline_path": "monitoring/feature_distribution_baseline.json",
+  "cluster_baseline_path": "monitoring/cluster_distribution_baseline.csv"
+}

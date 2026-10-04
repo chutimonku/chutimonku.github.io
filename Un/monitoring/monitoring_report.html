@@ -1,0 +1,88 @@
+<!doctype html><html><head><meta charset="utf-8">
+<title>Student Segmentation Monitoring</title>
+<style>
+body{font:15px/1.5 system-ui;max-width:1200px;margin:40px auto;padding:0 20px;color:#17213a;background:#f5f7fb}
+section{background:white;padding:24px;margin:18px 0;border-radius:14px;border:1px solid #dfe5ef}
+table{border-collapse:collapse;width:100%;font-size:12px}th,td{padding:8px;border-bottom:1px solid #e5e7eb;text-align:left}
+th{background:#1d3557;color:white}.status{display:inline-block;padding:6px 12px;border-radius:99px;background:#e8eef9;font-weight:700}
+</style></head><body>
+<h1>Student Segmentation Monitoring</h1>
+<p class="status">BASELINE_ONLY</p>
+<section><h2>Reference baseline</h2>
+<p>335,650 students from the locked training population.</p>
+<ul><li>Mean assignment uncertainty: 0.505</li>
+<li>Empirical outlier rate: 1.00%</li>
+<li>Mean refit stability: 0.938 ARI across 3 deterministic samples of 5,000 students</li></ul>
+<table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>feature</th>
+      <th>missing_fraction</th>
+      <th>mean</th>
+      <th>std</th>
+      <th>median</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>n_courses</td>
+      <td>0.000000</td>
+      <td>1.242130</td>
+      <td>0.630132</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <td>view_rate</td>
+      <td>0.000000</td>
+      <td>0.713532</td>
+      <td>0.434697</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <td>total_events</td>
+      <td>0.000000</td>
+      <td>467.892063</td>
+      <td>1610.333468</td>
+      <td>27.0</td>
+    </tr>
+    <tr>
+      <td>total_active_days</td>
+      <td>0.000000</td>
+      <td>6.497295</td>
+      <td>13.925223</td>
+      <td>2.0</td>
+    </tr>
+    <tr>
+      <td>total_chapters</td>
+      <td>0.000000</td>
+      <td>3.303018</td>
+      <td>5.593547</td>
+      <td>2.0</td>
+    </tr>
+    <tr>
+      <td>total_forum_posts</td>
+      <td>0.000000</td>
+      <td>0.022929</td>
+      <td>0.215486</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>overall_span_days</td>
+      <td>0.001603</td>
+      <td>54.583235</td>
+      <td>83.391473</td>
+      <td>11.0</td>
+    </tr>
+    <tr>
+      <td>event_intensity</td>
+      <td>0.000000</td>
+      <td>35.018146</td>
+      <td>57.326388</td>
+      <td>12.0</td>
+    </tr>
+  </tbody>
+</table></section>
+<section><h2>Observed comparison</h2><p>No later cohort was supplied. Drift and degradation have not been claimed.</p></section>
+<section><h2>Decision rule</h2>
+<p>Review schema, missingness, standardized distribution change, cluster-share change, assignment uncertainty and operational context together. Warning and retraining thresholds must be calibrated from real historical cohorts or supported literature; no universal threshold is assumed.</p>
+</section></body></html>

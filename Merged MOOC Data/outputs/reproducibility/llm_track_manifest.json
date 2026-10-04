@@ -1,0 +1,44 @@
+{
+  "status": "Completed — student rows converted to text and models evaluated",
+  "track_type": "Tabular-to-Text Student Classification",
+  "task_definition": "Predict student certification from a factual natural-language rendering of each student's behavioral row.",
+  "unit_of_analysis": "one row per student",
+  "sample_students": 12000,
+  "positive_students": 382,
+  "positive_rate": 0.03183333333333333,
+  "split": {
+    "train": 8400,
+    "validation": 1800,
+    "test": 1800
+  },
+  "trained_models": [
+    "TF-IDF (1–2 grams) + Logistic Regression",
+    "DistilBERT Embeddings + Logistic Regression",
+    "TF-IDF + Logistic Regression"
+  ],
+  "selected_model_id": "tfidf_bigram_logistic",
+  "selected_model_name": "TF-IDF (1–2 grams) + Logistic Regression",
+  "selected_threshold": 0.6931283691929104,
+  "selected_test_metrics": {
+    "pr_auc": 0.48264335742371417,
+    "roc_auc": 0.973237261966032,
+    "brier": 0.04562967416180267,
+    "accuracy": 0.965,
+    "balanced_accuracy": 0.8985807039075181,
+    "precision": 0.4752475247524752,
+    "recall": 0.8275862068965517,
+    "f1": 0.6037735849056604
+  },
+  "target_leakage_guard": "certified is joined only as y after text generation and is never included in the student sentence",
+  "video_semantics": "video values are play/click counts, not watched minutes or clip duration",
+  "content_boundary": "This model classifies student behavioral profiles; it does not transcribe or summarize spoken lecture content.",
+  "output_artifacts": [
+    "outputs/tables/llm_student_text_inputs.csv",
+    "outputs/tables/llm_text_classifier_comparison.csv",
+    "outputs/tables/llm_text_confusion_matrices.csv",
+    "outputs/tables/llm_text_test_predictions.csv",
+    "outputs/figures/tracks/llm_text_model_comparison.png",
+    "outputs/figures/tracks/llm_text_confusion_matrices.png",
+    "models/tracks/llm_student_text_classifier.joblib"
+  ]
+}

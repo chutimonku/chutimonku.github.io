@@ -1,0 +1,8 @@
+{
+  "population_size": 335650,
+  "sampling_used_for_eda": false,
+  "sampling_used_for_preprocessing": false,
+  "decision": "Full student population used for descriptive EDA and feature screening.",
+  "modeling_note": "Step 7 may use algorithm-specific computational samples; each must be justified and logged separately.",
+  "outcomes_used": false
+}

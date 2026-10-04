@@ -1,0 +1,24 @@
+{
+  "record_level": {
+    "rows_before_cleaning": 416921,
+    "rows_after_cleaning": 416921,
+    "exact_duplicates_removed": 0,
+    "video_sentinel_count": 255528,
+    "video_sentinel_pct": 61.29,
+    "invalid_age_count": 241,
+    "invalid_age_pct": 0.058,
+    "inverted_dates_count": 1231,
+    "inverted_dates_pct": 0.295,
+    "missing_gender_count": 23211,
+    "missing_gender_pct": 5.57
+  },
+  "student_level": {
+    "total_students": 335650,
+    "certified_completers": 13881,
+    "completion_rate_pct": 4.136,
+    "tier_1_completers": 13881,
+    "tier_2_explored_noncompleters": 16492,
+    "tier_3_disengaged_dropouts": 305277,
+    "feature_count": 32
+  }
+}

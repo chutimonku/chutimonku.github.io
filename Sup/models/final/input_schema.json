@@ -1,0 +1,256 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "MoocStudentRiskInputSchema",
+  "description": "Validation schema for student-level risk prediction input.",
+  "type": "object",
+  "required": [
+    "userid_DI",
+    "total_events",
+    "mean_events_per_course",
+    "max_events_single_course",
+    "total_active_days",
+    "mean_active_days_per_course",
+    "max_active_days_single_course",
+    "total_video_plays",
+    "total_chapters",
+    "mean_chapters_per_course",
+    "max_chapters_single_course",
+    "total_forum_posts",
+    "overall_span_days",
+    "n_courses",
+    "unique_courses",
+    "n_institutes",
+    "view_rate",
+    "total_courses_viewed",
+    "video_data_available_rate",
+    "age",
+    "age_missing_records",
+    "overall_span_missing",
+    "date_inversion_records",
+    "gender",
+    "LoE_DI",
+    "country"
+  ],
+  "properties": {
+    "userid_DI": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Unique student identifier."
+    },
+    "total_events": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0,
+      "description": "Student-level aggregate numeric feature used by the fitted model."
+    },
+    "mean_events_per_course": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0,
+      "description": "Student-level aggregate numeric feature used by the fitted model."
+    },
+    "max_events_single_course": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0,
+      "description": "Student-level aggregate numeric feature used by the fitted model."
+    },
+    "total_active_days": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0,
+      "description": "Student-level aggregate numeric feature used by the fitted model."
+    },
+    "mean_active_days_per_course": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0,
+      "description": "Student-level aggregate numeric feature used by the fitted model."
+    },
+    "max_active_days_single_course": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0,
+      "description": "Student-level aggregate numeric feature used by the fitted model."
+    },
+    "total_video_plays": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0,
+      "description": "Student-level aggregate numeric feature used by the fitted model."
+    },
+    "total_chapters": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0,
+      "description": "Student-level aggregate numeric feature used by the fitted model."
+    },
+    "mean_chapters_per_course": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0,
+      "description": "Student-level aggregate numeric feature used by the fitted model."
+    },
+    "max_chapters_single_course": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0,
+      "description": "Student-level aggregate numeric feature used by the fitted model."
+    },
+    "total_forum_posts": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0,
+      "description": "Student-level aggregate numeric feature used by the fitted model."
+    },
+    "overall_span_days": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0,
+      "description": "Student-level aggregate numeric feature used by the fitted model."
+    },
+    "n_courses": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0,
+      "description": "Student-level aggregate numeric feature used by the fitted model."
+    },
+    "unique_courses": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0,
+      "description": "Student-level aggregate numeric feature used by the fitted model."
+    },
+    "n_institutes": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0,
+      "description": "Student-level aggregate numeric feature used by the fitted model."
+    },
+    "view_rate": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0,
+      "description": "Student-level aggregate numeric feature used by the fitted model.",
+      "maximum": 1
+    },
+    "total_courses_viewed": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0,
+      "description": "Student-level aggregate numeric feature used by the fitted model."
+    },
+    "video_data_available_rate": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0,
+      "description": "Student-level aggregate numeric feature used by the fitted model.",
+      "maximum": 1
+    },
+    "age": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0,
+      "description": "Student-level aggregate numeric feature used by the fitted model.",
+      "exclusiveMinimum": 0,
+      "maximum": 100
+    },
+    "age_missing_records": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0,
+      "description": "Student-level aggregate numeric feature used by the fitted model."
+    },
+    "overall_span_missing": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0,
+      "description": "Student-level aggregate numeric feature used by the fitted model."
+    },
+    "date_inversion_records": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0,
+      "description": "Student-level aggregate numeric feature used by the fitted model."
+    },
+    "gender": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Student-level categorical feature; missing values are handled by the fitted preprocessor."
+    },
+    "LoE_DI": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Student-level categorical feature; missing values are handled by the fitted preprocessor."
+    },
+    "country": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Student-level categorical feature; missing values are handled by the fitted preprocessor."
+    }
+  },
+  "derived_by_pipeline": [
+    "chapter_intensity",
+    "event_intensity",
+    "has_forum_activity",
+    "has_multiple_courses",
+    "video_play_ratio"
+  ],
+  "forbidden_outcome_columns": [
+    "certified",
+    "grade",
+    "incomplete_flag",
+    "explored"
+  ],
+  "anti_leakage_guarantee": "Inputs containing any forbidden_outcome_columns are strictly rejected with DataLeakageSecurityException."
+}

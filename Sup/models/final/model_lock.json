@@ -1,0 +1,34 @@
+{
+  "locked_at": "2026-09-17T06:54:50Z",
+  "champion_model_id": "random_forest_d15",
+  "champion_model_name": "RandomForestClassifier",
+  "model_file_sha256": "619b7d8621b0de1492852ba22f5c0c1ccc8f0b59f1c2bd8af6c0c77f922577e8",
+  "optimal_decision_threshold": 0.8404,
+  "test_metrics": {
+    "test_roc_auc": 0.9933,
+    "test_pr_auc": 0.8476,
+    "test_brier_score": 0.0216,
+    "test_f1_optimal": 0.7889,
+    "test_recall_optimal": 0.842,
+    "test_precision_optimal": 0.7422,
+    "test_accuracy_optimal": 0.9814
+  },
+  "risk_tier_policy": {
+    "tier_1": {
+      "name": "Low Risk / Likely Completer",
+      "min_probability": 0.5,
+      "recommended_action": "Advanced enrichment, optional peer tutoring leadership, self-directed pacing"
+    },
+    "tier_2": {
+      "name": "Moderate Risk / Target for Nudge",
+      "min_probability": 0.15,
+      "recommended_action": "Proactive check-ins, study group matchmaking, milestone reminders, assignment nudges"
+    },
+    "tier_3": {
+      "name": "High Risk / Early Dropout",
+      "min_probability": 0.0,
+      "recommended_action": "Urgent advisor outreach, onboarding diagnostic, course prerequisite remediation, technical support"
+    }
+  },
+  "governance_lock": "LOCKED FOR PRODUCTION INFERENCE"
+}

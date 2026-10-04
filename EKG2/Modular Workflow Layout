@@ -1,0 +1,56 @@
+workflow_docs/
+├── README.md                              # [Master Index] หน้ารวมเมนู Sidebar & ลิงก์ปุ่มกด
+├── config_template.yaml                   # Dynamic Configuration template
+│
+├── phase_1_governance_and_foundation/
+│   ├── step_1_1_problem_definition.md     # 📄 Step 1.1 — Problem Definition & Rationale
+│   ├── step_1_2_unit_of_analysis.md        # 📄 Step 1.2 — Unit of Analysis & Multi-Visit Grain
+│   ├── step_1_3_task_type.md              # 📄 Step 1.3 — Task Strategy Identification
+│   ├── step_1_4_target_definition.md      # 📄 Step 1.4 — Target & Outcome Isolation
+│   ├── step_1_5_success_criteria.md       # 📄 Step 1.5 — Dynamic Success Criteria
+│   ├── step_1_6_governance.md             # 📄 Step 1.6 — Governance & Regulatory Risks
+│   └── phase_1_dashboard_spec.md           # 📊 Phase 1 Dashboard Requirements
+│
+├── phase_2_data_ingestion_and_cleaning/
+│   ├── step_2_1_data_sources.md           # 📄 Step 2.1 — Data Sources Identification
+│   ├── step_2_2_data_provenance.md        # 📄 Step 2.2 — Provenance Logging (data_provenance.json)
+│   ├── step_2_3_multimodal_ingestion.md   # 📄 Step 2.3 — Multimodal Data Transformers
+│   ├── step_2_4_initial_validation.md     # 📄 Step 2.4 — Schema & Key Boundary Validation
+│   ├── step_3_1_leakage_control.md        # 📄 Step 3.1 — Task-Aware Leakage Isolation
+│   ├── step_3_2_modality_cleaning.md      # 📄 Step 3.2 — Denoising, Deskewing & Modality Cleaning
+│   ├── step_3_3_missing_data.md           # 📄 Step 3.3 — Missingness Mechanisms & Imputation
+│   ├── step_3_4_domain_rules.md           # 📄 Step 3.4 — Business & Domain Logic Checks
+│   └── step_3_5_cleaning_audit.md         # 📄 Step 3.5 — Cleaning Audit Trail (cleaning_audit.json)
+│
+├── phase_3_eda_and_evidence/
+│   ├── step_4_1_feature_inventory.md      # 📄 Step 4.1 — Feature Inventory & Summary Statistics
+│   ├── step_4_2_univariate_analysis.md    # 📄 Step 4.2 — Univariate Quality Distributions
+│   ├── step_4_3_multivariate_analysis.md  # 📄 Step 4.3 — Correlation & Association Matrices
+│   ├── step_4_4_outlier_analysis.md       # 📄 Step 4.4 — Outlier Detection & Anomaly Rules
+│   ├── step_4_5_leakage_analysis.md       # 📄 Step 4.5 — Temporal & Longitudinal Leakage Audit
+│   ├── step_4_6_feasibility_analysis.md   # 📄 Step 4.6 — Geometric & Cluster Feasibility Checks
+│   └── step_5_1_literature_review.md      # 📄 Step 5.1 — Literature & Benchmark Evidence Assessment
+│
+├── phase_4_feature_and_model_dev/
+│   ├── step_6_1_train_only_fit.md         # 📄 Step 6.1 — Strict Train-Only Fitting Guardrail
+│   ├── step_6_2_feature_creation.md       # 📄 Step 6.2 — Domain Representation & Feature Engineering
+│   ├── step_6_3_feature_transform.md      # 📄 Step 6.3 — Scaling, Log & Embedding Transformations
+│   ├── step_6_4_feature_selection.md      # 📄 Step 6.4 — Selection & Modality Ablation Studies
+│   ├── step_7_1_model_candidates.md       # 📄 Step 7.1 — Candidate Model Pool Selection
+│   ├── step_7_2_group_splitting.md        # 📄 Step 7.2 — GroupKFold & Entity-Level Data Splitting
+│   ├── step_7_3_imbalanced_data.md        # 📄 Step 7.3 — Class Imbalance & Threshold Strategies
+│   └── step_7_4_experiment_tracking.md    # 📄 Step 7.4 — Experiment Tracking (experiment_log.json)
+│
+├── phase_5_evaluation_and_deployment/
+│   ├── step_8_1_baseline_evaluation.md    # 📄 Step 8.1 — Baselines & Metric Evaluation
+│   ├── step_8_2_explainable_ai.md         # 📄 Step 8.2 — Task XAI (Grad-CAM, SHAP, Integrated Gradients)
+│   ├── step_8_3_fairness_audit.md         # 📄 Step 8.3 — Subgroup Fairness & Safety Audit
+│   ├── step_9_1_inference_pipeline.md     # 📄 Step 9.1 — Unified Inference Pipeline & Schema Validator
+│   ├── step_10_1_longitudinal_dashboard.md# 📄 Step 10.1 — Interactive Timeline Dashboard & Simulator
+│   └── step_11_1_multimodal_monitoring.md # 📄 Step 11.1 — Drift Tracking (PSI, Embedding, Reconstruction)
+│
+└── appendices/
+    ├── appendix_a_formulas.md             # 📐 Appendix A: Mathematical Formulas & Calculation Definitions
+    ├── appendix_b_model_pools.md          # 🤖 Appendix B: Candidate Model Pools by Task
+    ├── appendix_c_ekg_images_guide.md     # 🖼️ Appendix C: EKG Image Preprocessing & Vision Guide
+    └── appendix_d_ekg_signals_guide.md    # 🌊 Appendix D: EKG 1D Signal Processing & Wavelet Guide

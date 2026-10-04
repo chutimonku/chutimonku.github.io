@@ -1,0 +1,43 @@
+{
+  "generated_at_utc": "2026-09-21T13:06:02.991586+00:00",
+  "sample_rows_validated": 20,
+  "required_feature_order": [
+    "mean_course_events_percentile",
+    "mean_course_active_days_percentile",
+    "mean_course_chapters_percentile",
+    "mean_course_forum_posts_percentile"
+  ],
+  "predicted_clusters_from_sample": [
+    3,
+    1,
+    0,
+    1,
+    2,
+    4,
+    2,
+    3,
+    1,
+    1,
+    4,
+    4,
+    3,
+    0,
+    1,
+    2,
+    3,
+    2,
+    3,
+    4
+  ],
+  "known_clusters": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "unknown_predictions": [],
+  "schema_validation_passed": true,
+  "outcome_columns_allowed_as_input": false,
+  "profile_columns_allowed_as_input": false
+}

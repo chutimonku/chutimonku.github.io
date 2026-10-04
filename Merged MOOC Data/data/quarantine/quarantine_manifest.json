@@ -1,0 +1,22 @@
+{
+  "quarantined_columns": [
+    "certified",
+    "grade",
+    "viewed",
+    "explored",
+    "incomplete_flag"
+  ],
+  "isolation_protocol": "Strict physical file separation; zero exposure to feature engineering, dimensionality reduction, or clustering.",
+  "student_count": 446766,
+  "quarantine_file": "data/quarantine/quarantined_outcomes.parquet",
+  "sha256": "de5c4591a91dde43657995f2d5062b72d2bcc7533491f98b33b1703582f487e5",
+  "enrollment_quarantine_file": "data/quarantine/quarantined_enrollment_outcomes.parquet",
+  "enrollment_quarantine_sha256": "1fe65d6e3e6ea15c4048197424c7f14835c355436da2d6aad66971a70fca6ddf",
+  "enrollment_count": 609637,
+  "outcome_summary": {
+    "overall_certification_rate": 0.03181307440584109,
+    "overall_exploration_rate": 0.07373882524632581,
+    "overall_viewed_rate": 0.6894705505790504,
+    "mean_grade": 0.029323767806777274
+  }
+}

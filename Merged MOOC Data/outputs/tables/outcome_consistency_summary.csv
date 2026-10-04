@@ -1,0 +1,17 @@
+institute,course_id,year,semester,enrollment_records,certified_records,grade_missing,certified_with_zero_grade,certified_below_documented_minimum,certified_with_missing_grade,grade_out_of_range,supervised_eligible_records
+HarvardX,CB22x,2013,Spring,30002,384,567,0,0,0,0,30002
+HarvardX,CS50x,2012,Unknown,169621,1287,1010,0,0,0,0,169621
+HarvardX,ER22x,2013,Spring,57406,2346,2749,0,0,0,0,57406
+HarvardX,PH207x,2012,Fall,41592,1842,1136,1,1,0,6,41585
+HarvardX,PH278x,2013,Spring,39602,711,2042,0,0,0,0,39602
+MITx,14.73x,2013,Spring,23402,1997,0,0,0,0,0,23402
+MITx,2.01x,2013,Spring,4394,172,0,0,0,0,0,4394
+MITx,3.091x,2012,Fall,11337,470,0,0,1,0,0,11336
+MITx,3.091x,2013,Spring,4474,116,0,0,0,0,0,4474
+MITx,6.002x,2012,Fall,30660,1273,0,28,38,0,0,30622
+MITx,6.002x,2013,Spring,14984,462,0,0,0,0,0,14984
+MITx,6.00x,2012,Fall,55175,1771,0,4,32,0,0,55143
+MITx,6.00x,2013,Spring,47356,1055,0,0,0,0,0,47356
+MITx,7.00x,2013,Spring,16740,655,0,0,0,0,0,16740
+MITx,8.02x,2013,Spring,21164,461,0,0,0,0,0,21164
+MITx,8.MReV,2013,Summer,7151,231,0,0,0,0,0,7151

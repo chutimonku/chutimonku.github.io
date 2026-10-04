@@ -1,0 +1,20 @@
+======================================================================
+STEP 3: DATA CLEANING & STUDENT-LEVEL AGGREGATION
+======================================================================
+[+] Cleaning feature records: anomalies, sentinels, and types...
+[+] Aggregating features to student unit of analysis (userid_DI)...
+[+] Aggregating target outcomes to student unit of analysis...
+[+] Total Cleaned Students: 335,650
+    Positive class (Certified Completers): 13,881 (4.14%)
+    Negative class (Non-Completers):        321,769 (95.86%)
+    Outcome Tiers: Tier 1 (Completers)=13,881, Tier 2 (Explored)=16,492, Tier 3 (Dropout)=305,277
+[+] Cleaned student features saved to: data/processed/students_cleaned.parquet
+[+] Cleaned student labels saved to:   data/labels/student_labels.parquet
+[+] Cleaning audit and rules saved to: data/processed/cleaning_audit.json and data/processed/cleaning_rules.json
+
+STDERR
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+W20260916 14:58:11.279258 1811836928 cpu_info.cc:239] IOError: sysctlbyname failed for 'hw.l1dcachesize'. Detail: [errno 1] Operation not permitted
+W20260916 14:58:11.279409 1811836928 cpu_info.cc:239] IOError: sysctlbyname failed for 'hw.l2cachesize'. Detail: [errno 1] Operation not permitted
+W20260916 14:58:11.279498 1811836928 cpu_info.cc:239] IOError: sysctlbyname failed for 'hw.l3cachesize'. Detail: [errno 1] Operation not permitted
+W20260916 14:58:11.279556 1811836928 cpu_info.cc:239] IOError: sysctlbyname failed for 'hw.optional.neon'. Detail: [errno 1] Operation not permitted

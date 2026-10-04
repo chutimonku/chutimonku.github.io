@@ -1,0 +1,18 @@
+{
+  "dataset_name": "HarvardX-MITx Person-Course Academic Year 2013",
+  "dataset_source": "https://www.kaggle.com/datasets/kanikanarang94/mooc-dataset",
+  "raw_file_name": "big_student_clear_third_version.csv",
+  "raw_file_sha256": "24858a3afe182d4a17b5083ed4ffcd6ced622821fc37626932628240b31773f9",
+  "raw_file_size_mb": 55.94,
+  "total_records": 416921,
+  "total_columns": 22,
+  "unique_students": 335650,
+  "unit_of_analysis": "userid_DI",
+  "target_variables_isolated": [
+    "certified",
+    "grade",
+    "incomplete_flag",
+    "explored"
+  ],
+  "anti_leakage_policy": "Target variables (certified, grade, incomplete_flag, explored) must only be used as labels (y), strictly preventing data leakage into input features (X) or train/test splits."
+}

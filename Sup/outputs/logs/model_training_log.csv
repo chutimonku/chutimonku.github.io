@@ -1,0 +1,15 @@
+model_id,timestamp,status,train_duration_sec,roc_auc,pr_auc
+dummy_baseline,2026-09-16 14:58:45,Success,0.0,0.5,0.0414
+logistic_reg_c01,2026-09-16 14:58:49,Success,3.71,0.9899,0.7848
+logistic_reg_c10,2026-09-16 14:58:54,Success,5.16,0.9906,0.7956
+logistic_reg_unweighted,2026-09-16 14:58:57,Success,2.93,0.9903,0.8162
+sgd_elasticnet,2026-09-16 14:58:59,Success,1.74,0.9887,0.7938
+gaussian_naive_bayes,2026-09-16 14:58:59,Success,0.1,0.9674,0.4604
+linear_svm_calibrated,2026-09-16 14:59:03,Success,3.89,0.9906,0.7934
+decision_tree_d10,2026-09-16 14:59:04,Success,1.22,0.9829,0.8021
+random_forest_d10,2026-09-16 14:59:08,Success,3.62,0.9927,0.8372
+random_forest_d15,2026-09-16 14:59:12,Success,3.79,0.9931,0.8529
+extra_trees_d15,2026-09-16 14:59:16,Success,4.03,0.9923,0.8362
+hist_gbdt_lr05,2026-09-16 14:59:19,Success,3.28,0.9934,0.851
+hist_gbdt_lr10,2026-09-16 14:59:21,Success,1.8,0.9934,0.8512
+mlp_neural_net,2026-09-16 14:59:42,Success,21.45,0.9929,0.8459

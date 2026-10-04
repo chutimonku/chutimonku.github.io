@@ -1,0 +1,25 @@
+monitoring_version: "1.0.0"
+psi:
+  thresholds:
+    normal: 0.10
+    warning: 0.25
+    significant_drift: 0.25
+  reference_period: "2017-2019"
+  evaluation_period: "2020-2021"
+  monitored_features:
+    - claims_intimated_no
+    - claims_intimated_amt
+    - claims_pending_end_no
+    - claims_paid_ratio_no
+    - claims_pending_ratio_no
+
+performance_triggers:
+  rmse_degradation_threshold_pct: 15.0
+  max_unreconciled_anomalies: 0
+  min_data_quality_score: 90.0
+
+retraining_policy:
+  trigger_condition: "PSI >= 0.25 on critical features OR performance degradation > 15%"
+  cadence: "Annual (upon IRDAI statutory public disclosure release)"
+  review_board: "Model Governance Committee"
+  rollback_strategy: "Revert to Persistence Baseline / previous pipeline bundle"

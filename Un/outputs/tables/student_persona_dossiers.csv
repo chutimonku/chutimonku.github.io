@@ -1,0 +1,6 @@
+﻿cluster,persona_name,student_count,student_pct,dominant_behavior,lowest_behavior,behavioral_dossier,assignment_file
+0,Persona 1: Active Days-led learners,46296,13.792939073439594,active days,chapters,Highest relative signal: active days (0.556); lowest: chapters (0.335).,outputs/data/cluster_assignments.csv
+1,Persona 2: Events-led learners,62225,18.538656338447787,events,forum posts,Highest relative signal: events (0.882); lowest: forum posts (0.514).,outputs/data/cluster_assignments.csv
+2,Persona 3: Chapters-led learners,55365,16.494860718009832,chapters,active days,Highest relative signal: chapters (0.556); lowest: active days (0.245).,outputs/data/cluster_assignments.csv
+3,Persona 4: Forum Posts-led learners,97719,29.113362133174437,forum posts,events,Highest relative signal: forum posts (0.494); lowest: events (0.182).,outputs/data/cluster_assignments.csv
+4,Persona 5: Events-led learners,74045,22.060181736928342,events,forum posts,Highest relative signal: events (0.659); lowest: forum posts (0.501).,outputs/data/cluster_assignments.csv

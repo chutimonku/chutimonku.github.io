@@ -1,0 +1,27 @@
+STEP: Step 8: Evaluation & Post-hoc Validation
+MODULE: src.step8_evaluation_and_posthoc
+RETURN CODE: 0
+RUNTIME_SECONDS: 10.781
+
+STDOUT
+========================================================================
+========================================================================
+STEP 8: CLUSTER EVALUATION AND POST-HOC OUTCOME VALIDATION
+========================================================================
+[Step 8] PCA projection: outputs/tables/cluster_pca_projection.csv
+[Step 8] PCA variance: outputs/tables/cluster_pca_variance.csv
+[Step 8] 3D PCA: outputs/figures/evaluation/cluster_projection_pca_3d.png
+[Step 8] Cluster heatmap: outputs/figures/evaluation/cluster_behavior_profile_heatmap.png
+[Step 8] Post-hoc outcome chart: outputs/figures/evaluation/posthoc_outcomes_by_cluster.png
+[Step 8] Post-hoc summary: outputs/tables/posthoc_cluster_summary.csv
+[Step 8] Validation summary: outputs/tables/cluster_validation_summary.json
+
+
+STDERR
+========================================================================
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+W20260921 19:38:09.406755 2018406400 cpu_info.cc:239] IOError: sysctlbyname failed for 'hw.l1dcachesize'. Detail: [errno 1] Operation not permitted
+W20260921 19:38:09.406924 2018406400 cpu_info.cc:239] IOError: sysctlbyname failed for 'hw.l2cachesize'. Detail: [errno 1] Operation not permitted
+W20260921 19:38:09.406998 2018406400 cpu_info.cc:239] IOError: sysctlbyname failed for 'hw.l3cachesize'. Detail: [errno 1] Operation not permitted
+W20260921 19:38:09.407068 2018406400 cpu_info.cc:239] IOError: sysctlbyname failed for 'hw.optional.neon'. Detail: [errno 1] Operation not permitted
+

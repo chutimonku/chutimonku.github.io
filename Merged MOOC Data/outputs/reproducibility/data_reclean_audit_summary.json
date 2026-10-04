@@ -1,0 +1,11 @@
+{
+  "raw_harmonized_rows": 755144,
+  "unique_students": 446766,
+  "current_user_course_enrollments": 575060,
+  "course_run_enrollments": 624674,
+  "groups_collapsed_by_current_key_with_multiple_course_runs": 49614,
+  "raw_rows_inside_collapsed_groups": 99228,
+  "course_offerings_in_combined": 19,
+  "course_offerings_in_current_cleaned": 16,
+  "offerings_missing_from_current_cleaned": 3
+}

@@ -1,0 +1,10 @@
+{
+  "duplicate_records": "Removed substantive feature duplicates (keeping first occurrence).",
+  "video_sentinel": "Converted 197757 in nplay_video to NaN and retained video_data_available_rate.",
+  "age_sanitization": "Sanitized age <= 0 or > 100 to NaN with age_missing indicator.",
+  "date_coercion": "Parsed registration dates; flagged inversions and computed overall active tenure span.",
+  "categorical_standardization": "Trimmed text and mapped unobserved entries to 'Unknown'.",
+  "student_aggregation": "Aggregated person-course events to single student profile keyed on userid_DI.",
+  "target_aggregation": "Aggregated certified status to student level: certified_student = max(certified).",
+  "leakage_safeguard": "Asserted 0 target outcome fields in features X."
+}

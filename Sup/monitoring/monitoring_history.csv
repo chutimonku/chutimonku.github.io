@@ -1,0 +1,2 @@
+audit_timestamp,event_type,cohort_evaluated,student_count,mean_pred_prob,tier_3_high_risk_pct,tier_2_mod_risk_pct,tier_1_low_risk_pct,drift_status,retraining_required
+2026-09-16T18:16:05.447829+00:00,baseline_established,None — reference baseline only,50348,0.0708,90.35,3.0700000000000003,6.59,NOT_EVALUATED_NO_FUTURE_COHORT,

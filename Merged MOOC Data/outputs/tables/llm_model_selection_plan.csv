@@ -1,0 +1,6 @@
+stage,candidate,role,current_status,selection_basis
+ASR,Whisper-family or governed multilingual ASR,Audio to timestamped words,Waiting for media,"WER/CER, language accuracy, timestamp quality, runtime"
+Retrieval baseline,BM25 / TF-IDF,Auditable lexical retrieval,Waiting for transcript,"Recall@K, MRR, evidence coverage"
+Dense retrieval,Multilingual sentence embedding / BGE-family,Semantic retrieval across Thai and English,Waiting for transcript,"Recall@K, nDCG, multilingual consistency"
+Generation,Instruction-tuned LLM with RAG,Grounded summary and Q&A,Waiting for retrieval index,"Correctness, groundedness, citation accuracy, hallucination rate"
+Fine-tuning,Optional LoRA/SFT after baseline,Domain/style adaptation only when labeled examples exist,Not justified yet,Improvement over RAG baseline on untouched evaluation set

@@ -1,0 +1,10 @@
+﻿column,level,role,used_for_clustering,description
+mean_course_events_percentile,student,behavioral_feature,True,Mean within-course percentile across the learner's enrollments.
+mean_course_active_days_percentile,student,behavioral_feature,True,Mean within-course percentile across the learner's enrollments.
+mean_course_chapters_percentile,student,behavioral_feature,True,Mean within-course percentile across the learner's enrollments.
+mean_course_forum_posts_percentile,student,behavioral_feature,True,Mean within-course percentile across the learner's enrollments.
+video_missing_records,student,data_quality_flag,False,Number of enrollment records with missing or sentinel video-play values.
+date_inversion_records,student,data_quality_flag,False,Number of enrollment records where last event precedes course start in the raw fields; the derived dates were swapped.
+profile_gender,student,profile_only,False,Profile field retained for descriptive reporting only.
+profile_education,student,profile_only,False,Profile field retained for descriptive reporting only.
+profile_country,student,profile_only,False,Profile field retained for descriptive reporting only.

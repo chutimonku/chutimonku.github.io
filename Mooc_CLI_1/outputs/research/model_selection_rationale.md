@@ -1,0 +1,5 @@
+# Candidate model rationale
+
+Classification candidates are a prevalence-only Dummy baseline, regularized logistic regression, a regularized linear SGD classifier, a shallow decision tree, random forest, and extremely randomized trees. This spans a heuristic, interpretable linear models, a single nonlinear tree, and two nonlinear ensembles. Candidate hyperparameters are selected on validation PR-AUC and balanced accuracy only; test labels remain untouched until the selected pipeline is locked.
+
+Clustering candidates are K-means, diagonal-covariance Gaussian mixture, Ward agglomerative clustering, BIRCH, and DBSCAN. They cover centroid, probabilistic, hierarchical, scalable CF-tree, and density/noise assumptions. Agglomerative and DBSCAN are treated as transductive diagnostic methods; only candidates with a native `predict` operation are eligible for the deployed final pipeline. Selection balances silhouette, Davies-Bouldin, Calinski-Harabasz, resampling stability, minimum cluster share, and deployability rather than using a single score.

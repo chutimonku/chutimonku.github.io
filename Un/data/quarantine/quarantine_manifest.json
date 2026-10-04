@@ -1,0 +1,15 @@
+{
+  "quarantined_columns": [
+    "certified",
+    "grade",
+    "incomplete_flag",
+    "explored"
+  ],
+  "isolation_timestamp": "2026-09-20T01:19:31.384252",
+  "raw_dataset_path": "data/raw/big_student_clear_third_version.csv",
+  "raw_dataset_sha256": "24858a3afe182d4a17b5083ed4ffcd6ced622821fc37626932628240b31773f9",
+  "quarantined_parquet_sha256": "b13ca3da469de67d9e199a58093d617fa5ea7eeb9739c2b3855ef65c88343ae8",
+  "total_quarantined_records": 416921,
+  "access_restriction": "LOCKED: Strictly prohibited from feature engineering, training, and tuning. Reserved for Step 8 Post-Hoc validation only.",
+  "outcome_statistics_computed": false
+}

@@ -1,0 +1,23 @@
+STEP: Step 11: Monitoring Baseline
+MODULE: src.step11_monitoring
+RETURN CODE: 0
+RUNTIME_SECONDS: 0.797
+
+STDOUT
+========================================================================
+========================================================================
+STEP 11: MONITORING BASELINE AND NEW-COHORT DRIFT CHECK
+========================================================================
+[Step 11] Baselines created.
+[Step 11] Current cohort not supplied.
+[Step 11] Monitoring status: not_evaluated.
+
+
+STDERR
+========================================================================
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+W20260921 19:38:32.377720 1852780544 cpu_info.cc:239] IOError: sysctlbyname failed for 'hw.l1dcachesize'. Detail: [errno 1] Operation not permitted
+W20260921 19:38:32.377859 1852780544 cpu_info.cc:239] IOError: sysctlbyname failed for 'hw.l2cachesize'. Detail: [errno 1] Operation not permitted
+W20260921 19:38:32.377933 1852780544 cpu_info.cc:239] IOError: sysctlbyname failed for 'hw.l3cachesize'. Detail: [errno 1] Operation not permitted
+W20260921 19:38:32.378000 1852780544 cpu_info.cc:239] IOError: sysctlbyname failed for 'hw.optional.neon'. Detail: [errno 1] Operation not permitted
+

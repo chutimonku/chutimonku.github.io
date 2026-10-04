@@ -1,0 +1,14 @@
+STEP: Step 10: Bilingual Dashboard Report
+MODULE: src.generate_report
+RETURN CODE: 0
+RUNTIME_SECONDS: 0.649
+
+STDOUT
+========================================================================
+[Step 10] Dashboard report written to: reports/student_segmentation_report.html
+[Step 10] Report manifest written to: reports/report_manifest.json
+
+
+STDERR
+========================================================================
+

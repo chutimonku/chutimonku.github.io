@@ -1,0 +1,13 @@
+{
+  "algorithm": "kmeans",
+  "family": "centroid",
+  "k": 4,
+  "selection_rule": "Lowest equal-weight mean rank across four non-outcome internal criteria.",
+  "mean_internal_rank": 3.0,
+  "silhouette": 0.3736794061721835,
+  "davies_bouldin": 0.9857621746071945,
+  "calinski_harabasz": 3193.546226443139,
+  "resample_stability_ari": 0.9803348067132055,
+  "outcomes_accessed": false,
+  "status": "provisional; final lock occurs in Step 8"
+}

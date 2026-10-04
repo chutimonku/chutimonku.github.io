@@ -1,0 +1,13 @@
+column_or_group,cleaning_action
+gender,standardize; set missing/invalid to Unknown after reconciliation
+LoE_DI,standardize; set missing/invalid to Unknown after reconciliation
+final_cc_cname_DI,standardize; set missing to Unknown after reconciliation
+age,values <=10 or >100 become missing; model-specific median imputation after split
+start_time_DI,parse; swap valid reversed pairs; retain original and flag
+last_event_DI,parse; swap valid reversed pairs; preserve missing
+nplay_video,197757 sentinel and negative values become missing; preserve missingness indicator
+nevents,negative/non-numeric becomes missing; zero-fill only for aggregation with indicator
+ndays_act,negative/non-numeric becomes missing; zero-fill only for aggregation with indicator
+nchapters,negative/non-numeric becomes missing; zero-fill only for aggregation with indicator
+nforum_posts,negative/non-numeric becomes missing; zero-fill only for aggregation with indicator
+certified/grade/viewed/explored/incomplete_flag,quarantine; never use in unsupervised feature selection

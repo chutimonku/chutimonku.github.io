@@ -1,0 +1,244 @@
+{
+  "Unnamed: 0": {
+    "catalog_info": {
+      "type": "integer",
+      "role": "metadata_index",
+      "description": "Original export row index"
+    },
+    "actual_dtype": "int64",
+    "null_count": 0,
+    "null_percentage": 0.0,
+    "unique_values": 416921
+  },
+  "institute": {
+    "catalog_info": {
+      "type": "categorical",
+      "role": "course_context",
+      "description": "Delivering institute (HarvardX, MITx)"
+    },
+    "actual_dtype": "object",
+    "null_count": 0,
+    "null_percentage": 0.0,
+    "unique_values": 2
+  },
+  "course_id": {
+    "catalog_info": {
+      "type": "categorical",
+      "role": "course_context",
+      "description": "Course identifier (e.g. 6.00x, CS50x)"
+    },
+    "actual_dtype": "object",
+    "null_count": 0,
+    "null_percentage": 0.0,
+    "unique_values": 13
+  },
+  "year": {
+    "catalog_info": {
+      "type": "integer",
+      "role": "course_context",
+      "description": "Academic year (2012, 2013)"
+    },
+    "actual_dtype": "int64",
+    "null_count": 0,
+    "null_percentage": 0.0,
+    "unique_values": 2
+  },
+  "semester": {
+    "catalog_info": {
+      "type": "categorical",
+      "role": "course_context",
+      "description": "Semester of offering (Spring, Fall, Summer)"
+    },
+    "actual_dtype": "object",
+    "null_count": 0,
+    "null_percentage": 0.0,
+    "unique_values": 3
+  },
+  "userid_DI": {
+    "catalog_info": {
+      "type": "string",
+      "role": "entity_identifier",
+      "description": "De-identified student identifier"
+    },
+    "actual_dtype": "object",
+    "null_count": 0,
+    "null_percentage": 0.0,
+    "unique_values": 335650
+  },
+  "viewed": {
+    "catalog_info": {
+      "type": "binary",
+      "role": "observational_engagement",
+      "description": "1 if student accessed course materials"
+    },
+    "actual_dtype": "int64",
+    "null_count": 0,
+    "null_percentage": 0.0,
+    "unique_values": 2
+  },
+  "explored": {
+    "catalog_info": {
+      "type": "binary",
+      "role": "outcome_milestone",
+      "description": "QUARANTINED: 1 if student accessed >=50% of course chapters"
+    },
+    "actual_dtype": "int64",
+    "null_count": 0,
+    "null_percentage": 0.0,
+    "unique_values": 2
+  },
+  "certified": {
+    "catalog_info": {
+      "type": "binary",
+      "role": "outcome_primary",
+      "description": "QUARANTINED: 1 if student earned course certificate"
+    },
+    "actual_dtype": "int64",
+    "null_count": 0,
+    "null_percentage": 0.0,
+    "unique_values": 2
+  },
+  "final_cc_cname_DI": {
+    "catalog_info": {
+      "type": "categorical",
+      "role": "demographic",
+      "description": "Student country of origin/access"
+    },
+    "actual_dtype": "object",
+    "null_count": 0,
+    "null_percentage": 0.0,
+    "unique_values": 34
+  },
+  "LoE_DI": {
+    "catalog_info": {
+      "type": "categorical",
+      "role": "demographic",
+      "description": "Student highest level of education"
+    },
+    "actual_dtype": "object",
+    "null_count": 0,
+    "null_percentage": 0.0,
+    "unique_values": 5
+  },
+  "gender": {
+    "catalog_info": {
+      "type": "categorical",
+      "role": "demographic",
+      "description": "Student reported gender (m, f, o, null)"
+    },
+    "actual_dtype": "object",
+    "null_count": 23211,
+    "null_percentage": 5.567,
+    "unique_values": 3
+  },
+  "grade": {
+    "catalog_info": {
+      "type": "float",
+      "role": "outcome_primary",
+      "description": "QUARANTINED: Final course grade achieved (0.0 to 1.0)"
+    },
+    "actual_dtype": "float64",
+    "null_count": 0,
+    "null_percentage": 0.0,
+    "unique_values": 101
+  },
+  "start_time_DI": {
+    "catalog_info": {
+      "type": "date",
+      "role": "temporal_metadata",
+      "description": "Course registration/first interaction timestamp"
+    },
+    "actual_dtype": "object",
+    "null_count": 0,
+    "null_percentage": 0.0,
+    "unique_values": 411
+  },
+  "last_event_DI": {
+    "catalog_info": {
+      "type": "date",
+      "role": "temporal_metadata",
+      "description": "Last recorded interaction timestamp"
+    },
+    "actual_dtype": "object",
+    "null_count": 0,
+    "null_percentage": 0.0,
+    "unique_values": 404
+  },
+  "nevents": {
+    "catalog_info": {
+      "type": "integer",
+      "role": "observational_engagement",
+      "description": "Total count of interaction events logged"
+    },
+    "actual_dtype": "int64",
+    "null_count": 0,
+    "null_percentage": 0.0,
+    "unique_values": 9702
+  },
+  "ndays_act": {
+    "catalog_info": {
+      "type": "integer",
+      "role": "observational_engagement",
+      "description": "Distinct active days interacting with course"
+    },
+    "actual_dtype": "int64",
+    "null_count": 0,
+    "null_percentage": 0.0,
+    "unique_values": 152
+  },
+  "nplay_video": {
+    "catalog_info": {
+      "type": "integer",
+      "role": "observational_engagement",
+      "description": "Count of video play events (contains sentinel 197757)"
+    },
+    "actual_dtype": "int64",
+    "null_count": 0,
+    "null_percentage": 0.0,
+    "unique_values": 2534
+  },
+  "nchapters": {
+    "catalog_info": {
+      "type": "integer",
+      "role": "observational_engagement",
+      "description": "Number of distinct chapters/modules accessed"
+    },
+    "actual_dtype": "int64",
+    "null_count": 0,
+    "null_percentage": 0.0,
+    "unique_values": 49
+  },
+  "nforum_posts": {
+    "catalog_info": {
+      "type": "integer",
+      "role": "observational_engagement",
+      "description": "Number of discussion forum posts contributed"
+    },
+    "actual_dtype": "int64",
+    "null_count": 0,
+    "null_percentage": 0.0,
+    "unique_values": 9
+  },
+  "incomplete_flag": {
+    "catalog_info": {
+      "type": "binary",
+      "role": "outcome_status",
+      "description": "QUARANTINED: 1 if student course status was incomplete"
+    },
+    "actual_dtype": "int64",
+    "null_count": 0,
+    "null_percentage": 0.0,
+    "unique_values": 2
+  },
+  "age": {
+    "catalog_info": {
+      "type": "integer",
+      "role": "demographic",
+      "description": "Student calculated age (-1 indicates missing YoB)"
+    },
+    "actual_dtype": "int64",
+    "null_count": 0,
+    "null_percentage": 0.0,
+    "unique_values": 76
+  }
+}

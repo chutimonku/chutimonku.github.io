@@ -1,0 +1,78 @@
+STEP: Step 6: Broad Clustering Family Screening
+MODULE: src.step6_model_family_screening
+RETURN CODE: 0
+RUNTIME_SECONDS: 19.802
+
+STDOUT
+========================================================================
+[Family screen] K-Means 2
+[Family screen] K-Means 3
+[Family screen] K-Means 4
+[Family screen] K-Means 5
+[Family screen] K-Means 6
+[Family screen] K-Means 7
+[Family screen] K-Means 8
+[Family screen] K-Means 9
+[Family screen] K-Means 10
+[Family screen] MiniBatch K-Means 2
+[Family screen] MiniBatch K-Means 3
+[Family screen] MiniBatch K-Means 4
+[Family screen] MiniBatch K-Means 5
+[Family screen] MiniBatch K-Means 6
+[Family screen] MiniBatch K-Means 7
+[Family screen] MiniBatch K-Means 8
+[Family screen] MiniBatch K-Means 9
+[Family screen] MiniBatch K-Means 10
+[Family screen] GMM 2
+[Family screen] GMM 3
+[Family screen] GMM 4
+[Family screen] GMM 5
+[Family screen] GMM 6
+[Family screen] GMM 7
+[Family screen] GMM 8
+[Family screen] GMM 9
+[Family screen] GMM 10
+[Family screen] BIRCH 2
+[Family screen] BIRCH 3
+[Family screen] BIRCH 4
+[Family screen] BIRCH 5
+[Family screen] BIRCH 6
+[Family screen] BIRCH 7
+[Family screen] BIRCH 8
+[Family screen] BIRCH 9
+[Family screen] BIRCH 10
+[Family screen] HAC-Ward 2
+[Family screen] HAC-Ward 3
+[Family screen] HAC-Ward 4
+[Family screen] HAC-Ward 5
+[Family screen] HAC-Ward 6
+[Family screen] HAC-Ward 7
+[Family screen] HAC-Ward 8
+[Family screen] HAC-Ward 9
+[Family screen] HAC-Ward 10
+[Family screen] DBSCAN (np.float64(0.0424), 10)
+[Family screen] DBSCAN (np.float64(0.0424), 25)
+[Family screen] DBSCAN (np.float64(0.0424), 50)
+[Family screen] DBSCAN (np.float64(0.0561), 10)
+[Family screen] DBSCAN (np.float64(0.0561), 25)
+[Family screen] DBSCAN (np.float64(0.0561), 50)
+[Family screen] DBSCAN (np.float64(0.0846), 10)
+[Family screen] DBSCAN (np.float64(0.0846), 25)
+[Family screen] DBSCAN (np.float64(0.0846), 50)
+[Family screen] {'model_family': 'K-Means', 'parameter': 'selected downstream by Gap one-SE', 'sample_size': 4000, 'selection_status': 'family recommendation, not an automatic cross-family winner', 'selection_rule': 'K-Means is retained because it is stable, scalable to the full cohort, supports deterministic out-of-sample assignment, and matches the bounded Euclidean percentile space. Raw internal-index ranks are diagnostic only and are not averaged into a universal truth across algorithms.'}
+
+
+STDERR
+========================================================================
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+W20260921 20:02:31.419638 1878601728 cpu_info.cc:239] IOError: sysctlbyname failed for 'hw.l1dcachesize'. Detail: [errno 1] Operation not permitted
+W20260921 20:02:31.419795 1878601728 cpu_info.cc:239] IOError: sysctlbyname failed for 'hw.l2cachesize'. Detail: [errno 1] Operation not permitted
+W20260921 20:02:31.419906 1878601728 cpu_info.cc:239] IOError: sysctlbyname failed for 'hw.l3cachesize'. Detail: [errno 1] Operation not permitted
+W20260921 20:02:31.419978 1878601728 cpu_info.cc:239] IOError: sysctlbyname failed for 'hw.optional.neon'. Detail: [errno 1] Operation not permitted
+/opt/anaconda3/lib/python3.13/site-packages/joblib/externals/loky/backend/context.py:136: UserWarning: Could not find the number of physical cores for the following reason:
+invalid literal for int() with base 10: ''
+Returning the number of logical cores instead. You can silence this warning by setting LOKY_MAX_CPU_COUNT to the number of cores you want to use.
+  warnings.warn(
+  File "/opt/anaconda3/lib/python3.13/site-packages/joblib/externals/loky/backend/context.py", line 276, in _count_physical_cores
+    cpu_count_physical = int(cpu_info)
+

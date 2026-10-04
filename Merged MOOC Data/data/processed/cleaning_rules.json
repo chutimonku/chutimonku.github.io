@@ -1,0 +1,9 @@
+{
+  "order": "clean each source -> reconcile duplicate enrollments -> quarantine outcomes -> aggregate students",
+  "enrollment_key": [
+    "userid_DI",
+    "course_id"
+  ],
+  "source_precedence": "Verified Harvard Dataverse value first; fill its missing fields from the expanded source",
+  "outcome_policy": "Outcomes excluded from unsupervised/deep data; certification allowed only as supervised target"
+}

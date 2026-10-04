@@ -1,0 +1,4 @@
+model_id,model_name,tn,fp,fn,tp
+tfidf_bigram_logistic,TF-IDF (1–2 grams) + Logistic Regression,1689,53,10,48
+distilbert_logistic,DistilBERT Embeddings + Logistic Regression,1707,35,25,33
+tfidf_logistic,TF-IDF + Logistic Regression,1674,68,30,28

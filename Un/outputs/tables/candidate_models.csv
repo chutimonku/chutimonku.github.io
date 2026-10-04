@@ -1,0 +1,9 @@
+name,family,deployable,counts_as_distinct_family,rationale,outcomes_used_for_selection
+kmeans,centroid,True,True,Scalable baseline for compact approximately spherical groups.,False
+minibatch_kmeans,centroid,True,False,Scalability variant of K-Means; reported but not counted as a distinct family.,False
+gaussian_mixture_diag,probabilistic,True,True,Allows soft assignment and unequal diagonal variance.,False
+gaussian_mixture_tied,probabilistic,True,False,Sensitivity configuration with shared covariance.,False
+birch,CF-tree hierarchical,True,True,Designed for large numerical datasets through compressed clustering features.,False
+bisecting_kmeans,divisive hierarchical,True,True,Divisive hierarchy with out-of-sample prediction.,False
+agglomerative_ward,agglomerative hierarchical,False,True,Geometry benchmark; sample-only and has no native prediction.,False
+dbscan,density,False,True,Detects density-connected groups and noise without a preset cluster count.,False

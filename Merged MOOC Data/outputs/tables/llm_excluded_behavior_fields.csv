@@ -1,0 +1,7 @@
+excluded_input,reason
+total_video_plays,Behavioral numeric feature; valid for tabular ML but not spoken-content LLM training text
+mean_video_plays_per_course,Behavioral numeric feature; valid for tabular ML but not spoken-content LLM training text
+video_missing_records,Behavioral numeric feature; valid for tabular ML but not spoken-content LLM training text
+mean_course_video_plays_percentile,Behavioral numeric feature; valid for tabular ML but not spoken-content LLM training text
+video_data_available_rate,Behavioral numeric feature; valid for tabular ML but not spoken-content LLM training text
+video_intensity,Behavioral numeric feature; valid for tabular ML but not spoken-content LLM training text

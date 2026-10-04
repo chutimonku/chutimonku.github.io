@@ -1,0 +1,42 @@
+{
+  "generated_at_utc": "2026-09-21T13:02:16.029670+00:00",
+  "input_path": "data/processed/raw_features.parquet",
+  "rows_before_cleaning": 416921,
+  "rows_after_duplicate_removal": 416921,
+  "duplicate_rows_removed": 0,
+  "outcome_columns_present_in_cleaned_student_table": [],
+  "video_sentinel_values": [
+    197757
+  ],
+  "video_sentinel_rows_converted_to_missing": 255528,
+  "video_missing_rows_after_cleaning": 255528,
+  "invalid_negative_counts": {
+    "nevents": 0,
+    "ndays_act": 0,
+    "nplay_video": 0,
+    "nchapters": 0,
+    "nforum_posts": 0
+  },
+  "invalid_age_rows_flagged": 279,
+  "minimum_plausible_age": 6,
+  "age_missing_rows_after_cleaning": 279,
+  "start_date_missing_rows": 0,
+  "last_event_date_missing_rows": 0,
+  "date_inversion_rows_flagged": 1231,
+  "date_inversion_rows_corrected_by_swapping": 1231,
+  "student_count_after_aggregation": 335650,
+  "behaviour_feature_missing_rate": {
+    "mean_course_events_percentile": 0.0,
+    "mean_course_active_days_percentile": 0.0,
+    "mean_course_chapters_percentile": 0.0,
+    "mean_course_forum_posts_percentile": 0.0
+  },
+  "action_summary": {
+    "raw_data_changed": false,
+    "duplicates_removed": 0,
+    "sentinel_values_replaced_with_zero": false,
+    "outcomes_used_as_features": false,
+    "invalid_dates_removed": false,
+    "invalid_dates_corrected_by_swapping": 1231
+  }
+}

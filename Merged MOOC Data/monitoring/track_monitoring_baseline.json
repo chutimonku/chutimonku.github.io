@@ -1,0 +1,124 @@
+{
+  "status": "BASELINE_READY_NO_FUTURE_COHORT",
+  "students": 446766,
+  "schema": {
+    "userid_DI": "object",
+    "n_enrollments": "int64",
+    "unique_courses": "int64",
+    "n_institutes": "int64",
+    "institutes_enrolled": "object",
+    "date_inversion_records": "int8",
+    "first_start_dt": "datetime64[ns]",
+    "last_event_dt": "datetime64[ns]",
+    "total_events": "float64",
+    "mean_events_per_course": "float64",
+    "max_events_single_course": "float64",
+    "total_active_days": "float64",
+    "mean_active_days_per_course": "float64",
+    "max_active_days_single_course": "float64",
+    "total_video_plays": "float64",
+    "mean_video_plays_per_course": "float64",
+    "video_missing_records": "int8",
+    "total_chapters": "float64",
+    "mean_chapters_per_course": "float64",
+    "max_chapters_single_course": "float64",
+    "total_forum_posts": "int64",
+    "mean_forum_posts_per_course": "float64",
+    "max_forum_posts_single_course": "int64",
+    "mean_course_events_percentile": "float64",
+    "mean_course_active_days_percentile": "float64",
+    "mean_course_video_plays_percentile": "float64",
+    "mean_course_chapters_percentile": "float64",
+    "mean_course_forum_posts_percentile": "float64",
+    "demog_age": "float64",
+    "age_missing_records": "int8",
+    "demog_loe_rank": "int64",
+    "demog_gender": "string",
+    "demog_country": "string",
+    "source_membership": "object",
+    "n_courses": "int64",
+    "video_data_available_rate": "float64",
+    "demog_loe": "object",
+    "overall_span_days": "float64",
+    "overall_span_missing": "int8",
+    "event_intensity": "float64",
+    "video_intensity": "float64",
+    "chapters_per_day": "float64",
+    "forum_posts_per_active_day": "float64",
+    "has_forum_activity": "int8",
+    "has_multiple_courses": "int8",
+    "is_cross_institution": "int8"
+  },
+  "behavior_feature_quantiles": {
+    "mean_course_forum_posts_percentile": {
+      "0.05": 0.4844963941051458,
+      "0.25": 0.49269931383760823,
+      "0.5": 0.49670740953337356,
+      "0.75": 0.5000029477482152,
+      "0.95": 0.500018099530821
+    },
+    "mean_course_chapters_percentile": {
+      "0.05": 0.12938041169743505,
+      "0.25": 0.24327423480638616,
+      "0.5": 0.4851730904736575,
+      "0.75": 0.7038635747744958,
+      "0.95": 0.9318712215019761
+    },
+    "mean_course_active_days_percentile": {
+      "0.05": 0.20980186327253642,
+      "0.25": 0.22839405325927137,
+      "0.5": 0.4985303765909986,
+      "0.75": 0.7288061897966465,
+      "0.95": 0.9379954287868407
+    },
+    "mean_course_events_percentile": {
+      "0.05": 0.08012465008186764,
+      "0.25": 0.26884276131622037,
+      "0.5": 0.49824574596195004,
+      "0.75": 0.7314632403271608,
+      "0.95": 0.9392205095363121
+    }
+  },
+  "missing_rate": {
+    "mean_course_forum_posts_percentile": 0.0,
+    "mean_course_chapters_percentile": 0.12302861005537574,
+    "mean_course_active_days_percentile": 0.2280768903631879,
+    "mean_course_events_percentile": 0.23302578978704735
+  },
+  "cluster_distribution": {
+    "0": 0.9877116879977438,
+    "1": 0.012288312002256215
+  },
+  "supervised_reference": {
+    "observed_certification_rate": 0.03179776211441912,
+    "mean_predicted_probability": 0.055632617795426366
+  },
+  "unsupervised_reference": {
+    "selected_model": "MiniBatch K-Means",
+    "selected_k": 2,
+    "students": 446766,
+    "features": [
+      "mean_course_forum_posts_percentile",
+      "mean_course_chapters_percentile",
+      "mean_course_active_days_percentile",
+      "mean_course_events_percentile"
+    ],
+    "cluster_distribution": {
+      "0": 0.9877116879977438,
+      "1": 0.012288312002256215
+    },
+    "resample_ari_reference": 0.0007622363692648892,
+    "distance_and_uncertainty": {
+      "available": true,
+      "assigned_distance_p50": 1.0967033039531182,
+      "assigned_distance_p95": 2.2349506199877758,
+      "assigned_distance_p99_outlier_threshold": 27.88235264391273,
+      "assignment_margin_p05_uncertainty_threshold": 2.143668125775295,
+      "baseline_outlier_rate_at_p99": 0.010000761024787025,
+      "baseline_uncertain_rate_at_p05": 0.04924949526150155
+    },
+    "future_cohorts_evaluated": 0,
+    "status": "BASELINE_READY_NO_FUTURE_COHORT"
+  },
+  "future_cohorts_evaluated": 0
+}

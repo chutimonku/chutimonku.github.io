@@ -1,0 +1,30 @@
+{
+  "generated_at_utc": "2026-09-21T13:05:37.556915+00:00",
+  "task_type": "unsupervised_clustering",
+  "outcomes_used_in_model": false,
+  "outcomes_used_for_posthoc_validation_only": true,
+  "final_cluster_metrics": {
+    "silhouette": 0.4213828535557634,
+    "davies_bouldin": 0.8852346581513919,
+    "calinski_harabasz": 464882.6087405308,
+    "cluster_count": 5,
+    "student_count": 335650,
+    "smallest_cluster_pct": 13.792939073439594
+  },
+  "k_selection_metrics_for_selected_k": {
+    "k": 5,
+    "silhouette": 0.4275483351996025,
+    "davies_bouldin": 0.8826519886824755,
+    "calinski_harabasz": 16546.023298574917,
+    "resample_ari_mean": 0.9934937554221588,
+    "resample_ari_std": 0.0048011965033696,
+    "mean_metric_rank": 3.25
+  },
+  "posthoc_outcome_summary_path": "outputs/tables/posthoc_cluster_summary.csv",
+  "grade_quality_rule": "Certified learners with grade equal to zero are reported as outcome-quality flags. They are not silently removed from raw data.",
+  "limitations": [
+    "PCA is a visualization only and does not define clusters.",
+    "Post-hoc outcomes are descriptive associations, not causal effects.",
+    "Clusters must not be used as automated high-stakes decisions."
+  ]
+}

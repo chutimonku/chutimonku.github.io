@@ -1,0 +1,20 @@
+======================================================================
+STEP 5: FEATURE ENGINEERING & PREPROCESSING PIPELINE
+======================================================================
+[+] Performing Stratified Splitting (70% Train, 15% Val, 15% Test)...
+    Train size: 234,955 (70.0%)
+    Val size:   50,347 (15.0%)
+    Test size:  50,348 (15.0%)
+    Positive rate check: Train=4.14%, Val=4.14%, Test=4.14%
+[+] Feature definitions saved to: data/processed/feature_definitions.csv
+[+] Fitting preprocessing pipeline strictly on X_train (anti-leakage discipline)...
+    Total processed features after encoding: 57
+[+] Fitted preprocessing pipeline saved to: models/preprocessing_pipeline.joblib
+[+] Feature comparison table saved to: outputs/tables/feature_engineering_comparison.csv
+
+STDERR
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+W20260916 14:58:42.044835 1874997248 cpu_info.cc:239] IOError: sysctlbyname failed for 'hw.l1dcachesize'. Detail: [errno 1] Operation not permitted
+W20260916 14:58:42.044996 1874997248 cpu_info.cc:239] IOError: sysctlbyname failed for 'hw.l2cachesize'. Detail: [errno 1] Operation not permitted
+W20260916 14:58:42.045076 1874997248 cpu_info.cc:239] IOError: sysctlbyname failed for 'hw.l3cachesize'. Detail: [errno 1] Operation not permitted
+W20260916 14:58:42.045137 1874997248 cpu_info.cc:239] IOError: sysctlbyname failed for 'hw.optional.neon'. Detail: [errno 1] Operation not permitted

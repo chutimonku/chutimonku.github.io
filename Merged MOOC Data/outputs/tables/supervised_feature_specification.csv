@@ -1,0 +1,34 @@
+source_feature,group,transformation
+n_enrollments,numeric,median imputation + RobustScaler
+total_events,numeric,median imputation + RobustScaler
+mean_events_per_course,numeric,median imputation + RobustScaler
+max_events_single_course,numeric,median imputation + RobustScaler
+total_active_days,numeric,median imputation + RobustScaler
+mean_active_days_per_course,numeric,median imputation + RobustScaler
+max_active_days_single_course,numeric,median imputation + RobustScaler
+total_video_plays,numeric,median imputation + RobustScaler
+mean_video_plays_per_course,numeric,median imputation + RobustScaler
+total_chapters,numeric,median imputation + RobustScaler
+mean_chapters_per_course,numeric,median imputation + RobustScaler
+max_chapters_single_course,numeric,median imputation + RobustScaler
+total_forum_posts,numeric,median imputation + RobustScaler
+mean_forum_posts_per_course,numeric,median imputation + RobustScaler
+mean_course_events_percentile,numeric,median imputation + RobustScaler
+mean_course_active_days_percentile,numeric,median imputation + RobustScaler
+mean_course_chapters_percentile,numeric,median imputation + RobustScaler
+mean_course_forum_posts_percentile,numeric,median imputation + RobustScaler
+demog_age,numeric,median imputation + RobustScaler
+demog_loe_rank,numeric,median imputation + RobustScaler
+overall_span_days,numeric,median imputation + RobustScaler
+event_intensity,numeric,median imputation + RobustScaler
+video_intensity,numeric,median imputation + RobustScaler
+chapters_per_day,numeric,median imputation + RobustScaler
+forum_posts_per_active_day,numeric,median imputation + RobustScaler
+n_institutes,binary,most-frequent imputation
+has_forum_activity,binary,most-frequent imputation
+has_multiple_courses,binary,most-frequent imputation
+is_cross_institution,binary,most-frequent imputation
+institutes_enrolled,categorical,Unknown fill + one-hot; categories below 0.5% of training rows grouped
+demog_gender,categorical,Unknown fill + one-hot; categories below 0.5% of training rows grouped
+demog_country,categorical,Unknown fill + one-hot; categories below 0.5% of training rows grouped
+demog_loe,categorical,Unknown fill + one-hot; categories below 0.5% of training rows grouped

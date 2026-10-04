@@ -1,0 +1,94 @@
+{
+  "project_name": "Unified Multi-Institutional MOOC Student Segmentation",
+  "version": "3.0.0",
+  "unit_of_analysis": "userid_DI",
+  "course_identifier": "course_id",
+  "institution_identifier": "institute",
+  "raw_data_files": [
+    "data/raw/HXPC13_DI_v3_11-13-2019.csv",
+    "data/raw/big_student_clear_third_version.csv"
+  ],
+  "data_sources": {
+    "HXPC13_DI_v3_11-13-2019.csv": {
+      "source_title": "HarvardX Person-Course Academic Year 2013 De-Identified dataset, version 3.0",
+      "source_url": "https://doi.org/10.7910/DVN/26147",
+      "source_authority": "HarvardX / Harvard Dataverse",
+      "source_verification": "Verified against the published filename and MD5 checksum",
+      "expected_md5": "53419b486c3b19c14d2f06612980f630",
+      "selection_rationale": "Official de-identified person-course release with documentation, a persistent DOI, and extensive reuse in MOOC research.",
+      "known_limitations": "HarvardX-only release; self-reported demographics; aggregate person-course records; no video-duration variable."
+    },
+    "big_student_clear_third_version.csv": {
+      "source_title": "Expanded HarvardX-MITx MOOC person-course file supplied with the project",
+      "source_url": "https://www.kaggle.com/datasets/kanikanarang94/mooc-dataset",
+      "source_authority": "Project-provided Kaggle-derived file",
+      "source_verification": "Source link supplied by the project owner; exact remote filename/version is not exposed by the current Kaggle page and requires manual provenance confirmation",
+      "selection_rationale": "Adds MITx records and broader course coverage using the same person-course schema needed for cross-course analysis.",
+      "known_limitations": "Derived file with an index column and no independently published checksum or version identifier; provenance is weaker than the Harvard Dataverse source."
+    }
+  },
+  "outcome_columns": [
+    "certified",
+    "grade",
+    "viewed",
+    "explored",
+    "incomplete_flag"
+  ],
+  "demographic_columns": [
+    "gender",
+    "LoE_DI",
+    "final_cc_cname_DI",
+    "age"
+  ],
+  "engagement_columns": [
+    "nevents",
+    "ndays_act",
+    "nplay_video",
+    "nchapters",
+    "nforum_posts"
+  ],
+  "temporal_columns": [
+    "start_time_DI",
+    "last_event_DI"
+  ],
+  "clustering_paradigms": {
+    "traditional_unsupervised": [
+      "kmeans",
+      "minibatch_kmeans",
+      "gmm_diag",
+      "birch",
+      "hac_ward",
+      "dbscan",
+      "approximate_kmedoids"
+    ],
+    "deep_learning": [
+      "autoencoder_latent_kmeans",
+      "autoencoder_latent_gmm"
+    ]
+  },
+  "analysis_tracks": [
+    "traditional_unsupervised",
+    "deep_learning",
+    "supervised_learning",
+    "generative_llm_grounded_communication"
+  ],
+  "feature_selection_policy": "Select track-specific features from the cleaned and merged student table using coverage, variation, redundancy, and leakage rules; fixed counts from a single source file are examples only, not workflow constraints.",
+  "unsupervised_features": [
+    "mean_course_forum_posts_percentile",
+    "mean_course_chapters_percentile",
+    "mean_course_active_days_percentile",
+    "mean_course_events_percentile"
+  ],
+  "candidate_k_range": [2, 3, 4, 5, 6, 7, 8, 9, 10],
+  "random_seed": 42,
+  "metric_sample_size": 15000,
+  "training_fraction": 0.7,
+  "supervised_source_feature_count": 34,
+  "supervised_transformed_feature_count": 75,
+  "dashboard_segments": [
+    "all",
+    "high_engagement",
+    "low_engagement",
+    "certified_only"
+  ]
+}

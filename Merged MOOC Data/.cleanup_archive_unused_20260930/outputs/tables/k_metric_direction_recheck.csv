@@ -1,0 +1,7 @@
+metric,direction,supported_k,used_as_final_rule
+Inertia/WCSS,lower / elbow,10,False
+Silhouette,higher,2,False
+Davies-Bouldin,lower,2,False
+Calinski-Harabasz,higher,2,False
+Stability ARI,higher,2,False
+Gap 1-SE,rule,5,True

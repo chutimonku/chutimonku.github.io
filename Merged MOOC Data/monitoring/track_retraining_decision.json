@@ -1,0 +1,5 @@
+{
+  "status": "NOT_EVALUATED",
+  "retraining_required": false,
+  "reason": "A reference baseline exists, but no genuine future cohort is available for drift or performance comparison."
+}

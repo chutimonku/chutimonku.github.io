@@ -1,0 +1,11 @@
+iteration,phase,candidate,pr_auc,decision
+1,Bagging Ensemble,"Random Forest (Depth=15, 100 Trees)",0.8529,Selected from validation and locked
+2,Boosting Ensemble,"HistGradientBoosting (lr=0.10, max_iter=150)",0.8512,Retained as family benchmark
+3,Neural Network,"Multi-Layer Perceptron (64, 32)",0.8459,Retained as family benchmark
+4,Randomized Tree Ensemble,"Extra Trees (Depth=15, 150 Trees)",0.8362,Retained as family benchmark
+5,Linear,"Logistic Regression (C=1.0, Unweighted)",0.8162,Retained as family benchmark
+6,Single Tree,Decision Tree (Depth=10),0.8021,Retained as family benchmark
+7,Linear / Sparse,SGD Classifier (ElasticNet),0.7938,Retained as family benchmark
+8,Max-Margin,Calibrated Linear SVM,0.7934,Retained as family benchmark
+9,Probabilistic,Gaussian Naive Bayes,0.4604,Retained as family benchmark
+10,Baseline,Dummy Baseline,0.0414,Retained as family benchmark

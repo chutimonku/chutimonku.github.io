@@ -1,0 +1,78 @@
+{
+  "generated_at_utc": "2026-09-21T13:05:57.807251+00:00",
+  "features": [
+    "mean_course_events_percentile",
+    "mean_course_active_days_percentile",
+    "mean_course_chapters_percentile",
+    "mean_course_forum_posts_percentile"
+  ],
+  "feature_labels": {
+    "mean_course_events_percentile": "events",
+    "mean_course_active_days_percentile": "active days",
+    "mean_course_chapters_percentile": "chapters",
+    "mean_course_forum_posts_percentile": "forum posts"
+  },
+  "allowed_range": [
+    0.0,
+    1.0
+  ],
+  "imputer_statistics": {
+    "mean_course_events_percentile": 0.49891034954277413,
+    "mean_course_active_days_percentile": 0.4982078853046595,
+    "mean_course_chapters_percentile": 0.5061533202290402,
+    "mean_course_forum_posts_percentile": 0.49429535937099395
+  },
+  "scaler_center": {
+    "mean_course_events_percentile": 0.0,
+    "mean_course_active_days_percentile": 0.0,
+    "mean_course_chapters_percentile": 0.0,
+    "mean_course_forum_posts_percentile": 0.0
+  },
+  "scaler_scale": {
+    "mean_course_events_percentile": 1.0,
+    "mean_course_active_days_percentile": 1.0,
+    "mean_course_chapters_percentile": 1.0,
+    "mean_course_forum_posts_percentile": 1.0
+  },
+  "cluster_centers_scaled": [
+    [
+      0.38803601231241347,
+      0.5560838525328822,
+      0.3350088929007211,
+      0.49531529255853457
+    ],
+    [
+      0.8825250785233638,
+      0.8749340427036818,
+      0.8645497987389874,
+      0.5144036333068703
+    ],
+    [
+      0.5137228966790354,
+      0.24574621580231926,
+      0.5562954661643611,
+      0.495745418400633
+    ],
+    [
+      0.18195142279621712,
+      0.23154596195500832,
+      0.19899570765443464,
+      0.4939809367002125
+    ],
+    [
+      0.6592459688382629,
+      0.6545053100399976,
+      0.6361402995590314,
+      0.5012450753001801
+    ]
+  ],
+  "persona_by_cluster": {
+    "0": "Persona 1: Active Days-led learners",
+    "1": "Persona 2: Events-led learners",
+    "2": "Persona 3: Chapters-led learners",
+    "3": "Persona 4: Forum Posts-led learners",
+    "4": "Persona 5: Events-led learners"
+  },
+  "method": "Nearest locked K-Means centroid after median imputation; percentile geometry is preserved without rescaling.",
+  "disclaimer": "Scenario exploration only; not a high-stakes learner decision."
+}

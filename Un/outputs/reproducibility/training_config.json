@@ -1,0 +1,29 @@
+{
+  "population_size": 335650,
+  "feature_count": 8,
+  "feature_set": "core",
+  "metric_pairwise_memory_budget_mb": 256,
+  "metric_sample_size": 5792,
+  "training_sample_size": 23168,
+  "sampling_method": "Uniform random without replacement; evaluation set disjoint from training samples.",
+  "seed_source": "First eight hexadecimal characters of the raw-data SHA256 checksum.",
+  "random_seed": 612731450,
+  "k_probe_upper_bound_rule": "min(15, ceil(log2(metric_sample_size))), with a lower bound of 5",
+  "k_shortlist": [
+    4,
+    5,
+    6,
+    12
+  ],
+  "dbscan_parameters": {
+    "eps": 0.4513725542757129,
+    "min_samples": 16,
+    "n_jobs": -1
+  },
+  "sample_validation": {
+    "max_absolute_standardized_mean_difference": 0.017065743134257655,
+    "mean_absolute_standardized_mean_difference": 0.009393420618797497,
+    "max_absolute_scaled_quantile_difference": 0.0710200330783679
+  },
+  "outcomes_used": false
+}

@@ -1,0 +1,8 @@
+model_id,model_name,tn,fp,fn,tp
+tfidf_unigram_logistic,TF-IDF Unigram + Logistic Regression,1652,90,47,11
+tfidf_bigram_logistic,TF-IDF (1-2 grams) + Logistic Regression,1667,75,16,42
+tfidf_linear_svm,TF-IDF + Linear SVM,1714,28,32,26
+sentence_transformer_logistic,Sentence Transformer + Logistic Regression,1656,86,10,48
+distilbert_logistic,DistilBERT Embeddings + Logistic Regression,1714,28,12,46
+minilm_logistic,MiniLM Embeddings + Logistic Regression,1672,70,24,34
+distilgpt2_logistic,DistilGPT2 Embeddings + Logistic Regression,1707,35,11,47

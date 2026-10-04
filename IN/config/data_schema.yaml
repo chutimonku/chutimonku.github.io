@@ -1,0 +1,63 @@
+schema_version: "1.0.0"
+dataset: "IRDAI Life Insurance Claims Disclosures"
+expected_rows: 149
+expected_columns: 25
+
+primary_keys:
+  - life_insurer
+  - year
+  - category
+
+identifiers:
+  life_insurer:
+    type: "string"
+    nullable: false
+    description: "Name of registered life insurance company"
+  year:
+    type: "string"
+    nullable: false
+    pattern: "^20[0-9]{2}-[0-9]{2}$"
+    description: "Financial year (e.g. 2021-22)"
+  category:
+    type: "string"
+    nullable: false
+    allowed_values: ["Group Death Claims"]
+    description: "Insurance claim business line"
+
+numeric_columns:
+  counts:
+    - claims_pending_start_no
+    - claims_intimated_no
+    - total_claims_no
+    - claims_paid_no
+    - claims_repudiated_no
+    - claims_rejected_no
+    - claims_unclaimed_no
+    - claims_pending_end_no
+  amounts:
+    - claims_pending_start_amt
+    - claims_intimated_amt
+    - total_claims_amt
+    - claims_paid_amt
+    - claims_repudiated_amt
+    - claims_rejected_amt
+    - claims_unclaimed_amt
+    - claims_pending_end_amt
+  ratios:
+    - claims_paid_ratio_no
+    - claims_paid_ratio_amt
+    - claims_repudiated_rejected_ratio_no
+    - claims_repudiated_rejected_ratio_amt
+    - claims_pending_ratio_no
+    - claims_pending_ratio_amt
+
+domain_constraints:
+  non_negative:
+    - claims_pending_start_no
+    - claims_intimated_no
+    - total_claims_no
+    - claims_paid_no
+  ratio_bounds:
+    min: 0.0
+    max: 1.0
+  accounting_balance_counts: "total_claims_no = claims_paid_no + claims_repudiated_no + claims_rejected_no + claims_unclaimed_no + claims_pending_end_no"

@@ -1,0 +1,2 @@
+provider,model_name,cohort_type,evaluation_students,positive_students,negative_students,test_accuracy,test_precision,test_recall,test_f1,test_roc_auc,test_pr_auc,test_balanced_accuracy,test_brier,tn,fp,fn,tp,requests,input_tokens,output_tokens,total_tokens,runtime_sec,selected
+Gemini,gemini-3.5-flash-lite,held_out_test_full,1800,58,1742,0.9627777777777777,0.46153846153846156,0.9310344827586207,0.6171428571428571,0.9810117185953522,0.5642101669659255,0.9474345777742587,0.029312,1679,63,4,54,90,236245,96867,333112,311.58,True

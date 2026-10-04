@@ -1,0 +1,2 @@
+track,artifact_type,students,grounding_fields,thai_summary,english_summary,generation_rule
+Content LLM / RAG,source_gate_result,446766,llm_video_transcript_readiness.csv,ยังไม่เริ่มฝึก LLM เพราะไม่มีวิดีโอ เสียง caption หรือ transcript จริง; ตัวเลขการเล่นวิดีโอไม่ใช่ข้อความฝึกโมเดล,"LLM training has not started because no real media, captions, or transcripts exist; video-play counts are not model-training text.",Deterministic readiness result; no generated model output and no fabricated transcript.

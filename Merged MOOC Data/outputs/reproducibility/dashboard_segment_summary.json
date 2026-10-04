@@ -1,0 +1,193 @@
+{
+  "definitions": {
+    "high_engagement": "engagement_score >= observed 75th percentile (0.610486)",
+    "low_engagement": "engagement_score <= observed 25th percentile (0.375806)",
+    "certified_only": "ever certified in an eligible enrollment; used for descriptive/post-hoc display only"
+  },
+  "segments": {
+    "all": {
+      "students": 446766,
+      "certification_rate": 0.03165713057726919,
+      "mean_predicted_probability": 0.050904143265084446,
+      "mean_features": {
+        "mean_course_forum_posts_percentile": 0.4999284721540206,
+        "mean_course_chapters_percentile": 0.49546885468760693,
+        "mean_course_active_days_percentile": 0.4916620506320484,
+        "mean_course_events_percentile": 0.5001978374323554
+      },
+      "cluster_distribution": {
+        "0": 441385,
+        "1": 3137,
+        "2": 2244
+      },
+      "feature_distributions": {
+        "mean_course_forum_posts_percentile": {
+          "p05": 0.4844963941051458,
+          "p25": 0.4925880564236844,
+          "median": 0.49670740953337356,
+          "p75": 0.5000029477482152,
+          "p95": 0.5000029477482152
+        },
+        "mean_course_chapters_percentile": {
+          "p05": 0.12857927189796436,
+          "p25": 0.24327423480638616,
+          "median": 0.4927569649872423,
+          "p75": 0.7152448282406528,
+          "p95": 0.9370935045189628
+        },
+        "mean_course_active_days_percentile": {
+          "p05": 0.20980186327253642,
+          "p25": 0.22914730973899822,
+          "median": 0.5085758835758836,
+          "p75": 0.7264458514458515,
+          "p95": 0.9386011745862253
+        },
+        "mean_course_events_percentile": {
+          "p05": 0.08012465008186764,
+          "p25": 0.26927801927801925,
+          "median": 0.4992954911433172,
+          "p75": 0.7322606980066672,
+          "p95": 0.9397480589446997
+        }
+      }
+    },
+    "high_engagement": {
+      "students": 111693,
+      "certification_rate": 0.12090707172028373,
+      "mean_predicted_probability": 0.19302679485364999,
+      "mean_features": {
+        "mean_course_forum_posts_percentile": 0.511671817352413,
+        "mean_course_chapters_percentile": 0.8018595742517555,
+        "mean_course_active_days_percentile": 0.8054761574610506,
+        "mean_course_events_percentile": 0.8185125818859774
+      },
+      "cluster_distribution": {
+        "0": 106939,
+        "1": 2953,
+        "2": 1801
+      },
+      "feature_distributions": {
+        "mean_course_forum_posts_percentile": {
+          "p05": 0.4844963941051458,
+          "p25": 0.4925880564236844,
+          "median": 0.49620026092628833,
+          "p75": 0.4992298368769254,
+          "p95": 0.5000029477482152
+        },
+        "mean_course_chapters_percentile": {
+          "p05": 0.5713259925493483,
+          "p25": 0.7152448282406528,
+          "median": 0.8167935081547979,
+          "p75": 0.9082367665593054,
+          "p95": 0.9788063646548103
+        },
+        "mean_course_active_days_percentile": {
+          "p05": 0.5639269406392694,
+          "p25": 0.7269090230099804,
+          "median": 0.8168613042907755,
+          "p75": 0.9087142299100581,
+          "p95": 0.980340400371653
+        },
+        "mean_course_events_percentile": {
+          "p05": 0.6183507023108292,
+          "p25": 0.7394210490509558,
+          "median": 0.8286905301314,
+          "p75": 0.9107507776219981,
+          "p95": 0.981439513761312
+        }
+      }
+    },
+    "low_engagement": {
+      "students": 111727,
+      "certification_rate": 0.0,
+      "mean_predicted_probability": 5.17421184289427e-05,
+      "mean_features": {
+        "mean_course_forum_posts_percentile": 0.49435013988299636,
+        "mean_course_chapters_percentile": 0.20549372241262326,
+        "mean_course_active_days_percentile": 0.24791238908787314,
+        "mean_course_events_percentile": 0.19341656885734831
+      },
+      "cluster_distribution": {
+        "0": 111717,
+        "1": 2,
+        "2": 8
+      },
+      "feature_distributions": {
+        "mean_course_forum_posts_percentile": {
+          "p05": 0.4844963941051458,
+          "p25": 0.4925880564236844,
+          "median": 0.4948060661224101,
+          "p75": 0.49759743726641753,
+          "p95": 0.5000029477482152
+        },
+        "mean_course_chapters_percentile": {
+          "p05": 0.08128655514797392,
+          "p25": 0.1531362007168459,
+          "median": 0.17799760704213316,
+          "p75": 0.22674185798184732,
+          "p95": 0.4044924942312768
+        },
+        "mean_course_active_days_percentile": {
+          "p05": 0.2070861719382292,
+          "p25": 0.21524928647877276,
+          "median": 0.22483860703038783,
+          "p75": 0.24921787564380637,
+          "p95": 0.4985303765909986
+        },
+        "mean_course_events_percentile": {
+          "p05": 0.04514842291804384,
+          "p25": 0.08521069324875397,
+          "median": 0.18928571428571428,
+          "p75": 0.2784621578099839,
+          "p95": 0.38566390742461354
+        }
+      }
+    },
+    "certified_only": {
+      "students": 14142,
+      "certification_rate": 1.0,
+      "mean_predicted_probability": 0.9418001471453731,
+      "mean_features": {
+        "mean_course_forum_posts_percentile": 0.5224686956187045,
+        "mean_course_chapters_percentile": 0.9107964528777217,
+        "mean_course_active_days_percentile": 0.9068490226681558,
+        "mean_course_events_percentile": 0.9074723808956006
+      },
+      "cluster_distribution": {
+        "0": 13016,
+        "1": 566,
+        "2": 560
+      },
+      "feature_distributions": {
+        "mean_course_forum_posts_percentile": {
+          "p05": 0.4844963941051458,
+          "p25": 0.4920898249663397,
+          "median": 0.494546217312264,
+          "p75": 0.49759743726641753,
+          "p95": 0.7464314298477439
+        },
+        "mean_course_chapters_percentile": {
+          "p05": 0.6377995330373013,
+          "p25": 0.8941543457824117,
+          "median": 0.9650836320191158,
+          "p75": 0.9788063646548103,
+          "p95": 0.9940662218092744
+        },
+        "mean_course_active_days_percentile": {
+          "p05": 0.6071852717200414,
+          "p25": 0.8866727613271495,
+          "median": 0.9576201420093987,
+          "p75": 0.9827276846397826,
+          "p95": 0.9964114182147712
+        },
+        "mean_course_events_percentile": {
+          "p05": 0.6250125370403941,
+          "p25": 0.8876634316406403,
+          "median": 0.9592106228494174,
+          "p75": 0.9839148164929769,
+          "p95": 0.9968396713842534
+        }
+      }
+    }
+  }
+}

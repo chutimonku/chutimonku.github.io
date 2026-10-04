@@ -1,0 +1,10 @@
+{
+  "evaluated_at": "2026-09-16T18:16:05.447829+00:00",
+  "current_champion_status": "BASELINE_READY_NOT_EVALUATED",
+  "drift_evaluation_status": "not_evaluated",
+  "drift_detected": null,
+  "performance_degradation_detected": null,
+  "retraining_decision": "NOT_EVALUATED",
+  "rationale": "A reference baseline was established, but no genuine later cohort was supplied. Holdout performance is not evidence of production stability or absence of drift.",
+  "next_action": "Score and compare a genuine later cohort before making a drift or retraining decision."
+}

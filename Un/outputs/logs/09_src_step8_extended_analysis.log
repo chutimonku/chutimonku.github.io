@@ -1,0 +1,56 @@
+STEP: Step 8: Extended Unsupervised Diagnostics
+MODULE: src.step8_extended_analysis
+RETURN CODE: 0
+RUNTIME_SECONDS: 23.147
+
+STDOUT
+========================================================================
+[Extended Step 8] Model comparison: outputs/tables/unsupervised_model_comparison.csv
+[Extended Step 8] Personas: outputs/tables/student_persona_dossiers.csv
+[Extended Step 8] Ambiguity diagnostics: outputs/data/cluster_assignment_diagnostics.csv
+[Extended Step 8] Simulator spec: outputs/data/interactive_simulator_spec.json
+
+
+STDERR
+========================================================================
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+W20260921 20:05:40.141232 1803005952 cpu_info.cc:239] IOError: sysctlbyname failed for 'hw.l1dcachesize'. Detail: [errno 1] Operation not permitted
+W20260921 20:05:40.141382 1803005952 cpu_info.cc:239] IOError: sysctlbyname failed for 'hw.l2cachesize'. Detail: [errno 1] Operation not permitted
+W20260921 20:05:40.141448 1803005952 cpu_info.cc:239] IOError: sysctlbyname failed for 'hw.l3cachesize'. Detail: [errno 1] Operation not permitted
+W20260921 20:05:40.141506 1803005952 cpu_info.cc:239] IOError: sysctlbyname failed for 'hw.optional.neon'. Detail: [errno 1] Operation not permitted
+/opt/anaconda3/lib/python3.13/site-packages/joblib/externals/loky/backend/context.py:136: UserWarning: Could not find the number of physical cores for the following reason:
+invalid literal for int() with base 10: ''
+Returning the number of logical cores instead. You can silence this warning by setting LOKY_MAX_CPU_COUNT to the number of cores you want to use.
+  warnings.warn(
+  File "/opt/anaconda3/lib/python3.13/site-packages/joblib/externals/loky/backend/context.py", line 276, in _count_physical_cores
+    cpu_count_physical = int(cpu_info)
+/opt/anaconda3/lib/python3.13/site-packages/sklearn/cluster/_birch.py:727: ConvergenceWarning: Number of subclusters found (1) by BIRCH is less than (5). Decrease the threshold.
+  warnings.warn(
+/opt/anaconda3/lib/python3.13/site-packages/sklearn/cluster/_birch.py:727: ConvergenceWarning: Number of subclusters found (1) by BIRCH is less than (5). Decrease the threshold.
+  warnings.warn(
+/opt/anaconda3/lib/python3.13/site-packages/sklearn/cluster/_birch.py:727: ConvergenceWarning: Number of subclusters found (1) by BIRCH is less than (5). Decrease the threshold.
+  warnings.warn(
+/opt/anaconda3/lib/python3.13/site-packages/sklearn/cluster/_birch.py:727: ConvergenceWarning: Number of subclusters found (1) by BIRCH is less than (5). Decrease the threshold.
+  warnings.warn(
+/opt/anaconda3/lib/python3.13/site-packages/sklearn/cluster/_birch.py:727: ConvergenceWarning: Number of subclusters found (1) by BIRCH is less than (5). Decrease the threshold.
+  warnings.warn(
+/opt/anaconda3/lib/python3.13/site-packages/sklearn/cluster/_birch.py:727: ConvergenceWarning: Number of subclusters found (1) by BIRCH is less than (5). Decrease the threshold.
+  warnings.warn(
+/opt/anaconda3/lib/python3.13/site-packages/sklearn/cluster/_birch.py:727: ConvergenceWarning: Number of subclusters found (1) by BIRCH is less than (5). Decrease the threshold.
+  warnings.warn(
+/Users/chingli/Desktop/Mooc_CLI_2/Un/src/step8_extended_analysis.py:343: FutureWarning: 
+
+Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `y` variable to `hue` and set `legend=False` for the same effect.
+
+  sns.barplot(data=contribution, x="centroid_separation_contribution", y="feature", palette="viridis", ax=ax)
+/Users/chingli/Desktop/Mooc_CLI_2/Un/src/step8_extended_analysis.py:351: FutureWarning: 
+
+Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
+
+  sns.barplot(data=comparison, x="model_family", y="composite_score", palette="Set2", ax=axes[0])
+/Users/chingli/Desktop/Mooc_CLI_2/Un/src/step8_extended_analysis.py:395: FutureWarning: 
+
+Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
+
+  sns.barplot(data=personas, x="persona_name", y="student_count", palette="bright", ax=ax)
+

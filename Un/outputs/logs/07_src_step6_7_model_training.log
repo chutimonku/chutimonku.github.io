@@ -1,0 +1,46 @@
+STEP: Step 6-7: K Selection & Model Training
+MODULE: src.step6_7_model_training
+RETURN CODE: 0
+RUNTIME_SECONDS: 156.303
+
+STDOUT
+========================================================================
+========================================================================
+STEPS 6-7: K SELECTION AND K-MEANS CLUSTER MODEL TRAINING
+========================================================================
+[Step 6-7] Full student cohort: 335,650
+[Step 6-7] K-metric sample: 12,000
+[Step 6-7] Candidate K values: [2, 3, 4, 5, 6, 7, 8, 9, 10]
+[Step 6-7] Evaluating K=2...
+[Step 6-7] Evaluating K=3...
+[Step 6-7] Evaluating K=4...
+[Step 6-7] Evaluating K=5...
+[Step 6-7] Evaluating K=6...
+[Step 6-7] Evaluating K=7...
+[Step 6-7] Evaluating K=8...
+[Step 6-7] Evaluating K=9...
+[Step 6-7] Evaluating K=10...
+[Step 6-7] Selected K from Gap one-SE rule with metric/stability guardrails: 5
+[Step 6-7] K metrics table: outputs/tables/k_selection_metrics.csv
+[Step 6-7] K metrics figure: outputs/figures/modeling/k_selection_four_metrics.png
+[Step 6-7] Final model: models/final/cluster_model.joblib
+[Step 6-7] Deployment pipeline: models/final/clustering_pipeline.joblib
+[Step 6-7] Cluster assignments: outputs/data/cluster_assignments.csv
+[Step 6-7] Cluster profiles: outputs/tables/cluster_profiles.csv
+[Step 6-7] Final model runtime: 9.99 seconds
+
+
+STDERR
+========================================================================
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+W20260921 20:02:51.091471 1848209408 cpu_info.cc:239] IOError: sysctlbyname failed for 'hw.l1dcachesize'. Detail: [errno 1] Operation not permitted
+W20260921 20:02:51.091617 1848209408 cpu_info.cc:239] IOError: sysctlbyname failed for 'hw.l2cachesize'. Detail: [errno 1] Operation not permitted
+W20260921 20:02:51.091696 1848209408 cpu_info.cc:239] IOError: sysctlbyname failed for 'hw.l3cachesize'. Detail: [errno 1] Operation not permitted
+W20260921 20:02:51.091759 1848209408 cpu_info.cc:239] IOError: sysctlbyname failed for 'hw.optional.neon'. Detail: [errno 1] Operation not permitted
+/opt/anaconda3/lib/python3.13/site-packages/joblib/externals/loky/backend/context.py:136: UserWarning: Could not find the number of physical cores for the following reason:
+invalid literal for int() with base 10: ''
+Returning the number of logical cores instead. You can silence this warning by setting LOKY_MAX_CPU_COUNT to the number of cores you want to use.
+  warnings.warn(
+  File "/opt/anaconda3/lib/python3.13/site-packages/joblib/externals/loky/backend/context.py", line 276, in _count_physical_cores
+    cpu_count_physical = int(cpu_info)
+

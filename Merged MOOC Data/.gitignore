@@ -1,0 +1,9 @@
+# Local API credentials. Never commit these files.
+.env
+*.env
+Key.gitignore/
+
+# Local model and Python caches.
+.cache/
+__pycache__/
+*.pyc

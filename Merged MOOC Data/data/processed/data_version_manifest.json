@@ -1,0 +1,12 @@
+{
+  "data_version": "clean-layer-2026-09-18",
+  "raw_enrollments_after_source_reconciliation": 609637,
+  "cleaned_enrollments": 609637,
+  "cleaned_students": 446766,
+  "authoritative_files": {
+    "data/processed/enrollments_cleaned.parquet": "badb61d5359ba163cd92139384d7880f680727e3e70fbf61189db2a3166daf70",
+    "data/processed/students_cleaned.parquet": "94a1a8b895c9fdc7de099327cdabeae9e5a3da5384ed54d3222daaa6c9689c48",
+    "data/quarantine/supervised_outcomes_cleaned.parquet": "ab5ea647383c932d21e9400641cb8097517cfc0fe110ac09ab3c6fc284589f82"
+  },
+  "downstream_status": "Steps 4-11 must be rerun after this data-layer change before their results are considered current."
+}

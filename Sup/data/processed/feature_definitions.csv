@@ -1,0 +1,31 @@
+feature_name,type,preprocessing,rationale
+total_events,skewed_numeric,SimpleImputer(median) -> Log1p -> RobustScaler,Extreme right-skewness and heavy tails require log-compression and robust scaling.
+mean_events_per_course,skewed_numeric,SimpleImputer(median) -> Log1p -> RobustScaler,Extreme right-skewness and heavy tails require log-compression and robust scaling.
+max_events_single_course,skewed_numeric,SimpleImputer(median) -> Log1p -> RobustScaler,Extreme right-skewness and heavy tails require log-compression and robust scaling.
+total_active_days,skewed_numeric,SimpleImputer(median) -> Log1p -> RobustScaler,Extreme right-skewness and heavy tails require log-compression and robust scaling.
+mean_active_days_per_course,skewed_numeric,SimpleImputer(median) -> Log1p -> RobustScaler,Extreme right-skewness and heavy tails require log-compression and robust scaling.
+max_active_days_single_course,skewed_numeric,SimpleImputer(median) -> Log1p -> RobustScaler,Extreme right-skewness and heavy tails require log-compression and robust scaling.
+total_video_plays,skewed_numeric,SimpleImputer(median) -> Log1p -> RobustScaler,Extreme right-skewness and heavy tails require log-compression and robust scaling.
+total_chapters,skewed_numeric,SimpleImputer(median) -> Log1p -> RobustScaler,Extreme right-skewness and heavy tails require log-compression and robust scaling.
+mean_chapters_per_course,skewed_numeric,SimpleImputer(median) -> Log1p -> RobustScaler,Extreme right-skewness and heavy tails require log-compression and robust scaling.
+max_chapters_single_course,skewed_numeric,SimpleImputer(median) -> Log1p -> RobustScaler,Extreme right-skewness and heavy tails require log-compression and robust scaling.
+total_forum_posts,skewed_numeric,SimpleImputer(median) -> Log1p -> RobustScaler,Extreme right-skewness and heavy tails require log-compression and robust scaling.
+overall_span_days,skewed_numeric,SimpleImputer(median) -> Log1p -> RobustScaler,Extreme right-skewness and heavy tails require log-compression and robust scaling.
+event_intensity,skewed_numeric,SimpleImputer(median) -> Log1p -> RobustScaler,Extreme right-skewness and heavy tails require log-compression and robust scaling.
+n_courses,standard_numeric,SimpleImputer(median) -> StandardScaler,"Symmetric, bounded ratios or indicator features standardized for numerical stability."
+unique_courses,standard_numeric,SimpleImputer(median) -> StandardScaler,"Symmetric, bounded ratios or indicator features standardized for numerical stability."
+n_institutes,standard_numeric,SimpleImputer(median) -> StandardScaler,"Symmetric, bounded ratios or indicator features standardized for numerical stability."
+view_rate,standard_numeric,SimpleImputer(median) -> StandardScaler,"Symmetric, bounded ratios or indicator features standardized for numerical stability."
+total_courses_viewed,standard_numeric,SimpleImputer(median) -> StandardScaler,"Symmetric, bounded ratios or indicator features standardized for numerical stability."
+video_data_available_rate,standard_numeric,SimpleImputer(median) -> StandardScaler,"Symmetric, bounded ratios or indicator features standardized for numerical stability."
+age,standard_numeric,SimpleImputer(median) -> StandardScaler,"Symmetric, bounded ratios or indicator features standardized for numerical stability."
+age_missing_records,standard_numeric,SimpleImputer(median) -> StandardScaler,"Symmetric, bounded ratios or indicator features standardized for numerical stability."
+overall_span_missing,standard_numeric,SimpleImputer(median) -> StandardScaler,"Symmetric, bounded ratios or indicator features standardized for numerical stability."
+video_play_ratio,standard_numeric,SimpleImputer(median) -> StandardScaler,"Symmetric, bounded ratios or indicator features standardized for numerical stability."
+chapter_intensity,standard_numeric,SimpleImputer(median) -> StandardScaler,"Symmetric, bounded ratios or indicator features standardized for numerical stability."
+has_forum_activity,standard_numeric,SimpleImputer(median) -> StandardScaler,"Symmetric, bounded ratios or indicator features standardized for numerical stability."
+has_multiple_courses,standard_numeric,SimpleImputer(median) -> StandardScaler,"Symmetric, bounded ratios or indicator features standardized for numerical stability."
+date_inversion_records,standard_numeric,SimpleImputer(median) -> StandardScaler,"Symmetric, bounded ratios or indicator features standardized for numerical stability."
+gender,categorical,"SimpleImputer(constant='Unknown') -> OneHotEncoder(min_freq=0.01, ignore_unknown)",Sparse text demographics encoded with frequency thresholding to prevent high dimensionality.
+LoE_DI,categorical,"SimpleImputer(constant='Unknown') -> OneHotEncoder(min_freq=0.01, ignore_unknown)",Sparse text demographics encoded with frequency thresholding to prevent high dimensionality.
+country,categorical,"SimpleImputer(constant='Unknown') -> OneHotEncoder(min_freq=0.01, ignore_unknown)",Sparse text demographics encoded with frequency thresholding to prevent high dimensionality.

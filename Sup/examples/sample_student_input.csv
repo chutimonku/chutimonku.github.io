@@ -1,0 +1,4 @@
+userid_DI,total_events,mean_events_per_course,max_events_single_course,total_active_days,mean_active_days_per_course,max_active_days_single_course,total_video_plays,total_chapters,mean_chapters_per_course,max_chapters_single_course,total_forum_posts,overall_span_days,n_courses,unique_courses,n_institutes,view_rate,total_courses_viewed,video_data_available_rate,age,age_missing_records,overall_span_missing,date_inversion_records,gender,LoE_DI,country
+SAMPLE_PROFILE_001,1,1.0,1,1,1.0,1,,0,0.0,0,0,0.0,1,1,1,0.0,0,0.0,23.0,0,0,0,f,Secondary,United Kingdom
+SAMPLE_PROFILE_002,27,27.0,27,1,1.0,1,,2,2.0,2,0,0.0,1,1,1,1.0,1,0.0,34.0,0,0,0,m,Secondary,United States
+SAMPLE_PROFILE_003,937,468.5,915,12,6.0,8,98.0,5,2.5,3,0,211.0,2,2,2,1.0,2,0.5,24.0,0,0,0,f,Bachelor's,United States

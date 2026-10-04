@@ -1,0 +1,13 @@
+STEP: Step 10: Final Bilingual Dashboard Assembly
+MODULE: src.generate_report
+RETURN CODE: 0
+RUNTIME_SECONDS: 0.707
+
+STDOUT
+========================================================================
+[Step 10] Dashboard: reports/student_segmentation_report.html | 11 sections | K=2 | learners=335,650
+
+
+STDERR
+========================================================================
+

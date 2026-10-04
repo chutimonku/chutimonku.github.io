@@ -1,0 +1,8 @@
+issue_type,decision,affected_records
+Source-first cleaning,Cleaned each source before reconciliation,755144
+Cross-source overlap,Official-source-first non-null coalescing by exact enrollment key,180084
+Video sentinel,197757 converted to missing before merge,255528
+Invalid age,Converted to missing before merge,745
+Reversed dates,Valid pairs swapped within each source before merge,1846
+Outcome consistency,Contradictions quarantined; invalid labels excluded only from supervised eligibility,78
+Student aggregation,One row per userid_DI after clean reconciliation,446766

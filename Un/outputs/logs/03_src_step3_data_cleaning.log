@@ -1,0 +1,25 @@
+STEP: Step 3: Data Cleaning
+MODULE: src.step3_data_cleaning
+RETURN CODE: 0
+RUNTIME_SECONDS: 81.648
+
+STDOUT
+========================================================================
+========================================================================
+STEP 3: MOOC DATA CLEANING AND STUDENT-LEVEL AGGREGATION
+========================================================================
+[Step 3] Clean enrollment records: data/processed/enrollments_cleaned.parquet
+[Step 3] Clean student table: data/processed/students_cleaned.parquet
+[Step 3] Student count: 335,650
+[Step 3] Cleaning audit: data/processed/cleaning_audit.json
+[Step 3] Data dictionary: data/processed/data_dictionary.csv
+
+
+STDERR
+========================================================================
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+W20260921 20:00:55.055253 1875046400 cpu_info.cc:239] IOError: sysctlbyname failed for 'hw.l1dcachesize'. Detail: [errno 1] Operation not permitted
+W20260921 20:00:55.055527 1875046400 cpu_info.cc:239] IOError: sysctlbyname failed for 'hw.l2cachesize'. Detail: [errno 1] Operation not permitted
+W20260921 20:00:55.055626 1875046400 cpu_info.cc:239] IOError: sysctlbyname failed for 'hw.l3cachesize'. Detail: [errno 1] Operation not permitted
+W20260921 20:00:55.055686 1875046400 cpu_info.cc:239] IOError: sysctlbyname failed for 'hw.optional.neon'. Detail: [errno 1] Operation not permitted
+

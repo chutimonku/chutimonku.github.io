@@ -1,0 +1,51 @@
+{
+  "generated_at_utc": "2026-09-21T13:06:04.211378+00:00",
+  "baseline_feature_file": "monitoring/feature_distribution_baseline.json",
+  "baseline_cluster_file": "monitoring/cluster_distribution_baseline.csv",
+  "current_cohort_input_path": "monitoring/current_cohort_behavior_features.csv",
+  "input_contract": {
+    "optional_identifier_column": "userid_DI",
+    "required_feature_order": [
+      "mean_course_events_percentile",
+      "mean_course_active_days_percentile",
+      "mean_course_chapters_percentile",
+      "mean_course_forum_posts_percentile"
+    ],
+    "required_feature_count": 4,
+    "feature_data_type": "numeric",
+    "allowed_range": {
+      "mean_course_events_percentile": {
+        "minimum": 0.0,
+        "maximum": 1.0,
+        "missing_allowed": true,
+        "missing_handling": "Median imputation stored in the locked preprocessing pipeline."
+      },
+      "mean_course_active_days_percentile": {
+        "minimum": 0.0,
+        "maximum": 1.0,
+        "missing_allowed": true,
+        "missing_handling": "Median imputation stored in the locked preprocessing pipeline."
+      },
+      "mean_course_chapters_percentile": {
+        "minimum": 0.0,
+        "maximum": 1.0,
+        "missing_allowed": true,
+        "missing_handling": "Median imputation stored in the locked preprocessing pipeline."
+      },
+      "mean_course_forum_posts_percentile": {
+        "minimum": 0.0,
+        "maximum": 1.0,
+        "missing_allowed": true,
+        "missing_handling": "Median imputation stored in the locked preprocessing pipeline."
+      }
+    }
+  },
+  "psi_thresholds": {
+    "normal": "PSI < 0.10",
+    "warning": "0.10 <= PSI < 0.25",
+    "action_required": "PSI >= 0.25"
+  },
+  "retraining_rule": "Retraining review is required when any behavioural feature has PSI >= 0.25 or when cluster-distribution PSI >= 0.25.",
+  "outcomes_allowed_for_monitoring_input": false,
+  "profile_columns_allowed_for_monitoring_input": false
+}

@@ -1,0 +1,105 @@
+{
+  "started_at_utc": "2026-09-16T07:58:08.927086+00:00",
+  "finished_at_utc": "2026-09-16T07:59:55.778143+00:00",
+  "status": "complete",
+  "elapsed_seconds": 106.85,
+  "python_version": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 11:23:37) [Clang 14.0.6 ]",
+  "steps": [
+    {
+      "order": 1,
+      "title": "Step 1: Problem Definition",
+      "module": "src.step1_problem_definition",
+      "return_code": 0,
+      "duration_seconds": 0.02,
+      "log_path": "outputs/logs/01_src_step1_problem_definition.log"
+    },
+    {
+      "order": 2,
+      "title": "Step 2: Data Gathering & Anti-Leakage Separation",
+      "module": "src.step2_data_gathering",
+      "return_code": 0,
+      "duration_seconds": 1.76,
+      "log_path": "outputs/logs/02_src_step2_data_gathering.log"
+    },
+    {
+      "order": 3,
+      "title": "Step 3: Data Cleaning & Student Aggregation",
+      "module": "src.step3_data_cleaning",
+      "return_code": 0,
+      "duration_seconds": 25.16,
+      "log_path": "outputs/logs/03_src_step3_data_cleaning.log"
+    },
+    {
+      "order": 4,
+      "title": "Step 4: Exploratory Data Analysis",
+      "module": "src.step4_eda",
+      "return_code": 0,
+      "duration_seconds": 4.81,
+      "log_path": "outputs/logs/04_src_step4_eda.log"
+    },
+    {
+      "order": 5,
+      "title": "Step 5: Feature Engineering & Preprocessing",
+      "module": "src.step5_feature_engineering",
+      "return_code": 0,
+      "duration_seconds": 3.31,
+      "log_path": "outputs/logs/05_src_step5_feature_engineering.log"
+    },
+    {
+      "order": 6,
+      "title": "Steps 6-7: Model Selection, Training & Tuning",
+      "module": "src.step6_7_model_training",
+      "return_code": 0,
+      "duration_seconds": 59.15,
+      "log_path": "outputs/logs/06_src_step6_7_model_training.log"
+    },
+    {
+      "order": 7,
+      "title": "Step 8: Model Evaluation & Locking",
+      "module": "src.step8_model_evaluation",
+      "return_code": 0,
+      "duration_seconds": 7.19,
+      "log_path": "outputs/logs/07_src_step8_model_evaluation.log"
+    },
+    {
+      "order": 8,
+      "title": "Step 9: Deployment Packaging",
+      "module": "src.pipeline",
+      "return_code": 0,
+      "duration_seconds": 1.48,
+      "log_path": "outputs/logs/08_src_pipeline.log"
+    },
+    {
+      "order": 9,
+      "title": "Step 9: Automated Test Suite",
+      "module": "tests.test_pipeline",
+      "return_code": 0,
+      "duration_seconds": 1.89,
+      "log_path": "outputs/logs/09_tests_test_pipeline.log"
+    },
+    {
+      "order": 10,
+      "title": "Step 10: HTML Dashboard",
+      "module": "src.generate_report",
+      "return_code": 0,
+      "duration_seconds": 0.55,
+      "log_path": "outputs/logs/10_src_generate_report.log"
+    },
+    {
+      "order": 11,
+      "title": "Step 11: Monitoring Baseline",
+      "module": "src.step11_monitoring",
+      "return_code": 0,
+      "duration_seconds": 0.86,
+      "log_path": "outputs/logs/11_src_step11_monitoring.log"
+    },
+    {
+      "order": 12,
+      "title": "Final Report Refresh",
+      "module": "src.generate_report",
+      "return_code": 0,
+      "duration_seconds": 0.63,
+      "log_path": "outputs/logs/12_src_generate_report.log"
+    }
+  ]
+}

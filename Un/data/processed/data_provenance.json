@@ -1,0 +1,26 @@
+{
+  "generated_at_utc": "2026-09-21T13:00:54.422150+00:00",
+  "source_file": "data/raw/big_student_clear_third_version.csv",
+  "source_file_name": "big_student_clear_third_version.csv",
+  "sha256": "24858a3afe182d4a17b5083ed4ffcd6ced622821fc37626932628240b31773f9",
+  "file_size_bytes": 58659523,
+  "record_count": 416921,
+  "raw_column_count": 22,
+  "unit_of_analysis_at_source": "One row per learner-course enrollment record.",
+  "dataset_source": "https://www.kaggle.com/datasets/kanikanarang94/mooc-dataset",
+  "outcome_quarantine": {
+    "path": "data/quarantine/raw_outcomes.parquet",
+    "columns": [
+      "certified",
+      "grade",
+      "viewed",
+      "explored",
+      "incomplete_flag"
+    ],
+    "policy": "Outcome columns are quarantined and must never enter clustering features, preprocessing, K selection, or model training. They may be used only for post-hoc validation after the clustering model has been locked."
+  },
+  "non_outcome_feature_export": {
+    "path": "data/processed/raw_features.parquet",
+    "column_count": 17
+  }
+}

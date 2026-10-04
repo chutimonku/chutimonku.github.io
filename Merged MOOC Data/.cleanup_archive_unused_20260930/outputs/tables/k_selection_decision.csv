@@ -1,0 +1,6 @@
+criterion,preferred_k,supports_operational_k,operational_k,selection_rule
+Gap statistic one-standard-error rule,3,True,3,"Multi-metric score combining Gap statistic, Silhouette, Davies-Bouldin, Calinski-Harabasz, and ARI stability"
+Maximum Silhouette Score,2,False,3,"Multi-metric score combining Gap statistic, Silhouette, Davies-Bouldin, Calinski-Harabasz, and ARI stability"
+Minimum Davies-Bouldin Index,3,True,3,"Multi-metric score combining Gap statistic, Silhouette, Davies-Bouldin, Calinski-Harabasz, and ARI stability"
+Maximum Calinski-Harabasz Index,5,False,3,"Multi-metric score combining Gap statistic, Silhouette, Davies-Bouldin, Calinski-Harabasz, and ARI stability"
+Maximum Stability (ARI),2,False,3,"Multi-metric score combining Gap statistic, Silhouette, Davies-Bouldin, Calinski-Harabasz, and ARI stability"
